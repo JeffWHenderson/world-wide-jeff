@@ -60,6 +60,10 @@ export const events: event[] = [
         id: "some-id-11",
         name: "Karoake night",
         details: "Go big or go home"
+    },
+    {
+        id: "some-id-12",
+        name: "Rennaisance Festival",
+        details: "huzzah?"
     }
-
 ]
