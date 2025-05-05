@@ -2,10 +2,35 @@ type event = {
     id: string;
     name: string;
     details: string;
+    startDate?: string; // use date time stamp. no offset?
+    // recurring?: boolean;
+    // plannedByJeff?: boolean;
+    // local?: boolean;
+    // open?: boolean; 
 }
 
 
 export const events: event[] = [
+    {
+        id: "some-id--1",
+        name: "Camping trip",
+        details: "Cause its funnn"
+    },
+    {
+        id: "some-id--2",
+        name: "Hike - North Georgia",
+        details: "Lets look at trees and maybe a waterfall"
+    },
+    {
+        id: "some-id--3",
+        name: "Kayak & Paddleboard",
+        details: "day on the water and then Halal after"
+    },
+    {
+        id: "some-id--4",
+        name: "Hot air Balloon",
+        details: "I'm not really even sure that  this is a thing"
+    },
     {
         id: "some-id",
         name: "zombie walk",
@@ -25,11 +50,6 @@ export const events: event[] = [
         id: "some-id-4",
         name: "Piedmont Heights Pickleball League",
         details: "a very poorly managed (by me) pickleball league"
-    },
-    {
-        id: "some-id-5",
-        name: "Zombie Walk",
-        details: "Put on some zombie makeup and lets do a beltline bar crawl"
     },
     {
         id: "some-id-6",
@@ -65,5 +85,20 @@ export const events: event[] = [
         id: "some-id-12",
         name: "Rennaisance Festival",
         details: "huzzah?"
+    },
+    {
+        id: "some-id-14",
+        name: "Atlanta streets alive",
+        details: "dates"
+    },
+    {
+        id: "some-id-15",
+        name: "Hot Pot",
+        details: "Just need to remember I like doing these"
+    },
+    {
+        id: "some-id-16",
+        name: "slack line",
+        details: "invite people to do a slackline but also don't let people think i'm one of those slackline guys in any way"
     }
 ]
