@@ -12,11 +12,6 @@ type event = {
 
 export const events: event[] = [
     {
-        id: "some-id--1",
-        name: "Camping trip",
-        details: "Cause its funnn"
-    },
-    {
         id: "some-id--2",
         name: "Hike - North Georgia",
         details: "Lets look at trees and maybe a waterfall"
