@@ -18,10 +18,28 @@ export const events: event[] = [
         startDate: "2025-5-17"
     },
     {
-        id: "some-id-9",
-        name: "Lantern Festival",
-        details: "Lets meet before and make some lanterns. I'm not planning the actual event but its a whole thing we should get a group together to do",
-        startDate: "cancelled"
+        id: "some-id-12",
+        name: "Rennaisance Festival",
+        details: "huzzah?",
+        startDate: "2025-5-18"
+    },
+    {
+        id: "some-id-14",
+        name: "Atlanta streets alive",
+        details: "dates",
+        startDate: "2025-5-18"
+    },
+    {
+        id: "some-id-23244",
+        name: "Nic cage Movie day",
+        details: "At friends house, ask for detials",
+        startDate: "2025-5-18"
+    },
+    {
+        id: "some-id-2324df344",
+        name: "Nic cage Movie day",
+        details: "At friends house, ask for detials",
+        startDate: "2025-5-18"
     },
     {
         id: "some-id-10",
@@ -30,10 +48,22 @@ export const events: event[] = [
         startDate: "2025-08-28"
     },
     {
-        id: "some-id-12",
-        name: "Rennaisance Festival",
-        details: "huzzah?",
-        startDate: "2025-5-18"
+        id: "some-id-10",
+        name: "Shaky Knees",
+        details: "Get your tickets now",
+        startDate: "2025-09-19"
+    },
+    {
+        id: "some-id-9",
+        name: "Lantern Festival",
+        details: "Lets meet before and make some lanterns. I'm not planning the actual event but its a whole thing we should get a group together to do",
+        startDate: "cancelled"
+    },
+    {
+        id: "some-id-0393554",
+        name: "Art Projects Day",
+        details: "Bring something you are working on and we can all work on our art projects we've been neglecting",
+        startDate: "tbd"
     },
     {
         id: "some-id--2",
@@ -48,9 +78,21 @@ export const events: event[] = [
         startDate: "tbd"
     },
     {
+        id: "some-id-0304949",
+        name: "Paint'n'sip at home",
+        details: "A paint and sip but without a competent instructor",
+        startDate: "tbd"
+    },
+    {
+        id: "some-id--34546er77",
+        name: "other pitched ideas",
+        details: "Candle making, dumpling wrapping, Line dancing, salsa at eclipse di luna, bro force co-op, track more concerts, track comedy shows, dog beach, find more local-events",
+        startDate: "tbd"
+    },
+    {
         id: "some-id--4",
         name: "Hot air Balloon",
-        details: "I'm not really even sure that  this is a thing",
+        details: "I'm not really even sure that this is a thing",
         startDate: "tbd"
     },
     {
@@ -93,12 +135,6 @@ export const events: event[] = [
         id: "some-id-11",
         name: "Karoake night",
         details: "Go big or go home",
-        startDate: "tbd"
-    },
-    {
-        id: "some-id-14",
-        name: "Atlanta streets alive",
-        details: "dates",
         startDate: "tbd"
     },
     {
