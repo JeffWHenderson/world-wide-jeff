@@ -1,8 +1,9 @@
-export type event = {
+export type EventDetails = {
     id: string;
     name: string;
     details: string;
-    startDate: "tbd" | "cancelled" | string; // use date time stamp. no offset?
+    startDate: "tbd" | Date; // use date time stamp. no offset?
+    status?: "cancelled"
     // recurring?: boolean;
     // plannedByJeff?: boolean;
     // local?: boolean;
@@ -10,54 +11,54 @@ export type event = {
 }
 
 
-export const hardCodedEvents: event[] = [
+export const hardCodedEvents: EventDetails[] = [
     {
         id: "ca7866be-6e1b-4e6b-8b8a-2d5a9c0bf9ce",
         name: "Virginia Highlands Porchfest",
         details: "I'm not planning this but its a whole thing we should get a group together to do",
-        startDate: "2025-5-17"
+        startDate: new Date("2025-5-17")
     },
     {
         id: "66b8dc2e-ca70-47fa-be5b-05103bf73982",
         name: "Rennaisance Festival",
         details: "huzzah?",
-        startDate: "2025-5-18"
+        startDate: new Date("2025-5-18")
     },
     {
         id: "1d4196e8-a920-4875-8987-5da349bf28ab",
         name: "Atlanta streets alive",
         details: "dates",
-        startDate: "2025-5-18"
+        startDate: new Date("2025-5-18")
     },
     {
         id: "25dca23c-ca88-4bbc-84c7-c08a59907f84",
         name: "Nic cage Movie day",
         details: "At friends house, ask for detials",
-        startDate: "2025-5-18"
+        startDate: new Date("2025-5-18")
     },
     {
         id: "eee9762e-ec55-4ad4-88ca-a8d8f071a49d",
         name: "Nic cage Movie day",
         details: "At friends house, ask for detials",
-        startDate: "2025-5-18"
+        startDate: new Date("2025-5-18")
     },
     {
         id: "d269d4f8-5019-4974-b07a-761d43b21adf",
         name: "Dragon Con",
         details: "Get your tickets now",
-        startDate: "2025-08-28"
+        startDate: new Date("2025-08-28")
     },
     {
         id: "eaf93d4b-c793-4397-9330-872449bed5be",
         name: "Shaky Knees",
         details: "Get your tickets now",
-        startDate: "2025-09-19"
+        startDate: new Date("2025-09-19")
     },
     {
         id: "7c1a778b-20f2-4a9e-ab7a-bfa7293c1db2",
         name: "Lantern Festival",
         details: "Lets meet before and make some lanterns. I'm not planning the actual event but its a whole thing we should get a group together to do",
-        startDate: "cancelled"
+        startDate: new Date("2025-5-11")
     },
     {
         id: "867a25fb-224c-400e-98d2-6ca0a45444c7",
