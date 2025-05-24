@@ -3,27 +3,18 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
     return (
         <>
+            <div style={{ display: "flex", backgroundColor: "black", width: '100%', alignContent: "center", alignItems: 'center' }}>
+                <div style={{ fontSize: "2em" }}>World Wide Jeff</div>
+            </div >
             <div style={{ display: "flex", backgroundColor: 'black', width: '100%' }}>
-                <h1>World Wide Jeff</h1>
                 <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/pickleball">Pickleball League</Link>
-                        </li>
-                        <li>
-                            <Link to="/wallerverse">Wallerverse</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contact</Link>
-                        </li>
-                    </ul>
+                    <Link style={{ padding: "0 5px 0 0" }} to="/">Home</Link>
+                    <Link style={{ padding: "0 5px 0 0" }} to="/pickleball">Pickleball League</Link>
+                    <Link style={{ padding: "0 5px 0 0" }} to="/wallerverse">Wallerverse</Link>
+                    <Link to="/contact">Contact</Link>
                 </nav>
             </div>
             <Outlet />
-
         </>
     )
 };

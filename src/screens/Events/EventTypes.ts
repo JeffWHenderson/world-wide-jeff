@@ -46,6 +46,12 @@ export const hardCodedEvents: EventDetails[] = [
         startDate: new Date("2025-5-18")
     },
     {
+        id: "fpo93d4b-c793-4397-9330-872449bed5gh",
+        name: "Beans First B-Day",
+        details: "Celebrate the day a monster was born",
+        startDate: new Date("2025-08-10"),
+    },
+    {
         id: "d269d4f8-5019-4974-b07a-761d43b21adf",
         name: "Dragon Con",
         details: "Get your tickets now",

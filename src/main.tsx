@@ -6,7 +6,7 @@ import Home from "./screens/Core/Home";
 import NoPage from "./screens/Core/NoPage";
 import Pickleball from "./screens/Pickleball/Pickleball";
 import Contact from "./screens/Contact/Contact";
-import Wallerverse from "./screens/Wallerverse/Wallerverse"
+import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
 import Events from "./screens/Events/Events";
 import './index.css'
 
@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/pickleball" element={<Pickleball />} />
-          <Route path="/wallerverse" element={<Wallerverse />} />
+          <Route path="/wallerverse" element={<WallerverseHome />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
           <Route path="*" element={<NoPage />} />
