@@ -9,7 +9,7 @@ const Layout = () => {
             <div style={{ display: "flex", backgroundColor: 'black', width: '100%' }}>
                 <nav>
                     <Link style={{ padding: "0 5px 0 0" }} to="/">Home</Link>
-                    <Link style={{ padding: "0 5px 0 0" }} to="/pickleball">Pickleball League</Link>
+                    <Link style={{ padding: "0 5px 0 0" }} to="/pickleball">Pickleball</Link>
                     <Link style={{ padding: "0 5px 0 0" }} to="/wallerverse">Wallerverse</Link>
                     <Link to="/contact">Contact</Link>
                 </nav>

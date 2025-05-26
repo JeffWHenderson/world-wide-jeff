@@ -39,7 +39,7 @@ const WallerverseHome = () => {
 
             <h3>Someday you'll be able to style your own html</h3>
 
-            <button onClick={(e) => changeStyles({ backgroundColor: "orange" })}>Change background</button>
+            <button onClick={() => changeStyles({ backgroundColor: "orange" })}>Change background</button>
         </div >
     )
 
