@@ -8,6 +8,7 @@ import Pickleball from "./screens/Pickleball/Pickleball";
 import Contact from "./screens/Contact/Contact";
 import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
 import Events from "./screens/Events/Events";
+import FlashCards from "./screens/Language/FlashCards";
 import './index.css'
 
 
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/wallerverse" element={<WallerverseHome />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/flashcards" element={<FlashCards />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
