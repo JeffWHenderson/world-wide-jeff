@@ -5,12 +5,14 @@ const FlashCards = () => {
     const [displayLanguage, setDisplayLanguage] = useState("Spanish")
     const [displayCharacters, setDisplayCharacters] = useState<string | null>(null)
     const [voiceIndex, setVoiceIndex] = useState(8)
+    const [cardNumber, setCardNumber] = useState(0)
+    const [showEnglish, setShowEnglish] = useState(false)
     let voices = speechSynthesis.getVoices();
 
 
-    function speak() {
+    function speak(phrase: string) {
         const message = new SpeechSynthesisUtterance();
-        message.text = translations[0][displayLanguage];
+        message.text = phrase;
         message.volume = 1; // Volume range = 0 - 1
         message.rate = 1.1; // Speed of the text read , default 1
         message.voice = voices[voiceIndex]; // change voice
@@ -46,18 +48,19 @@ const FlashCards = () => {
         }
     }
 
+    const nextCard = () => {
+        setCardNumber(cardNumber + 1)
+        speak(translations[cardNumber + 1][displayLanguage])
+    }
+
     return <>
-        <button onClick={() => speak()}>speak</button>
         <button onClick={handleChangeDisplayLang}>changeLang</button>
-        <div>
-            {
-                translations.map(phrase => (
-                    <div key={phrase["English"]} style={{ height: "3em" }}>
-                        <div style={{ height: "1.5em" }}>{phrase[displayLanguage]}</div>
-                        {displayCharacters ? <div style={{ color: 'red', height: "1.5em" }}>{phrase[displayCharacters]}</div> : null}
-                    </div>
-                ))
-            }
+        <button onClick={() => nextCard()}>next</button>
+        <button onClick={() => setShowEnglish(!showEnglish)}>show English</button>
+        <div onClick={() => speak(translations[cardNumber][displayLanguage])}>
+            {displayCharacters ? <div style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber][displayCharacters]}</div> : null}
+            {translations[cardNumber][displayLanguage]}
+            {showEnglish ? <p>{translations[cardNumber]["English"]}</p> : null}
         </div>
     </>
 }
