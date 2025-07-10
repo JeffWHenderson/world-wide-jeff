@@ -1,13 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { translations } from "./translations";
 
 const FlashCards = () => {
     const [languages] = useState(["Spanish", "Chinese", "Japanese", "arabic"])
     const [cardNumber, setCardNumber] = useState(0)
     const [showEnglish] = useState(true)
+    const [autoPlayLanguage, setAutoPlayLanguage] = useState("None")
 
     let voices = speechSynthesis.getVoices();
+    console.log(voices);
+    /*
+    useEffect(() => {
+      window.addEventListener("keydown", onKeyDown); // Add event listener for keydown event
+      //return () => {
+        //window.removeEventListener("keydown", onKeyDown); // Remove event listener on component unmount
+      //};
+    }, []);
 
+    const onKeyDown = (e: any) => {
+
+      if (e.key == " " || e.code == "Space" || e.keyCode == 32 ) {
+         console.log("space-bar")
+         nextCard();
+      }
+    }
+    */
 
 
     function speak(phrase: string, lang: string) {
@@ -38,10 +55,23 @@ const FlashCards = () => {
 
     const nextCard = () => {
         setCardNumber(cardNumber + 1)
-
+        if (autoPlayLanguage !== "None") {
+            speak(translations[cardNumber + 1][autoPlayLanguage], autoPlayLanguage)
+        }
     }
 
     return <>
+        <label>
+            auto play language
+            <select id="auto-play-select" onChange={(e) => setAutoPlayLanguage(e.target.value)}>
+                <option value="none" onSe>None</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+                <option value="arabic">Arabic</option>
+                <option value="English">English</option>
+            </select>
+        </label>
         {/* <div style={{ marginBottom: "5px" }}>
             <label for="english">
                 <input type="checkbox" id="english"></input>
@@ -65,7 +95,7 @@ const FlashCards = () => {
             </label>
         </div> */}
 
-        {showEnglish ? <div style={{}}>{translations[cardNumber]["English"]}</div> : null}
+        {showEnglish ? <h3 style={{ marginLeft: "10px" }}>{translations[cardNumber]["English"]}</h3> : null}
 
         {languages.map((lang) => (
             <div style={{ border: "1px solid grey", borderRadius: "4px", margin: "3px" }} onClick={() => speak(translations[cardNumber][lang], lang)}>
