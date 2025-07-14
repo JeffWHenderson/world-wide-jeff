@@ -13,9 +13,9 @@ export const translations: any[] = [
         "English": "How are you today?",
         "Spanish": "¿Cómo estás hoy?",
         "Chinese": "你今天怎么样？",
-        "ChinesePinyin": "nǐ jīntiān zěnmeyàng ？",
+        "ChinesePinyin": "nǐ jīntiān zěnmeyàng？",
         "arabic": "كيف حالك اليوم؟",
-        "Arabic-English": "kaẙfa ḥāliku ạl̊yaẘmi ?",
+        "Arabic-English": "kaẙfa ḥāliku ạl̊yaẘmi?",
         "Japanese": "今日は元気ですか？",
         "Romanji": "kyō wa genki desu ka?"
     },

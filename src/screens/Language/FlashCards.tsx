@@ -1,14 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { translations } from "./translations";
 
 const FlashCards = () => {
-    const [languages] = useState(["Spanish", "Chinese", "Japanese", "arabic"])
+    const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
     const [cardNumber, setCardNumber] = useState(0)
     const [showEnglish] = useState(true)
-    const [autoPlayLanguage, setAutoPlayLanguage] = useState("None")
 
-    let voices = speechSynthesis.getVoices();
-    console.log(voices);
     /*
     useEffect(() => {
       window.addEventListener("keydown", onKeyDown); // Add event listener for keydown event
@@ -26,87 +23,74 @@ const FlashCards = () => {
     }
     */
 
-
     function speak(phrase: string, lang: string) {
+        window.speechSynthesis.cancel()
+        let voices = speechSynthesis.getVoices();
         const message = new SpeechSynthesisUtterance();
-        message.text = phrase;
+
+        let selectedVoice: any = voices[0]
 
         if (lang == "Spanish") {
-            message.voice = voices[8]
+            selectedVoice = voices.find((voice) => {
+                return voice.name.toLowerCase() == "paulina"
+            });
         }
         if (lang == "Chinese") {
-            message.voice = voices[25]
+            let found = voices.find((voice) => {
+                return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
+            });
+            selectedVoice = found
         }
         if (lang == "Japanese") {
-            message.voice = voices[18]
+            selectedVoice = voices.find((voice) => {
+                return voice.name.toLocaleLowerCase() == "kyoko"
+            });
         }
         if (lang == "arabic") {
-            message.voice = voices[23]
+            selectedVoice = voices.find((voice) => {
+                return voice.lang == "ar-SA"
+            });
         }
         if (lang == "English") {
-            message.voice = voices[0]
+            selectedVoice = voices.find(i => i.name.toLowerCase() == "samantha")
         }
 
+        message.voice = selectedVoice ? selectedVoice : voices[0]
+        message.text = phrase;
         window.speechSynthesis.speak(message);
-        // message.volume = 1; // Volume range = 0 - 1
-        // message.rate = 1.1; // Speed of the text read , default 1
-        // message.lang = 'en-GB'; // Language, default 'en-US'
     }
 
     const nextCard = () => {
         setCardNumber(cardNumber + 1)
-        if (autoPlayLanguage !== "None") {
-            speak(translations[cardNumber + 1][autoPlayLanguage], autoPlayLanguage)
+        if (selectedLanguage !== "None") {
+            speak(translations[cardNumber + 1][selectedLanguage], selectedLanguage)
         }
     }
 
-    return <>
-        <label>
-            auto play language
-            <select id="auto-play-select" onChange={(e) => setAutoPlayLanguage(e.target.value)}>
-                <option value="none" onSe>None</option>
-                <option value="Spanish">Spanish</option>
+    return <div style={{ height: '85vh', width: '100vw' }}>
+
+        <div style={{ height: '70%', marginLeft: "10%" }}>
+            {showEnglish ? <h3>{translations[cardNumber]["English"]}</h3> : null}
+            <div style={{ fontSize: '2em' }} onClick={() => speak(translations[cardNumber][selectedLanguage], selectedLanguage)}>
+                {selectedLanguage === "arabic" ? <p style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["Arabic-English"]}</p> : null}
+                {selectedLanguage === "Japanese" ? <p style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["Romanji"]}</p> : null}
+                {selectedLanguage === "Chinese" ? <p style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["ChinesePinyin"]}</p> : null}
+                <p>{translations[cardNumber][selectedLanguage]}</p>
+            </div>
+        </div >
+
+        <div style={{ display: 'flex', height: '10%', width: '100%', justifyContent: 'center', alignContent: 'space-between' }}>
+            <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
                 <option value="Chinese">Chinese</option>
+                <option value="Spanish">Spanish</option>
                 <option value="Japanese">Japanese</option>
                 <option value="arabic">Arabic</option>
                 <option value="English">English</option>
             </select>
-        </label>
-        {/* <div style={{ marginBottom: "5px" }}>
-            <label for="english">
-                <input type="checkbox" id="english"></input>
-                English
-            </label>
-            <label for="arabic">
-                <input type="checkbox" id="arabic"></input>
-                Arabic
-            </label>
-            <label for="chinese">
-                <input type="checkbox" id="chinese"></input>
-                Chinese
-            </label>
-            <label for="japanese">
-                <input type="checkbox" id="japanese"></input>
-                Japanese
-            </label>
-            <label for="spanish">
-                <input type="checkbox" id="spanish"></input>
-                Spanish
-            </label>
-        </div> */}
 
-        {showEnglish ? <h3 style={{ marginLeft: "10px" }}>{translations[cardNumber]["English"]}</h3> : null}
-
-        {languages.map((lang) => (
-            <div style={{ border: "1px solid grey", borderRadius: "4px", margin: "3px" }} onClick={() => speak(translations[cardNumber][lang], lang)}>
-                {lang === "arabic" ? <div style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["Arabic-English"]}</div> : null}
-                {lang === "Japanese" ? <div style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["Romanji"]}</div> : null}
-                {lang === "Chinese" ? <div style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["ChinesePinyin"]}</div> : null}
-                {translations[cardNumber][lang]}
-            </div>
-        ))}
-        <button onClick={() => nextCard()}>next</button>
-    </>
+            <button style={{ margin: '10px' }} onClick={() => nextCard()}>next</button>
+        </div>
+    </div>
 }
 
 export default FlashCards;
