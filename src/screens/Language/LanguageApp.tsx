@@ -48,7 +48,7 @@ const LanguageLearningApp = () => {
                 return voice.name.toLocaleLowerCase() == "kyoko"
             });
         }
-        if (lang == "arabic") {
+        if (lang == "Arabic") {
             selectedVoice = voices.find((voice) => {
                 return voice.lang == "ar-SA"
             });
