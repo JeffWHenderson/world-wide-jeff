@@ -3,33 +3,11 @@ import { translations } from "./translations";
 
 const FlashCards = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
-    let [cardNumber, setCardNumber] = useState(0)
+    const [cardNumber, setCardNumber] = useState(0)
     const [showEnglish] = useState(true)
     const [startingIndex, setStartingIndex] = useState(0)
-    const [stopIndex] = useState(translations.length)
-
-    // const [autoplay] = useState(true)
-
-    // useEffect(() => {
-    //   window.addEventListener("keydown", onKeyDown); // Add event listener for keydown event
-    //   //return () => {
-    //     //window.removeEventListener("keydown", onKeyDown); // Remove event listener on component unmount
-    //   //};
-    // const intervalId = setInterval(() => {
-    //         cardNumber++;
-    //         nextCard()
-    //     }, 4000);
-    //     return () => clearInterval(intervalId);
-
-    // }, [autoplay]);
-
-    // const onKeyDown = (e: any) => {
-
-    //     if (e.key == " " || e.code == "Space" || e.keyCode == 32) {
-    //         console.log("space-bar")
-    //         nextCard();
-    //     }
-    // }
+    const [speakingRate, setSpeakingRate] = useState(1)
+    const [cardQueue, setCardQueue] = useState([...translations])
 
     function shiftIndex() {
         setCardNumber(startingIndex + 50);
@@ -69,31 +47,32 @@ const FlashCards = () => {
             selectedVoice = voices.find(i => i.name.toLowerCase() == "samantha")
         }
 
+        message.rate = speakingRate
         message.voice = selectedVoice ? selectedVoice : voices[0]
         message.text = phrase;
         window.speechSynthesis.speak(message);
     }
 
-    const nextCard = () => {
-        if (cardNumber >= stopIndex) {
-            setCardNumber(startingIndex)
-        } else {
-            setCardNumber(cardNumber + 1)
-        }
+    const nextCard = (newIndex: number) => {
+        const copyOfQueue = [...cardQueue]
+        let elementToMove = copyOfQueue.splice(0, 1)[0] // pop the current item off the queue
+        copyOfQueue.splice(cardNumber + newIndex, 0, elementToMove); // insert the latest phrase back into queue at newIndex
+        setCardQueue(copyOfQueue)
+
         if (selectedLanguage !== "None") {
-            speak(translations[cardNumber + 1][selectedLanguage], selectedLanguage)
+            speak(cardQueue[cardNumber + 1][selectedLanguage], selectedLanguage)
         }
     }
 
     return <div style={{ height: '80vh', width: '100vw' }}>
 
         <div style={{ height: '70%', marginLeft: "10%" }}>
-            {showEnglish ? <h3>{cardNumber}: {translations[cardNumber]["English"]}</h3> : null}
-            <div style={{ fontSize: '2em' }} onClick={() => speak(translations[cardNumber][selectedLanguage], selectedLanguage)}>
-                {selectedLanguage === "Arabic" ? <p style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["Arabic-English"]}</p> : null}
-                {selectedLanguage === "Japanese" ? <p style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["Romanji"]}</p> : null}
-                {selectedLanguage === "Chinese" ? <p style={{ color: 'red', height: "1.5em" }}>{translations[cardNumber]["Chinese-Pinyin"]}</p> : null}
-                <p>{translations[cardNumber][selectedLanguage]}</p>
+            {showEnglish ? <h3>{cardQueue[cardNumber]["English"]}</h3> : null}
+            <div style={{ fontSize: '2em' }} onClick={() => speak(cardQueue[cardNumber][selectedLanguage], selectedLanguage)}>
+                {selectedLanguage === "Arabic" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Arabic-English"]}</p> : null}
+                {selectedLanguage === "Japanese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Romanji"]}</p> : null}
+                {selectedLanguage === "Chinese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Chinese-Pinyin"]}</p> : null}
+                <p>{cardQueue[cardNumber][selectedLanguage]}</p>
             </div>
         </div >
 
@@ -105,11 +84,14 @@ const FlashCards = () => {
                 <option value="Arabic">Arabic</option>
                 <option value="English">English</option>
             </select>
-
+            <button onClick={shiftIndex}>Start +50</button>
+            <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
+            <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
         </div>
-        <div style={{ display: 'flex', height: '10%', width: '100%', justifyContent: 'space-between' }}>
-            <button style={{ width: '35%', marginLeft: '8px' }} onClick={shiftIndex}>Shift Start (+50)</button>
-            <button style={{ width: '55%', marginRight: '8px' }} onClick={() => nextCard()}>next</button>
+        <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', margin: '10px' }}>
+            <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(4)}>unfamiliar</button>
+            <button style={{ backgroundColor: 'yellow', color: 'black', width: '25%' }} onClick={() => nextCard(10)}>famiar</button>
+            <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard(cardQueue.length - 1)}>Know it</button>
         </div>
     </div>
 }
