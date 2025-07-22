@@ -18,7 +18,7 @@ const lessonOneDTO = {
 
 const LanguageLearningApp = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("Spanish")
-    const [lessons, setLessons] = useState([{ name: "Lesson 1" }, { name: "Lesson 2" }])
+    const [lessons] = useState([{ name: "Lesson 1" }, { name: "Lesson 2" }])
 
     return (
         <>

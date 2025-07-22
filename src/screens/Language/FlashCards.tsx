@@ -4,14 +4,13 @@ import { translations } from "./Lessons/translations";
 const FlashCards = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
     const [cardNumber] = useState(0)
-    const [showEnglish] = useState(true)
     const [speakingRate, setSpeakingRate] = useState(1)
     const [cardQueue, setCardQueue] = useState([...translations])
-
+    const [showBack, setShowBack] = useState(false)
+    let voices = speechSynthesis.getVoices();
 
     function speak(phrase: string, lang: string) {
         window.speechSynthesis.cancel()
-        let voices = speechSynthesis.getVoices();
         const message = new SpeechSynthesisUtterance();
 
         let selectedVoice: any = voices[0]
@@ -42,31 +41,42 @@ const FlashCards = () => {
         }
 
         message.rate = speakingRate
-        message.voice = selectedVoice ? selectedVoice : voices[0]
+        message.voice = selectedVoice
         message.text = phrase;
-        window.speechSynthesis.speak(message);
+        if (selectedVoice) {
+            window.speechSynthesis.speak(message);
+        }
+    }
+
+    const flipCard = () => {
+        setShowBack(!showBack)
+        speak(cardQueue[cardNumber][selectedLanguage], selectedLanguage)
     }
 
     const nextCard = (newIndex: number) => {
+        setShowBack(false)
         const copyOfQueue = [...cardQueue]
         let elementToMove = copyOfQueue.splice(cardNumber, 1)[0] // pop the current item off the queue
         copyOfQueue.splice(cardNumber + newIndex, 0, elementToMove); // insert the latest phrase back into queue at newIndex
         setCardQueue(copyOfQueue)
-
-        if (selectedLanguage !== "None") {
-            speak(cardQueue[cardNumber + 1][selectedLanguage], selectedLanguage)
-        }
     }
 
-    return <div style={{ height: '80vh', width: '100vw' }}>
+    return <>
 
-        <div style={{ height: '70%', marginLeft: "10%" }}>
-            {showEnglish ? <h3>{cardQueue[cardNumber]["English"]}</h3> : null}
-            <div style={{ fontSize: '2em' }} onClick={() => speak(cardQueue[cardNumber][selectedLanguage], selectedLanguage)}>
-                {selectedLanguage === "Arabic" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Arabic-English"]}</p> : null}
-                {selectedLanguage === "Japanese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Romanji"]}</p> : null}
-                {selectedLanguage === "Chinese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Chinese-Pinyin"]}</p> : null}
-                <p>{cardQueue[cardNumber][selectedLanguage]}</p>
+        <div style={{ height: '70%', marginLeft: "10%", justifyContent: 'center' }}>
+            <div>
+                <div style={{ width: '100%' }}>
+                    <p>{cardQueue[cardNumber]["English"]}</p>
+                </div>
+                {showBack ?
+                    <div style={{ fontSize: '2em' }} onClick={() => speak(cardQueue[cardNumber][selectedLanguage], selectedLanguage)}>
+                        <div style={{ borderBottom: "1px solid grey" }}></div>
+                        {selectedLanguage === "Arabic" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Arabic-English"]}</p> : null}
+                        {selectedLanguage === "Japanese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Romanji"]}</p> : null}
+                        {selectedLanguage === "Chinese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Chinese-Pinyin"]}</p> : null}
+                        <p>{cardQueue[cardNumber][selectedLanguage]}</p>
+                    </div>
+                    : null}
             </div>
         </div >
 
@@ -81,12 +91,22 @@ const FlashCards = () => {
             <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
             <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
         </div>
-        <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', margin: '10px' }}>
-            <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(8)}>unfamiliar</button>
-            <button style={{ backgroundColor: 'yellow', color: 'black', width: '25%' }} onClick={() => nextCard(15)}>famiar</button>
-            <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard(cardQueue.length - 1)}>Know it</button>
-        </div>
-    </div>
+        {
+            showBack ?
+                <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', margin: '10px' }}>
+                    <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(6)}>unfamiliar</button>
+                    <button style={{ backgroundColor: 'yellow', color: 'black', width: '25%' }} onClick={() => nextCard(12)}>famiar</button>
+                    <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard(cardQueue.length - 1)}>Know it</button>
+                </div>
+                :
+                <div style={{ display: 'flex', height: '10%', justifyContent: 'center', margin: '10px', backgroundColor: "orange", justifyItems: 'center' }}
+                    onClick={() => flipCard()}
+                >
+                    <p>Reveal</p>
+                </div>
+        }
+
+    </>
 }
 
 export default FlashCards;
