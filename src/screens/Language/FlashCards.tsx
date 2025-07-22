@@ -66,15 +66,16 @@ const FlashCards = () => {
         <div style={{ height: '70%', marginLeft: "10%", justifyContent: 'center' }}>
             <div>
                 <div style={{ width: '100%' }}>
+                    {cardQueue[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
                     <p>{cardQueue[cardNumber]["English"]}</p>
                 </div>
                 {showBack ?
                     <div style={{ fontSize: '2em' }} onClick={() => speak(cardQueue[cardNumber][selectedLanguage], selectedLanguage)}>
                         <div style={{ borderBottom: "1px solid grey" }}></div>
-                        {selectedLanguage === "Arabic" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Arabic-English"]}</p> : null}
-                        {selectedLanguage === "Japanese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Romanji"]}</p> : null}
-                        {selectedLanguage === "Chinese" ? <p style={{ color: 'red', height: "1.5em" }}>{cardQueue[cardNumber]["Chinese-Pinyin"]}</p> : null}
-                        <p>{cardQueue[cardNumber][selectedLanguage]}</p>
+                        {selectedLanguage === "Arabic" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Arabic-English"]}</p> : null}
+                        {selectedLanguage === "Japanese" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Romanji"]}</p> : null}
+                        {selectedLanguage === "Chinese" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Chinese-Pinyin"]}</p> : null}
+                        <div>{cardQueue[cardNumber][selectedLanguage]}</div>
                     </div>
                     : null}
             </div>
