@@ -1,30 +1,16 @@
 import { useState } from "react";
 import './language.css';
 
-const lessonOneDTO = {
-    lessonName: "Introductions",
-    lessonNotes: "this lesson is to help you with your first conversation",
-    Spanish: [
-        "hola",
-        "hello",
-        "adios"
-    ],
-    English: [
-        "hi",
-        "what's up",
-        "goodbye"
-    ]
-}
-
 const container = { display: "flex", width: '100%', height: '10vh', backgroundColor: 'white', justifyContent: 'space-between', alignItems: 'end' }
 const redSquare = { width: '30px', height: '30px', backgroundColor: 'red' }
 const blueCircle = { width: '30px', height: '30px', backgroundColor: 'blue', borderRadius: '30px' }
 
-const Conversation = () => {
+const Conversation = (props: any) => {
+    const { lessonDTO } = props
     const [index, setIndex] = useState(0)
     const [isLeftPanel, setIsLeftPanel] = useState(true)
-    const [lang, setLang] = useState("Spanish")
-    const [vocabList, setVocabList] = useState(lessonOneDTO.Spanish)
+    const [lang] = useState("Spanish")
+    const [vocabList] = useState(lessonDTO.Spanish)
 
     function speak(phrase: string) {
         window.speechSynthesis.cancel()
@@ -85,12 +71,12 @@ const Conversation = () => {
         //     speak(translations[cardNumber + 1][autoPlayLanguage], autoPlayLanguage)
         // }
     }
-
+    console.log(lessonDTO.Spanish[0])
 
     return <>
         <div onClick={() => handleClick()} style={{ backgroundColor: 'white', padding: '10px' }}>
-            {isLeftPanel ? <div className="speech-bubble-left">{vocabList[0]}</div> : null}
-            {!isLeftPanel ? <div className="speech-bubble-right">{vocabList[1]}</div> : null}
+            {isLeftPanel ? <div className="speech-bubble-left">{lessonDTO.Spanish[0]}</div> : null}
+            {!isLeftPanel ? <div className="speech-bubble-right">{lessonDTO.Spanish[1]}</div> : null}
             <div style={container}>
                 <div style={{ margin: '10px' }}>
                     <div style={redSquare}></div>
