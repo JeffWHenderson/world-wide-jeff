@@ -61,9 +61,15 @@ const FlashCards = () => {
         setCardQueue(copyOfQueue)
     }
 
-    return <>
-
-        <div style={{ height: '70%', marginLeft: "10%", justifyContent: 'center' }}>
+    return <div style={{ height: '82%', margin: '0% 3% 0% 3%', justifyContent: 'center' }}>
+        <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
+            <option value="Chinese">Chinese</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Arabic">Arabic</option>
+            <option value="English">English</option>
+        </select>
+        <div style={{ height: '70%', justifyContent: 'center' }}>
             <div>
                 <div style={{ width: '100%' }}>
                     {cardQueue[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
@@ -81,33 +87,26 @@ const FlashCards = () => {
             </div>
         </div >
 
-        <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
-            <option value="Chinese">Chinese</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Arabic">Arabic</option>
-            <option value="English">English</option>
-        </select>
-        <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', margin: '10px' }}>
+        <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', marginBottom: '10px' }}>
             <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
             <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
         </div>
         {
             showBack ?
-                <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', margin: '10px' }}>
+                <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between' }}>
                     <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(6)}>unfamiliar</button>
                     <button style={{ backgroundColor: 'yellow', color: 'black', width: '25%' }} onClick={() => nextCard(12)}>famiar</button>
                     <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard(cardQueue.length - 1)}>Know it</button>
                 </div>
                 :
-                <div style={{ display: 'flex', height: '10%', justifyContent: 'center', margin: '10px', backgroundColor: "orange", justifyItems: 'center' }}
+                <div style={{ display: 'flex', height: '10%', justifyContent: 'center', backgroundColor: "orange", justifyItems: 'center' }}
                     onClick={() => flipCard()}
                 >
                     <p>Reveal</p>
                 </div>
         }
+    </div>
 
-    </>
 }
 
 export default FlashCards;
