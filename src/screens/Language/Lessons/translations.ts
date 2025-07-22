@@ -72,8 +72,8 @@ export const translations: any[] = [
     {
         "English": "Where are you from?",
         "Spanish": "¿De dónde eres?",
-        "Chinese": "那里是什麼？",
-        "Chinese-Pinyin": "nàli shì shénme ？",
+        "Chinese": "你从哪来",
+        "Chinese-Pinyin": "Nǐ cóng nǎ lái？",
         "Arabic": "من أين أنت؟",
         "Arabic-English": "min̊ ạảẙna ạản̊ta ?",
         "Japanese": "どこの出身ですか？",
@@ -102,8 +102,8 @@ export const translations: any[] = [
     {
         "English": "I am 37 years old",
         "Spanish": "Tengo 37 años",
-        "Chinese": "我今年37岁",
-        "Chinese-Pinyin": "wǒ jīnnián sān7 suì",
+        "Chinese": "我今年三十七岁",
+        "Chinese-Pinyin": "wǒ jīnnián 37 suì",
         "Arabic": "عمري 37 سنة",
         "Arabic-English": "ʿumaray 37 sanaẗaⁿ",
         "Japanese": "私は37歳です",
