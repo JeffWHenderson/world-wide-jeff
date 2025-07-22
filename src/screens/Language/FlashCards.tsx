@@ -1,18 +1,12 @@
 import { useState } from "react";
-import { translations } from "./translations";
+import { translations } from "./Lessons/translations";
 
 const FlashCards = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
-    const [cardNumber, setCardNumber] = useState(0)
+    const [cardNumber] = useState(0)
     const [showEnglish] = useState(true)
-    const [startingIndex, setStartingIndex] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
     const [cardQueue, setCardQueue] = useState([...translations])
-
-    function shiftIndex() {
-        setCardNumber(startingIndex + 50);
-        setStartingIndex(startingIndex + 50);
-    }
 
 
     function speak(phrase: string, lang: string) {
@@ -55,7 +49,7 @@ const FlashCards = () => {
 
     const nextCard = (newIndex: number) => {
         const copyOfQueue = [...cardQueue]
-        let elementToMove = copyOfQueue.splice(0, 1)[0] // pop the current item off the queue
+        let elementToMove = copyOfQueue.splice(cardNumber, 1)[0] // pop the current item off the queue
         copyOfQueue.splice(cardNumber + newIndex, 0, elementToMove); // insert the latest phrase back into queue at newIndex
         setCardQueue(copyOfQueue)
 
@@ -76,21 +70,20 @@ const FlashCards = () => {
             </div>
         </div >
 
-        <div style={{ height: '10%', width: '100%' }}>
-            <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
-                <option value="Chinese">Chinese</option>
-                <option value="Spanish">Spanish</option>
-                <option value="Japanese">Japanese</option>
-                <option value="Arabic">Arabic</option>
-                <option value="English">English</option>
-            </select>
-            <button onClick={shiftIndex}>Start +50</button>
+        <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
+            <option value="Chinese">Chinese</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Arabic">Arabic</option>
+            <option value="English">English</option>
+        </select>
+        <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', margin: '10px' }}>
             <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
             <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
         </div>
         <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', margin: '10px' }}>
-            <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(4)}>unfamiliar</button>
-            <button style={{ backgroundColor: 'yellow', color: 'black', width: '25%' }} onClick={() => nextCard(10)}>famiar</button>
+            <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(8)}>unfamiliar</button>
+            <button style={{ backgroundColor: 'yellow', color: 'black', width: '25%' }} onClick={() => nextCard(15)}>famiar</button>
             <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard(cardQueue.length - 1)}>Know it</button>
         </div>
     </div>
