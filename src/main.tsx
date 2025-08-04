@@ -10,6 +10,7 @@ import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
 import Events from "./screens/Events/Events";
 import LanguageLearningApp from "./screens/Language/LanguageApp";
 import './index.css'
+import FlashCardsV2 from './screens/Language/FlashCardsV2';
 import FlashCards from './screens/Language/FlashCards';
 
 
@@ -23,7 +24,8 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/wallerverse" element={<WallerverseHome />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/flashcards" element={<FlashCards />} />
+          <Route path="/flashcardsv2" element={<FlashCardsV2 />} />
+          <Route path="/flashcardsv1" element={<FlashCards />} />
           <Route path="/language-app" element={<LanguageLearningApp />} />
           <Route path="*" element={<NoPage />} />
         </Route>
