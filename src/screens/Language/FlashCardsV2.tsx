@@ -18,7 +18,7 @@ const FlashCardsV2 = () => {
 
             // @ts-ignore
             speechUtterance.voice = initialVoices.find((voice) => {
-                return voice.lang.toLowerCase().includes("zh-")
+                return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
             });
         }
 
@@ -30,24 +30,23 @@ const FlashCardsV2 = () => {
         let selectedVoice: any = voices[0]
         if (selectedLanguage == "Spanish") {
             selectedVoice = voices.find((voice) => {
-                return voice.lang.toLowerCase().includes("es-mx")
+                return voice.name.toLowerCase() == "paulina"
             });
         }
         if (selectedLanguage == "Chinese") {
             let found = voices.find((voice) => {
-                return voice.lang.toLowerCase().includes("zh-")
+                return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
             });
-
             selectedVoice = found
         }
         if (selectedLanguage == "Japanese") {
             selectedVoice = voices.find((voice) => {
-                return voice.lang.toLowerCase().includes("ja-")
+                return voice.name.toLocaleLowerCase() == "kyoko"
             });
         }
         if (selectedLanguage == "Arabic") {
             selectedVoice = voices.find((voice) => {
-                return voice.lang == "ar-SA"
+                return voice.lang.toLowerCase() == "ar-sa"
             });
         }
         if (selectedLanguage == "English") {
@@ -114,7 +113,6 @@ const FlashCardsV2 = () => {
             <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(-1)}>back</button>
             <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard()}>Next</button>
         </div>
-
     </div >
 
 }
