@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { translations } from "./Lessons/translations";
+import { lessons } from "./LessonList";
 
 const FlashCardsV2 = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
-    const [cardQueue] = useState([...translations])
+    const [cardQueue, setCardQueue] = useState<any[]>([...lessons[0].wordList])
     const [autoplay, setAutoPlay] = useState(false)
     const [speechUtterance] = useState(new SpeechSynthesisUtterance())
 
@@ -37,6 +37,11 @@ const FlashCardsV2 = () => {
             let found = voices.find((voice) => {
                 return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
             });
+            if (!found) {
+                found = voices.find((voice) => {
+                    return voice.lang.includes("zh-")
+                })
+            }
             selectedVoice = found
         }
         if (selectedLanguage == "Japanese") {
@@ -79,6 +84,15 @@ const FlashCardsV2 = () => {
             <option value="Japanese">Japanese</option>
             <option value="Arabic">Arabic</option>
             <option value="English">English</option>
+        </select>
+        <select id="auto-play-select" onChange={(e) => {
+            setCardQueue([...lessons[Number.parseInt(e.target.value)].wordList])
+            setCardNumber(0)
+        }
+        }>
+            {lessons.map((lesson, i) => (
+                <option value={i}>{lesson.lessonName}</option>
+            ))}
         </select>
         <label>
             <input

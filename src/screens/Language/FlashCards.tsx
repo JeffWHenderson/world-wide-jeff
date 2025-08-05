@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { translations } from "./Lessons/translations";
+import { ai1 } from "./Lessons/aiTranslations";
 
 const FlashCards = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
     const [cardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
-    const [cardQueue, setCardQueue] = useState([...translations])
+    const [cardQueue, setCardQueue] = useState([...ai1])
     const [showBack, setShowBack] = useState(false)
     let voices = speechSynthesis.getVoices();
 
