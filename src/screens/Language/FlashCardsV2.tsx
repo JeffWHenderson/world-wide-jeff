@@ -9,22 +9,28 @@ const FlashCardsV2 = () => {
     const [cardQueue, setCardQueue] = useState<any[]>([...lessons[0].wordList])
     const [autoplay, setAutoPlay] = useState(false)
     const [voice] = useLanguage(selectedLanguage)
+    const [englishVoice] = useLanguage("English")
 
     // play after card number is updated
     useEffect(() => {
-        const speechUtterance = new SpeechSynthesisUtterance()
-        window.speechSynthesis.cancel()
-        speechUtterance.voice = voice
-        speechUtterance.rate = speakingRate
-        speechUtterance.text = cardQueue[cardNumber][selectedLanguage];
-        window.speechSynthesis.speak(speechUtterance);
+        read(true)
+        setTimeout(() => read(), 2000)
         if (autoplay) {
-            setTimeout(nextCard, 2500)
+            setTimeout(nextCard, 3700)
         }
     }, [cardNumber, autoplay])
 
     const nextCard = (indexChange: number = 1) => {
         setCardNumber(cardNumber + indexChange)
+    }
+
+    const read = (isEnglish: boolean = false) => {
+        const speechUtterance = new SpeechSynthesisUtterance()
+        window.speechSynthesis.cancel()
+        speechUtterance.voice = isEnglish ? englishVoice : voice
+        speechUtterance.rate = speakingRate
+        speechUtterance.text = cardQueue[cardNumber][isEnglish ? "English" : selectedLanguage];
+        window.speechSynthesis.speak(speechUtterance);
     }
 
     return <div style={{ height: '82%', margin: '0% 3% 0% 3%', justifyContent: 'center' }}>
