@@ -13,7 +13,7 @@ const FlashCardsV2 = () => {
 
     // play after card number is updated
     useEffect(() => {
-        read(true)
+        read(true) // do in english
         setTimeout(() => read(), 2000)
         if (autoplay) {
             setTimeout(nextCard, 3700)
