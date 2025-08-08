@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { lessons } from "./LessonList";
 import useLanguage from "./hooks/useLanguage";
+import { useLocation } from "react-router-dom";
 
-const FlashCardsV2 = () => {
+const FlashCardsV2 = (props: any) => {
+    const { state } = useLocation();
+    console.log(state)
     const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
@@ -34,14 +37,14 @@ const FlashCardsV2 = () => {
     }
 
     return <div style={{ height: '82%', margin: '0% 3% 0% 3%', justifyContent: 'center' }}>
-        <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
+        <select id="cars-back-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
             <option value="Chinese">Chinese</option>
             <option value="Spanish">Spanish</option>
             <option value="Japanese">Japanese</option>
             <option value="Arabic">Arabic</option>
             <option value="English">English</option>
         </select>
-        <select id="auto-play-select" onChange={(e) => {
+        <select id="lesson-select" onChange={(e) => {
             setCardQueue([...lessons[Number.parseInt(e.target.value)].wordList])
             setCardNumber(0)
         }
