@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const useLanguage = (selectedLanguage: string) => {
-    console.log(selectedLanguage)
+    let voices: SpeechSynthesisVoice[] = speechSynthesis.getVoices();
+    let [selectedVoice] = useState<SpeechSynthesisVoice | undefined>(voices[0])
+
 
     // has to wait on the inital page load from the browser then set the default voice
     useEffect(() => {
@@ -9,7 +11,7 @@ const useLanguage = (selectedLanguage: string) => {
             let initialVoices = speechSynthesis.getVoices()
 
             // @ts-ignore
-            speechUtterance.voice = initialVoices.find((voice) => {
+            selectedVoice = initialVoices.find((voice) => {
                 return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
             });
         }
@@ -17,9 +19,6 @@ const useLanguage = (selectedLanguage: string) => {
         setTimeout(waitForBrowser, 1000)
     }, [])
 
-
-    let voices: SpeechSynthesisVoice[] = speechSynthesis.getVoices();
-    let selectedVoice: any = voices[0]
     if (selectedLanguage == "Spanish") {
         selectedVoice = voices.find((voice) => {
             return voice.name.toLowerCase() == "paulina"
@@ -52,7 +51,7 @@ const useLanguage = (selectedLanguage: string) => {
 
 
 
-    return [selectedVoice, selectedLanguage as string]
+    return [selectedVoice as SpeechSynthesisVoice, selectedLanguage as string]
 };
 
 export default useLanguage;

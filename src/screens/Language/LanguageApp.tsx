@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { lessons } from "./LessonList";
-import useLanguage from "./hooks/useLanguage";
+// import useLanguage from "./hooks/useLanguage";
 import { useNavigate } from "react-router-dom";
 
 const LanguageLearningApp = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
     const navigate = useNavigate();
-    const [voice] = useLanguage(selectedLanguage)
-    const [englishVoice] = useLanguage("English")
+    // const [voice] = useLanguage(selectedLanguage)
+    // const [englishVoice] = useLanguage("English")
 
     const handleButtonClick = () => {
+        console.log(selectedLanguage)
         navigate("/flashcards", { state: { canPassProps: true } })
     }
-
 
     return (
         <>

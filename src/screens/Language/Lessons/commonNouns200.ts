@@ -1,4 +1,4 @@
-export const commonNouns200 = [
+export const people = [
   {
     "English": "-people-",
     "Spanish": "-gente-",
@@ -288,7 +288,9 @@ export const commonNouns200 = [
     "Romanji": "watashitachi wa ningen desu",
     "Arabic": "نحن الناس",
     "French": "nous sommes des gens"
-  },
+  }
+]
+export const bodyParts = [
   {
     "English": "-Body Parts-",
     "Spanish": "-Partes del cuerpo-",
@@ -428,7 +430,9 @@ export const commonNouns200 = [
     "Romanji": "kare no chi wo mite kudasai",
     "Arabic": "انظر إلى دمه",
     "French": "regarde son sang"
-  },
+  }
+]
+export const animals = [
   {
     "English": "-Animals-",
     "Spanish": "-Animales-",
@@ -528,7 +532,9 @@ export const commonNouns200 = [
     "Romanji": "kore wa raion desu",
     "Arabic": "هذا هو الأسد",
     "French": "c'est un lion"
-  },
+  }
+]
+export const placesAndNature = [
   {
     "English": "-Places & Nature-",
     "Spanish": "-Lugares y Naturaleza-",
@@ -818,7 +824,9 @@ export const commonNouns200 = [
     "Romanji": "kusa",
     "Arabic": "العشب",
     "French": "l'herbe"
-  },
+  }
+]
+export const objectsAndThings = [
   {
     "English": "-Objects and Things-",
     "Spanish": "-Objetos y cosas-",
@@ -1048,7 +1056,9 @@ export const commonNouns200 = [
     "Romanji": "kore wa kanojo no supūn desu",
     "Arabic": "هذه ملعقتها",
     "French": "c'est sa cuillère"
-  },
+  }
+]
+export const foodAndDrinks = [
   {
     "English": "-Food & Drinks-",
     "Spanish": "-Comida y bebida-",
@@ -1218,7 +1228,9 @@ export const commonNouns200 = [
     "Romanji": "kare wa bīru ga hoshii",
     "Arabic": "انه يريد البيرة",
     "French": "il veut de la bière"
-  },
+  }
+]
+export const timeAndDates = [
   {
     "English": "-Time & Dates-",
     "Spanish": "-Hora y fechas-",
@@ -1378,7 +1390,8 @@ export const commonNouns200 = [
     "Romanji": "kinō",
     "Arabic": "أمس",
     "French": "hier"
-  },
+  }]
+export const abstractConcepts = [
   {
     "English": "-Abstract Concepts-",
     "Spanish": "-Conceptos abstractos-",
@@ -1768,7 +1781,8 @@ export const commonNouns200 = [
     "Romanji": "kotoba to wa nanika",
     "Arabic": "ما هي الكلمة",
     "French": "qu'est-ce qu'un mot"
-  },
+  }]
+export const otherCommonNouns = [
   {
     "English": "-Other Common Nouns-",
     "Spanish": "-Otros sustantivos comunes-",
