@@ -35,7 +35,11 @@ const FlashCardsV2 = () => {
     }, [cardNumber, autoplay])
 
     const nextCard = (indexChange: number = 1) => {
-        setCardNumber(cardNumber + indexChange)
+        if (cardQueue.length - 1 > cardNumber) {
+            setCardNumber(cardNumber + indexChange)
+        } else {
+            setCardNumber(1) // skip the title card
+        }
     }
 
     const read = (isEnglish: boolean = false) => {
