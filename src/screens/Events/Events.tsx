@@ -17,6 +17,13 @@ const Events = () => {
         setSelectedEvent(item);
     }
 
+    const isCompleted = (startDate: string | Date) => {
+        if (typeof startDate == "object") {
+            return startDate.getTime() < Date.now();
+        }
+        return false;
+    }
+
     if (selectedEvent) {
         return (
             <>
@@ -44,7 +51,7 @@ const Events = () => {
             {
                 hardCodedEvents.map(item => (
                     // TODO: this is just a hack while I don't have internet to figure out the best way to handle dates
-                    !item.startDate.toString().includes("May") &&
+                    !isCompleted(item.startDate) &&
                     <div className="comment" style={{ backgroundColor: "grey", border: "1px solid grey", margin: "2px", borderRadius: "10px", padding: "0px 4px 0px 8px" }} key={item.id} onClick={() => handleOpenEventPage(item)}>
                         <div>
                             <h4> {displayDate(item.startDate)} {item.name}</h4 >
@@ -60,7 +67,7 @@ const Events = () => {
             {
                 hardCodedEvents.map(item => (
                     // TODO: this is just a hack while I don't have internet to figure out the best way to handle dates
-                    item.startDate.toString().includes("May") &&
+                    isCompleted(item.startDate) &&
                     <div style={{ backgroundColor: "grey", border: "1px solid grey", margin: "2px", borderRadius: "10px", padding: "0px 4px 0px 8px" }} key={item.id} onClick={() => handleOpenEventPage(item)}>
                         <div>
                             <h4> {displayDate(item.startDate)} {item.name}</h4 >
