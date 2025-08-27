@@ -3,6 +3,7 @@ import { lesson2 } from "./Lessons/lesson2";
 import { ai1 } from "./Lessons/aiTranslations";
 import { ai2 } from "./Lessons/aiTranslations2";
 import { people, bodyParts, animals, placesAndNature, objectsAndThings, foodAndDrinks, timeAndDates, abstractConcepts, otherCommonNouns } from "./Lessons/commonNouns200";
+import { verbs } from "./Lessons/verbs";
 
 export type Lesson = {
     lessonName: string;
@@ -26,6 +27,10 @@ export const lessons: Lesson[] = [
     {
         lessonName: "places and nature",
         wordList: placesAndNature,
+    },
+    {
+        lessonName: "verbs",
+        wordList: verbs
     },
     {
         lessonName: "objects and things",

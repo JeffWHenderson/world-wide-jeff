@@ -13,8 +13,8 @@ const FlashCardsV2 = () => {
     const [autoplay, setAutoPlay] = useState(false)
     const [voice] = useLanguage(selectedLanguage)
     const [englishVoice] = useLanguage("English")
-    const [readFront, setReadFront] = useState(true)
-    const [readBack, setReadBack] = useState(true)
+    const [readFront, setReadFront] = useState(false)
+    const [readBack, setReadBack] = useState(false)
 
     // play after card number is updated
     useEffect(() => {
