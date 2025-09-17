@@ -8,9 +8,9 @@ import Pickleball from "./screens/Pickleball/Pickleball";
 import Contact from "./screens/Contact/Contact";
 import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
 import Events from "./screens/Events/Events";
-import LanguageLearningApp from "./screens/Language/LanguageApp";
+import LanguageLearningApp from "./screens/FlashCards/LanguageApp";
 import './index.css'
-import FlashCardsV2 from './screens/Language/FlashCardsV2';
+import FlashCardsV2 from './screens/FlashCards/FlashCardsV2';
 
 
 createRoot(document.getElementById('root')!).render(
