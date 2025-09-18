@@ -8,9 +8,11 @@ import Pickleball from "./screens/Pickleball/Pickleball";
 import Contact from "./screens/Contact/Contact";
 import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
 import Events from "./screens/Events/Events";
-import LanguageLearningApp from "./screens/FlashCards/LanguageApp";
+import LanguageLearningApp from "./screens/LanguageApp/LanguageApp";
 import './index.css'
 import FlashCardsV2 from './screens/FlashCards/FlashCardsV2';
+import StoryReader from './screens/LanguageApp/components/StoryReader';
+import LanguageAppLayout from './screens/LanguageApp/LanguageAppLayout';
 
 
 createRoot(document.getElementById('root')!).render(
@@ -24,10 +26,13 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
           <Route path="/flashcards" element={<FlashCardsV2 />} />
-          <Route path="/language-app" element={<LanguageLearningApp />} />
-          <Route path="*" element={<NoPage />} />
         </Route>
+        <Route path="/language-app" element={<LanguageAppLayout />} >
+          <Route path=":language" element={<LanguageLearningApp />} />
+          <Route path=":language/:selectedStory" element={<StoryReader />} />
+        </Route>
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode >,
 )

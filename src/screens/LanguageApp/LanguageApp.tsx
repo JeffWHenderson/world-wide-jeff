@@ -1,23 +1,23 @@
-import { useState } from "react";
-import { lessons } from "./LessonList";
-// import useLanguage from "./hooks/useLanguage";
+// import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const LanguageLearningApp = (language: string = "Spanish") => {
-    const [selectedStory, setSelectedStory] = useState<string | undefined>(undefined)
-    const lessons = useLessons(language)
-    // const navigate = useNavigate();
-    // // const [voice] = useLanguage(selectedLanguage)
-    // // const [englishVoice] = useLanguage("English")
 
-    // const handleButtonClick = () => {
-    //     console.log(selectedLanguage)
-    //     navigate("/flashcards", { state: { canPassProps: true } })
-    // }
+
+const LanguageLearningApp = () => {
+    // const [selectedStory, setSelectedStory] = useState<string | undefined>(undefined)
+    const navigator = useNavigate()
+
+    function handleSelectStory(e: MouseEvent) {
+        console.log(e.target)
+        navigator(`12345`)
+    }
 
     return (
         <>
-            
+            <div>
+                <button onClick={(e) => handleSelectStory(e)} >go to lesson</button>
+                <p>ok, this page will be a bunch of lesson options on a carousel organized by leaning level</p>
+            </div>
         </>
         // <>
         //     <div style={{ display: 'flex' }}>
