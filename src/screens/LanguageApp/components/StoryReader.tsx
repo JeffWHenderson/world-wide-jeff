@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import "./StoreReader.css"
 import { useState } from 'react';
+import useLanguage from '../../FlashCards/hooks/useLanguage';
 
 type Expression = {
     targetLanguage: string;
@@ -42,6 +43,20 @@ const lesson: Lesson = {
 const StoryReader = () => {
     const navigate = useNavigate();
     const [showPopup, setShowPopup] = useState('false');
+    const [speakingRate] = useState(1)
+    const [voice] = useLanguage("Spanish")
+    // const [englishVoice] = useLanguage("English")
+
+    const read = (counter: number = 0) => {
+        const speechUtterance = new SpeechSynthesisUtterance()
+        // speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
+        speechUtterance.voice = voice as SpeechSynthesisVoice
+        speechUtterance.rate = speakingRate // ADD SLIDER
+        speechUtterance.text = lesson.sentences[counter].targetLanguage // HARDCODED
+        window.speechSynthesis.speak(speechUtterance);
+        read(counter + 1)
+
+    }
 
     const handleGoBack = () => {
         navigate(-1); // Navigates to the previous page in the history stack
@@ -61,6 +76,7 @@ const StoryReader = () => {
 
     return <>
         <button onClick={() => handleGoBack()} >go back</button >
+        <button onClick={() => read()} >speak</button >
         {
             lesson.sentences.map(sentence => (
                 <div onMouseEnter={() => setShowPopup(sentence.targetLanguage)}
