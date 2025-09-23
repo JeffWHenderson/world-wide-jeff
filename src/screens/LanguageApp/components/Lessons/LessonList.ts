@@ -1,9 +1,9 @@
-import { lesson1 } from "./Lessons/lesson1";
-import { lesson2 } from "./Lessons/lesson2";
-import { ai1 } from "./Lessons/aiTranslations";
-import { ai2 } from "./Lessons/aiTranslations2";
-import { people, bodyParts, animals, placesAndNature, objectsAndThings, foodAndDrinks, timeAndDates, abstractConcepts, otherCommonNouns } from "./Lessons/commonNouns200";
-import { verbs } from "./Lessons/verbs";
+import { lesson1 } from "./FlashCardLessons/lesson1";
+import { lesson2 } from "./FlashCardLessons/lesson2";
+import { ai1 } from "./FlashCardLessons/aiTranslations";
+import { ai2 } from "./FlashCardLessons/aiTranslations2";
+import { people, bodyParts, animals, placesAndNature, objectsAndThings, foodAndDrinks, timeAndDates, abstractConcepts, otherCommonNouns } from "./FlashCardLessons/commonNouns200";
+import { verbs } from "./FlashCardLessons/verbs";
 
 export type Lesson = {
     lessonName: string;

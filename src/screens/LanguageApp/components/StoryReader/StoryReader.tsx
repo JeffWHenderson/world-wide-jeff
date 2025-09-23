@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import "./StoreReader.css"
 import { useState } from 'react';
-import useLanguage from '../../FlashCards/hooks/useLanguage';
+import useLanguage from '../../hooks/useLanguage';
 
 type Expression = {
     targetLanguage: string;
@@ -44,17 +43,27 @@ const StoryReader = () => {
     const navigate = useNavigate();
     const [showPopup, setShowPopup] = useState('false');
     const [speakingRate] = useState(1)
-    const [voice] = useLanguage("Spanish")
-    // const [englishVoice] = useLanguage("English")
+    const [voice] = useLanguage("Spanish") // TODO: Voice Selector
+
 
     const read = (counter: number = 0) => {
         const speechUtterance = new SpeechSynthesisUtterance()
-        // speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
+
+        // TODO: text highlighting type of idea but not fleshed out
+        // speechUtterance.onboundary = function (event) {
+        //     var e = document.getElementById('text-area');
+        //     e.innerHTML = event.target.text; 
+        // }
+
         speechUtterance.voice = voice as SpeechSynthesisVoice
-        speechUtterance.rate = speakingRate // ADD SLIDER
+        // TODO: ADD RATE SLIDER
+        speechUtterance.rate = speakingRate
         speechUtterance.text = lesson.sentences[counter].targetLanguage // HARDCODED
         window.speechSynthesis.speak(speechUtterance);
-        read(counter + 1)
+
+        if (lesson.sentences.length > counter + 1) {
+            read(counter + 1)
+        }
 
     }
 
@@ -76,6 +85,7 @@ const StoryReader = () => {
 
     return <>
         <button onClick={() => handleGoBack()} >go back</button >
+        {/* TODO: disable until speaking is done */}
         <button onClick={() => read()} >speak</button >
         {
             lesson.sentences.map(sentence => (
@@ -83,9 +93,7 @@ const StoryReader = () => {
                     onMouseLeave={() => setShowPopup('false')}
                     style={{ position: 'relative' }}
                 >
-                    <div style={{ display: 'flex' }}>
-                        <div>{displaySentence(sentence)}</div>
-                    </div>
+                    {displaySentence(sentence)}
 
                     {showPopup == sentence.targetLanguage && (
                         <div
@@ -104,12 +112,14 @@ const StoryReader = () => {
                             {sentence.grammar?.note}
                         </div>
                     )}
-                </div>
+                </div >
             ))
         }
+        <br /><br /><br /><br />
+        <div id="text-area" style={{ backgroundColor: 'white', color: 'black' }}></div>
     </>
 }
 
 
 
-export default StoryReader
+export default StoryReader;

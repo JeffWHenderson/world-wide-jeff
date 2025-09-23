@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { lessons } from "./LessonList";
-import useLanguage from "./hooks/useLanguage";
+import { lessons } from '../Lessons/LessonList'
+import useLanguage from "../../hooks/useLanguage";
 import { useLocation } from "react-router-dom";
 
 const FlashCardsV2 = () => {

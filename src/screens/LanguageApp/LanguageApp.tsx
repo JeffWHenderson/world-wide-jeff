@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { lessons, Lesson } from "./components/Lessons/LessonList"
 
 
 
@@ -7,76 +8,29 @@ const LanguageLearningApp = () => {
     // const [selectedStory, setSelectedStory] = useState<string | undefined>(undefined)
     const navigator = useNavigate()
 
-    function handleSelectStory(e: MouseEvent) {
-        console.log(e.target)
-        navigator(`12345`)
+    function handleSelectStory(lessonType: string, lesson?: Lesson) {
+        if (lessonType === 'flashcard') {
+            navigator(`flashcards/${lesson?.lessonName}`)
+        } else {
+            navigator(`story/${lesson?.lessonName || '12345'}`)
+        }
     }
 
     return (
         <>
-            <div>
-                <button onClick={(e) => handleSelectStory(e)} >go to lesson</button>
-                <p>ok, this page will be a bunch of lesson options on a carousel organized by leaning level</p>
+            <p>Flashcards: Beginner</p>
+            <div style={{ display: "flex", }}>
+                {
+                    lessons.map(lesson => (
+                        <button style={{ backgroundColor: 'green', marginRight: "3px" }} onClick={() => handleSelectStory('flashcard', lesson)} >{lesson.lessonName}</button>
+                    ))
+                }
+            </div>
+            <p>Stories: Level 1</p>
+            <div style={{ display: "flex", marginTop: '4px' }}>
+                <button style={{ backgroundColor: 'red' }} onClick={() => handleSelectStory('story')} >{"story-mode"}</button>
             </div>
         </>
-        // <>
-        //     <div style={{ display: 'flex' }}>
-        //         <p>Language Front</p>
-        //         <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
-        //             <option value="Chinese">Chinese</option>
-        //             <option value="Spanish">Spanish</option>
-        //             <option value="Japanese">Japanese</option>
-        //             <option value="Arabic">Arabic</option>
-        //             <option value="English">English</option>
-        //         </select>
-        //     </div>
-        //     <div style={{ display: 'flex' }}>
-        //         <p>Read Card Front</p>
-        //         <label>
-        //             <input
-        //                 type="checkbox"
-        //                 checked={false}
-        //                 onChange={(e) => console.log(e.target)}
-        //             />
-        //             Autoplay
-        //         </label>
-        //     </div>
-        //     <div style={{ display: 'flex' }}>
-        //         <p>Language Back</p>
-        //         <select id="auto-play-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
-        //             <option value="Chinese">Chinese</option>
-        //             <option value="Spanish">Spanish</option>
-        //             <option value="Japanese">Japanese</option>
-        //             <option value="Arabic">Arabic</option>
-        //             <option value="English">English</option>
-        //         </select>
-        //     </div>
-        //     <div style={{ display: 'flex' }}>
-        //         <p>Read Card Back</p>
-        //         <label>
-        //             <input
-        //                 type="checkbox"
-        //                 checked={false}
-        //                 onChange={(e) => console.log(e.target)}
-        //             />
-        //             Autoplay
-        //         </label>
-        //     </div>
-        //     <div style={{ display: 'flex' }}>
-        //         <p>Lesson Number</p>
-        //         <select id="lesson-select" onChange={(e) => {
-        //             console.log(e.target)
-        //         }
-        //         }>
-        //             {lessons.map((lesson, i) => (
-        //                 <option value={i}>{lesson.lessonName}</option>
-        //             ))}
-        //         </select>
-        //     </div>
-        //     <div style={{ display: 'flex' }}>
-        //         <button onClick={() => handleButtonClick()}>DoTheTHing</button>
-        //     </div >
-        // </>
     )
 }
 
