@@ -1,49 +1,16 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import useLanguage from '../../hooks/useLanguage';
-
-type Expression = {
-    targetLanguage: string;
-    baseLanguage: string;
-    grammar?: any  // TODO: type
-}
-
-type Lesson = {
-    sentences: Expression[]
-}
-
-const lesson: Lesson = {
-    sentences: [
-        {
-            targetLanguage: "Hola todo el mundo.",
-            baseLanguage: "Hello World.",
-            grammar: {
-                highlight: "todo el mundo",
-                note: "literal: all the world"
-            }
-        },
-        {
-            targetLanguage: "Bienbenidos a mi applicacion",
-            baseLanguage: "welcome to my app",
-            grammar: {
-                highlight: "applicacion",
-                note: "inflection on the i"
-            }
-        },
-        {
-            targetLanguage: "soy un enginero",
-            baseLanguage: "I'm an engineer",
-            grammar: null
-        },
-    ]
-}
+import { Expression } from '../../LanguageApp';
 
 
 const StoryReader = () => {
+    const location = useLocation();
+    const { lesson, selectedLanguage } = location.state || {};
     const navigate = useNavigate();
     const [showPopup, setShowPopup] = useState('false');
     const [speakingRate] = useState(1)
-    const [voice] = useLanguage("Spanish") // TODO: Voice Selector
+    const [voice] = useLanguage(selectedLanguage) // TODO: Clean up
 
 
     const read = (counter: number = 0) => {
@@ -88,7 +55,7 @@ const StoryReader = () => {
         {/* TODO: disable until speaking is done */}
         <button onClick={() => read()} >speak</button >
         {
-            lesson.sentences.map(sentence => (
+            lesson.sentences.map((sentence: Expression) => (
                 <div onMouseEnter={() => setShowPopup(sentence.targetLanguage)}
                     onMouseLeave={() => setShowPopup('false')}
                     style={{ position: 'relative' }}

@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
-import { lessons } from '../Lessons/LessonList'
 import useLanguage from "../../hooks/useLanguage";
 import { useLocation } from "react-router-dom";
 
 const FlashCardsV2 = () => {
-    const { state } = useLocation();
-    console.log(state)
-    const [selectedLanguage, setSelectedLanguage] = useState("Chinese")
+    const location = useLocation();
+    const { lesson, selectedLanguage } = location.state || {};
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
-    const [cardQueue, setCardQueue] = useState<any[]>([...lessons[0].wordList])
+    const [cardQueue] = useState<any[]>(lesson.wordList)
     const [autoplay, setAutoPlay] = useState(false)
     const [voice] = useLanguage(selectedLanguage)
     const [englishVoice] = useLanguage("English")
-    const [readFront, setReadFront] = useState(false)
-    const [readBack, setReadBack] = useState(false)
+    const [readFront, setReadFront] = useState(true)
+    const [readBack, setReadBack] = useState(true)
 
     // play after card number is updated
     useEffect(() => {
@@ -52,31 +50,7 @@ const FlashCardsV2 = () => {
     }
 
     return <div style={{ height: '82%', margin: '0% 3% 0% 3%', justifyContent: 'center' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', width: '100%' }}>
-            <select id="cars-back-select" onChange={(e) => setSelectedLanguage(e.target.value)}>
-                <option value="Chinese">Chinese</option>
-                <option value="Spanish">Spanish</option>
-                <option value="Japanese">Japanese</option>
-                <option value="Arabic">Arabic</option>
-                <option value="English">English</option>
-            </select>
-            <select id="lesson-select" onChange={(e) => {
-                setCardQueue([...lessons[Number.parseInt(e.target.value)].wordList])
-                setCardNumber(0)
-            }
-            }>
-                {lessons.map((lesson, i) => (
-                    <option value={i}>{lesson.lessonName}</option>
-                ))}
-            </select>
-            <label>
-                <input
-                    type="checkbox"
-                    checked={autoplay}
-                    onChange={() => setAutoPlay(!autoplay)}
-                />
-                Autoplay
-            </label>
+        <div style={{ display: 'flex', marginBottom: '10px', width: '100%' }}>
             <label>
                 <input
                     type="checkbox"
@@ -92,6 +66,14 @@ const FlashCardsV2 = () => {
                     onChange={() => setReadBack(!readBack)}
                 />
                 Read Back
+            </label>
+            <label>
+                <input
+                    type="checkbox"
+                    checked={autoplay}
+                    onChange={() => setAutoPlay(!autoplay)}
+                />
+                Autoplay
             </label>
         </div>
         <div style={{ height: '70%', justifyContent: 'center' }}>
