@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import useLanguage from '../../hooks/useLanguage';
-import { Expression } from '../../LanguageApp';
+import { Expression } from '../../LanguageAppTypes';
 
 
 const StoryReader = () => {
