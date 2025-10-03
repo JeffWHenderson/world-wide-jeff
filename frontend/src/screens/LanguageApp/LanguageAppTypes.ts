@@ -1,11 +1,13 @@
 export type Expression = {
     targetLanguage: string;
     baseLanguage: string;
+    romanized?: string;
     grammar?: any;  // TODO: type
 }
 
-export type Story = {
+export type LessonV1 = {
     name: string;
+    type: string;
     sentences: Expression[];
 }
 

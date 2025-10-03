@@ -1,8 +1,9 @@
-import { Story } from "../../../LanguageAppTypes";
+import { LessonV1 } from "../../../LanguageAppTypes";
 
-export const stories: Story[] = [
+export const stories: LessonV1[] = [
     {
         name: "intro lesson",
+        type: "story",
         sentences: [
             {
                 targetLanguage: "Hola todo el mundo.",
@@ -29,6 +30,7 @@ export const stories: Story[] = [
     },
     {
         name: "second Lesson",
+        type: "story",
         sentences: [
             {
                 targetLanguage: "我的朋友",

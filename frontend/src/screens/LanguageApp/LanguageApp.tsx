@@ -2,14 +2,14 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { lessons, Lesson } from "./components/Lessons/LessonList"
 import { stories } from "./components/Lessons/Stories/stories";
-import { Story } from "./LanguageAppTypes";
+import { LessonV1 } from "./LanguageAppTypes";
 
 
 const LanguageLearningApp = () => {
     const { language } = useParams();
     const navigator = useNavigate()
 
-    function handleSelectStory(lessonType: string, lesson?: Lesson | Story) {
+    function handleSelectStory(lessonType: string, lesson?: Lesson | LessonV1) {
         if (lessonType === 'flashcard') {
             navigator(`flashcards`, { state: { lesson: lesson, selectedLanguage: language } })
         } else {
