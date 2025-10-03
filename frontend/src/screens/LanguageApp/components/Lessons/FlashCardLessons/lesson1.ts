@@ -1,3 +1,58 @@
+export const newLessonModel =
+{
+    name: "intro flashcard",
+    type: "flashcard",
+    sentences: [
+        {
+            targetLanguage: "Hola todo el mundo.",
+            baseLanguage: "Hello World.",
+            grammar: {
+                highlight: "todo el mundo",
+                note: "literal: all the world"
+            }
+        },
+        {
+            targetLanguage: "dos",
+            baseLanguage: "two",
+            grammar: {
+                highlight: "todo el mundo",
+                note: "literal: all the world"
+            }
+        }
+    ]
+}
+
+
+export const newLessonModelChinese =
+{
+    name: "intro flashcard",
+    type: "flashcard",
+    sentences: [
+        {
+            targetLanguage: "是",
+            baseLanguage: "is",
+        },
+        {
+            targetLanguage: "你",
+            baseLanguage: "you",
+            grammar: {
+                highlight: "todo el mundo",
+                note: "literal: all the world"
+            }
+        },
+        {
+            targetLanguage: "那",
+            baseLanguage: "that",
+            grammar: {
+                highlight: "todo el mundo",
+                note: "literal: all the world"
+            }
+        }
+    ]
+}
+
+
+
 export const lesson1 = [
     {
         "English": "of",

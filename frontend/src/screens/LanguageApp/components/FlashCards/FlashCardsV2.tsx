@@ -7,7 +7,7 @@ const FlashCardsV2 = () => {
     const { lesson, selectedLanguage } = location.state || {};
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
-    const [cardQueue] = useState<any[]>(lesson.wordList)
+    const [cardQueue] = useState<any[]>(lesson.sentences)
     const [autoplay, setAutoPlay] = useState(false)
     const [voice] = useLanguage(selectedLanguage)
     const [englishVoice] = useLanguage("English")
@@ -45,7 +45,7 @@ const FlashCardsV2 = () => {
         window.speechSynthesis.cancel()
         speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
         speechUtterance.rate = speakingRate
-        speechUtterance.text = cardQueue[cardNumber][isEnglish ? "English" : selectedLanguage];
+        speechUtterance.text = cardQueue[cardNumber][isEnglish ? "baseLanguage" : "targetLanguage"];
         window.speechSynthesis.speak(speechUtterance);
     }
 
@@ -80,14 +80,14 @@ const FlashCardsV2 = () => {
             <div>
                 <div style={{ width: '100%' }}>
                     {cardQueue[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
-                    <p>{cardQueue[cardNumber]["English"]}</p>
+                    <p>{cardQueue[cardNumber].baseLanguage}</p>
                 </div>
                 <div style={{ fontSize: '2em' }}>
                     <div style={{ borderBottom: "1px solid grey" }}></div>
                     {selectedLanguage === "Arabic" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Arabic-English"]}</p> : null}
                     {selectedLanguage === "Japanese" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Romanji"]}</p> : null}
                     {selectedLanguage === "Chinese" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Chinese-Pinyin"]}</p> : null}
-                    <div>{cardQueue[cardNumber][selectedLanguage]}</div>
+                    <div>{cardQueue[cardNumber].targetLanguage}</div>
                 </div>
 
             </div>

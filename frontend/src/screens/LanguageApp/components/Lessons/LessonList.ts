@@ -1,71 +1,87 @@
-import { lesson1 } from "./FlashCardLessons/lesson1";
-import { lesson2 } from "./FlashCardLessons/lesson2";
-import { ai1 } from "./FlashCardLessons/aiTranslations";
-import { ai2 } from "./FlashCardLessons/aiTranslations2";
-import { people, bodyParts, animals, placesAndNature, objectsAndThings, foodAndDrinks, timeAndDates, abstractConcepts, otherCommonNouns } from "./FlashCardLessons/commonNouns200";
-import { verbs } from "./FlashCardLessons/verbs";
-
-export type Lesson = {
-    lessonName: string;
-    wordList: any[]
-}
+import { LessonV1 } from "../../LanguageAppTypes";
 
 
-export const lessons: Lesson[] = [
+export const lessons: LessonV1[] = [
     {
-        lessonName: "people",
-        wordList: people,
-    },
-    {
-        lessonName: "body parts",
-        wordList: bodyParts,
-    },
-    {
-        lessonName: "animals",
-        wordList: animals,
-    },
-    {
-        lessonName: "places and nature",
-        wordList: placesAndNature,
-    },
-    {
-        lessonName: "verbs",
-        wordList: verbs
-    },
-    {
-        lessonName: "objects and things",
-        wordList: objectsAndThings,
-    },
-    {
-        lessonName: "food and drinks",
-        wordList: foodAndDrinks,
-    },
-    {
-        lessonName: "time and dates",
-        wordList: timeAndDates,
-    },
-    {
-        lessonName: "abstract concepts",
-        wordList: abstractConcepts,
-    },
-    {
-        lessonName: "other common nouns",
-        wordList: otherCommonNouns,
-    },
-    {
-        lessonName: "lesson 1",
-        wordList: lesson1,
-    },
-    {
-        lessonName: '201-300',
-        wordList: lesson2,
-    },
-    {
-        lessonName: 'pretty wonky ai list 1',
-        wordList: ai1
-    },
-    {
-        lessonName: 'pretty wonky ai list 2',
-        wordList: ai2
+        name: "people",
+        type: "flashcards",
+        sentences: [
+            {
+                targetLanguage: "hello todo el mundo",
+                baseLanguage: "Hello World.",
+                grammar: {
+                    highlight: "todo el mundo",
+                    note: "literal: all the world"
+                }
+            },
+                        {
+                targetLanguage: "dos",
+                baseLanguage: "two",
+                grammar: {
+                    highlight: "dos",
+                    note: "i don't care about giving this a note"
+                }
+            },
+                        {
+                targetLanguage: "tres",
+                baseLanguage: "three",
+            }
+        ]
     }
+    // {
+    //     lessonName: "people",
+    //     wordList: people,
+    // },
+    // {
+    //     lessonName: "body parts",
+    //     wordList: bodyParts,
+    // },
+    // {
+    //     lessonName: "animals",
+    //     wordList: animals,
+    // },
+    // {
+    //     lessonName: "places and nature",
+    //     wordList: placesAndNature,
+    // },
+    // {
+    //     lessonName: "verbs",
+    //     wordList: verbs
+    // },
+    // {
+    //     lessonName: "objects and things",
+    //     wordList: objectsAndThings,
+    // },
+    // {
+    //     lessonName: "food and drinks",
+    //     wordList: foodAndDrinks,
+    // },
+    // {
+    //     lessonName: "time and dates",
+    //     wordList: timeAndDates,
+    // },
+    // {
+    //     lessonName: "abstract concepts",
+    //     wordList: abstractConcepts,
+    // },
+    // {
+    //     lessonName: "other common nouns",
+    //     wordList: otherCommonNouns,
+    // },
+    // {
+    //     lessonName: "lesson 1",
+    //     wordList: lesson1,
+    // },
+    // {
+    //     lessonName: '201-300',
+    //     wordList: lesson2,
+    // },
+    // {
+    //     lessonName: 'pretty wonky ai list 1',
+    //     wordList: ai1
+    // },
+    // {
+    //     lessonName: 'pretty wonky ai list 2',
+    //     wordList: ai2
+    // }
 ]

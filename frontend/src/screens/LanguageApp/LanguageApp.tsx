@@ -1,13 +1,24 @@
 // import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { lessons, Lesson } from "./components/Lessons/LessonList"
-import { stories } from "./components/Lessons/Stories/stories";
 import { LessonV1 } from "./LanguageAppTypes";
+import { courses } from "./courses/courses"; // TODO: obviously this will come from backend
+import { useEffect, useState } from "react";
 
 
 const LanguageLearningApp = () => {
     const { language } = useParams();
     const navigator = useNavigate()
+    const [course, setCourse] = useState(courses.Chinese);
+
+    useEffect(() => {
+        if (language != "Chinese") { // TODO: obviously this will come from backend
+            setCourse(courses.Spanish)
+        } else {
+            setCourse(courses.Chinese)
+        }
+    }, [language])
+
 
     function handleSelectStory(lessonType: string, lesson?: Lesson | LessonV1) {
         if (lessonType === 'flashcard') {
@@ -20,19 +31,11 @@ const LanguageLearningApp = () => {
     return (
         <>
             <h1>Leaning in {language}</h1>
-            <p>Flashcards: Beginner</p>
-            <div style={{ display: "flex", }}>
-                {
-                    lessons.map(lesson => (
-                        <button style={{ backgroundColor: 'green', marginRight: "3px" }} onClick={() => handleSelectStory('flashcard', lesson)} >{lesson.lessonName}</button>
-                    ))
-                }
-            </div>
-            <p>Stories: Level 1</p>
+            <p>{course.section}</p>
             <div style={{ display: "flex", marginTop: '4px' }}>
                 {
-                    stories.map(story => (
-                        <button style={{ backgroundColor: 'red', marginRight: "3px" }} onClick={() => handleSelectStory('story', story)} >{story.name}</button>
+                    course.lessons.map(lesson => (
+                        <button style={{ backgroundColor: 'red', marginRight: "3px" }} onClick={() => handleSelectStory(lesson.type, lesson)} >{lesson.name}</button>
                     ))
                 }
             </div>
