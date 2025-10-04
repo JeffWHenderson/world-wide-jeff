@@ -1,9 +1,9 @@
-import { chineseCourse } from "./chinese";
-import { japaneseCourse } from "./japanese";
-import { spanishCourse } from "./spanish";
+import { chineseLevel0 } from "./chinese";
+import { japaneseLevel0 } from "./japanese";
+import { spanishLevel0 } from "./spanish";
 
 export const courses = {
-    "Chinese": [chineseCourse],
-    "Spanish": [spanishCourse],
-    "Japanese": [japaneseCourse]
+    "Chinese": [chineseLevel0],
+    "Spanish": [spanishLevel0],
+    "Japanese": [japaneseLevel0]
 }

@@ -1,28 +1,6 @@
-export const newLessonModel =
-{
-    name: "intro flashcard",
-    type: "flashcard",
-    sentences: [
-        {
-            targetLanguage: "Hola todo el mundo.",
-            baseLanguage: "Hello World.",
-            grammar: {
-                highlight: "todo el mundo",
-                note: "literal: all the world"
-            }
-        },
-        {
-            targetLanguage: "dos",
-            baseLanguage: "two",
-            grammar: {
-                highlight: "todo el mundo",
-                note: "literal: all the world"
-            }
-        }
-    ]
-}
+import { CourseLevel } from "../LanguageAppTypes";
 
-export const spanishCourse = {
+export const spanishLevel0: CourseLevel = {
     section: "level 0",
     lessons: [
         {
@@ -47,13 +25,10 @@ export const spanishCourse = {
                 },
                 {
                     targetLanguage: "soy un enginero",
-                    baseLanguage: "I'm an engineer",
-                    grammar: null
+                    baseLanguage: "I'm an engineer"
                 },
             ]
         },
-        newLessonModel,
-
         { "name": "people", "type": "flashcards", "sentences": [{ "targetLanguage": "-gente-", "baseLanguage": "-people-" }, { "targetLanguage": "soy una persona", "baseLanguage": "i am a person" }, { "targetLanguage": "Soy un hombre", "baseLanguage": "I am a man" }, { "targetLanguage": "Soy una mujer", "baseLanguage": "I am a woman" }, { "targetLanguage": "Soy un niño", "baseLanguage": "I am a child" }, { "targetLanguage": "soy un chico", "baseLanguage": "i am a boy" }, { "targetLanguage": "soy una chica", "baseLanguage": "i am a girl" }, { "targetLanguage": "Soy padre", "baseLanguage": "i am a parent" }, { "targetLanguage": "ella es madre", "baseLanguage": "she is a mother" }, { "targetLanguage": "Él es un padre", "baseLanguage": "he is a father" }, { "targetLanguage": "Él es un amigo", "baseLanguage": "he is a friend" }, { "targetLanguage": "Él es un hijo", "baseLanguage": "he is a son" }, { "targetLanguage": "ella es una hija", "baseLanguage": "she is a daughter" }, { "targetLanguage": "Él es un hermano", "baseLanguage": "he is a brother" }, { "targetLanguage": "ella es una hermana", "baseLanguage": "she is a sister" }, { "targetLanguage": "Él es un marido", "baseLanguage": "he is a husband" }, { "targetLanguage": "ella es una esposa", "baseLanguage": "she is a wife" }, { "targetLanguage": "Él es un rey", "baseLanguage": "he is a king" }, { "targetLanguage": "ella es una reina", "baseLanguage": "she is a queen" }, { "targetLanguage": "Yo soy un profesor", "baseLanguage": "i am a teacher" }, { "targetLanguage": "Soy estudiante", "baseLanguage": "i am a student" }, { "targetLanguage": "Soy médico", "baseLanguage": "i am a doctor" }, { "targetLanguage": "Soy abogado", "baseLanguage": "i am a lawyer" }, { "targetLanguage": "odio a mi jefe", "baseLanguage": "i hate my boss" }, { "targetLanguage": "Eres un trabajador", "baseLanguage": "you are a worker" }, { "targetLanguage": "usted es un cliente", "baseLanguage": "you are a customer" }, { "targetLanguage": "Eres mi vecino", "baseLanguage": "you are my neighbor" }, { "targetLanguage": "Somos una familia", "baseLanguage": "we are a family" }, { "targetLanguage": "somos personas", "baseLanguage": "we are people" }] },
         { "name": "body parts", "type": "flashcards", "sentences": [{ "targetLanguage": "-Partes del cuerpo-", "baseLanguage": "-Body Parts-" }, { "targetLanguage": "mira mi cuerpo", "baseLanguage": "look at my body" }, { "targetLanguage": "mira mi cabeza", "baseLanguage": "look at my head" }, { "targetLanguage": "mira mi cara", "baseLanguage": "look at my face" }, { "targetLanguage": "mira mi ojo", "baseLanguage": "look at my eye" }, { "targetLanguage": "mira mi oreja", "baseLanguage": "look at my ear" }, { "targetLanguage": "mira mi nariz", "baseLanguage": "look at my nose" }, { "targetLanguage": "mira su boca", "baseLanguage": "look at her mouth" }, { "targetLanguage": "mira su mano", "baseLanguage": "look at her hand" }, { "targetLanguage": "mira su brazo", "baseLanguage": "look at her arm" }, { "targetLanguage": "mira su pierna", "baseLanguage": "look at her leg" }, { "targetLanguage": "mira su pie", "baseLanguage": "look at his foot" }, { "targetLanguage": "mira su corazón", "baseLanguage": "look at his heart" }, { "targetLanguage": "mira su sangre", "baseLanguage": "look at his blood" }] },
         { "name": "animals", "type": "flashcards", "sentences": [{ "targetLanguage": "-Animales-", "baseLanguage": "-Animals-" }, { "targetLanguage": "Eso es un animal", "baseLanguage": "that is an animal" }, { "targetLanguage": "Eso es un perro", "baseLanguage": "that is a dog" }, { "targetLanguage": "Eso es un gato", "baseLanguage": "that is a cat" }, { "targetLanguage": "Eso es un pájaro", "baseLanguage": "that is a bird" }, { "targetLanguage": "Esto es un pez", "baseLanguage": "this is a fish" }, { "targetLanguage": "Este es un caballo", "baseLanguage": "this is a horse" }, { "targetLanguage": "Esta es una vaca", "baseLanguage": "this is a cow" }, { "targetLanguage": "Este es un oso", "baseLanguage": "this is a bear" }, { "targetLanguage": "Este es un león", "baseLanguage": "this is a lion" }] },
