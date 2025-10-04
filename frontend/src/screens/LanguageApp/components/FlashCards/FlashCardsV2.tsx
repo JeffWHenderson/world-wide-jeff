@@ -84,9 +84,7 @@ const FlashCardsV2 = () => {
                 </div>
                 <div style={{ fontSize: '2em' }}>
                     <div style={{ borderBottom: "1px solid grey" }}></div>
-                    {selectedLanguage === "Arabic" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Arabic-English"]}</p> : null}
-                    {selectedLanguage === "Japanese" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Romanji"]}</p> : null}
-                    {selectedLanguage === "Chinese" ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["Chinese-Pinyin"]}</p> : null}
+                    {cardQueue[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["romanized"]}</p> : null}
                     <div>{cardQueue[cardNumber].targetLanguage}</div>
                 </div>
 
