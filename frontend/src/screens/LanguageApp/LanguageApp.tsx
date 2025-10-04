@@ -27,7 +27,8 @@ const LanguageLearningApp = () => {
         }
         if (language === "Japanese") {
             setCourse(courses.Japanese)
-        } else {
+        }
+        if (language === "Chinese") {
             setCourse(courses.Chinese)
         }
     }, [language])
