@@ -1,0 +1,16 @@
+{
+  "name": "world-wide-jeff-workspace",
+  "version": "1.0.0",
+  "description": "monorepo for jeff apps",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "packages"
+  ]
+}
