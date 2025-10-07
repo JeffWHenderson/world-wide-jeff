@@ -1,4 +1,4 @@
-import { CourseLevel } from "../LanguageAppTypes";
+import { CourseLevel } from "jeff-common";
 
 export const chineseLevel0: CourseLevel = {
     section: "level 0",

@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { LessonV1 } from "./LanguageAppTypes";
+import { LessonV1 } from "jeff-common";
 import { courses } from "./courses/courses"; // TODO: obviously this will come from backend
 import { useEffect, useState } from "react";
 
