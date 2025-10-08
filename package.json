@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "monorepo for jeff apps",
   "scripts": {
+    "start:frontend": "npm run dev --workspace=@jeff/frontend",
+    "start:backend": "npm run start --workspace=@jeff/backend",
+    "start:dev": "npm run start:frontend & npm run start:backend",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
