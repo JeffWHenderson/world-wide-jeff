@@ -1,5 +1,3 @@
-// import { CourseLevel } from "@jeff/common";
-
 export const spanishLevel0 = {
     section: "level 0",
     lessons: [
