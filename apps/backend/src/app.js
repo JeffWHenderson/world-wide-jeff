@@ -1,4 +1,5 @@
-const express = require('express');
+import express from "express";
+import { courses } from "./courses/courses.ts";
 const app = express();
 app.use(express.json());
 
@@ -7,7 +8,7 @@ const port = process.env.PORT || 3000; // Use environment variable or default to
 
 // Basic Get Type stuff
 app.get('/', (req, res) => {
-    res.json({ level_one: [{ lesson_name: "begginner", version: 1 }] });
+    res.json(courses);
 });
 
 // Start the server
