@@ -18,12 +18,135 @@ export type EventDetails = {
 
 
 export const hardCodedEvents: EventDetails[] = [
+
+    {
+        id: "867a25fb-224c-400e-98d2-6ca0a45444c7",
+        name: "Art Projects Day",
+        details: "Bring something you are working on and we can all work on our art projects we've been neglecting",
+        startDate: new Date("2025-12-05T12:00:00.000")
+    },
+    {
+        id: "59f95cf4-b803-4a9d-a712-1fa679056fde",
+        name: "Paint'n'sip at home",
+        details: "A paint and sip but without a competent instructor",
+        startDate: new Date("2025-12-12T12:00:00.000")
+    },
+    {
+        id: "02f854de-fdfc-486b-ab73-24ca6c6300bf",
+        name: "zombie walk",
+        details: "A beltline bar crawl with some sick zombie makeup",
+        startDate: new Date("2026-04-11T12:00:00.000"),
+        links: [{ linkDescription: "What to do", link: "https://www.google.com/search?q=zombie+makeup&oq=zombie+makeup&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDI0NDBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" }]
+    },
+    {
+        id: "48991928-4c60-493b-9bd2-426cf3116eac",
+        name: "Hike - North Georgia",
+        details: "Lets look at trees and maybe a waterfall",
+        startDate: "tbd"
+    },
+    {
+        id: "e72540d9-7ed4-4c5d-a337-4b728b7d1957",
+        name: "Wall Ride",
+        details: "twice a month group bike ride",
+        startDate: "tbd"
+    },
+    {
+        id: "1516fe29-bfaf-4345-9ebf-64d038781005",
+        name: "Piedmont Heights Pickleball League",
+        details: "a very poorly managed (by me) pickleball league",
+        startDate: "tbd"
+    },
+
+    {
+        id: "df51880b-c66d-4a0d-b2bf-bbe38201a2ee",
+        name: "Texas Hold em Poker",
+        details: "Bluffing encouraged",
+        startDate: "tbd"
+    },
+    {
+        id: "fbb858e9-ba89-46c0-9f1c-9c992d15d27c",
+        name: "Karoake night",
+        details: "Go big or go home",
+        startDate: "tbd"
+    },
+    {
+        id: "a4753aa2-c8c1-4300-a994-4ad7fbef4f65",
+        name: "Hot Pot",
+        details: "Just need to remember I like doing these",
+        startDate: "tbd"
+    },
+    {
+        id: "7c0ecb0f-42b3-43ff-8f6b-c8f0d3c447e9",
+        name: "slack line",
+        details: "invite people to do a slackline but also don't let people think i'm one of those slackline guys in any way",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "Candle making",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "dumpling wrapping",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "Line dancing",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "salsa at eclipse di luna",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "bro force co-op",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "PLACEHOLDER: track more concerts",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "PLACEHOLDER: track more comedy show",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "7600e356-bf29-4470-9567-001219fb4619",
+        name: "dog beach",
+        details: "",
+        startDate: "tbd"
+    },
+    {
+        id: "b1e3976b-8368-4892-a64d-2d77e5b3f365",
+        name: "pool party",
+        details: "Pool party at the condo",
+        startDate: new Date("2025-9-19")
+    },
     {
         id: "ca7866be-6e1b-4e6b-8b8a-2d5a9c0bf9ce",
         name: "Virginia Highlands Porchfest",
         details: "I'm not planning this but its a whole thing we should get a group together to do",
         startDate: new Date("2025-05-17T12:00:00.000"),
         links: [{ linkDescription: "google it", link: "http://google.com" }]
+    },
+    {
+        id: "ad4c0794-0fbe-4f4d-af0c-41bb8be5a47a",
+        name: "Outdoor Movie Night: The Room",
+        details: "Lets watch a movie by the pool",
+        startDate: new Date("2025-07-11T12:00:00.000"),
     },
     {
         id: "66b8dc2e-ca70-47fa-be5b-05103bf73982",
@@ -74,93 +197,9 @@ export const hardCodedEvents: EventDetails[] = [
         links: [{ linkDescription: "google it", link: "http://google.com" }]
     },
     {
-        id: "867a25fb-224c-400e-98d2-6ca0a45444c7",
-        name: "Art Projects Day",
-        details: "Bring something you are working on and we can all work on our art projects we've been neglecting",
-        startDate: "tbd"
-    },
-    {
-        id: "48991928-4c60-493b-9bd2-426cf3116eac",
-        name: "Hike - North Georgia",
-        details: "Lets look at trees and maybe a waterfall",
-        startDate: "tbd"
-    },
-    {
         id: "d1088340-82c2-45f7-8e99-2c17a9334230",
         name: "Kayak & Paddleboard",
         details: "day on the water and then Halal after",
-        startDate: "tbd"
-    },
-    {
-        id: "59f95cf4-b803-4a9d-a712-1fa679056fde",
-        name: "Paint'n'sip at home",
-        details: "A paint and sip but without a competent instructor",
-        startDate: "tbd"
-    },
-    {
-        id: "7600e356-bf29-4470-9567-001219fb4619",
-        name: "other pitched ideas",
-        details: "Candle making, dumpling wrapping, Line dancing, salsa at eclipse di luna, bro force co-op, track more concerts, track comedy shows, dog beach, find more local-events",
-        startDate: "tbd"
-    },
-    {
-        id: "f551e54e-a8cf-4410-b9a2-f32f2a7987e9",
-        name: "Hot air Balloon",
-        details: "I'm not really even sure that this is a thing",
-        startDate: "tbd"
-    },
-    {
-        id: "02f854de-fdfc-486b-ab73-24ca6c6300bf",
-        name: "zombie walk",
-        details: "A beltline bar crawl with some sick zombie makeup",
-        startDate: "tbd"
-    },
-    {
-        id: "b1e3976b-8368-4892-a64d-2d77e5b3f365",
-        name: "pool party",
-        details: "Pool party at the condo",
-        startDate: "tbd"
-    },
-    {
-        id: "e72540d9-7ed4-4c5d-a337-4b728b7d1957",
-        name: "Wall Ride",
-        details: "twice a month group bike ride",
-        startDate: "tbd"
-    },
-    {
-        id: "1516fe29-bfaf-4345-9ebf-64d038781005",
-        name: "Piedmont Heights Pickleball League",
-        details: "a very poorly managed (by me) pickleball league",
-        startDate: "tbd"
-    },
-    {
-        id: "ad4c0794-0fbe-4f4d-af0c-41bb8be5a47a",
-        name: "Outdoor Movie Night: The Room",
-        details: "Lets watch a movie by the pool",
-        startDate: "tbd"
-    },
-    {
-        id: "df51880b-c66d-4a0d-b2bf-bbe38201a2ee",
-        name: "Texas Hold em Poker",
-        details: "Bluffing encouraged",
-        startDate: "tbd"
-    },
-    {
-        id: "fbb858e9-ba89-46c0-9f1c-9c992d15d27c",
-        name: "Karoake night",
-        details: "Go big or go home",
-        startDate: "tbd"
-    },
-    {
-        id: "a4753aa2-c8c1-4300-a994-4ad7fbef4f65",
-        name: "Hot Pot",
-        details: "Just need to remember I like doing these",
-        startDate: "tbd"
-    },
-    {
-        id: "7c0ecb0f-42b3-43ff-8f6b-c8f0d3c447e9",
-        name: "slack line",
-        details: "invite people to do a slackline but also don't let people think i'm one of those slackline guys in any way",
-        startDate: "tbd"
+        startDate: new Date("2025-9-12")
     }
 ]

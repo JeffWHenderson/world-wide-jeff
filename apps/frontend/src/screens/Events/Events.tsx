@@ -10,7 +10,7 @@ const Events = () => {
         }
 
         // TODO: Better Date Formatting
-        return <span style={{ color: 'black', backgroundColor: "white", padding: "4px", borderRadius: "10px" }}>{date.toString().split(" 2025")[0]}</span>
+        return <span style={{ color: 'black', backgroundColor: "white", padding: "4px", borderRadius: "10px" }}>{date.toString().split(" 202")[0]}</span>
     }
 
     const handleOpenEventPage = (item: EventDetails) => {
