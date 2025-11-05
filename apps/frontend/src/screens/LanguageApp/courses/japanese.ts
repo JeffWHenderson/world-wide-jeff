@@ -1,4 +1,4 @@
-import { CourseLevel } from "@jeff/common";
+import { CourseLevel } from "../LanguageTypes";
 
 export const japaneseLevel0: CourseLevel = {
     section: "level 0",

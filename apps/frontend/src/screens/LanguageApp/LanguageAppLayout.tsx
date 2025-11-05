@@ -1,6 +1,6 @@
 import { Outlet, Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { AvailableLanguages } from "@jeff/common";
+import { AvailableLanguages } from "./LanguageTypes";
 
 const LanguageAppLayout = () => {
     const navigator = useNavigate()
