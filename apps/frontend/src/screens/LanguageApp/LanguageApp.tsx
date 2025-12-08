@@ -6,14 +6,16 @@ import { useEffect, useState } from "react";
 
 // TODO: add CSS Eventually
 const storyCardStyles = {
-    backgroundColor: 'red',
-    marginRight: "3px"
+    backgroundColor: 'lightGrey',
+    color: 'black',
+    marginRight: "7px"
 }
 
 // TODO: add CSS Eventually
 const flashCardStyles = {
-    backgroundColor: 'orange',
-    marginRight: "3px"
+    backgroundColor: 'darkGrey',
+    color: 'black',
+    marginRight: "7px"
 }
 
 const LanguageLearningApp = () => {
@@ -44,14 +46,20 @@ const LanguageLearningApp = () => {
 
     return (
         <>
-            <h1>Leaning in {language}</h1>
-            <p>{course[0].section}</p>
-            <div style={{ display: "flex", marginTop: '4px' }}>
-                {
-                    course[0].lessons.map(lesson => (
-                        <button style={lesson.type === "story" ? storyCardStyles : flashCardStyles} onClick={() => handleSelectStory(lesson.type, lesson)} >{lesson.name}</button>
-                    ))
-                }
+            <div style={{ maxWidth: '100vw' }}>
+                <h1>Leaning in {language}</h1>
+                <p>{course[0].section}</p>
+                <div style={{ padding: '10px', display: "flex", marginTop: '4px', overflowY: 'auto' }}>
+                    {
+                        course[0].lessons.map(lesson => (
+                            <button
+                                style={lesson.type === "story" ? storyCardStyles : flashCardStyles}
+                                onClick={() => handleSelectStory(lesson.type, lesson)}>
+                                {lesson.name}
+                            </button>
+                        ))
+                    }
+                </div>
             </div>
         </>
     )
