@@ -1,0 +1,26 @@
+{
+    "name": "intro lesson",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "targetLanguage": "Hola todo el mundo.",
+            "baseLanguage": "Hello World.",
+            "grammar": {
+                "highlight": "todo el mundo",
+                "note": "literal: all the world"
+            }
+        },
+        {
+            "targetLanguage": "Bienbenidos a mi applicacion",
+            "baseLanguage": "welcome to my app",
+            "grammar": {
+                "highlight": "applicacion",
+                "note": "inflection on the i"
+            }
+        },
+        {
+            "targetLanguage": "soy un enginero",
+            "baseLanguage": "I'm an engineer"
+        }
+    ]
+}

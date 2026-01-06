@@ -1,0 +1,16 @@
+{
+    "course_name": "chinese - Mandarin",
+    "course_levels": [
+        {
+            "level_id": "00",
+            "level_name": "Starting off right",
+            "lessons": [
+                {
+                    "filename": "tbd.json",
+                    "name": "tbd",
+                    "type": "flashcards"
+                }
+            ]
+        }
+    ]
+}

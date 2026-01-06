@@ -1,6 +1,4 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { LessonV1 } from "./LanguageTypes";
-import { courses } from "./courses/courses"; // TODO: obviously this will come from backend
 import { useEffect, useState } from "react";
 
 
@@ -21,45 +19,43 @@ const flashCardStyles = {
 const LanguageLearningApp = () => {
     const { language } = useParams();
     const navigator = useNavigate()
-    const [course, setCourse] = useState(courses.Chinese);
+    const [course, setCourse] = useState<any | null>(null);
 
     useEffect(() => {
-        if (language === "Spanish") { // TODO: obviously this will come from backend
-            setCourse(courses.Spanish)
-        }
-        if (language === "Japanese") {
-            setCourse(courses.Japanese)
-        }
-        if (language === "Chinese") {
-            setCourse(courses.Chinese)
-        }
+        fetch(`/${language}/course.json`)
+            .then(response => response.json())
+            .then(data => setCourse(data))
+            .catch(error => console.error('Error fetching data:', error));
     }, [language])
 
 
-    function handleSelectStory(lessonType: string, lesson?: LessonV1) {
+    function handleSelectStory(lessonType: string, lesson?: any) {
+        // TODO: this looks like I just need to not do typos and I can lose this conditional
         if (lessonType === 'flashcard' || lessonType === 'flashcards') {
-            navigator(`flashcards`, { state: { lesson: lesson, selectedLanguage: language } })
+            navigator(`flashcards/${lesson?.filename}`)
         } else {
-            navigator(`story`, { state: { lesson: lesson, selectedLanguage: language } })
+            navigator(`story/${lesson?.filename}`)
         }
     }
 
     return (
         <>
             <div style={{ maxWidth: '100vw' }}>
-                <h1>Leaning in {language}</h1>
-                <p>{course[0].section}</p>
-                <div style={{ padding: '10px', display: "flex", marginTop: '4px', overflowY: 'auto' }}>
-                    {
-                        course[0].lessons.map(lesson => (
-                            <button
-                                style={lesson.type === "story" ? storyCardStyles : flashCardStyles}
-                                onClick={() => handleSelectStory(lesson.type, lesson)}>
-                                {lesson.name}
-                            </button>
-                        ))
-                    }
-                </div>
+                <h1>{course?.course_name}</h1>
+                {course?.course_levels.map((level: any) => (
+                    <div>
+                        <p>{level.level_name}</p>
+                        <div style={{ padding: '10px', display: "flex", marginTop: '4px', overflowY: 'auto' }}>
+                            {level.lessons.map((lesson: any) => (
+                                <button
+                                    style={lesson.type === "story" ? storyCardStyles : flashCardStyles}
+                                    onClick={() => handleSelectStory(lesson.type, lesson)}>
+                                    {lesson.name}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
         </>
     )

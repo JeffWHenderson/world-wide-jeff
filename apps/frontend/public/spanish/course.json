@@ -1,0 +1,27 @@
+{
+    "course_name": "spanish (Latin American)",
+    "course_levels": [
+        {
+            "level_id": "00",
+            "level_name": "Starting off right",
+            "lessons": [
+                {
+                    "filename": "00_to_be.json",
+                    "name": "Ser & Estar",
+                    "type": "flashcards"
+                }
+            ]
+        },
+        {
+            "level_id": "01",
+            "level_name": "Forming a base",
+            "lessons": [
+                {
+                    "filename": "01_to_be.json",
+                    "name": "Ser & Estar 2",
+                    "type": "flashcards"
+                }
+            ]
+        }
+    ]
+}

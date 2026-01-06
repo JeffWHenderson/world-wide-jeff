@@ -9,8 +9,8 @@ const Conversation = (props: any) => {
     const { lessonDTO } = props
     const [index, setIndex] = useState(0)
     const [isLeftPanel, setIsLeftPanel] = useState(true)
-    const [lang] = useState("Spanish")
-    const [vocabList] = useState(lessonDTO.Spanish)
+    const [lang] = useState("spanish")
+    const [vocabList] = useState(lessonDTO.spanish)
 
     function speak(phrase: string) {
         window.speechSynthesis.cancel()
@@ -19,28 +19,28 @@ const Conversation = (props: any) => {
 
         let selectedVoice: any = voices[0]
 
-        if (lang == "Spanish") {
+        if (lang == "spanish") {
             selectedVoice = voices.find((voice) => {
                 return voice.name.toLowerCase() == "paulina"
             });
         }
-        if (lang == "Chinese") {
+        if (lang == "chinese") {
             let found = voices.find((voice) => {
                 return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
             });
             selectedVoice = found
         }
-        if (lang == "Japanese") {
+        if (lang == "japanese") {
             selectedVoice = voices.find((voice) => {
                 return voice.name.toLocaleLowerCase() == "kyoko"
             });
         }
-        if (lang == "Arabic") {
+        if (lang == "arabic") {
             selectedVoice = voices.find((voice) => {
                 return voice.lang == "ar-SA"
             });
         }
-        if (lang == "English") {
+        if (lang == "english") {
             selectedVoice = voices.find(i => i.name.toLowerCase() == "samantha")
         }
 
@@ -71,12 +71,12 @@ const Conversation = (props: any) => {
         //     speak(translations[cardNumber + 1][autoPlayLanguage], autoPlayLanguage)
         // }
     }
-    console.log(lessonDTO.Spanish[0])
+    console.log(lessonDTO.spanish[0])
 
     return <>
         <div onClick={() => handleClick()} style={{ backgroundColor: 'white', padding: '10px' }}>
-            {isLeftPanel ? <div className="speech-bubble-left">{lessonDTO.Spanish[0]}</div> : null}
-            {!isLeftPanel ? <div className="speech-bubble-right">{lessonDTO.Spanish[1]}</div> : null}
+            {isLeftPanel ? <div className="speech-bubble-left">{lessonDTO.spanish[0]}</div> : null}
+            {!isLeftPanel ? <div className="speech-bubble-right">{lessonDTO.spanish[1]}</div> : null}
             <div style={container}>
                 <div style={{ margin: '10px' }}>
                     <div style={redSquare}></div>

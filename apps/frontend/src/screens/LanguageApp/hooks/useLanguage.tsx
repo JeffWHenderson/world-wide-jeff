@@ -19,12 +19,12 @@ const useLanguage = (selectedLanguage: string) => {
         setTimeout(waitForBrowser, 1000)
     }, [])
 
-    if (selectedLanguage == "Spanish") {
+    if (selectedLanguage == "spanish") {
         selectedVoice = voices.find((voice) => {
             return voice.name.toLowerCase() == "paulina"
         });
     }
-    if (selectedLanguage == "Chinese") {
+    if (selectedLanguage == "chinese") {
         let found = voices.find((voice) => {
             return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
         });
@@ -35,17 +35,17 @@ const useLanguage = (selectedLanguage: string) => {
         }
         selectedVoice = found
     }
-    if (selectedLanguage == "Japanese") {
+    if (selectedLanguage == "japanese") {
         selectedVoice = voices.find((voice) => {
             return voice.name.toLocaleLowerCase() == "kyoko"
         });
     }
-    if (selectedLanguage == "Arabic") {
+    if (selectedLanguage == "arabic") {
         selectedVoice = voices.find((voice) => {
             return voice.lang.toLowerCase() == "ar-sa"
         });
     }
-    if (selectedLanguage == "English") {
+    if (selectedLanguage == "english") {
         selectedVoice = voices.find(i => i.name.toLowerCase() == "samantha")
     }
 

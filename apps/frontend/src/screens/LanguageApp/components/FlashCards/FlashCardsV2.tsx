@@ -1,20 +1,26 @@
 import { useEffect, useState } from "react";
 import useLanguage from "../../hooks/useLanguage";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const FlashCardsV2 = () => {
-    const location = useLocation();
-    const { lesson, selectedLanguage } = location.state || {};
+    const { language, lessonId } = useParams();
+    const [lesson, setLesson] = useState<any>(null)
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
-    const [cardQueue] = useState<any[]>(lesson.sentences)
     const [autoplay, setAutoPlay] = useState(false)
-    const [voice] = useLanguage(selectedLanguage)
-    const [englishVoice] = useLanguage("English")
+    const [voice] = useLanguage(language as string)
+    const [englishVoice] = useLanguage("english")
     const [readFront, setReadFront] = useState(true)
     const [readBack, setReadBack] = useState(true)
 
-    // play after card number is updated
+    useEffect(() => {
+        fetch(`/${language?.toLowerCase()}/00/${lessonId}`) // TODO: remove hardcoding
+            .then(res => res.json())
+            .then(data => { console.log(data); setLesson(data) })
+            .catch(err => console.error(err))
+    }, [])
+
+    // // play after card number is updated
     useEffect(() => {
         if (readFront && readBack) {
             read(true) // do in english
@@ -33,20 +39,23 @@ const FlashCardsV2 = () => {
     }, [cardNumber, autoplay])
 
     const nextCard = (indexChange: number = 1) => {
-        if (cardQueue.length - 1 > cardNumber) {
+        if (lesson.sentences.length - 1 > cardNumber) {
             setCardNumber(cardNumber + indexChange)
         } else {
-            setCardNumber(1) // skip the title card
+            setCardNumber(0) // skip the title card
         }
     }
 
     const read = (isEnglish: boolean = false) => {
-        const speechUtterance = new SpeechSynthesisUtterance()
-        window.speechSynthesis.cancel()
-        speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
-        speechUtterance.rate = speakingRate
-        speechUtterance.text = cardQueue[cardNumber][isEnglish ? "baseLanguage" : "targetLanguage"];
-        window.speechSynthesis.speak(speechUtterance);
+        if (lesson) {
+            const speechUtterance = new SpeechSynthesisUtterance()
+            window.speechSynthesis.cancel()
+            speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
+            speechUtterance.rate = speakingRate
+            speechUtterance.text = lesson?.sentences[cardNumber][isEnglish ? "baseLanguage" : "targetLanguage"];
+            window.speechSynthesis.speak(speechUtterance);
+        }
+        // Conditional is so we don't get an immediate readout before the lesson loads.. we could clean this up a lot still
     }
 
     return <div style={{ height: '82%', margin: '0% 3% 0% 3%', justifyContent: 'center' }}>
@@ -76,31 +85,32 @@ const FlashCardsV2 = () => {
                 Autoplay
             </label>
         </div>
-        <div style={{ height: '70%', justifyContent: 'center' }}>
-            <div>
-                <div style={{ width: '100%' }}>
-                    {cardQueue[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
-                    <p>{cardQueue[cardNumber].baseLanguage}</p>
+        {
+            lesson &&
+            <div style={{ height: '70%', justifyContent: 'center' }}>
+                <div>
+                    <div style={{ width: '100%' }}>
+                        {lesson.sentences[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
+                        <p>{lesson.sentences[cardNumber].baseLanguage}</p>
+                    </div>
+                    <div style={{ fontSize: '2em' }}>
+                        <div style={{ borderBottom: "1px solid grey" }}></div>
+                        {lesson.sentences[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{lesson.sentences[cardNumber]["romanized"]}</p> : null}
+                        <div>{lesson.sentences[cardNumber].targetLanguage}</div>
+                    </div>
                 </div>
-                <div style={{ fontSize: '2em' }}>
-                    <div style={{ borderBottom: "1px solid grey" }}></div>
-                    {cardQueue[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{cardQueue[cardNumber]["romanized"]}</p> : null}
-                    <div>{cardQueue[cardNumber].targetLanguage}</div>
+
+                <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', marginBottom: '10px' }}>
+                    <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
+                    <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
                 </div>
-
-            </div>
-        </div >
-
-        <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', marginBottom: '10px' }}>
-            <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
-            <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
-        </div>
-        <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between' }}>
-            <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(-1)}>back</button>
-            <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard()}>Next</button>
-        </div>
-    </div >
-
+                <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between' }}>
+                    <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(-1)}>back</button>
+                    <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard()}>next</button>
+                </div>
+            </div >
+        }
+    </div>
 }
 
 export default FlashCardsV2;
