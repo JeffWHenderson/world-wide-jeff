@@ -25,7 +25,7 @@ const StoryReader = () => {
     speechUtterance.voice = voice as SpeechSynthesisVoice
     // TODO: ADD RATE SLIDER
     speechUtterance.rate = speakingRate
-    speechUtterance.text = lesson.sentences[counter].targetLanguage // HARDCODED
+    speechUtterance.text = lesson.sentences[counter].target_language // HARDCODED
     window.speechSynthesis.speak(speechUtterance);
 
     if (lesson.sentences.length > counter + 1) {
@@ -41,16 +41,16 @@ const StoryReader = () => {
   function displaySentence(phrase: Expression) {
     if (phrase.grammar) {
       const regex = new RegExp(phrase.grammar.highlight)
-      const highlightedText = phrase.targetLanguage.replace(regex, match => `<span style="color: red;"}>${match}</span>`);
+      const highlightedText = phrase.target_language.replace(regex, match => `<span style="color: red;"}>${match}</span>`);
 
       return <div style={{ backgroundColor: "grey", borderRadius: '3' }}>
         <p dangerouslySetInnerHTML={{ __html: highlightedText }} />
-        <p>{phrase.baseLanguage}</p>
+        <p>{phrase.base_language}</p>
       </div>
     } else {
       return <div style={{ backgroundColor: "grey", borderRadius: '3' }}>
-        <p>{phrase.targetLanguage}</p>
-        <p>{phrase.baseLanguage}</p>
+        <p>{phrase.target_language}</p>
+        <p>{phrase.base_language}</p>
       </div>
     }
   }
@@ -62,13 +62,13 @@ const StoryReader = () => {
     <button onClick={() => read()} >speak</button >
     {
       lesson.sentences.map((sentence: Expression) => (
-        <div onMouseEnter={() => setShowPopup(sentence.targetLanguage)}
+        <div onMouseEnter={() => setShowPopup(sentence.target_language)}
           onMouseLeave={() => setShowPopup('false')}
           style={{ position: 'relative' }}
         >
           {displaySentence(sentence)}
 
-          {showPopup == sentence.targetLanguage && (
+          {showPopup == sentence.target_language && (
             <div
               style={{
                 position: 'absolute',
@@ -81,7 +81,7 @@ const StoryReader = () => {
                 zIndex: 10, // Ensure it appears above other content
               }}
             >
-              <div>{sentence.baseLanguage}</div>
+              <div>{sentence.base_language}</div>
               {sentence.grammar?.note}
             </div>
           )}

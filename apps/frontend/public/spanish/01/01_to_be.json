@@ -3,24 +3,24 @@
     "type": "story",
     "sentences": [
         {
-            "targetLanguage": "Hola todo el mundo.",
-            "baseLanguage": "Hello World.",
+            "target_language": "Hola todo el mundo.",
+            "base_language": "Hello World.",
             "grammar": {
                 "highlight": "todo el mundo",
                 "note": "literal: all the world"
             }
         },
         {
-            "targetLanguage": "Bienbenidos a mi applicacion",
-            "baseLanguage": "welcome to my app",
+            "target_language": "Bienbenidos a mi applicacion",
+            "base_language": "welcome to my app",
             "grammar": {
                 "highlight": "applicacion",
                 "note": "inflection on the i"
             }
         },
         {
-            "targetLanguage": "soy un enginero",
-            "baseLanguage": "I'm an engineer"
+            "target_language": "soy un enginero",
+            "base_language": "I'm an engineer"
         }
     ]
 }

@@ -10,8 +10,8 @@ export type LessonV1 = {
 }
 
 export type Expression = {
-    targetLanguage: string;
-    baseLanguage: string;
+    target_language: string;
+    base_language: string;
     romanized?: string;
     grammar?: Grammar;
 }

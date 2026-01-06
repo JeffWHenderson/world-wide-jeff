@@ -3,148 +3,148 @@
     "type": "flashcards",
     "sentences": [
         {
-            "targetLanguage": "-人々-",
-            "baseLanguage": "-people-",
+            "target_language": "-人々-",
+            "base_language": "-people-",
             "romanized": "-Hitobito-"
         },
         {
-            "targetLanguage": "私は人間です",
-            "baseLanguage": "i am a person",
+            "target_language": "私は人間です",
+            "base_language": "i am a person",
             "romanized": "watashi wa ningen desu"
         },
         {
-            "targetLanguage": "私は男です",
-            "baseLanguage": "I am a man",
+            "target_language": "私は男です",
+            "base_language": "I am a man",
             "romanized": "watashi wa otoko desu"
         },
         {
-            "targetLanguage": "私は女性です",
-            "baseLanguage": "I am a woman",
+            "target_language": "私は女性です",
+            "base_language": "I am a woman",
             "romanized": "watashi wa josei desu"
         },
         {
-            "targetLanguage": "私は子供です",
-            "baseLanguage": "I am a child",
+            "target_language": "私は子供です",
+            "base_language": "I am a child",
             "romanized": "watashi wa kodomo desu"
         },
         {
-            "targetLanguage": "私は男の子です",
-            "baseLanguage": "i am a boy",
+            "target_language": "私は男の子です",
+            "base_language": "i am a boy",
             "romanized": "watashi wa otokonoko desu"
         },
         {
-            "targetLanguage": "私は女の子です",
-            "baseLanguage": "i am a girl",
+            "target_language": "私は女の子です",
+            "base_language": "i am a girl",
             "romanized": "watashi wa onnanoko desu"
         },
         {
-            "targetLanguage": "私は親です",
-            "baseLanguage": "i am a parent",
+            "target_language": "私は親です",
+            "base_language": "i am a parent",
             "romanized": "watashi wa oya desu"
         },
         {
-            "targetLanguage": "彼女は母親だ",
-            "baseLanguage": "she is a mother",
+            "target_language": "彼女は母親だ",
+            "base_language": "she is a mother",
             "romanized": "kanojo wa hahaoya da"
         },
         {
-            "targetLanguage": "彼は父親だ",
-            "baseLanguage": "he is a father",
+            "target_language": "彼は父親だ",
+            "base_language": "he is a father",
             "romanized": "kare wa chichioya da"
         },
         {
-            "targetLanguage": "彼は友人です",
-            "baseLanguage": "he is a friend",
+            "target_language": "彼は友人です",
+            "base_language": "he is a friend",
             "romanized": "kare wa yūjin desu"
         },
         {
-            "targetLanguage": "彼は息子です",
-            "baseLanguage": "he is a son",
+            "target_language": "彼は息子です",
+            "base_language": "he is a son",
             "romanized": "kare wa musuko desu"
         },
         {
-            "targetLanguage": "彼女は娘です",
-            "baseLanguage": "she is a daughter",
+            "target_language": "彼女は娘です",
+            "base_language": "she is a daughter",
             "romanized": "kanojo wa musume desu"
         },
         {
-            "targetLanguage": "彼は兄弟です",
-            "baseLanguage": "he is a brother",
+            "target_language": "彼は兄弟です",
+            "base_language": "he is a brother",
             "romanized": "kare wa kyōdai desu"
         },
         {
-            "targetLanguage": "彼女は妹です",
-            "baseLanguage": "she is a sister",
+            "target_language": "彼女は妹です",
+            "base_language": "she is a sister",
             "romanized": "kanojo wa imōto desu"
         },
         {
-            "targetLanguage": "彼は夫です",
-            "baseLanguage": "he is a husband",
+            "target_language": "彼は夫です",
+            "base_language": "he is a husband",
             "romanized": "kare wa otto desu"
         },
         {
-            "targetLanguage": "彼女は妻です",
-            "baseLanguage": "she is a wife",
+            "target_language": "彼女は妻です",
+            "base_language": "she is a wife",
             "romanized": "kanojo wa tsuma desu"
         },
         {
-            "targetLanguage": "彼は王だ",
-            "baseLanguage": "he is a king",
+            "target_language": "彼は王だ",
+            "base_language": "he is a king",
             "romanized": "kare wa ō da"
         },
         {
-            "targetLanguage": "彼女は女王だ",
-            "baseLanguage": "she is a queen",
+            "target_language": "彼女は女王だ",
+            "base_language": "she is a queen",
             "romanized": "kanojo wa jōu da"
         },
         {
-            "targetLanguage": "私は教師です",
-            "baseLanguage": "i am a teacher",
+            "target_language": "私は教師です",
+            "base_language": "i am a teacher",
             "romanized": "watashi wa kyōshi desu"
         },
         {
-            "targetLanguage": "私は学生です",
-            "baseLanguage": "i am a student",
+            "target_language": "私は学生です",
+            "base_language": "i am a student",
             "romanized": "watashi wa gakusei desu"
         },
         {
-            "targetLanguage": "私は医者です",
-            "baseLanguage": "i am a doctor",
+            "target_language": "私は医者です",
+            "base_language": "i am a doctor",
             "romanized": "watashi wa isha desu"
         },
         {
-            "targetLanguage": "私は弁護士です",
-            "baseLanguage": "i am a lawyer",
+            "target_language": "私は弁護士です",
+            "base_language": "i am a lawyer",
             "romanized": "watashi wa bengoshi desu"
         },
         {
-            "targetLanguage": "上司が嫌いです",
-            "baseLanguage": "i hate my boss",
+            "target_language": "上司が嫌いです",
+            "base_language": "i hate my boss",
             "romanized": "jōshi ga kirai desu"
         },
         {
-            "targetLanguage": "あなたは労働者です",
-            "baseLanguage": "you are a worker",
+            "target_language": "あなたは労働者です",
+            "base_language": "you are a worker",
             "romanized": "anata wa rōdō mono desu"
         },
         {
-            "targetLanguage": "あなたは顧客です",
-            "baseLanguage": "you are a customer",
+            "target_language": "あなたは顧客です",
+            "base_language": "you are a customer",
             "romanized": "anata wa kokyaku desu"
         },
         {
-            "targetLanguage": "あなたは私の隣人です",
-            "baseLanguage": "you are my neighbor",
+            "target_language": "あなたは私の隣人です",
+            "base_language": "you are my neighbor",
             "romanized": "anata wa watashi no rinjin desu"
         },
         {
-            "targetLanguage": "私たちは家族です",
-            "baseLanguage": "we are a family",
+            "target_language": "私たちは家族です",
+            "base_language": "we are a family",
             "romanized": "watashitachi wa kazoku desu"
         },
         {
-            "targetLanguage": "私たちは人間です",
-            "baseLanguage": "we are people",
+            "target_language": "私たちは人間です",
+            "base_language": "we are people",
             "romanized": "watashitachi wa ningen desu"
         }
     ]
