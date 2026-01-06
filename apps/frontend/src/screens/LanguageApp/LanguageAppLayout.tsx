@@ -26,13 +26,13 @@ const LanguageAppLayout = () => {
                     </nav>
                 </nav>
                 <div style={{ marginLeft: '8px' }}>
-                    <select id="language-select" onChange={(e: any) => goToLanguagePage(e.target.value)}>
+                    <select id="language-select" defaultValue={language} onChange={(e: any) => goToLanguagePage(e.target.value)}>
                         {
                             Object.values(AvailableLanguages).map(option => (
                                 language === option ?
-                                    <option value={option} selected>{option}</option>
+                                    <option key={option} value={option}>{option}</option>
                                     :
-                                    <option value={option}>{option}</option>
+                                    <option key={option} value={option}>{option}</option>
                             ))
                         }
                     </select>

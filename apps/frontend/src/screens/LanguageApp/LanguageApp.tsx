@@ -43,11 +43,12 @@ const LanguageLearningApp = () => {
             <div style={{ maxWidth: '100vw' }}>
                 <h1>{course?.course_name}</h1>
                 {course?.course_levels.map((level: any) => (
-                    <div>
+                    <div key={level.level_id}>
                         <p>{level.level_name}</p>
                         <div style={{ padding: '10px', display: "flex", marginTop: '4px', overflowY: 'auto' }}>
                             {level.lessons.map((lesson: any) => (
                                 <button
+                                    key={lesson.filename}
                                     style={lesson.type === "story" ? storyCardStyles : flashCardStyles}
                                     onClick={() => handleSelectStory(lesson.type, lesson)}>
                                     {lesson.name}
