@@ -3,7 +3,7 @@ import useLanguage from "../../hooks/useLanguage";
 import { useParams } from "react-router-dom";
 
 const FlashCardsV2 = () => {
-    const { language, lessonId, section } = useParams();
+    const { language, lessonId } = useParams();
     const [lesson, setLesson] = useState<any>(null)
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
