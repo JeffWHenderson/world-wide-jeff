@@ -1,0 +1,46 @@
+{
+    "name": "animals",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "target_language": "-Animales-",
+            "base_language": "-Animals-"
+        },
+        {
+            "target_language": "Eso es un animal",
+            "base_language": "that is an animal"
+        },
+        {
+            "target_language": "Eso es un perro",
+            "base_language": "that is a dog"
+        },
+        {
+            "target_language": "Eso es un gato",
+            "base_language": "that is a cat"
+        },
+        {
+            "target_language": "Eso es un pájaro",
+            "base_language": "that is a bird"
+        },
+        {
+            "target_language": "Esto es un pez",
+            "base_language": "this is a fish"
+        },
+        {
+            "target_language": "Este es un caballo",
+            "base_language": "this is a horse"
+        },
+        {
+            "target_language": "Esta es una vaca",
+            "base_language": "this is a cow"
+        },
+        {
+            "target_language": "Este es un oso",
+            "base_language": "this is a bear"
+        },
+        {
+            "target_language": "Este es un león",
+            "base_language": "this is a lion"
+        }
+    ]
+}

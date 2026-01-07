@@ -1,0 +1,10 @@
+{
+    "name": "people",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "target_language": "-gente-",
+            "base_language": "-people-"
+        }
+    ]
+}

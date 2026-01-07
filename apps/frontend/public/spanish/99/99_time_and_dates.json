@@ -1,0 +1,70 @@
+{
+    "name": "time and dates",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "target_language": "-Hora y fechas-",
+            "base_language": "-Time & Dates-"
+        },
+        {
+            "target_language": "último tiempo",
+            "base_language": "last time"
+        },
+        {
+            "target_language": "el año pasado",
+            "base_language": "last year"
+        },
+        {
+            "target_language": "mes pasado",
+            "base_language": "last month"
+        },
+        {
+            "target_language": "la semana pasada",
+            "base_language": "last week"
+        },
+        {
+            "target_language": "en un día",
+            "base_language": "in one day"
+        },
+        {
+            "target_language": "en una hora",
+            "base_language": "in one hour"
+        },
+        {
+            "target_language": "en un minuto",
+            "base_language": "in one minute"
+        },
+        {
+            "target_language": "en un segundo",
+            "base_language": "in one second"
+        },
+        {
+            "target_language": "por la mañana",
+            "base_language": "in the morning"
+        },
+        {
+            "target_language": "por la tarde",
+            "base_language": "in the afternoon"
+        },
+        {
+            "target_language": "por la tarde",
+            "base_language": "in the evening"
+        },
+        {
+            "target_language": "anoche",
+            "base_language": "last night"
+        },
+        {
+            "target_language": "hoy",
+            "base_language": "today"
+        },
+        {
+            "target_language": "mañana",
+            "base_language": "tomorrow"
+        },
+        {
+            "target_language": "ayer",
+            "base_language": "yesterday"
+        }
+    ]
+}

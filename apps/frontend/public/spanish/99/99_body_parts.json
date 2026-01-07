@@ -1,0 +1,62 @@
+{
+    "name": "body parts",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "target_language": "-Partes del cuerpo-",
+            "base_language": "-Body Parts-"
+        },
+        {
+            "target_language": "mira mi cuerpo",
+            "base_language": "look at my body"
+        },
+        {
+            "target_language": "mira mi cabeza",
+            "base_language": "look at my head"
+        },
+        {
+            "target_language": "mira mi cara",
+            "base_language": "look at my face"
+        },
+        {
+            "target_language": "mira mi ojo",
+            "base_language": "look at my eye"
+        },
+        {
+            "target_language": "mira mi oreja",
+            "base_language": "look at my ear"
+        },
+        {
+            "target_language": "mira mi nariz",
+            "base_language": "look at my nose"
+        },
+        {
+            "target_language": "mira su boca",
+            "base_language": "look at her mouth"
+        },
+        {
+            "target_language": "mira su mano",
+            "base_language": "look at her hand"
+        },
+        {
+            "target_language": "mira su brazo",
+            "base_language": "look at her arm"
+        },
+        {
+            "target_language": "mira su pierna",
+            "base_language": "look at her leg"
+        },
+        {
+            "target_language": "mira su pie",
+            "base_language": "look at his foot"
+        },
+        {
+            "target_language": "mira su corazón",
+            "base_language": "look at his heart"
+        },
+        {
+            "target_language": "mira su sangre",
+            "base_language": "look at his blood"
+        }
+    ]
+}

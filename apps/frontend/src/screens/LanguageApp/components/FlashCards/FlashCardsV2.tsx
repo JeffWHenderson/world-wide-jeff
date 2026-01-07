@@ -3,7 +3,7 @@ import useLanguage from "../../hooks/useLanguage";
 import { useParams } from "react-router-dom";
 
 const FlashCardsV2 = () => {
-    const { language, lessonId } = useParams();
+    const { language, lessonId, section } = useParams();
     const [lesson, setLesson] = useState<any>(null)
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
@@ -14,7 +14,7 @@ const FlashCardsV2 = () => {
     const [readBack, setReadBack] = useState(true)
 
     useEffect(() => {
-        fetch(`/${language?.toLowerCase()}/00/${lessonId}`) // TODO: remove hardcoding
+        fetch(`/${language?.toLowerCase()}/${lessonId?.split("_")[0]}/${lessonId}`)
             .then(res => res.json())
             .then(data => { console.log(data); setLesson(data) })
             .catch(err => console.error(err))

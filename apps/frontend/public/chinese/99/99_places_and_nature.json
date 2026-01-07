@@ -1,0 +1,151 @@
+{
+    "name": "places and nature",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "target_language": "-地点与自然-",
+            "base_language": "-Places & Nature-",
+            "romanized": "- dìdiǎn yǔ zìrán -"
+        },
+        {
+            "target_language": "这个地方在哪里",
+            "base_language": "where is the place",
+            "romanized": "zhège dìfāng zài nǎlǐ"
+        },
+        {
+            "target_language": "世界在哪里",
+            "base_language": "where is the world",
+            "romanized": "shìjiè zài nǎlǐ"
+        },
+        {
+            "target_language": "这个国家在哪里",
+            "base_language": "where is the country",
+            "romanized": "zhège guójiā zài nǎlǐ"
+        },
+        {
+            "target_language": "城市在哪里",
+            "base_language": "where is the city",
+            "romanized": "chéngshì zài nǎlǐ"
+        },
+        {
+            "target_language": "小镇在哪里",
+            "base_language": "where is the town",
+            "romanized": "xiǎozhèn zài nǎlǐ"
+        },
+        {
+            "target_language": "房子在哪里",
+            "base_language": "where is the house",
+            "romanized": "fángzi zài nǎlǐ"
+        },
+        {
+            "target_language": "家在哪里",
+            "base_language": "where is the home",
+            "romanized": "jiā zài nǎlǐ"
+        },
+        {
+            "target_language": "我在房间里",
+            "base_language": "i am in the room",
+            "romanized": "wǒ zài fángjiān lǐ"
+        },
+        {
+            "target_language": "我在学校",
+            "base_language": "i am in the school",
+            "romanized": "wǒ zài xuéxiào"
+        },
+        {
+            "target_language": "我在办公室",
+            "base_language": "i am in the office",
+            "romanized": "wǒ zài bàngōngshì"
+        },
+        {
+            "target_language": "我在商店",
+            "base_language": "i am in the store",
+            "romanized": "wǒ zài shāngdiàn"
+        },
+        {
+            "target_language": "我在公园",
+            "base_language": "i am in the park",
+            "romanized": "wǒ zài gōngyuán"
+        },
+        {
+            "target_language": "他在街上",
+            "base_language": "he is in the street",
+            "romanized": "tā zài jiēshang"
+        },
+        {
+            "target_language": "他在路上",
+            "base_language": "he in on the road",
+            "romanized": "tā zài lùshang"
+        },
+        {
+            "target_language": "他在河里",
+            "base_language": "he is in the river",
+            "romanized": "tā zài hélǐ"
+        },
+        {
+            "target_language": "他在山上",
+            "base_language": "he is on a mountain",
+            "romanized": "tā zài shānshàng"
+        },
+        {
+            "target_language": "她在一片森林里",
+            "base_language": "she is in aforest",
+            "romanized": "tā zài yīpiàn sēnlín lǐ"
+        },
+        {
+            "target_language": "她在海里",
+            "base_language": "she is in the sea",
+            "romanized": "tā zài hǎilǐ"
+        },
+        {
+            "target_language": "她在海洋里",
+            "base_language": "she is in an ocean",
+            "romanized": "tā zài hǎiyáng lǐ"
+        },
+        {
+            "target_language": "她在湖里",
+            "base_language": "she is in a lake",
+            "romanized": "tā zài húlǐ"
+        },
+        {
+            "target_language": "太阳",
+            "base_language": "the sun",
+            "romanized": "tàiyáng"
+        },
+        {
+            "target_language": "月亮",
+            "base_language": "the moon",
+            "romanized": "yuèliang"
+        },
+        {
+            "target_language": "一个大明星",
+            "base_language": "a big star",
+            "romanized": "yīgè dà míngxīng"
+        },
+        {
+            "target_language": "天空",
+            "base_language": "the sky",
+            "romanized": "tiānkōng"
+        },
+        {
+            "target_language": "地球",
+            "base_language": "the earth",
+            "romanized": "dìqiú"
+        },
+        {
+            "target_language": "一棵小树",
+            "base_language": "a small tree",
+            "romanized": "yīkē xiǎoshù"
+        },
+        {
+            "target_language": "一朵小花",
+            "base_language": "a small flower",
+            "romanized": "yīduǒ xiǎohuā"
+        },
+        {
+            "target_language": "草",
+            "base_language": "the grass",
+            "romanized": "cǎo"
+        }
+    ]
+}

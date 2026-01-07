@@ -1,0 +1,130 @@
+{
+    "name": "other common nouns",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "target_language": "-Otros sustantivos comunes-",
+            "base_language": "-Other Common Nouns-"
+        },
+        {
+            "target_language": "el aire",
+            "base_language": "the air"
+        },
+        {
+            "target_language": "la luz",
+            "base_language": "the light"
+        },
+        {
+            "target_language": "la oscuridad",
+            "base_language": "the dark"
+        },
+        {
+            "target_language": "el color",
+            "base_language": "the color"
+        },
+        {
+            "target_language": "el sonido",
+            "base_language": "the sound"
+        },
+        {
+            "target_language": "un gran incendio",
+            "base_language": "a big fire"
+        },
+        {
+            "target_language": "una gran voz",
+            "base_language": "a big voice"
+        },
+        {
+            "target_language": "un panorama general",
+            "base_language": "a big picture"
+        },
+        {
+            "target_language": "una pequeña película",
+            "base_language": "a small movie"
+        },
+        {
+            "target_language": "un pequeño juego",
+            "base_language": "a small game"
+        },
+        {
+            "target_language": "una pequeña pelota",
+            "base_language": "a small ball"
+        },
+        {
+            "target_language": "un pequeño juguete",
+            "base_language": "a small toy"
+        },
+        {
+            "target_language": "un pequeño regalo",
+            "base_language": "a small gift"
+        },
+        {
+            "target_language": "una fiesta muy grande",
+            "base_language": "a very big party"
+        },
+        {
+            "target_language": "unas largas vacaciones",
+            "base_language": "a long holiday"
+        },
+        {
+            "target_language": "una temporada muy grande",
+            "base_language": "a very big season"
+        },
+        {
+            "target_language": "un largo invierno",
+            "base_language": "a long winter"
+        },
+        {
+            "target_language": "una larga primavera",
+            "base_language": "a long spring"
+        },
+        {
+            "target_language": "un verano corto",
+            "base_language": "a short summer"
+        },
+        {
+            "target_language": "una caída corta",
+            "base_language": "a short fall"
+        },
+        {
+            "target_language": "El clima",
+            "base_language": "the weather"
+        },
+        {
+            "target_language": "bajo la lluvia",
+            "base_language": "in the rain"
+        },
+        {
+            "target_language": "en la nieve",
+            "base_language": "in the snow"
+        },
+        {
+            "target_language": "en el aire",
+            "base_language": "in the wind"
+        },
+        {
+            "target_language": "en el calor",
+            "base_language": "in the heat"
+        },
+        {
+            "target_language": "en el frío",
+            "base_language": "in the cold"
+        },
+        {
+            "target_language": "en el espacio",
+            "base_language": "in space"
+        },
+        {
+            "target_language": "una gran máquina",
+            "base_language": "a big machine"
+        },
+        {
+            "target_language": "un gran barco",
+            "base_language": "a big ship"
+        },
+        {
+            "target_language": "un avión grande",
+            "base_language": "a big plane"
+        }
+    ]
+}

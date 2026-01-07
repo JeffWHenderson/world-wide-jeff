@@ -1,0 +1,410 @@
+{
+    "name": "pretty wonky ai list 2",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "target_language": "Yo se su nombre",
+            "base_language": "I know her name"
+        },
+        {
+            "target_language": "Su casa es grande",
+            "base_language": "Their home is big"
+        },
+        {
+            "target_language": "Es tu turno",
+            "base_language": "It is your turn"
+        },
+        {
+            "target_language": "Hombres y mujeres",
+            "base_language": "Men and women"
+        },
+        {
+            "target_language": "Niños pequeños",
+            "base_language": "Little children"
+        },
+        {
+            "target_language": "Juntos de nuevo",
+            "base_language": "Together again"
+        },
+        {
+            "target_language": "Te extraño",
+            "base_language": "I miss you"
+        },
+        {
+            "target_language": "¿Qué dices?",
+            "base_language": "what do you say?"
+        },
+        {
+            "target_language": "¿Por qué ir a algún lado?",
+            "base_language": "why go anywhere?"
+        },
+        {
+            "target_language": "¿Cómo va el trabajo?",
+            "base_language": "how is work?"
+        },
+        {
+            "target_language": "¿Quién vino a la fiesta?",
+            "base_language": "who came to the party?"
+        },
+        {
+            "target_language": "¿Quién es ella?",
+            "base_language": "Which one is she?"
+        },
+        {
+            "target_language": "Cuéntame más",
+            "base_language": "Tell me more"
+        },
+        {
+            "target_language": "Pregúntale por qué",
+            "base_language": "Ask her why"
+        },
+        {
+            "target_language": "Él así lo cree",
+            "base_language": "He thinks so"
+        },
+        {
+            "target_language": "Eso parece correcto",
+            "base_language": "that seems right"
+        },
+        {
+            "target_language": "Ella debe saberlo",
+            "base_language": "She must know"
+        },
+        {
+            "target_language": "¿Qué significa?",
+            "base_language": "What does it mean?"
+        },
+        {
+            "target_language": "me duele el cuerpo",
+            "base_language": "my body hurts"
+        },
+        {
+            "target_language": "sus amigos vinieron",
+            "base_language": "her friends came"
+        },
+        {
+            "target_language": "su hermano corre",
+            "base_language": "his brother runs"
+        },
+        {
+            "target_language": "mi hermana canta",
+            "base_language": "my sister sings"
+        },
+        {
+            "target_language": "El niño pequeño juega",
+            "base_language": "the small child plays"
+        },
+        {
+            "target_language": "Queda una persona",
+            "base_language": "one person left"
+        },
+        {
+            "target_language": "El maestro dijo",
+            "base_language": "the teacher said"
+        },
+        {
+            "target_language": "un perro grande",
+            "base_language": "a big dog"
+        },
+        {
+            "target_language": "el caballo rápido",
+            "base_language": "the fast horse"
+        },
+        {
+            "target_language": "atrapar un pez",
+            "base_language": "catch a fish"
+        },
+        {
+            "target_language": "los pájaros vuelan alto",
+            "base_language": "birds fly high"
+        },
+        {
+            "target_language": "sobre la mesa",
+            "base_language": "on the table"
+        },
+        {
+            "target_language": "abrir la puerta",
+            "base_language": "open the door"
+        },
+        {
+            "target_language": "cerrar la ventana",
+            "base_language": "close the window"
+        },
+        {
+            "target_language": "el sol caliente",
+            "base_language": "the hot sun"
+        },
+        {
+            "target_language": "sopla fuerte viento",
+            "base_language": "strong wind blows"
+        },
+        {
+            "target_language": "Cayó una fuerte lluvia",
+            "base_language": "heavy rain fell"
+        },
+        {
+            "target_language": "caminar por el bosque",
+            "base_language": "walk in the forest"
+        },
+        {
+            "target_language": "trabajar en la granja",
+            "base_language": "work on the farm"
+        },
+        {
+            "target_language": "cerca del océano",
+            "base_language": "near the ocean"
+        },
+        {
+            "target_language": "pequeña isla",
+            "base_language": "small island"
+        },
+        {
+            "target_language": "una manzana roja",
+            "base_language": "a red apple"
+        },
+        {
+            "target_language": "gato negro",
+            "base_language": "black cat"
+        },
+        {
+            "target_language": "hierba verde",
+            "base_language": "green grass"
+        },
+        {
+            "target_language": "cielo azul",
+            "base_language": "blue sky"
+        },
+        {
+            "target_language": "una caja pesada",
+            "base_language": "a heavy box"
+        },
+        {
+            "target_language": "podria(s)",
+            "base_language": "the dark night"
+        },
+        {
+            "target_language": "una manta suave",
+            "base_language": "a soft blanket"
+        },
+        {
+            "target_language": "pasaron dos horas",
+            "base_language": "two hours passed"
+        },
+        {
+            "target_language": "Es demasiado temprano en la mañana",
+            "base_language": "it is too early in the morning"
+        },
+        {
+            "target_language": "Nos vemos la semana que viene",
+            "base_language": "see you next week"
+        },
+        {
+            "target_language": "Fue un verano caluroso",
+            "base_language": "it was a hot summer"
+        },
+        {
+            "target_language": "Era un invierno frío",
+            "base_language": "it was a cold winter"
+        },
+        {
+            "target_language": "cinco pajaritos",
+            "base_language": "five little birds"
+        },
+        {
+            "target_language": "contar hasta diez",
+            "base_language": "count to ten"
+        },
+        {
+            "target_language": "Enfréntate a ellos",
+            "base_language": "stand up to them"
+        },
+        {
+            "target_language": "Tráelo aquí",
+            "base_language": "bring it here"
+        },
+        {
+            "target_language": "llevar la bolsa dentro",
+            "base_language": "carry the bag inside"
+        },
+        {
+            "target_language": "Debes decidir ahora",
+            "base_language": "you must decide now"
+        },
+        {
+            "target_language": "Por favor escuche atentamente",
+            "base_language": "please listen carefully"
+        },
+        {
+            "target_language": "Cántame una canción",
+            "base_language": "sing a song to me"
+        },
+        {
+            "target_language": "nos gusta bailar juntos",
+            "base_language": "we like to dance together"
+        },
+        {
+            "target_language": "caminar por la calle",
+            "base_language": "walk across the steet"
+        },
+        {
+            "target_language": "corre hacia mí",
+            "base_language": "run toward me"
+        },
+        {
+            "target_language": "esconderse detrás de ella",
+            "base_language": "hide behind her"
+        },
+        {
+            "target_language": "Apóyate en mí",
+            "base_language": "lean against me"
+        },
+        {
+            "target_language": "sentarse entre mamá y papá",
+            "base_language": "sit between mom and dad"
+        },
+        {
+            "target_language": "mira debajo del perro",
+            "base_language": "look under the dog"
+        },
+        {
+            "target_language": "volar por encima de las carreteras",
+            "base_language": "fly above roads"
+        },
+        {
+            "target_language": "Haz una pregunta",
+            "base_language": "ask a question"
+        },
+        {
+            "target_language": "Él arreglará el problema",
+            "base_language": "he will fix the problem"
+        },
+        {
+            "target_language": "ella tocará música",
+            "base_language": "she will play music"
+        },
+        {
+            "target_language": "Voy a añadir color",
+            "base_language": "I will add color"
+        },
+        {
+            "target_language": "lo mediremos",
+            "base_language": "we will measure it"
+        },
+        {
+            "target_language": "¿Te diste cuenta?",
+            "base_language": "did you notice?"
+        },
+        {
+            "target_language": "¿Me recuerdas?",
+            "base_language": "Do you remember me?"
+        },
+        {
+            "target_language": "Cruzar la calle",
+            "base_language": "Cross the street"
+        },
+        {
+            "target_language": "Hablar con claridad",
+            "base_language": "Speak clearly"
+        },
+        {
+            "target_language": "Resolver el problema",
+            "base_language": "Solve the problem"
+        },
+        {
+            "target_language": "El metal es duro",
+            "base_language": "Metal is hard"
+        },
+        {
+            "target_language": "El hielo es frío",
+            "base_language": "Ice is cold"
+        },
+        {
+            "target_language": "Hora de dormir",
+            "base_language": "Time to sleep"
+        },
+        {
+            "target_language": "Pequeño pueblo",
+            "base_language": "Small village"
+        },
+        {
+            "target_language": "Cayó nieve blanca",
+            "base_language": "White snow fell"
+        },
+        {
+            "target_language": "Montar en bicicleta",
+            "base_language": "Ride a bike"
+        },
+        {
+            "target_language": "Cuidarse",
+            "base_language": "Take care"
+        },
+        {
+            "target_language": "El bebé lloró",
+            "base_language": "The baby cried"
+        },
+        {
+            "target_language": "Compra algo de comida",
+            "base_language": "Buy some food"
+        },
+        {
+            "target_language": "Jugar al aire libre",
+            "base_language": "Play outside"
+        },
+        {
+            "target_language": "Los árboles altos crecen",
+            "base_language": "Tall trees grow"
+        },
+        {
+            "target_language": "Eso espero",
+            "base_language": "I hope so"
+        },
+        {
+            "target_language": "Las flores de primavera florecen",
+            "base_language": "Spring flowers bloom"
+        },
+        {
+            "target_language": "Nos reímos juntos",
+            "base_language": "We laughed together"
+        },
+        {
+            "target_language": "Puedo escribir rápidamente",
+            "base_language": "I can type quickly"
+        },
+        {
+            "target_language": "Una luz brillante brilla",
+            "base_language": "A bright light shines"
+        },
+        {
+            "target_language": "Liderar el camino",
+            "base_language": "Lead the way"
+        },
+        {
+            "target_language": "El nuevo método funciona",
+            "base_language": "the new method works"
+        },
+        {
+            "target_language": "Nadé en el lago",
+            "base_language": "I swam in lake"
+        },
+        {
+            "target_language": "Cepíllate el pelo, Jeffrey",
+            "base_language": "Brush your hair, Jeffrey"
+        },
+        {
+            "target_language": "Pésala en la báscula",
+            "base_language": "Weigh her on the scale"
+        },
+        {
+            "target_language": "Su juguete roto",
+            "base_language": "His broken toy"
+        },
+        {
+            "target_language": "El oro es brillante",
+            "base_language": "Gold is shiny"
+        },
+        {
+            "target_language": "Beber leche",
+            "base_language": "Drink milk"
+        }
+    ]
+}
