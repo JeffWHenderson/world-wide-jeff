@@ -1,0 +1,7 @@
+services:
+  jeff-frontend:
+    container_name: jeff-frontend
+    image: jeff-frontend
+    ports:
+      - '8080:8080'
+    restart: unless-stopped
