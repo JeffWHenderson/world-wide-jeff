@@ -31,7 +31,9 @@ const LanguageLearningApp = () => {
 
     function handleSelectStory(lessonType: string, lesson?: any) {
         // TODO: this looks like I just need to not do typos and I can lose this conditional
-        if (lessonType === 'flashcard' || lessonType === 'flashcards') {
+        if (lessonType === "wordlist") {
+            alert("hello world")
+        } else if (lessonType === 'flashcard' || lessonType === 'flashcards') {
             navigator(`flashcards/${lesson?.filename}`)
         } else {
             navigator(`story/${lesson?.filename}`)

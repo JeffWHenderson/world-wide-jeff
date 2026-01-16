@@ -29,7 +29,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/language-app" element={<LanguageAppLayout />} >
           <Route path=":language" element={<LanguageLearningApp />} />
           <Route path=":language/flashcards/:lessonId" element={<FlashCardsV2 />} />
-          <Route path=":language/story/:lessonID" element={<StoryReader />} />
+          <Route path=":language/story/:lessonId" element={<StoryReader />} />
         </Route>
         <Route path="*" element={<NoPage />} />
       </Routes>

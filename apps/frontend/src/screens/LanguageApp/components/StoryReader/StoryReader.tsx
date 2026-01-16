@@ -1,17 +1,25 @@
-import { useLocation, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import useLanguage from '../../hooks/useLanguage';
 import { Expression } from '../../LanguageTypes';
 
 
 
 const StoryReader = () => {
-  const location = useLocation();
-  const { lesson, selectedLanguage } = location.state || {};
+  const { language, lessonId } = useParams();
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState('false');
   const [speakingRate] = useState(1)
-  const [voice] = useLanguage(selectedLanguage) // TODO: Clean up
+  const [voice] = useLanguage(language as string)
+  const [lesson, setLesson] = useState<any>(null)
+
+  useEffect(() => {
+    console.log(`/${language}/modules/${lessonId?.split("_")[0]}/${lessonId}`)
+    fetch(`/${language}/modules/${lessonId?.split("_")[0]}/${lessonId}`)
+      .then(res => res.json())
+      .then(data => { console.log(data); setLesson(data) })
+      .catch(err => console.error(err))
+  }, [])
 
   const read = (counter: number = 0) => {
     const speechUtterance = new SpeechSynthesisUtterance()
@@ -21,7 +29,6 @@ const StoryReader = () => {
     //     var e = document.getElementById('text-area');
     //     e.innerHTML = event.target.text; 
     // }
-
     speechUtterance.voice = voice as SpeechSynthesisVoice
     // TODO: ADD RATE SLIDER
     speechUtterance.rate = speakingRate
@@ -57,10 +64,11 @@ const StoryReader = () => {
 
 
   return <>
-    <button onClick={() => handleGoBack()} >go back</button >
+    <button onClick={() => handleGoBack()} >go back</button>
     {/* TODO: disable until speaking is done */}
-    <button onClick={() => read()} >speak</button >
+    <button onClick={() => read()} >speak</button>
     {
+      lesson &&
       lesson.sentences.map((sentence: Expression) => (
         <div onMouseEnter={() => setShowPopup(sentence.target_language)}
           onMouseLeave={() => setShowPopup('false')}
@@ -85,7 +93,7 @@ const StoryReader = () => {
               {sentence.grammar?.note}
             </div>
           )}
-        </div >
+        </div>
       ))
     }
     <br /><br /><br /><br />
