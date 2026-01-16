@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 
-const Grammar = () => {
-    const [thing, setThing] = useState("")
+const ViewLesson = () => {
+  const [thing, setThing] = useState("")
 
-    useEffect(() => {
-        fetch(`/spanish/grammar/nouns_gender.txt`)
-            .then(res => res.text())
-            .then(data => { console.log(data); setThing(data) })
-            .catch(err => err)
-    }, [])
+  useEffect(() => {
+    fetch(`/spanish/lessons/nouns_gender.txt`)
+      .then(res => res.text())
+      .then(data => { console.log(data); setThing(data) })
+      .catch(err => err)
+  }, [])
 
-    return <div>
-        {
-            thing.split("\n").map(line => (
-                <pre>{line}</pre>
-            ))
-        }
-    </div>
+  return <div>
+    {
+      thing.split("\n").map(line => (
+        <pre>{line}</pre>
+      ))
+    }
+  </div>
 }
 
-export default Grammar;
+export default ViewLesson;
