@@ -14,7 +14,7 @@ const FlashCardsV2 = () => {
     const [readBack, setReadBack] = useState(true)
 
     useEffect(() => {
-        fetch(`/${language?.toLowerCase()}/${lessonId?.split("_")[0]}/${lessonId}`)
+        fetch(`/${language?.toLowerCase()}/modules/${lessonId?.split("_")[0]}/${lessonId}`)
             .then(res => res.json())
             .then(data => { console.log(data); setLesson(data) })
             .catch(err => console.error(err))
