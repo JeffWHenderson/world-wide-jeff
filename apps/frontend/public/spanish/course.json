@@ -6,7 +6,7 @@
             "level_name": "Food and Drink",
             "lessons": [
                 {
-                    "filename": "__wordList__",
+                    "filename": "__wordList__.json",
                     "name": "word list",
                     "type": "wordlist"
                 },

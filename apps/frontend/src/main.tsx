@@ -11,6 +11,7 @@ import Events from "./screens/Events/Events";
 import LanguageLearningApp from "./screens/LanguageApp/LanguageApp";
 import './index.css'
 import FlashCardsV2 from './screens/LanguageApp/components/FlashCardsV2';
+import WordList from './screens/LanguageApp/components/WordList';
 import StoryReader from './screens/LanguageApp/components/StoryReader';
 import LanguageAppLayout from './screens/LanguageApp/LanguageAppLayout';
 
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path=":language" element={<LanguageLearningApp />} />
           <Route path=":language/flashcards/:lessonId" element={<FlashCardsV2 />} />
           <Route path=":language/story/:lessonId" element={<StoryReader />} />
+          <Route path=":language/wordlist/:lessonId" element={<WordList />} />
         </Route>
         <Route path="*" element={<NoPage />} />
       </Routes>

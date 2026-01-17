@@ -1,17 +1,14 @@
 [
     {
-        "word": "translation"
+        "word": "thing",
+        "translation": "cosa"
     },
     {
-        "word": "translation"
+        "word": "hello",
+        "translation": "hola"
     },
     {
-        "word": "translation"
-    },
-    {
-        "word": "translation"
-    },
-    {
-        "word": "translation"
+        "word": "bye",
+        "translation": "adios"
     }
 ]
