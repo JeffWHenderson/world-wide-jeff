@@ -1,30 +1,30 @@
 {
     "name": "animals",
-    "type": "flashcards",
+    "type": "story",
     "sentences": [
         {
-            "target_language": "Eso es un animal",
-            "base_language": "that is an animal"
+            "target_language": "Este es Seth.",
+            "base_language": "this is seth"
         },
         {
-            "target_language": "Eso es un perro",
-            "base_language": "that is a dog"
+            "target_language": "Seth quiere comprar una bebida.",
+            "base_language": "seth wants to buy a drink"
         },
         {
-            "target_language": "Eso es un gato",
-            "base_language": "that is a cat"
+            "target_language": "Seth también quiere comida rápida.",
+            "base_language": "seth wants fast food too."
         },
         {
-            "target_language": "Eso es un pájaro",
-            "base_language": "that is a bird"
+            "target_language": "Así que Seth va a McDonald's.",
+            "base_language": "so seth goes to McDolnalds."
         },
         {
-            "target_language": "Esto es un pez",
-            "base_language": "this is a fish"
+            "target_language": "Pide una Coca-Cola grande.",
+            "base_language": "He orders a big Coke"
         },
         {
-            "target_language": "Este es un caballo",
-            "base_language": "this is a horse"
+            "target_language": "Pide una hamburguesa con queso.",
+            "base_language": "he orders a cheeseburger"
         }
     ]
 }
