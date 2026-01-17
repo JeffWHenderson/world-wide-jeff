@@ -16,16 +16,7 @@ const LanguageAppLayout = () => {
                 <div style={{ fontSize: "2em" }}><Link style={{ padding: "0 5px 0 0" }} to="/">World Wide Jeff</Link></div>
             </div >
             <div style={{ display: "flex", backgroundColor: "black", height: '5vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'center' }}>
-                <nav>
-                    <nav>
-                        <Link style={{ padding: "0 5px 0 0" }} to="/">Home</Link>
-                        <Link style={{ padding: "0 5px 0 0" }} to="/pickleball">Pickleball</Link>
-                        <Link style={{ padding: "0 5px 0 0" }} to="/wallerverse">Wallerverse</Link>
-                        <Link style={{ padding: "0 5px 0 0" }} to="/language-app/chinese">Flashcards</Link>
-                        <Link to="/contact">Contact</Link>
-                    </nav>
-                </nav>
-                <div style={{ marginLeft: '8px' }}>
+                <div style={{ marginRight: '15px' }}>
                     <select id="language-select" defaultValue={language} onChange={(e: any) => goToLanguagePage(e.target.value)}>
                         {
                             Object.values(AvailableLanguages).map(option => (
@@ -37,6 +28,11 @@ const LanguageAppLayout = () => {
                         }
                     </select>
                 </div>
+                <nav>
+                    <nav>
+                        <Link to="/contact">Contact</Link>
+                    </nav>
+                </nav>
             </div>
 
 
