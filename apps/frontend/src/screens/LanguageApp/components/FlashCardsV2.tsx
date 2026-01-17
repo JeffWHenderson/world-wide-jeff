@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useLanguage from "../../hooks/useLanguage";
+import useLanguage from "../hooks/useLanguage";
 import { useParams } from "react-router-dom";
 
 const FlashCardsV2 = () => {

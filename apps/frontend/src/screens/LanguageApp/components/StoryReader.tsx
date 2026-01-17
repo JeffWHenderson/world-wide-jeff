@@ -1,8 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import useLanguage from '../../hooks/useLanguage';
-import { Expression } from '../../LanguageTypes';
-
+import useLanguage from '../hooks/useLanguage';
+import { Expression } from '../LanguageTypes';
 
 
 const StoryReader = () => {
