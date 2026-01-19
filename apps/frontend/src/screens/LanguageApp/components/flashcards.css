@@ -1,0 +1,40 @@
+.container {
+    height: 82%;
+    margin: 0 3 0 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100vh;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 80vw;
+    max-width: 400px;
+    /* Adjust width as needed */
+    border-radius: 10px;
+    /* Rounded corners */
+    background-color: #f1f1f1;
+    margin: 20px;/
+}
+
+.flashcard-top {
+    font-size: 2em;
+    padding-left: 4px;
+}
+
+.controls-container {
+    max-width: 600px;
+    margin-top: auto;
+}

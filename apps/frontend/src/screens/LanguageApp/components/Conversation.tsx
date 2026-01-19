@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './language.css';
+import './conversation.css';
 
 const container = { display: "flex", width: '100%', height: '10vh', backgroundColor: 'white', justifyContent: 'space-between', alignItems: 'end' }
 const redSquare = { width: '30px', height: '30px', backgroundColor: 'red' }

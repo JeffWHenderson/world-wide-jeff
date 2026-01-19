@@ -34,8 +34,6 @@ const LanguageAppLayout = () => {
                     </nav>
                 </nav>
             </div>
-
-
             <Outlet />
         </div>
     )

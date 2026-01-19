@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useLanguage from "../hooks/useLanguage";
 import { useParams } from "react-router-dom";
+import "./flashcards.css"
 
 const FlashCardsV2 = () => {
     const { language, lessonId } = useParams();
@@ -58,59 +59,62 @@ const FlashCardsV2 = () => {
         // Conditional is so we don't get an immediate readout before the lesson loads.. we could clean this up a lot still
     }
 
-    return <div style={{ height: '82%', margin: '0% 3% 0% 3%', justifyContent: 'center' }}>
-        <div style={{ display: 'flex', marginBottom: '10px', width: '100%' }}>
-            <label>
-                <input
-                    type="checkbox"
-                    checked={readFront}
-                    onChange={() => setReadFront(!readFront)}
-                />
-                Read Front
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    checked={readBack}
-                    onChange={() => setReadBack(!readBack)}
-                />
-                Read Back
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    checked={autoplay}
-                    onChange={() => setAutoPlay(!autoplay)}
-                />
-                Autoplay
-            </label>
-        </div>
-        {
-            lesson &&
-            <div style={{ height: '70%', justifyContent: 'center' }}>
+    return <>
+        <div className="container">
+            {
+                lesson &&
                 <div>
-                    <div style={{ width: '100%' }}>
-                        {lesson.sentences[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
-                        <p>{lesson.sentences[cardNumber].base_language}</p>
+                    <div className="card">
+                        <div className="flashcard-top">
+                            {lesson.sentences[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
+                            <p>{lesson.sentences[cardNumber].base_language}</p>
+                        </div>
+                        <div className="flashcard-top">
+                            <div style={{ borderBottom: "1px solid grey" }}></div>
+                            {lesson.sentences[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{lesson.sentences[cardNumber]["romanized"]}</p> : null}
+                            <div>{lesson.sentences[cardNumber].target_language}</div>
+                        </div>
                     </div>
-                    <div style={{ fontSize: '2em' }}>
-                        <div style={{ borderBottom: "1px solid grey" }}></div>
-                        {lesson.sentences[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{lesson.sentences[cardNumber]["romanized"]}</p> : null}
-                        <div>{lesson.sentences[cardNumber].target_language}</div>
-                    </div>
-                </div>
-
-                <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between', marginBottom: '10px' }}>
+                </div >
+            }
+            <div className="controls-container">
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
                     <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
                     <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
                 </div>
-                <div style={{ display: 'flex', height: '10%', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(-1)}>back</button>
                     <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard()}>next</button>
                 </div>
-            </div >
-        }
-    </div>
+                <div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={readFront}
+                            onChange={() => setReadFront(!readFront)}
+                        />
+                        Read Front
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={readBack}
+                            onChange={() => setReadBack(!readBack)}
+                        />
+                        Read Back
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={autoplay}
+                            onChange={() => setAutoPlay(!autoplay)}
+                        />
+                        Autoplay
+                    </label>
+                </div>
+            </div>
+        </div>
+    </>
 }
 
 export default FlashCardsV2;

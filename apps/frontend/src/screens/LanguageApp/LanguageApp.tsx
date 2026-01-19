@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "./main-styles.css"
 
 
 // TODO: add CSS Eventually
@@ -20,6 +21,14 @@ const LanguageLearningApp = () => {
     const { language } = useParams();
     const navigator = useNavigate()
     const [course, setCourse] = useState<any | null>(null);
+
+    // TODO: move this to have light and dark mode
+    // // Function to set the theme
+    // function setTheme() {
+    //     document.body.classList.toggle("dark-mode");
+    // }
+    // <button id="theme-toggle" onClick={() => setTheme()}>Toggle Dark Mode</button>
+
 
     useEffect(() => {
         fetch(`/${language}/course.json`)
@@ -43,7 +52,9 @@ const LanguageLearningApp = () => {
     return (
         <>
             <div style={{ maxWidth: '100vw' }}>
-                <h1>{course?.course_name}</h1>
+                <div>
+                    <h2 className="header">{course?.course_name}</h2>
+                </div>
                 {course?.course_levels.map((level: any) => (
                     <div key={level.level_id}>
                         <p>{level.level_name}</p>
