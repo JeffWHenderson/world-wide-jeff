@@ -13,6 +13,7 @@ import FlashCardsV2 from './screens/LanguageApp/components/FlashCardsV2';
 import WordList from './screens/LanguageApp/components/WordList';
 import StoryReader from './screens/LanguageApp/components/StoryReader';
 import LanguageAppLayout from './screens/LanguageApp/LanguageAppLayout';
+import ViewLesson from './screens/LanguageApp/components/ViewLesson';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
 // import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
@@ -43,6 +44,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path=":language/flashcards/:lessonId" element={<FlashCardsV2 />} />
           <Route path=":language/story/:lessonId" element={<StoryReader />} />
           <Route path=":language/wordlist/:lessonId" element={<WordList />} />
+          <Route path=":language/view-lesson/:lessonId" element={<ViewLesson />} />
         </Route>
         <Route path="*" element={<NoPage />} />
       </Routes>

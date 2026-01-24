@@ -16,6 +16,16 @@
                     "type": "flashcards"
                 },
                 {
+                    "filename": "foodAndDrink_verbs_presentTense.json",
+                    "name": "Present tense 1st person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_presentTenseTwo.json",
+                    "name": "Present tense + 2nd person",
+                    "type": "flashcards"
+                },
+                {
                     "filename": "foodAndDrink_exampleStory.json",
                     "name": "Example Story",
                     "type": "story"

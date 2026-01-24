@@ -64,6 +64,7 @@ const FlashCardsV2 = () => {
             {
                 lesson &&
                 <div>
+                    {/* <a href="/language-app/spanish/view-lesson/nouns_gender.txt">hello</a> */}
                     <div className="card">
                         <div className="flashcard-top">
                             {lesson.sentences[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
