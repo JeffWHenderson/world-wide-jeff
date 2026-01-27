@@ -1,331 +1,85 @@
-{
-    "name": "verbs for food I/We/They",
-    "type": "flashcards",
-    "lesson_id": "verbs_presenet_simple.md",
+{ 
+    "name": "verbs for food I/We/They", 
+    "type": "flashcards", 
+    "lesson_id": "verbs_presenet_simple.md", 
     "sentences": [
-        {
-            "base_language": "I eat the apple.",
-            "target_language": "Yo como la manzana."
-        },
-        {
-            "base_language": "We eat the apple.",
-            "target_language": "Nosotros comemos la manzana."
-        },
-        {
-            "base_language": "They eat the apple.",
-            "target_language": "Ellos comen la manzana."
-        },
-        {
-            "base_language": "I drink the water.",
-            "target_language": "Yo bebo el agua."
-        },
-        {
-            "base_language": "We drink the water.",
-            "target_language": "Nosotros bebemos el agua."
-        },
-        {
-            "base_language": "They drink the water.",
-            "target_language": "Ellos beben el agua."
-        },
-        {
-            "base_language": "I cook the rice.",
-            "target_language": "Yo cocino el arroz."
-        },
-        {
-            "base_language": "We cook the rice.",
-            "target_language": "Nosotros cocinamos el arroz."
-        },
-        {
-            "base_language": "They cook the rice.",
-            "target_language": "Ellos cocinan el arroz."
-        },
-        {
-            "base_language": "I bake the bread.",
-            "target_language": "Yo horneo el pan."
-        },
-        {
-            "base_language": "We bake the bread.",
-            "target_language": "Nosotros horneamos el pan."
-        },
-        {
-            "base_language": "They bake the bread.",
-            "target_language": "Ellos hornean el pan."
-        },
-        {
-            "base_language": "I boil the water.",
-            "target_language": "Yo hiervo el agua."
-        },
-        {
-            "base_language": "We boil the water.",
-            "target_language": "Nosotros hervimos el agua."
-        },
-        {
-            "base_language": "They boil the water.",
-            "target_language": "Ellos hierven el agua."
-        },
-        {
-            "base_language": "I fry the egg.",
-            "target_language": "Yo frío el huevo."
-        },
-        {
-            "base_language": "We fry the egg.",
-            "target_language": "Nosotros freímos el huevo."
-        },
-        {
-            "base_language": "They fry the egg.",
-            "target_language": "Ellos fríen el huevo."
-        },
-        {
-            "base_language": "I roast the chicken.",
-            "target_language": "Yo aso el pollo."
-        },
-        {
-            "base_language": "We roast the chicken.",
-            "target_language": "Nosotros asamos el pollo."
-        },
-        {
-            "base_language": "They roast the chicken.",
-            "target_language": "Ellos asan el pollo."
-        },
-        {
-            "base_language": "I grill the meat.",
-            "target_language": "Yo aso la carne a la parrilla."
-        },
-        {
-            "base_language": "We grill the meat.",
-            "target_language": "Nosotros asamos la carne a la parrilla."
-        },
-        {
-            "base_language": "They grill the meat.",
-            "target_language": "Ellos asan la carne a la parrilla."
-        },
-        {
-            "base_language": "I chop the onion.",
-            "target_language": "Yo pico la cebolla."
-        },
-        {
-            "base_language": "We chop the onion.",
-            "target_language": "Nosotros picamos la cebolla."
-        },
-        {
-            "base_language": "They chop the onion.",
-            "target_language": "Ellos pican la cebolla."
-        },
-        {
-            "base_language": "I slice the tomato.",
-            "target_language": "Yo corto el tomate en rodajas."
-        },
-        {
-            "base_language": "We slice the tomato.",
-            "target_language": "Nosotros cortamos el tomate en rodajas."
-        },
-        {
-            "base_language": "They slice the tomato.",
-            "target_language": "Ellos cortan el tomate en rodajas."
-        },
-        {
-            "base_language": "I mix the salad.",
-            "target_language": "Yo mezclo la ensalada."
-        },
-        {
-            "base_language": "We mix the salad.",
-            "target_language": "Nosotros mezclamos la ensalada."
-        },
-        {
-            "base_language": "They mix the salad.",
-            "target_language": "Ellos mezclan la ensalada."
-        },
-        {
-            "base_language": "I stir the soup.",
-            "target_language": "Yo remuevo la sopa."
-        },
-        {
-            "base_language": "We stir the soup.",
-            "target_language": "Nosotros removemos la sopa."
-        },
-        {
-            "base_language": "They stir the soup.",
-            "target_language": "Ellos remueven la sopa."
-        },
-        {
-            "base_language": "I whisk the eggs.",
-            "target_language": "Yo bato los huevos."
-        },
-        {
-            "base_language": "We whisk the eggs.",
-            "target_language": "Nosotros batimos los huevos."
-        },
-        {
-            "base_language": "They whisk the eggs.",
-            "target_language": "Ellos baten los huevos."
-        },
-        {
-            "base_language": "I pour the juice.",
-            "target_language": "Yo vierto el jugo."
-        },
-        {
-            "base_language": "We pour the juice.",
-            "target_language": "Nosotros vertemos el jugo."
-        },
-        {
-            "base_language": "They pour the juice.",
-            "target_language": "Ellos vierten el jugo."
-        },
-        {
-            "base_language": "I serve the dinner.",
-            "target_language": "Yo sirvo la cena."
-        },
-        {
-            "base_language": "We serve the dinner.",
-            "target_language": "Nosotros servimos la cena."
-        },
-        {
-            "base_language": "They serve the dinner.",
-            "target_language": "Ellos sirven la cena."
-        },
-        {
-            "base_language": "I taste the soup.",
-            "target_language": "Yo pruebo la sopa."
-        },
-        {
-            "base_language": "We taste the soup.",
-            "target_language": "Nosotros probamos la sopa."
-        },
-        {
-            "base_language": "They taste the soup.",
-            "target_language": "Ellos prueban la sopa."
-        },
-        {
-            "base_language": "I feed the baby.",
-            "target_language": "Yo alimento al bebé."
-        },
-        {
-            "base_language": "We feed the baby.",
-            "target_language": "Nosotros alimentamos al bebé."
-        },
-        {
-            "base_language": "They feed the baby.",
-            "target_language": "Ellos alimentan al bebé."
-        },
-        {
-            "base_language": "I dine at the restaurant.",
-            "target_language": "Yo ceno en el restaurante."
-        },
-        {
-            "base_language": "We dine at the restaurant.",
-            "target_language": "Nosotros cenamos en el restaurante."
-        },
-        {
-            "base_language": "They dine at the restaurant.",
-            "target_language": "Ellos cenan en el restaurante."
-        },
-        {
-            "base_language": "I sip the tea.",
-            "target_language": "Yo tomo el té a sorbos."
-        },
-        {
-            "base_language": "We sip the tea.",
-            "target_language": "Nosotros tomamos el té a sorbos."
-        },
-        {
-            "base_language": "They sip the tea.",
-            "target_language": "Ellos toman el té a sorbos."
-        },
-        {
-            "base_language": "I chew the meat.",
-            "target_language": "Yo mastico la carne."
-        },
-        {
-            "base_language": "We chew the meat.",
-            "target_language": "Nosotros masticamos la carne."
-        },
-        {
-            "base_language": "They chew the meat.",
-            "target_language": "Ellos mastican la carne."
-        },
-        {
-            "base_language": "I swallow the water.",
-            "target_language": "Yo trago el agua."
-        },
-        {
-            "base_language": "We swallow the water.",
-            "target_language": "Nosotros tragamos el agua."
-        },
-        {
-            "base_language": "They swallow the water.",
-            "target_language": "Ellos tragan el agua."
-        },
-        {
-            "base_language": "I savor the wine.",
-            "target_language": "Yo saboreo el vino."
-        },
-        {
-            "base_language": "We savor the wine.",
-            "target_language": "Nosotros saboreamos el vino."
-        },
-        {
-            "base_language": "They savor the wine.",
-            "target_language": "Ellos saborean el vino."
-        },
-        {
-            "base_language": "I season the chicken.",
-            "target_language": "Yo sazono el pollo."
-        },
-        {
-            "base_language": "We season the chicken.",
-            "target_language": "Nosotros sazonamos el pollo."
-        },
-        {
-            "base_language": "They season the chicken.",
-            "target_language": "Ellos sazonan el pollo."
-        },
-        {
-            "base_language": "I steam the vegetables.",
-            "target_language": "Yo cocino las verduras al vapor."
-        },
-        {
-            "base_language": "We steam the vegetables.",
-            "target_language": "Nosotros cocemos las verduras al vapor."
-        },
-        {
-            "base_language": "They steam the vegetables.",
-            "target_language": "Ellos cocinan las verduras al vapor."
-        },
-        {
-            "base_language": "I blend the fruit.",
-            "target_language": "Yo licúo la fruta."
-        },
-        {
-            "base_language": "We blend the fruit.",
-            "target_language": "Nosotros licuamos la fruta."
-        },
-        {
-            "base_language": "They blend the fruit.",
-            "target_language": "Ellos licúan la fruta."
-        },
-        {
-            "base_language": "I pay the bill.",
-            "target_language": "Yo pago la cuenta."
-        },
-        {
-            "base_language": "We pay the bill.",
-            "target_language": "Nosotros pagamos la cuenta."
-        },
-        {
-            "base_language": "They pay the bill.",
-            "target_language": "Ellos pagan la cuenta."
-        },
-        {
-            "base_language": "I order the pizza.",
-            "target_language": "Yo pido la pizza."
-        },
-        {
-            "base_language": "We order the pizza.",
-            "target_language": "Nosotros pedimos la pizza."
-        },
-        {
-            "base_language": "They order the pizza.",
-            "target_language": "Ellos piden la pizza."
-        }
-    ]
+        { "base_language": "I eat the apple.", "target_language": "Yo como la manzana."},
+        { "base_language": "We eat the apple.", "target_language": "Nosotros comemos la manzana."},
+        { "base_language": "They eat the apple.", "target_language": "Ellos comen la manzana."},
+        { "base_language": "I drink the water.", "target_language": "Yo bebo el agua." },
+        { "base_language": "We drink the water.", "target_language": "Nosotros bebemos el agua." },
+        { "base_language": "They drink the water.", "target_language": "Ellos beben el agua." },
+        { "base_language": "I cook the rice.", "target_language": "Yo cocino el arroz." },
+        { "base_language": "We cook the rice.", "target_language": "Nosotros cocinamos el arroz." },
+        { "base_language": "They cook the rice.", "target_language": "Ellos cocinan el arroz." },
+        { "base_language": "I bake the bread.", "target_language": "Yo horneo el pan." },
+        { "base_language": "We bake the bread.", "target_language": "Nosotros horneamos el pan." },
+        { "base_language": "They bake the bread.", "target_language": "Ellos hornean el pan." },
+        { "base_language": "I boil the water.", "target_language": "Yo hiervo el agua." },
+        { "base_language": "We boil the water.", "target_language": "Nosotros hervimos el agua." },
+        { "base_language": "They boil the water.", "target_language": "Ellos hierven el agua." },
+        { "base_language": "I fry the egg.", "target_language": "Yo frío el huevo." },
+        { "base_language": "We fry the egg.", "target_language": "Nosotros freímos el huevo." },
+        { "base_language": "They fry the egg.", "target_language": "Ellos fríen el huevo." },
+        { "base_language": "I roast the chicken.", "target_language": "Yo aso el pollo." },
+        { "base_language": "We roast the chicken.", "target_language": "Nosotros asamos el pollo." },
+        { "base_language": "They roast the chicken.", "target_language": "Ellos asan el pollo." },
+        { "base_language": "I grill the meat.", "target_language": "Yo aso la carne a la parrilla." },
+        { "base_language": "We grill the meat.", "target_language": "Nosotros asamos la carne a la parrilla." },
+        { "base_language": "They grill the meat.", "target_language": "Ellos asan la carne a la parrilla." },
+        { "base_language": "I chop the onion.", "target_language": "Yo pico la cebolla." },
+        { "base_language": "We chop the onion.", "target_language": "Nosotros picamos la cebolla." },
+        { "base_language": "They chop the onion.", "target_language": "Ellos pican la cebolla." },
+        { "base_language": "I slice the tomato.", "target_language": "Yo corto el tomate en rodajas." },
+        { "base_language": "We slice the tomato.", "target_language": "Nosotros cortamos el tomate en rodajas." },
+        { "base_language": "They slice the tomato.", "target_language": "Ellos cortan el tomate en rodajas." },
+        { "base_language": "I mix the salad.", "target_language": "Yo mezclo la ensalada." },
+        { "base_language": "We mix the salad.", "target_language": "Nosotros mezclamos la ensalada." },
+        { "base_language": "They mix the salad.", "target_language": "Ellos mezclan la ensalada." },
+        { "base_language": "I stir the soup.", "target_language": "Yo remuevo la sopa." },
+        { "base_language": "We stir the soup.", "target_language": "Nosotros removemos la sopa." },
+        { "base_language": "They stir the soup.", "target_language": "Ellos remueven la sopa." },
+        { "base_language": "I whisk the eggs.", "target_language": "Yo bato los huevos." },
+        { "base_language": "We whisk the eggs.", "target_language": "Nosotros batimos los huevos." },
+        { "base_language": "They whisk the eggs.", "target_language": "Ellos baten los huevos." },
+        { "base_language": "I pour the juice.", "target_language": "Yo vierto el jugo." },
+        { "base_language": "We pour the juice.", "target_language": "Nosotros vertemos el jugo." },
+        { "base_language": "They pour the juice.", "target_language": "Ellos vierten el jugo." },
+        { "base_language": "I serve the dinner.", "target_language": "Yo sirvo la cena." },
+        { "base_language": "We serve the dinner.", "target_language": "Nosotros servimos la cena." },
+        { "base_language": "They serve the dinner.", "target_language": "Ellos sirven la cena." },
+        { "base_language": "I taste the soup.", "target_language": "Yo pruebo la sopa." },
+        { "base_language": "We taste the soup.", "target_language": "Nosotros probamos la sopa." },
+        { "base_language": "They taste the soup.", "target_language": "Ellos prueban la sopa." },
+        { "base_language": "I feed the baby.", "target_language": "Yo alimento al bebé." },
+        { "base_language": "We feed the baby.", "target_language": "Nosotros alimentamos al bebé." },
+        { "base_language": "They feed the baby.", "target_language": "Ellos alimentan al bebé." },
+        { "base_language": "I dine at the restaurant.", "target_language": "Yo ceno en el restaurante." },
+        { "base_language": "We dine at the restaurant.", "target_language": "Nosotros cenamos en el restaurante." },
+        { "base_language": "They dine at the restaurant.", "target_language": "Ellos cenan en el restaurante." },
+        { "base_language": "I chew the meat.", "target_language": "Yo mastico la carne." },
+        { "base_language": "We chew the meat.", "target_language": "Nosotros masticamos la carne." },
+        { "base_language": "They chew the meat.", "target_language": "Ellos mastican la carne." },
+        { "base_language": "I swallow the water.", "target_language": "Yo trago el agua." },
+        { "base_language": "We swallow the water.", "target_language": "Nosotros tragamos el agua." },
+        { "base_language": "They swallow the water.", "target_language": "Ellos tragan el agua." },
+        { "base_language": "I savor the wine.", "target_language": "Yo saboreo el vino." },
+        { "base_language": "We savor the wine.", "target_language": "Nosotros saboreamos el vino." },
+        { "base_language": "They savor the wine.", "target_language": "Ellos saborean el vino." },
+        { "base_language": "I season the chicken.", "target_language": "Yo sazono el pollo." },
+        { "base_language": "We season the chicken.", "target_language": "Nosotros sazonamos el pollo." },
+        { "base_language": "They season the chicken.", "target_language": "Ellos sazonan el pollo." },
+        { "base_language": "I steam the vegetables.", "target_language": "Yo cocino las verduras al vapor." },
+        { "base_language": "We steam the vegetables.", "target_language": "Nosotros cocemos las verduras al vapor." },
+        { "base_language": "They steam the vegetables.", "target_language": "Ellos cocinan las verduras al vapor." },
+        { "base_language": "I blend the fruit.", "target_language": "Yo licúo la fruta." },
+        { "base_language": "We blend the fruit.", "target_language": "Nosotros licuamos la fruta." },
+        { "base_language": "They blend the fruit.", "target_language": "Ellos licúan la fruta." },
+        { "base_language": "I pay the bill.", "target_language": "Yo pago la cuenta." },
+        { "base_language": "We pay the bill.", "target_language": "Nosotros pagamos la cuenta." },
+        { "base_language": "They pay the bill.", "target_language": "Ellos pagan la cuenta." },
+        { "base_language": "I order the pizza.", "target_language": "Yo pido la pizza." },
+        { "base_language": "We order the pizza.", "target_language": "Nosotros pedimos la pizza." },
+        { "base_language": "They order the pizza.", "target_language": "Ellos piden la pizza." }
+    ] 
 }

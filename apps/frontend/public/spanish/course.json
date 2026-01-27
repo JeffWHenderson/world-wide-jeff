@@ -26,6 +26,11 @@
                     "type": "flashcards"
                 },
                 {
+                    "filename": "foodAndDrink_verbs_infinitives.json",
+                    "name": "infinitive forms",
+                    "type": "flashcards"
+                },
+                {
                     "filename": "foodAndDrink_exampleStory.json",
                     "name": "Example Story",
                     "type": "story"
