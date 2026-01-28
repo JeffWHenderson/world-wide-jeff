@@ -1,0 +1,30 @@
+{   
+    "name": "adjectives", 
+    "type": "flashcards", 
+    "sentences": [
+        { "base_language": "fresh", "target_language": "fresco/fresca" },
+        { "base_language": "ripe", "target_language": "maduro/madura" },
+        { "base_language": "raw", "target_language": "crudo/cruda" },
+        { "base_language": "cooked", "target_language": "cocido/cocida" },
+        { "base_language": "hot", "target_language": "caliente" },
+        { "base_language": "cold", "target_language": "frío/fría" },
+        { "base_language": "sweet", "target_language": "dulce" },
+        { "base_language": "sour", "target_language": "agrio/agria" },
+        { "base_language": "salty", "target_language": "salado/salada" },
+        { "base_language": "bitter", "target_language": "amargo/amarga" },
+        { "base_language": "spicy", "target_language": "picante" },
+        { "base_language": "crunchy", "target_language": "crujiente" },
+        { "base_language": "creamy", "target_language": "cremoso/cremosa" },
+        { "base_language": "tender", "target_language": "tierno/tierna" },
+        { "base_language": "juicy", "target_language": "jugoso/jugosa" },
+        { "base_language": "delicious", "target_language": "delicioso/deliciosa" },
+        { "base_language": "tasty", "target_language": "sabroso/sabrosa" },
+        { "base_language": "bland", "target_language": "soso/sosa" },
+        { "base_language": "healthy", "target_language": "saludable" },
+        { "base_language": "unhealthy", "target_language": "poco saludable/malsano" },
+        { "base_language": "vegetarian", "target_language": "vegetariano/vegetariana" },
+        { "base_language": "vegan", "target_language": "vegano/vegana" },
+        { "base_language": "frozen", "target_language": "congelado/congelada" },
+        { "base_language": "organic", "target_language": "orgánico/orgánica" }
+    ]
+}

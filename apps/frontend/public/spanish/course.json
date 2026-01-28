@@ -15,6 +15,11 @@
                     "name": "Nouns",
                     "type": "flashcards"
                 },
+                                {
+                    "filename": "foodAndDrink_adjectives.json",
+                    "name": "Adjectives",
+                    "type": "flashcards"
+                },
                 {
                     "filename": "foodAndDrink_verbs_presentTense.json",
                     "name": "Present tense 1st person",
