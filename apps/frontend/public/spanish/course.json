@@ -31,6 +31,16 @@
                     "type": "flashcards"
                 },
                 {
+                    "filename": "foodAndDrink_verbs_preterite.json",
+                    "name": "Past tense + 1nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_preteriteTwo.json",
+                    "name": "Past tense + 2nd person",
+                    "type": "flashcards"
+                },
+                {
                     "filename": "foodAndDrink_verbs_infinitives.json",
                     "name": "infinitive forms",
                     "type": "flashcards"
