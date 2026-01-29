@@ -83,9 +83,9 @@
         { "base_language": "They ordered the snack.", "target_language": "Ellos pidieron el aperitivo." },
         { "base_language": "I wanted butter.", "target_language": "Yo quise mantequilla." },
         { "base_language": "You wanted butter.", "target_language": "Tú quisiste mantequilla." },
-        { "base_language": "She wanted butter.", "target_language": "Ella quiso mantequilla." },
+        { "base_language": "They wanted butter.", "target_language": "Ella querian mantequilla." },
         { "base_language": "I had a knife.", "target_language": "Yo tuve un cuchillo." },
         { "base_language": "You had a knife.", "target_language": "Tú tuviste un cuchillo." },
-        { "base_language": "She had a knife.", "target_language": "Ella tuvo un cuchillo." }
+        { "base_language": "They had a knife.", "target_language": "Ella tenían un cuchillo." }
     ]
 }

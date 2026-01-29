@@ -40,9 +40,29 @@
                     "name": "Past tense + 2nd person",
                     "type": "flashcards"
                 },
+                                {
+                    "filename": "foodAndDrink_verbs_future.json",
+                    "name": "Future tense + 1nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_futureTwo.json",
+                    "name": "Future tense + 2nd person",
+                    "type": "flashcards"
+                },
                 {
                     "filename": "foodAndDrink_verbs_infinitives.json",
                     "name": "infinitive forms",
+                    "type": "flashcards"
+                },
+                                {
+                    "filename": "foodAndDrink_verbs_imperfect.json",
+                    "name": "imperfect + 1nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_imperfectTwo.json",
+                    "name": "imperfect + 2nd person",
                     "type": "flashcards"
                 },
                 {
