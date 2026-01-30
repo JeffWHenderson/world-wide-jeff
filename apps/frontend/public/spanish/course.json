@@ -76,6 +76,17 @@
                     "type": "story"
                 }
             ]
+        },
+        {
+            "level_id": "moodsAndEmotion",
+            "level_name": "Moods and Emotions",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                }
+            ]
         }
     ]
 }
