@@ -1,0 +1,110 @@
+{ 
+    "name": "I/You/He was past tense", 
+    "type": "flashcards", 
+    "lesson_id": "verbs_imperfect.md", 
+    "sentences": [
+        { "base_language": "I was eating the apple.", "target_language": "我在吃苹果。", "romanized": "Wǒ zài chī píngguǒ." },
+        { "base_language": "You were eating the apple.", "target_language": "你在吃苹果。", "romanized": "Nǐ zài chī píngguǒ." },
+        { "base_language": "He was eating the apple.", "target_language": "他在吃苹果。", "romanized": "Tā zài chī píngguǒ." },
+
+        { "base_language": "I was drinking the water.", "target_language": "我在喝水。", "romanized": "Wǒ zài hē shuǐ." },
+        { "base_language": "You were drinking the water.", "target_language": "你在喝水。", "romanized": "Nǐ zài hē shuǐ." },
+        { "base_language": "She was drinking the water.", "target_language": "她在喝水。", "romanized": "Tā zài hē shuǐ." },
+
+        { "base_language": "I was cooking the rice.", "target_language": "我在煮米饭。", "romanized": "Wǒ zài zhǔ mǐfàn." },
+        { "base_language": "You were cooking the rice.", "target_language": "你在煮米饭。", "romanized": "Nǐ zài zhǔ mǐfàn." },
+        { "base_language": "He was cooking the rice.", "target_language": "他在煮米饭。", "romanized": "Tā zài zhǔ mǐfàn." },
+
+        { "base_language": "I was baking the bread.", "target_language": "我在烤面包。", "romanized": "Wǒ zài kǎo miànbāo." },
+        { "base_language": "You were baking the bread.", "target_language": "你在烤面包。", "romanized": "Nǐ zài kǎo miànbāo." },
+        { "base_language": "She was baking the bread.", "target_language": "她在烤面包。", "romanized": "Tā zài kǎo miànbāo." },
+
+        { "base_language": "I was boiling the tea.", "target_language": "我在煮茶。", "romanized": "Wǒ zài zhǔ chá." },
+        { "base_language": "You were boiling the tea.", "target_language": "你在煮茶。", "romanized": "Nǐ zài zhǔ chá." },
+        { "base_language": "He was boiling the tea.", "target_language": "他在煮茶。", "romanized": "Tā zài zhǔ chá." },
+
+        { "base_language": "I was frying with oil.", "target_language": "我在用油煎。", "romanized": "Wǒ zài yòng yóu jiān." },
+        { "base_language": "You were frying with oil.", "target_language": "你在用油煎。", "romanized": "Nǐ zài yòng yóu jiān." },
+        { "base_language": "She was frying with oil.", "target_language": "她在用油煎。", "romanized": "Tā zài yòng yóu jiān." },
+
+        { "base_language": "I was roasting the chicken.", "target_language": "我在烤鸡。", "romanized": "Wǒ zài kǎo jī." },
+        { "base_language": "You were roasting the chicken.", "target_language": "你在烤鸡。", "romanized": "Nǐ zài kǎo jī." },
+        { "base_language": "He was roasting the chicken.", "target_language": "他在烤鸡。", "romanized": "Tā zài kǎo jī." },
+
+        { "base_language": "I was grilling the meat.", "target_language": "我在烤肉。", "romanized": "Wǒ zài kǎo ròu." },
+        { "base_language": "You were grilling the meat.", "target_language": "你在烤肉。", "romanized": "Nǐ zài kǎo ròu." },
+        { "base_language": "She was grilling the meat.", "target_language": "她在烤肉。", "romanized": "Tā zài kǎo ròu." },
+
+        { "base_language": "I was chopping the onion.", "target_language": "我在切洋葱。", "romanized": "Wǒ zài qiē yángcōng." },
+        { "base_language": "You were chopping the onion.", "target_language": "你在切洋葱。", "romanized": "Nǐ zài qiē yángcōng." },
+        { "base_language": "He was chopping the onion.", "target_language": "他在切洋葱。", "romanized": "Tā zài qiē yángcōng." },
+
+        { "base_language": "I was slicing the tomato.", "target_language": "我在切西红柿片。", "romanized": "Wǒ zài qiē xīhóngshì piàn." },
+        { "base_language": "You were slicing the tomato.", "target_language": "你在切西红柿片。", "romanized": "Nǐ zài qiē xīhóngshì piàn." },
+        { "base_language": "She was slicing the tomato.", "target_language": "她在切西红柿片。", "romanized": "Tā zài qiē xīhóngshì piàn." },
+
+        { "base_language": "I was mixing the salad.", "target_language": "我在拌沙拉。", "romanized": "Wǒ zài bàn shālā." },
+        { "base_language": "You were mixing the salad.", "target_language": "你在拌沙拉。", "romanized": "Nǐ zài bàn shālā." },
+        { "base_language": "He was mixing the salad.", "target_language": "他在拌沙拉。", "romanized": "Tā zài bàn shālā." },
+
+        { "base_language": "I was stirring the soup.", "target_language": "我在搅汤。", "romanized": "Wǒ zài jiǎo tāng." },
+        { "base_language": "You were stirring the soup.", "target_language": "你在搅汤。", "romanized": "Nǐ zài jiǎo tāng." },
+        { "base_language": "She was stirring the soup.", "target_language": "她在搅汤。", "romanized": "Tā zài jiǎo tāng." },
+
+        { "base_language": "I was whisking the eggs.", "target_language": "我在打鸡蛋。", "romanized": "Wǒ zài dǎ jīdàn." },
+        { "base_language": "You were whisking the eggs.", "target_language": "你在打鸡蛋。", "romanized": "Nǐ zài dǎ jīdàn." },
+        { "base_language": "He was whisking the eggs.", "target_language": "他在打鸡蛋。", "romanized": "Tā zài dǎ jīdàn." },
+
+        { "base_language": "I was pouring the juice.", "target_language": "我在倒果汁。", "romanized": "Wǒ zài dào guǒzhī." },
+        { "base_language": "You were pouring the juice.", "target_language": "你在倒果汁。", "romanized": "Nǐ zài dào guǒzhī." },
+        { "base_language": "She was pouring the juice.", "target_language": "她在倒果汁。", "romanized": "Tā zài dào guǒzhī." },
+
+        { "base_language": "I was serving the dinner.", "target_language": "我在上晚餐。", "romanized": "Wǒ zài shàng wǎncān." },
+        { "base_language": "You were serving the dinner.", "target_language": "你在上晚餐。", "romanized": "Nǐ zài shàng wǎncān." },
+        { "base_language": "He was serving the dinner.", "target_language": "他在上晚餐。", "romanized": "Tā zài shàng wǎncān." },
+
+        { "base_language": "I was tasting the sugar.", "target_language": "我在尝糖。", "romanized": "Wǒ zài cháng táng." },
+        { "base_language": "You were tasting the sugar.", "target_language": "你在尝糖。", "romanized": "Nǐ zài cháng táng." },
+        { "base_language": "She was tasting the sugar.", "target_language": "她在尝糖。", "romanized": "Tā zài cháng táng." },
+
+        { "base_language": "I was feeding the baby.", "target_language": "我在喂宝宝。", "romanized": "Wǒ zài wèi bǎobǎo." },
+        { "base_language": "You were feeding the baby.", "target_language": "你在喂宝宝。", "romanized": "Nǐ zài wèi bǎobǎo." },
+        { "base_language": "He was feeding the baby.", "target_language": "他在喂宝宝。", "romanized": "Tā zài wèi bǎobǎo." },
+
+        { "base_language": "I was dining at the restaurant.", "target_language": "我在餐厅吃饭。", "romanized": "Wǒ zài cāntīng chīfàn." },
+        { "base_language": "You were dining at the restaurant.", "target_language": "你在餐厅吃饭。", "romanized": "Nǐ zài cāntīng chīfàn." },
+        { "base_language": "She was dining at the restaurant.", "target_language": "她在餐厅吃饭。", "romanized": "Tā zài cāntīng chīfàn." },
+
+        { "base_language": "I was chewing the pepper.", "target_language": "我在嚼辣椒。", "romanized": "Wǒ zài jiáo làjiāo." },
+        { "base_language": "You were chewing the pepper.", "target_language": "你在嚼辣椒。", "romanized": "Nǐ zài jiáo làjiāo." },
+        { "base_language": "He was chewing the pepper.", "target_language": "他在嚼辣椒。", "romanized": "Tā zài jiáo làjiāo." },
+
+        { "base_language": "I was swallowing the wine.", "target_language": "我在咽酒。", "romanized": "Wǒ zài yàn jiǔ." },
+        { "base_language": "You were swallowing the wine.", "target_language": "你在咽酒。", "romanized": "Nǐ zài yàn jiǔ." },
+        { "base_language": "She was swallowing the wine.", "target_language": "她在咽酒。", "romanized": "Tā zài yàn jiǔ." },
+
+        { "base_language": "I was seasoning with salt.", "target_language": "我在加盐调味。", "romanized": "Wǒ zài jiā yán tiáowèi." },
+        { "base_language": "You were seasoning with salt.", "target_language": "你在加盐调味。", "romanized": "Nǐ zài jiā yán tiáowèi." },
+        { "base_language": "He was seasoning with salt.", "target_language": "他在加盐调味。", "romanized": "Tā zài jiā yán tiáowèi." },
+
+        { "base_language": "I was steaming the vegetables.", "target_language": "我在蒸蔬菜。", "romanized": "Wǒ zài zhēng shūcài." },
+        { "base_language": "You were steaming the vegetables.", "target_language": "你在蒸蔬菜。", "romanized": "Nǐ zài zhēng shūcài." },
+        { "base_language": "She was steaming the vegetables.", "target_language": "她在蒸蔬菜。", "romanized": "Tā zài zhēng shūcài." },
+
+        { "base_language": "I was paying the bill.", "target_language": "我在付账。", "romanized": "Wǒ zài fù zhàng." },
+        { "base_language": "You were paying the bill.", "target_language": "你在付账。", "romanized": "Nǐ zài fù zhàng." },
+        { "base_language": "He was paying the bill.", "target_language": "他在付账。", "romanized": "Tā zài fù zhàng." },
+
+        { "base_language": "I was ordering the pizza.", "target_language": "我在点披萨。", "romanized": "Wǒ zài diǎn pīsà." },
+        { "base_language": "You were ordering the pizza.", "target_language": "你在点披萨。", "romanized": "Nǐ zài diǎn pīsà." },
+        { "base_language": "She was ordering the pizza.", "target_language": "她在点披萨。", "romanized": "Tā zài diǎn pīsà." },
+
+        { "base_language": "I wanted cookies.", "target_language": "我想要饼干。", "romanized": "Wǒ xiǎng yào bǐnggān." },
+        { "base_language": "You wanted cookies.", "target_language": "你想要饼干。", "romanized": "Nǐ xiǎng yào bǐnggān." },
+        { "base_language": "He wanted cookies.", "target_language": "他想要饼干。", "romanized": "Tā xiǎng yào bǐnggān." },
+
+        { "base_language": "I had the menu.", "target_language": "我有菜单。", "romanized": "Wǒ yǒu càidān." },
+        { "base_language": "You had the menu.", "target_language": "你有菜单。", "romanized": "Nǐ yǒu càidān." },
+        { "base_language": "She had the menu.", "target_language": "她有菜单。", "romanized": "Tā yǒu càidān." }
+    ]
+}

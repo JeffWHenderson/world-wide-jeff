@@ -1,90 +1,90 @@
 {
-    "course_name": "chinese - Mandarin",
+    "course_name": "Chinese - mandarin",
     "course_levels": [
         {
-            "level_id": "00",
-            "level_name": "Starting off right",
+            "level_id": "foodAndDrink",
+            "level_name": "Food and Drink",
             "lessons": [
                 {
-                    "filename": "00_first_lesson.json",
-                    "name": "tbd",
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                {
+                    "filename": "foodAndDrink_nouns.json",
+                    "name": "Nouns",
                     "type": "flashcards"
+                },
+                                {
+                    "filename": "foodAndDrink_adjectives.json",
+                    "name": "Adjectives",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_presentTense.json",
+                    "name": "Present tense 1st person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_presentTenseTwo.json",
+                    "name": "Present tense + 2nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_preterite.json",
+                    "name": "Past tense + 1nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_preteriteTwo.json",
+                    "name": "Past tense + 2nd person",
+                    "type": "flashcards"
+                },
+                                {
+                    "filename": "foodAndDrink_verbs_future.json",
+                    "name": "Future tense + 1nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_futureTwo.json",
+                    "name": "Future tense + 2nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_infinitives.json",
+                    "name": "infinitive forms",
+                    "type": "flashcards"
+                },
+                                {
+                    "filename": "foodAndDrink_verbs_imperfect.json",
+                    "name": "imperfect + 1nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_verbs_imperfectTwo.json",
+                    "name": "imperfect + 2nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_stuffIMissed.json",
+                    "name": "Stuff I missed",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_exampleStory.json",
+                    "name": "Example Story",
+                    "type": "story"
                 }
             ]
         },
         {
-            "level_id": "99",
-            "level_name": "old lessons",
+            "level_id": "moodsAndEmotion",
+            "level_name": "Moods and Emotions",
             "lessons": [
                 {
-                    "filename": "99_people.json",
-                    "name": "people",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_body_parts.json",
-                    "name": "body parts ",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_animals.json",
-                    "name": "animals",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_places_and_nature.json",
-                    "name": "places and nature",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_verbs.json",
-                    "name": "verbs",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_objects_and_things.json",
-                    "name": "objects and things",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_food_and_drink.json",
-                    "name": "food and drink",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_time_and_dates.json",
-                    "name": "time and dates",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_abstract_concepts.json",
-                    "name": "abstract concepts",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_other_common_nouns.json",
-                    "name": "other common nouns",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_lesson_1.json",
-                    "name": "lesson 1",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_201_to_300.json",
-                    "name": "201 to 300",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_ai_lesson_1.json",
-                    "name": "wonky ai sentences",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "99_ai_lesson_2.json",
-                    "name": "wonky ai sentences 2",
-                    "type": "flashcards"
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
                 }
             ]
         }

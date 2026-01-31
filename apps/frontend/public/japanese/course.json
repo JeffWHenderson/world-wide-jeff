@@ -1,14 +1,29 @@
 {
     "course_name": "japanese",
     "course_levels": [
-        {
-            "level_id": "00",
-            "level_name": "Starting off right",
+ {
+            "level_id": "foodAndDrink",
+            "level_name": "Food and Drink",
             "lessons": [
                 {
-                    "filename": "00_first_lesson.json",
-                    "name": "first lesson",
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                {
+                    "filename": "foodAndDrink_nouns.json",
+                    "name": "Nouns",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_adjectives.json",
+                    "name": "Adjectives",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink_exampleStory.json",
+                    "name": "Example Story",
+                    "type": "story"
                 }
             ]
         },

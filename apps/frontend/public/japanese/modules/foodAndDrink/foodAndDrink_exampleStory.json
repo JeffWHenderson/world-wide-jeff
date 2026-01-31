@@ -1,0 +1,37 @@
+{   
+    "name": "animals", 
+    "type": "story", 
+    "sentences": [
+        {
+            "base_language": "this is seth",
+            "target_language": "こちらはセスです。",
+            "romanized": "kochira wa Sesu desu"
+        },
+        {
+            "base_language": "seth wants to buy a drink",
+            "target_language": "セスは飲み物を買いたいです。",
+            "romanized": "Sesu wa nomimono o kaitai desu"
+        },
+        {
+            "base_language": "seth wants fast food too.",
+            "target_language": "セスはファストフードも欲しいです。",
+            "romanized": "Sesu wa fasuto fuudo mo hoshii desu"
+        },
+        {
+            "base_language": "so seth goes to McDolnalds.",
+            "target_language": "それで、セスはマクドナルドに行きます。",
+            "romanized": "Sore de, Sesu wa Makudonarudo ni ikimasu"
+        },
+        {
+            "base_language": "He orders a big Coke",
+            "target_language": "彼は大きなコーラを注文します。",
+            "romanized": "Kare wa ookina koora o chuumon shimasu"
+        },
+        {
+            "base_language": "he orders a cheeseburger",
+            "target_language": "彼はチーズバーガーを注文します。",
+            "romanized": "Kare wa chiizu baagaa o chuumon shimasu"
+        }
+    ]
+
+}

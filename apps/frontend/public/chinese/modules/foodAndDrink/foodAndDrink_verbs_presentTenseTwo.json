@@ -1,0 +1,118 @@
+{ 
+    "name": "verbs for food I/We/They", 
+    "type": "flashcards", 
+    "lesson_id": "verbs_presenet_simple.md", 
+    "sentences": [
+        { "base_language": "I eat the cheese.", "target_language": "我吃奶酪。", "romanized": "Wǒ chī nǎilào." },
+        { "base_language": "We eat the cheese.", "target_language": "我们吃奶酪。", "romanized": "Wǒmen chī nǎilào." },
+        { "base_language": "They eat the cheese.", "target_language": "他们吃奶酪。", "romanized": "Tāmen chī nǎilào." },
+
+        { "base_language": "I drink the milk.", "target_language": "我喝牛奶。", "romanized": "Wǒ hē niúnǎi." },
+        { "base_language": "We drink the milk.", "target_language": "我们喝牛奶。", "romanized": "Wǒmen hē niúnǎi." },
+        { "base_language": "They drink the milk.", "target_language": "他们喝牛奶。", "romanized": "Tāmen hē niúnǎi." },
+
+        { "base_language": "I cook the fish.", "target_language": "我做鱼。", "romanized": "Wǒ zuò yú." },
+        { "base_language": "We cook the fish.", "target_language": "我们做鱼。", "romanized": "Wǒmen zuò yú." },
+        { "base_language": "They cook the fish.", "target_language": "他们做鱼。", "romanized": "Tāmen zuò yú." },
+
+        { "base_language": "I bake the cake.", "target_language": "我烤蛋糕。", "romanized": "Wǒ kǎo dàngāo." },
+        { "base_language": "We bake the cake.", "target_language": "我们烤蛋糕。", "romanized": "Wǒmen kǎo dàngāo." },
+        { "base_language": "They bake the cake.", "target_language": "他们烤蛋糕。", "romanized": "Tāmen kǎo dàngāo." },
+
+        { "base_language": "I boil the water.", "target_language": "我烧水。", "romanized": "Wǒ shāo shuǐ." },
+        { "base_language": "We boil the water.", "target_language": "我们烧水。", "romanized": "Wǒmen shāo shuǐ." },
+        { "base_language": "They boil the water.", "target_language": "他们烧水。", "romanized": "Tāmen shāo shuǐ." },
+
+        { "base_language": "I fry the potato.", "target_language": "我煎土豆。", "romanized": "Wǒ jiān tǔdòu." },
+        { "base_language": "We fry the potato.", "target_language": "我们煎土豆。", "romanized": "Wǒmen jiān tǔdòu." },
+        { "base_language": "They fry the potato.", "target_language": "他们煎土豆。", "romanized": "Tāmen jiān tǔdòu." },
+
+        { "base_language": "I roast the beef.", "target_language": "我烤牛肉。", "romanized": "Wǒ kǎo niúròu." },
+        { "base_language": "We roast the beef.", "target_language": "我们烤牛肉。", "romanized": "Wǒmen kǎo niúròu." },
+        { "base_language": "They roast the beef.", "target_language": "他们烤牛肉。", "romanized": "Tāmen kǎo niúròu." },
+
+        { "base_language": "I grill the pork.", "target_language": "我烤猪肉。", "romanized": "Wǒ kǎo zhūròu." },
+        { "base_language": "We grill the pork.", "target_language": "我们烤猪肉。", "romanized": "Wǒmen kǎo zhūròu." },
+        { "base_language": "They grill the pork.", "target_language": "他们烤猪肉。", "romanized": "Tāmen kǎo zhūròu." },
+
+        { "base_language": "I chop the fruit.", "target_language": "我切水果。", "romanized": "Wǒ qiē shuǐguǒ." },
+        { "base_language": "We chop the fruit.", "target_language": "我们切水果。", "romanized": "Wǒmen qiē shuǐguǒ." },
+        { "base_language": "They chop the fruit.", "target_language": "他们切水果。", "romanized": "Tāmen qiē shuǐguǒ." },
+
+        { "base_language": "I slice the orange.", "target_language": "我切橙子片。", "romanized": "Wǒ qiē chéngzi piàn." },
+        { "base_language": "We slice the orange.", "target_language": "我们切橙子片。", "romanized": "Wǒmen qiē chéngzi piàn." },
+        { "base_language": "They slice the orange.", "target_language": "他们切橙子片。", "romanized": "Tāmen qiē chéngzi piàn." },
+
+        { "base_language": "I mix the ingredients.", "target_language": "我混合食材。", "romanized": "Wǒ hùnhé shícái." },
+        { "base_language": "We mix the ingredients.", "target_language": "我们混合食材。", "romanized": "Wǒmen hùnhé shícái." },
+        { "base_language": "They mix the ingredients.", "target_language": "他们混合食材。", "romanized": "Tāmen hùnhé shícái." },
+
+        { "base_language": "I stir the pasta.", "target_language": "我搅拌意大利面。", "romanized": "Wǒ jiǎobàn yìdàlì miàn." },
+        { "base_language": "We stir the pasta.", "target_language": "我们搅拌意大利面。", "romanized": "Wǒmen jiǎobàn yìdàlì miàn." },
+        { "base_language": "They stir the pasta.", "target_language": "他们搅拌意大利面。", "romanized": "Tāmen jiǎobàn yìdàlì miàn." },
+
+        { "base_language": "I whisk the eggs.", "target_language": "我打鸡蛋。", "romanized": "Wǒ dǎ jīdàn." },
+        { "base_language": "We whisk the eggs.", "target_language": "我们打鸡蛋。", "romanized": "Wǒmen dǎ jīdàn." },
+        { "base_language": "They whisk the eggs.", "target_language": "他们打鸡蛋。", "romanized": "Tāmen dǎ jīdàn." },
+
+        { "base_language": "I pour the beer.", "target_language": "我倒啤酒。", "romanized": "Wǒ dào píjiǔ." },
+        { "base_language": "We pour the beer.", "target_language": "我们倒啤酒。", "romanized": "Wǒmen dào píjiǔ." },
+        { "base_language": "They pour the beer.", "target_language": "他们倒啤酒。", "romanized": "Tāmen dào píjiǔ." },
+
+        { "base_language": "I serve the meal.", "target_language": "我上菜。", "romanized": "Wǒ shàng cài." },
+        { "base_language": "We serve the meal.", "target_language": "我们上菜。", "romanized": "Wǒmen shàng cài." },
+        { "base_language": "They serve the meal.", "target_language": "他们上菜。", "romanized": "Tāmen shàng cài." },
+
+        { "base_language": "I taste the sandwich.", "target_language": "我尝三明治。", "romanized": "Wǒ cháng sānmíngzhì." },
+        { "base_language": "We taste the sandwich.", "target_language": "我们尝三明治。", "romanized": "Wǒmen cháng sānmíngzhì." },
+        { "base_language": "They taste the sandwich.", "target_language": "他们尝三明治。", "romanized": "Tāmen cháng sānmíngzhì." },
+
+        { "base_language": "I feed the dog.", "target_language": "我喂狗。", "romanized": "Wǒ wèi gǒu." },
+        { "base_language": "We feed the dog.", "target_language": "我们喂狗。", "romanized": "Wǒmen wèi gǒu." },
+        { "base_language": "They feed the dog.", "target_language": "他们喂狗。", "romanized": "Tāmen wèi gǒu." },
+
+        { "base_language": "I dine at home.", "target_language": "我在家吃饭。", "romanized": "Wǒ zài jiā chīfàn." },
+        { "base_language": "We dine at home.", "target_language": "我们在家吃饭。", "romanized": "Wǒmen zài jiā chīfàn." },
+        { "base_language": "They dine at home.", "target_language": "他们在家吃饭。", "romanized": "Tāmen zài jiā chīfàn." },
+
+        { "base_language": "I chew the banana.", "target_language": "我嚼香蕉。", "romanized": "Wǒ jiáo xiāngjiāo." },
+        { "base_language": "We chew the banana.", "target_language": "我们嚼香蕉。", "romanized": "Wǒmen jiáo xiāngjiāo." },
+        { "base_language": "They chew the banana.", "target_language": "他们嚼香蕉。", "romanized": "Tāmen jiáo xiāngjiāo." },
+
+        { "base_language": "I swallow the coffee.", "target_language": "我咽咖啡。", "romanized": "Wǒ yàn kāfēi." },
+        { "base_language": "We swallow the coffee.", "target_language": "我们咽咖啡。", "romanized": "Wǒmen yàn kāfēi." },
+        { "base_language": "They swallow the coffee.", "target_language": "他们咽咖啡。", "romanized": "Tāmen yàn kāfēi." },
+
+        { "base_language": "I savor the chocolate.", "target_language": "我品尝巧克力。", "romanized": "Wǒ pǐncháng qiǎokèlì." },
+        { "base_language": "We savor the chocolate.", "target_language": "我们品尝巧克力。", "romanized": "Wǒmen pǐncháng qiǎokèlì." },
+        { "base_language": "They savor the chocolate.", "target_language": "他们品尝巧克力。", "romanized": "Tāmen pǐncháng qiǎokèlì." },
+
+        { "base_language": "I season the steak.", "target_language": "我给牛排调味。", "romanized": "Wǒ gěi niúpái tiáowèi." },
+        { "base_language": "We season the steak.", "target_language": "我们给牛排调味。", "romanized": "Wǒmen gěi niúpái tiáowèi." },
+        { "base_language": "They season the steak.", "target_language": "他们给牛排调味。", "romanized": "Tāmen gěi niúpái tiáowèi." },
+
+        { "base_language": "I steam the vegetables.", "target_language": "我蒸蔬菜。", "romanized": "Wǒ zhēng shūcài." },
+        { "base_language": "We steam the vegetables.", "target_language": "我们蒸蔬菜。", "romanized": "Wǒmen zhēng shūcài." },
+        { "base_language": "They steam the vegetables.", "target_language": "他们蒸蔬菜。", "romanized": "Tāmen zhēng shūcài." },
+
+        { "base_language": "I blend the juice.", "target_language": "我打果汁。", "romanized": "Wǒ dǎ guǒzhī." },
+        { "base_language": "We blend the juice.", "target_language": "我们打果汁。", "romanized": "Wǒmen dǎ guǒzhī." },
+        { "base_language": "They blend the juice.", "target_language": "他们打果汁。", "romanized": "Tāmen dǎ guǒzhī." },
+
+        { "base_language": "I pay the waiter.", "target_language": "我付服务员的钱。", "romanized": "Wǒ fù fúwùyuán de qián." },
+        { "base_language": "We pay the waiter.", "target_language": "我们付服务员的钱。", "romanized": "Wǒmen fù fúwùyuán de qián." },
+        { "base_language": "They pay the waiter.", "target_language": "他们付服务员的钱。", "romanized": "Tāmen fù fúwùyuán de qián." },
+
+        { "base_language": "I order the snack.", "target_language": "我点小吃。", "romanized": "Wǒ diǎn xiǎochī." },
+        { "base_language": "We order the snack.", "target_language": "我们点小吃。", "romanized": "Wǒmen diǎn xiǎochī." },
+        { "base_language": "They order the snack.", "target_language": "他们点小吃。", "romanized": "Tāmen diǎn xiǎochī." },
+
+        { "base_language": "I want butter.", "target_language": "我想要黄油。", "romanized": "Wǒ xiǎng yào huángyóu." },
+        { "base_language": "You want butter.", "target_language": "你想要黄油。", "romanized": "Nǐ xiǎng yào huángyóu." },
+        { "base_language": "She wants butter.", "target_language": "她想要黄油。", "romanized": "Tā xiǎng yào huángyóu." },
+
+        { "base_language": "I have a knife.", "target_language": "我有一把刀。", "romanized": "Wǒ yǒu yì bǎ dāo." },
+        { "base_language": "You have a knife.", "target_language": "你有一把刀。", "romanized": "Nǐ yǒu yì bǎ dāo." },
+        { "base_language": "She has a knife.", "target_language": "她有一把刀。", "romanized": "Tā yǒu yì bǎ dāo." }
+    ]
+}

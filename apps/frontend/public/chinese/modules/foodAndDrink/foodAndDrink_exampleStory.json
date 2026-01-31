@@ -1,0 +1,36 @@
+{   
+    "name": "animals", 
+    "type": "story", 
+    "sentences": [
+        { 
+            "base_language": "this is seth", 
+            "target_language": "这是赛斯。", 
+            "romanized": "Zhè shì Sàisī." 
+        },
+        { 
+            "base_language": "seth wants to buy a drink", 
+            "target_language": "赛斯想买一杯饮料。", 
+            "romanized": "Sàisī xiǎng mǎi yī bēi yǐnliào." 
+        },
+        { 
+            "base_language": "seth wants fast food too.", 
+            "target_language": "赛斯也想要快餐。", 
+            "romanized": "Sàisī yě xiǎng yào kuàicān." 
+        },
+        { 
+            "base_language": "so seth goes to McDolnalds.", 
+            "target_language": "所以赛斯去了麦当劳。", 
+            "romanized": "Suǒyǐ Sàisī qùle màidāngláo." 
+        },
+        { 
+            "base_language": "He orders a big Coke", 
+            "target_language": "他点了一杯大可乐。", 
+            "romanized": "Tā diǎnle yī bēi dà kělè." 
+        },
+        { 
+            "base_language": "he orders a cheeseburger", 
+            "target_language": "他点了一个芝士汉堡。", 
+            "romanized": "Tā diǎnle yī gè zhīshì hànbǎo." 
+        }
+    ]
+}

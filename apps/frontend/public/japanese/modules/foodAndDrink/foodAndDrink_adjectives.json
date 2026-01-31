@@ -1,0 +1,30 @@
+{   
+    "name": "adjectives", 
+    "type": "flashcards", 
+    "sentences": [
+        { "base_language": "fresh", "target_language": "新鮮な", "romanized": "shinsen na" },
+        { "base_language": "ripe", "target_language": "熟した", "romanized": "jukushita" },
+        { "base_language": "raw", "target_language": "生の", "romanized": "nama no" },
+        { "base_language": "cooked", "target_language": "調理された", "romanized": "chouri sareta" },
+        { "base_language": "hot", "target_language": "熱い", "romanized": "atsui" },
+        { "base_language": "cold", "target_language": "冷たい", "romanized": "tsumetai" },
+        { "base_language": "sweet", "target_language": "甘い", "romanized": "amai" },
+        { "base_language": "sour", "target_language": "酸っぱい", "romanized": "suppai" },
+        { "base_language": "salty", "target_language": "塩辛い", "romanized": "shiokarai" },
+        { "base_language": "bitter", "target_language": "苦い", "romanized": "nigai" },
+        { "base_language": "spicy", "target_language": "辛い", "romanized": "karai" },
+        { "base_language": "crunchy", "target_language": "カリカリの", "romanized": "karikari no" },
+        { "base_language": "creamy", "target_language": "クリーミーな", "romanized": "kuriimii na" },
+        { "base_language": "tender", "target_language": "柔らかい", "romanized": "yawarakai" },
+        { "base_language": "juicy", "target_language": "ジューシーな", "romanized": "juushii na" },
+        { "base_language": "delicious", "target_language": "美味しい", "romanized": "oishii" },
+        { "base_language": "tasty", "target_language": "うまい", "romanized": "umai" },
+        { "base_language": "bland", "target_language": "薄味の", "romanized": "usuaji no" },
+        { "base_language": "healthy", "target_language": "健康的な", "romanized": "kenkouteki na" },
+        { "base_language": "unhealthy", "target_language": "不健康な", "romanized": "fukenkou na" },
+        { "base_language": "vegetarian", "target_language": "菜食の", "romanized": "saishoku no" },
+        { "base_language": "vegan", "target_language": "ヴィーガンの", "romanized": "viigan no" },
+        { "base_language": "frozen", "target_language": "冷凍の", "romanized": "reitou no" },
+        { "base_language": "organic", "target_language": "有機の", "romanized": "yuuki no" }
+    ]
+}

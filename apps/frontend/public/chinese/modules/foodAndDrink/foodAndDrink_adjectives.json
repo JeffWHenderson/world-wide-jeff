@@ -1,0 +1,30 @@
+{   
+    "name": "adjectives", 
+    "type": "flashcards", 
+    "sentences": [
+        { "base_language": "fresh", "target_language": "新鲜的", "romanized": "xīnxiān de" },
+        { "base_language": "ripe","target_language": "成熟的", "romanized": "chéngshú de" },
+        { "base_language": "raw", "target_language": "生的", "romanized": "shēng de" },
+        { "base_language": "cooked", "target_language": "熟的", "romanized": "shú de" },
+        { "base_language": "hot", "target_language": "热的", "romanized": "rè de" },
+        { "base_language": "cold", "target_language": "冷的", "romanized": "lěng de" },
+        { "base_language": "sweet", "target_language": "甜的", "romanized": "tián de" },
+        { "base_language": "sour", "target_language": "酸的", "romanized": "suān de" },
+        { "base_language": "salty", "target_language": "咸的", "romanized": "xián de" },
+        { "base_language": "bitter", "target_language": "苦的", "romanized": "kǔ de" },
+        { "base_language": "spicy", "target_language": "辣的", "romanized": "là de" },
+        { "base_language": "crunchy", "target_language": "脆的", "romanized": "cuì de" },
+        { "base_language": "creamy", "target_language": "奶油状的", "romanized": "nǎiyóu zhuàng de" },
+        { "base_language": "tender", "target_language": "嫩的", "romanized": "nèn de" },
+        { "base_language": "juicy", "target_language": "多汁的", "romanized": "duō zhī de" },
+        { "base_language": "delicious", "target_language": "美味的", "romanized": "měiwèi de" },
+        { "base_language": "tasty", "target_language": "可口的", "romanized": "kěkǒu de" },
+        { "base_language": "bland", "target_language": "清淡的", "romanized": "qīngdàn de" },
+        { "base_language": "healthy", "target_language": "健康的", "romanized": "jiànkāng de" },
+        { "base_language": "unhealthy", "target_language": "不健康的", "romanized": "bù jiànkāng de" },
+        { "base_language": "vegetarian", "target_language": "素食的", "romanized": "sùshí de" },
+        { "base_language": "vegan", "target_language": "纯素的", "romanized": "chúnsù de" },
+        { "base_language": "frozen", "target_language": "冷冻的", "romanized": "lěngdòng de" },
+        { "base_language": "organic", "target_language": "有机的", "romanized": "yǒujī de" }
+    ]
+}
