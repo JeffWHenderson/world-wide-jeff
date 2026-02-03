@@ -16,6 +16,14 @@ body {
     /* Optional smooth transition */
 }
 
+.word-list {
+    background-color: var(--bg-color);
+}
+
+/* .word-list>li {
+    background-color: white;
+} */
+
 .header {
     width: 100vw;
     color: white;

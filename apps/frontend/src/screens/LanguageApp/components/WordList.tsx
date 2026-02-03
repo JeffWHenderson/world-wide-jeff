@@ -17,12 +17,11 @@ const WordList = () => {
             .catch(err => console.error(err))
     }, [])
 
-    console.log(wordList)
     return <>
         <h1>WORDLIST FOR THIS SECTIOIN</h1>
         <h3>No need to memorize now, but this is printable so you can reference without a stupid computer</h3>
 
-        <ul>
+        <ul className="word-list">
             {wordList.map((listItem: WordListItem) => (
                 <li><pre>{listItem.word}  |  {listItem.translation}</pre></li>
             ))}

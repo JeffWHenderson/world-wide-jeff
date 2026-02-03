@@ -13,6 +13,8 @@ const FlashCardsV2 = () => {
     const [englishVoice] = useLanguage("english")
     const [readFront, setReadFront] = useState(true)
     const [readBack, setReadBack] = useState(true)
+    // TODO: I can make delay dynamic... seems to work for spanish which is my focus for the moment
+    const delay = 1000 
 
     useEffect(() => {
         fetch(`/${language?.toLowerCase()}/modules/${lessonId?.split("_")[0]}/${lessonId}`)
@@ -25,8 +27,8 @@ const FlashCardsV2 = () => {
     useEffect(() => {
         if (readFront && readBack) {
             read(true) // do in english
-            setTimeout(() => read(), 2000)
-        } else {
+            setTimeout(() => read(), 2000 + delay)
+        } else {''
             if (readFront) {
                 read(true)
             }
@@ -35,7 +37,7 @@ const FlashCardsV2 = () => {
             }
         }
         if (autoplay) {
-            setTimeout(nextCard, 3700)
+            setTimeout(nextCard, 3700 + delay)
         }
     }, [cardNumber, autoplay])
 
