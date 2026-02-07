@@ -98,9 +98,20 @@
                 }
             ]
         },
-                {
+        {
             "level_id": "commonPlaces",
             "level_name": "Common Places and Direction",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                }
+            ]
+        },
+        {
+            "level_id": "humanBody",
+            "level_name": "Body and health",
             "lessons": [
                 {
                     "filename": "__wordList__.json",
