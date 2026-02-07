@@ -43,7 +43,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path=":language" element={<LanguageLearningApp />} />
           <Route path=":language/flashcards/:lessonId" element={<FlashCardsV2 />} />
           <Route path=":language/story/:lessonId" element={<StoryReader />} />
-          <Route path=":language/wordlist/:lessonId" element={<WordList />} />
+          <Route path=":language/wordlist/:section/:lessonId" element={<WordList />} />
           <Route path=":language/view-lesson/:lessonId" element={<ViewLesson />} />
         </Route>
         <Route path="*" element={<NoPage />} />

@@ -7,11 +7,11 @@ type WordListItem = {
 }
 
 const WordList = () => {
-    const { language, lessonId } = useParams();
+    const { language, lessonId, section } = useParams();
     const [wordList, setWordList] = useState<WordListItem[]>([])
 
     useEffect(() => {
-        fetch(`/${language}/modules/foodAndDrink/${lessonId}`)
+        fetch(`/${language}/modules/${section}/${lessonId}`)
             .then(res => res.json())
             .then(data => { console.log(data), setWordList(data) })
             .catch(err => console.error(err))

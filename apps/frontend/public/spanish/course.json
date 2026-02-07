@@ -85,6 +85,27 @@
                     "filename": "__wordList__.json",
                     "name": "word list",
                     "type": "wordlist"
+                },
+                {
+                    "filename": "moodsAndEmotion_estarPresentTense.json",
+                    "name": "to be present tense 1st person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "moodsAndEmotion_estarPresentTenseTwo.json",
+                    "name": "to be present tense 2nd person",
+                    "type": "flashcards"
+                }
+            ]
+        },
+                {
+            "level_id": "commonPlaces",
+            "level_name": "Common Places and Direction",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
                 }
             ]
         }

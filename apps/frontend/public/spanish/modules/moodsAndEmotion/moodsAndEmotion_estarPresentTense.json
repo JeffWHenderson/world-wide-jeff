@@ -1,0 +1,110 @@
+{
+    "name": "Estar 1st person",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        { "base_language": "I am happy.", "target_language": "Yo estoy feliz." },
+        { "base_language": "You are happy.", "target_language": "Tú estás feliz." },
+        { "base_language": "He is happy.", "target_language": "Él está feliz." },
+
+        { "base_language": "I am sad.", "target_language": "Yo estoy triste." },
+        { "base_language": "You are sad.", "target_language": "Tú estás triste." },
+        { "base_language": "She is sad.", "target_language": "Ella está triste." },
+
+        { "base_language": "I am in love.", "target_language": "Yo estoy enamorado/enamorada." },
+        { "base_language": "You are in love.", "target_language": "Tú estás enamorado/enamorada." },
+        { "base_language": "He is in love.", "target_language": "Él está enamorado." },
+
+        { "base_language": "I am full of joy.", "target_language": "Yo estoy lleno/llena de alegría." },
+        { "base_language": "You are full of joy.", "target_language": "Tú estás lleno/llena de alegría." },
+        { "base_language": "She is full of joy.", "target_language": "Ella está llena de alegría." },
+
+        { "base_language": "I am angry.", "target_language": "Yo estoy enfadado/enfadada." },
+        { "base_language": "You are angry.", "target_language": "Tú estás enfadado/enfadada." },
+        { "base_language": "He is angry.", "target_language": "Él está enfadado." },
+
+        { "base_language": "I am afraid.", "target_language": "Yo tengo miedo." },
+        { "base_language": "You are afraid.", "target_language": "Tú tienes miedo." },
+        { "base_language": "She is afraid.", "target_language": "Ella tiene miedo." },
+
+        { "base_language": "I am hopeful.", "target_language": "Yo tengo esperanza." },
+        { "base_language": "You are hopeful.", "target_language": "Tú tienes esperanza." },
+        { "base_language": "He is hopeful.", "target_language": "Él tiene esperanza." },
+
+        { "base_language": "I am stressed.", "target_language": "Yo estoy estresado/estresada." },
+        { "base_language": "You are stressed.", "target_language": "Tú estás estresado/estresada." },
+        { "base_language": "She is stressed.", "target_language": "Ella está estresada." },
+
+        { "base_language": "I am in a bad mood.", "target_language": "Yo estoy de mal humor." },
+        { "base_language": "You are in a bad mood.", "target_language": "Tú estás de mal humor." },
+        { "base_language": "He is in a bad mood.", "target_language": "Él está de mal humor." },
+
+        { "base_language": "I am feeling happy.", "target_language": "Yo me siento feliz." },
+        { "base_language": "You are feeling happy.", "target_language": "Tú te sientes feliz." },
+        { "base_language": "She is feeling happy.", "target_language": "Ella se siente feliz." },
+
+        { "base_language": "I am emotional.", "target_language": "Yo soy emocional." },
+        { "base_language": "You are emotional.", "target_language": "Tú eres emocional." },
+        { "base_language": "He is emotional.", "target_language": "Él es emocional." },
+
+        { "base_language": "I am excited.", "target_language": "Yo estoy emocionado/emocionada." },
+        { "base_language": "You are excited.", "target_language": "Tú estás emocionado/emocionada." },
+        { "base_language": "She is excited.", "target_language": "Ella está emocionada." },
+
+        { "base_language": "I am proud.", "target_language": "Yo estoy orgulloso/orgullosa." },
+        { "base_language": "You are proud.", "target_language": "Tú estás orgulloso/orgullosa." },
+        { "base_language": "He is proud.", "target_language": "Él está orgulloso." },
+
+        { "base_language": "I am ashamed.", "target_language": "Yo estoy avergonzado/avergonzada." },
+        { "base_language": "You are ashamed.", "target_language": "Tú estás avergonzado/avergonzada." },
+        { "base_language": "She is ashamed.", "target_language": "Ella está avergonzada." },
+
+        { "base_language": "I am guilty.", "target_language": "Yo me siento culpable." },
+        { "base_language": "You are guilty.", "target_language": "Tú te sientes culpable." },
+        { "base_language": "He is guilty.", "target_language": "Él se siente culpable." },
+
+        { "base_language": "I am envious.", "target_language": "Yo estoy envidioso/envidiosa." },
+        { "base_language": "You are envious.", "target_language": "Tú estás envidioso/envidiosa." },
+        { "base_language": "She is envious.", "target_language": "Ella está envidiosa." },
+
+        { "base_language": "I am jealous.", "target_language": "Yo estoy celoso/celosa." },
+        { "base_language": "You are jealous.", "target_language": "Tú estás celoso/celosa." },
+        { "base_language": "He is jealous.", "target_language": "Él está celoso." },
+
+        { "base_language": "I am calm.", "target_language": "Yo estoy tranquilo/tranquila." },
+        { "base_language": "You are calm.", "target_language": "Tú estás tranquilo/tranquila." },
+        { "base_language": "She is calm.", "target_language": "Ella está tranquila." },
+
+        { "base_language": "I am at peace.", "target_language": "Yo estoy en paz." },
+        { "base_language": "You are at peace.", "target_language": "Tú estás en paz." },
+        { "base_language": "He is at peace.", "target_language": "Él está en paz." },
+
+        { "base_language": "I am anxious.", "target_language": "Yo estoy ansioso/ansiosa." },
+        { "base_language": "You are anxious.", "target_language": "Tú estás ansioso/ansiosa." },
+        { "base_language": "She is anxious.", "target_language": "Ella está ansiosa." },
+
+        { "base_language": "I am worried.", "target_language": "Yo estoy preocupado/preocupada." },
+        { "base_language": "You are worried.", "target_language": "Tú estás preocupado/preocupada." },
+        { "base_language": "He is worried.", "target_language": "Él está preocupado." },
+
+        { "base_language": "I am panicked.", "target_language": "Yo estoy en pánico." },
+        { "base_language": "You are panicked.", "target_language": "Tú estás en pánico." },
+        { "base_language": "She is panicked.", "target_language": "Ella está en pánico." },
+
+        { "base_language": "I am disgusted.", "target_language": "Yo estoy disgustado/disgustada." },
+        { "base_language": "You are disgusted.", "target_language": "Tú estás disgustado/disgustada." },
+        { "base_language": "He is disgusted.", "target_language": "Él está disgustado." },
+
+        { "base_language": "I am surprised.", "target_language": "Yo estoy sorprendido/sorprendida." },
+        { "base_language": "You are surprised.", "target_language": "Tú estás sorprendido/sorprendida." },
+        { "base_language": "She is surprised.", "target_language": "Ella está sorprendida." },
+
+        { "base_language": "I am shocked.", "target_language": "Yo estoy conmocionado/conmocionada." },
+        { "base_language": "You are shocked.", "target_language": "Tú estás conmocionado/conmocionada." },
+        { "base_language": "He is shocked.", "target_language": "Él está conmocionado." },
+
+        { "base_language": "I am passionate.", "target_language": "Yo soy apasionado/apasionada." },
+        { "base_language": "You are passionate.", "target_language": "Tú eres apasionado/apasionada." },
+        { "base_language": "She is passionate.", "target_language": "Ella es apasionada." }
+    ]
+}
