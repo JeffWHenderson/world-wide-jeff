@@ -5,7 +5,7 @@ import "./main-styles.css"
 
 // TODO: add CSS Eventually
 const storyCardStyles = {
-    backgroundColor: 'lightGrey',
+    backgroundColor: 'red',
     color: 'black',
     marginRight: "7px"
 }
@@ -58,19 +58,33 @@ const LanguageLearningApp = () => {
                 {course?.course_levels.map((level: any) => (
                     <div key={level.level_id}>
                         <p>{level.level_name}</p>
-                        <div style={{ padding: '10px', display: "flex", marginTop: '4px', overflowY: 'auto' }}>
-                            {level.lessons.map((lesson: any) => (
-                                <button
-                                    key={lesson.filename}
-                                    style={lesson.type === "story" ? storyCardStyles : flashCardStyles}
-                                    onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
-                                    {lesson.name}
-                                </button>
-                            ))}
+                        <div style={{ overflowY: 'auto' }}>
+                            <div style={{ padding: '10px', display: "flex", marginTop: '4px' }}>
+                                {level.lessons.map((lesson: any) => (
+                                    lesson.type !== 'story' &&
+                                    <button
+                                        key={lesson.filename}
+                                        style={flashCardStyles}
+                                        onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
+                                        {lesson.name}
+                                    </button>
+                                ))}
+                            </div>
+                            <div style={{ padding: '10px', display: "flex", marginTop: '4px' }}>
+                                {level.lessons.map((lesson: any) => (
+                                    lesson.type === 'story' &&
+                                    <button
+                                        key={lesson.filename}
+                                        style={storyCardStyles}
+                                        onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
+                                        {lesson.name}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}
-            </div>
+            </div >
         </>
     )
 }

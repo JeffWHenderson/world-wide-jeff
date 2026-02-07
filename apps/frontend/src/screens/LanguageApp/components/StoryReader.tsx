@@ -11,33 +11,32 @@ const StoryReader = () => {
   const [speakingRate] = useState(1)
   const [voice] = useLanguage(language as string)
   const [lesson, setLesson] = useState<any>(null)
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    console.log(`/${language}/modules/${lessonId?.split("_")[0]}/${lessonId}`)
-    fetch(`/${language}/modules/${lessonId?.split("_")[0]}/${lessonId}`)
+    fetch(`/${language}/modules/${lessonId?.split("_")[0]}/stories/${lessonId}`)
       .then(res => res.json())
       .then(data => { console.log(data); setLesson(data) })
       .catch(err => console.error(err))
   }, [])
 
-  const read = (counter: number = 0) => {
-    const speechUtterance = new SpeechSynthesisUtterance()
+  useEffect(() => {
+    if (lesson) {
+      read()
+    }
+  }, [counter])
 
-    // TODO: text highlighting type of idea but not fleshed out
-    // speechUtterance.onboundary = function (event) {
-    //     var e = document.getElementById('text-area');
-    //     e.innerHTML = event.target.text; 
-    // }
+
+  const read = () => {
+    const speechUtterance = new SpeechSynthesisUtterance()
     speechUtterance.voice = voice as SpeechSynthesisVoice
-    // TODO: ADD RATE SLIDER
     speechUtterance.rate = speakingRate
     speechUtterance.text = lesson.sentences[counter].target_language // HARDCODED
     window.speechSynthesis.speak(speechUtterance);
 
     if (lesson.sentences.length > counter + 1) {
-      read(counter + 1)
+      setCounter(counter + 1)
     }
-
   }
 
   const handleGoBack = () => {
@@ -54,9 +53,8 @@ const StoryReader = () => {
         <p>{phrase.base_language}</p>
       </div>
     } else {
-      return <div style={{ backgroundColor: "grey", borderRadius: '3' }}>
+      return <div>
         <p>{phrase.target_language}</p>
-        <p>{phrase.base_language}</p>
       </div>
     }
   }
