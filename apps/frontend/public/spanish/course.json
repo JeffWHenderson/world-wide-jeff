@@ -11,11 +11,16 @@
                     "type": "wordlist"
                 },
                 {
-                    "filename": "foodAndDrink_nouns.json",
-                    "name": "Nouns",
+                    "filename": "foodAndDrink_thisAndThese.json",
+                    "name": "Nouns + gender 1",
                     "type": "flashcards"
                 },
-                                {
+                {
+                    "filename": "foodAndDrink_thatAndThosejson",
+                    "name": "Nouns have gender 2",
+                    "type": "flashcards"
+                },
+                {
                     "filename": "foodAndDrink_adjectives.json",
                     "name": "Adjectives",
                     "type": "flashcards"
