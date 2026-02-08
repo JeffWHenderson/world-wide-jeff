@@ -20,23 +20,27 @@ const StoryReader = () => {
       .catch(err => console.error(err))
   }, [])
 
-  useEffect(() => {
-    if (lesson) {
-      read()
-    }
-  }, [counter])
-
-
-  const read = () => {
+  const playOrPause = (startPosition: number) => {
+    // Disable button on play
     const speechUtterance = new SpeechSynthesisUtterance()
     speechUtterance.voice = voice as SpeechSynthesisVoice
     speechUtterance.rate = speakingRate
-    speechUtterance.text = lesson.sentences[counter].target_language // HARDCODED
-    window.speechSynthesis.speak(speechUtterance);
 
-    if (lesson.sentences.length > counter + 1) {
-      setCounter(counter + 1)
-    }
+    // If is playing ()
+    // pause speech synthesis 
+    // if is paused
+    read(speechUtterance, startPosition)
+    // 
+  }
+
+
+  const read = (speechUtterance: SpeechSynthesisUtterance, index: number) => {
+    const newIndex = index + 1
+
+    speechUtterance.text = lesson.sentences[index].target_language
+    speechUtterance.onend = () => setTimeout(() => read(speechUtterance, newIndex), 500) // MAKE DELAY VARIABLE
+    setCounter(newIndex)
+    window.speechSynthesis.speak(speechUtterance);
   }
 
   const handleGoBack = () => {
@@ -60,42 +64,47 @@ const StoryReader = () => {
   }
 
 
-  return <>
-    <button onClick={() => handleGoBack()} >go back</button>
-    {/* TODO: disable until speaking is done */}
-    <button onClick={() => read()} >speak</button>
-    {
-      lesson &&
-      lesson.sentences.map((sentence: Expression) => (
-        <div onMouseEnter={() => setShowPopup(sentence.target_language)}
-          onMouseLeave={() => setShowPopup('false')}
-          style={{ position: 'relative' }}
-        >
-          {displaySentence(sentence)}
+  return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ backgroundColor: "white", padding: '7px', width: '100vw', maxWidth: '900px' }}>
+      {
+        lesson &&
+        lesson.sentences.map((sentence: Expression, index: number) => (
+          <div
+            onMouseEnter={() => setShowPopup(sentence.target_language)}
+            onMouseLeave={() => setShowPopup('false')}
+            style={{ position: 'relative' }}
+            onClick={() => playOrPause(index)}
+          >
+            {displaySentence(sentence)}
 
-          {showPopup == sentence.target_language && (
-            <div
-              style={{
-                position: 'absolute',
-                top: '100%', // Position below the "Hover Me" text
-                left: 0,
-                backgroundColor: 'lightgray',
-                color: 'black',
-                padding: '10px',
-                border: '1px solid gray',
-                zIndex: 10, // Ensure it appears above other content
-              }}
-            >
-              <div>{sentence.base_language}</div>
-              {sentence.grammar?.note}
-            </div>
-          )}
-        </div>
-      ))
-    }
-    <br /><br /><br /><br />
-    <div id="text-area" style={{ backgroundColor: 'white', color: 'black' }}></div>
-  </>
+            {showPopup == sentence.target_language && (
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '100%', // Position below the "Hover Me" text
+                  left: 0,
+                  backgroundColor: 'lightgray',
+                  color: 'black',
+                  padding: '10px',
+                  border: '1px solid gray',
+                  zIndex: 10, // Ensure it appears above other content
+                }}
+              >
+                <div>{sentence.base_language}</div>
+                {sentence.grammar?.note}
+              </div>
+            )}
+          </div>
+        ))
+      }
+      <br /><br /><br /><br />
+      <div id="text-area" style={{ backgroundColor: 'white', color: 'black' }}></div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <button onClick={() => handleGoBack()} >go back</button>
+        <button onClick={() => playOrPause(counter)} >speak</button>
+      </div>
+    </div>
+  </div>
 }
 
 
