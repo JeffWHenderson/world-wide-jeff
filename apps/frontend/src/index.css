@@ -1,17 +1,18 @@
 :root {
-  --bg-color: #5c5cb7;
   --text-color: #2d0606;
-  background-color: var(--bg-color);
-  /* TODO: I don't need both bg-color and background color */
-  color: var(--text-color);
+  --background-color: #5c5cb7;
+  --card-color: white;
+  --story-lesson-color: red;
+  --flashcard-lesson-color: lightgrey;
+  --card-text-color: black;
+  --section-header-color: black;
+  --course-header-color: white;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,13 +21,19 @@
 }
 
 [data-theme="dark"] {
-  --background-color: #000000;
-  --font-color: #ffffff;
-}
+  --background-color: rgb(41, 44, 44);
+  --card-text-color: black;
+  --section-header-color: blue;
+  --text-color: #2d0606;
 
-.dark-mode {
-  --bg-color: #151010;
-  --text-color: white;
+  --font-color: white;
+  --card-color: black;
+  /* --card-color: orange; */
+  --story-lesson-color: red;
+  --flashcard-lesson-color: lightgrey;
+  --card-text-color: black;
+  --section-header-color: white;
+  --course-header-color: white;
 }
 
 a {
@@ -40,13 +47,13 @@ a:hover {
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.6s ease, color 0.3s ease;
 }
 
 h1 {

@@ -18,15 +18,16 @@ const WordList = () => {
     }, [])
 
     return <>
-        <h1>WORDLIST FOR THIS SECTIOIN</h1>
-        <h3>No need to memorize now, but this is printable so you can reference without a stupid computer</h3>
+        <div className="word-list-container">
+            <h1>WORDLIST FOR THIS SECTIOIN</h1>
+            <h3>No need to memorize now, but this is printable so you can reference without a stupid computer</h3>
 
-        <ul className="word-list">
-            {wordList.map((listItem: WordListItem) => (
-                <li><pre>{listItem.word}  |  {listItem.translation}</pre></li>
-            ))}
-        </ul>
-
+            <ul className="word-list">
+                {wordList.map((listItem: WordListItem) => (
+                    <li><pre>{listItem.word}  |  {listItem.translation}</pre></li>
+                ))}
+            </ul>
+        </div>
     </>
 }
 

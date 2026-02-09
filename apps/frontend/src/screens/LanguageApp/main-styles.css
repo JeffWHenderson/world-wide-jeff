@@ -1,16 +1,46 @@
-.word-list {
-    background-color: var(--bg-color);
-}
-
-/* .word-list>li {
-    background-color: white;
-} */
-
-.header {
+.course-header {
     width: 100vw;
-    color: white;
+    color: var(--course-header-color);
     display: flex;
     justify-content: center;
     /* Horizontally centers content */
     align-items: center;
+}
+
+.section-header {
+    color: var(--section-header-color)
+}
+
+.storyLessonCard {
+    background-color: var(--story-lesson-color);
+    color: var(--card-text-color);
+    margin-right: 7px;
+}
+
+.flashCardLessonCard {
+    background-color: var(--flashcard-lesson-color);
+    color: var(--card-text-color);
+    margin-right: 7px;
+}
+
+/* this is in the wrong place but fine */
+.word-list-container {
+    color: var(--font-color);
+    background-color: var(--background-color)
+}
+
+/* story styles -- probably also to be moved eventually */
+.story-container {
+    flex: 1;
+    justify-content: center;
+    align-content: space-around;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+.story-page {
+    background-color: var(--card-color);
+    padding: 7px;
+    width: 100vw;
+    max-width: 900px;
 }

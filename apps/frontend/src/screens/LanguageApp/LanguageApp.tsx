@@ -1,23 +1,10 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useTheme } from "../Core/ThemeContext"
 import "./main-styles.css"
 
-
-// TODO: add CSS Eventually
-const storyCardStyles = {
-    backgroundColor: 'red',
-    color: 'black',
-    marginRight: "7px"
-}
-
-// TODO: add CSS Eventually
-const flashCardStyles = {
-    backgroundColor: 'darkGrey',
-    color: 'black',
-    marginRight: "7px"
-}
-
 const LanguageLearningApp = () => {
+    const { theme, toggleTheme } = useTheme();
     const { language } = useParams();
     const navigator = useNavigate()
     const [course, setCourse] = useState<any | null>(null);
@@ -52,19 +39,22 @@ const LanguageLearningApp = () => {
     return (
         <>
             <div style={{ maxWidth: '100vw' }}>
+                <button onClick={toggleTheme}>
+                    Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+                </button>
                 <div>
-                    <h2 className="header">{course?.course_name}</h2>
+                    <h2 className="course-header">{course?.course_name}</h2>
                 </div>
                 {course?.course_levels.map((level: any) => (
                     <div key={level.level_id}>
-                        <h3>{level.level_name}</h3>
+                        <h3 className="section-header">{level.level_name}</h3>
                         <div style={{ overflowY: 'auto' }}>
                             <div style={{ padding: '10px', display: "flex", marginTop: '4px' }}>
                                 {level.lessons.map((lesson: any) => (
                                     lesson.type !== 'story' &&
                                     <button
                                         key={lesson.filename}
-                                        style={flashCardStyles}
+                                        className="flashCardLessonCard"
                                         onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
                                         {lesson.name}
                                     </button>
@@ -75,7 +65,7 @@ const LanguageLearningApp = () => {
                                     lesson.type === 'story' &&
                                     <button
                                         key={lesson.filename}
-                                        style={storyCardStyles}
+                                        className="storyLessonCard"
                                         onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
                                         {lesson.name}
                                     </button>

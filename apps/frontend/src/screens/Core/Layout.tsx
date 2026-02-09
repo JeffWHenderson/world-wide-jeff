@@ -1,6 +1,9 @@
 import { Outlet, Link } from "react-router-dom";
+import { useTheme } from "./ThemeContext";
 
 const Layout = () => {
+    const { theme, toggleTheme } = useTheme();
+
     return (
         <div style={{ width: '100%', height: '100vh' }}>
             <div style={{ display: "flex", backgroundColor: "black", height: '10vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'center' }}>
@@ -15,6 +18,9 @@ const Layout = () => {
                     <Link to="/contact">Contact</Link>
                 </nav>
             </div>
+            <button onClick={toggleTheme}>
+                Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+            </button>
             <Outlet />
         </div>
     )

@@ -64,8 +64,8 @@ const StoryReader = () => {
   }
 
 
-  return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-    <div style={{ backgroundColor: "white", padding: '7px', width: '100vw', maxWidth: '900px' }}>
+  return <div className='story-container'>
+    <div className='story-page'>
       {
         lesson &&
         lesson.sentences.map((sentence: Expression, index: number) => (
@@ -98,7 +98,6 @@ const StoryReader = () => {
         ))
       }
       <br /><br /><br /><br />
-      <div id="text-area" style={{ backgroundColor: 'white', color: 'black' }}></div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <button onClick={() => handleGoBack()} >go back</button>
         <button onClick={() => playOrPause(counter)} >speak</button>

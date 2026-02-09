@@ -14,6 +14,7 @@ import WordList from './screens/LanguageApp/components/WordList';
 import StoryReader from './screens/LanguageApp/components/StoryReader';
 import LanguageAppLayout from './screens/LanguageApp/LanguageAppLayout';
 import ViewLesson from './screens/LanguageApp/components/ViewLesson';
+import { ThemeProvider } from './screens/Core/ThemeContext';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
 // import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
@@ -31,23 +32,25 @@ import ViewLesson from './screens/LanguageApp/components/ViewLesson';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/pickleball" element={<Pickleball />} />
-          {/* <Route path="/wallerverse" element={<WallerverseHome />} /> */}
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/events" element={<Events />} />
-        </Route>
-        <Route path="/language-app" element={<LanguageAppLayout />} >
-          <Route path=":language" element={<LanguageLearningApp />} />
-          <Route path=":language/flashcards/:lessonId" element={<FlashCardsV2 />} />
-          <Route path=":language/story/:lessonId" element={<StoryReader />} />
-          <Route path=":language/wordlist/:section/:lessonId" element={<WordList />} />
-          <Route path=":language/view-lesson/:lessonId" element={<ViewLesson />} />
-        </Route>
-        <Route path="*" element={<NoPage />} />
-      </Routes>
+      <ThemeProvider>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/pickleball" element={<Pickleball />} />
+            {/* <Route path="/wallerverse" element={<WallerverseHome />} /> */}
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/events" element={<Events />} />
+          </Route>
+          <Route path="/language-app" element={<LanguageAppLayout />} >
+            <Route path=":language" element={<LanguageLearningApp />} />
+            <Route path=":language/flashcards/:lessonId" element={<FlashCardsV2 />} />
+            <Route path=":language/story/:lessonId" element={<StoryReader />} />
+            <Route path=":language/wordlist/:section/:lessonId" element={<WordList />} />
+            <Route path=":language/view-lesson/:lessonId" element={<ViewLesson />} />
+          </Route>
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </ThemeProvider>
     </BrowserRouter>
   </StrictMode >,
 )

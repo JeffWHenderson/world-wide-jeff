@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color);
+    color: var(--font-color)
 }
 
 .card-container {
@@ -22,10 +24,10 @@
     transition: 0.3s;
     width: 80vw;
     max-width: 400px;
-    /* Adjust width as needed */
+    color: var(--font-color);
     border-radius: 10px;
-    /* Rounded corners */
     background-color: #f1f1f1;
+    background-color: var(--card-color);
     margin: 20px;/
 }
 
