@@ -57,7 +57,7 @@ const LanguageLearningApp = () => {
                 </div>
                 {course?.course_levels.map((level: any) => (
                     <div key={level.level_id}>
-                        <p>{level.level_name}</p>
+                        <h3>{level.level_name}</h3>
                         <div style={{ overflowY: 'auto' }}>
                             <div style={{ padding: '10px', display: "flex", marginTop: '4px' }}>
                                 {level.lessons.map((lesson: any) => (

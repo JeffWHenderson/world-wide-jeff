@@ -4,7 +4,7 @@ const Layout = () => {
     return (
         <div style={{ width: '100%', height: '100vh' }}>
             <div style={{ display: "flex", backgroundColor: "black", height: '10vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'center' }}>
-                <div style={{ fontSize: "2em" }}>World Wide Jeff</div>
+                <div style={{ fontSize: "2em", color: 'white' }}>World Wide Jeff</div>
             </div >
             <div style={{ display: "flex", backgroundColor: "black", height: '5vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'center' }}>
                 <nav>

@@ -1,16 +1,32 @@
 :root {
+  --bg-color: #5c5cb7;
+  --text-color: #2d0606;
+  background-color: var(--bg-color);
+  /* TODO: I don't need both bg-color and background color */
+  color: var(--text-color);
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --font-color: #ffffff;
+}
+
+.dark-mode {
+  --bg-color: #151010;
+  --text-color: white;
 }
 
 a {
@@ -24,16 +40,20 @@ a:hover {
 }
 
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 
 button {
   border-radius: 8px;

@@ -1,21 +1,3 @@
-:root {
-    --bg-color: #5c5cb7;
-    --text-color: #2d0606;
-}
-
-/* Styles applied when the 'dark-mode' class is present */
-.dark-mode {
-    --bg-color: #151010;
-    --text-color: white;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* Optional smooth transition */
-}
-
 .word-list {
     background-color: var(--bg-color);
 }
