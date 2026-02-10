@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useLanguage from "../hooks/useLanguage";
 import { useParams } from "react-router-dom";
 import "./flashcards.css"
+import useDecklist from "../hooks/useDecklist";
 
 const FlashCardsV2 = () => {
     const { language, lessonId } = useParams();
@@ -13,14 +14,21 @@ const FlashCardsV2 = () => {
     const [englishVoice] = useLanguage("english")
     const [readFront, setReadFront] = useState(true)
     const [readBack, setReadBack] = useState(true)
+    const [getMyDeck] = useDecklist();
     // TODO: I can make delay dynamic... seems to work for spanish which is my focus for the moment
     const delay = 1000
 
     useEffect(() => {
-        fetch(`/${language?.toLowerCase()}/modules/${lessonId?.split("_")[0]}/flashcards/${lessonId}`)
-            .then(res => res.json())
-            .then(data => { console.log(data); setLesson(data) })
-            .catch(err => console.error(err))
+        if (lessonId === 'myDeck') {
+            console.log(getMyDeck()[0])
+            setLesson(getMyDeck()[0])
+        } else {
+            fetch(`/${language?.toLowerCase()}/modules/${lessonId?.split("_")[0]}/flashcards/${lessonId}`)
+                .then(res => res.json())
+                .then(data => { console.log(data); setLesson(data) })
+                .catch(err => console.error(err))
+        }
+
     }, [])
 
     // // play after card number is updated

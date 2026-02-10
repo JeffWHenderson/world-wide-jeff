@@ -2,12 +2,14 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTheme } from "../Core/ThemeContext"
 import "./main-styles.css"
+import useDecklist from "./hooks/useDecklist";
 
 const LanguageLearningApp = () => {
     const { theme, toggleTheme } = useTheme();
     const { language } = useParams();
     const navigator = useNavigate()
     const [course, setCourse] = useState<any | null>(null);
+    const [getMyDeck] = useDecklist()
 
     // TODO: move this to have light and dark mode
     // // Function to set the theme
@@ -45,6 +47,14 @@ const LanguageLearningApp = () => {
                 <div>
                     <h2 className="course-header">{course?.course_name}</h2>
                 </div>
+                {getMyDeck().map((deck: any) => (
+                    <button
+                        key={deck.filename}
+                        className="flashCardLessonCard"
+                        onClick={() => handleSelectStory(deck.type, deck, deck.level_id)}>
+                        {deck.name}
+                    </button>
+                ))}
                 {course?.course_levels.map((level: any) => (
                     <div key={level.level_id}>
                         <h3 className="section-header">{level.level_name}</h3>
