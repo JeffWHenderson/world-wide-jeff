@@ -83,38 +83,42 @@ const FlashCardsV2 = () => {
             }
             <div className="controls-container">
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
-                    <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
                     <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
+                    <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <button style={{ backgroundColor: 'red', color: 'black', width: '25%' }} onClick={() => nextCard(-1)}>back</button>
-                    <button style={{ backgroundColor: 'green', color: 'black', width: '25%' }} onClick={() => nextCard()}>next</button>
-                </div>
-                <div>
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked={readFront}
-                            onChange={() => setReadFront(!readFront)}
-                        />
-                        Read Front
-                    </label>
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked={readBack}
-                            onChange={() => setReadBack(!readBack)}
-                        />
-                        Read Back
-                    </label>
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked={autoplay}
-                            onChange={() => setAutoPlay(!autoplay)}
-                        />
-                        Autoplay
-                    </label>
+                    <div className="controller-box">
+                        <button className='back-button' onClick={() => nextCard(-1)}>{'<'}</button>
+                        <div className="controller-center">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={autoplay}
+                                    onChange={() => setAutoPlay(!autoplay)}
+                                />
+                                Auto Flip
+                            </label>
+                        </div>
+                        <div className="controller-center">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={readFront}
+                                    onChange={() => setReadFront(!readFront)}
+                                />
+                                Read Front
+                            </label>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={readBack}
+                                    onChange={() => setReadBack(!readBack)}
+                                />
+                                Read Back
+                            </label>
+                        </div>
+                        <button className='next-button' onClick={() => nextCard()}>{'>'}</button>
+                    </div>
                 </div>
             </div>
         </div>
