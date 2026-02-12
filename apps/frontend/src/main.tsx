@@ -14,6 +14,7 @@ import WordList from './screens/LanguageApp/components/WordList';
 import StoryReader from './screens/LanguageApp/components/StoryReader';
 import LanguageAppLayout from './screens/LanguageApp/LanguageAppLayout';
 import ViewLesson from './screens/LanguageApp/components/ViewLesson';
+import MyDecks from './screens/LanguageApp/components/MyDecks';
 import { ThemeProvider } from './screens/Core/ThemeContext';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
@@ -47,6 +48,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path=":language/story/:lessonId" element={<StoryReader />} />
             <Route path=":language/wordlist/:section/:lessonId" element={<WordList />} />
             <Route path=":language/view-lesson/:lessonId" element={<ViewLesson />} />
+            <Route path=":language/my-decks" element={<MyDecks />} />
           </Route>
           <Route path="*" element={<NoPage />} />
         </Routes>
