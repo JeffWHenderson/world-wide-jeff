@@ -11,72 +11,72 @@
                     "type": "wordlist"
                 },
                 {
-                    "filename": "foodAndDrink_thisAndThese.json",
+                    "filename": "thisAndThese.json",
                     "name": "Nouns + gender 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_thatAndThose.json",
+                    "filename": "thatAndThose.json",
                     "name": "Nouns have gender 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_adjectives.json",
+                    "filename": "adjectives.json",
                     "name": "Adjectives",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_verbs_presentTense.json",
+                    "filename": "verbs_presentTense.json",
                     "name": "Present tense 1st person",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_verbs_presentTenseTwo.json",
+                    "filename": "verbs_presentTenseTwo.json",
                     "name": "Present tense + 2nd person",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_verbs_preterite.json",
+                    "filename": "verbs_preterite.json",
                     "name": "Past tense + 1nd person",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_verbs_preteriteTwo.json",
+                    "filename": "verbs_preteriteTwo.json",
                     "name": "Past tense + 2nd person",
                     "type": "flashcards"
                 },
                                 {
-                    "filename": "foodAndDrink_verbs_future.json",
+                    "filename": "verbs_future.json",
                     "name": "Future tense + 1nd person",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_verbs_futureTwo.json",
+                    "filename": "verbs_futureTwo.json",
                     "name": "Future tense + 2nd person",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_verbs_infinitives.json",
+                    "filename": "verbs_infinitives.json",
                     "name": "infinitive forms",
                     "type": "flashcards"
                 },
                                 {
-                    "filename": "foodAndDrink_verbs_imperfect.json",
+                    "filename": "verbs_imperfect.json",
                     "name": "imperfect + 1nd person",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_verbs_imperfectTwo.json",
+                    "filename": "verbs_imperfectTwo.json",
                     "name": "imperfect + 2nd person",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_stuffIMissed.json",
+                    "filename": "stuffIMissed.json",
                     "name": "Stuff I missed",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_exampleStory.json",
+                    "filename": "exampleStory.json",
                     "name": "Example Story",
                     "type": "story"
                 }

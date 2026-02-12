@@ -5,7 +5,7 @@ import "./flashcards.css"
 import { getMyDeck } from "../hooks/useDecklist";
 
 const FlashCardsV2 = () => {
-    const { language, lessonId } = useParams();
+    const { language, lessonId, section } = useParams();
     const [lesson, setLesson] = useState<any>(null)
     const [cardNumber, setCardNumber] = useState(0)
     const [speakingRate, setSpeakingRate] = useState(1)
@@ -22,7 +22,7 @@ const FlashCardsV2 = () => {
         if (lessonId === 'myDeck') {
             setLesson(getMyDeck())
         } else {
-            fetch(`/${language?.toLowerCase()}/modules/${lessonId?.split("_")[0]}/flashcards/${lessonId}`)
+            fetch(`/${language?.toLowerCase()}/modules/${section}/flashcards/${lessonId}`)
                 .then(res => res.json())
                 .then(data => { console.log(data); setLesson(data) })
                 .catch(err => console.error(err))

@@ -5,7 +5,7 @@ import { Expression } from '../LanguageTypes';
 
 
 const StoryReader = () => {
-  const { language, lessonId } = useParams();
+  const { language, lessonId, section } = useParams();
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState('false');
   const [speakingRate] = useState(1)
@@ -14,7 +14,7 @@ const StoryReader = () => {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    fetch(`/${language}/modules/${lessonId?.split("_")[0]}/stories/${lessonId}`)
+    fetch(`/${language}/modules/${section}/stories/${lessonId}`)
       .then(res => res.json())
       .then(data => { console.log(data); setLesson(data) })
       .catch(err => console.error(err))

@@ -44,8 +44,8 @@ createRoot(document.getElementById('root')!).render(
           </Route>
           <Route path="/language-app" element={<LanguageAppLayout />} >
             <Route path=":language" element={<LanguageLearningApp />} />
-            <Route path=":language/flashcards/:lessonId" element={<FlashCardsV2 />} />
-            <Route path=":language/story/:lessonId" element={<StoryReader />} />
+            <Route path=":language/flashcards/:section/:lessonId" element={<FlashCardsV2 />} />
+            <Route path=":language/story/:section/:lessonId" element={<StoryReader />} />
             <Route path=":language/wordlist/:section/:lessonId" element={<WordList />} />
             <Route path=":language/view-lesson/:lessonId" element={<ViewLesson />} />
             <Route path=":language/my-decks" element={<MyDecks />} />
