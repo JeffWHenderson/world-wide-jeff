@@ -2,6 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTheme } from "../Core/ThemeContext"
 import "./main-styles.css"
+import { getMyDeck } from "./hooks/useDecklist";
 
 const LanguageLearningApp = () => {
     const { theme, toggleTheme } = useTheme();
@@ -26,13 +27,27 @@ const LanguageLearningApp = () => {
 
 
     function handleSelectStory(lessonType: string, lesson: any, level_id: string) {
-            if (lessonType === "wordlist") {
-                navigator(`wordlist/${level_id}/${lesson.filename}`)
-            } else if (lessonType === 'flashcard' || lessonType === 'flashcards') {
-                navigator(`flashcards/${level_id}/${lesson.filename}`)
-            } else {
-                navigator(`story/${level_id}/${lesson.filename}`)
-            }
+        if (lessonType === "wordlist") {
+            navigator(`wordlist/${level_id}/${lesson.filename}`)
+        } else if (lessonType === 'flashcard' || lessonType === 'flashcards') {
+            navigator(`flashcards/${level_id}/${lesson.filename}`)
+        } else if (lessonType === 'story') {
+            navigator(`story/${level_id}/${lesson.filename}`)
+        } else if (lessonType === 'custom-deck') {
+            navigator(`my-decks/${level_id}/custom-deck`)
+        } else {
+            alert("The developer screwed up if this didn't work")
+        }
+    }
+
+    function specialCall(levelId: string) {
+        const specialDeck = getMyDeck(`${levelId}-custom-deck`)
+        return <button
+            key={`mydeck-${levelId}`}
+            className="customLessonCard"
+            onClick={() => handleSelectStory("custom-deck", specialDeck, levelId)}>
+            custom deck
+        </button>
     }
 
     return (
@@ -58,6 +73,9 @@ const LanguageLearningApp = () => {
                                         {lesson.name}
                                     </button>
                                 ))}
+                                {
+                                    specialCall(level.level_id)
+                                }
                             </div>
                             <div style={{ padding: '10px', display: "flex", marginTop: '4px' }}>
                                 {level.lessons.map((lesson: any) => (

@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 import useLanguage from "../hooks/useLanguage";
 import { useParams } from "react-router-dom";
 import "./flashcards.css"
-import { getMyDeck } from "../hooks/useDecklist";
+import { addToDeck, getMyDeck } from "../hooks/useDecklist";
 
 const FlashCardsV2 = () => {
     const { language, lessonId, section } = useParams();
     const [lesson, setLesson] = useState<any>(null)
     const [cardNumber, setCardNumber] = useState(0)
-    const [speakingRate, setSpeakingRate] = useState(1)
     const [autoplay, setAutoPlay] = useState(false)
     const [voice] = useLanguage(language as string)
     const [englishVoice] = useLanguage("english")
@@ -19,8 +18,8 @@ const FlashCardsV2 = () => {
     const delay = 1000
 
     useEffect(() => {
-        if (lessonId === 'myDeck') {
-            setLesson(getMyDeck())
+        if (lessonId === 'custom-deck') {
+            setLesson(getMyDeck(`${section}-custom-deck`))
         } else {
             fetch(`/${language?.toLowerCase()}/modules/${section}/flashcards/${lessonId}`)
                 .then(res => res.json())
@@ -61,7 +60,7 @@ const FlashCardsV2 = () => {
             const speechUtterance = new SpeechSynthesisUtterance()
             window.speechSynthesis.cancel()
             speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
-            speechUtterance.rate = speakingRate
+            speechUtterance.rate = 1
             speechUtterance.text = lesson?.sentences[cardNumber][isEnglish ? "base_language" : "target_language"];
             window.speechSynthesis.speak(speechUtterance);
         }
@@ -88,10 +87,14 @@ const FlashCardsV2 = () => {
                 </div >
             }
             <div className="controls-container">
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
-                    <button onClick={() => setSpeakingRate(speakingRate - .1)}>slowdown</button>
-                    <button onClick={() => setSpeakingRate(speakingRate + .1)}>speedup</button>
-                </div>
+                {lessonId !== 'custom-deck' &&
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+                        <button
+                            style={{ backgroundColor: 'yellow', color: 'black' }}
+                            onClick={() => addToDeck(lesson.sentences[cardNumber], `${section}-custom-deck`)}
+                        >add card to custom deck
+                        </button>
+                    </div>}
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <div className="controller-box">
                         <button className='back-button' onClick={() => nextCard(-1)}>{'<'}</button>

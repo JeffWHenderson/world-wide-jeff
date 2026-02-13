@@ -23,6 +23,12 @@
     margin-right: 7px;
 }
 
+.customLessonCard {
+    background-color: yellow;
+    color: var(--card-text-color);
+    margin-right: 7px;
+}
+
 /* this is in the wrong place but fine */
 .word-list-container {
     color: var(--font-color);
