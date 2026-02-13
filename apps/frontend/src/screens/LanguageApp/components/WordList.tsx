@@ -22,17 +22,16 @@ const WordList = () => {
     return <>
         <div className="word-list-container">
             <h1>WORDLIST FOR THIS SECTIOIN</h1>
-            <h3>click <strong>[+]</strong> to add words you are unfamiliar with to you custom decklist! </h3>
-            <br />
+            <h2>click <strong>[+]</strong> to add words you are unfamiliar with to you custom decklist</h2>
             <p>No need to memorize, but this is (Will be) printable so you can reference without a stupid computer</p>
-
+            <br />
             <ul className="word-list">
                 {wordList.map((listItem: WordListItem) => (
-                    <div style={{ paddingLeft: '5px', marginBottom: '4px' }}>
+                    <div style={{ marginBottom: '4px' }}>
                         <div>
-                            <div style={{ paddingLeft: '9px' }}>
+                            <div style={{ display: 'flex' }}>
                                 <button style={{ marginRight: '10px' }} onClick={() => addToDeck({ target_language: listItem.translation, base_language: listItem.word }, `${section}-custom-deck`)} >+</button>
-                                {listItem.word}  |  {listItem.translation}
+                                <pre><strong>{listItem.word}</strong>  |  <strong>{listItem.translation}</strong></pre>
                             </div>
                         </div>
                     </div>

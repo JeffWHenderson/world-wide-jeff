@@ -32,7 +32,8 @@
 /* this is in the wrong place but fine */
 .word-list-container {
     color: var(--font-color);
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+    padding-left: 10px;
 }
 
 /* story styles -- probably also to be moved eventually */
