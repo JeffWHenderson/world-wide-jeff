@@ -1,11 +1,10 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useTheme } from "../Core/ThemeContext"
 import "./main-styles.css"
 import { getMyDeck } from "./hooks/useDecklist";
 
 const LanguageLearningApp = () => {
-    const { theme, toggleTheme } = useTheme();
+
     const { language } = useParams();
     const navigator = useNavigate()
     const [course, setCourse] = useState<any | null>(null);
@@ -53,9 +52,6 @@ const LanguageLearningApp = () => {
     return (
         <>
             <div style={{ maxWidth: '100vw' }}>
-                <button onClick={toggleTheme}>
-                    Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
-                </button>
                 <div>
                     <h2 className="course-header">{course?.course_name}</h2>
                 </div>

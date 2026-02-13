@@ -16,6 +16,7 @@ import LanguageAppLayout from './screens/LanguageApp/LanguageAppLayout';
 import ViewLesson from './screens/LanguageApp/components/ViewLesson';
 import MyDecks from './screens/LanguageApp/components/MyDecks';
 import { ThemeProvider } from './screens/Core/ThemeContext';
+import LanguageAppHome from './screens/LanguageApp/LanguageHome';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
 // import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
@@ -43,6 +44,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/events" element={<Events />} />
           </Route>
           <Route path="/language-app" element={<LanguageAppLayout />} >
+            <Route index element={<LanguageAppHome />} />
             <Route path=":language" element={<LanguageLearningApp />} />
             <Route path=":language/flashcards/:section/:lessonId" element={<FlashCardsV2 />} />
             <Route path=":language/story/:section/:lessonId" element={<StoryReader />} />
