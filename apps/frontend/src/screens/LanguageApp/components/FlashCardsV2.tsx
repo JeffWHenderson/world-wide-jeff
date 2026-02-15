@@ -57,11 +57,13 @@ const FlashCardsV2 = () => {
 
     const read = (isEnglish: boolean = false) => {
         if (lesson) {
+            let readThis = lesson?.sentences[cardNumber][isEnglish ? "base_language" : "target_language"];
+
             const speechUtterance = new SpeechSynthesisUtterance()
             window.speechSynthesis.cancel()
             speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
             speechUtterance.rate = 1
-            speechUtterance.text = lesson?.sentences[cardNumber][isEnglish ? "base_language" : "target_language"];
+            speechUtterance.text = readThis.replace(/\(.*?\)/g, ""); // Don't read anything in ()
             window.speechSynthesis.speak(speechUtterance);
         }
         // Conditional is so we don't get an immediate readout before the lesson loads.. we could clean this up a lot still
