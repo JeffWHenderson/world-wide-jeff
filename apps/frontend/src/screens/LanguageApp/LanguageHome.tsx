@@ -10,7 +10,7 @@ const LanguageAppHome = () => {
     }
 
     return <>
-        <div style={{ color: 'white' }}>
+        <div style={{ color: '--text-color' }}>
             <h1>Welcome To My Language App</h1>
             <div style={{ marginRight: '15px' }}>
 

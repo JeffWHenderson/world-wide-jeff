@@ -6,9 +6,13 @@ const Layout = () => {
 
     return (
         <div style={{ width: '100%', height: '100vh' }}>
-            <div style={{ display: "flex", backgroundColor: "black", height: '10vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'center' }}>
-                <div style={{ fontSize: "2em", color: 'white' }}>World Wide Jeff</div>
+            <div style={{ display: "flex", backgroundColor: "black", height: '10vh', width: '100vw', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ fontSize: "1.7em", color: 'white' }}>World Wide Jeff</div>
+                <button onClick={toggleTheme}>
+                    {theme === 'light' ? 'Dark' : 'Light'} Mode
+                </button>
             </div>
+
             <div style={{ display: "flex", backgroundColor: "black", height: '5vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'space-between' }}>
                 <nav>
                     <Link style={{ padding: "0 5px 0 0" }} to="/">Home</Link>
@@ -17,9 +21,6 @@ const Layout = () => {
                     <Link style={{ padding: "0 5px 0 0" }} to="/language-app">Language-App</Link>
                     <Link to="/contact">Contact</Link>
                 </nav>
-                <button onClick={toggleTheme}>
-                    {theme === 'light' ? 'Dark' : 'Light'} Mode
-                </button>
             </div>
 
             <Outlet />

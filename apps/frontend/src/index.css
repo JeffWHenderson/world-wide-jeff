@@ -1,6 +1,8 @@
+/* TODO: --font-color and --text-color needs to be cleaned up */
+
 :root {
   --text-color: #2d0606;
-  --background-color: #5c5cb7;
+  --background-color: #bcbceb;
   --card-color: white;
   --story-lesson-color: red;
   --flashcard-lesson-color: lightgrey;
@@ -24,7 +26,7 @@
   --background-color: rgb(41, 44, 44);
   --card-text-color: black;
   --section-header-color: blue;
-  --text-color: #2d0606;
+  --text-color: white;
 
   --font-color: white;
   --card-color: black;
