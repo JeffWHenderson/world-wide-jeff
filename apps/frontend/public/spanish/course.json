@@ -2,6 +2,22 @@
     "course_name": "spanish (Latin American)",
     "course_levels": [
         {
+            "level_id": "everydayPhrases",
+            "level_name": "Common Everyday Phrases",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                                {
+                "filename": "everydayExpressions.json",
+                    "name": "Everyday Expressions",
+                    "type": "flashcards"
+                }
+            ]
+        },
+        {
             "level_id": "foodAndDrink",
             "level_name": "Food and Drink",
             "lessons": [
@@ -9,21 +25,6 @@
                     "filename": "__wordList__.json",
                     "name": "word list",
                     "type": "wordlist"
-                },
-                {
-                    "filename": "thisAndThese.json",
-                    "name": "Nouns + gender 1",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "thatAndThose.json",
-                    "name": "Nouns have gender 2",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "adjectives.json",
-                    "name": "Adjectives",
-                    "type": "flashcards"
                 },
                 {
                     "filename": "verbs_presentTense.json",
@@ -45,7 +46,7 @@
                     "name": "Past tense + 2nd person",
                     "type": "flashcards"
                 },
-                                {
+                {
                     "filename": "verbs_future.json",
                     "name": "Future tense + 1nd person",
                     "type": "flashcards"
@@ -60,7 +61,7 @@
                     "name": "infinitive forms",
                     "type": "flashcards"
                 },
-                                {
+                {
                     "filename": "verbs_imperfect.json",
                     "name": "imperfect + 1nd person",
                     "type": "flashcards"
@@ -68,6 +69,21 @@
                 {
                     "filename": "verbs_imperfectTwo.json",
                     "name": "imperfect + 2nd person",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "adjectives.json",
+                    "name": "Adjectives",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "thisAndThese.json",
+                    "name": "Nouns + gender 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "thatAndThose.json",
+                    "name": "Nouns have gender 2",
                     "type": "flashcards"
                 },
                 {

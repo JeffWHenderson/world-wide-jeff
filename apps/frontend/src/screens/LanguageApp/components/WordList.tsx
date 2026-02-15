@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import { addToDeck } from "../hooks/useDecklist";
 
 type WordListItem = {
-    word: string,
-    translation: string
+    base_language: string,
+    target_language: string
 }
 
 const WordList = () => {
@@ -30,8 +30,8 @@ const WordList = () => {
                     <div style={{ marginBottom: '4px' }}>
                         <div>
                             <div style={{ display: 'flex' }}>
-                                <button style={{ marginRight: '10px' }} onClick={() => addToDeck({ target_language: listItem.translation, base_language: listItem.word }, `${section}-custom-deck`)} >+</button>
-                                <pre><strong>{listItem.word}</strong>  |  <strong>{listItem.translation}</strong></pre>
+                                <button style={{ marginRight: '10px' }} onClick={() => addToDeck(listItem, `${section}-custom-deck`)} >+</button>
+                                <pre><strong>{listItem.base_language}</strong>  |  <strong>{listItem.target_language}</strong></pre>
                             </div>
                         </div>
                     </div>
