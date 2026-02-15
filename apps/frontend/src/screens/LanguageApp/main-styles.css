@@ -1,6 +1,6 @@
 .course-header {
     width: 100vw;
-    color: var(--course-header-color);
+    color: var(--section-header-color);
     display: flex;
     justify-content: center;
     /* Horizontally centers content */
@@ -8,7 +8,7 @@
 }
 
 .section-header {
-    color: var(--section-header-color)
+    color: var(--section-header-color);
 }
 
 .storyLessonCard {
