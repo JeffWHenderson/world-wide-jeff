@@ -15,9 +15,19 @@
                     "name": "Everyday Expressions",
                     "type": "flashcards"
                 },
-                                {
+                {
+                "filename": "meetJeff.json",
+                    "name": "Meet Jeff",
+                    "type": "story"
+                },
+                {
                 "filename": "meetSeth.json",
                     "name": "Meet Seth",
+                    "type": "story"
+                },
+                {
+                "filename": "badBunny.json",
+                    "name": "Bad Bunny",
                     "type": "story"
                 }
             ]
@@ -99,6 +109,11 @@
                 {
                     "filename": "tacosOrPizza.json",
                     "name": "Whats for dinner",
+                    "type": "story"
+                },
+                {
+                    "filename": "beanAteChocolate.json",
+                    "name": "Bean Ate Chocolate",
                     "type": "story"
                 }
             ]
