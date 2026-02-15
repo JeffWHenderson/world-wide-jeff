@@ -97,8 +97,8 @@
                     "type": "flashcards"
                 },
                 {
-                    "filename": "exampleStory.json",
-                    "name": "Example Story",
+                    "filename": "tacosOrPizza.json",
+                    "name": "Whats for dinner",
                     "type": "story"
                 }
             ]
