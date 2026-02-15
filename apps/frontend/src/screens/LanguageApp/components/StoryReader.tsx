@@ -21,25 +21,33 @@ const StoryReader = () => {
   }, [])
 
   const playOrPause = (startPosition: number) => {
-    // Disable button on play
-    const speechUtterance = new SpeechSynthesisUtterance()
-    speechUtterance.voice = voice as SpeechSynthesisVoice
-    speechUtterance.rate = speakingRate
-
-    // If is playing ()
-    // pause speech synthesis 
-    // if is paused
-    read(speechUtterance, startPosition)
-    // 
+    if (speechSynthesis.speaking) {
+      speechSynthesis.pause
+    } else {
+      read(startPosition)
+    }
   }
 
 
-  const read = (speechUtterance: SpeechSynthesisUtterance, index: number) => {
+  const read = (index: number, playAll: boolean = true) => {
+    const speechUtterance = new SpeechSynthesisUtterance()
+    speechUtterance.voice = voice as SpeechSynthesisVoice
+    speechUtterance.rate = speakingRate
     const newIndex = index + 1
 
     speechUtterance.text = lesson.sentences[index].target_language
-    speechUtterance.onend = () => setTimeout(() => read(speechUtterance, newIndex), 500) // MAKE DELAY VARIABLE
-    setCounter(newIndex)
+    speechUtterance.onend = () => {
+      if (playAll) {
+        setTimeout(() => read(newIndex), 500) // MAKE DELAY VARIABLE
+      } else {
+        setCounter(newIndex)
+      }
+      if (newIndex === lesson.sentence.length - 1) {
+        setCounter(0)
+        speechSynthesis.cancel
+      }
+    }
+
     window.speechSynthesis.speak(speechUtterance);
   }
 
@@ -73,10 +81,13 @@ const StoryReader = () => {
             onMouseEnter={() => setShowPopup(sentence.target_language)}
             onMouseLeave={() => setShowPopup('false')}
             style={{ position: 'relative' }}
-            onClick={() => playOrPause(index)}
+            onClick={() => {
+              read(index, false)
+              setShowPopup(sentence.target_language)
+            }
+            }
           >
             {displaySentence(sentence)}
-
             {showPopup == sentence.target_language && (
               <div
                 style={{
@@ -97,10 +108,11 @@ const StoryReader = () => {
           </div>
         ))
       }
-      <br /><br /><br /><br />
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <button onClick={() => handleGoBack()} >go back</button>
-        <button onClick={() => playOrPause(counter)} >speak</button>
+      <div className="fixed-element">
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <button className='back-button' onClick={() => handleGoBack()} >go back</button>
+          <button className='next-button' onClick={() => playOrPause(counter)}>{'play all'}</button>
+        </div>
       </div>
     </div>
   </div>

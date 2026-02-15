@@ -10,10 +10,15 @@
                     "name": "word list",
                     "type": "wordlist"
                 },
-                                {
+                {
                 "filename": "everydayExpressions.json",
                     "name": "Everyday Expressions",
                     "type": "flashcards"
+                },
+                                {
+                "filename": "meetSeth.json",
+                    "name": "Meet Seth",
+                    "type": "story"
                 }
             ]
         },

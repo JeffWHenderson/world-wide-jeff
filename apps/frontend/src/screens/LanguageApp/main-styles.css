@@ -43,6 +43,7 @@
     align-content: space-around;
     color: var(--font-color);
     background-color: var(--background-color);
+    height: 100vh;
 }
 
 .story-page {
@@ -50,4 +51,19 @@
     padding: 7px;
     width: 100vw;
     max-width: 900px;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+.fixed-element {
+    background-color: lightgrey;
+    width: 80%;
+    max-width: 800px;
+    position: fixed;
+    bottom: 40px;
+    padding: 10px;
+    left: 50%;
+    /* Moves the left edge of the element to the horizontal center of the viewport */
+    transform: translateX(-50%);
+    /* Moves the element back by half of its own width */
 }
