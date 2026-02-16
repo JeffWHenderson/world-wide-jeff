@@ -47,7 +47,6 @@
 }
 
 .story-page {
-    background-color: var(--card-color);
     padding: 7px;
     width: 100vw;
     max-width: 900px;

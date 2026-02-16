@@ -82,7 +82,7 @@ const StoryReader = () => {
             onMouseLeave={() => setShowPopup('false')}
             style={{ position: 'relative' }}
             onClick={() => {
-              read(index, false)
+              // read(index, false)
               setShowPopup(sentence.target_language)
             }
             }
