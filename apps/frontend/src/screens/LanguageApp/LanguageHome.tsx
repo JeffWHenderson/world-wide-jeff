@@ -12,8 +12,7 @@ const LanguageAppHome = () => {
     return <>
         <div style={{ color: '--text-color' }}>
             <h1>Welcome To My Language App</h1>
-            <div style={{ marginRight: '15px' }}>
-
+            <div style={{ display: 'flex', justifySelf: 'center', justifyContent: 'space-between', width: '90vw' }}>
                 {
                     Object.values(AvailableLanguages).map(option => (
                         <button onClick={() => goToLanguagePage(option)} key={option}>
@@ -21,7 +20,6 @@ const LanguageAppHome = () => {
                         </button>
                     ))
                 }
-
             </div>
             <p>Its cool you are here and I'm happy</p>
             <h2>How do I start?</h2>
