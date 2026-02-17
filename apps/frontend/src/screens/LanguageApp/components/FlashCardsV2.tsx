@@ -15,7 +15,7 @@ const FlashCardsV2 = () => {
     const [readBack, setReadBack] = useState(true)
 
     // TODO: I can make delay dynamic... seems to work for spanish which is my focus for the moment
-    const delay = 1000
+    const delay = 2000
 
     useEffect(() => {
         if (lessonId === 'custom-deck') {
@@ -30,21 +30,7 @@ const FlashCardsV2 = () => {
 
     // // play after card number is updated
     useEffect(() => {
-        if (readFront && readBack) {
-            read(true) // do in english
-            setTimeout(() => read(), 2000 + delay)
-        } else {
-            ''
-            if (readFront) {
-                read(true)
-            }
-            if (readBack) {
-                read()
-            }
-        }
-        if (autoplay) {
-            setTimeout(nextCard, 3700 + delay)
-        }
+        readFrontPlease() // do in english
     }, [cardNumber, autoplay])
 
     const nextCard = (indexChange: number = 1) => {
@@ -55,19 +41,47 @@ const FlashCardsV2 = () => {
         }
     }
 
-    const read = (isEnglish: boolean = false) => {
-        if (lesson) {
-            let readThis = lesson?.sentences[cardNumber][isEnglish ? "base_language" : "target_language"];
+    const readFrontPlease = () => {
+        if (readFront && lesson) {
+            let readThis = lesson?.sentences[cardNumber]["base_language"];
 
             const speechUtterance = new SpeechSynthesisUtterance()
             window.speechSynthesis.cancel()
-            speechUtterance.voice = isEnglish ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
+            speechUtterance.voice = englishVoice as SpeechSynthesisVoice
             speechUtterance.rate = 1
+            speechUtterance.onend = () => {
+                setTimeout(() => readBackPlease(), delay)
+            }
+            speechUtterance.text = readThis.replace(/\(.*?\)/g, "");
+            window.speechSynthesis.speak(speechUtterance);
+        } else {
+            readBackPlease()
+        }
+    }
+
+    const readBackPlease = () => {
+        if (readBack && lesson) {
+            let readThis = lesson?.sentences[cardNumber]["target_language"];
+
+            const speechUtterance = new SpeechSynthesisUtterance()
+            window.speechSynthesis.cancel()
+            speechUtterance.voice = voice as SpeechSynthesisVoice
+            speechUtterance.rate = 1
+            speechUtterance.onend = () => {
+                if (autoplay) {
+                    setTimeout(nextCard, delay)
+                }
+            }
             speechUtterance.text = readThis.replace(/\(.*?\)/g, ""); // Don't read anything in ()
             window.speechSynthesis.speak(speechUtterance);
+        } else {
+            if (readFront && autoplay) {
+                setTimeout(() => nextCard(), delay)
+            }
         }
-        // Conditional is so we don't get an immediate readout before the lesson loads.. we could clean this up a lot still
     }
+
+
 
     return <>
         <div className="container">
@@ -99,7 +113,12 @@ const FlashCardsV2 = () => {
                     </div>}
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <div className="controller-box">
-                        <button className='back-button' onClick={() => nextCard(-1)}>{'<'}</button>
+                        <button
+                            className='back-button'
+                            disabled={cardNumber === 0}
+                            onClick={() => nextCard(-1)}>
+                            {'<'}
+                        </button>
                         <div className="controller-center">
                             <label>
                                 <input
