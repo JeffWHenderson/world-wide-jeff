@@ -43,47 +43,47 @@
                 },
                 {
                     "filename": "verbs_presentTense.json",
-                    "name": "Present tense 1st person",
+                    "name": "Present tense 1",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_presentTenseTwo.json",
-                    "name": "Present tense + 2nd person",
+                    "name": "Present tense 2",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_preterite.json",
-                    "name": "Past tense + 1nd person",
+                    "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_preteriteTwo.json",
-                    "name": "Past tense + 2nd person",
+                    "name": "Past tense 2",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_future.json",
-                    "name": "Future tense + 1nd person",
+                    "name": "Future tense 1",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_futureTwo.json",
-                    "name": "Future tense + 2nd person",
+                    "name": "Future tense 2",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_infinitives.json",
-                    "name": "infinitive forms",
+                    "name": "Infinitive forms",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_imperfect.json",
-                    "name": "imperfect + 1nd person",
+                    "name": "Imperfect tense 1",
                     "type": "flashcards"
                 },
                 {
                     "filename": "verbs_imperfectTwo.json",
-                    "name": "imperfect + 2nd person",
+                    "name": "Imperfect tense 2",
                     "type": "flashcards"
                 },
                 {
@@ -93,12 +93,12 @@
                 },
                 {
                     "filename": "thisAndThese.json",
-                    "name": "Nouns + gender 1",
+                    "name": "Nouns & gender 1",
                     "type": "flashcards"
                 },
                 {
                     "filename": "thatAndThose.json",
-                    "name": "Nouns have gender 2",
+                    "name": "Nouns & gender 2",
                     "type": "flashcards"
                 },
                 {
@@ -129,12 +129,12 @@
                 },
                 {
                     "filename": "moodsAndEmotion_estarPresentTense.json",
-                    "name": "to be present tense 1st person",
+                    "name": "Present tense 1 (to be)",
                     "type": "flashcards"
                 },
                 {
                     "filename": "moodsAndEmotion_estarPresentTenseTwo.json",
-                    "name": "to be present tense 2nd person",
+                    "name": "Present tense 2 (to be)",
                     "type": "flashcards"
                 }
             ]
@@ -147,6 +147,16 @@
                     "filename": "__wordList__.json",
                     "name": "word list",
                     "type": "wordlist"
+                },
+                                {
+                    "filename": "presentTense.json",
+                    "name": "Present Tense 1",
+                    "type": "flashcards"
+                },
+                                {
+                    "filename": "presentTense2.json",
+                    "name": "Present Tense 2",
+                    "type": "flashcards"
                 }
             ]
         },
@@ -158,6 +168,32 @@
                     "filename": "__wordList__.json",
                     "name": "word list",
                     "type": "wordlist"
+                },
+                                {
+                    "filename": "presentTense.json",
+                    "name": "Present Tense 1",
+                    "type": "flashcards"
+                },
+                                {
+                    "filename": "presentTense2.json",
+                    "name": "Present Tense 2",
+                    "type": "flashcards"
+                }
+            ]
+        },
+        {
+            "level_id": "jobsAndHobbies",
+            "level_name": "Jobs and Hobbies",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                                {
+                    "filename": "presentTense.json",
+                    "name": "Present Tense 1",
+                    "type": "flashcards"
                 }
             ]
         }

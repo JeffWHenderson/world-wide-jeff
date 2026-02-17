@@ -76,13 +76,12 @@ const StoryReader = () => {
     <div className='story-page'>
       {
         lesson &&
-        lesson.sentences.map((sentence: Expression, index: number) => (
+        lesson.sentences.map((sentence: Expression) => (
           <div
             onMouseEnter={() => setShowPopup(sentence.target_language)}
             onMouseLeave={() => setShowPopup('false')}
             style={{ position: 'relative' }}
             onClick={() => {
-              // read(index, false)
               setShowPopup(sentence.target_language)
             }
             }
