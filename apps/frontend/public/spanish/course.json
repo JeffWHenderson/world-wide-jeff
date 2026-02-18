@@ -156,6 +156,11 @@
                     "filename": "futureTense2.json",
                     "name": "Future tense 2",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "sean.json",
+                    "name": "Sean has feelings",
+                    "type": "story"
                 }
             ]
         },
