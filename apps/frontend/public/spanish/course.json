@@ -136,6 +136,26 @@
                     "filename": "moodsAndEmotion_estarPresentTenseTwo.json",
                     "name": "Present tense 2 (to be)",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense.json",
+                    "name": "Past tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense2.json",
+                    "name": "Past tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense.json",
+                    "name": "Future tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense2.json",
+                    "name": "Future tense 2",
+                    "type": "flashcards"
                 }
             ]
         },
@@ -148,14 +168,34 @@
                     "name": "word list",
                     "type": "wordlist"
                 },
-                                {
+                {
                     "filename": "presentTense.json",
                     "name": "Present Tense 1",
                     "type": "flashcards"
                 },
-                                {
+                {
                     "filename": "presentTense2.json",
                     "name": "Present Tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense.json",
+                    "name": "Past tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense2.json",
+                    "name": "Past tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense.json",
+                    "name": "Future tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense2.json",
+                    "name": "Future tense 2",
                     "type": "flashcards"
                 }
             ]
@@ -178,6 +218,26 @@
                     "filename": "presentTense2.json",
                     "name": "Present Tense 2",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense.json",
+                    "name": "Past tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense2.json",
+                    "name": "Past tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense.json",
+                    "name": "Future tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense2.json",
+                    "name": "Future tense 2",
+                    "type": "flashcards"
                 }
             ]
         },
@@ -190,9 +250,19 @@
                     "name": "word list",
                     "type": "wordlist"
                 },
-                                {
+                {
                     "filename": "presentTense.json",
                     "name": "Present Tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense.json",
+                    "name": "Past Tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense.json",
+                    "name": "Future Tense 1",
                     "type": "flashcards"
                 }
             ]

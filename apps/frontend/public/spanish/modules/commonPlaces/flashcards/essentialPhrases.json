@@ -1,0 +1,11 @@
+{
+    "name": "essential phrases", 
+    "type": "flashcards", 
+    "sentences": [
+        { "base_language": "Where is the bus stop?", "target_language": "¿Dónde está la parada de autobús?" },
+        { "base_language": "Where is the airport?", "target_language": "¿Dónde está el aeropuerto?" },
+        { "base_language": "How do I get to...?", "target_language": "¿Cómo llego a...?" },
+        { "base_language": "Left", "target_language": "Izquierda" },
+        { "base_language": "Right", "target_language": "Derecha" }
+    ]
+}

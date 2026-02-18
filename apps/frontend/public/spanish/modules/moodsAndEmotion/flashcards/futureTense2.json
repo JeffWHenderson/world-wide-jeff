@@ -1,0 +1,102 @@
+{
+    "name": "Future tense 2",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        { "base_language": "I am filled with desire.", "target_language": "Yo estoy lleno/llena de deseo." },
+        { "base_language": "We are filled with desire.", "target_language": "Nosotros estamos llenos de deseo." },
+        { "base_language": "They are filled with desire.", "target_language": "Ellos están llenos de deseo." },
+
+        { "base_language": "I am full of hate.", "target_language": "Yo estoy lleno/llena de odio." },
+        { "base_language": "We are full of hate.", "target_language": "Nosotros estamos llenos de odio." },
+        { "base_language": "They are full of hate.", "target_language": "Ellos están llenos de odio." },
+
+        { "base_language": "I am enraged.", "target_language": "Yo estoy furioso/furiosa." },
+        { "base_language": "We are enraged.", "target_language": "Nosotros estamos furiosos." },
+        { "base_language": "They are enraged.", "target_language": "Ellos están furiosos." },
+
+        { "base_language": "I am furious.", "target_language": "Yo estoy furioso/furiosa." },
+        { "base_language": "We are furious.", "target_language": "Nosotros estamos furiosos." },
+        { "base_language": "They are furious.", "target_language": "Ellos están furiosos." },
+
+        { "base_language": "I am sorrowful.", "target_language": "Yo estoy afligido/afligida." },
+        { "base_language": "We are sorrowful.", "target_language": "Nosotros estamos afligidos." },
+        { "base_language": "They are sorrowful.", "target_language": "Ellos están afligidos." },
+
+        { "base_language": "I am grieving.", "target_language": "Yo estoy de luto." },
+        { "base_language": "We are grieving.", "target_language": "Nosotros estamos de luto." },
+        { "base_language": "They are grieving.", "target_language": "Ellos están de luto." },
+
+        { "base_language": "I am lonely.", "target_language": "Yo me siento solo/sola." },
+        { "base_language": "We are lonely.", "target_language": "Nosotros nos sentimos solos." },
+        { "base_language": "They are lonely.", "target_language": "Ellos se sienten solos." },
+
+        { "base_language": "I am confident.", "target_language": "Yo tengo confianza." },
+        { "base_language": "We are confident.", "target_language": "Nosotros tenemos confianza." },
+        { "base_language": "They are confident.", "target_language": "Ellos tienen confianza." },
+
+        { "base_language": "I am courageous.", "target_language": "Yo soy valiente." },
+        { "base_language": "We are courageous.", "target_language": "Nosotros somos valientes." },
+        { "base_language": "They are courageous.", "target_language": "Ellos son valientes." },
+
+        { "base_language": "I am fearful.", "target_language": "Yo soy temeroso/temerosa." },
+        { "base_language": "We are fearful.", "target_language": "Nosotros somos temerosos." },
+        { "base_language": "They are fearful.", "target_language": "Ellos son temerosos." },
+
+        { "base_language": "I am comfortable.", "target_language": "Yo estoy cómodo/cómoda." },
+        { "base_language": "We are comfortable.", "target_language": "Nosotros estamos cómodos." },
+        { "base_language": "They are comfortable.", "target_language": "Ellos están cómodos." },
+
+        { "base_language": "I am terrified.", "target_language": "Yo estoy aterrorizado/aterrorizada." },
+        { "base_language": "They are terrified.", "target_language": "Ellos están aterrorizados." },
+        { "base_language": "We are terrified.", "target_language": "Nosotros estamos aterrorizados." },
+
+        { "base_language": "I am horrified.", "target_language": "Yo estoy horrorizado/horrorizada." },
+        { "base_language": "We are horrified.", "target_language": "Nosotros estamos horrorizados." },
+        { "base_language": "They are horrified.", "target_language": "Ellos están horrorizados." },
+
+        { "base_language": "I am pleased.", "target_language": "Yo estoy satisfecho/satisfecha." },
+        { "base_language": "We are pleased.", "target_language": "Nosotros estamos satisfechos." },
+        { "base_language": "They are pleased.", "target_language": "Ellos están satisfechos." },
+
+        { "base_language": "I am in pain.", "target_language": "Yo tengo dolor." },
+        { "base_language": "We are in pain.", "target_language": "Nosotros tenemos dolor." },
+        { "base_language": "They are in pain.", "target_language": "Ellos tienen dolor." },
+
+        { "base_language": "I am heavy-hearted.", "target_language": "Yo tengo el corazón pesado." },
+        { "base_language": "We are heavy-hearted.", "target_language": "Nosotros tenemos el corazón pesado." },
+        { "base_language": "They are heavy-hearted.", "target_language": "Ellos tienen el corazón pesado." },
+
+        { "base_language": "I am in good spirits.", "target_language": "Yo estoy de buen humor." },
+        { "base_language": "We are in good spirits.", "target_language": "Nosotros estamos de buen humor." },
+        { "base_language": "They are in good spirits.", "target_language": "Ellos están de buen humor." },
+
+        { "base_language": "I am empathetic.", "target_language": "Yo soy empático/empática." },
+        { "base_language": "We are empathetic.", "target_language": "Nosotros somos empáticos." },
+        { "base_language": "They are empathetic.", "target_language": "Ellos son empáticos." },
+
+        { "base_language": "I am sympathetic.", "target_language": "Yo soy comprensivo/comprensiva." },
+        { "base_language": "We are sympathetic.", "target_language": "Nosotros somos comprensivos." },
+        { "base_language": "They are sympathetic.", "target_language": "Ellos son comprensivos." },
+
+        { "base_language": "I am apathetic.", "target_language": "Yo soy apático/apática." },
+        { "base_language": "We are apathetic.", "target_language": "Nosotros somos apáticos." },
+        { "base_language": "They are apathetic.", "target_language": "Ellos son apáticos." },
+
+        { "base_language": "I am energetic.", "target_language": "Yo soy enérgico/enérgica." },
+        { "base_language": "We are energetic.", "target_language": "Nosotros somos enérgicos." },
+        { "base_language": "They are energetic.", "target_language": "Ellos son enérgicos." },
+
+        { "base_language": "I am fatigued.", "target_language": "Yo estoy fatigado/fatigada." },
+        { "base_language": "We are fatigued.", "target_language": "Nosotros estamos fatigados." },
+        { "base_language": "They are fatigued.", "target_language": "Ellos están fatigados." },
+
+        { "base_language": "I am tense.", "target_language": "Yo estoy tenso/tensa." },
+        { "base_language": "We are tense.", "target_language": "Nosotros estamos tensos." },
+        { "base_language": "They are tense.", "target_language": "Ellos están tensos." },
+
+        { "base_language": "I am relieved.", "target_language": "Yo estoy aliviado/aliviada." },
+        { "base_language": "We are relieved.", "target_language": "Nosotros estamos aliviados." },
+        { "base_language": "They are relieved.", "target_language": "Ellos están aliviados." }
+    ]
+}
