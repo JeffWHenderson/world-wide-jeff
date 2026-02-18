@@ -3,6 +3,7 @@
     "type": "flashcards",
     "lesson_id": "nouns_gender.txt",
     "sentences": [
+        { "base_language": "skip this lesson", "target_language": "skip this lesson" },
         { "base_language": "That is a salt", "target_language": "Esa es sal" },
         { "base_language": "Those are some salts", "target_language": "Esa es sal" },
         { "base_language": "That is a pepper", "target_language": "Esa es pimienta" },

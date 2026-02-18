@@ -1,0 +1,331 @@
+{
+    "name": "Color and Small Number",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "1 blue cup",
+            "target_language": "1 taza azul"
+        },
+        {
+            "base_language": "2 blue cups",
+            "target_language": "2 tazas azules"
+        },
+        {
+            "base_language": "3 blue cups",
+            "target_language": "3 tazas azules"
+        },
+        {
+            "base_language": "4 red bottles",
+            "target_language": "4 botellas rojas"
+        },
+        {
+            "base_language": "5 red bottles",
+            "target_language": "5 botellas rojas"
+        },
+        {
+            "base_language": "6 red bottles",
+            "target_language": "6 botellas rojas"
+        },
+        {
+            "base_language": "7 white cakes",
+            "target_language": "7 pasteles blancos"
+        },
+        {
+            "base_language": "8 white cakes",
+            "target_language": "8 pasteles blancos"
+        },
+        {
+            "base_language": "9 white cakes",
+            "target_language": "9 pasteles blancos"
+        },
+        {
+            "base_language": "10 white cakes",
+            "target_language": "10 pasteles blancos"
+        },
+        {
+            "base_language": "0 green apples",
+            "target_language": "0 manzanas verdes"
+        },
+        {
+            "base_language": "1 green apple",
+            "target_language": "1 manzana verde"
+        },
+        {
+            "base_language": "2 green apples",
+            "target_language": "2 manzanas verdes"
+        },
+        {
+            "base_language": "3 yellow bananas",
+            "target_language": "3 bananas amarillas"
+        },
+        {
+            "base_language": "4 yellow bananas",
+            "target_language": "4 bananas amarillas"
+        },
+        {
+            "base_language": "5 yellow bananas",
+            "target_language": "5 bananas amarillas"
+        },
+        {
+            "base_language": "6 orange oranges",
+            "target_language": "6 naranjas anaranjadas"
+        },
+        {
+            "base_language": "7 orange oranges",
+            "target_language": "7 naranjas anaranjadas"
+        },
+        {
+            "base_language": "8 orange oranges",
+            "target_language": "8 naranjas anaranjadas"
+        },
+        {
+            "base_language": "9 brown eggs",
+            "target_language": "9 huevos marrones"
+        },
+        {
+            "base_language": "10 brown eggs",
+            "target_language": "10 huevos marrones"
+        },
+        {
+            "base_language": "1 black coffee",
+            "target_language": "1 café negro"
+        },
+        {
+            "base_language": "2 black coffees",
+            "target_language": "2 cafés negros"
+        },
+        {
+            "base_language": "3 white plates",
+            "target_language": "3 platos blancos"
+        },
+        {
+            "base_language": "4 white plates",
+            "target_language": "4 platos blancos"
+        },
+        {
+            "base_language": "5 white plates",
+            "target_language": "5 platos blancos"
+        },
+        {
+            "base_language": "6 red tomatoes",
+            "target_language": "6 tomates rojos"
+        },
+        {
+            "base_language": "7 red tomatoes",
+            "target_language": "7 tomates rojos"
+        },
+        {
+            "base_language": "8 red tomatoes",
+            "target_language": "8 tomates rojos"
+        },
+        {
+            "base_language": "9 brown potatoes",
+            "target_language": "9 papas marrones"
+        },
+        {
+            "base_language": "10 brown potatoes",
+            "target_language": "10 papas marrones"
+        },
+        {
+            "base_language": "1 yellow cheese",
+            "target_language": "1 queso amarillo"
+        },
+        {
+            "base_language": "2 yellow cheeses",
+            "target_language": "2 quesos amarillos"
+        },
+        {
+            "base_language": "3 green salads",
+            "target_language": "3 ensaladas verdes"
+        },
+        {
+            "base_language": "4 green salads",
+            "target_language": "4 ensaladas verdes"
+        },
+        {
+            "base_language": "5 green salads",
+            "target_language": "5 ensaladas verdes"
+        },
+        {
+            "base_language": "6 white spoons",
+            "target_language": "6 cucharas blancas"
+        },
+        {
+            "base_language": "7 white spoons",
+            "target_language": "7 cucharas blancas"
+        },
+        {
+            "base_language": "8 white spoons",
+            "target_language": "8 cucharas blancas"
+        },
+        {
+            "base_language": "9 silver forks",
+            "target_language": "9 tenedores plateados"
+        },
+        {
+            "base_language": "10 silver forks",
+            "target_language": "10 tenedores plateados"
+        },
+        {
+            "base_language": "1 red onion",
+            "target_language": "1 cebolla roja"
+        },
+        {
+            "base_language": "2 red onions",
+            "target_language": "2 cebollas rojas"
+        },
+        {
+            "base_language": "3 red onions",
+            "target_language": "3 cebollas rojas"
+        },
+        {
+            "base_language": "4 white bowls",
+            "target_language": "4 boles blancos"
+        },
+        {
+            "base_language": "5 white bowls",
+            "target_language": "5 boles blancos"
+        },
+        {
+            "base_language": "6 white bowls",
+            "target_language": "6 boles blancos"
+        },
+        {
+            "base_language": "7 clear glasses",
+            "target_language": "7 vasos transparentes"
+        },
+        {
+            "base_language": "8 clear glasses",
+            "target_language": "8 vasos transparentes"
+        },
+        {
+            "base_language": "9 clear glasses",
+            "target_language": "9 vasos transparentes"
+        },
+        {
+            "base_language": "10 clear glasses",
+            "target_language": "10 vasos transparentes"
+        },
+        {
+            "base_language": "1 brown table",
+            "target_language": "1 mesa marrón"
+        },
+        {
+            "base_language": "2 brown tables",
+            "target_language": "2 mesas marrones"
+        },
+        {
+            "base_language": "3 brown tables",
+            "target_language": "3 mesas marrones"
+        },
+        {
+            "base_language": "4 white stoves",
+            "target_language": "4 estufas blancas"
+        },
+        {
+            "base_language": "5 white stoves",
+            "target_language": "5 estufas blancas"
+        },
+        {
+            "base_language": "6 white stoves",
+            "target_language": "6 estufas blancas"
+        },
+        {
+            "base_language": "7 black ovens",
+            "target_language": "7 hornos negros"
+        },
+        {
+            "base_language": "8 black ovens",
+            "target_language": "8 hornos negros"
+        },
+        {
+            "base_language": "9 black ovens",
+            "target_language": "9 hornos negros"
+        },
+        {
+            "base_language": "10 black ovens",
+            "target_language": "10 hornos negros"
+        },
+        {
+            "base_language": "1 white waiter",
+            "target_language": "1 camarero blanco"
+        },
+        {
+            "base_language": "2 white waiters",
+            "target_language": "2 camareros blancos"
+        },
+        {
+            "base_language": "3 white waiters",
+            "target_language": "3 camareros blancos"
+        },
+        {
+            "base_language": "4 white kitchens",
+            "target_language": "4 cocinas blancas"
+        },
+        {
+            "base_language": "5 white kitchens",
+            "target_language": "5 cocinas blancas"
+        },
+        {
+            "base_language": "6 white kitchens",
+            "target_language": "6 cocinas blancas"
+        },
+        {
+            "base_language": "7 green menus",
+            "target_language": "7 menús verdes"
+        },
+        {
+            "base_language": "8 green menus",
+            "target_language": "8 menús verdes"
+        },
+        {
+            "base_language": "9 green menus",
+            "target_language": "9 menús verdes"
+        },
+        {
+            "base_language": "10 green menus",
+            "target_language": "10 menús verdes"
+        },
+        {
+            "base_language": "1 white rice",
+            "target_language": "1 arroz blanco"
+        },
+        {
+            "base_language": "2 white rices",
+            "target_language": "2 arroces blancos"
+        },
+        {
+            "base_language": "3 white rices",
+            "target_language": "3 arroces blancos"
+        },
+        {
+            "base_language": "4 yellow oils",
+            "target_language": "4 aceites amarillos"
+        },
+        {
+            "base_language": "5 yellow oils",
+            "target_language": "5 aceites amarillos"
+        },
+        {
+            "base_language": "6 yellow oils",
+            "target_language": "6 aceites amarillos"
+        },
+        {
+            "base_language": "7 red wines",
+            "target_language": "7 vinos tintos"
+        },
+        {
+            "base_language": "8 red wines",
+            "target_language": "8 vinos tintos"
+        },
+        {
+            "base_language": "9 red wines",
+            "target_language": "9 vinos tintos"
+        },
+        {
+            "base_language": "10 red wines",
+            "target_language": "10 vinos tintos"
+        }
+    ]
+}

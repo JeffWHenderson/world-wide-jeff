@@ -2,29 +2,197 @@
     "name": "adjectives", 
     "type": "flashcards", 
     "sentences": [
-        { "base_language": "fresh", "target_language": "fresco/fresca" },
-        { "base_language": "ripe", "target_language": "maduro/madura" },
-        { "base_language": "raw", "target_language": "crudo/cruda" },
-        { "base_language": "cooked", "target_language": "cocido/cocida" },
-        { "base_language": "hot", "target_language": "caliente" },
-        { "base_language": "cold", "target_language": "frío/fría" },
-        { "base_language": "sweet", "target_language": "dulce" },
-        { "base_language": "sour", "target_language": "agrio/agria" },
-        { "base_language": "salty", "target_language": "salado/salada" },
-        { "base_language": "bitter", "target_language": "amargo/amarga" },
-        { "base_language": "spicy", "target_language": "picante" },
-        { "base_language": "crunchy", "target_language": "crujiente" },
-        { "base_language": "creamy", "target_language": "cremoso/cremosa" },
-        { "base_language": "tender", "target_language": "tierno/tierna" },
-        { "base_language": "juicy", "target_language": "jugoso/jugosa" },
-        { "base_language": "delicious", "target_language": "delicioso/deliciosa" },
-        { "base_language": "tasty", "target_language": "sabroso/sabrosa" },
-        { "base_language": "bland", "target_language": "soso/sosa" },
-        { "base_language": "healthy", "target_language": "saludable" },
-        { "base_language": "unhealthy", "target_language": "poco saludable/malsano" },
-        { "base_language": "vegetarian", "target_language": "vegetariano/vegetariana" },
-        { "base_language": "vegan", "target_language": "vegano/vegana" },
-        { "base_language": "frozen", "target_language": "congelado/congelada" },
-        { "base_language": "organic", "target_language": "orgánico/orgánica" }
+        {
+            "base_language": "this is fresh bread",
+            "target_language": "este es pan fresco"
+        },
+        {
+            "base_language": "that is fresh fruit",
+            "target_language": "esa es fruta fresca"
+        },
+        {
+            "base_language": "these are ripe tomatos",
+            "target_language": "estos son tomates maduros"
+        },
+        {
+            "base_language": "those are ripe bananas",
+            "target_language": "esas son bananas maduras"
+        },
+        {
+            "base_language": "this is raw fish",
+            "target_language": "esto es pescado crudo"
+        },
+        {
+            "base_language": "that is raw meat",
+            "target_language": "esa es carne cruda"
+        },
+        {
+            "base_language": "these are cold juices",
+            "target_language": "estos son jugos fríos"
+        },
+        {
+            "base_language": "these are cold beers",
+            "target_language": "estas son cervezas frías"
+        },
+        {
+            "base_language": "this is cooked rice",
+            "target_language": "esto es arroz cocido"
+        },
+        {
+            "base_language": "that is a cooked vegetable",
+            "target_language": "esa es una verdura cocida"
+        },
+        {
+            "base_language": "these are sweet cakes",
+            "target_language": "estos son pasteles dulces"
+        },
+        {
+            "base_language": "those are sweet fruits",
+            "target_language": "esas son frutas dulces"
+        },
+        {
+            "base_language": "this is hot coffee",
+            "target_language": "este es café caliente"
+        },
+        {
+            "base_language": "that is hot soup",
+            "target_language": "esa es sopa caliente"
+        },
+        {
+            "base_language": "these are sour lemons",
+            "target_language": "estos son limones ácidos"
+        },
+        {
+            "base_language": "those are sour oranges",
+            "target_language": "esas son naranjas ácidas"
+        },
+        {
+            "base_language": "this is salty cheese",
+            "target_language": "este es queso salado"
+        },
+        {
+            "base_language": "that is salty food",
+            "target_language": "esa es comida salada"
+        },
+        {
+            "base_language": "this is bitter coffee",
+            "target_language": "este es café amargo"
+        },
+        {
+            "base_language": "that is bitter beer",
+            "target_language": "esa es cerveza amarga"
+        },
+        {
+            "base_language": "these are spicy chickens",
+            "target_language": "estos son pollos picantes"
+        },
+        {
+            "base_language": "those are spicy sauces",
+            "target_language": "esas son salsas picantes"
+        },
+        {
+            "base_language": "this is crunchy bread",
+            "target_language": "este es pan crujiente"
+        },
+        {
+            "base_language": "that is crunchy cookie",
+            "target_language": "esa es galleta crujiente"
+        },
+        {
+            "base_language": "this is creamy ice cream",
+            "target_language": "este es helado cremoso"
+        },
+        {
+            "base_language": "these are creamy soups",
+            "target_language": "estas son sopas cremosas"
+        },
+        {
+            "base_language": "these are juicy tomatos",
+            "target_language": "estos son tomates jugosos"
+        },
+        {
+            "base_language": "those are juicy oranges",
+            "target_language": "esas son naranjas jugosas"
+        },
+        {
+            "base_language": "this is tender chicken",
+            "target_language": "esto es pollo tierno"
+        },
+        {
+            "base_language": "that is tender meat",
+            "target_language": "esa es carne tierna"
+        },
+        {
+            "base_language": "this is a delicious flavor",
+            "target_language": "este es un sabor delicioso"
+        },
+        {
+            "base_language": "that is a delicious recipe",
+            "target_language": "esa es una receta deliciosa"
+        },
+        {
+            "base_language": "these are tasty dishes",
+            "target_language": "estos son platos sabrosos"
+        },
+        {
+            "base_language": "those are tasty foods",
+            "target_language": "esas son comidas sabrosas"
+        },
+        {
+            "base_language": "this is bland rice",
+            "target_language": "esto es arroz soso"
+        },
+        {
+            "base_language": "that is bland soup",
+            "target_language": "esa es sopa sosa"
+        },
+        {
+            "base_language": "these are unhealthy cakes",
+            "target_language": "estos son pasteles poco saludables"
+        },
+        {
+            "base_language": "those are unhealthy pizzas",
+            "target_language": "esas son pizzas poco saludables"
+        },
+        {
+            "base_language": "this is healthy fish",
+            "target_language": "esto es pescado saludable"
+        },
+        {
+            "base_language": "that is a healthy salad",
+            "target_language": "esa es una ensalada saludable"
+        },
+        {
+            "base_language": "these are vegetarian sandwiches",
+            "target_language": "estos son sándwiches vegetarianos"
+        },
+        {
+            "base_language": "those are vegetarian pizzas",
+            "target_language": "esas son pizzas vegetarianas"
+        },
+        {
+            "base_language": "this is vegan rice",
+            "target_language": "esto es arroz vegano"
+        },
+        {
+            "base_language": "that is vegan salad",
+            "target_language": "esa es ensalada vegana"
+        },
+        {
+            "base_language": "this is frozen fish",
+            "target_language": "esto es pescado congelado"
+        },
+        {
+            "base_language": "that is a frozen vegetable",
+            "target_language": "esa es una verdura congelada"
+        },
+        {
+            "base_language": "these are organic tomatoes",
+            "target_language": "estos son tomates orgánicos"
+        },
+        {
+            "base_language": "those are organic fruits",
+            "target_language": "esas son frutas orgánicas"
+        }
     ]
 }

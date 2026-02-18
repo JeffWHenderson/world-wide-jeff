@@ -52,6 +52,11 @@
                     "type": "flashcards"
                 },
                 {
+                    "filename": "adjectives.json",
+                    "name": "Adjectives",
+                    "type": "flashcards"
+                },
+                {
                     "filename": "verbs_preterite.json",
                     "name": "Past tense 1",
                     "type": "flashcards"
@@ -59,6 +64,11 @@
                 {
                     "filename": "verbs_preteriteTwo.json",
                     "name": "Past tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "comparison.json",
+                    "name": "Comparing things",
                     "type": "flashcards"
                 },
                 {
@@ -72,8 +82,8 @@
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_infinitives.json",
-                    "name": "Infinitive forms",
+                    "filename": "objectPronouns.json",
+                    "name": "Object Pronouns",
                     "type": "flashcards"
                 },
                 {
@@ -87,18 +97,13 @@
                     "type": "flashcards"
                 },
                 {
-                    "filename": "adjectives.json",
-                    "name": "Adjectives",
+                    "filename": "colorAndSmallNumbers.json",
+                    "name": "colors & small numbers",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "thisAndThese.json",
-                    "name": "Nouns & gender 1",
-                    "type": "flashcards"
-                },
-                {
-                    "filename": "thatAndThose.json",
-                    "name": "Nouns & gender 2",
+                    "filename": "verbs_infinitives.json",
+                    "name": "Infinitive forms",
                     "type": "flashcards"
                 },
                 {
@@ -114,6 +119,11 @@
                 {
                     "filename": "beanAteChocolate.json",
                     "name": "Bean Ate Chocolate",
+                    "type": "story"
+                },
+                {
+                    "filename": "aNiceRestaurant.json",
+                    "name": "Table for 3",
                     "type": "story"
                 }
             ]

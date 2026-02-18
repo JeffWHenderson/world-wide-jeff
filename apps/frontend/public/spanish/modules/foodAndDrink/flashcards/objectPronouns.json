@@ -1,0 +1,171 @@
+{
+    "name": "Object Pronouns",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I eat bread",
+            "target_language": "Yo como pan"
+        },
+        {
+            "base_language": "I eat it",
+            "target_language": "Yo lo como"
+        },
+        {
+            "base_language": "I drink water",
+            "target_language": "Yo bebo agua"
+        },
+        {
+            "base_language": "I drink it",
+            "target_language": "Yo la bebo"
+        },
+        {
+            "base_language": "I want pizzas",
+            "target_language": "Yo quiero pizzas"
+        },
+        {
+            "base_language": "I want them",
+            "target_language": "Yo las quiero"
+        },
+        {
+            "base_language": "He cooks eggs",
+            "target_language": "Él cocina huevos"
+        },
+        {
+            "base_language": "He cooks them",
+            "target_language": "Él los cocina"
+        },
+        {
+            "base_language": "I have a recipe",
+            "target_language": "Yo tengo una receta"
+        },
+        {
+            "base_language": "I have it",
+            "target_language": "Yo la tengo"
+        },
+        {
+            "base_language": "She slices the onion",
+            "target_language": "Ella corta la cebolla"
+        },
+        {
+            "base_language": "She slices it",
+            "target_language": "Ella la corta"
+        },
+        {
+            "base_language": "We are eating soup",
+            "target_language": "Nosotros estamos comiendo sopa"
+        },
+        {
+            "base_language": "We are eating it",
+            "target_language": "Nosotros la estamos comiendo"
+        },
+        {
+            "base_language": "I am going to order the beer",
+            "target_language": "Voy a pedir la cerveza"
+        },
+        {
+            "base_language": "I am going to order it",
+            "target_language": "Voy a pedirla"
+        },
+        {
+            "base_language": "Did you try the cake",
+            "target_language": "¿Probaste el pastel?"
+        },
+        {
+            "base_language": "did you try it",
+            "target_language": "¿Lo probaste?"
+        },
+        {
+            "base_language": "Please pour the milk",
+            "target_language": "Por favor, sirve la leche"
+        },
+        {
+            "base_language": "Please pour it",
+            "target_language": "Por favor, sírvela"
+        },
+        {
+            "base_language": "I serve the food to the waiter",
+            "target_language": "Yo sirvo la comida al mesero"
+        },
+        {
+            "base_language": "I serve him the food",
+            "target_language": "Yo le sirvo la comida"
+        },
+        {
+            "base_language": "I am going to pay the bill to the restaurant",
+            "target_language": "Voy a pagar la cuenta al restaurante"
+        },
+        {
+            "base_language": "I am going to pay them",
+            "target_language": "Les voy a pagar"
+        },
+        {
+            "base_language": "He brought the menu to us",
+            "target_language": "Él trajo el menú a nosotros"
+        },
+        {
+            "base_language": "He brought us the menu",
+            "target_language": "Él nos trajo el menú"
+        },
+        {
+            "base_language": "I want to cook dinner for you",
+            "target_language": "Quiero cocinar la cena para ti"
+        },
+        {
+            "base_language": "I want to cook you dinner",
+            "target_language": "Te quiero cocinar la cena"
+        },
+        {
+            "base_language": "She is chopping the vegetables for them",
+            "target_language": "Ella está cortando las verduras para ellos"
+        },
+        {
+            "base_language": "She is chopping them the vegetables",
+            "target_language": "Ella les está cortando las verduras"
+        },
+        {
+            "base_language": "give the salt",
+            "target_language": "da la sal"
+        },
+        {
+            "base_language": "Give me the salt",
+            "target_language": "Dame la sal"
+        },
+        {
+            "base_language": "I need to tell you the recipe",
+            "target_language": "Necesito decirte la receta"
+        },
+        {
+            "base_language": "I give the bread to the man",
+            "target_language": "Yo doy el pan al hombre"
+        },
+        {
+            "base_language": "I give it to him",
+            "target_language": "Yo se lo doy"
+        },
+        {
+            "base_language": "I bring the beers to them",
+            "target_language": "Yo traigo las cervezas a ellos"
+        },
+        {
+            "base_language": "I bring them to them",
+            "target_language": "Yo se las traigo"
+        },
+        {
+            "base_language": "She wants to cook dinner for us",
+            "target_language": "Ella quiere cocinar la cena para nosotros"
+        },
+        {
+            "base_language": "She wants to cook it for us",
+            "target_language": "Ella quiere cocinárnosla"
+        },
+        {
+            "base_language": "Do you understand the menu",
+            "target_language": "¿Entiendes el menú?"
+        },
+        {
+            "base_language": "I do not understand it",
+            "target_language": "No lo entiendo"
+        }
+    ]
+}

@@ -73,6 +73,7 @@ const StoryReader = () => {
 
 
   return <div className='story-container'>
+    {lesson && <h2>{lesson.name}</h2>}
     <div className='story-page'>
       {
         lesson &&

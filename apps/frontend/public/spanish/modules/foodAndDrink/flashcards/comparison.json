@@ -1,0 +1,107 @@
+{
+    "name": "Comparison",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "the bottle is bigger than the glass",
+            "target_language": "la botella es más grande que el vaso"
+        },
+        {
+            "base_language": "the meal is more expensive than the snack",
+            "target_language": "la comida es más cara que el bocadillo"
+        },
+        {
+            "base_language": "this recipe is better than that menu",
+            "target_language": "esta receta es mejor que ese menú"
+        },
+        {
+            "base_language": "the coffee is worse than the tea",
+            "target_language": "el café es peor que el té"
+        },
+        {
+            "base_language": "the oven is bigger than the stove",
+            "target_language": "el horno es más grande que la estufa"
+        },
+        {
+            "base_language": "the fish is more expensive than the chicken",
+            "target_language": "el pescado es más caro que el pollo"
+        },
+        {
+            "base_language": "the flavor is better than the taste",
+            "target_language": "el sabor es mejor que el gusto"
+        },
+        {
+            "base_language": "the knife is worse than the fork",
+            "target_language": "el cuchillo es peor que el tenedor"
+        },
+        {
+            "base_language": "the plate is bigger than the bowl",
+            "target_language": "el plato es más grande que el bol"
+        },
+        {
+            "base_language": "the wine is more expensive than the beer",
+            "target_language": "el vino es más caro que la cerveza"
+        },
+        {
+            "base_language": "the butter is better than the oil",
+            "target_language": "la mantequilla es mejor que el aceite"
+        },
+        {
+            "base_language": "the waiter is worse than the recipe",
+            "target_language": "el camarero es peor que la receta"
+        },
+        {
+            "base_language": "the restaurant is bigger than the kitchen",
+            "target_language": "el restaurante es más grande que la cocina"
+        },
+        {
+            "base_language": "the beef is more expensive than the pork",
+            "target_language": "la carne de res es más cara que el cerdo"
+        },
+        {
+            "base_language": "the ingredient is better than the spice",
+            "target_language": "el ingrediente es mejor que la especia"
+        },
+        {
+            "base_language": "the spoon is worse than the knife",
+            "target_language": "la cuchara es peor que el cuchillo"
+        },
+        {
+            "base_language": "the bowl is bigger than the cup",
+            "target_language": "el bol es más grande que la taza"
+        },
+        {
+            "base_language": "the pizza is more expensive than the sandwich",
+            "target_language": "la pizza es más cara que el sándwich"
+        },
+        {
+            "base_language": "the juice is better than the milk",
+            "target_language": "el jugo es mejor que la leche"
+        },
+        {
+            "base_language": "the meat is worse than the vegetable",
+            "target_language": "la carne es peor que la verdura"
+        },
+        {
+            "base_language": "the table is bigger than the plate",
+            "target_language": "la mesa es más grande que el plato"
+        },
+        {
+            "base_language": "the chocolate is more expensive than the sugar",
+            "target_language": "el chocolate es más caro que el azúcar"
+        },
+        {
+            "base_language": "the bread is better than the rice",
+            "target_language": "el pan es mejor que el arroz"
+        },
+        {
+            "base_language": "the potato is worse than the onion",
+            "target_language": "la papa es peor que la cebolla"
+        },
+        {
+            "base_language": "the pasta is bigger than the rice",
+            "target_language": "la pasta es más grande que el arroz"
+        }
+    ]
+}
