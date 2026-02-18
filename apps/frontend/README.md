@@ -1,54 +1,69 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## running the app locally
 
-Currently, two official plugins are available:
+`yarn`: install depenedencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`yarn dev`: start the app locally
 
-## Expanding the ESLint configuration
+visit `http://localhost:5173` in your browser to see the app
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+
+
+## Adding/Editing the language app
+
+### PROJECT SCRUCTURE:
+
+All the courses are in the public folder cause who needs an API anyway?
+
+If you want to add a language all you need is to add a folder in public with the language name.  I'm not using ISO language codes and do not have a good explanation as to why not.
+
+Adding a course section you would add a new folder under `public/<LANGUAGE>/modules`.  Thats also the best place to look to fix translations and stuff.  the filename is in the URL and pretty closely matches this file structure so it should be easy to find the file you want to edit and to what lesson
+
+```
+public/
+└── <LANGUAGE>/
+    ├── course.json 
+    ├── grammar/
+    │   └── example.json
+    ├── lessons/
+    │   ├── example.txt
+    └── modules/
+        ├── <someCourseSection>
+        │   ├── __wordList__.json
+        │   ├── flashcards
+        │   │   └── someDeck.json
+        │   └── stories
+        │       ├── someStory.json
+        ├── <moreCourseSections>/
+        │   ├── ...
+ 
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### "Data Model" <-- fake DTOs really
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Story, Flashcards, WordLists all follow mostly the sam structure. The exception is word listis missing some fields but its super easy to figure out even if you don't know much/anything about coding.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+There is a model for grammar notes and literal translations but I'm not there yet. If you want to take a stab at adding that stuff please, please do it
+
+```json
+{
+  "name": "Lesson Name", 
+  "type": "flashcards || stories || wordlist", 
+  "sentences": [
+      { 
+        "base_language": "Some phrase in English", 
+        "target_language": "Tranlated phrase",
+        "romanized": "This is optional. Some languages like Chinese have ways to write in the latin alphabet"
+      },
+      { 
+        "base_language": "Phrase 2", 
+        "target_language": "Translation 2"
+      },
+      ...
+  ]
+}
+
 ```
