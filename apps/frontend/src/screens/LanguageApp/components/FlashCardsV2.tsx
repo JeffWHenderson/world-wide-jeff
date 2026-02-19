@@ -15,6 +15,7 @@ const FlashCardsV2 = () => {
     const [readBack, setReadBack] = useState(true)
     const [hideTop, setHideTop] = useState(false)
     const [hideBottom, setHideBottom] = useState(false)
+    const [isRandom, setIsRandom] = useState(true)
 
     // TODO: I can make delay dynamic... seems to work for spanish which is my focus for the moment
     const delay = 2000
@@ -36,6 +37,11 @@ const FlashCardsV2 = () => {
     }, [cardNumber, autoplay])
 
     const nextCard = (indexChange: number = 1) => {
+        if (isRandom) {
+            setCardNumber(Math.floor(Math.random() * (lesson.sentences.length - 1)))
+            return // I know this is ugly but I don't need to overthink this right now
+        }
+
         if (lesson.sentences.length - 1 > cardNumber) {
             setCardNumber(cardNumber + indexChange)
         } else {
@@ -54,7 +60,7 @@ const FlashCardsV2 = () => {
             speechUtterance.onend = () => {
                 setTimeout(() => readBackPlease(), delay)
             }
-            speechUtterance.text = readThis.replace(/\(.*?\)/g, "");
+            speechUtterance.text = readThis.replace(/\(.*?\)/g, "");  // Don't read anything in ()
             window.speechSynthesis.speak(speechUtterance);
         } else {
             readBackPlease()
@@ -126,7 +132,8 @@ const FlashCardsV2 = () => {
                 </div >
             }
             <div className="controls-container">
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <button style={{ backgroundColor: 'white', color: 'black', marginBottom: '10px', alignSelf: 'flex-end' }} onClick={() => setIsRandom(!isRandom)}>{isRandom ? "Unramdomize!!" : "Randomize!!"}</button>
+                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '3px' }}>
                     <div className="controller-box">
                         <button
                             className='back-button'
