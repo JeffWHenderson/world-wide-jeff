@@ -15,7 +15,7 @@ const FlashCardsV2 = () => {
     const [readBack, setReadBack] = useState(true)
     const [hideTop, setHideTop] = useState(false)
     const [hideBottom, setHideBottom] = useState(false)
-    const [isRandom, setIsRandom] = useState(true)
+    const [isRandom, setIsRandom] = useState(false)
 
     // TODO: I can make delay dynamic... seems to work for spanish which is my focus for the moment
     const delay = 2000
@@ -123,7 +123,7 @@ const FlashCardsV2 = () => {
                                 :
                                 <button
                                     style={{ marginBottom: '3px', backgroundColor: 'red', color: 'black' }}
-                                    onClick={() => alert("dev still needs to add remove feature")}
+                                    onClick={() => alert("Jeff still needs to add remove feature")}
                                 >-</button>
                             }
 
