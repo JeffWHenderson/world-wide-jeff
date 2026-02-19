@@ -13,6 +13,8 @@ const FlashCardsV2 = () => {
     const [englishVoice] = useLanguage("english")
     const [readFront, setReadFront] = useState(true)
     const [readBack, setReadBack] = useState(true)
+    const [hideTop, setHideTop] = useState(false)
+    const [hideBottom, setHideBottom] = useState(false)
 
     // TODO: I can make delay dynamic... seems to work for spanish which is my focus for the moment
     const delay = 2000
@@ -92,25 +94,38 @@ const FlashCardsV2 = () => {
                     <div className="card">
                         <div className="flashcard-top">
                             {lesson.sentences[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
-                            <p>{lesson.sentences[cardNumber].base_language}</p>
+                            {!hideTop && <p>{lesson.sentences[cardNumber].base_language}</p>}
                         </div>
+                        <a style={{ marginLeft: "8px" }} onClick={() => setHideTop(!hideTop)}>{hideTop ? "unhide" : "hide"}</a>
                         <div className="flashcard-top">
                             <div style={{ borderBottom: "1px solid grey" }}></div>
-                            {lesson.sentences[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{lesson.sentences[cardNumber]["romanized"]}</p> : null}
-                            <div>{lesson.sentences[cardNumber].target_language}</div>
+                            {!hideBottom &&
+                                <div>
+                                    {lesson.sentences[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{lesson.sentences[cardNumber]["romanized"]}</p> : null}
+                                    < div > {lesson.sentences[cardNumber].target_language}</div>
+                                </div>
+                            }
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: "space-between", margin: "2px 5px 8px 7px" }}>
+                            <a onClick={() => setHideBottom(!hideBottom)}>{hideBottom ? "unhide" : "hide"}</a>
+                            {/* TODO: if its a custom deck remove button */}
+                            {lessonId !== 'custom-deck' ?
+                                <button
+                                    style={{ marginBottom: '3px' }}
+                                    onClick={() => addToDeck(lesson.sentences[cardNumber], `${section}-custom-deck`)}
+                                >+</button>
+                                :
+                                <button
+                                    style={{ marginBottom: '3px', backgroundColor: 'red', color: 'black' }}
+                                    onClick={() => alert("dev still needs to add remove feature")}
+                                >-</button>
+                            }
+
                         </div>
                     </div>
                 </div >
             }
             <div className="controls-container">
-                {lessonId !== 'custom-deck' &&
-                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
-                        <button
-                            style={{ backgroundColor: 'yellow', color: 'black' }}
-                            onClick={() => addToDeck(lesson.sentences[cardNumber], `${section}-custom-deck`)}
-                        >add card to custom deck
-                        </button>
-                    </div>}
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <div className="controller-box">
                         <button
