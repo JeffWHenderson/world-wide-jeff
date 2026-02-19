@@ -4,18 +4,10 @@ import "./main-styles.css"
 import { getMyDeck } from "./hooks/useDecklist";
 
 const LanguageLearningApp = () => {
-
     const { language } = useParams();
     const navigator = useNavigate()
     const [course, setCourse] = useState<any | null>(null);
-
-    // TODO: move this to have light and dark mode
-    // // Function to set the theme
-    // function setTheme() {
-    //     document.body.classList.toggle("dark-mode");
-    // }
-    // <button id="theme-toggle" onClick={() => setTheme()}>Toggle Dark Mode</button>
-
+    const [openPicture, setOpenPicture] = useState(false) // TODO: part of test code for describe feature
 
     useEffect(() => {
         fetch(`/${language}/course.json`)
@@ -83,11 +75,33 @@ const LanguageLearningApp = () => {
                                         {lesson.name}
                                     </button>
                                 ))}
+                                {/* TODO: just testing this out */}
+                                {level.level_id === "foodAndDrink" && <button
+                                    key={"fill me out"}
+                                    onClick={() => setOpenPicture(true)}>
+                                    Practice Speaking (TEST FEATURE)
+                                </button>}
+                                {/* END TEST CODE */}
                             </div>
                         </div>
                     </div>
                 ))}
             </div >
+            {/* TODO: Just testing BElOW IS THE POPUP MODAL FOR PICS */}
+            {openPicture && <div className="picture-container">
+                <div><h3>Describe as much as you can!</h3></div>
+                <span
+                    className="close"
+                    onClick={() => setOpenPicture(false)}
+                >&times;
+                </span>
+                <img
+                    className="picture-style"
+                    src="/foodAndDrink.png"
+                    alt="Food and drink popup"
+                />
+            </div>}
+            {/* End test code to refactor */}
         </>
     )
 }

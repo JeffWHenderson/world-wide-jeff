@@ -66,3 +66,34 @@
     transform: translateX(-50%);
     /* Moves the element back by half of its own width */
 }
+
+/* story styles -- end  */
+
+
+/* This is test feature for now */
+.picture-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: black;
+}
+
+.picture-style {
+    max-width: 100%;
+    height: auto;
+
+    z-index: 10;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* end test feature */
