@@ -2,12 +2,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./main-styles.css"
 import { getMyDeck } from "./hooks/useDecklist";
+import PicturePopUp from "./components/PicturePopUp";
 
 const LanguageLearningApp = () => {
     const { language } = useParams();
     const navigator = useNavigate()
     const [course, setCourse] = useState<any | null>(null);
-    const [openPicture, setOpenPicture] = useState(false) // TODO: part of test code for describe feature
+    const [openPicture, setOpenPicture] = useState(null) // TODO: part of test code for describe feature
 
     useEffect(() => {
         fetch(`/${language}/course.json`)
@@ -48,6 +49,7 @@ const LanguageLearningApp = () => {
                     <h2 className="course-header">{course?.course_name}</h2>
                 </div>
                 {course?.course_levels.map((level: any) => (
+
                     <div key={level.level_id}>
                         <h3 className="section-header">{level.level_name}</h3>
                         <div style={{ overflowY: 'auto' }}>
@@ -76,32 +78,20 @@ const LanguageLearningApp = () => {
                                     </button>
                                 ))}
                                 {/* TODO: just testing this out */}
-                                {level.level_id === "foodAndDrink" && <button
+                                <button
                                     key={"fill me out"}
-                                    onClick={() => setOpenPicture(true)}>
+                                    onClick={() => setOpenPicture(level.level_id)}>
                                     Practice Speaking (TEST FEATURE)
-                                </button>}
+                                </button>
                                 {/* END TEST CODE */}
                             </div>
                         </div>
                     </div>
                 ))}
             </div >
-            {/* TODO: Just testing BElOW IS THE POPUP MODAL FOR PICS */}
-            {openPicture && <div className="picture-container">
-                <div><h3>Describe as much as you can!</h3></div>
-                <span
-                    className="close"
-                    onClick={() => setOpenPicture(false)}
-                >&times;
-                </span>
-                <img
-                    className="picture-style"
-                    src="/foodAndDrink.png"
-                    alt="Food and drink popup"
-                />
-            </div>}
-            {/* End test code to refactor */}
+            {/* TODO: just testing this out */}
+            {openPicture && <PicturePopUp levelId={openPicture} setOpenPicture={setOpenPicture} />}
+            {/* END TEST CODE */}
         </>
     )
 }
