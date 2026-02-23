@@ -125,6 +125,11 @@
                     "filename": "aNiceRestaurant.json",
                     "name": "Table for 3",
                     "type": "story"
+                },
+                {
+                    "filename": "paella.json",
+                    "name": "My recipe for paella",
+                    "type": "story"
                 }
             ]
         },

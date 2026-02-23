@@ -3,6 +3,23 @@ import { useState, useEffect } from 'react';
 import useLanguage from '../hooks/useLanguage';
 import { Expression } from '../LanguageTypes';
 
+const HighlightedText = ({ text, from, to }: any) => {
+  const [start, highlight, finish] = splitText(text, from, to);
+  return (
+    <p>
+      {start}
+      <span style={{ backgroundColor: "yellow" }}>{highlight}</span>
+      {finish}
+    </p>
+  );
+};
+
+const splitText = (text: string, from: number, to: number) => [
+  text.slice(0, from),
+  text.slice(from, to),
+  text.slice(to)
+];
+
 
 const StoryReader = () => {
   const { language, lessonId, section } = useParams();
@@ -12,6 +29,10 @@ const StoryReader = () => {
   const [voice] = useLanguage(language as string)
   const [lesson, setLesson] = useState<any>(null)
   const [counter, setCounter] = useState(0);
+  const [highlightSection, setHighlightSection] = useState({
+    from: 0,
+    to: 0
+  });
 
   useEffect(() => {
     fetch(`/${language}/modules/${section}/stories/${lessonId}`)
@@ -30,14 +51,23 @@ const StoryReader = () => {
 
 
   const read = (index: number, playAll: boolean = true) => {
+    setShowPopup(lesson.sentences[index].target_language)
     const speechUtterance = new SpeechSynthesisUtterance()
     speechUtterance.voice = voice as SpeechSynthesisVoice
     speechUtterance.rate = speakingRate
     const newIndex = index + 1
 
     speechUtterance.text = lesson.sentences[index].target_language
+
+    // ADD HIGHLIGHTING
+    speechUtterance.addEventListener("boundary", ({ charIndex, charLength }) => {
+      setHighlightSection({ from: charIndex, to: charIndex + charLength });
+    });
+
     speechUtterance.onend = () => {
       if (playAll) {
+        setCounter(newIndex)
+        setHighlightSection({ from: 0, to: 0 })
         setTimeout(() => read(newIndex), 500) // MAKE DELAY VARIABLE
       } else {
         setCounter(newIndex)
@@ -52,24 +82,9 @@ const StoryReader = () => {
   }
 
   const handleGoBack = () => {
+    speechSynthesis.cancel();
     navigate(-1); // Navigates to the previous page in the history stack
   };
-
-  function displaySentence(phrase: Expression) {
-    if (phrase.grammar) {
-      const regex = new RegExp(phrase.grammar.highlight)
-      const highlightedText = phrase.target_language.replace(regex, match => `<span style="color: red;"}>${match}</span>`);
-
-      return <div style={{ backgroundColor: "grey", borderRadius: '3' }}>
-        <p dangerouslySetInnerHTML={{ __html: highlightedText }} />
-        <p>{phrase.base_language}</p>
-      </div>
-    } else {
-      return <div>
-        <p>{phrase.target_language}</p>
-      </div>
-    }
-  }
 
 
   return <div className='story-container'>
@@ -77,22 +92,22 @@ const StoryReader = () => {
     <div className='story-page'>
       {
         lesson &&
-        lesson.sentences.map((sentence: Expression) => (
+        lesson.sentences.map((sentence: Expression, index: number) => (
           <div
-            onMouseEnter={() => setShowPopup(sentence.target_language)}
-            onMouseLeave={() => setShowPopup('false')}
             style={{ position: 'relative' }}
             onClick={() => {
-              setShowPopup(sentence.target_language)
-            }
-            }
+              if (showPopup !== sentence.target_language) {
+                setShowPopup(sentence.target_language)
+              } else {
+                setShowPopup('false')
+              }
+            }}
           >
-            {displaySentence(sentence)}
             {showPopup == sentence.target_language && (
               <div
                 style={{
                   position: 'absolute',
-                  top: '100%', // Position below the "Hover Me" text
+                  bottom: '110%', // Position below the "Hover Me" text
                   left: 0,
                   backgroundColor: 'lightgray',
                   color: 'black',
@@ -105,6 +120,11 @@ const StoryReader = () => {
                 {sentence.grammar?.note}
               </div>
             )}
+            {counter === index ?
+              <div style={{ textDecoration: "underline" }}><HighlightedText text={sentence.target_language} {...highlightSection} /></div>
+              : <p>{sentence.target_language}</p>
+            }
+
           </div>
         ))
       }
@@ -115,7 +135,7 @@ const StoryReader = () => {
         </div>
       </div>
     </div>
-  </div>
+  </div >
 }
 
 

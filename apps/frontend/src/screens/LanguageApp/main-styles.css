@@ -38,6 +38,7 @@
 
 /* story styles -- probably also to be moved eventually */
 .story-container {
+    padding-left: 10px;
     flex: 1;
     justify-content: center;
     align-content: space-around;
@@ -47,7 +48,7 @@
 }
 
 .story-page {
-    padding: 7px;
+    padding-top: 18px;
     width: 100vw;
     max-width: 900px;
     padding-bottom: 200px;
