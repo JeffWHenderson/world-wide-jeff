@@ -8,7 +8,7 @@ const HighlightedText = ({ text, from, to }: any) => {
   return (
     <p>
       {start}
-      <span style={{ backgroundColor: "yellow" }}>{highlight}</span>
+      <span style={{ backgroundColor: "yellow", color: 'black' }}>{highlight}</span>
       {finish}
     </p>
   );
@@ -29,6 +29,7 @@ const StoryReader = () => {
   const [voice] = useLanguage(language as string)
   const [lesson, setLesson] = useState<any>(null)
   const [counter, setCounter] = useState(0);
+  const [delay] = useState(.7)
   const [highlightSection, setHighlightSection] = useState({
     from: 0,
     to: 0
@@ -43,12 +44,11 @@ const StoryReader = () => {
 
   const playOrPause = (startPosition: number) => {
     if (speechSynthesis.speaking) {
-      speechSynthesis.pause
+      speechSynthesis.cancel();
     } else {
       read(startPosition)
     }
   }
-
 
   const read = (index: number, playAll: boolean = true) => {
     setShowPopup(lesson.sentences[index].target_language)
@@ -68,8 +68,9 @@ const StoryReader = () => {
       if (playAll) {
         setCounter(newIndex)
         setHighlightSection({ from: 0, to: 0 })
-        setTimeout(() => read(newIndex), 500) // MAKE DELAY VARIABLE
+        setTimeout(() => read(newIndex), delay * 1000)
       } else {
+        setHighlightSection({ from: 0, to: 0 })
         setCounter(newIndex)
       }
       if (newIndex === lesson.sentence.length - 1) {
@@ -97,6 +98,7 @@ const StoryReader = () => {
             style={{ position: 'relative' }}
             onClick={() => {
               if (showPopup !== sentence.target_language) {
+                setCounter(index)
                 setShowPopup(sentence.target_language)
               } else {
                 setShowPopup('false')
@@ -124,14 +126,14 @@ const StoryReader = () => {
               <div style={{ textDecoration: "underline" }}><HighlightedText text={sentence.target_language} {...highlightSection} /></div>
               : <p>{sentence.target_language}</p>
             }
-
           </div>
         ))
       }
       <div className="fixed-element">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button className='back-button' onClick={() => handleGoBack()} >go back</button>
-          <button className='next-button' onClick={() => playOrPause(counter)}>{'play all'}</button>
+          <button onClick={() => handleGoBack()} >go back</button>
+          <button onClick={() => playOrPause(counter)}>{'play all / pause'}</button>
+          <button onClick={() => read(counter, false)}>playNext</button>
         </div>
       </div>
     </div>
