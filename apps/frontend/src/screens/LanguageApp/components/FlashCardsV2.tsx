@@ -11,11 +11,14 @@ const FlashCardsV2 = () => {
     const [autoplay, setAutoPlay] = useState(false)
     const [voice] = useLanguage(language as string)
     const [englishVoice] = useLanguage("english")
-    const [readFront, setReadFront] = useState(true)
-    const [readBack, setReadBack] = useState(true)
+    const [readFront, setReadFront] = useState(false)
+    const [readBack, setReadBack] = useState(false)
     const [hideTop, setHideTop] = useState(false)
     const [hideBottom, setHideBottom] = useState(false)
     const [isRandom, setIsRandom] = useState(false)
+    const [top, setTop] = useState("loading")
+    const [bottom, setBottom] = useState("loading")
+    const [reverseCards, setReverseCards] = useState(false)
 
     // TODO: I can make delay dynamic... seems to work for spanish which is my focus for the moment
     const delay = 2000
@@ -26,15 +29,30 @@ const FlashCardsV2 = () => {
         } else {
             fetch(`/${language?.toLowerCase()}/modules/${section}/flashcards/${lessonId}`)
                 .then(res => res.json())
-                .then(data => { console.log(data); setLesson(data) })
+                .then(data => {
+                    setTop(data.sentences[0].base_language) // set the top of the first card to be the first sentence's base language
+                    setBottom(data.sentences[0].target_language) // set the bottom of the first card to be the first sentence's target language
+                    setLesson(data)
+                })
                 .catch(err => console.error(err))
         }
     }, [])
 
     // // play after card number is updated
     useEffect(() => {
-        readFrontPlease() // do in english
-    }, [cardNumber, autoplay])
+        if (reverseCards) {
+            setTop(lesson?.sentences[cardNumber]["target_language"])
+            setBottom(lesson?.sentences[cardNumber]["base_language"])
+        } else {
+            setTop(lesson?.sentences[cardNumber]["base_language"])
+            setBottom(lesson?.sentences[cardNumber]["target_language"])
+        }
+
+    }, [cardNumber, reverseCards])
+
+    useEffect(() => {
+        readFrontPlease()
+    }, [top, bottom, autoplay])
 
     const nextCard = (indexChange: number = 1) => {
         if (isRandom) {
@@ -51,11 +69,11 @@ const FlashCardsV2 = () => {
 
     const readFrontPlease = () => {
         if (readFront && lesson) {
-            let readThis = lesson?.sentences[cardNumber]["base_language"];
+            let readThis = top
 
             const speechUtterance = new SpeechSynthesisUtterance()
             window.speechSynthesis.cancel()
-            speechUtterance.voice = englishVoice as SpeechSynthesisVoice
+            speechUtterance.voice = !reverseCards ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
             speechUtterance.rate = 1
             speechUtterance.onend = () => {
                 setTimeout(() => readBackPlease(), delay)
@@ -69,11 +87,11 @@ const FlashCardsV2 = () => {
 
     const readBackPlease = () => {
         if (readBack && lesson) {
-            let readThis = lesson?.sentences[cardNumber]["target_language"];
+            let readThis = bottom
 
             const speechUtterance = new SpeechSynthesisUtterance()
             window.speechSynthesis.cancel()
-            speechUtterance.voice = voice as SpeechSynthesisVoice
+            speechUtterance.voice = reverseCards ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
             speechUtterance.rate = 1
             speechUtterance.onend = () => {
                 if (autoplay) {
@@ -100,7 +118,7 @@ const FlashCardsV2 = () => {
                     <div className="card">
                         <div className="flashcard-top">
                             {lesson.sentences[cardNumber].picture ? <div>TODO: add pictures to the flashcards</div> : null}
-                            {!hideTop && <p>{lesson.sentences[cardNumber].base_language}</p>}
+                            {!hideTop && <p>{top}</p>}
                         </div>
                         <a style={{ marginLeft: "8px" }} onClick={() => setHideTop(!hideTop)}>{hideTop ? "unhide" : "hide"}</a>
                         <div className="flashcard-top">
@@ -108,7 +126,7 @@ const FlashCardsV2 = () => {
                             {!hideBottom &&
                                 <div>
                                     {lesson.sentences[cardNumber].romanized ? <p style={{ margin: '0px', color: 'red', height: "1.5em", fontSize: '.5em' }}>{lesson.sentences[cardNumber]["romanized"]}</p> : null}
-                                    < div > {lesson.sentences[cardNumber].target_language}</div>
+                                    < div > {bottom}</div>
                                 </div>
                             }
                         </div>
@@ -131,6 +149,7 @@ const FlashCardsV2 = () => {
                     </div>
                 </div >
             }
+            <button onClick={() => setReverseCards(!reverseCards)}>flipCards</button>
             <div className="controls-container">
                 <button style={{ backgroundColor: 'white', color: 'black', marginBottom: '10px', alignSelf: 'flex-end' }} onClick={() => setIsRandom(!isRandom)}>{isRandom ? "Unramdomize!!" : "Randomize!!"}</button>
                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '3px' }}>
