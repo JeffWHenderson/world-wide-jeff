@@ -1,0 +1,31 @@
+{
+    "name": "essential phrases",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "Where is the bus stop?",
+            "target_language": "バス停はどこですか？",
+            "romanized": "basutei wa doko desu ka?"
+        },
+        {
+            "base_language": "Where is the airport?",
+            "target_language": "空港はどこですか？",
+            "romanized": "kuukou wa doko desu ka?"
+        },
+        {
+            "base_language": "How do I get to...?",
+            "target_language": "...への行き方は？",
+            "romanized": "...e no ikikata wa?"
+        },
+        {
+            "base_language": "Left",
+            "target_language": "左",
+            "romanized": "hidari"
+        },
+        {
+            "base_language": "Right",
+            "target_language": "右",
+            "romanized": "migi"
+        }
+    ]
+}

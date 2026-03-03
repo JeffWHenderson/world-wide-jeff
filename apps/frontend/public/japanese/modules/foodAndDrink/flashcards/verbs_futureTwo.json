@@ -1,0 +1,427 @@
+{
+    "name": "Future tense + 2nd person",
+    "type": "flashcards",
+    "lesson_id": "verbs_future.txt",
+    "sentences": [
+        {
+            "base_language": "I will eat the cheese.",
+            "target_language": "私はチーズを食べます。",
+            "romanized": "watashi wa chiizu o tabemasu."
+        },
+        {
+            "base_language": "We will eat the cheese.",
+            "target_language": "私たちはチーズを食べます。",
+            "romanized": "watashitachi wa chiizu o tabemasu."
+        },
+        {
+            "base_language": "They will eat the cheese.",
+            "target_language": "彼らはチーズを食べます。",
+            "romanized": "karera wa chiizu o tabemasu."
+        },
+        {
+            "base_language": "I will drink the milk.",
+            "target_language": "私は牛乳を飲みます。",
+            "romanized": "watashi wa gyuunyuu o nomimasu."
+        },
+        {
+            "base_language": "We will drink the milk.",
+            "target_language": "私たちは牛乳を飲みます。",
+            "romanized": "watashitachi wa gyuunyuu o nomimasu."
+        },
+        {
+            "base_language": "They will drink the milk.",
+            "target_language": "彼らは牛乳を飲みます。",
+            "romanized": "karera wa gyuunyuu o nomimasu."
+        },
+        {
+            "base_language": "I will cook the fish.",
+            "target_language": "私は魚を料理します。",
+            "romanized": "watashi wa sakana o ryouri shimasu."
+        },
+        {
+            "base_language": "We will cook the fish.",
+            "target_language": "私たちは魚を料理します。",
+            "romanized": "watashitachi wa sakana o ryouri shimasu."
+        },
+        {
+            "base_language": "They will cook the fish.",
+            "target_language": "彼らは魚を料理します。",
+            "romanized": "karera wa sakana o ryouri shimasu."
+        },
+        {
+            "base_language": "I will bake the cake.",
+            "target_language": "私はケーキを焼きます。",
+            "romanized": "watashi wa keeki o yakimasu."
+        },
+        {
+            "base_language": "We will bake the cake.",
+            "target_language": "私たちはケーキを焼きます。",
+            "romanized": "watashitachi wa keeki o yakimasu."
+        },
+        {
+            "base_language": "They will bake the cake.",
+            "target_language": "彼らはケーキを焼きます。",
+            "romanized": "karera wa keeki o yakimasu."
+        },
+        {
+            "base_language": "I will boil the water.",
+            "target_language": "私はお湯を沸かします。",
+            "romanized": "watashi wa oyu o wakashimasu."
+        },
+        {
+            "base_language": "We will boil the water.",
+            "target_language": "私たちはお湯を沸かします。",
+            "romanized": "watashitachi wa oyu o wakashimasu."
+        },
+        {
+            "base_language": "They will boil the water.",
+            "target_language": "彼らはお湯を沸かします。",
+            "romanized": "karera wa oyu o wakashimasu."
+        },
+        {
+            "base_language": "I will fry the potato.",
+            "target_language": "私はじゃがいもを揚げます。",
+            "romanized": "watashi wa jagaimo o agemasu."
+        },
+        {
+            "base_language": "We will fry the potato.",
+            "target_language": "私たちはじゃがいもを揚げます。",
+            "romanized": "watashitachi wa jagaimo o agemasu."
+        },
+        {
+            "base_language": "They will fry the potato.",
+            "target_language": "彼らはじゃがいもを揚げます。",
+            "romanized": "karera wa jagaimo o agemasu."
+        },
+        {
+            "base_language": "I will roast the beef.",
+            "target_language": "私は牛肉を焼きます。",
+            "romanized": "watashi wa gyuuniku o yakimasu."
+        },
+        {
+            "base_language": "We will roast the beef.",
+            "target_language": "私たちは牛肉を焼きます。",
+            "romanized": "watashitachi wa gyuuniku o yakimasu."
+        },
+        {
+            "base_language": "They will roast the beef.",
+            "target_language": "彼らは牛肉を焼きます。",
+            "romanized": "karera wa gyuuniku o yakimasu."
+        },
+        {
+            "base_language": "I will grill the pork.",
+            "target_language": "私は豚肉を焼きます。",
+            "romanized": "watashi wa butaniku o yakimasu."
+        },
+        {
+            "base_language": "We will grill the pork.",
+            "target_language": "私たちは豚肉を焼きます。",
+            "romanized": "watashitachi wa butaniku o yakimasu."
+        },
+        {
+            "base_language": "They will grill the pork.",
+            "target_language": "彼らは豚肉を焼きます。",
+            "romanized": "karera wa butaniku o yakimasu."
+        },
+        {
+            "base_language": "I will chop the fruit.",
+            "target_language": "私は果物を切ります。",
+            "romanized": "watashi wa kudamono o kirimasu."
+        },
+        {
+            "base_language": "We will chop the fruit.",
+            "target_language": "私たちは果物を切ります。",
+            "romanized": "watashitachi wa kudamono o kirimasu."
+        },
+        {
+            "base_language": "They will chop the fruit.",
+            "target_language": "彼らは果物を切ります。",
+            "romanized": "karera wa kudamono o kirimasu."
+        },
+        {
+            "base_language": "I will slice the orange.",
+            "target_language": "私はオレンジを切ります。",
+            "romanized": "watashi wa orenji o kirimasu."
+        },
+        {
+            "base_language": "We will slice the orange.",
+            "target_language": "私たちはオレンジを切ります。",
+            "romanized": "watashitachi wa orenji o kirimasu."
+        },
+        {
+            "base_language": "They will slice the orange.",
+            "target_language": "彼らはオレンジを切ります。",
+            "romanized": "karera wa orenji o kirimasu."
+        },
+        {
+            "base_language": "I will mix the ingredients.",
+            "target_language": "私は材料を混ぜます。",
+            "romanized": "watashi wa zairyou o mazemasu."
+        },
+        {
+            "base_language": "We will mix the ingredients.",
+            "target_language": "私たちは材料を混ぜます。",
+            "romanized": "watashitachi wa zairyou o mazemasu."
+        },
+        {
+            "base_language": "They will mix the ingredients.",
+            "target_language": "彼らは材料を混ぜます。",
+            "romanized": "karera wa zairyou o mazemasu."
+        },
+        {
+            "base_language": "I will stir the pasta.",
+            "target_language": "私はパスタをかき混ぜます。",
+            "romanized": "watashi wa pasuta o kakimazemasu."
+        },
+        {
+            "base_language": "We will stir the pasta.",
+            "target_language": "私たちはパスタをかき混ぜます。",
+            "romanized": "watashitachi wa pasuta o kakimazemasu."
+        },
+        {
+            "base_language": "They will stir the pasta.",
+            "target_language": "彼らはパスタをかき混ぜます。",
+            "romanized": "karera wa pasuta o kakimazemasu."
+        },
+        {
+            "base_language": "I will whisk the eggs.",
+            "target_language": "私は卵を泡立てます。",
+            "romanized": "watashi wa tamago o awadatemasu."
+        },
+        {
+            "base_language": "We will whisk the eggs.",
+            "target_language": "私たちは卵を泡立てます。",
+            "romanized": "watashitachi wa tamago o awadatemasu."
+        },
+        {
+            "base_language": "They will whisk the eggs.",
+            "target_language": "彼らは卵を泡立てます。",
+            "romanized": "karera wa tamago o awadatemasu."
+        },
+        {
+            "base_language": "I will pour the beer.",
+            "target_language": "私はビールを注ぎます。",
+            "romanized": "watashi wa biiru o tsugimasu."
+        },
+        {
+            "base_language": "We will pour the beer.",
+            "target_language": "私たちはビールを注ぎます。",
+            "romanized": "watashitachi wa biiru o tsugimasu."
+        },
+        {
+            "base_language": "They will pour the beer.",
+            "target_language": "彼らはビールを注ぎます。",
+            "romanized": "karera wa biiru o tsugimasu."
+        },
+        {
+            "base_language": "I will serve the meal.",
+            "target_language": "私は食事を出します。",
+            "romanized": "watashi wa shokuji o dashimasu."
+        },
+        {
+            "base_language": "We will serve the meal.",
+            "target_language": "私たちは食事を出します。",
+            "romanized": "watashitachi wa shokuji o dashimasu."
+        },
+        {
+            "base_language": "They will serve the meal.",
+            "target_language": "彼らは食事を出します。",
+            "romanized": "karera wa shokuji o dashimasu."
+        },
+        {
+            "base_language": "I will taste the sandwich.",
+            "target_language": "私はサンドイッチを味見します。",
+            "romanized": "watashi wa sandoicchi o ajimi shimasu."
+        },
+        {
+            "base_language": "We will taste the sandwich.",
+            "target_language": "私たちはサンドイッチを味見します。",
+            "romanized": "watashitachi wa sandoicchi o ajimi shimasu."
+        },
+        {
+            "base_language": "They will taste the sandwich.",
+            "target_language": "彼らはサンドイッチを味見します。",
+            "romanized": "karera wa sandoicchi o ajimi shimasu."
+        },
+        {
+            "base_language": "I will feed the dog.",
+            "target_language": "私は犬に餌をあげます。",
+            "romanized": "watashi wa inu ni esa o agemasu."
+        },
+        {
+            "base_language": "We will feed the dog.",
+            "target_language": "私たちは犬に餌をあげます。",
+            "romanized": "watashitachi wa inu ni esa o agemasu."
+        },
+        {
+            "base_language": "They will feed the dog.",
+            "target_language": "彼らは犬に餌をあげます。",
+            "romanized": "karera wa inu ni esa o agemasu."
+        },
+        {
+            "base_language": "I will dine at home.",
+            "target_language": "私は家で食事をします。",
+            "romanized": "watashi wa ie de shokuji o shimasu."
+        },
+        {
+            "base_language": "We will dine at home.",
+            "target_language": "私たちは家で食事をします。",
+            "romanized": "watashitachi wa ie de shokuji o shimasu."
+        },
+        {
+            "base_language": "They will dine at home.",
+            "target_language": "彼らは家で食事をします。",
+            "romanized": "karera wa ie de shokuji o shimasu."
+        },
+        {
+            "base_language": "I will chew the banana.",
+            "target_language": "私はバナナを噛みます。",
+            "romanized": "watashi wa banana o kamimasu."
+        },
+        {
+            "base_language": "We will chew the banana.",
+            "target_language": "私たちはバナナを噛みます。",
+            "romanized": "watashitachi wa banana o kamimasu."
+        },
+        {
+            "base_language": "They will chew the banana.",
+            "target_language": "彼らはバナナを噛みます。",
+            "romanized": "karera wa banana o kamimasu."
+        },
+        {
+            "base_language": "I will swallow the coffee.",
+            "target_language": "私はコーヒーを飲み込みます。",
+            "romanized": "watashi wa koohii o nomikomimasu."
+        },
+        {
+            "base_language": "We will swallow the coffee.",
+            "target_language": "私たちはコーヒーを飲み込みます。",
+            "romanized": "watashitachi wa koohii o nomikomimasu."
+        },
+        {
+            "base_language": "They will swallow the coffee.",
+            "target_language": "彼らはコーヒーを飲み込みます。",
+            "romanized": "karera wa koohii o nomikomimasu."
+        },
+        {
+            "base_language": "I will savor the chocolate.",
+            "target_language": "私はチョコレートを味わいます。",
+            "romanized": "watashi wa chokoreeto o ajiwaimasu."
+        },
+        {
+            "base_language": "We will savor the chocolate.",
+            "target_language": "私たちはチョコレートを味わいます。",
+            "romanized": "watashitachi wa chokoreeto o ajiwaimasu."
+        },
+        {
+            "base_language": "They will savor the chocolate.",
+            "target_language": "彼らはチョコレートを味わいます。",
+            "romanized": "karera wa chokoreeto o ajiwaimasu."
+        },
+        {
+            "base_language": "I will season the steak.",
+            "target_language": "私はステーキに味付けをします。",
+            "romanized": "watashi wa suteeki ni ajitsuke o shimasu."
+        },
+        {
+            "base_language": "We will season the steak.",
+            "target_language": "私たちはステーキに味付けをします。",
+            "romanized": "watashitachi wa suteeki ni ajitsuke o shimasu."
+        },
+        {
+            "base_language": "They will season the steak.",
+            "target_language": "彼らはステーキに味付けをします。",
+            "romanized": "karera wa suteeki ni ajitsuke o shimasu."
+        },
+        {
+            "base_language": "I will steam the vegetables.",
+            "target_language": "私は野菜を蒸します。",
+            "romanized": "watashi wa yasai o mushimasu."
+        },
+        {
+            "base_language": "We will steam the vegetables.",
+            "target_language": "私たちは野菜を蒸します。",
+            "romanized": "watashitachi wa yasai o mushimasu."
+        },
+        {
+            "base_language": "They will steam the vegetables.",
+            "target_language": "彼らは野菜を蒸します。",
+            "romanized": "karera wa yasai o mushimasu."
+        },
+        {
+            "base_language": "I will blend the juice.",
+            "target_language": "私はジュースを作ります。",
+            "romanized": "watashi wa juusu o tsukurimasu."
+        },
+        {
+            "base_language": "We will blend the juice.",
+            "target_language": "私たちはジュースを作ります。",
+            "romanized": "watashitachi wa juusu o tsukurimasu."
+        },
+        {
+            "base_language": "They will blend the juice.",
+            "target_language": "彼らはジュースを作ります。",
+            "romanized": "karera wa juusu o tsukurimasu."
+        },
+        {
+            "base_language": "I will pay the waiter.",
+            "target_language": "私はウェイターに払います。",
+            "romanized": "watashi wa weitaa ni haraimasu."
+        },
+        {
+            "base_language": "We will pay the waiter.",
+            "target_language": "私たちはウェイターに払います。",
+            "romanized": "watashitachi wa weitaa ni haraimasu."
+        },
+        {
+            "base_language": "They will pay the waiter.",
+            "target_language": "彼らはウェイターに払います。",
+            "romanized": "karera wa weitaa ni haraimasu."
+        },
+        {
+            "base_language": "I will order the snack.",
+            "target_language": "私はおやつを注文します。",
+            "romanized": "watashi wa oyatsu o chuumon shimasu."
+        },
+        {
+            "base_language": "We will order the snack.",
+            "target_language": "私たちはおやつを注文します。",
+            "romanized": "watashitachi wa oyatsu o chuumon shimasu."
+        },
+        {
+            "base_language": "They will order the snack.",
+            "target_language": "彼らはおやつを注文します。",
+            "romanized": "karera wa oyatsu o chuumon shimasu."
+        },
+        {
+            "base_language": "I will want butter.",
+            "target_language": "私はバターが欲しくなります。",
+            "romanized": "watashi wa bataa ga hoshiku narimasu."
+        },
+        {
+            "base_language": "You will want butter.",
+            "target_language": "あなたはバターが欲しくなります。",
+            "romanized": "anata wa bataa ga hoshiku narimasu."
+        },
+        {
+            "base_language": "They will want butter.",
+            "target_language": "彼らはバターが欲しくなります。",
+            "romanized": "karera wa bataa ga hoshiku narimasu."
+        },
+        {
+            "base_language": "I will have a knife.",
+            "target_language": "私はナイフを持ちます。",
+            "romanized": "watashi wa naifu o mochimasu."
+        },
+        {
+            "base_language": "You will have a knife.",
+            "target_language": "あなたはナイフを持ちます。",
+            "romanized": "anata wa naifu o mochimasu."
+        },
+        {
+            "base_language": "They will have a knife.",
+            "target_language": "彼らはナイフを持ちます。",
+            "romanized": "karera wa naifu o mochimasu."
+        }
+    ]
+}

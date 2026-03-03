@@ -1,0 +1,291 @@
+{
+    "name": "everday expressions",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "Hello",
+            "target_language": "こんにちは",
+            "romanized": "konnichiwa"
+        },
+        {
+            "base_language": "How are you?",
+            "target_language": "お元気ですか？",
+            "romanized": "ogenki desu ka?"
+        },
+        {
+            "base_language": "Hello, how are you",
+            "target_language": "こんにちは、お元気ですか？",
+            "romanized": "konnichiwa, ogenki desu ka?"
+        },
+        {
+            "base_language": "Excuse me (to get attention)",
+            "target_language": "すみません",
+            "romanized": "sumimasen"
+        },
+        {
+            "base_language": "Where is the bathroom?",
+            "target_language": "トイレはどこですか？",
+            "romanized": "toire wa doko desu ka?"
+        },
+        {
+            "base_language": "Alright (OK)",
+            "target_language": "大丈夫です",
+            "romanized": "daijoubu desu"
+        },
+        {
+            "base_language": "I don't feel well",
+            "target_language": "気分が悪いです",
+            "romanized": "kibun ga warui desu"
+        },
+        {
+            "base_language": "What is your name?",
+            "target_language": "お名前は何ですか？",
+            "romanized": "onamae wa nan desu ka?"
+        },
+        {
+            "base_language": "My name is Seth",
+            "target_language": "私の名前はSethです",
+            "romanized": "watashi no namae wa Seth desu"
+        },
+        {
+            "base_language": "What are you called? (what is your name?)",
+            "target_language": "お名前は？",
+            "romanized": "onamae wa?"
+        },
+        {
+            "base_language": "My name is Seth (I'm called seth)",
+            "target_language": "Sethといいます",
+            "romanized": "Seth to iimasu"
+        },
+        {
+            "base_language": "Nice to meet you",
+            "target_language": "はじめまして",
+            "romanized": "hajimemashite"
+        },
+        {
+            "base_language": "Likewise",
+            "target_language": "こちらこそ",
+            "romanized": "kochira koso"
+        },
+        {
+            "base_language": "Where are you from?",
+            "target_language": "どこから来ましたか？",
+            "romanized": "doko kara kimashita ka?"
+        },
+        {
+            "base_language": "I am from the united states",
+            "target_language": "アメリカから来ました",
+            "romanized": "amerika kara kimashita"
+        },
+        {
+            "base_language": "Thank you (very much)",
+            "target_language": "（どうも）ありがとうございます",
+            "romanized": "(doumo) arigatou gozaimasu"
+        },
+        {
+            "base_language": "Sorry",
+            "target_language": "ごめんなさい",
+            "romanized": "gomen nasai"
+        },
+        {
+            "base_language": "You're welcome",
+            "target_language": "どういたしまして",
+            "romanized": "dou itashimashite"
+        },
+        {
+            "base_language": "Take care",
+            "target_language": "お気をつけて",
+            "romanized": "oki wo tsukete"
+        },
+        {
+            "base_language": "Goodbye",
+            "target_language": "さようなら",
+            "romanized": "sayounara"
+        },
+        {
+            "base_language": "Have a nice day!",
+            "target_language": "良い一日を！",
+            "romanized": "yoi ichinichi wo!"
+        },
+        {
+            "base_language": "See you later",
+            "target_language": "また後で",
+            "romanized": "mata atode"
+        },
+        {
+            "base_language": "I have a question",
+            "target_language": "質問があります",
+            "romanized": "shitsumon ga arimasu"
+        },
+        {
+            "base_language": "How do you say _____ in Japanese?",
+            "target_language": "_____は日本語で何と言いますか？",
+            "romanized": "_____ wa nihongo de nan to iimasu ka?"
+        },
+        {
+            "base_language": "What does _____ mean?",
+            "target_language": "_____はどういう意味ですか？",
+            "romanized": "_____ wa dou iu imi desu ka?"
+        },
+        {
+            "base_language": "Can you help me?",
+            "target_language": "手伝ってもらえますか？",
+            "romanized": "tetsudatte moraemasu ka?"
+        },
+        {
+            "base_language": "Please",
+            "target_language": "お願いします",
+            "romanized": "onegaishimasu"
+        },
+        {
+            "base_language": "Good morning",
+            "target_language": "おはようございます",
+            "romanized": "ohayou gozaimasu"
+        },
+        {
+            "base_language": "Good afternoon (evening)",
+            "target_language": "こんばんは",
+            "romanized": "konbanwa"
+        },
+        {
+            "base_language": "Good night",
+            "target_language": "おやすみなさい",
+            "romanized": "oyasuminasai"
+        },
+        {
+            "base_language": "I'm sorry (to apologize)",
+            "target_language": "申し訳ありません",
+            "romanized": "moushiwake arimasen"
+        },
+        {
+            "base_language": "Yes",
+            "target_language": "はい",
+            "romanized": "hai"
+        },
+        {
+            "base_language": "No",
+            "target_language": "いいえ",
+            "romanized": "iie"
+        },
+        {
+            "base_language": "I'm fine. And you?",
+            "target_language": "元気です。あなたは？",
+            "romanized": "genki desu. anata wa?"
+        },
+        {
+            "base_language": "I don't understand",
+            "target_language": "わかりません",
+            "romanized": "wakarimasen"
+        },
+        {
+            "base_language": "Can you repeat that?",
+            "target_language": "もう一度言ってもらえますか？",
+            "romanized": "mou ichido itte moraemasu ka?"
+        },
+        {
+            "base_language": "Can you speak more slowly?",
+            "target_language": "もっとゆっくり話してもらえますか？",
+            "romanized": "motto yukkuri hanashite moraemasu ka?"
+        },
+        {
+            "base_language": "How much does this cost?",
+            "target_language": "これはいくらですか？",
+            "romanized": "kore wa ikura desu ka?"
+        },
+        {
+            "base_language": "I would like this",
+            "target_language": "これをください",
+            "romanized": "kore wo kudasai"
+        },
+        {
+            "base_language": "Do you accept credit cards?",
+            "target_language": "クレジットカードは使えますか？",
+            "romanized": "kurejitto kaado wa tsukaemasu ka?"
+        },
+        {
+            "base_language": "The bill (check), please",
+            "target_language": "お会計お願いします",
+            "romanized": "okaikei onegaishimasu"
+        },
+        {
+            "base_language": "A table for two, please",
+            "target_language": "二人ですが、席はありますか？",
+            "romanized": "futari desu ga, seki wa arimasu ka?"
+        },
+        {
+            "base_language": "What do you recommend?",
+            "target_language": "おすすめは何ですか？",
+            "romanized": "osusume wa nan desu ka?"
+        },
+        {
+            "base_language": "It's delicious!",
+            "target_language": "美味しいです！",
+            "romanized": "oishii desu!"
+        },
+        {
+            "base_language": "Cheers! (for toasts)",
+            "target_language": "乾杯！",
+            "romanized": "kanpai!"
+        },
+        {
+            "base_language": "I'm lost (male)",
+            "target_language": "道に迷いました",
+            "romanized": "michi ni mayoimashita"
+        },
+        {
+            "base_language": "I'm lost (female)",
+            "target_language": "道に迷いました",
+            "romanized": "michi ni mayoimashita"
+        },
+        {
+            "base_language": "Where is the train station?",
+            "target_language": "駅はどこですか？",
+            "romanized": "eki wa doko desu ka?"
+        },
+        {
+            "base_language": "Call the police!",
+            "target_language": "警察を呼んでください！",
+            "romanized": "keisatsu wo yonde kudasai!"
+        },
+        {
+            "base_language": "What's new?",
+            "target_language": "最近どうですか？",
+            "romanized": "saikin dou desu ka?"
+        },
+        {
+            "base_language": "Not much",
+            "target_language": "特に何もないです",
+            "romanized": "toku ni nani mo nai desu"
+        },
+        {
+            "base_language": "I like...",
+            "target_language": "...が好きです",
+            "romanized": "...ga suki desu"
+        },
+        {
+            "base_language": "I don't like...",
+            "target_language": "...が好きではありません",
+            "romanized": "...ga suki dewa arimasen"
+        },
+        {
+            "base_language": "What do you think?",
+            "target_language": "どう思いますか？",
+            "romanized": "dou omoimasu ka?"
+        },
+        {
+            "base_language": "That's interesting!",
+            "target_language": "面白いですね！",
+            "romanized": "omoshiroi desu ne!"
+        },
+        {
+            "base_language": "What time is it?",
+            "target_language": "今何時ですか？",
+            "romanized": "ima nanji desu ka?"
+        },
+        {
+            "base_language": "I have to go now",
+            "target_language": "もう行かなければなりません",
+            "romanized": "mou ikanakereba narimasen"
+        }
+    ]
+}

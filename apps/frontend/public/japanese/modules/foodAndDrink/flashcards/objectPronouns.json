@@ -1,0 +1,212 @@
+{
+    "name": "Object Pronouns",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I eat bread",
+            "target_language": "私はパンを食べます",
+            "romanized": "watashi wa pan wo tabemasu"
+        },
+        {
+            "base_language": "I eat it",
+            "target_language": "私はそれを食べます",
+            "romanized": "watashi wa sore wo tabemasu"
+        },
+        {
+            "base_language": "I drink water",
+            "target_language": "私は水を飲みます",
+            "romanized": "watashi wa mizu wo nomimasu"
+        },
+        {
+            "base_language": "I drink it",
+            "target_language": "私はそれを飲みます",
+            "romanized": "watashi wa sore wo nomimasu"
+        },
+        {
+            "base_language": "I want pizzas",
+            "target_language": "私はピザが欲しいです",
+            "romanized": "watashi wa piza ga hoshii desu"
+        },
+        {
+            "base_language": "I want them",
+            "target_language": "私はそれらが欲しいです",
+            "romanized": "watashi wa sorera ga hoshii desu"
+        },
+        {
+            "base_language": "He cooks eggs",
+            "target_language": "彼は卵を料理します",
+            "romanized": "kare wa tamago wo ryouri shimasu"
+        },
+        {
+            "base_language": "He cooks them",
+            "target_language": "彼はそれらを料理します",
+            "romanized": "kare wa sorera wo ryouri shimasu"
+        },
+        {
+            "base_language": "I have a recipe",
+            "target_language": "私はレシピを持っています",
+            "romanized": "watashi wa reshipi wo motte imasu"
+        },
+        {
+            "base_language": "I have it",
+            "target_language": "私はそれを持っています",
+            "romanized": "watashi wa sore wo motte imasu"
+        },
+        {
+            "base_language": "She slices the onion",
+            "target_language": "彼女は玉ねぎを切ります",
+            "romanized": "kanojo wa tamanegi wo kirimasu"
+        },
+        {
+            "base_language": "She slices it",
+            "target_language": "彼女はそれを切ります",
+            "romanized": "kanojo wa sore wo kirimasu"
+        },
+        {
+            "base_language": "We are eating soup",
+            "target_language": "私たちはスープを食べています",
+            "romanized": "watashitachi wa suupu wo tabete imasu"
+        },
+        {
+            "base_language": "We are eating it",
+            "target_language": "私たちはそれを食べています",
+            "romanized": "watashitachi wa sore wo tabete imasu"
+        },
+        {
+            "base_language": "I am going to order the beer",
+            "target_language": "私はビールを注文します",
+            "romanized": "watashi wa biiru wo chuumon shimasu"
+        },
+        {
+            "base_language": "I am going to order it",
+            "target_language": "私はそれを注文します",
+            "romanized": "watashi wa sore wo chuumon shimasu"
+        },
+        {
+            "base_language": "Did you try the cake",
+            "target_language": "ケーキを食べましたか？",
+            "romanized": "keeki wo tabemashita ka?"
+        },
+        {
+            "base_language": "did you try it",
+            "target_language": "それを食べましたか？",
+            "romanized": "sore wo tabemashita ka?"
+        },
+        {
+            "base_language": "Please pour the milk",
+            "target_language": "牛乳を注いでください",
+            "romanized": "gyuunyuu wo sosoide kudasai"
+        },
+        {
+            "base_language": "Please pour it",
+            "target_language": "それを注いでください",
+            "romanized": "sore wo sosoide kudasai"
+        },
+        {
+            "base_language": "I serve the food to the waiter",
+            "target_language": "私はウェイターに料理を出します",
+            "romanized": "watashi wa weitaa ni ryouri wo dashimasu"
+        },
+        {
+            "base_language": "I serve him the food",
+            "target_language": "私は彼に料理を出します",
+            "romanized": "watashi wa kare ni ryouri wo dashimasu"
+        },
+        {
+            "base_language": "I am going to pay the bill to the restaurant",
+            "target_language": "私はレストランに会計を払います",
+            "romanized": "watashi wa resutoran ni kaikei wo haraimasu"
+        },
+        {
+            "base_language": "I am going to pay them",
+            "target_language": "私は彼らに払います",
+            "romanized": "watashi wa karera ni haraimasu"
+        },
+        {
+            "base_language": "He brought the menu to us",
+            "target_language": "彼は私たちにメニューを持ってきました",
+            "romanized": "kare wa watashitachi ni menyuu wo motte kimashita"
+        },
+        {
+            "base_language": "He brought us the menu",
+            "target_language": "彼は私たちにメニューを持ってきました",
+            "romanized": "kare wa watashitachi ni menyuu wo motte kimashita"
+        },
+        {
+            "base_language": "I want to cook dinner for you",
+            "target_language": "私はあなたのために夕食を作りたいです",
+            "romanized": "watashi wa anata no tame ni yuushoku wo tsukuritai desu"
+        },
+        {
+            "base_language": "I want to cook you dinner",
+            "target_language": "私はあなたに夕食を作りたいです",
+            "romanized": "watashi wa anata ni yuushoku wo tsukuritai desu"
+        },
+        {
+            "base_language": "She is chopping the vegetables for them",
+            "target_language": "彼女は彼らのために野菜を切っています",
+            "romanized": "kanojo wa karera no tame ni yasai wo kitte imasu"
+        },
+        {
+            "base_language": "She is chopping them the vegetables",
+            "target_language": "彼女は彼らに野菜を切っています",
+            "romanized": "kanojo wa karera ni yasai wo kitte imasu"
+        },
+        {
+            "base_language": "give the salt",
+            "target_language": "塩をください",
+            "romanized": "shio wo kudasai"
+        },
+        {
+            "base_language": "Give me the salt",
+            "target_language": "私に塩をください",
+            "romanized": "watashi ni shio wo kudasai"
+        },
+        {
+            "base_language": "I need to tell you the recipe",
+            "target_language": "私はあなたにレシピを教える必要があります",
+            "romanized": "watashi wa anata ni reshipi wo oshieru hitsuyou ga arimasu"
+        },
+        {
+            "base_language": "I give the bread to the man",
+            "target_language": "私はその男性にパンをあげます",
+            "romanized": "watashi wa sono dansei ni pan wo agemasu"
+        },
+        {
+            "base_language": "I give it to him",
+            "target_language": "私は彼にそれをあげます",
+            "romanized": "watashi wa kare ni sore wo agemasu"
+        },
+        {
+            "base_language": "I bring the beers to them",
+            "target_language": "私は彼らにビールを持っていきます",
+            "romanized": "watashi wa karera ni biiru wo motte ikimasu"
+        },
+        {
+            "base_language": "I bring them to them",
+            "target_language": "私は彼らにそれらを持っていきます",
+            "romanized": "watashi wa karera ni sorera wo motte ikimasu"
+        },
+        {
+            "base_language": "She wants to cook dinner for us",
+            "target_language": "彼女は私たちのために夕食を作りたいです",
+            "romanized": "kanojo wa watashitachi no tame ni yuushoku wo tsukuritai desu"
+        },
+        {
+            "base_language": "She wants to cook it for us",
+            "target_language": "彼女は私たちのためにそれを作りたいです",
+            "romanized": "kanojo wa watashitachi no tame ni sore wo tsukuritai desu"
+        },
+        {
+            "base_language": "Do you understand the menu",
+            "target_language": "メニューがわかりますか？",
+            "romanized": "menyuu ga wakarimasu ka?"
+        },
+        {
+            "base_language": "I do not understand it",
+            "target_language": "わかりません",
+            "romanized": "wakarimasen"
+        }
+    ]
+}

@@ -1,7 +1,38 @@
 {
-    "course_name": "japanese",
+    "course_name": "Japanese (under construction, this is just the spanish course copy/pasted)",
     "course_levels": [
- {
+        {
+            "level_id": "everydayPhrases",
+            "level_name": "Common Everyday Phrases",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                {
+                "filename": "everydayExpressions.json",
+                    "name": "Everyday Expressions",
+                    "type": "flashcards"
+                },
+                {
+                "filename": "meetJeff.json",
+                    "name": "Meet Jeff",
+                    "type": "story"
+                },
+                {
+                "filename": "meetSeth.json",
+                    "name": "Meet Seth",
+                    "type": "story"
+                },
+                {
+                "filename": "badBunny.json",
+                    "name": "Bad Bunny",
+                    "type": "story"
+                }
+            ]
+        },
+        {
             "level_id": "foodAndDrink",
             "level_name": "Food and Drink",
             "lessons": [
@@ -11,94 +42,247 @@
                     "type": "wordlist"
                 },
                 {
-                    "filename": "foodAndDrink_nouns.json",
-                    "name": "Nouns",
+                    "filename": "verbs_presentTense.json",
+                    "name": "Present tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_adjectives.json",
+                    "filename": "verbs_presentTenseTwo.json",
+                    "name": "Present tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "adjectives.json",
                     "name": "Adjectives",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "foodAndDrink_exampleStory.json",
-                    "name": "Example Story",
+                    "filename": "verbs_preterite.json",
+                    "name": "Past tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "verbs_preteriteTwo.json",
+                    "name": "Past tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "comparison.json",
+                    "name": "Comparing things",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "verbs_future.json",
+                    "name": "Future tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "verbs_futureTwo.json",
+                    "name": "Future tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "objectPronouns.json",
+                    "name": "Object Pronouns",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "verbs_imperfect.json",
+                    "name": "Imperfect tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "verbs_imperfectTwo.json",
+                    "name": "Imperfect tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "colorAndSmallNumbers.json",
+                    "name": "colors & small numbers",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "verbs_infinitives.json",
+                    "name": "Infinitive forms",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "stuffIMissed.json",
+                    "name": "Stuff I missed",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "tacosOrPizza.json",
+                    "name": "Whats for dinner",
+                    "type": "story"
+                },
+                {
+                    "filename": "beanAteChocolate.json",
+                    "name": "Bean Ate Chocolate",
+                    "type": "story"
+                },
+                {
+                    "filename": "aNiceRestaurant.json",
+                    "name": "Table for 3",
+                    "type": "story"
+                },
+                {
+                    "filename": "paella.json",
+                    "name": "My recipe for paella",
                     "type": "story"
                 }
             ]
         },
         {
-            "level_id": "99",
-            "level_name": "old lessons",
+            "level_id": "moodsAndEmotion",
+            "level_name": "Moods and Emotions",
             "lessons": [
                 {
-                    "filename": "99_people.json",
-                    "name": "people",
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                {
+                    "filename": "moodsAndEmotion_estarPresentTense.json",
+                    "name": "Present tense 1 (to be)",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_body_parts.json",
-                    "name": "body parts ",
+                    "filename": "moodsAndEmotion_estarPresentTenseTwo.json",
+                    "name": "Present tense 2 (to be)",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_animals.json",
-                    "name": "animals",
+                    "filename": "pastTense.json",
+                    "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_places_and_nature.json",
-                    "name": "places and nature",
+                    "filename": "pastTense2.json",
+                    "name": "Past tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_verbs.json",
-                    "name": "verbs",
+                    "filename": "futureTense.json",
+                    "name": "Future tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_objects_and_things.json",
-                    "name": "objects and things",
+                    "filename": "futureTense2.json",
+                    "name": "Future tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_food_and_drink.json",
-                    "name": "food and drink",
+                    "filename": "sean.json",
+                    "name": "Sean has feelings",
+                    "type": "story"
+                }
+            ]
+        },
+        {
+            "level_id": "commonPlaces",
+            "level_name": "Common Places and Direction",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                {
+                    "filename": "presentTense.json",
+                    "name": "Present Tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_time_and_dates.json",
-                    "name": "time and dates",
+                    "filename": "presentTense2.json",
+                    "name": "Present Tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_abstract_concepts.json",
-                    "name": "abstract concepts",
+                    "filename": "pastTense.json",
+                    "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_other_common_nouns.json",
-                    "name": "other common nouns",
+                    "filename": "pastTense2.json",
+                    "name": "Past tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_lesson_1.json",
-                    "name": "lesson 1",
+                    "filename": "futureTense.json",
+                    "name": "Future tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_201_to_300.json",
-                    "name": "201 to 300",
+                    "filename": "futureTense2.json",
+                    "name": "Future tense 2",
+                    "type": "flashcards"
+                }
+            ]
+        },
+        {
+            "level_id": "humanBody",
+            "level_name": "Body and health",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                                {
+                    "filename": "presentTense.json",
+                    "name": "Present Tense 1",
+                    "type": "flashcards"
+                },
+                                {
+                    "filename": "presentTense2.json",
+                    "name": "Present Tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_ai_lesson_1.json",
-                    "name": "wonky ai sentences",
+                    "filename": "pastTense.json",
+                    "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "99_ai_lesson_2.json",
-                    "name": "wonky ai sentences 2",
+                    "filename": "pastTense2.json",
+                    "name": "Past tense 2",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense.json",
+                    "name": "Future tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense2.json",
+                    "name": "Future tense 2",
+                    "type": "flashcards"
+                }
+            ]
+        },
+        {
+            "level_id": "jobsAndHobbies",
+            "level_name": "Jobs and Hobbies",
+            "lessons": [
+                {
+                    "filename": "__wordList__.json",
+                    "name": "word list",
+                    "type": "wordlist"
+                },
+                {
+                    "filename": "presentTense.json",
+                    "name": "Present Tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "pastTense.json",
+                    "name": "Past Tense 1",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "futureTense.json",
+                    "name": "Future Tense 1",
                     "type": "flashcards"
                 }
             ]

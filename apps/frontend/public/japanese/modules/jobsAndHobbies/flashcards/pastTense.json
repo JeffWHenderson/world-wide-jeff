@@ -1,0 +1,352 @@
+{
+    "name": "Past tense 1",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I worked in the morning",
+            "target_language": "私は朝働きました",
+            "romanized": "watashi wa asa hatarakimashita"
+        },
+        {
+            "base_language": "you worked in the morning",
+            "target_language": "あなたは朝働きました",
+            "romanized": "anata wa asa hatarakimashita"
+        },
+        {
+            "base_language": "he worked in the morning",
+            "target_language": "彼は朝働きました",
+            "romanized": "kare wa asa hatarakimashita"
+        },
+        {
+            "base_language": "I earned a salary",
+            "target_language": "私は給料をもらいました",
+            "romanized": "watashi wa kyuuryou wo moraimashita"
+        },
+        {
+            "base_language": "You earned a salary",
+            "target_language": "あなたは給料をもらいました",
+            "romanized": "anata wa kyuuryou wo moraimashita"
+        },
+        {
+            "base_language": "She earned a salary",
+            "target_language": "彼女は給料をもらいました",
+            "romanized": "kanojo wa kyuuryou wo moraimashita"
+        },
+        {
+            "base_language": "I hired in the evening",
+            "target_language": "私は夕方に人を雇いました",
+            "romanized": "watashi wa yuugata ni hito wo yatoimashita"
+        },
+        {
+            "base_language": "You hired in the evening",
+            "target_language": "あなたは夕方に人を雇いました",
+            "romanized": "anata wa yuugata ni hito wo yatoimashita"
+        },
+        {
+            "base_language": "He hired in the evening",
+            "target_language": "彼は夕方に人を雇いました",
+            "romanized": "kare wa yuugata ni hito wo yatoimashita"
+        },
+        {
+            "base_language": "I fired the teacher at night",
+            "target_language": "私は夜に先生を解雇しました",
+            "romanized": "watashi wa yoru ni sensei wo kaiko shimashita"
+        },
+        {
+            "base_language": "You fired the teacher at night",
+            "target_language": "あなたは夜に先生を解雇しました",
+            "romanized": "anata wa yoru ni sensei wo kaiko shimashita"
+        },
+        {
+            "base_language": "She fired the teacher at night",
+            "target_language": "彼女は夜に先生を解雇しました",
+            "romanized": "kanojo wa yoru ni sensei wo kaiko shimashita"
+        },
+        {
+            "base_language": "I studied in the morning",
+            "target_language": "私は朝勉強しました",
+            "romanized": "watashi wa asa benkyou shimashita"
+        },
+        {
+            "base_language": "You studied in the morning",
+            "target_language": "あなたは朝勉強しました",
+            "romanized": "anata wa asa benkyou shimashita"
+        },
+        {
+            "base_language": "He studied in the morning",
+            "target_language": "彼は朝勉強しました",
+            "romanized": "kare wa asa benkyou shimashita"
+        },
+        {
+            "base_language": "I learned in the evening",
+            "target_language": "私は夕方に学びました",
+            "romanized": "watashi wa yuugata ni manabimashita"
+        },
+        {
+            "base_language": "You learned in the evening",
+            "target_language": "あなたは夕方に学びました",
+            "romanized": "anata wa yuugata ni manabimashita"
+        },
+        {
+            "base_language": "She learned in the evening",
+            "target_language": "彼女は夕方に学びました",
+            "romanized": "kanojo wa yuugata ni manabimashita"
+        },
+        {
+            "base_language": "I practiced every night",
+            "target_language": "私は毎晩練習しました",
+            "romanized": "watashi wa maiban renshuu shimashita"
+        },
+        {
+            "base_language": "You practiced every night",
+            "target_language": "あなたは毎晩練習しました",
+            "romanized": "anata wa maiban renshuu shimashita"
+        },
+        {
+            "base_language": "He practiced every night",
+            "target_language": "彼は毎晩練習しました",
+            "romanized": "kare wa maiban renshuu shimashita"
+        },
+        {
+            "base_language": "I taught in the morning",
+            "target_language": "私は朝教えました",
+            "romanized": "watashi wa asa oshiemashita"
+        },
+        {
+            "base_language": "You taught in the morning",
+            "target_language": "あなたは朝教えました",
+            "romanized": "anata wa asa oshiemashita"
+        },
+        {
+            "base_language": "She taught in the morning",
+            "target_language": "彼女は朝教えました",
+            "romanized": "kanojo wa asa oshiemashita"
+        },
+        {
+            "base_language": "I built in the evening",
+            "target_language": "私は夕方に建てました",
+            "romanized": "watashi wa yuugata ni tatemashita"
+        },
+        {
+            "base_language": "You built in the evening",
+            "target_language": "あなたは夕方に建てました",
+            "romanized": "anata wa yuugata ni tatemashita"
+        },
+        {
+            "base_language": "He built in the evening",
+            "target_language": "彼は夕方に建てました",
+            "romanized": "kare wa yuugata ni tatemashita"
+        },
+        {
+            "base_language": "I repaired at night",
+            "target_language": "私は夜に修理しました",
+            "romanized": "watashi wa yoru ni shuuri shimashita"
+        },
+        {
+            "base_language": "You repaired at night",
+            "target_language": "あなたは夜に修理しました",
+            "romanized": "anata wa yoru ni shuuri shimashita"
+        },
+        {
+            "base_language": "She repaired at night",
+            "target_language": "彼女は夜に修理しました",
+            "romanized": "kanojo wa yoru ni shuuri shimashita"
+        },
+        {
+            "base_language": "I created a sculpture",
+            "target_language": "私は彫刻を作りました",
+            "romanized": "watashi wa choukoku wo tsukurimashita"
+        },
+        {
+            "base_language": "You created a sculpture",
+            "target_language": "あなたは彫刻を作りました",
+            "romanized": "anata wa choukoku wo tsukurimashita"
+        },
+        {
+            "base_language": "He created a sculpture",
+            "target_language": "彼は彫刻を作りました",
+            "romanized": "kare wa choukoku wo tsukurimashita"
+        },
+        {
+            "base_language": "I designed in the morning",
+            "target_language": "私は朝デザインしました",
+            "romanized": "watashi wa asa dezain shimashita"
+        },
+        {
+            "base_language": "You designed in the morning",
+            "target_language": "あなたは朝デザインしました",
+            "romanized": "anata wa asa dezain shimashita"
+        },
+        {
+            "base_language": "She designed in the morning",
+            "target_language": "彼女は朝デザインしました",
+            "romanized": "kanojo wa asa dezain shimashita"
+        },
+        {
+            "base_language": "I sold jewelry at night",
+            "target_language": "私は夜に宝石を売りました",
+            "romanized": "watashi wa yoru ni houseki wo urimashita"
+        },
+        {
+            "base_language": "You sold jewelry at night",
+            "target_language": "あなたは夜に宝石を売りました",
+            "romanized": "anata wa yoru ni houseki wo urimashita"
+        },
+        {
+            "base_language": "He sold jewelry at night",
+            "target_language": "彼は夜に宝石を売りました",
+            "romanized": "kare wa yoru ni houseki wo urimashita"
+        },
+        {
+            "base_language": "I bought vegetables in the morning",
+            "target_language": "私は朝野菜を買いました",
+            "romanized": "watashi wa asa yasai wo kaimashita"
+        },
+        {
+            "base_language": "You bought vegetables in the morning",
+            "target_language": "あなたは朝野菜を買いました",
+            "romanized": "anata wa asa yasai wo kaimashita"
+        },
+        {
+            "base_language": "She bought vegetables in the morning",
+            "target_language": "彼女は朝野菜を買いました",
+            "romanized": "kanojo wa asa yasai wo kaimashita"
+        },
+        {
+            "base_language": "I helped my friend at night",
+            "target_language": "私は夜に友達を手伝いました",
+            "romanized": "watashi wa yoru ni tomodachi wo tetsudaimashita"
+        },
+        {
+            "base_language": "You helped my friend at night",
+            "target_language": "あなたは夜に私の友達を手伝いました",
+            "romanized": "anata wa yoru ni watashi no tomodachi wo tetsudaimashita"
+        },
+        {
+            "base_language": "He helped my friend at night",
+            "target_language": "彼は夜に私の友達を手伝いました",
+            "romanized": "kare wa yoru ni watashi no tomodachi wo tetsudaimashita"
+        },
+        {
+            "base_language": "I managed the team in the evening",
+            "target_language": "私は夕方にチームを管理しました",
+            "romanized": "watashi wa yuugata ni chiimu wo kanri shimashita"
+        },
+        {
+            "base_language": "You managed the team in the evening",
+            "target_language": "あなたは夕方にチームを管理しました",
+            "romanized": "anata wa yuugata ni chiimu wo kanri shimashita"
+        },
+        {
+            "base_language": "She managed the team in the evening",
+            "target_language": "彼女は夕方にチームを管理しました",
+            "romanized": "kanojo wa yuugata ni chiimu wo kanri shimashita"
+        },
+        {
+            "base_language": "I met with colleagues for lunch.",
+            "target_language": "私は同僚と昼食を一緒に食べました。",
+            "romanized": "watashi wa douryou to chuushoku wo issho ni tabemashita."
+        },
+        {
+            "base_language": "You met with colleagues for lunch.",
+            "target_language": "あなたは同僚と昼食を一緒に食べました。",
+            "romanized": "anata wa douryou to chuushoku wo issho ni tabemashita."
+        },
+        {
+            "base_language": "He met with colleagues for lunch.",
+            "target_language": "彼は同僚と昼食を一緒に食べました。",
+            "romanized": "kare wa douryou to chuushoku wo issho ni tabemashita."
+        },
+        {
+            "base_language": "I started in the morning",
+            "target_language": "私は朝始めました",
+            "romanized": "watashi wa asa hajimemashita"
+        },
+        {
+            "base_language": "You started in the morning",
+            "target_language": "あなたは朝始めました",
+            "romanized": "anata wa asa hajimemashita"
+        },
+        {
+            "base_language": "She started in the morning",
+            "target_language": "彼女は朝始めました",
+            "romanized": "kanojo wa asa hajimemashita"
+        },
+        {
+            "base_language": "I finished in the evening",
+            "target_language": "私は夕方に終わりました",
+            "romanized": "watashi wa yuugata ni owarimashita"
+        },
+        {
+            "base_language": "You finished in the evening",
+            "target_language": "あなたは夕方に終わりました",
+            "romanized": "anata wa yuugata ni owarimashita"
+        },
+        {
+            "base_language": "He finished in the evening",
+            "target_language": "彼は夕方に終わりました",
+            "romanized": "kare wa yuugata ni owarimashita"
+        },
+        {
+            "base_language": "I completed work at night",
+            "target_language": "私は夜に仕事を終えました",
+            "romanized": "watashi wa yoru ni shigoto wo oemashita"
+        },
+        {
+            "base_language": "You completed work at night",
+            "target_language": "あなたは夜に仕事を終えました",
+            "romanized": "anata wa yoru ni shigoto wo oemashita"
+        },
+        {
+            "base_language": "She completed work at night",
+            "target_language": "彼女は夜に仕事を終えました",
+            "romanized": "kanojo wa yoru ni shigoto wo oemashita"
+        },
+        {
+            "base_language": "I enjoyed tea after work",
+            "target_language": "私は仕事の後にお茶を楽しみました",
+            "romanized": "watashi wa shigoto no ato ni ocha wo tanoshimimashita"
+        },
+        {
+            "base_language": "You enjoyed tea after work",
+            "target_language": "あなたは仕事の後にお茶を楽しみました",
+            "romanized": "anata wa shigoto no ato ni ocha wo tanoshimimashita"
+        },
+        {
+            "base_language": "He enjoyed tea after work",
+            "target_language": "彼は仕事の後にお茶を楽しみました",
+            "romanized": "kare wa shigoto no ato ni ocha wo tanoshimimashita"
+        },
+        {
+            "base_language": "I relaxed after work",
+            "target_language": "私は仕事の後にリラックスしました",
+            "romanized": "watashi wa shigoto no ato ni rirakkusu shimashita"
+        },
+        {
+            "base_language": "You relaxed after work",
+            "target_language": "あなたは仕事の後にリラックスしました",
+            "romanized": "anata wa shigoto no ato ni rirakkusu shimashita"
+        },
+        {
+            "base_language": "She relaxed after work",
+            "target_language": "彼女は仕事の後にリラックスしました",
+            "romanized": "kanojo wa shigoto no ato ni rirakkusu shimashita"
+        },
+        {
+            "base_language": "I spent time on my hobby",
+            "target_language": "私は趣味に時間を使いました",
+            "romanized": "watashi wa shumi ni jikan wo tsukaimashita"
+        },
+        {
+            "base_language": "You spent time on my hobby",
+            "target_language": "あなたは私の趣味に時間を使いました",
+            "romanized": "anata wa watashi no shumi ni jikan wo tsukaimashita"
+        },
+        {
+            "base_language": "He spent time on my hobby",
+            "target_language": "彼は私の趣味に時間を使いました",
+            "romanized": "kare wa watashi no shumi ni jikan wo tsukaimashita"
+        }
+    ]
+}
