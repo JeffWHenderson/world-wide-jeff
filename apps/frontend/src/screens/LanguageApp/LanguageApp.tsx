@@ -79,6 +79,7 @@ const LanguageLearningApp = () => {
                                 ))}
                                 {/* TODO: just testing this out */}
                                 <button
+                                    style={{ color: 'white' }}
                                     key={"fill me out"}
                                     onClick={() => setOpenPicture(level.level_id)}>
                                     Practice Speaking (TEST FEATURE)

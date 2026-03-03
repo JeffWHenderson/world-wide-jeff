@@ -15,7 +15,7 @@ const LanguageAppHome = () => {
             <div style={{ display: 'flex', justifySelf: 'center', justifyContent: 'space-between', width: '90vw' }}>
                 {
                     Object.values(AvailableLanguages).map(option => (
-                        <button onClick={() => goToLanguagePage(option)} key={option}>
+                        <button style={{ color: 'white' }} onClick={() => goToLanguagePage(option)} key={option}>
                             {option}
                         </button>
                     ))

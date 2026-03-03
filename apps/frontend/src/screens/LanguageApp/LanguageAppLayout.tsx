@@ -7,7 +7,7 @@ const LanguageAppLayout = () => {
         <div style={{ width: '100%', height: '100vh' }}>
             <div style={{ display: "flex", backgroundColor: "black", height: '10vh', width: '100vw', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div style={{ fontSize: "1.7em", color: 'white' }}>World Wide Jeff</div>
-                <button onClick={toggleTheme}>
+                <button style={{color: 'white'}}onClick={toggleTheme}>
                     {theme === 'light' ? 'Dark' : 'Light'} Mode
                 </button>
             </div>
