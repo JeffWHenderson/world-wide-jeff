@@ -1,0 +1,246 @@
+{
+    "name": "adjectives",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "this is fresh bread",
+            "target_language": "这是新鲜的面包",
+            "romanized": "zhè shì xīnxiān de miànbāo"
+        },
+        {
+            "base_language": "that is fresh fruit",
+            "target_language": "那是新鲜的水果",
+            "romanized": "nà shì xīnxiān de shuǐguǒ"
+        },
+        {
+            "base_language": "these are ripe tomatos",
+            "target_language": "这些是成熟的西红柿",
+            "romanized": "zhèxiē shì chéngshú de xīhóngshì"
+        },
+        {
+            "base_language": "those are ripe bananas",
+            "target_language": "那些是成熟的香蕉",
+            "romanized": "nàxiē shì chéngshú de xiāngjiāo"
+        },
+        {
+            "base_language": "this is raw fish",
+            "target_language": "这是生鱼",
+            "romanized": "zhè shì shēng yú"
+        },
+        {
+            "base_language": "that is raw meat",
+            "target_language": "那是生肉",
+            "romanized": "nà shì shēng ròu"
+        },
+        {
+            "base_language": "these are cold juices",
+            "target_language": "这些是冷果汁",
+            "romanized": "zhèxiē shì lěng guǒzhī"
+        },
+        {
+            "base_language": "these are cold beers",
+            "target_language": "这些是冰啤酒",
+            "romanized": "zhèxiē shì bīng píjiǔ"
+        },
+        {
+            "base_language": "this is cooked rice",
+            "target_language": "这是熟米饭",
+            "romanized": "zhè shì shú mǐfàn"
+        },
+        {
+            "base_language": "that is a cooked vegetable",
+            "target_language": "那是一道熟蔬菜",
+            "romanized": "nà shì yī dào shú shūcài"
+        },
+        {
+            "base_language": "these are sweet cakes",
+            "target_language": "这些是甜蛋糕",
+            "romanized": "zhèxiē shì tián dàngāo"
+        },
+        {
+            "base_language": "those are sweet fruits",
+            "target_language": "那些是甜水果",
+            "romanized": "nàxiē shì tián shuǐguǒ"
+        },
+        {
+            "base_language": "this is hot coffee",
+            "target_language": "这是热咖啡",
+            "romanized": "zhè shì rè kāfēi"
+        },
+        {
+            "base_language": "that is hot soup",
+            "target_language": "那是热汤",
+            "romanized": "nà shì rè tāng"
+        },
+        {
+            "base_language": "these are sour lemons",
+            "target_language": "这些是酸柠檬",
+            "romanized": "zhèxiē shì suān níngméng"
+        },
+        {
+            "base_language": "those are sour oranges",
+            "target_language": "那些是酸橙子",
+            "romanized": "nàxiē shì suān chéngzi"
+        },
+        {
+            "base_language": "this is salty cheese",
+            "target_language": "这是咸奶酪",
+            "romanized": "zhè shì xián nǎilào"
+        },
+        {
+            "base_language": "that is salty food",
+            "target_language": "那是咸的食物",
+            "romanized": "nà shì xián de shíwù"
+        },
+        {
+            "base_language": "this is bitter coffee",
+            "target_language": "这是苦咖啡",
+            "romanized": "zhè shì kǔ kāfēi"
+        },
+        {
+            "base_language": "that is bitter beer",
+            "target_language": "那是苦啤酒",
+            "romanized": "nà shì kǔ píjiǔ"
+        },
+        {
+            "base_language": "these are spicy chickens",
+            "target_language": "这些是辣鸡肉",
+            "romanized": "zhèxiē shì là jīròu"
+        },
+        {
+            "base_language": "those are spicy sauces",
+            "target_language": "那些是辣酱",
+            "romanized": "nàxiē shì làjiàng"
+        },
+        {
+            "base_language": "this is crunchy bread",
+            "target_language": "这是脆面包",
+            "romanized": "zhè shì cuì miànbāo"
+        },
+        {
+            "base_language": "that is crunchy cookie",
+            "target_language": "那是脆饼干",
+            "romanized": "nà shì cuì bǐnggān"
+        },
+        {
+            "base_language": "this is creamy ice cream",
+            "target_language": "这是奶油冰淇淋",
+            "romanized": "zhè shì nǎiyóu bīngqílín"
+        },
+        {
+            "base_language": "these are creamy soups",
+            "target_language": "这些是奶油汤",
+            "romanized": "zhèxiē shì nǎiyóu tāng"
+        },
+        {
+            "base_language": "these are juicy tomatos",
+            "target_language": "这些是多汁的西红柿",
+            "romanized": "zhèxiē shì duōzhī de xīhóngshì"
+        },
+        {
+            "base_language": "those are juicy oranges",
+            "target_language": "那些是多汁的橙子",
+            "romanized": "nàxiē shì duōzhī de chéngzi"
+        },
+        {
+            "base_language": "this is tender chicken",
+            "target_language": "这是嫩鸡肉",
+            "romanized": "zhè shì nèn jīròu"
+        },
+        {
+            "base_language": "that is tender meat",
+            "target_language": "那是嫩肉",
+            "romanized": "nà shì nèn ròu"
+        },
+        {
+            "base_language": "this is a delicious flavor",
+            "target_language": "这是美味的味道",
+            "romanized": "zhè shì měiwèi de wèidào"
+        },
+        {
+            "base_language": "that is a delicious recipe",
+            "target_language": "那是一道美味的食谱",
+            "romanized": "nà shì yī dào měiwèi de shípǔ"
+        },
+        {
+            "base_language": "these are tasty dishes",
+            "target_language": "这些是可口的菜",
+            "romanized": "zhèxiē shì kěkǒu de cài"
+        },
+        {
+            "base_language": "those are tasty foods",
+            "target_language": "那些是可口的食物",
+            "romanized": "nàxiē shì kěkǒu de shíwù"
+        },
+        {
+            "base_language": "this is bland rice",
+            "target_language": "这是淡米饭",
+            "romanized": "zhè shì dàn mǐfàn"
+        },
+        {
+            "base_language": "that is bland soup",
+            "target_language": "那是淡汤",
+            "romanized": "nà shì dàn tāng"
+        },
+        {
+            "base_language": "these are unhealthy cakes",
+            "target_language": "这些是不健康的蛋糕",
+            "romanized": "zhèxiē shì bù jiànkāng de dàngāo"
+        },
+        {
+            "base_language": "those are unhealthy pizzas",
+            "target_language": "那些是不健康的披萨",
+            "romanized": "nàxiē shì bù jiànkāng de pīsà"
+        },
+        {
+            "base_language": "this is healthy fish",
+            "target_language": "这是健康的鱼",
+            "romanized": "zhè shì jiànkāng de yú"
+        },
+        {
+            "base_language": "that is a healthy salad",
+            "target_language": "那是一份健康的沙拉",
+            "romanized": "nà shì yī fèn jiànkāng de shālā"
+        },
+        {
+            "base_language": "these are vegetarian sandwiches",
+            "target_language": "这些是素三明治",
+            "romanized": "zhèxiē shì sù sānmíngzhì"
+        },
+        {
+            "base_language": "those are vegetarian pizzas",
+            "target_language": "那些是素披萨",
+            "romanized": "nàxiē shì sù pīsà"
+        },
+        {
+            "base_language": "this is vegan rice",
+            "target_language": "这是纯素米饭",
+            "romanized": "zhè shì chúnsù mǐfàn"
+        },
+        {
+            "base_language": "that is vegan salad",
+            "target_language": "那是纯素沙拉",
+            "romanized": "nà shì chúnsù shālā"
+        },
+        {
+            "base_language": "this is frozen fish",
+            "target_language": "这是冷冻鱼",
+            "romanized": "zhè shì lěngdòng yú"
+        },
+        {
+            "base_language": "that is a frozen vegetable",
+            "target_language": "那是冷冻蔬菜",
+            "romanized": "nà shì lěngdòng shūcài"
+        },
+        {
+            "base_language": "these are organic tomatoes",
+            "target_language": "这些是有机西红柿",
+            "romanized": "zhèxiē shì yǒujī xīhóngshì"
+        },
+        {
+            "base_language": "those are organic fruits",
+            "target_language": "那些是有机水果",
+            "romanized": "nàxiē shì yǒujī shuǐguǒ"
+        }
+    ]
+}

@@ -1,0 +1,307 @@
+{
+    "name": "Future tense 1",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I will see with my eyes",
+            "target_language": "我会用眼睛看",
+            "romanized": "wǒ huì yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "You will see with your eyes",
+            "target_language": "你会用眼睛看",
+            "romanized": "nǐ huì yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "She will see with her eyes",
+            "target_language": "她会用眼睛看",
+            "romanized": "tā huì yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "I will hear with my ears",
+            "target_language": "我会用耳朵听",
+            "romanized": "wǒ huì yòng ěrduo tīng"
+        },
+        {
+            "base_language": "You will hear with your ears",
+            "target_language": "你会用耳朵听",
+            "romanized": "nǐ huì yòng ěrduo tīng"
+        },
+        {
+            "base_language": "He will hear with his ears",
+            "target_language": "他会用耳朵听",
+            "romanized": "tā huì yòng ěrduo tīng"
+        },
+        {
+            "base_language": "I will smell with my nose",
+            "target_language": "我会用鼻子闻",
+            "romanized": "wǒ huì yòng bízi wén"
+        },
+        {
+            "base_language": "You will smell with your nose",
+            "target_language": "你会用鼻子闻",
+            "romanized": "nǐ huì yòng bízi wén"
+        },
+        {
+            "base_language": "She will smell with her nose",
+            "target_language": "她会用鼻子闻",
+            "romanized": "tā huì yòng bízi wén"
+        },
+        {
+            "base_language": "I will taste with my tongue",
+            "target_language": "我会用舌头尝",
+            "romanized": "wǒ huì yòng shétou cháng"
+        },
+        {
+            "base_language": "You will taste with your tongue",
+            "target_language": "你会用舌头尝",
+            "romanized": "nǐ huì yòng shétou cháng"
+        },
+        {
+            "base_language": "He will taste with his tongue",
+            "target_language": "他会用舌头尝",
+            "romanized": "tā huì yòng shétou cháng"
+        },
+        {
+            "base_language": "I will touch with my hands",
+            "target_language": "我会用手触摸",
+            "romanized": "wǒ huì yòng shǒu chùmō"
+        },
+        {
+            "base_language": "You will touch with your hands",
+            "target_language": "你会用手触摸",
+            "romanized": "nǐ huì yòng shǒu chùmō"
+        },
+        {
+            "base_language": "She will touch with her hands",
+            "target_language": "她会用手触摸",
+            "romanized": "tā huì yòng shǒu chùmō"
+        },
+        {
+            "base_language": "I will breathe with my belly",
+            "target_language": "我会用腹部呼吸",
+            "romanized": "wǒ huì yòng fùbù hūxī"
+        },
+        {
+            "base_language": "You will breathe with your belly",
+            "target_language": "你会用腹部呼吸",
+            "romanized": "nǐ huì yòng fùbù hūxī"
+        },
+        {
+            "base_language": "He will breathe with his belly",
+            "target_language": "他会用腹部呼吸",
+            "romanized": "tā huì yòng fùbù hūxī"
+        },
+        {
+            "base_language": "I will swallow with my throat",
+            "target_language": "我会用喉咙吞咽",
+            "romanized": "wǒ huì yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "You will swallow with your throat",
+            "target_language": "你会用喉咙吞咽",
+            "romanized": "nǐ huì yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "She will swallow with her throat",
+            "target_language": "她会用喉咙吞咽",
+            "romanized": "tā huì yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "I will chew with my mouth",
+            "target_language": "我会用嘴巴嚼",
+            "romanized": "wǒ huì yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "You will chew with your mouth",
+            "target_language": "你会用嘴巴嚼",
+            "romanized": "nǐ huì yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "He will chew with his mouth",
+            "target_language": "他会用嘴巴嚼",
+            "romanized": "tā huì yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "I will digest with my stomach",
+            "target_language": "我会用胃消化",
+            "romanized": "wǒ huì yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "You will digest with your stomach",
+            "target_language": "你会用胃消化",
+            "romanized": "nǐ huì yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "She will digest with her stomach",
+            "target_language": "她会用胃消化",
+            "romanized": "tā huì yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "I will pump blood with my heart",
+            "target_language": "我会用心脏泵血",
+            "romanized": "wǒ huì yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "You will pump blood with your heart",
+            "target_language": "你会用心脏泵血",
+            "romanized": "nǐ huì yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "He will pump blood with his heart",
+            "target_language": "他会用心脏泵血",
+            "romanized": "tā huì yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "I will bend my legs",
+            "target_language": "我会弯曲我的腿",
+            "romanized": "wǒ huì wānqū wǒ de tuǐ"
+        },
+        {
+            "base_language": "You will bend your legs",
+            "target_language": "你会弯曲你的腿",
+            "romanized": "nǐ huì wānqū nǐ de tuǐ"
+        },
+        {
+            "base_language": "He will bend his legs",
+            "target_language": "他会弯曲他的腿",
+            "romanized": "tā huì wānqū tā de tuǐ"
+        },
+        {
+            "base_language": "I will stretch my back",
+            "target_language": "我会伸展我的背",
+            "romanized": "wǒ huì shēnzhǎn wǒ de bèi"
+        },
+        {
+            "base_language": "You will stretch your back",
+            "target_language": "你会伸展你的背",
+            "romanized": "nǐ huì shēnzhǎn nǐ de bèi"
+        },
+        {
+            "base_language": "She will stretch her back",
+            "target_language": "她会伸展她的背",
+            "romanized": "tā huì shēnzhǎn tā de bèi"
+        },
+        {
+            "base_language": "I will flex my arms",
+            "target_language": "我会屈曲我的手臂",
+            "romanized": "wǒ huì qūqū wǒ de shǒubì"
+        },
+        {
+            "base_language": "You will flex your arms",
+            "target_language": "你会屈曲你的手臂",
+            "romanized": "nǐ huì qūqū nǐ de shǒubì"
+        },
+        {
+            "base_language": "He will flex his arms",
+            "target_language": "他会屈曲他的手臂",
+            "romanized": "tā huì qūqū tā de shǒubì"
+        },
+        {
+            "base_language": "I will blink my eyes",
+            "target_language": "我会眨眼",
+            "romanized": "wǒ huì zhǎ yǎn"
+        },
+        {
+            "base_language": "You will blink your eyes",
+            "target_language": "你会眨眼",
+            "romanized": "nǐ huì zhǎ yǎn"
+        },
+        {
+            "base_language": "She will blink her eyes",
+            "target_language": "她会眨眼",
+            "romanized": "tā huì zhǎ yǎn"
+        },
+        {
+            "base_language": "I will sweat gatorade",
+            "target_language": "我会出佳得乐汗",
+            "romanized": "wǒ huì chū jiādélè hàn"
+        },
+        {
+            "base_language": "You will sweat gatorade",
+            "target_language": "你会出佳得乐汗",
+            "romanized": "nǐ huì chū jiādélè hàn"
+        },
+        {
+            "base_language": "He will sweat gatorade",
+            "target_language": "他会出佳得乐汗",
+            "romanized": "tā huì chū jiādélè hàn"
+        },
+        {
+            "base_language": "I will bleed blood",
+            "target_language": "我会流血",
+            "romanized": "wǒ huì liú xuè"
+        },
+        {
+            "base_language": "You will bleed blood",
+            "target_language": "你会流血",
+            "romanized": "nǐ huì liú xuè"
+        },
+        {
+            "base_language": "She will bleed blood",
+            "target_language": "她会流血",
+            "romanized": "tā huì liú xuè"
+        },
+        {
+            "base_language": "I will heal my injury",
+            "target_language": "我会治愈我的伤",
+            "romanized": "wǒ huì zhìyù wǒ de shāng"
+        },
+        {
+            "base_language": "You will heal your injury",
+            "target_language": "你会治愈你的伤",
+            "romanized": "nǐ huì zhìyù nǐ de shāng"
+        },
+        {
+            "base_language": "He will heal his injury",
+            "target_language": "他会治愈他的伤",
+            "romanized": "tā huì zhìyù tā de shāng"
+        },
+        {
+            "base_language": "I will feel with my hands",
+            "target_language": "我会用手感觉",
+            "romanized": "wǒ huì yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "You will feel with your hands",
+            "target_language": "你会用手感觉",
+            "romanized": "nǐ huì yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "She will feel with her hands",
+            "target_language": "她会用手感觉",
+            "romanized": "tā huì yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "I will think with my brain",
+            "target_language": "我会用大脑思考",
+            "romanized": "wǒ huì yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "You will think with your brain",
+            "target_language": "你会用大脑思考",
+            "romanized": "nǐ huì yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "He will think with his brain",
+            "target_language": "他会用大脑思考",
+            "romanized": "tā huì yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "I will move my body",
+            "target_language": "我会移动我的身体",
+            "romanized": "wǒ huì yídòng wǒ de shēntǐ"
+        },
+        {
+            "base_language": "You will move your body",
+            "target_language": "你会移动你的身体",
+            "romanized": "nǐ huì yídòng nǐ de shēntǐ"
+        },
+        {
+            "base_language": "She will move her body",
+            "target_language": "她会移动她的身体",
+            "romanized": "tā huì yídòng tā de shēntǐ"
+        }
+    ]
+}

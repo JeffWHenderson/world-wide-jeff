@@ -1,0 +1,351 @@
+{
+    "name": "present tense 1",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "I work in the morning",
+            "target_language": "我早上工作",
+            "romanized": "wǒ zǎoshang gōngzuò"
+        },
+        {
+            "base_language": "you work in the morning",
+            "target_language": "你早上工作",
+            "romanized": "nǐ zǎoshang gōngzuò"
+        },
+        {
+            "base_language": "he works in the morning",
+            "target_language": "他早上工作",
+            "romanized": "tā zǎoshang gōngzuò"
+        },
+        {
+            "base_language": "I earn a salary",
+            "target_language": "我赚工资",
+            "romanized": "wǒ zhuàn gōngzī"
+        },
+        {
+            "base_language": "You earn a salary",
+            "target_language": "你赚工资",
+            "romanized": "nǐ zhuàn gōngzī"
+        },
+        {
+            "base_language": "She earns a salary",
+            "target_language": "她赚工资",
+            "romanized": "tā zhuàn gōngzī"
+        },
+        {
+            "base_language": "I hire in the evening",
+            "target_language": "我晚上招人",
+            "romanized": "wǒ wǎnshang zhāo rén"
+        },
+        {
+            "base_language": "You hire in the evening",
+            "target_language": "你晚上招人",
+            "romanized": "nǐ wǎnshang zhāo rén"
+        },
+        {
+            "base_language": "He hires in the evening",
+            "target_language": "他晚上招人",
+            "romanized": "tā wǎnshang zhāo rén"
+        },
+        {
+            "base_language": "I fire the teacher at night",
+            "target_language": "我晚上解雇老师",
+            "romanized": "wǒ wǎnshang jiěgù lǎoshī"
+        },
+        {
+            "base_language": "You fire the teacher at night",
+            "target_language": "你晚上解雇老师",
+            "romanized": "nǐ wǎnshang jiěgù lǎoshī"
+        },
+        {
+            "base_language": "She fires the teacher at night",
+            "target_language": "她晚上解雇老师",
+            "romanized": "tā wǎnshang jiěgù lǎoshī"
+        },
+        {
+            "base_language": "I study in the mornig",
+            "target_language": "我早上学习",
+            "romanized": "wǒ zǎoshang xuéxí"
+        },
+        {
+            "base_language": "You study in the mornig",
+            "target_language": "你早上学习",
+            "romanized": "nǐ zǎoshang xuéxí"
+        },
+        {
+            "base_language": "He studies in the mornig",
+            "target_language": "他早上学习",
+            "romanized": "tā zǎoshang xuéxí"
+        },
+        {
+            "base_language": "I learn in the evening",
+            "target_language": "我晚上学",
+            "romanized": "wǒ wǎnshang xué"
+        },
+        {
+            "base_language": "You learn in the evening",
+            "target_language": "你晚上学",
+            "romanized": "nǐ wǎnshang xué"
+        },
+        {
+            "base_language": "She learns in the evening",
+            "target_language": "她晚上学",
+            "romanized": "tā wǎnshang xué"
+        },
+        {
+            "base_language": "I practice every night",
+            "target_language": "我每天晚上练习",
+            "romanized": "wǒ měitiān wǎnshang liànxí"
+        },
+        {
+            "base_language": "You practice every night",
+            "target_language": "你每天晚上练习",
+            "romanized": "nǐ měitiān wǎnshang liànxí"
+        },
+        {
+            "base_language": "He practices every night",
+            "target_language": "他每天晚上练习",
+            "romanized": "tā měitiān wǎnshang liànxí"
+        },
+        {
+            "base_language": "I teach in the morning",
+            "target_language": "我早上教书",
+            "romanized": "wǒ zǎoshang jiāoshū"
+        },
+        {
+            "base_language": "You teach in the morning",
+            "target_language": "你早上教书",
+            "romanized": "nǐ zǎoshang jiāoshū"
+        },
+        {
+            "base_language": "She teaches in the morning",
+            "target_language": "她早上教书",
+            "romanized": "tā zǎoshang jiāoshū"
+        },
+        {
+            "base_language": "I build in the evening",
+            "target_language": "我晚上建造",
+            "romanized": "wǒ wǎnshang jiànzào"
+        },
+        {
+            "base_language": "You build in the evening",
+            "target_language": "你晚上建造",
+            "romanized": "nǐ wǎnshang jiànzào"
+        },
+        {
+            "base_language": "He builds in the evening",
+            "target_language": "他晚上建造",
+            "romanized": "tā wǎnshang jiànzào"
+        },
+        {
+            "base_language": "I repair at night",
+            "target_language": "我晚上修理",
+            "romanized": "wǒ wǎnshang xiūlǐ"
+        },
+        {
+            "base_language": "You repair at night",
+            "target_language": "你晚上修理",
+            "romanized": "nǐ wǎnshang xiūlǐ"
+        },
+        {
+            "base_language": "She repairs at night",
+            "target_language": "她晚上修理",
+            "romanized": "tā wǎnshang xiūlǐ"
+        },
+        {
+            "base_language": "I create a sculpture",
+            "target_language": "我创作一个雕塑",
+            "romanized": "wǒ chuàngzuò yī gè diāosù"
+        },
+        {
+            "base_language": "You create a sculpture",
+            "target_language": "你创作一个雕塑",
+            "romanized": "nǐ chuàngzuò yī gè diāosù"
+        },
+        {
+            "base_language": "He creates a sculpture",
+            "target_language": "他创作一个雕塑",
+            "romanized": "tā chuàngzuò yī gè diāosù"
+        },
+        {
+            "base_language": "I design in the morning",
+            "target_language": "我早上设计",
+            "romanized": "wǒ zǎoshang shèjì"
+        },
+        {
+            "base_language": "You design in the morning",
+            "target_language": "你早上设计",
+            "romanized": "nǐ zǎoshang shèjì"
+        },
+        {
+            "base_language": "She designs in the morning",
+            "target_language": "她早上设计",
+            "romanized": "tā zǎoshang shèjì"
+        },
+        {
+            "base_language": "I sell jewelry at night",
+            "target_language": "我晚上卖珠宝",
+            "romanized": "wǒ wǎnshang mài zhūbǎo"
+        },
+        {
+            "base_language": "You sell jewelry at night",
+            "target_language": "你晚上卖珠宝",
+            "romanized": "nǐ wǎnshang mài zhūbǎo"
+        },
+        {
+            "base_language": "He sells jewelry at night",
+            "target_language": "他晚上卖珠宝",
+            "romanized": "tā wǎnshang mài zhūbǎo"
+        },
+        {
+            "base_language": "I buy vegetables in the morning",
+            "target_language": "我早上买蔬菜",
+            "romanized": "wǒ zǎoshang mǎi shūcài"
+        },
+        {
+            "base_language": "You buy vegetables in the morning",
+            "target_language": "你早上买蔬菜",
+            "romanized": "nǐ zǎoshang mǎi shūcài"
+        },
+        {
+            "base_language": "She buys vegetables in the morning",
+            "target_language": "她早上买蔬菜",
+            "romanized": "tā zǎoshang mǎi shūcài"
+        },
+        {
+            "base_language": "I help my friend at night",
+            "target_language": "我晚上帮我的朋友",
+            "romanized": "wǒ wǎnshang bāng wǒ de péngyou"
+        },
+        {
+            "base_language": "You help my friend at night",
+            "target_language": "你晚上帮我的朋友",
+            "romanized": "nǐ wǎnshang bāng wǒ de péngyou"
+        },
+        {
+            "base_language": "He helps my friend at night",
+            "target_language": "他晚上帮我的朋友",
+            "romanized": "tā wǎnshang bāng wǒ de péngyou"
+        },
+        {
+            "base_language": "I manage the team in the evening",
+            "target_language": "我晚上管理团队",
+            "romanized": "wǒ wǎnshang guǎnlǐ tuánduì"
+        },
+        {
+            "base_language": "You manage the team in the evening",
+            "target_language": "你晚上管理团队",
+            "romanized": "nǐ wǎnshang guǎnlǐ tuánduì"
+        },
+        {
+            "base_language": "She manages the team in the evening",
+            "target_language": "她晚上管理团队",
+            "romanized": "tā wǎnshang guǎnlǐ tuánduì"
+        },
+        {
+            "base_language": "I meet with colleagues for lunch.",
+            "target_language": "我和同事一起吃午饭。",
+            "romanized": "wǒ hé tóngshì yīqǐ chī wǔfàn."
+        },
+        {
+            "base_language": "You meet with colleagues for lunch.",
+            "target_language": "你和同事一起吃午饭。",
+            "romanized": "nǐ hé tóngshì yīqǐ chī wǔfàn."
+        },
+        {
+            "base_language": "He meets with colleagues for lunch.",
+            "target_language": "他和同事一起吃午饭。",
+            "romanized": "tā hé tóngshì yīqǐ chī wǔfàn."
+        },
+        {
+            "base_language": "I start in the morning",
+            "target_language": "我早上开始",
+            "romanized": "wǒ zǎoshang kāishǐ"
+        },
+        {
+            "base_language": "You start in the morning",
+            "target_language": "你早上开始",
+            "romanized": "nǐ zǎoshang kāishǐ"
+        },
+        {
+            "base_language": "She starts in the morning",
+            "target_language": "她早上开始",
+            "romanized": "tā zǎoshang kāishǐ"
+        },
+        {
+            "base_language": "I finish in the evening",
+            "target_language": "我晚上结束",
+            "romanized": "wǒ wǎnshang jiéshù"
+        },
+        {
+            "base_language": "You finish in the evening",
+            "target_language": "你晚上结束",
+            "romanized": "nǐ wǎnshang jiéshù"
+        },
+        {
+            "base_language": "He finishes in the evening",
+            "target_language": "他晚上结束",
+            "romanized": "tā wǎnshang jiéshù"
+        },
+        {
+            "base_language": "I complete work at night",
+            "target_language": "我晚上完成工作",
+            "romanized": "wǒ wǎnshang wánchéng gōngzuò"
+        },
+        {
+            "base_language": "You complete work at night",
+            "target_language": "你晚上完成工作",
+            "romanized": "nǐ wǎnshang wánchéng gōngzuò"
+        },
+        {
+            "base_language": "She completes work at night",
+            "target_language": "她晚上完成工作",
+            "romanized": "tā wǎnshang wánchéng gōngzuò"
+        },
+        {
+            "base_language": "I enjoy tea after work",
+            "target_language": "我下班后喝茶",
+            "romanized": "wǒ xiàbān hòu hē chá"
+        },
+        {
+            "base_language": "You enjoy tea after work",
+            "target_language": "你下班后喝茶",
+            "romanized": "nǐ xiàbān hòu hē chá"
+        },
+        {
+            "base_language": "He enjoys tea after work",
+            "target_language": "他下班后喝茶",
+            "romanized": "tā xiàbān hòu hē chá"
+        },
+        {
+            "base_language": "I relax after work",
+            "target_language": "我下班后放松",
+            "romanized": "wǒ xiàbān hòu fàngsōng"
+        },
+        {
+            "base_language": "You relax after work",
+            "target_language": "你下班后放松",
+            "romanized": "nǐ xiàbān hòu fàngsōng"
+        },
+        {
+            "base_language": "She relaxes after work",
+            "target_language": "她下班后放松",
+            "romanized": "tā xiàbān hòu fàngsōng"
+        },
+        {
+            "base_language": "I spend time on my hobby",
+            "target_language": "我花时间在我的爱好上",
+            "romanized": "wǒ huā shíjiān zài wǒ de àihào shàng"
+        },
+        {
+            "base_language": "You spend time on my hobby",
+            "target_language": "你花时间在我的爱好上",
+            "romanized": "nǐ huā shíjiān zài wǒ de àihào shàng"
+        },
+        {
+            "base_language": "He spends time on my hobby",
+            "target_language": "他花时间在我的爱好上",
+            "romanized": "tā huā shíjiān zài wǒ de àihào shàng"
+        }
+    ]
+}

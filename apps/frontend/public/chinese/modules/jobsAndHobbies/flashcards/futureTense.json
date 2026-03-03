@@ -1,0 +1,352 @@
+{
+    "name": "Future tense 1",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I will work in the morning",
+            "target_language": "我会早上工作",
+            "romanized": "wǒ huì zǎoshang gōngzuò"
+        },
+        {
+            "base_language": "you will work in the morning",
+            "target_language": "你会早上工作",
+            "romanized": "nǐ huì zǎoshang gōngzuò"
+        },
+        {
+            "base_language": "he will work in the morning",
+            "target_language": "他会早上工作",
+            "romanized": "tā huì zǎoshang gōngzuò"
+        },
+        {
+            "base_language": "I will earn a salary",
+            "target_language": "我会赚工资",
+            "romanized": "wǒ huì zhuàn gōngzī"
+        },
+        {
+            "base_language": "You will earn a salary",
+            "target_language": "你会赚工资",
+            "romanized": "nǐ huì zhuàn gōngzī"
+        },
+        {
+            "base_language": "She will earn a salary",
+            "target_language": "她会赚工资",
+            "romanized": "tā huì zhuàn gōngzī"
+        },
+        {
+            "base_language": "I will hire in the evening",
+            "target_language": "我会晚上招人",
+            "romanized": "wǒ huì wǎnshang zhāo rén"
+        },
+        {
+            "base_language": "You will hire in the evening",
+            "target_language": "你会晚上招人",
+            "romanized": "nǐ huì wǎnshang zhāo rén"
+        },
+        {
+            "base_language": "He will hire in the evening",
+            "target_language": "他会晚上招人",
+            "romanized": "tā huì wǎnshang zhāo rén"
+        },
+        {
+            "base_language": "I will fire the teacher at night",
+            "target_language": "我会晚上解雇老师",
+            "romanized": "wǒ huì wǎnshang jiěgù lǎoshī"
+        },
+        {
+            "base_language": "You will fire the teacher at night",
+            "target_language": "你会晚上解雇老师",
+            "romanized": "nǐ huì wǎnshang jiěgù lǎoshī"
+        },
+        {
+            "base_language": "She will fire the teacher at night",
+            "target_language": "她会晚上解雇老师",
+            "romanized": "tā huì wǎnshang jiěgù lǎoshī"
+        },
+        {
+            "base_language": "I will study in the morning",
+            "target_language": "我会早上学习",
+            "romanized": "wǒ huì zǎoshang xuéxí"
+        },
+        {
+            "base_language": "You will study in the morning",
+            "target_language": "你会早上学习",
+            "romanized": "nǐ huì zǎoshang xuéxí"
+        },
+        {
+            "base_language": "He will study in the morning",
+            "target_language": "他会早上学习",
+            "romanized": "tā huì zǎoshang xuéxí"
+        },
+        {
+            "base_language": "I will learn in the evening",
+            "target_language": "我会晚上学",
+            "romanized": "wǒ huì wǎnshang xué"
+        },
+        {
+            "base_language": "You will learn in the evening",
+            "target_language": "你会晚上学",
+            "romanized": "nǐ huì wǎnshang xué"
+        },
+        {
+            "base_language": "She will learn in the evening",
+            "target_language": "她会晚上学",
+            "romanized": "tā huì wǎnshang xué"
+        },
+        {
+            "base_language": "I will practice every night",
+            "target_language": "我会每天晚上练习",
+            "romanized": "wǒ huì měitiān wǎnshang liànxí"
+        },
+        {
+            "base_language": "You will practice every night",
+            "target_language": "你会每天晚上练习",
+            "romanized": "nǐ huì měitiān wǎnshang liànxí"
+        },
+        {
+            "base_language": "He will practice every night",
+            "target_language": "他会每天晚上练习",
+            "romanized": "tā huì měitiān wǎnshang liànxí"
+        },
+        {
+            "base_language": "I will teach in the morning",
+            "target_language": "我会早上教书",
+            "romanized": "wǒ huì zǎoshang jiāoshū"
+        },
+        {
+            "base_language": "You will teach in the morning",
+            "target_language": "你会早上教书",
+            "romanized": "nǐ huì zǎoshang jiāoshū"
+        },
+        {
+            "base_language": "She will teach in the morning",
+            "target_language": "她会早上教书",
+            "romanized": "tā huì zǎoshang jiāoshū"
+        },
+        {
+            "base_language": "I will build in the evening",
+            "target_language": "我会晚上建造",
+            "romanized": "wǒ huì wǎnshang jiànzào"
+        },
+        {
+            "base_language": "You will build in the evening",
+            "target_language": "你会晚上建造",
+            "romanized": "nǐ huì wǎnshang jiànzào"
+        },
+        {
+            "base_language": "He will build in the evening",
+            "target_language": "他会晚上建造",
+            "romanized": "tā huì wǎnshang jiànzào"
+        },
+        {
+            "base_language": "I will repair at night",
+            "target_language": "我会晚上修理",
+            "romanized": "wǒ huì wǎnshang xiūlǐ"
+        },
+        {
+            "base_language": "You will repair at night",
+            "target_language": "你会晚上修理",
+            "romanized": "nǐ huì wǎnshang xiūlǐ"
+        },
+        {
+            "base_language": "She will repair at night",
+            "target_language": "她会晚上修理",
+            "romanized": "tā huì wǎnshang xiūlǐ"
+        },
+        {
+            "base_language": "I will create a sculpture",
+            "target_language": "我会创作一个雕塑",
+            "romanized": "wǒ huì chuàngzuò yī gè diāosù"
+        },
+        {
+            "base_language": "You will create a sculpture",
+            "target_language": "你会创作一个雕塑",
+            "romanized": "nǐ huì chuàngzuò yī gè diāosù"
+        },
+        {
+            "base_language": "He will create a sculpture",
+            "target_language": "他会创作一个雕塑",
+            "romanized": "tā huì chuàngzuò yī gè diāosù"
+        },
+        {
+            "base_language": "I will design in the morning",
+            "target_language": "我会早上设计",
+            "romanized": "wǒ huì zǎoshang shèjì"
+        },
+        {
+            "base_language": "You will design in the morning",
+            "target_language": "你会早上设计",
+            "romanized": "nǐ huì zǎoshang shèjì"
+        },
+        {
+            "base_language": "She will design in the morning",
+            "target_language": "她会早上设计",
+            "romanized": "tā huì zǎoshang shèjì"
+        },
+        {
+            "base_language": "I will sell jewelry at night",
+            "target_language": "我会晚上卖珠宝",
+            "romanized": "wǒ huì wǎnshang mài zhūbǎo"
+        },
+        {
+            "base_language": "You will sell jewelry at night",
+            "target_language": "你会晚上卖珠宝",
+            "romanized": "nǐ huì wǎnshang mài zhūbǎo"
+        },
+        {
+            "base_language": "He will sell jewelry at night",
+            "target_language": "他会晚上卖珠宝",
+            "romanized": "tā huì wǎnshang mài zhūbǎo"
+        },
+        {
+            "base_language": "I will buy vegetables in the morning",
+            "target_language": "我会早上买蔬菜",
+            "romanized": "wǒ huì zǎoshang mǎi shūcài"
+        },
+        {
+            "base_language": "You will buy vegetables in the morning",
+            "target_language": "你会早上买蔬菜",
+            "romanized": "nǐ huì zǎoshang mǎi shūcài"
+        },
+        {
+            "base_language": "She will buy vegetables in the morning",
+            "target_language": "她会早上买蔬菜",
+            "romanized": "tā huì zǎoshang mǎi shūcài"
+        },
+        {
+            "base_language": "I will help my friend at night",
+            "target_language": "我会晚上帮我的朋友",
+            "romanized": "wǒ huì wǎnshang bāng wǒ de péngyou"
+        },
+        {
+            "base_language": "You will help my friend at night",
+            "target_language": "你会晚上帮我的朋友",
+            "romanized": "nǐ huì wǎnshang bāng wǒ de péngyou"
+        },
+        {
+            "base_language": "He will help my friend at night",
+            "target_language": "他会晚上帮我的朋友",
+            "romanized": "tā huì wǎnshang bāng wǒ de péngyou"
+        },
+        {
+            "base_language": "I will manage the team in the evening",
+            "target_language": "我会晚上管理团队",
+            "romanized": "wǒ huì wǎnshang guǎnlǐ tuánduì"
+        },
+        {
+            "base_language": "You will manage the team in the evening",
+            "target_language": "你会晚上管理团队",
+            "romanized": "nǐ huì wǎnshang guǎnlǐ tuánduì"
+        },
+        {
+            "base_language": "She will manage the team in the evening",
+            "target_language": "她会晚上管理团队",
+            "romanized": "tā huì wǎnshang guǎnlǐ tuánduì"
+        },
+        {
+            "base_language": "I will meet with colleagues for lunch.",
+            "target_language": "我会和同事一起吃午饭。",
+            "romanized": "wǒ huì hé tóngshì yīqǐ chī wǔfàn."
+        },
+        {
+            "base_language": "You will meet with colleagues for lunch.",
+            "target_language": "你会和同事一起吃午饭。",
+            "romanized": "nǐ huì hé tóngshì yīqǐ chī wǔfàn."
+        },
+        {
+            "base_language": "He will meet with colleagues for lunch.",
+            "target_language": "他会和同事一起吃午饭。",
+            "romanized": "tā huì hé tóngshì yīqǐ chī wǔfàn."
+        },
+        {
+            "base_language": "I will start in the morning",
+            "target_language": "我会早上开始",
+            "romanized": "wǒ huì zǎoshang kāishǐ"
+        },
+        {
+            "base_language": "You will start in the morning",
+            "target_language": "你会早上开始",
+            "romanized": "nǐ huì zǎoshang kāishǐ"
+        },
+        {
+            "base_language": "She will start in the morning",
+            "target_language": "她会早上开始",
+            "romanized": "tā huì zǎoshang kāishǐ"
+        },
+        {
+            "base_language": "I will finish in the evening",
+            "target_language": "我会晚上结束",
+            "romanized": "wǒ huì wǎnshang jiéshù"
+        },
+        {
+            "base_language": "You will finish in the evening",
+            "target_language": "你会晚上结束",
+            "romanized": "nǐ huì wǎnshang jiéshù"
+        },
+        {
+            "base_language": "He will finish in the evening",
+            "target_language": "他会晚上结束",
+            "romanized": "tā huì wǎnshang jiéshù"
+        },
+        {
+            "base_language": "I will complete work at night",
+            "target_language": "我会晚上完成工作",
+            "romanized": "wǒ huì wǎnshang wánchéng gōngzuò"
+        },
+        {
+            "base_language": "You will complete work at night",
+            "target_language": "你会晚上完成工作",
+            "romanized": "nǐ huì wǎnshang wánchéng gōngzuò"
+        },
+        {
+            "base_language": "She will complete work at night",
+            "target_language": "她会晚上完成工作",
+            "romanized": "tā huì wǎnshang wánchéng gōngzuò"
+        },
+        {
+            "base_language": "I will enjoy tea after work",
+            "target_language": "我会下班后喝茶",
+            "romanized": "wǒ huì xiàbān hòu hē chá"
+        },
+        {
+            "base_language": "You will enjoy tea after work",
+            "target_language": "你会下班后喝茶",
+            "romanized": "nǐ huì xiàbān hòu hē chá"
+        },
+        {
+            "base_language": "He will enjoy tea after work",
+            "target_language": "他会下班后喝茶",
+            "romanized": "tā huì xiàbān hòu hē chá"
+        },
+        {
+            "base_language": "I will relax after work",
+            "target_language": "我会下班后放松",
+            "romanized": "wǒ huì xiàbān hòu fàngsōng"
+        },
+        {
+            "base_language": "You will relax after work",
+            "target_language": "你会下班后放松",
+            "romanized": "nǐ huì xiàbān hòu fàngsōng"
+        },
+        {
+            "base_language": "She will relax after work",
+            "target_language": "她会下班后放松",
+            "romanized": "tā huì xiàbān hòu fàngsōng"
+        },
+        {
+            "base_language": "I will spend time on my hobby",
+            "target_language": "我会花时间在我的爱好上",
+            "romanized": "wǒ huì huā shíjiān zài wǒ de àihào shàng"
+        },
+        {
+            "base_language": "You will spend time on my hobby",
+            "target_language": "你会花时间在我的爱好上",
+            "romanized": "nǐ huì huā shíjiān zài wǒ de àihào shàng"
+        },
+        {
+            "base_language": "He will spend time on my hobby",
+            "target_language": "他会花时间在我的爱好上",
+            "romanized": "tā huì huā shíjiān zài wǒ de àihào shàng"
+        }
+    ]
+}

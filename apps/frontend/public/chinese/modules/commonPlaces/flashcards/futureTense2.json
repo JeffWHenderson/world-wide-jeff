@@ -1,0 +1,316 @@
+{
+    "name": "Future tense 2",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "I will be in the market",
+            "target_language": "我会在市场",
+            "romanized": "wǒ huì zài shìchǎng"
+        },
+        {
+            "base_language": "We will be in the market",
+            "target_language": "我们会在市场",
+            "romanized": "wǒmen huì zài shìchǎng"
+        },
+        {
+            "base_language": "They will be in the market",
+            "target_language": "他们会在市场",
+            "romanized": "tāmen huì zài shìchǎng"
+        },
+        {
+            "base_language": "I will live in the Suburb",
+            "target_language": "我会住在郊区",
+            "romanized": "wǒ huì zhù zài jiāoqū"
+        },
+        {
+            "base_language": "We will live in the Suburb",
+            "target_language": "我们会住在郊区",
+            "romanized": "wǒmen huì zhù zài jiāoqū"
+        },
+        {
+            "base_language": "They will live in the Suburb",
+            "target_language": "他们会住在郊区",
+            "romanized": "tāmen huì zhù zài jiāoqū"
+        },
+        {
+            "base_language": "I will stay in the library",
+            "target_language": "我会留在图书馆",
+            "romanized": "wǒ huì liú zài túshūguǎn"
+        },
+        {
+            "base_language": "We will stay in the library",
+            "target_language": "我们会留在图书馆",
+            "romanized": "wǒmen huì liú zài túshūguǎn"
+        },
+        {
+            "base_language": "They will stay in the library",
+            "target_language": "他们会留在图书馆",
+            "romanized": "tāmen huì liú zài túshūguǎn"
+        },
+        {
+            "base_language": "I will meet her at the restaurant",
+            "target_language": "我会在餐厅见她",
+            "romanized": "wǒ huì zài cāntīng jiàn tā"
+        },
+        {
+            "base_language": "We will meet her at the restaurant",
+            "target_language": "我们会在餐厅见她",
+            "romanized": "wǒmen huì zài cāntīng jiàn tā"
+        },
+        {
+            "base_language": "They will meet at the restaurant",
+            "target_language": "他们会在餐厅见面",
+            "romanized": "tāmen huì zài cāntīng jiànmiàn"
+        },
+        {
+            "base_language": "I will be lost in the airport",
+            "target_language": "我会在机场迷路",
+            "romanized": "wǒ huì zài jīchǎng mílù"
+        },
+        {
+            "base_language": "We will be lost in the airport",
+            "target_language": "我们会在机场迷路",
+            "romanized": "wǒmen huì zài jīchǎng mílù"
+        },
+        {
+            "base_language": "They will be lost in the airport",
+            "target_language": "他们会在机场迷路",
+            "romanized": "tāmen huì zài jīchǎng mílù"
+        },
+        {
+            "base_language": "I will find a bus station",
+            "target_language": "我会找到一个公交车站",
+            "romanized": "wǒ huì zhǎodào yī gè gōngjiāo chēzhàn"
+        },
+        {
+            "base_language": "We will find a bus station",
+            "target_language": "我们会找到一个公交车站",
+            "romanized": "wǒmen huì zhǎodào yī gè gōngjiāo chēzhàn"
+        },
+        {
+            "base_language": "They will find a bus station",
+            "target_language": "他们会找到一个公交车站",
+            "romanized": "tāmen huì zhǎodào yī gè gōngjiāo chēzhàn"
+        },
+        {
+            "base_language": "I will look for a cafe",
+            "target_language": "我会找一家咖啡馆",
+            "romanized": "wǒ huì zhǎo yī jiā kāfēiguǎn"
+        },
+        {
+            "base_language": "We will look for a cafe",
+            "target_language": "我们会找一家咖啡馆",
+            "romanized": "wǒmen huì zhǎo yī jiā kāfēiguǎn"
+        },
+        {
+            "base_language": "They will look for a cafe",
+            "target_language": "他们会找一家咖啡馆",
+            "romanized": "tāmen huì zhǎo yī jiā kāfēiguǎn"
+        },
+        {
+            "base_language": "I will need directions to the square",
+            "target_language": "我会需要去广场的路",
+            "romanized": "wǒ huì xūyào qù guǎngchǎng de lù"
+        },
+        {
+            "base_language": "We will need directions to the square",
+            "target_language": "我们会需要去广场的路",
+            "romanized": "wǒmen huì xūyào qù guǎngchǎng de lù"
+        },
+        {
+            "base_language": "They will need directions to the square",
+            "target_language": "他们会需要去广场的路",
+            "romanized": "tāmen huì xūyào qù guǎngchǎng de lù"
+        },
+        {
+            "base_language": "I will give directions to the beach",
+            "target_language": "我会指去海滩的路",
+            "romanized": "wǒ huì zhǐ qù hǎitān de lù"
+        },
+        {
+            "base_language": "We will give directions to the beach",
+            "target_language": "我们会指去海滩的路",
+            "romanized": "wǒmen huì zhǐ qù hǎitān de lù"
+        },
+        {
+            "base_language": "They will give directions to the beach",
+            "target_language": "他们会指去海滩的路",
+            "romanized": "tāmen huì zhǐ qù hǎitān de lù"
+        },
+        {
+            "base_language": "I will head right at the corner",
+            "target_language": "我会在拐角向右走",
+            "romanized": "wǒ huì zài guǎijiǎo xiàng yòu zǒu"
+        },
+        {
+            "base_language": "We will head right at the corner",
+            "target_language": "我们会在拐角向右走",
+            "romanized": "wǒmen huì zài guǎijiǎo xiàng yòu zǒu"
+        },
+        {
+            "base_language": "They will head right at the corner",
+            "target_language": "他们会在拐角向右走",
+            "romanized": "tāmen huì zài guǎijiǎo xiàng yòu zǒu"
+        },
+        {
+            "base_language": "I will continue straight",
+            "target_language": "我会直走",
+            "romanized": "wǒ huì zhí zǒu"
+        },
+        {
+            "base_language": "We will continue straight",
+            "target_language": "我们会直走",
+            "romanized": "wǒmen huì zhí zǒu"
+        },
+        {
+            "base_language": "They will continue straight",
+            "target_language": "他们会直走",
+            "romanized": "tāmen huì zhí zǒu"
+        },
+        {
+            "base_language": "I will stop on the mountain",
+            "target_language": "我会在山上停下",
+            "romanized": "wǒ huì zài shān shàng tíng xià"
+        },
+        {
+            "base_language": "We will stop on the mountain",
+            "target_language": "我们会在山上停下",
+            "romanized": "wǒmen huì zài shān shàng tíng xià"
+        },
+        {
+            "base_language": "They will stop on the mountain",
+            "target_language": "他们会在山上停下",
+            "romanized": "tāmen huì zài shān shàng tíng xià"
+        },
+        {
+            "base_language": "I will park on the crosswalk",
+            "target_language": "我会在人行横道停车",
+            "romanized": "wǒ huì zài rénxíng héngdào tíng chē"
+        },
+        {
+            "base_language": "We will park on the crosswalk",
+            "target_language": "我们会在人行横道停车",
+            "romanized": "wǒmen huì zài rénxíng héngdào tíng chē"
+        },
+        {
+            "base_language": "They will park on the crosswalk",
+            "target_language": "他们会在人行横道停车",
+            "romanized": "tāmen huì zài rénxíng héngdào tíng chē"
+        },
+        {
+            "base_language": "I will check in at the train station",
+            "target_language": "我会在火车站登记",
+            "romanized": "wǒ huì zài huǒchē zhàn dēngjì"
+        },
+        {
+            "base_language": "We will check in at the train station",
+            "target_language": "我们会在火车站登记",
+            "romanized": "wǒmen huì zài huǒchē zhàn dēngjì"
+        },
+        {
+            "base_language": "They will check in at the train station",
+            "target_language": "他们会在火车站登记",
+            "romanized": "tāmen huì zài huǒchē zhàn dēngjì"
+        },
+        {
+            "base_language": "I will check out of the hotel",
+            "target_language": "我会办理酒店退房",
+            "romanized": "wǒ huì bànlǐ jiǔdiàn tuìfáng"
+        },
+        {
+            "base_language": "We will check out of the hotel",
+            "target_language": "我们会办理酒店退房",
+            "romanized": "wǒmen huì bànlǐ jiǔdiàn tuìfáng"
+        },
+        {
+            "base_language": "They will check out of the hotel",
+            "target_language": "他们会办理酒店退房",
+            "romanized": "tāmen huì bànlǐ jiǔdiàn tuìfáng"
+        },
+        {
+            "base_language": "I will reserve a ticket",
+            "target_language": "我会订一张票",
+            "romanized": "wǒ huì dìng yī zhāng piào"
+        },
+        {
+            "base_language": "We will reserve a ticket",
+            "target_language": "我们会订一张票",
+            "romanized": "wǒmen huì dìng yī zhāng piào"
+        },
+        {
+            "base_language": "They will reserve a ticket",
+            "target_language": "他们会订一张票",
+            "romanized": "tāmen huì dìng yī zhāng piào"
+        },
+        {
+            "base_language": "I will book a flight",
+            "target_language": "我会订一张机票",
+            "romanized": "wǒ huì dìng yī zhāng jīpiào"
+        },
+        {
+            "base_language": "We will book a flight",
+            "target_language": "我们会订一张机票",
+            "romanized": "wǒmen huì dìng yī zhāng jīpiào"
+        },
+        {
+            "base_language": "They will book a flight",
+            "target_language": "他们会订一张机票",
+            "romanized": "tāmen huì dìng yī zhāng jīpiào"
+        },
+        {
+            "base_language": "I will be at the cinema",
+            "target_language": "我会在电影院",
+            "romanized": "wǒ huì zài diànyǐngyuàn"
+        },
+        {
+            "base_language": "We will be at the cinema",
+            "target_language": "我们会在电影院",
+            "romanized": "wǒmen huì zài diànyǐngyuàn"
+        },
+        {
+            "base_language": "They will be at the cinema",
+            "target_language": "他们会在电影院",
+            "romanized": "tāmen huì zài diànyǐngyuàn"
+        },
+        {
+            "base_language": "I will live in the Countryside",
+            "target_language": "我会住在乡下",
+            "romanized": "wǒ huì zhù zài xiāngxià"
+        },
+        {
+            "base_language": "We will live in the countryside",
+            "target_language": "我们会住在乡下",
+            "romanized": "wǒmen huì zhù zài xiāngxià"
+        },
+        {
+            "base_language": "They will live in the countryside",
+            "target_language": "他们会住在乡下",
+            "romanized": "tāmen huì zhù zài xiāngxià"
+        },
+        {
+            "base_language": "will go to the bus station",
+            "target_language": "会去公交车站",
+            "romanized": "huì qù gōngjiāo chēzhàn"
+        },
+        {
+            "base_language": "will turn at the intersection",
+            "target_language": "会在十字路口转弯",
+            "romanized": "huì zài shízì lùkǒu zhuǎnwān"
+        },
+        {
+            "base_language": "will continue straight at the Bridge",
+            "target_language": "会在桥那里直走",
+            "romanized": "huì zài qiáo nàlǐ zhí zǒu"
+        },
+        {
+            "base_language": "will stop in the city center",
+            "target_language": "会在市中心停下",
+            "romanized": "huì zài shì zhōngxīn tíng xià"
+        },
+        {
+            "base_language": "will turn right at the neighbourhood",
+            "target_language": "会在那个街区右转",
+            "romanized": "huì zài nàge jiēqū yòu zhuǎn"
+        }
+    ]
+}

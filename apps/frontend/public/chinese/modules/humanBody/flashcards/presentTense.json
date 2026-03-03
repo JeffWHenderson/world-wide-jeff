@@ -1,0 +1,306 @@
+{
+    "name": "present tense 1",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "I see with my eyes",
+            "target_language": "我用眼睛看",
+            "romanized": "wǒ yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "You see with your eyes",
+            "target_language": "你用眼睛看",
+            "romanized": "nǐ yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "She sees with her eyes",
+            "target_language": "她用眼睛看",
+            "romanized": "tā yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "I hear with my ears",
+            "target_language": "我用耳朵听",
+            "romanized": "wǒ yòng ěrduo tīng"
+        },
+        {
+            "base_language": "You hear with your ears",
+            "target_language": "你用耳朵听",
+            "romanized": "nǐ yòng ěrduo tīng"
+        },
+        {
+            "base_language": "He hears with his ears",
+            "target_language": "他用耳朵听",
+            "romanized": "tā yòng ěrduo tīng"
+        },
+        {
+            "base_language": "I smell with my nose",
+            "target_language": "我用鼻子闻",
+            "romanized": "wǒ yòng bízi wén"
+        },
+        {
+            "base_language": "You smell with your nose",
+            "target_language": "你用鼻子闻",
+            "romanized": "nǐ yòng bízi wén"
+        },
+        {
+            "base_language": "She smells with her nose",
+            "target_language": "她用鼻子闻",
+            "romanized": "tā yòng bízi wén"
+        },
+        {
+            "base_language": "I taste with my tounge",
+            "target_language": "我用舌头尝",
+            "romanized": "wǒ yòng shétou cháng"
+        },
+        {
+            "base_language": "You taste with your tounge",
+            "target_language": "你用舌头尝",
+            "romanized": "nǐ yòng shétou cháng"
+        },
+        {
+            "base_language": "He tastes with his tounge",
+            "target_language": "他用舌头尝",
+            "romanized": "tā yòng shétou cháng"
+        },
+        {
+            "base_language": "I touch with my hands",
+            "target_language": "我用手触摸",
+            "romanized": "wǒ yòng shǒu chùmō"
+        },
+        {
+            "base_language": "You touch with your hands",
+            "target_language": "你用手触摸",
+            "romanized": "nǐ yòng shǒu chùmō"
+        },
+        {
+            "base_language": "She touches with her hands",
+            "target_language": "她用手触摸",
+            "romanized": "tā yòng shǒu chùmō"
+        },
+        {
+            "base_language": "I breathe with my belly",
+            "target_language": "我用腹部呼吸",
+            "romanized": "wǒ yòng fùbù hūxī"
+        },
+        {
+            "base_language": "You breathe with your belly",
+            "target_language": "你用腹部呼吸",
+            "romanized": "nǐ yòng fùbù hūxī"
+        },
+        {
+            "base_language": "He breathes with his belly",
+            "target_language": "他用腹部呼吸",
+            "romanized": "tā yòng fùbù hūxī"
+        },
+        {
+            "base_language": "I swallow with my throat",
+            "target_language": "我用喉咙吞咽",
+            "romanized": "wǒ yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "You swallow with your throat",
+            "target_language": "你用喉咙吞咽",
+            "romanized": "nǐ yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "She swallow swith her throat",
+            "target_language": "她用喉咙吞咽",
+            "romanized": "tā yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "I chew with my mouth",
+            "target_language": "我用嘴巴嚼",
+            "romanized": "wǒ yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "You chew with your mouth",
+            "target_language": "你用嘴巴嚼",
+            "romanized": "nǐ yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "He chews with his mouth",
+            "target_language": "他用嘴巴嚼",
+            "romanized": "tā yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "I digest with my stomach",
+            "target_language": "我用胃消化",
+            "romanized": "wǒ yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "You digest with your stomach",
+            "target_language": "你用胃消化",
+            "romanized": "nǐ yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "She digests with her stomach",
+            "target_language": "她用胃消化",
+            "romanized": "tā yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "I pump blood with my heart",
+            "target_language": "我用心脏泵血",
+            "romanized": "wǒ yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "You pump blood with your heart",
+            "target_language": "你用心脏泵血",
+            "romanized": "nǐ yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "He pumps blood with his heart",
+            "target_language": "他用心脏泵血",
+            "romanized": "tā yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "I bend my legs",
+            "target_language": "我弯曲我的腿",
+            "romanized": "wǒ wānqū wǒ de tuǐ"
+        },
+        {
+            "base_language": "You bend your legs",
+            "target_language": "你弯曲你的腿",
+            "romanized": "nǐ wānqū nǐ de tuǐ"
+        },
+        {
+            "base_language": "He bends his legs",
+            "target_language": "他弯曲他的腿",
+            "romanized": "tā wānqū tā de tuǐ"
+        },
+        {
+            "base_language": "I stretch my back",
+            "target_language": "我伸展我的背",
+            "romanized": "wǒ shēnzhǎn wǒ de bèi"
+        },
+        {
+            "base_language": "You stretch your back",
+            "target_language": "你伸展你的背",
+            "romanized": "nǐ shēnzhǎn nǐ de bèi"
+        },
+        {
+            "base_language": "She stretches her back",
+            "target_language": "她伸展她的背",
+            "romanized": "tā shēnzhǎn tā de bèi"
+        },
+        {
+            "base_language": "I flex my arms",
+            "target_language": "我屈曲我的手臂",
+            "romanized": "wǒ qūqū wǒ de shǒubì"
+        },
+        {
+            "base_language": "You flex your arms",
+            "target_language": "你屈曲你的手臂",
+            "romanized": "nǐ qūqū nǐ de shǒubì"
+        },
+        {
+            "base_language": "He flexes his arms",
+            "target_language": "他屈曲他的手臂",
+            "romanized": "tā qūqū tā de shǒubì"
+        },
+        {
+            "base_language": "I blink my eyes",
+            "target_language": "我眨眼",
+            "romanized": "wǒ zhǎ yǎn"
+        },
+        {
+            "base_language": "You blink your eyes",
+            "target_language": "你眨眼",
+            "romanized": "nǐ zhǎ yǎn"
+        },
+        {
+            "base_language": "She blinks her eyes",
+            "target_language": "她眨眼",
+            "romanized": "tā zhǎ yǎn"
+        },
+        {
+            "base_language": "I sweat gatorade",
+            "target_language": "我出佳得乐汗",
+            "romanized": "wǒ chū jiādélè hàn"
+        },
+        {
+            "base_language": "You sweat gatorade",
+            "target_language": "你出佳得乐汗",
+            "romanized": "nǐ chū jiādélè hàn"
+        },
+        {
+            "base_language": "He sweats gatorade",
+            "target_language": "他出佳得乐汗",
+            "romanized": "tā chū jiādélè hàn"
+        },
+        {
+            "base_language": "I bleed blood",
+            "target_language": "我流血",
+            "romanized": "wǒ liú xuè"
+        },
+        {
+            "base_language": "You bleed blood",
+            "target_language": "你流血",
+            "romanized": "nǐ liú xuè"
+        },
+        {
+            "base_language": "She bleeds blood",
+            "target_language": "她流血",
+            "romanized": "tā liú xuè"
+        },
+        {
+            "base_language": "I heal my injury",
+            "target_language": "我治愈我的伤",
+            "romanized": "wǒ zhìyù wǒ de shāng"
+        },
+        {
+            "base_language": "You heal your injury",
+            "target_language": "你治愈你的伤",
+            "romanized": "nǐ zhìyù nǐ de shāng"
+        },
+        {
+            "base_language": "He heals his injury",
+            "target_language": "他治愈他的伤",
+            "romanized": "tā zhìyù tā de shāng"
+        },
+        {
+            "base_language": "I feel with my hands",
+            "target_language": "我用手感觉",
+            "romanized": "wǒ yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "You feel with your hands",
+            "target_language": "你用手感觉",
+            "romanized": "nǐ yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "She feels with her hands",
+            "target_language": "她用手感觉",
+            "romanized": "tā yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "I think with my brain",
+            "target_language": "我用大脑思考",
+            "romanized": "wǒ yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "You think with your brain",
+            "target_language": "你用大脑思考",
+            "romanized": "nǐ yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "He thinks with his brain",
+            "target_language": "他用大脑思考",
+            "romanized": "tā yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "I move my body",
+            "target_language": "我移动我的身体",
+            "romanized": "wǒ yídòng wǒ de shēntǐ"
+        },
+        {
+            "base_language": "You move your body",
+            "target_language": "你移动你的身体",
+            "romanized": "nǐ yídòng nǐ de shēntǐ"
+        },
+        {
+            "base_language": "She moves her body",
+            "target_language": "她移动她的身体",
+            "romanized": "tā yídòng tā de shēntǐ"
+        }
+    ]
+}

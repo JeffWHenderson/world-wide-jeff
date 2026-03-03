@@ -1,0 +1,301 @@
+{
+    "name": "Past tense 1",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "I was at home",
+            "target_language": "我在家",
+            "romanized": "wǒ zài jiā"
+        },
+        {
+            "base_language": "You were at home",
+            "target_language": "你在家",
+            "romanized": "nǐ zài jiā"
+        },
+        {
+            "base_language": "He was home",
+            "target_language": "他在家",
+            "romanized": "tā zài jiā"
+        },
+        {
+            "base_language": "I lived in an apartment",
+            "target_language": "我住在公寓里",
+            "romanized": "wǒ zhù zài gōngyù lǐ"
+        },
+        {
+            "base_language": "You lived in an apartment",
+            "target_language": "你住在公寓里",
+            "romanized": "nǐ zhù zài gōngyù lǐ"
+        },
+        {
+            "base_language": "She lived in an apartment",
+            "target_language": "她住在公寓里",
+            "romanized": "tā zhù zài gōngyù lǐ"
+        },
+        {
+            "base_language": "I stayed in school",
+            "target_language": "我留在了学校",
+            "romanized": "wǒ liú zài le xuéxiào"
+        },
+        {
+            "base_language": "You stayed in school",
+            "target_language": "你留在了学校",
+            "romanized": "nǐ liú zài le xuéxiào"
+        },
+        {
+            "base_language": "He stayed in school",
+            "target_language": "他留在了学校",
+            "romanized": "tā liú zài le xuéxiào"
+        },
+        {
+            "base_language": "I met her at the office",
+            "target_language": "我在办公室见了她",
+            "romanized": "wǒ zài bàngōngshì jiàn le tā"
+        },
+        {
+            "base_language": "You met her at the office",
+            "target_language": "你在办公室见了她",
+            "romanized": "nǐ zài bàngōngshì jiàn le tā"
+        },
+        {
+            "base_language": "She met her at the office",
+            "target_language": "她在办公室见了她",
+            "romanized": "tā zài bàngōngshì jiàn le tā"
+        },
+        {
+            "base_language": "I was lost in the supermarket",
+            "target_language": "我在超市迷路了",
+            "romanized": "wǒ zài chāoshì mílù le"
+        },
+        {
+            "base_language": "You were lost in the supermarket",
+            "target_language": "你在超市迷路了",
+            "romanized": "nǐ zài chāoshì mílù le"
+        },
+        {
+            "base_language": "He was lost in the supermarket",
+            "target_language": "他在超市迷路了",
+            "romanized": "tā zài chāoshì mílù le"
+        },
+        {
+            "base_language": "I found a bank",
+            "target_language": "我找到了一家银行",
+            "romanized": "wǒ zhǎodào le yī jiā yínháng"
+        },
+        {
+            "base_language": "You found a bank",
+            "target_language": "你找到了一家银行",
+            "romanized": "nǐ zhǎodào le yī jiā yínháng"
+        },
+        {
+            "base_language": "She found a bank",
+            "target_language": "她找到了一家银行",
+            "romanized": "tā zhǎodào le yī jiā yínháng"
+        },
+        {
+            "base_language": "I looked for a university",
+            "target_language": "我找了一所大学",
+            "romanized": "wǒ zhǎo le yī suǒ dàxué"
+        },
+        {
+            "base_language": "You looked for a university",
+            "target_language": "你找了一所大学",
+            "romanized": "nǐ zhǎo le yī suǒ dàxué"
+        },
+        {
+            "base_language": "He looked for a university",
+            "target_language": "他找了一所大学",
+            "romanized": "tā zhǎo le yī suǒ dàxué"
+        },
+        {
+            "base_language": "I needed directions",
+            "target_language": "我需要问路",
+            "romanized": "wǒ xūyào wèn lù"
+        },
+        {
+            "base_language": "you needed directions",
+            "target_language": "你需要问路",
+            "romanized": "nǐ xūyào wèn lù"
+        },
+        {
+            "base_language": "She needed directions",
+            "target_language": "她需要问路",
+            "romanized": "tā xūyào wèn lù"
+        },
+        {
+            "base_language": "I gave directions",
+            "target_language": "我指了路",
+            "romanized": "wǒ zhǐ le lù"
+        },
+        {
+            "base_language": "You gave directions",
+            "target_language": "你指了路",
+            "romanized": "nǐ zhǐ le lù"
+        },
+        {
+            "base_language": "He gave directions",
+            "target_language": "他指了路",
+            "romanized": "tā zhǐ le lù"
+        },
+        {
+            "base_language": "I headed right",
+            "target_language": "我向右走了",
+            "romanized": "wǒ xiàng yòu zǒu le"
+        },
+        {
+            "base_language": "You headed right",
+            "target_language": "你向右走了",
+            "romanized": "nǐ xiàng yòu zǒu le"
+        },
+        {
+            "base_language": "She headed right",
+            "target_language": "她向右走了",
+            "romanized": "tā xiàng yòu zǒu le"
+        },
+        {
+            "base_language": "I continued straight",
+            "target_language": "我直走了",
+            "romanized": "wǒ zhí zǒu le"
+        },
+        {
+            "base_language": "You continued straight",
+            "target_language": "你直走了",
+            "romanized": "nǐ zhí zǒu le"
+        },
+        {
+            "base_language": "He continued straight",
+            "target_language": "他直走了",
+            "romanized": "tā zhí zǒu le"
+        },
+        {
+            "base_language": "I stopped on the left",
+            "target_language": "我在左边停下了",
+            "romanized": "wǒ zài zuǒbiān tíng xià le"
+        },
+        {
+            "base_language": "You stopped on the left",
+            "target_language": "你在左边停下了",
+            "romanized": "nǐ zài zuǒbiān tíng xià le"
+        },
+        {
+            "base_language": "She stopped on the left",
+            "target_language": "她在左边停下了",
+            "romanized": "tā zài zuǒbiān tíng xià le"
+        },
+        {
+            "base_language": "I parked on the street",
+            "target_language": "我在街上停了车",
+            "romanized": "wǒ zài jiē shàng tíng le chē"
+        },
+        {
+            "base_language": "You parked on the street",
+            "target_language": "你在街上停了车",
+            "romanized": "nǐ zài jiē shàng tíng le chē"
+        },
+        {
+            "base_language": "He parked on the street",
+            "target_language": "他在街上停了车",
+            "romanized": "tā zài jiē shàng tíng le chē"
+        },
+        {
+            "base_language": "I checked into the hotel",
+            "target_language": "我办理了酒店入住",
+            "romanized": "wǒ bànlǐ le jiǔdiàn rùzhù"
+        },
+        {
+            "base_language": "You checked into the hotel",
+            "target_language": "你办理了酒店入住",
+            "romanized": "nǐ bànlǐ le jiǔdiàn rùzhù"
+        },
+        {
+            "base_language": "She checked into the hotel",
+            "target_language": "她办理了酒店入住",
+            "romanized": "tā bànlǐ le jiǔdiàn rùzhù"
+        },
+        {
+            "base_language": "I checked out of the hospital",
+            "target_language": "我办理了出院",
+            "romanized": "wǒ bànlǐ le chūyuàn"
+        },
+        {
+            "base_language": "You checked out of the hospital",
+            "target_language": "你办理了出院",
+            "romanized": "nǐ bànlǐ le chūyuàn"
+        },
+        {
+            "base_language": "He checked out of the hospital",
+            "target_language": "他办理了出院",
+            "romanized": "tā bànlǐ le chūyuàn"
+        },
+        {
+            "base_language": "I reserved a table",
+            "target_language": "我预订了一张桌子",
+            "romanized": "wǒ yùdìng le yī zhāng zhuōzi"
+        },
+        {
+            "base_language": "You reserved a table",
+            "target_language": "你预订了一张桌子",
+            "romanized": "nǐ yùdìng le yī zhāng zhuōzi"
+        },
+        {
+            "base_language": "She reserved a table",
+            "target_language": "她预订了一张桌子",
+            "romanized": "tā yùdìng le yī zhāng zhuōzi"
+        },
+        {
+            "base_language": "I booked a flight",
+            "target_language": "我订了一张机票",
+            "romanized": "wǒ dìng le yī zhāng jīpiào"
+        },
+        {
+            "base_language": "You booked a flight",
+            "target_language": "你订了一张机票",
+            "romanized": "nǐ dìng le yī zhāng jīpiào"
+        },
+        {
+            "base_language": "he booked a flight",
+            "target_language": "他订了一张机票",
+            "romanized": "tā dìng le yī zhāng jīpiào"
+        },
+        {
+            "base_language": "I was in the museum",
+            "target_language": "我在博物馆",
+            "romanized": "wǒ zài bówùguǎn"
+        },
+        {
+            "base_language": "you were in the museum",
+            "target_language": "你在博物馆",
+            "romanized": "nǐ zài bówùguǎn"
+        },
+        {
+            "base_language": "He was in the museum",
+            "target_language": "他在博物馆",
+            "romanized": "tā zài bówùguǎn"
+        },
+        {
+            "base_language": "went to the bus station",
+            "target_language": "去了公交车站",
+            "romanized": "qù le gōngjiāo chēzhàn"
+        },
+        {
+            "base_language": "turned at the intersection",
+            "target_language": "在十字路口转了弯",
+            "romanized": "zài shízì lùkǒu zhuǎn le wān"
+        },
+        {
+            "base_language": "continued straight at the Bridge",
+            "target_language": "在桥那里直走了",
+            "romanized": "zài qiáo nàlǐ zhí zǒu le"
+        },
+        {
+            "base_language": "stopped in the city center",
+            "target_language": "在市中心停下了",
+            "romanized": "zài shì zhōngxīn tíng xià le"
+        },
+        {
+            "base_language": "turned right at the neighbourhood",
+            "target_language": "在那个街区右转了",
+            "romanized": "zài nàge jiēqū yòu zhuǎn le"
+        }
+    ]
+}

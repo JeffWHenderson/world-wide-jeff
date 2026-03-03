@@ -1,0 +1,397 @@
+{
+    "name": "Future tense 1",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I will be happy.",
+            "target_language": "我会开心。",
+            "romanized": "wǒ huì kāixīn."
+        },
+        {
+            "base_language": "You will be happy.",
+            "target_language": "你会开心。",
+            "romanized": "nǐ huì kāixīn."
+        },
+        {
+            "base_language": "He will be happy.",
+            "target_language": "他会开心。",
+            "romanized": "tā huì kāixīn."
+        },
+        {
+            "base_language": "I will be sad.",
+            "target_language": "我会难过。",
+            "romanized": "wǒ huì nánguò."
+        },
+        {
+            "base_language": "You will be sad.",
+            "target_language": "你会难过。",
+            "romanized": "nǐ huì nánguò."
+        },
+        {
+            "base_language": "She will be sad.",
+            "target_language": "她会难过。",
+            "romanized": "tā huì nánguò."
+        },
+        {
+            "base_language": "I will be in love.",
+            "target_language": "我会恋爱。",
+            "romanized": "wǒ huì liàn'ài."
+        },
+        {
+            "base_language": "You will be in love.",
+            "target_language": "你会恋爱。",
+            "romanized": "nǐ huì liàn'ài."
+        },
+        {
+            "base_language": "He will be in love.",
+            "target_language": "他会恋爱。",
+            "romanized": "tā huì liàn'ài."
+        },
+        {
+            "base_language": "I will be full of joy.",
+            "target_language": "我会充满喜悦。",
+            "romanized": "wǒ huì chōngmǎn xǐyuè."
+        },
+        {
+            "base_language": "You will be full of joy.",
+            "target_language": "你会充满喜悦。",
+            "romanized": "nǐ huì chōngmǎn xǐyuè."
+        },
+        {
+            "base_language": "She will be full of joy.",
+            "target_language": "她会充满喜悦。",
+            "romanized": "tā huì chōngmǎn xǐyuè."
+        },
+        {
+            "base_language": "I will be angry.",
+            "target_language": "我会生气。",
+            "romanized": "wǒ huì shēngqì."
+        },
+        {
+            "base_language": "You will be angry.",
+            "target_language": "你会生气。",
+            "romanized": "nǐ huì shēngqì."
+        },
+        {
+            "base_language": "He will be angry.",
+            "target_language": "他会生气。",
+            "romanized": "tā huì shēngqì."
+        },
+        {
+            "base_language": "I will be afraid.",
+            "target_language": "我会害怕。",
+            "romanized": "wǒ huì hàipà."
+        },
+        {
+            "base_language": "You will be afraid.",
+            "target_language": "你会害怕。",
+            "romanized": "nǐ huì hàipà."
+        },
+        {
+            "base_language": "She will be afraid.",
+            "target_language": "她会害怕。",
+            "romanized": "tā huì hàipà."
+        },
+        {
+            "base_language": "I will be hopeful.",
+            "target_language": "我会充满希望。",
+            "romanized": "wǒ huì chōngmǎn xīwàng."
+        },
+        {
+            "base_language": "You will be hopeful.",
+            "target_language": "你会充满希望。",
+            "romanized": "nǐ huì chōngmǎn xīwàng."
+        },
+        {
+            "base_language": "He will be hopeful.",
+            "target_language": "他会充满希望。",
+            "romanized": "tā huì chōngmǎn xīwàng."
+        },
+        {
+            "base_language": "I will be stressed.",
+            "target_language": "我会有压力。",
+            "romanized": "wǒ huì yǒu yālì."
+        },
+        {
+            "base_language": "You will be stressed.",
+            "target_language": "你会有压力。",
+            "romanized": "nǐ huì yǒu yālì."
+        },
+        {
+            "base_language": "She will be stressed.",
+            "target_language": "她会有压力。",
+            "romanized": "tā huì yǒu yālì."
+        },
+        {
+            "base_language": "I will be in a bad mood.",
+            "target_language": "我会心情不好。",
+            "romanized": "wǒ huì xīnqíng bù hǎo."
+        },
+        {
+            "base_language": "You will be in a bad mood.",
+            "target_language": "你会心情不好。",
+            "romanized": "nǐ huì xīnqíng bù hǎo."
+        },
+        {
+            "base_language": "He will be in a bad mood.",
+            "target_language": "他会心情不好。",
+            "romanized": "tā huì xīnqíng bù hǎo."
+        },
+        {
+            "base_language": "I will be feeling happy.",
+            "target_language": "我会感到开心。",
+            "romanized": "wǒ huì gǎndào kāixīn."
+        },
+        {
+            "base_language": "You will be feeling happy.",
+            "target_language": "你会感到开心。",
+            "romanized": "nǐ huì gǎndào kāixīn."
+        },
+        {
+            "base_language": "She will be feeling happy.",
+            "target_language": "她会感到开心。",
+            "romanized": "tā huì gǎndào kāixīn."
+        },
+        {
+            "base_language": "I will be emotional.",
+            "target_language": "我会情绪化。",
+            "romanized": "wǒ huì qíngxùhuà."
+        },
+        {
+            "base_language": "You will be emotional.",
+            "target_language": "你会情绪化。",
+            "romanized": "nǐ huì qíngxùhuà."
+        },
+        {
+            "base_language": "He will be emotional.",
+            "target_language": "他会情绪化。",
+            "romanized": "tā huì qíngxùhuà."
+        },
+        {
+            "base_language": "I will be excited.",
+            "target_language": "我会兴奋。",
+            "romanized": "wǒ huì xīngfèn."
+        },
+        {
+            "base_language": "You will be excited.",
+            "target_language": "你会兴奋。",
+            "romanized": "nǐ huì xīngfèn."
+        },
+        {
+            "base_language": "She will be excited.",
+            "target_language": "她会兴奋。",
+            "romanized": "tā huì xīngfèn."
+        },
+        {
+            "base_language": "I will be proud.",
+            "target_language": "我会骄傲。",
+            "romanized": "wǒ huì jiāo'ào."
+        },
+        {
+            "base_language": "You will be proud.",
+            "target_language": "你会骄傲。",
+            "romanized": "nǐ huì jiāo'ào."
+        },
+        {
+            "base_language": "He will be proud.",
+            "target_language": "他会骄傲。",
+            "romanized": "tā huì jiāo'ào."
+        },
+        {
+            "base_language": "I will be ashamed.",
+            "target_language": "我会羞愧。",
+            "romanized": "wǒ huì xiūkuì."
+        },
+        {
+            "base_language": "You will be ashamed.",
+            "target_language": "你会羞愧。",
+            "romanized": "nǐ huì xiūkuì."
+        },
+        {
+            "base_language": "She will be ashamed.",
+            "target_language": "她会羞愧。",
+            "romanized": "tā huì xiūkuì."
+        },
+        {
+            "base_language": "I will be guilty.",
+            "target_language": "我会感到内疚。",
+            "romanized": "wǒ huì gǎndào nèijiù."
+        },
+        {
+            "base_language": "You will be guilty.",
+            "target_language": "你会感到内疚。",
+            "romanized": "nǐ huì gǎndào nèijiù."
+        },
+        {
+            "base_language": "He will be guilty.",
+            "target_language": "他会感到内疚。",
+            "romanized": "tā huì gǎndào nèijiù."
+        },
+        {
+            "base_language": "I will be envious.",
+            "target_language": "我会羡慕。",
+            "romanized": "wǒ huì xiànmù."
+        },
+        {
+            "base_language": "You will be envious.",
+            "target_language": "你会羡慕。",
+            "romanized": "nǐ huì xiànmù."
+        },
+        {
+            "base_language": "She will be envious.",
+            "target_language": "她会羡慕。",
+            "romanized": "tā huì xiànmù."
+        },
+        {
+            "base_language": "I will be jealous.",
+            "target_language": "我会嫉妒。",
+            "romanized": "wǒ huì jídù."
+        },
+        {
+            "base_language": "You will be jealous.",
+            "target_language": "你会嫉妒。",
+            "romanized": "nǐ huì jídù."
+        },
+        {
+            "base_language": "He will be jealous.",
+            "target_language": "他会嫉妒。",
+            "romanized": "tā huì jídù."
+        },
+        {
+            "base_language": "I will be calm.",
+            "target_language": "我会平静。",
+            "romanized": "wǒ huì píngjìng."
+        },
+        {
+            "base_language": "You will be calm.",
+            "target_language": "你会平静。",
+            "romanized": "nǐ huì píngjìng."
+        },
+        {
+            "base_language": "She will be calm.",
+            "target_language": "她会平静。",
+            "romanized": "tā huì píngjìng."
+        },
+        {
+            "base_language": "I will be at peace.",
+            "target_language": "我会内心平和。",
+            "romanized": "wǒ huì nèixīn pínghé."
+        },
+        {
+            "base_language": "You will be at peace.",
+            "target_language": "你会内心平和。",
+            "romanized": "nǐ huì nèixīn pínghé."
+        },
+        {
+            "base_language": "He will be at peace.",
+            "target_language": "他会内心平和。",
+            "romanized": "tā huì nèixīn pínghé."
+        },
+        {
+            "base_language": "I will be anxious.",
+            "target_language": "我会焦虑。",
+            "romanized": "wǒ huì jiāolǜ."
+        },
+        {
+            "base_language": "You will be anxious.",
+            "target_language": "你会焦虑。",
+            "romanized": "nǐ huì jiāolǜ."
+        },
+        {
+            "base_language": "She will be anxious.",
+            "target_language": "她会焦虑。",
+            "romanized": "tā huì jiāolǜ."
+        },
+        {
+            "base_language": "I will be worried.",
+            "target_language": "我会担心。",
+            "romanized": "wǒ huì dānxīn."
+        },
+        {
+            "base_language": "You will be worried.",
+            "target_language": "你会担心。",
+            "romanized": "nǐ huì dānxīn."
+        },
+        {
+            "base_language": "He will be worried.",
+            "target_language": "他会担心。",
+            "romanized": "tā huì dānxīn."
+        },
+        {
+            "base_language": "I will be panicked.",
+            "target_language": "我会恐慌。",
+            "romanized": "wǒ huì kǒnghuāng."
+        },
+        {
+            "base_language": "You will be panicked.",
+            "target_language": "你会恐慌。",
+            "romanized": "nǐ huì kǒnghuāng."
+        },
+        {
+            "base_language": "She will be panicked.",
+            "target_language": "她会恐慌。",
+            "romanized": "tā huì kǒnghuāng."
+        },
+        {
+            "base_language": "I will be disgusted.",
+            "target_language": "我会恶心。",
+            "romanized": "wǒ huì ěxīn."
+        },
+        {
+            "base_language": "You will be disgusted.",
+            "target_language": "你会恶心。",
+            "romanized": "nǐ huì ěxīn."
+        },
+        {
+            "base_language": "He will be disgusted.",
+            "target_language": "他会恶心。",
+            "romanized": "tā huì ěxīn."
+        },
+        {
+            "base_language": "I will be surprised.",
+            "target_language": "我会惊讶。",
+            "romanized": "wǒ huì jīngyà."
+        },
+        {
+            "base_language": "You will be surprised.",
+            "target_language": "你会惊讶。",
+            "romanized": "nǐ huì jīngyà."
+        },
+        {
+            "base_language": "She will be surprised.",
+            "target_language": "她会惊讶。",
+            "romanized": "tā huì jīngyà."
+        },
+        {
+            "base_language": "I will be shocked.",
+            "target_language": "我会震惊。",
+            "romanized": "wǒ huì zhènjīng."
+        },
+        {
+            "base_language": "You will be shocked.",
+            "target_language": "你会震惊。",
+            "romanized": "nǐ huì zhènjīng."
+        },
+        {
+            "base_language": "He will be shocked.",
+            "target_language": "他会震惊。",
+            "romanized": "tā huì zhènjīng."
+        },
+        {
+            "base_language": "I will be passionate.",
+            "target_language": "我会热情。",
+            "romanized": "wǒ huì rèqíng."
+        },
+        {
+            "base_language": "You will be passionate.",
+            "target_language": "你会热情。",
+            "romanized": "nǐ huì rèqíng."
+        },
+        {
+            "base_language": "She will be passionate.",
+            "target_language": "她会热情。",
+            "romanized": "tā huì rèqíng."
+        }
+    ]
+}
