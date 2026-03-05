@@ -25,7 +25,11 @@ const FlashCardsV2 = () => {
 
     useEffect(() => {
         if (lessonId === 'custom-deck') {
-            setLesson(getMyDeck(`${section}-custom-deck`))
+            const myDeck = getMyDeck(`${section}-custom-deck`)
+
+            setTop(myDeck.sentences[0].base_language)
+            setBottom(myDeck.sentences[0].target_language)
+            setLesson(myDeck)
         } else {
             fetch(`/${language?.toLowerCase()}/modules/${section}/flashcards/${lessonId}`)
                 .then(res => res.json())
@@ -40,14 +44,15 @@ const FlashCardsV2 = () => {
 
     // // play after card number is updated
     useEffect(() => {
-        if (reverseCards) {
-            setTop(lesson?.sentences[cardNumber]["target_language"])
-            setBottom(lesson?.sentences[cardNumber]["base_language"])
-        } else {
-            setTop(lesson?.sentences[cardNumber]["base_language"])
-            setBottom(lesson?.sentences[cardNumber]["target_language"])
+        if (lesson) {
+            if (reverseCards) {
+                setTop(lesson?.sentences[cardNumber]["target_language"])
+                setBottom(lesson?.sentences[cardNumber]["base_language"])
+            } else {
+                setTop(lesson?.sentences[cardNumber]["base_language"])
+                setBottom(lesson?.sentences[cardNumber]["target_language"])
+            }
         }
-
     }, [cardNumber, reverseCards])
 
     useEffect(() => {
@@ -106,8 +111,6 @@ const FlashCardsV2 = () => {
             }
         }
     }
-
-
 
     return <>
         <div className="container">
