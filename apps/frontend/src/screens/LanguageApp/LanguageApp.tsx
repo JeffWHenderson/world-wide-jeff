@@ -2,13 +2,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./main-styles.css"
 import { getMyDeck } from "./hooks/useDecklist";
-import PicturePopUp from "./components/PicturePopUp";
 
 const LanguageLearningApp = () => {
     const { language } = useParams();
     const navigator = useNavigate()
     const [course, setCourse] = useState<any | null>(null);
-    const [openPicture, setOpenPicture] = useState(null) // TODO: part of test code for describe feature
 
     useEffect(() => {
         fetch(`/${language}/course.json`)
@@ -78,21 +76,21 @@ const LanguageLearningApp = () => {
                                     </button>
                                 ))}
                                 {/* TODO: just testing this out */}
-                                <button
-                                    style={{ color: 'white' }}
-                                    key={"fill me out"}
-                                    onClick={() => setOpenPicture(level.level_id)}>
-                                    Practice Speaking (TEST FEATURE)
-                                </button>
+                                {level.level_id === "foodAndDrink" ?
+                                    <button
+                                        style={{ color: 'white' }}
+                                        key={"fill me out"}
+                                        onClick={() => navigator('/language-app/spanish/picture-review/foodAndDrink')}>
+                                        Practice Speaking (TEST FEATURE)
+                                    </button>
+                                    : null
+                                }
                                 {/* END TEST CODE */}
                             </div>
                         </div>
                     </div>
                 ))}
             </div >
-            {/* TODO: just testing this out */}
-            {openPicture && <PicturePopUp levelId={openPicture} setOpenPicture={setOpenPicture} />}
-            {/* END TEST CODE */}
         </>
     )
 }
