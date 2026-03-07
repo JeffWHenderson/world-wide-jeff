@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { addToDeck } from "../hooks/useDecklist";
+import { buildPrintableFlashcards } from "../hooks/print";
 
-type WordListItem = {
+export type WordListItem = {
     base_language: string,
     target_language: string
 }
@@ -10,7 +11,6 @@ type WordListItem = {
 const WordList = () => {
     const { language, lessonId, section } = useParams();
     const [wordList, setWordList] = useState<WordListItem[]>([])
-    // TODO: its the stupidest thing that this is word/translation and everything else is target_language/base_language
 
     useEffect(() => {
         fetch(`/${language}/modules/${section}/${lessonId}`)
@@ -23,7 +23,10 @@ const WordList = () => {
         <div className="word-list-container">
             <h1>WORDLIST FOR THIS SECTIOIN</h1>
             <h2>click <strong>[+]</strong> to add words you are unfamiliar with to you custom decklist</h2>
-            <p>No need to memorize, but this is (Will be) printable so you can reference without a stupid computer</p>
+            <div style={{ display: 'flex' }}>
+                <button onClick={() => buildPrintableFlashcards(wordList)}>Print Flashcards</button>
+                <div style={{ marginLeft: '10px' }}> this is printable so you can reference without a stupid computer</div>
+            </div>
             <br />
             <ul className="word-list">
                 {wordList.map((listItem: WordListItem) => (
