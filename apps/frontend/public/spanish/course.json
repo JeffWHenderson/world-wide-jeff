@@ -284,6 +284,27 @@
                     "filename": "futureTense.json",
                     "name": "Future Tense 1",
                     "type": "flashcards"
+                },
+                                {
+                    "filename": "audrey.json",
+                    "name": "Audrey's hobbies",
+                    "type": "story"
+                }
+            ]
+        },
+                {
+            "level_id": "aliceInWonderland",
+            "level_name": "Alice In Wonderland",
+            "lessons": [
+                {
+                    "filename": "chapter_1.json",
+                    "name": "Down the rabbit hole",
+                    "type": "story"
+                },
+                {
+                    "filename": "chapter_2.json",
+                    "name": "The Pool of Tears",
+                    "type": "story"
                 }
             ]
         }
