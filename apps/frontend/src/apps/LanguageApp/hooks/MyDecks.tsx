@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { addToDeck, getMyDeck } from "../hooks/useDecklist";
+import { addToDeck, getMyDeck } from "./useDecklist";
 
 const MyDecks = () => {
     const navigator = useNavigate()

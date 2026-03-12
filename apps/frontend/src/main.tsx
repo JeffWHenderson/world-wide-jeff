@@ -1,23 +1,23 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./screens/Core/Layout";
-import Home from "./screens/Core/Home";
-import NoPage from "./screens/Core/NoPage";
-import Pickleball from "./screens/Pickleball/Pickleball";
-import Contact from "./screens/Contact/Contact";
-import Events from "./screens/Events/Events";
-import LanguageLearningApp from "./screens/LanguageApp/LanguageApp";
+import Layout from "./apps/worldWideJeff/Core/Layout";
+import Home from "./apps/worldWideJeff/Core/Home";
+import NoPage from "./apps/worldWideJeff/Core/NoPage";
+import Pickleball from "./apps/worldWideJeff/Pickleball/Pickleball";
+import Contact from "./apps/worldWideJeff/Contact/Contact";
+import Events from "./apps/worldWideJeff/Events/Events";
+import LanguageLearningApp from "./apps/LanguageApp/pages/LanguageApp";
 import './index.css'
-import FlashCardsV2 from './screens/LanguageApp/components/FlashCardsV2';
-import WordList from './screens/LanguageApp/components/WordList';
-import StoryReader from './screens/LanguageApp/components/StoryReader';
-import LanguageAppLayout from './screens/LanguageApp/LanguageAppLayout';
-import ViewLesson from './screens/LanguageApp/components/ViewLesson';
-import MyDecks from './screens/LanguageApp/components/MyDecks';
-import { ThemeProvider } from './screens/Core/ThemeContext';
-import LanguageAppHome from './screens/LanguageApp/LanguageHome';
-import PicturePopUp from './screens/LanguageApp/components/PicturePopUp';
+import FlashCardsV2 from './apps/LanguageApp/pages/flashcards/FlashCardsV2';
+import WordList from './apps/LanguageApp/pages/wordlist/WordList';
+import StoryReader from './apps/LanguageApp/pages/storyReader/StoryReader';
+import LanguageAppLayout from './apps/LanguageApp/LanguageAppLayout';
+import ViewLesson from './apps/LanguageApp/pages/viewLesson/ViewLesson';
+import MyDecks from './apps/LanguageApp/hooks/MyDecks';
+import { ThemeProvider } from './apps/common/ThemeContext';
+import LanguageAppHome from './apps/LanguageApp/LanguageHome';
+import PicturePopUp from './apps/LanguageApp/pages/pictureLesson/PicturePopUp';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
 // import WallerverseHome from "./screens/Wallerverse/WallerverseHome"

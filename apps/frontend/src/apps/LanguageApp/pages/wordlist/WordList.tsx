@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { addToDeck } from "../hooks/useDecklist";
-import { buildPrintableFlashcards } from "../hooks/print";
+import { addToDeck } from "../../hooks/useDecklist";
+import { buildPrintableFlashcards } from "../../hooks/print";
 
 export type WordListItem = {
     base_language: string,

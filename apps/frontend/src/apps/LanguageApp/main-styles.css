@@ -11,16 +11,51 @@
     color: var(--section-header-color);
 }
 
-.storyLessonCard {
-    background-color: var(--story-lesson-color);
-    color: var(--card-text-color);
-    margin-right: 7px;
-}
-
-.flashCardLessonCard {
+.topic-container-card {
     background-color: var(--flashcard-lesson-color);
     color: var(--card-text-color);
-    margin-right: 7px;
+    border-radius: 10px;
+    text-align: center;
+    height: 110px;
+    min-width: 85px;
+    margin: 3px 10px 3px 0px;
+}
+
+.change-this {
+    padding: 5px 5px 0 5px;
+}
+
+.card-label-flashcard {
+    color: black;
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0px 3px 0px;
+}
+
+.card-label-story {
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0px 3px 0px;
+}
+
+.card-label-lesson {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0px 3px 0px;
+}
+
+.card-label-wordlist {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(146, 98, 218);
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0px 3px 0px;
 }
 
 .customLessonCard {

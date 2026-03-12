@@ -2,7 +2,7 @@
 // ALSO I KNOW THE IMAGES ARE TERRIBLE AI SLOP - I wouldn't let this fly if I wasn't experimenting
 
 import { useState } from "react"
-import useLanguage from "../hooks/useLanguage"
+import useLanguage from "../../hooks/useLanguage"
 import { useParams } from "react-router-dom";
 
 const pictureInput = {

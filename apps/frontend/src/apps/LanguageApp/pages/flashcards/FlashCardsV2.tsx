@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import useLanguage from "../hooks/useLanguage";
+import useLanguage from "../../hooks/useLanguage";
 import { useParams } from "react-router-dom";
 import "./flashcards.css"
-import { addToDeck, getMyDeck } from "../hooks/useDecklist";
+import { addToDeck, getMyDeck } from "../../hooks/useDecklist";
 
 const FlashCardsV2 = () => {
     const { language, lessonId, section } = useParams();

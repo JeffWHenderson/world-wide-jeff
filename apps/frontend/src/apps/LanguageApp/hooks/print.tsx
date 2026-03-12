@@ -1,5 +1,5 @@
 import { renderToString } from 'react-dom/server';
-import { WordListItem } from '../components/WordList';
+import { WordListItem } from '../pages/wordlist/WordList';
 
 export const buildPrintableFlashcards = (wordList: WordListItem[]) => {
     const printableFlashCards = () => {

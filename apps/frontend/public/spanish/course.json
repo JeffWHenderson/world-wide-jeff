@@ -7,8 +7,18 @@
             "lessons": [
                 {
                     "filename": "__wordList__.json",
-                    "name": "word list",
+                    "name": "Wordlist",
                     "type": "wordlist"
+                },
+                {
+                    "filename": "nouns_gender.html",
+                    "name": "Nouns in Spanish",
+                    "type": "lesson"
+                },
+                {
+                    "filename": "verbs_present.html",
+                    "name": "Verbs in spanish",
+                    "type": "lesson"
                 },
                 {
                 "filename": "everydayExpressions.json",
@@ -38,7 +48,7 @@
             "lessons": [
                 {
                     "filename": "__wordList__.json",
-                    "name": "word list",
+                    "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {
@@ -128,7 +138,7 @@
                 },
                 {
                     "filename": "paella.json",
-                    "name": "My recipe for paella",
+                    "name": "My paella recipe",
                     "type": "story"
                 }
             ]
@@ -139,7 +149,7 @@
             "lessons": [
                 {
                     "filename": "__wordList__.json",
-                    "name": "word list",
+                    "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {
@@ -185,7 +195,7 @@
             "lessons": [
                 {
                     "filename": "__wordList__.json",
-                    "name": "word list",
+                    "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {
@@ -226,7 +236,7 @@
             "lessons": [
                 {
                     "filename": "__wordList__.json",
-                    "name": "word list",
+                    "name": "Wordlist",
                     "type": "wordlist"
                 },
                                 {
@@ -267,7 +277,7 @@
             "lessons": [
                 {
                     "filename": "__wordList__.json",
-                    "name": "word list",
+                    "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {

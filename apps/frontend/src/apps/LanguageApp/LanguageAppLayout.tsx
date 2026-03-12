@@ -1,14 +1,14 @@
 import { Outlet, Link } from "react-router-dom";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../common/ThemeContext"
+import "./main-styles.css"
 
-const Layout = () => {
+const LanguageAppLayout = () => {
     const { theme, toggleTheme } = useTheme();
-
     return (
         <div style={{ width: '100%', height: '100vh' }}>
             <div style={{ display: "flex", backgroundColor: "black", height: '10vh', width: '100vw', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div style={{ fontSize: "1.7em", color: 'white' }}>World Wide Jeff</div>
-                <button onClick={toggleTheme}>
+                <button style={{ color: 'white' }} onClick={toggleTheme}>
                     {theme === 'light' ? 'Dark' : 'Light'} Mode
                 </button>
             </div>
@@ -16,16 +16,15 @@ const Layout = () => {
             <div style={{ display: "flex", backgroundColor: "black", height: '5vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'space-between' }}>
                 <nav>
                     <Link style={{ padding: "0 5px 0 0" }} to="/">Home</Link>
-                    <Link style={{ padding: "0 5px 0 0" }} to="/pickleball">Pickleball</Link>
+                    {/* <Link style={{ padding: "0 5px 0 0" }} to="/pickleball">Pickleball</Link> */}
                     {/* <Link style={{ padding: "0 5px 0 0" }} to="/wallerverse">Wallerverse</Link> */}
                     <Link style={{ padding: "0 5px 0 0" }} to="/language-app">Language-App</Link>
                     <Link to="/contact">Contact</Link>
                 </nav>
             </div>
-
             <Outlet />
         </div>
     )
 };
 
-export default Layout;
+export default LanguageAppLayout;

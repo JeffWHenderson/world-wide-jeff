@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { AvailableLanguages } from "./LanguageTypes";
+import { AvailableLanguages } from "./common/LanguageTypes";
 import "./main-styles.css";
 
 const LanguageAppHome = () => {
