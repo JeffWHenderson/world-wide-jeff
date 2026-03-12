@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import useLanguage from '../hooks/useLanguage';
 import { Expression } from '../LanguageTypes';
+import { LanguageSettingsContext } from './LanguageSettingsProvider';
 
 const HighlightedText = ({ text, from, to }: any) => {
   const [start, highlight, finish] = splitText(text, from, to);
@@ -25,7 +26,6 @@ const StoryReader = () => {
   const { language, lessonId, section } = useParams();
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState('false');
-  const [speakingRate] = useState(1)
   const [voice] = useLanguage(language as string)
   const [lesson, setLesson] = useState<any>(null)
   const [counter, setCounter] = useState(0);
@@ -34,6 +34,8 @@ const StoryReader = () => {
     from: 0,
     to: 0
   });
+
+  const settings = useContext(LanguageSettingsContext)
 
   useEffect(() => {
     fetch(`/${language}/modules/${section}/stories/${lessonId}`)
@@ -54,7 +56,7 @@ const StoryReader = () => {
     setShowPopup(lesson.sentences[index].target_language)
     const speechUtterance = new SpeechSynthesisUtterance()
     speechUtterance.voice = voice as SpeechSynthesisVoice
-    speechUtterance.rate = speakingRate
+    speechUtterance.rate = settings.speed
     const newIndex = index + 1
 
     speechUtterance.text = lesson.sentences[index].target_language
