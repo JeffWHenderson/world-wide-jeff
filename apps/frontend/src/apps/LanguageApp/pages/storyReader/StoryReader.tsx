@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import useLanguage from '../../hooks/useLanguage';
 import { Expression } from '../../common/LanguageTypes';
+import './story-reader.css'
 
 const HighlightedText = ({ text, from, to }: any) => {
   const [start, highlight, finish] = splitText(text, from, to);
@@ -25,7 +26,7 @@ const StoryReader = () => {
   const { language, lessonId, section } = useParams();
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState('false');
-  const [speakingRate] = useState(1)
+  const [speakingRate, setSpeakingRate] = useState(1.0)
   const [voice] = useLanguage(language as string)
   const [lesson, setLesson] = useState<any>(null)
   const [counter, setCounter] = useState(0);
@@ -87,6 +88,14 @@ const StoryReader = () => {
     navigate(-1); // Navigates to the previous page in the history stack
   };
 
+  const changeSpeakingRate = (addOrSubtract: string) => {
+    if (addOrSubtract === 'add' && speakingRate <= 2) {
+      setSpeakingRate(speakingRate + 0.1)
+    }
+    if (addOrSubtract === 'subtract' && speakingRate >= .2) {
+      setSpeakingRate(speakingRate - 0.1)
+    }
+  }
 
   return <div className='story-container'>
     <div className='story-page'>
@@ -129,8 +138,15 @@ const StoryReader = () => {
           </div>
         ))
       }
-      <div className="fixed-element">
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div className="fixed-player-container">
+        <div className="player-container-top">
+          <div>speaking rate</div>
+          <div className="speed-control">
+            <button onClick={() => changeSpeakingRate('subtract')}>-</button>
+            {speakingRate.toFixed(1)}
+            <button onClick={() => changeSpeakingRate('add')}>+</button></div>
+        </div>
+        <div className="player-controls">
           <button onClick={() => handleGoBack()} >go back</button>
           <button onClick={() => playOrPause(counter)}>{'play all / pause'}</button>
           <button onClick={() => read(counter, false)}>playNext</button>

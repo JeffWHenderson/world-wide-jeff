@@ -1,0 +1,57 @@
+.story-container {
+    padding-left: 10px;
+    flex: 1;
+    justify-content: center;
+    align-content: space-around;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.story-page {
+    padding-top: 18px;
+    width: 100vw;
+    max-width: 900px;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+.player-container-top {
+    background-color: lightgray;
+    max-width: 130px;
+}
+
+.fixed-player-container {
+    width: 80%;
+    max-width: 800px;
+    position: fixed;
+    bottom: 25px;
+    padding: 8px;
+    left: 50%;
+    /* Moves the left edge of the element to the horizontal center of the viewport */
+    transform: translateX(-50%);
+    /* Moves the element back by half of its own width */
+}
+
+.player-container-top {
+    text-align: center;
+    background-color: lightgray;
+    max-width: 135px;
+    color: black;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+}
+
+.speed-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 10px;
+}
