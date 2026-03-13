@@ -58,12 +58,13 @@ const LanguageLearningApp = () => {
                             <div style={{ display: "flex" }}>
                                 {level.lessons.map((lesson: any) => (
                                     lesson.type !== 'story' &&
-                                    <div className="topic-container-card">
+                                    <div className="topic-container-card"
+                                        onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
                                         <div className={lesson.type === 'lesson' ? "card-label-lesson" : (lesson.type === 'flashcards' ? "card-label-flashcard" : "card-label-wordlist")}>{lesson.type}</div>
                                         <div
                                             key={lesson.filename}
                                             className="change-this"
-                                            onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
+                                        >
                                             {lesson.name}
                                         </div>
                                     </div>
@@ -75,12 +76,13 @@ const LanguageLearningApp = () => {
                             <div style={{ display: "flex", height: '100%' }}>
                                 {level.lessons.map((lesson: any) => (
                                     lesson.type === 'story' &&
-                                    <div className="topic-container-card">
+                                    <div className="topic-container-card"
+                                        onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
                                         <div className="card-label-story">{lesson.type}</div>
                                         <div
                                             key={lesson.filename}
                                             className="change-this"
-                                            onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
+                                        >
                                             {lesson.name}
                                         </div>
                                     </div>

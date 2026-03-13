@@ -12,18 +12,33 @@
                 },
                 {
                     "filename": "nouns_gender.html",
-                    "name": "Nouns in Spanish",
+                    "name": "Nouns and gender",
                     "type": "lesson"
                 },
                 {
                     "filename": "verbs_present.html",
-                    "name": "Verbs in spanish",
+                    "name": "Into to verbs",
                     "type": "lesson"
                 },
                 {
                 "filename": "everydayExpressions.json",
                     "name": "Everyday Expressions",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "to_be.html",
+                    "name": "TO BE",
+                    "type": "lesson"
+                },
+                {
+                    "filename": "reflexive_verbs.html",
+                    "name": "reflixive verbs",
+                    "type": "lesson"
+                },
+                {
+                    "filename": "reflexive_pronouns.html",
+                    "name": "Reflexive Pronouns",
+                    "type": "lesson"
                 },
                 {
                 "filename": "meetJeff.json",
@@ -302,7 +317,7 @@
                 }
             ]
         },
-                {
+        {
             "level_id": "aliceInWonderland",
             "level_name": "Alice In Wonderland",
             "lessons": [
