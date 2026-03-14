@@ -168,6 +168,11 @@
                     "type": "wordlist"
                 },
                 {
+                    "filename": "holy_trinity.html",
+                    "name": "Verbs: Holy Trinity",
+                    "type": "lesson"
+                },
+                {
                     "filename": "moodsAndEmotion_estarPresentTense.json",
                     "name": "Present tense 1 (to be)",
                     "type": "flashcards"
