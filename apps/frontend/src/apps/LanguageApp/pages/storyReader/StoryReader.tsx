@@ -99,7 +99,7 @@ const StoryReader = () => {
 
   return <div className='story-container'>
     <div className='story-page'>
-      {lesson && <h2>{lesson.name}</h2>}
+      <div style={{ marginBottom: '60px' }}>{lesson && <h2>{lesson.name}</h2>}</div>
       {
         lesson &&
         lesson.sentences.map((sentence: Expression, index: number) => (
@@ -139,12 +139,14 @@ const StoryReader = () => {
         ))
       }
       <div className="fixed-player-container">
-        <div className="player-container-top">
-          <div>speaking rate</div>
-          <div className="speed-control">
-            <button onClick={() => changeSpeakingRate('subtract')}>-</button>
-            {speakingRate.toFixed(1)}
-            <button onClick={() => changeSpeakingRate('add')}>+</button></div>
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <div className="player-container-top">
+            <div>speaking rate</div>
+            <div className="speed-control">
+              <button onClick={() => changeSpeakingRate('subtract')}>-</button>
+              {speakingRate.toFixed(1)}
+              <button onClick={() => changeSpeakingRate('add')}>+</button></div>
+          </div>
         </div>
         <div className="player-controls">
           <button onClick={() => handleGoBack()} >go back</button>
