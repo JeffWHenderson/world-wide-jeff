@@ -49,7 +49,7 @@ const LanguageLearningApp = () => {
 
     return (
         <>
-            <div style={{ maxWidth: '100vw' }}>
+            <div style={{ paddingLeft: '8px', maxWidth: '100vw' }}>
                 <div>
                     <h2 className="course-header">{course?.course_name}</h2>
                 </div>
@@ -89,17 +89,6 @@ const LanguageLearningApp = () => {
                                         </div>
                                     </div>
                                 ))}
-                                {/* TODO: just testing this out */}
-                                {level.level_id === "foodAndDrink" ?
-                                    <button
-                                        style={{ color: 'white' }}
-                                        key={"fill me out"}
-                                        onClick={() => navigator('/language-app/spanish/picture-review/foodAndDrink')}>
-                                        Practice Speaking (TEST FEATURE)
-                                    </button>
-                                    : null
-                                }
-                                {/* END TEST CODE */}
                             </div>
                         </div>
                     </div>

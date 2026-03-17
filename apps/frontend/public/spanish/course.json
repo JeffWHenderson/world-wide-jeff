@@ -22,7 +22,7 @@
                 },
                 {
                     "filename": "everydayPhrases02",
-                    "name": "Practice speaking 1",
+                    "name": "Test Feature",
                     "type": "speaking"
                 },
                 {
@@ -34,21 +34,6 @@
                     "filename": "toBe.json",
                     "name": "TO BE",
                     "type": "flashcards"
-                },
-                {
-                    "filename": "verbs_present.html",
-                    "name": "Into to verbs",
-                    "type": "lesson"
-                },            
-                {
-                    "filename": "reflexive_verbs.html",
-                    "name": "reflixive verbs",
-                    "type": "lesson"
-                },
-                {
-                    "filename": "reflexive_pronouns.html",
-                    "name": "Reflexive Pronouns",
-                    "type": "lesson"
                 },
                 {
                 "filename": "meetJeff.json",
@@ -76,6 +61,11 @@
                     "name": "Wordlist",
                     "type": "wordlist"
                 },
+                                {
+                    "filename": "verbs_present.html",
+                    "name": "Into to verbs",
+                    "type": "lesson"
+                },            
                 {
                     "filename": "verbs_presentTense.json",
                     "name": "Present tense 1",
@@ -100,6 +90,11 @@
                     "filename": "verbs_preteriteTwo.json",
                     "name": "Past tense 2",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "reflexive_pronouns.html",
+                    "name": "Reflexive Pronouns",
+                    "type": "lesson"
                 },
                 {
                     "filename": "comparison.json",
@@ -136,6 +131,11 @@
                     "name": "colors & small numbers",
                     "type": "flashcards"
                 },
+                                {
+                    "filename": "reflexive_verbs.html",
+                    "name": "reflexive verbs",
+                    "type": "lesson"
+                },
                 {
                     "filename": "verbs_infinitives.json",
                     "name": "Infinitive forms",
@@ -145,6 +145,11 @@
                     "filename": "stuffIMissed.json",
                     "name": "Stuff I missed",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "foodAndDrink",
+                    "name": "Test Feature",
+                    "type": "speaking"
                 },
                 {
                     "filename": "tacosOrPizza.json",
