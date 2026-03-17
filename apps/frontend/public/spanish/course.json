@@ -6,17 +6,17 @@
             "level_name": "Common Everyday Phrases",
             "lessons": [
                 {
-                    "filename": "__wordList__.json",
+                    "filename": "__wordList__",
                     "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {
-                    "filename": "nouns_gender.html",
+                    "filename": "nouns_gender",
                     "name": "Nouns and gender",
                     "type": "lesson"
                 },
                 {
-                "filename": "everydayExpressions.json",
+                "filename": "everydayExpressions",
                     "name": "Everyday Expressions",
                     "type": "flashcards"
                 },
@@ -26,27 +26,27 @@
                     "type": "speaking"
                 },
                 {
-                    "filename": "to_be.html",
+                    "filename": "to_be",
                     "name": "TO BE",
                     "type": "lesson"
                 },
                 {
-                    "filename": "toBe.json",
+                    "filename": "toBe",
                     "name": "TO BE",
                     "type": "flashcards"
                 },
                 {
-                "filename": "meetJeff.json",
+                "filename": "meetJeff",
                     "name": "Meet Jeff",
                     "type": "story"
                 },
                 {
-                "filename": "meetSeth.json",
+                "filename": "meetSeth",
                     "name": "Meet Seth",
                     "type": "story"
                 },
                 {
-                "filename": "badBunny.json",
+                "filename": "badBunny",
                     "name": "Bad Bunny",
                     "type": "story"
                 }
@@ -57,92 +57,92 @@
             "level_name": "Food and Drink",
             "lessons": [
                 {
-                    "filename": "__wordList__.json",
+                    "filename": "__wordList__",
                     "name": "Wordlist",
                     "type": "wordlist"
                 },
                                 {
-                    "filename": "verbs_present.html",
+                    "filename": "verbs_present",
                     "name": "Into to verbs",
                     "type": "lesson"
                 },            
                 {
-                    "filename": "verbs_presentTense.json",
+                    "filename": "verbs_presentTense",
                     "name": "Present tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_presentTenseTwo.json",
+                    "filename": "verbs_presentTenseTwo",
                     "name": "Present tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "adjectives.json",
+                    "filename": "adjectives",
                     "name": "Adjectives",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_preterite.json",
+                    "filename": "verbs_preterite",
                     "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_preteriteTwo.json",
+                    "filename": "verbs_preteriteTwo",
                     "name": "Past tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "reflexive_pronouns.html",
+                    "filename": "reflexive_pronouns",
                     "name": "Reflexive Pronouns",
                     "type": "lesson"
                 },
                 {
-                    "filename": "comparison.json",
+                    "filename": "comparison",
                     "name": "Comparing things",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_future.json",
+                    "filename": "verbs_future",
                     "name": "Future tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_futureTwo.json",
+                    "filename": "verbs_futureTwo",
                     "name": "Future tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "objectPronouns.json",
+                    "filename": "objectPronouns",
                     "name": "Object Pronouns",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_imperfect.json",
+                    "filename": "verbs_imperfect",
                     "name": "Imperfect tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "verbs_imperfectTwo.json",
+                    "filename": "verbs_imperfectTwo",
                     "name": "Imperfect tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "colorAndSmallNumbers.json",
+                    "filename": "colorAndSmallNumbers",
                     "name": "colors & small numbers",
                     "type": "flashcards"
                 },
                                 {
-                    "filename": "reflexive_verbs.html",
+                    "filename": "reflexive_verbs",
                     "name": "reflexive verbs",
                     "type": "lesson"
                 },
                 {
-                    "filename": "verbs_infinitives.json",
+                    "filename": "verbs_infinitives",
                     "name": "Infinitive forms",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "stuffIMissed.json",
+                    "filename": "stuffIMissed",
                     "name": "Stuff I missed",
                     "type": "flashcards"
                 },
@@ -152,22 +152,22 @@
                     "type": "speaking"
                 },
                 {
-                    "filename": "tacosOrPizza.json",
+                    "filename": "tacosOrPizza",
                     "name": "Whats for dinner",
                     "type": "story"
                 },
                 {
-                    "filename": "beanAteChocolate.json",
+                    "filename": "beanAteChocolate",
                     "name": "Bean Ate Chocolate",
                     "type": "story"
                 },
                 {
-                    "filename": "aNiceRestaurant.json",
+                    "filename": "aNiceRestaurant",
                     "name": "Table for 3",
                     "type": "story"
                 },
                 {
-                    "filename": "paella.json",
+                    "filename": "paella",
                     "name": "My paella recipe",
                     "type": "story"
                 }
@@ -178,47 +178,47 @@
             "level_name": "Moods and Emotions",
             "lessons": [
                 {
-                    "filename": "__wordList__.json",
+                    "filename": "__wordList__",
                     "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {
-                    "filename": "holy_trinity.html",
+                    "filename": "holy_trinity",
                     "name": "Verbs: Holy Trinity",
                     "type": "lesson"
                 },
                 {
-                    "filename": "moodsAndEmotion_estarPresentTense.json",
+                    "filename": "moodsAndEmotion_estarPresentTense",
                     "name": "Present tense 1 (to be)",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "moodsAndEmotion_estarPresentTenseTwo.json",
+                    "filename": "moodsAndEmotion_estarPresentTenseTwo",
                     "name": "Present tense 2 (to be)",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "pastTense.json",
+                    "filename": "pastTense",
                     "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "pastTense2.json",
+                    "filename": "pastTense2",
                     "name": "Past tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "futureTense.json",
+                    "filename": "futureTense",
                     "name": "Future tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "futureTense2.json",
+                    "filename": "futureTense2",
                     "name": "Future tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "sean.json",
+                    "filename": "sean",
                     "name": "Sean has feelings",
                     "type": "story"
                 }
@@ -229,37 +229,37 @@
             "level_name": "Common Places and Direction",
             "lessons": [
                 {
-                    "filename": "__wordList__.json",
+                    "filename": "__wordList__",
                     "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {
-                    "filename": "presentTense.json",
+                    "filename": "presentTense",
                     "name": "Present Tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "presentTense2.json",
+                    "filename": "presentTense2",
                     "name": "Present Tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "pastTense.json",
+                    "filename": "pastTense",
                     "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "pastTense2.json",
+                    "filename": "pastTense2",
                     "name": "Past tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "futureTense.json",
+                    "filename": "futureTense",
                     "name": "Future tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "futureTense2.json",
+                    "filename": "futureTense2",
                     "name": "Future tense 2",
                     "type": "flashcards"
                 }
@@ -270,37 +270,37 @@
             "level_name": "Body and health",
             "lessons": [
                 {
-                    "filename": "__wordList__.json",
+                    "filename": "__wordList__",
                     "name": "Wordlist",
                     "type": "wordlist"
                 },
                                 {
-                    "filename": "presentTense.json",
+                    "filename": "presentTense",
                     "name": "Present Tense 1",
                     "type": "flashcards"
                 },
                                 {
-                    "filename": "presentTense2.json",
+                    "filename": "presentTense2",
                     "name": "Present Tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "pastTense.json",
+                    "filename": "pastTense",
                     "name": "Past tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "pastTense2.json",
+                    "filename": "pastTense2",
                     "name": "Past tense 2",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "futureTense.json",
+                    "filename": "futureTense",
                     "name": "Future tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "futureTense2.json",
+                    "filename": "futureTense2",
                     "name": "Future tense 2",
                     "type": "flashcards"
                 }
@@ -311,27 +311,27 @@
             "level_name": "Jobs and Hobbies",
             "lessons": [
                 {
-                    "filename": "__wordList__.json",
+                    "filename": "__wordList__",
                     "name": "Wordlist",
                     "type": "wordlist"
                 },
                 {
-                    "filename": "presentTense.json",
+                    "filename": "presentTense",
                     "name": "Present Tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "pastTense.json",
+                    "filename": "pastTense",
                     "name": "Past Tense 1",
                     "type": "flashcards"
                 },
                 {
-                    "filename": "futureTense.json",
+                    "filename": "futureTense",
                     "name": "Future Tense 1",
                     "type": "flashcards"
                 },
                                 {
-                    "filename": "audrey.json",
+                    "filename": "audrey",
                     "name": "Audrey's hobbies",
                     "type": "story"
                 }
@@ -342,12 +342,12 @@
             "level_name": "Alice In Wonderland",
             "lessons": [
                 {
-                    "filename": "chapter_1.json",
+                    "filename": "chapter_1",
                     "name": "Down the rabbit hole",
                     "type": "story"
                 },
                 {
-                    "filename": "chapter_2.json",
+                    "filename": "chapter_2",
                     "name": "The Pool of Tears",
                     "type": "story"
                 }

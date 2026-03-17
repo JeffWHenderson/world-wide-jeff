@@ -37,7 +37,7 @@ const StoryReader = () => {
   });
 
   useEffect(() => {
-    fetch(`/${language}/modules/${section}/stories/${lessonId}`)
+    fetch(`/${language}/modules/${section}/stories/${lessonId}.json`)
       .then(res => res.json())
       .then(data => { console.log(data); setLesson(data) })
       .catch(err => console.error(err))
