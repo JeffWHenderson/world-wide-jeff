@@ -29,17 +29,23 @@ const WordList = () => {
             </div>
             <br />
             <ul className="word-list">
-                {wordList.map((listItem: WordListItem) => (
-                    <div style={{ marginBottom: '4px' }}>
-                        <div>
-                            <div style={{ display: 'flex' }}>
-                                <button style={{ marginRight: '10px' }} onClick={() => addToDeck(listItem, `${section}-custom-deck`)} >+</button>
-                                <pre><strong>{listItem.base_language}</strong>  |  <strong>{listItem.target_language}</strong></pre>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+                <table>
+                    <thead>
+                        <tr >
+                            <th>English</th>
+                            <th>{language}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {wordList.map((listItem: WordListItem) => (
+                            <tr>
 
+                                <td style={{ border: '1px solid black' }}> <button style={{ marginRight: '10px' }} onClick={() => addToDeck(listItem, `${section}-custom-deck`)} >+</button>{listItem.base_language}</td>
+                                <td style={{ textAlign: 'center', border: '1px solid black', padding: '3px' }}>{listItem.target_language}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </ul>
         </div>
     </>
