@@ -16,20 +16,30 @@
                     "type": "lesson"
                 },
                 {
-                    "filename": "verbs_present.html",
-                    "name": "Into to verbs",
-                    "type": "lesson"
-                },
-                {
                 "filename": "everydayExpressions.json",
                     "name": "Everyday Expressions",
                     "type": "flashcards"
+                },
+                {
+                    "filename": "everydayPhrases02",
+                    "name": "Practice speaking 1",
+                    "type": "speaking"
                 },
                 {
                     "filename": "to_be.html",
                     "name": "TO BE",
                     "type": "lesson"
                 },
+                {
+                    "filename": "toBe.json",
+                    "name": "TO BE",
+                    "type": "flashcards"
+                },
+                {
+                    "filename": "verbs_present.html",
+                    "name": "Into to verbs",
+                    "type": "lesson"
+                },            
                 {
                     "filename": "reflexive_verbs.html",
                     "name": "reflixive verbs",

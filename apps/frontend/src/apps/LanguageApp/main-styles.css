@@ -21,11 +21,16 @@
     margin: 3px 10px 3px 0px;
 }
 
+.topic-container-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 .change-this {
     padding: 5px 5px 0 5px;
 }
 
-.card-label-flashcard {
+.card-label-flashcards {
     color: black;
     width: 100%;
     text-align: center;
@@ -54,6 +59,15 @@
     width: 100%;
     text-align: center;
     background-color: rgb(146, 98, 218);
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0px 3px 0px;
+}
+
+.card-label-speaking {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
     border-radius: 10px 10px 0 0;
     padding: 5px 0px 3px 0px;
 }

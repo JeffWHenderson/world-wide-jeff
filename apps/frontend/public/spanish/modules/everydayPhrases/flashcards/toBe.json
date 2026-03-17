@@ -1,0 +1,70 @@
+{
+    "name": "ser & estar", 
+    "type": "flashcards", 
+    "sentences": [
+        {
+            "base_language": "I am a teacher.",
+            "target_language": "Yo soy profesor."
+        },
+        {
+            "base_language": "I am tired.",
+            "target_language": "Yo estoy cansado."
+        },
+        {
+            "base_language": "You are intelligent. (singular)",
+            "target_language": "Tú eres inteligente."
+        },
+            {
+            "base_language": "You are busy. (singular)",
+            "target_language": "Tú estás ocupado."
+        },
+        {
+            "base_language": "He is a doctor.",
+            "target_language": "Él es doctor."
+        },
+        {
+            "base_language": "He is happy.",
+            "target_language": "Él está feliz."
+        },
+        {
+            "base_language": "She is a student.",
+            "target_language": "Ella es estudiante."
+        },
+        {
+            "base_language": "She is sad.",
+            "target_language": "Ella está triste."
+        },
+        {
+            "base_language": "It is a book.",
+            "target_language": "Es un libro."
+        },
+        {
+            "base_language": "The book is on the table.",
+            "target_language": "El libro está en la mesa."
+        },
+        {
+            "base_language": "We are friends.",
+            "target_language": "Nosotros somos amigos."
+        },
+        {
+            "base_language": "We are at the park.",
+            "target_language": "Nosotros estamos en el parque."
+        },
+        {
+            "base_language": "You are funny. (plural)",
+            "target_language": "Vosotros sois graciosos."
+        },
+            {
+            "base_language": "You are busy. (plural)",
+            "target_language": "Vosotros estáis ocupados."
+        },
+        {
+            "base_language": "They are tall.",
+            "target_language": "Ellos son altos."
+        },
+        {
+            "base_language": "They are at home.",
+            "target_language": "Ellos están en casa."
+        }
+    ]
+}

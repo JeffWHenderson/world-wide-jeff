@@ -26,6 +26,8 @@ const LanguageLearningApp = () => {
             navigator(`my-decks/${level_id}/custom-deck`)
         } else if (lessonType === 'lesson') {
             navigator(`view-lesson/${lesson.filename}`)
+        } else if (lessonType === 'speaking') {
+            navigator(`picture-review/${lesson.filename}`)
         } else {
             alert("The developer screwed up if this didn't work")
         }
@@ -60,7 +62,7 @@ const LanguageLearningApp = () => {
                                     lesson.type !== 'story' &&
                                     <div className="topic-container-card"
                                         onClick={() => handleSelectStory(lesson.type, lesson, level.level_id)}>
-                                        <div className={lesson.type === 'lesson' ? "card-label-lesson" : (lesson.type === 'flashcards' ? "card-label-flashcard" : "card-label-wordlist")}>{lesson.type}</div>
+                                        <div className={`card-label-${lesson.type}`}>{lesson.type}</div>
                                         <div
                                             key={lesson.filename}
                                             className="change-this"
