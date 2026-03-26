@@ -4,6 +4,7 @@
 import { useEffect, useState } from "react"
 import useLanguage from "../../hooks/useLanguage"
 import { useParams } from "react-router-dom";
+import './picturePopUp.css'
 
 const PicturePopUp = () => {
     // OKAY HERE ME OUT, I'm going to make this a story type thing that has a moving marker to help identify what is the subject... its going to be so cool

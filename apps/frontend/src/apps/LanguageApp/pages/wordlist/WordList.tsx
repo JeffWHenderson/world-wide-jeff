@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { addToDeck } from "../../hooks/useDecklist";
 import { buildPrintableFlashcards } from "../../hooks/print";
+import './wordList.css'
 
 export type WordListItem = {
     base_language: string,
@@ -28,25 +29,23 @@ const WordList = () => {
                 <div style={{ marginLeft: '10px' }}> this is printable so you can reference without a stupid computer</div>
             </div>
             <br />
-            <ul className="word-list">
-                <table>
-                    <thead>
-                        <tr >
-                            <th>English</th>
-                            <th>{language}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {wordList.map((listItem: WordListItem) => (
-                            <tr>
+            <table>
+                <thead>
+                    <tr >
+                        <th>English</th>
+                        <th>{language}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {wordList.map((listItem: WordListItem) => (
+                        <tr>
 
-                                <td style={{ border: '1px solid black' }}> <button style={{ marginRight: '10px' }} onClick={() => addToDeck(listItem, `${section}-custom-deck`)} >+</button>{listItem.base_language}</td>
-                                <td style={{ textAlign: 'center', border: '1px solid black', padding: '3px' }}>{listItem.target_language}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </ul>
+                            <td style={{ border: '1px solid black' }}> <button style={{ marginRight: '10px' }} onClick={() => addToDeck(listItem, `${section}-custom-deck`)} >+</button>{listItem.base_language}</td>
+                            <td style={{ textAlign: 'center', border: '1px solid black', padding: '3px' }}>{listItem.target_language}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     </>
 }
