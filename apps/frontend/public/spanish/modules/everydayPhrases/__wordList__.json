@@ -6,13 +6,16 @@
   { "base_language": "It", "target_language": "ello / lo" },
   { "base_language": "We", "target_language": "nosotros" },
   { "base_language": "They", "target_language": "ellos" },
+  
   { "base_language": "My", "target_language": "mi" },
   { "base_language": "Your", "target_language": "tu" },
   { "base_language": "His / Her", "target_language": "su" },
   { "base_language": "Our", "target_language": "nuestro" },
   { "base_language": "Their", "target_language": "su" },
+
   { "base_language": "Who", "target_language": "quién" },
   { "base_language": "What", "target_language": "qué" },
+
   { "base_language": "To be", "target_language": "ser / estar" },
   { "base_language": "To have", "target_language": "tener" },
   { "base_language": "To do / make", "target_language": "hacer" },
@@ -35,6 +38,7 @@
   { "base_language": "To speak (to talk)", "target_language": "hablar" },
   { "base_language": "To give", "target_language": "dar" },
   { "base_language": "To take", "target_language": "tomar / llevar" },
+
   { "base_language": "In / on / at", "target_language": "en" },
   { "base_language": "Inside", "target_language": "dentro" },
   { "base_language": "On top of", "target_language": "en / sobre" },
@@ -52,19 +56,23 @@
   { "base_language": "Under", "target_language": "bajo" },
   { "base_language": "Near / close to", "target_language": "cerca" },
   { "base_language": "Far", "target_language": "lejos" },
+
   { "base_language": "Where", "target_language": "dónde" },
   { "base_language": "When", "target_language": "cuándo" },
   { "base_language": "Why", "target_language": "por qué" },
   { "base_language": "How", "target_language": "cómo" },
   { "base_language": "Which", "target_language": "cuál / que" },
+
   { "base_language": "And", "target_language": "y" },
   { "base_language": "Or", "target_language": "o" },
   { "base_language": "But", "target_language": "pero" },
   { "base_language": "Because", "target_language": "porque" },
   { "base_language": "If", "target_language": "si" },
+
   { "base_language": "That / which", "target_language": "que" },
   { "base_language": "This", "target_language": "este / esta" },
   { "base_language": "That (over there)", "target_language": "ese / esa / aquel" },
+
   { "base_language": "All", "target_language": "todo" },
   { "base_language": "Nothing / none", "target_language": "nada / ninguno" },
   { "base_language": "The good (one)", "target_language": "el bueno / lo bueno" },
@@ -77,6 +85,7 @@
   { "base_language": "The old one", "target_language": "el viejo / la vieja" },
   { "base_language": "The open one", "target_language": "el abierto / la abierta" },
   { "base_language": "The closed one", "target_language": "el cerrado / la cerrada" },
+
   { "base_language": "Much (many)", "target_language": "mucho" },
   { "base_language": "A little", "target_language": "un poco" },
   { "base_language": "A few", "target_language": "unos pocos" },
@@ -84,11 +93,13 @@
   { "base_language": "Less", "target_language": "menos" },
   { "base_language": "Very", "target_language": "muy" },
   { "base_language": "Also (too)", "target_language": "también" },
+
   { "base_language": "Now", "target_language": "ahora" },
   { "base_language": "Then", "target_language": "entonces" },
   { "base_language": "Later", "target_language": "luego" },
   { "base_language": "Always", "target_language": "siempre" },
   { "base_language": "Never", "target_language": "nunca" },
+
   { "base_language": "The person", "target_language": "la persona" },
   { "base_language": "The people", "target_language": "la gente" },
   { "base_language": "The thing", "target_language": "la cosa" },
