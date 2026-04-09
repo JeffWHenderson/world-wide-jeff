@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { EventDetails, hardCodedEvents } from "./EventTypes"
 
 const Events = () => {
-    const [selectedEvent, setSelectedEvent] = useState<EventDetails | null>(null)
+    const navigator = useNavigate()
+
 
     const displayDate = (date: "tbd" | Date) => {
         if (date === 'tbd') {
@@ -14,7 +15,7 @@ const Events = () => {
     }
 
     const handleOpenEventPage = (item: EventDetails) => {
-        setSelectedEvent(item);
+        navigator(`/events/${item.id}`);
     }
 
     const isCompleted = (startDate: string | Date) => {
@@ -22,26 +23,6 @@ const Events = () => {
             return startDate.getTime() < Date.now();
         }
         return false;
-    }
-
-    if (selectedEvent) {
-        return (
-            <>
-                <h1>{selectedEvent.name}</h1>
-                <p>{selectedEvent.startDate.toString()}</p>
-                <p>{selectedEvent.details}</p>
-                <p>{selectedEvent.status}</p>
-                {selectedEvent?.links?.length && selectedEvent?.links?.length > 0 &&
-                    <>
-                        <h3>Links</h3>
-                        <a href={selectedEvent.links[0].link}> {selectedEvent.links[0].linkDescription}</a>
-
-                    </>
-                }
-                <br /><br /><br />
-                <button onClick={() => setSelectedEvent(null)}>GO BACK!!!</button>
-            </>
-        )
     }
 
     return (

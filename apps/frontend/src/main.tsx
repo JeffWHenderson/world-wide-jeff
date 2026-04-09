@@ -18,6 +18,7 @@ import MyDecks from './apps/LanguageApp/hooks/MyDecks';
 import { ThemeProvider } from './apps/common/ThemeContext';
 import LanguageAppHome from './apps/LanguageApp/LanguageHome';
 import PicturePopUp from './apps/LanguageApp/pages/pictureLesson/PicturePopUp';
+import EventPage from './apps/worldWideJeff/Events/EventPage';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
 // import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
@@ -43,6 +44,7 @@ createRoot(document.getElementById('root')!).render(
             {/* <Route path="/wallerverse" element={<WallerverseHome />} /> */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/events/:eventId" element={<EventPage />} />
           </Route>
           <Route path="/language-app" element={<LanguageAppLayout />} >
             <Route index element={<LanguageAppHome />} />

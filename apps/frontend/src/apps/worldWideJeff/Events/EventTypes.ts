@@ -32,7 +32,7 @@ export const hardCodedEvents: EventDetails[] = [
         startDate: new Date("2025-12-12T12:00:00.000")
     },
     {
-        id: "02f854de-fdfc-486b-ab73-24ca6c6300bf",
+        id: "zombie_walk_2026",
         name: "zombie walk",
         details: "A beltline bar crawl with some sick zombie makeup",
         startDate: new Date("2026-04-11T12:00:00.000"),
