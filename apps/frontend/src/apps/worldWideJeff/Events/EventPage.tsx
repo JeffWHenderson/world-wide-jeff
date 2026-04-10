@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { hardCodedEvents } from "./EventTypes"
+import ZombieWalk from "./ZombieWalk";
 
 const EventPage = () => {
     const { eventId } = useParams();
@@ -9,7 +10,10 @@ const EventPage = () => {
         return event.id === eventId
     })
 
-
+    if (event?.id === "zombie_walk_2026") {
+        // TODO: this is just a hack so I can have a custom page here
+        return <ZombieWalk></ZombieWalk>
+    }
 
     return (<>
         {
