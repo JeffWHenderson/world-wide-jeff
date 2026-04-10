@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { AvailableLanguages } from "./common/LanguageTypes";
+// import { AvailableLanguages } from "./common/LanguageTypes";
 import "./main-styles.css";
 
 const LanguageAppHome = () => {
@@ -13,13 +13,18 @@ const LanguageAppHome = () => {
         <div style={{ color: '--text-color' }}>
             <h1>Welcome To My Language App</h1>
             <div style={{ display: 'flex', justifySelf: 'center', justifyContent: 'space-between', width: '90vw' }}>
-                {
+                <button style={{ color: 'white' }} onClick={() => goToLanguagePage('spanish')} key={'spanish'}>
+                    {"Go to spanish course ->"}
+                </button>
+                {/* TODO: only going to show spanish for a while cause I have a lot more work to do with the others
+                
+                { 
                     Object.values(AvailableLanguages).map(option => (
                         <button style={{ color: 'white' }} onClick={() => goToLanguagePage(option)} key={option}>
                             {option}
                         </button>
                     ))
-                }
+                } */}
             </div>
             <p>Its cool you are here and I'm happy</p>
             <h2>How do I start?</h2>
