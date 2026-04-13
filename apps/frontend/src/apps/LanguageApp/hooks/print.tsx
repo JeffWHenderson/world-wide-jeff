@@ -4,13 +4,21 @@ import { WordListItem } from '../pages/wordlist/WordList';
 export const buildPrintableFlashcards = (wordList: WordListItem[]) => {
     const printableFlashCards = () => {
         return <html>
-            <head><title>World Wide Jeff --  Cut cards on dotted line</title></head><body>
+            <head>
+                <title>World Wide Jeff --  Cut cards on dotted line</title>
+            </head>
+            <body style={{ margin: '0' }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start' }}>
                     {
                         wordList.map((phrase: WordListItem) => (
-                            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', breakInside: 'avoid', overflow: 'visible !important', pageBreakInside: 'avoid', padding: '5px', width: '150px', height: '80px', border: '1px dotted grey' }}>
-                                <div style={{ textAlign: 'center', borderBottom: '1px solid grey', paddingBottom: '10px', paddingTop: '10px' }}>{phrase.target_language}</div>
-                                <div style={{ textAlign: 'center', paddingTop: '10px' }}>{phrase.base_language}</div>
+                            <div style={{ display: 'flex', flexDirection: 'column', breakInside: 'avoid', pageBreakInside: 'avoid', width: '230px', height: '110px', border: '1px dotted grey' }}>
+                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', width: '100%', height: '50%', borderBottom: '1px solid grey' }}>
+                                    {phrase.romanized ? <div>{phrase.romanized}</div> : null}
+                                    <b>{phrase.target_language}</b>
+                                </div>
+                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', width: '100%', height: '50%' }}>
+                                    <b>{phrase.base_language}</b>
+                                </div>
                             </div>
                         ))
                     }
