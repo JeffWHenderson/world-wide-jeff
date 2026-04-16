@@ -148,6 +148,7 @@ const ZombieWalk: React.FC = () => {
                             <li>Meet at Ladybird</li>
                             <li>Drink</li>
                         </ol>
+                        <a href="https://www.tiktok.com/@katiefarhood/video/6889075121588292869">You can do makeup like this</a>
                     </div>
                 </div>
 
