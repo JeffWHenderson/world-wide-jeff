@@ -1,14 +1,14 @@
 /* TODO: --font-color and --text-color needs to be cleaned up */
 
 :root {
-  --text-color: #2d0606;
-  --background-color: #bcbceb;
-  --card-color: white;
-  --story-lesson-color: red;
-  --flashcard-lesson-color: rgb(246, 245, 245);
-  --card-text-color: black;
-  --section-header-color: black;
-  --course-header-color: white;
+  --text-color: #111;
+  --background-color: #e6e9ff;
+  --card-color: #fff;
+  --story-lesson-color: #d00000;
+  --flashcard-lesson-color: #fef9e6;
+  --card-text-color: #111;
+  --section-header-color: #000;
+  --course-header-color: #fff;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,19 +23,15 @@
 }
 
 [data-theme="dark"] {
+  --text-color: #f0f0f0;
+  --background-color: #0b0b1a;
+  --card-color: #1e1e30;
+  --story-lesson-color: #ff8888;
+  --flashcard-lesson-color: #aeaecf;
+  --card-text-color: black;
+  --section-header-color: #ddd;
+  --course-header-color: #0b0b1a;
   --background-color: rgb(41, 44, 44);
-  --card-text-color: black;
-  --section-header-color: blue;
-  --text-color: white;
-
-  --font-color: white;
-  --card-color: black;
-  /* --card-color: orange; */
-  --story-lesson-color: red;
-  --flashcard-lesson-color: lightgrey;
-  --card-text-color: black;
-  --section-header-color: white;
-  --course-header-color: white;
 }
 
 a {

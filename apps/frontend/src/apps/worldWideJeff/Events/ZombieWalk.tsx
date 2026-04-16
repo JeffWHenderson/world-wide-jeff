@@ -37,70 +37,70 @@ const ZombieWalk: React.FC = () => {
         return () => clearInterval(interval);
     }, [targetDate]);
 
-//     const addToCalendar = () => {
-//         const startDate = new Date(2026, 3, 25, 19, 0, 0);
-//         const endDate = new Date(2026, 3, 26, 1, 0, 0);
+    //     const addToCalendar = () => {
+    //         const startDate = new Date(2026, 3, 25, 19, 0, 0);
+    //         const endDate = new Date(2026, 3, 26, 1, 0, 0);
 
-//         const formatLocalForICS = (date: Date) => {
-//             const year = date.getFullYear();
-//             const month = (date.getMonth() + 1).toString().padStart(2, '0');
-//             const day = date.getDate().toString().padStart(2, '0');
-//             const hours = date.getHours().toString().padStart(2, '0');
-//             const minutes = date.getMinutes().toString().padStart(2, '0');
-//             const seconds = date.getSeconds().toString().padStart(2, '0');
-//             return `${year}${month}${day}T${hours}${minutes}${seconds}`;
-//         };
+    //         const formatLocalForICS = (date: Date) => {
+    //             const year = date.getFullYear();
+    //             const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    //             const day = date.getDate().toString().padStart(2, '0');
+    //             const hours = date.getHours().toString().padStart(2, '0');
+    //             const minutes = date.getMinutes().toString().padStart(2, '0');
+    //             const seconds = date.getSeconds().toString().padStart(2, '0');
+    //             return `${year}${month}${day}T${hours}${minutes}${seconds}`;
+    //         };
 
-//         const startStr = formatLocalForICS(startDate);
-//         const endStr = formatLocalForICS(endDate);
+    //         const startStr = formatLocalForICS(startDate);
+    //         const endStr = formatLocalForICS(endDate);
 
-//         const icsContent = `BEGIN:VCALENDAR
-// VERSION:2.0
-// PRODID:-//ZombieWalkATL//EN
-// BEGIN:VEVENT
-// UID:zombiewalk2026atl@event.com
-// DTSTAMP:${startStr}Z
-// DTSTART;TZID=America/New_York:${startStr}
-// DTEND;TZID=America/New_York:${endStr}
-// SUMMARY:🧟 Zombie Walk & Bar Crawl Atlanta 2026 🧟
-// DESCRIPTION:Join the undead horde! Starts at Ladybird (684 John Wesley Dobbs Ave NE). Bar crawl to multiple locations. Costume contest. 21+ event. Crawl begins at 7pm.
-// LOCATION:Ladybird Atlanta, 684 John Wesley Dobbs Ave NE, Atlanta, GA 30312
-// URL:https://zombiewalkatl.example
-// BEGIN:VALARM
-// TRIGGER:-PT30M
-// ACTION:DISPLAY
-// DESCRIPTION:Reminder: Zombie Walk starts in 30 minutes at Ladybird!
-// END:VALARM
-// END:VEVENT
-// END:VCALENDAR`;
+    //         const icsContent = `BEGIN:VCALENDAR
+    // VERSION:2.0
+    // PRODID:-//ZombieWalkATL//EN
+    // BEGIN:VEVENT
+    // UID:zombiewalk2026atl@event.com
+    // DTSTAMP:${startStr}Z
+    // DTSTART;TZID=America/New_York:${startStr}
+    // DTEND;TZID=America/New_York:${endStr}
+    // SUMMARY:🧟 Zombie Walk & Bar Crawl Atlanta 2026 🧟
+    // DESCRIPTION:Join the undead horde! Starts at Ladybird (684 John Wesley Dobbs Ave NE). Bar crawl to multiple locations. Costume contest. 21+ event. Crawl begins at 7pm.
+    // LOCATION:Ladybird Atlanta, 684 John Wesley Dobbs Ave NE, Atlanta, GA 30312
+    // URL:https://zombiewalkatl.example
+    // BEGIN:VALARM
+    // TRIGGER:-PT30M
+    // ACTION:DISPLAY
+    // DESCRIPTION:Reminder: Zombie Walk starts in 30 minutes at Ladybird!
+    // END:VALARM
+    // END:VEVENT
+    // END:VCALENDAR`;
 
-//         const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
-//         const link = document.createElement('a');
-//         const url = URL.createObjectURL(blob);
-//         link.href = url;
-//         link.download = 'Zombie_Walk_2026.ics';
-//         document.body.appendChild(link);
-//         link.click();
-//         document.body.removeChild(link);
-//         URL.revokeObjectURL(url);
+    //         const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    //         const link = document.createElement('a');
+    //         const url = URL.createObjectURL(blob);
+    //         link.href = url;
+    //         link.download = 'Zombie_Walk_2026.ics';
+    //         document.body.appendChild(link);
+    //         link.click();
+    //         document.body.removeChild(link);
+    //         URL.revokeObjectURL(url);
 
-//         // Show toast message
-//         const toast = document.createElement('div');
-//         toast.innerText = '📅 Reminder downloaded! Open file to add to your calendar.';
-//         toast.style.position = 'fixed';
-//         toast.style.bottom = '20px';
-//         toast.style.left = '20px';
-//         toast.style.backgroundColor = '#2c1a12';
-//         toast.style.color = '#ffddb0';
-//         toast.style.padding = '12px 20px';
-//         toast.style.borderRadius = '40px';
-//         toast.style.borderLeft = '5px solid #bc5a2c';
-//         toast.style.fontWeight = 'bold';
-//         toast.style.zIndex = '999';
-//         toast.style.backdropFilter = 'blur(8px)';
-//         document.body.appendChild(toast);
-//         setTimeout(() => toast.remove(), 3500);
-//     };
+    //         // Show toast message
+    //         const toast = document.createElement('div');
+    //         toast.innerText = '📅 Reminder downloaded! Open file to add to your calendar.';
+    //         toast.style.position = 'fixed';
+    //         toast.style.bottom = '20px';
+    //         toast.style.left = '20px';
+    //         toast.style.backgroundColor = '#2c1a12';
+    //         toast.style.color = '#ffddb0';
+    //         toast.style.padding = '12px 20px';
+    //         toast.style.borderRadius = '40px';
+    //         toast.style.borderLeft = '5px solid #bc5a2c';
+    //         toast.style.fontWeight = 'bold';
+    //         toast.style.zIndex = '999';
+    //         toast.style.backdropFilter = 'blur(8px)';
+    //         document.body.appendChild(toast);
+    //         setTimeout(() => toast.remove(), 3500);
+    //     };
 
     const formatNumber = (num: number) => (num < 10 ? `0${num}` : `${num}`);
 
@@ -108,7 +108,6 @@ const ZombieWalk: React.FC = () => {
         <div style={styles.container}>
             <div style={styles.hero}>
                 <h1 style={styles.eventTitle}>Zombie Walk 2026</h1>
-                <div style={styles.tagline}>Rise from the Grave & Crawl the Night Away</div>
                 <div style={styles.dateBadge}>📍 SATURDAY APRIL 25, 2026 · 7PM · 🧠 ATLANTA</div>
             </div>
 
@@ -133,7 +132,6 @@ const ZombieWalk: React.FC = () => {
                         <div style={styles.countdownLabel}>SECONDS</div>
                     </div>
                 </div>
-                <div style={styles.countdownCaption}>🧟‍♂️ until the undead gathering begins</div>
                 {isEventStarted && (
                     <div style={styles.eventStartedMessage}>
                         🧟 THE ZOMBIE WALK IS HAPPENING NOW! GET TO LADYBIRD 🧟
@@ -143,31 +141,22 @@ const ZombieWalk: React.FC = () => {
 
             <div style={styles.infoGrid}>
                 <div style={styles.infoCard}>
-                    <div style={styles.cardIcon}>🧟‍♀️</div>
-                    <h3 style={styles.cardTitle}>START POINT</h3>
-                    <p>
-                        <strong>Ladybird</strong>
-                        <br />
-                        📍 684 John Wesley Dobbs Ave NE, Atlanta, GA 30312
-                    </p>
-                    {/* <a
-                        href="https://maps.app.goo.gl/?q=Ladybird+Atlanta"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={styles.addressLink}
-                    >
-                        🗺️ get directions →
-                    </a> */}
-                    <p style={{ marginTop: '10px' }}> Walk starts <strong>7:00 PM</strong></p>
+                    <h3 style={styles.cardTitle}>Jeff, what is a Zombie Walk?</h3>
+                    <div style={{ textAlign: 'left' }}>
+                        <ol>
+                            <li>Put on zombie makeup</li>
+                            <li>Meet at Ladybird</li>
+                            <li>Drink</li>
+                        </ol>
+                    </div>
                 </div>
 
                 <div style={styles.infoCard}>
-                    <div style={styles.cardIcon}>🍻</div>
                     <h3 style={styles.cardTitle}>Celebrating</h3>
                     <div>
                         <div>Anushka's Birthday</div>
                         <div>Jeff's birthday</div>
-                        <div>other people?</div>
+                        <div>Anybody born in April or whenever</div>
                     </div>
                 </div>
             </div>
@@ -178,30 +167,23 @@ const ZombieWalk: React.FC = () => {
                     <div style={styles.step}>
                         <span style={styles.stepNumber}>1</span>
                         <span style={styles.stepContent}>
-                            <strong>SOMEWHERE TO START?</strong> – Meet, mingle & pre-game
-                        </span>
-                        <span style={styles.stepTime}>6:00p - 7:00p</span>
-                    </div>
-                    <div style={styles.step}>
-                        <span style={styles.stepNumber}>1</span>
-                        <span style={styles.stepContent}>
                             <strong>Ladybird</strong>
                         </span>
-                        <span style={styles.stepTime}>7:15p – 8:15p</span>
+                        <span style={styles.stepTime}>7:00p – 7:30p</span>
                     </div>
                     <div style={styles.step}>
                         <span style={styles.stepNumber}>2</span>
                         <span style={styles.stepContent}>
                             <strong>Painted Paek</strong>
                         </span>
-                        <span style={styles.stepTime}>8:30p – 9:45p</span>
+                        <span style={styles.stepTime}>7:45p – 8:30p</span>
                     </div>
                     <div style={styles.step}>
                         <span style={styles.stepNumber}>3</span>
                         <span style={styles.stepContent}>
-                            <strong>Etc Etc</strong>
+                            <strong>still figuring this part out</strong>
                         </span>
-                        <span style={styles.stepTime}>10:00p – 11:15p</span>
+                        <span style={styles.stepTime}>8:45p – 9:15p</span>
                     </div>
                 </div>
                 {/* <div style={styles.zombieGraffiti}>🧟‍♂️  🧠  🍺  🧟‍♀️  “DRAG YOUR LIMBS FROM BAR TO BAR”</div> */}

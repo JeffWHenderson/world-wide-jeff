@@ -35,7 +35,7 @@ export const hardCodedEvents: EventDetails[] = [
         id: "zombie_walk_2026",
         name: "zombie walk",
         details: "A beltline bar crawl with some sick zombie makeup",
-        startDate: new Date("2026-04-11T12:00:00.000"),
+        startDate: new Date("2026-04-25T19:00:00.000"),
         links: [{ linkDescription: "What to do", link: "https://www.google.com/search?q=zombie+makeup&oq=zombie+makeup&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDI0NDBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" }]
     },
     {
