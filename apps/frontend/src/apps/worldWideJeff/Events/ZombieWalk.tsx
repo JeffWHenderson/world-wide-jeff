@@ -111,7 +111,7 @@ const ZombieWalk: React.FC = () => {
                 <div style={styles.dateBadge}>📍 SATURDAY APRIL 25, 2026 · 7PM · 🧠 ATLANTA</div>
             </div>
 
-            <div style={styles.freeNote}>🧟‍♀️ FREE EVENT · BAR CRAWL STARTS AT LADYBIRD · APRIL 25, 2026 🧟‍♂️</div>
+            <div style={styles.freeNote}>🧟‍♀️ FREE EVENT · BAR CRAWL STARTS AT PAINTED PARK · APRIL 25, 2026 🧟‍♂️</div>
 
             <div style={styles.countdownWrapper}>
                 <div style={styles.countdown}>
@@ -134,7 +134,7 @@ const ZombieWalk: React.FC = () => {
                 </div>
                 {isEventStarted && (
                     <div style={styles.eventStartedMessage}>
-                        🧟 THE ZOMBIE WALK IS HAPPENING NOW! GET TO LADYBIRD 🧟
+                        🧟 THE ZOMBIE WALK IS HAPPENING NOW! GET TO PAINTED PARK 🧟
                     </div>
                 )}
             </div>
@@ -145,7 +145,7 @@ const ZombieWalk: React.FC = () => {
                     <div style={{ textAlign: 'left' }}>
                         <ol>
                             <li>Put on zombie makeup</li>
-                            <li>Meet at Ladybird</li>
+                            <li>Meet at Painted Park</li>
                             <li>Drink</li>
                         </ol>
                         <a href="https://www.tiktok.com/@katiefarhood/video/6889075121588292869">You can do makeup like this</a>
@@ -168,23 +168,31 @@ const ZombieWalk: React.FC = () => {
                     <div style={styles.step}>
                         <span style={styles.stepNumber}>1</span>
                         <span style={styles.stepContent}>
-                            <strong>Ladybird</strong>
+                            <strong>Painted Park</strong>
                         </span>
                         <span style={styles.stepTime}>7:00p – 7:30p</span>
                     </div>
                     <div style={styles.step}>
                         <span style={styles.stepNumber}>2</span>
                         <span style={styles.stepContent}>
-                            <strong>Painted Paek</strong>
+                            <strong>Ladybird</strong>
                         </span>
                         <span style={styles.stepTime}>7:45p – 8:30p</span>
                     </div>
                     <div style={styles.step}>
                         <span style={styles.stepNumber}>3</span>
                         <span style={styles.stepContent}>
-                            <strong>still figuring this part out</strong>
+                            <strong>Pour Taproom</strong>
                         </span>
                         <span style={styles.stepTime}>8:45p – 9:15p</span>
+                    </div>
+                    <div style={styles.step}>
+                        <span style={styles.stepNumber}>4</span>
+                        <span style={styles.stepContent}>
+                            <strong>97 Estoria</strong>
+                        </span>
+                        <br />
+                        <span style={styles.stepTime}>9:30p - Whenever</span>
                     </div>
                 </div>
                 {/* <div style={styles.zombieGraffiti}>🧟‍♂️  🧠  🍺  🧟‍♀️  “DRAG YOUR LIMBS FROM BAR TO BAR”</div> */}
