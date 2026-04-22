@@ -28,7 +28,7 @@ const StoryReader = () => {
     const router = useRouter();
     const [showPopup, setShowPopup] = useState('false');
     const [speakingRate, setSpeakingRate] = useState(1.0)
-    const [voice] = useLanguage(language as string)
+    const { selectedVoice: voice } = useLanguage(language as string)
     const [lesson, setLesson] = useState<any>(null)
     const [counter, setCounter] = useState(0);
     const [delay] = useState(.7)

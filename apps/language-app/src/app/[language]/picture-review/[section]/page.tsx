@@ -10,7 +10,7 @@ import '@/styles/picturePopUp.css';
 
 const PicturePopUp = () => {
     const { language, section } = useParams<{ language: string; section: string }>();
-    const [voice] = useLanguage(language as string)
+    const { selectedVoice: voice } = useLanguage(language as string)
     const [speechBubbles, setSpeechBubbles] = useState<any>(null)
     const [subtitle, setSubtitle] = useState<string | undefined>(undefined)
 

@@ -34,11 +34,12 @@ const useLanguage = (selectedLanguage: string) => {
         if (speechSynthesis.getVoices().length > 0) {
             pickVoice();
         } else {
-            speechSynthesis.onvoiceschanged = pickVoice;
+            speechSynthesis.addEventListener("voiceschanged", pickVoice);
+            return () => speechSynthesis.removeEventListener("voiceschanged", pickVoice);
         }
     }, [selectedLanguage]);
 
-    return [selectedVoice as SpeechSynthesisVoice, selectedLanguage as string] as const;
+    return { selectedVoice, setSelectedVoice };
 };
 
 export default useLanguage;
