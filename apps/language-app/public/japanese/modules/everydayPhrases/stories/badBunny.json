@@ -1,0 +1,86 @@
+{
+    "name": "Bad Bunny",
+    "type": "story",
+    "sentences": [
+        {
+            "base_language": "Hello, I am Benito.",
+            "target_language": "こんにちは、私はBenitoです。",
+            "romanized": "konnichiwa, watashi wa Benito desu."
+        },
+        {
+            "base_language": "I am a very famous music artist",
+            "target_language": "私はとても有名な音楽アーティストです",
+            "romanized": "watashi wa totemo yuumei na ongaku aatisuto desu"
+        },
+        {
+            "base_language": "I sang at the super bowl",
+            "target_language": "私はスーパーボウルで歌いました",
+            "romanized": "watashi wa suupaa bouru de utaimashita"
+        },
+        {
+            "base_language": "I am from puerto rico",
+            "target_language": "私はプエルトリコ出身です",
+            "romanized": "watashi wa puerutoriko shusshin desu"
+        },
+        {
+            "base_language": "Do you want to learn one of my songs?",
+            "target_language": "私の曲を一つ覚えたいですか？",
+            "romanized": "watashi no kyoku wo hitotsu oboetai desu ka?"
+        },
+        {
+            "base_language": "This is \"Titi me pregunto\"",
+            "target_language": "これは「Titi me pregunto」です",
+            "romanized": "kore wa \"Titi me pregunto\" desu"
+        },
+        {
+            "base_language": "Aunti asked me if I have so many girlfriends",
+            "target_language": "おばさんは私に彼女がたくさんいるか聞いた",
+            "romanized": "obasan wa watashi ni kanojo ga takusan iru ka kiita"
+        },
+        {
+            "base_language": "Today I have one, tomorrow I'll have another, eh",
+            "target_language": "今日は一人、明日はまた別の人、えへ",
+            "romanized": "kyou wa hitori, ashita wa mata betsu no hito, ehe"
+        },
+        {
+            "base_language": "hey, but there's no wedding, there's no wedding, auntie",
+            "target_language": "ねえ、でも結婚式はないよ、結婚式はないよ、おばさん",
+            "romanized": "nee, demo kekkonshiki wa nai yo, kekkonshiki wa nai yo, obasan"
+        },
+        {
+            "base_language": "I'm going to take them all to the V.I.P., the V.I.P., hey",
+            "target_language": "みんなをVIPルームに連れて行くよ、VIPルームに、ねえ",
+            "romanized": "minna wo VIP ruumu ni tsurete iku yo, VIP ruumu ni, nee"
+        },
+        {
+            "base_language": "Say hi to auntie",
+            "target_language": "おばさんに挨拶して",
+            "romanized": "obasan ni aisatsu shite"
+        },
+        {
+            "base_language": "Let's take a selfie, \"say cheese,\" hey",
+            "target_language": "自撮りしよう、「はい、チーズ」、ねえ",
+            "romanized": "jidori shiyou, \"hai, chiizu\", nee"
+        },
+        {
+            "base_language": "Let the ones I already slept with smile",
+            "target_language": "もう寝た子たちは笑って",
+            "romanized": "mou neta ko tachi wa waratte"
+        },
+        {
+            "base_language": "In a V.I.P., a V.I.P., hey",
+            "target_language": "VIPルームで、VIPルームで、ねえ",
+            "romanized": "VIP ruumu de, VIP ruumu de, nee"
+        },
+        {
+            "base_language": "Say hi to auntie",
+            "target_language": "おばさんに挨拶して",
+            "romanized": "obasan ni aisatsu shite"
+        },
+        {
+            "base_language": "Let's take a selfie, \"say cheese\"",
+            "target_language": "自撮りしよう、「はい、チーズ」",
+            "romanized": "jidori shiyou, \"hai, chiizu\""
+        }
+    ]
+}

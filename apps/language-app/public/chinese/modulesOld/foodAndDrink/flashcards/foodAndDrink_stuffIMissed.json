@@ -1,0 +1,97 @@
+{
+    "name": "Stuff I missed",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        { 
+            "base_language": "flavor", 
+            "target_language": "味道", 
+            "romanized": "wèi dào" 
+        },
+        { 
+            "base_language": "taste", 
+            "target_language": "口味/品尝", 
+            "romanized": "kǒu wèi/pǐn cháng" 
+        },
+        { 
+            "base_language": "recipe", 
+            "target_language": "食谱", 
+            "romanized": "shí pǔ" 
+        },
+        { 
+            "base_language": "kitchen", 
+            "target_language": "厨房", 
+            "romanized": "chú fáng" 
+        },
+        { 
+            "base_language": "oven", 
+            "target_language": "烤箱", 
+            "romanized": "kǎo xiāng" 
+        },
+        { 
+            "base_language": "stove", 
+            "target_language": "炉灶", 
+            "romanized": "lú zào" 
+        },
+        { 
+            "base_language": "fork", 
+            "target_language": "叉子", 
+            "romanized": "chā zi" 
+        },
+        { 
+            "base_language": "spoon", 
+            "target_language": "勺子", 
+            "romanized": "sháo zi" 
+        },
+        { 
+            "base_language": "plate", 
+            "target_language": "盘子", 
+            "romanized": "pán zi" 
+        },
+        { 
+            "base_language": "bowl", 
+            "target_language": "碗", 
+            "romanized": "wǎn" 
+        },
+        { 
+            "base_language": "cup", 
+            "target_language": "杯子", 
+            "romanized": "bēi zi" 
+        },
+        { 
+            "base_language": "glass", 
+            "target_language": "玻璃杯", 
+            "romanized": "bō lí bēi" 
+        },
+        { 
+            "base_language": "bottle", 
+            "target_language": "瓶子", 
+            "romanized": "píng zi" 
+        },
+        { 
+            "base_language": "table", 
+            "target_language": "桌子", 
+            "romanized": "zhuō zi" 
+        },
+        { 
+            "base_language": "hunger", 
+            "target_language": "饥饿", 
+            "romanized": "jī è" 
+        },
+        { 
+            "base_language": "thirst", 
+            "target_language": "口渴", 
+            "romanized": "kǒu kě" 
+        },
+        { 
+            "base_language": "almost", 
+            "target_language": "几乎/差不多", 
+            "romanized": "jī hū/chà bù duō" 
+        },
+        { 
+            "base_language": "too (as in 'too salty')", 
+            "target_language": "太", 
+            "romanized": "tài" 
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "name": "Whats for dinner",
+    "type": "story",
+    "sentences": [
+        {
+            "base_language": "Seth asks kayla, \"are you hungry\"",
+            "target_language": "SethはKaylaに「お腹空いた？」と聞きました。",
+            "romanized": "Seth wa Kayla ni \"onaka suita?\" to kikimashita."
+        },
+        {
+            "base_language": "kayla says, \"yes, I am very hungry\"",
+            "target_language": "Kaylaは「うん、すごくお腹空いてる」と言いました。",
+            "romanized": "Kayla wa \"un, sugoku onaka suiteru\" to iimashita."
+        },
+        {
+            "base_language": "Seth asks, \"do you want to eat tacos\"",
+            "target_language": "Sethは「タコス食べたい？」と聞きました。",
+            "romanized": "Seth wa \"takosu tabetai?\" to kikimashita."
+        },
+        {
+            "base_language": "Kayla says, \"hmm, i ate tacos yesterday\"",
+            "target_language": "Kaylaは「うーん、昨日タコス食べたんだよね」と言いました。",
+            "romanized": "Kayla wa \"uun, kinou takosu tabetan da yo ne\" to iimashita."
+        },
+        {
+            "base_language": "Seth asks, \"do you want to cook spaghetti\"",
+            "target_language": "Sethは「スパゲッティ作りたい？」と聞きました。",
+            "romanized": "Seth wa \"supagetti tsukuritai?\" to kikimashita."
+        },
+        {
+            "base_language": "Kayla says, \"yes, I love spaghetti\"",
+            "target_language": "Kaylaは「うん、スパゲッティ大好き」と言いました。",
+            "romanized": "Kayla wa \"un, supagetti daisuki\" to iimashita."
+        },
+        {
+            "base_language": "seth says, \"okay, we need to buy ingredients.\"",
+            "target_language": "Sethは「じゃあ、材料を買わないとね」と言いました。",
+            "romanized": "Seth wa \"jaa, zairyou wo kawanai to ne\" to iimashita."
+        },
+        {
+            "base_language": "Kayla asks, \"what do we need?\"",
+            "target_language": "Kaylaは「何が必要？」と聞きました。",
+            "romanized": "Kayla wa \"nani ga hitsuyou?\" to kikimashita."
+        },
+        {
+            "base_language": "Seth responds, \"We need a tomato, onion, garlic, herbs, and noodles\"",
+            "target_language": "Sethは「トマト、玉ねぎ、にんにく、ハーブ、それと麺が必要だよ」と答えました。",
+            "romanized": "Seth wa \"tomato, tamanegi, ninniku, haabu, sore to men ga hitsuyou da yo\" to kotaemashita."
+        },
+        {
+            "base_language": "Kayla says, \"but the store is closed.\"",
+            "target_language": "Kaylaは「でもお店閉まってるよ」と言いました。",
+            "romanized": "Kayla wa \"demo omise shimatteru yo\" to iimashita."
+        },
+        {
+            "base_language": "They both look for the ingredients in their house.",
+            "target_language": "二人は家の中で材料を探しました。",
+            "romanized": "futari wa ie no naka de zairyou wo sagashimashita."
+        },
+        {
+            "base_language": "Seth finds three tomatoes, one onion, but no noodles.",
+            "target_language": "Sethはトマト三個と玉ねぎ一個を見つけましたが、麺はありませんでした。",
+            "romanized": "Seth wa tomato sanko to tamanegi ikko wo mitsukemashita ga, men wa arimasen deshita."
+        },
+        {
+            "base_language": "Seth says, \"damnit, we don't have noodles\"",
+            "target_language": "Sethは「くそ、麺がないや」と言いました。",
+            "romanized": "Seth wa \"kuso, men ga nai ya\" to iimashita."
+        },
+        {
+            "base_language": "Kayla says, \"but we have pizza crust.  We can make pizza sauce!\"",
+            "target_language": "Kaylaは「でもピザ生地があるよ。ピザソースを作れるじゃん！」と言いました。",
+            "romanized": "Kayla wa \"demo piza kiji ga aru yo. piza soosu wo tsukureru jan!\" to iimashita."
+        },
+        {
+            "base_language": "Seth and Kayla start to cook.",
+            "target_language": "SethとKaylaは料理を始めました。",
+            "romanized": "Seth to Kayla wa ryouri wo hajimemashita."
+        },
+        {
+            "base_language": "after some time they eat the pizza.",
+            "target_language": "しばらくして、二人はピザを食べました。",
+            "romanized": "shibaraku shite, futari wa piza wo tabemashita."
+        },
+        {
+            "base_language": "The pizza is very good.",
+            "target_language": "ピザはとても美味しかったです。",
+            "romanized": "piza wa totemo oishikatta desu."
+        },
+        {
+            "base_language": "Seth looks at Kayla and says, \"this is good but I like tacos better\".",
+            "target_language": "SethはKaylaを見て「これ美味しいけど、やっぱりタコスの方が好きだな」と言いました。",
+            "romanized": "Seth wa Kayla wo mite \"kore oishii kedo, yappari takosu no hou ga suki da na\" to iimashita."
+        },
+        {
+            "base_language": "They argue about that then go to bed.",
+            "target_language": "二人はそのことで言い合ってから、寝ました。",
+            "romanized": "futari wa sono koto de iiatte kara, nemashita."
+        }
+    ]
+}

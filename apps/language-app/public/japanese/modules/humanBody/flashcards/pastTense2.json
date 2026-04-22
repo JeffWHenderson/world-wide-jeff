@@ -1,0 +1,307 @@
+{
+    "name": "Past tense 2",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I saw with my eyes",
+            "target_language": "私は目で見ました",
+            "romanized": "watashi wa me de mimashita"
+        },
+        {
+            "base_language": "We saw with our eyes",
+            "target_language": "私たちは目で見ました",
+            "romanized": "watashitachi wa me de mimashita"
+        },
+        {
+            "base_language": "They saw with their eyes",
+            "target_language": "彼らは目で見ました",
+            "romanized": "karera wa me de mimashita"
+        },
+        {
+            "base_language": "I heard with my ears",
+            "target_language": "私は耳で聞きました",
+            "romanized": "watashi wa mimi de kikimashita"
+        },
+        {
+            "base_language": "We heard with our ears",
+            "target_language": "私たちは耳で聞きました",
+            "romanized": "watashitachi wa mimi de kikimashita"
+        },
+        {
+            "base_language": "They heard with their ears",
+            "target_language": "彼らは耳で聞きました",
+            "romanized": "karera wa mimi de kikimashita"
+        },
+        {
+            "base_language": "I smelled with my nose",
+            "target_language": "私は鼻で嗅ぎました",
+            "romanized": "watashi wa hana de kagimashita"
+        },
+        {
+            "base_language": "We smelled with our noses",
+            "target_language": "私たちは鼻で嗅ぎました",
+            "romanized": "watashitachi wa hana de kagimashita"
+        },
+        {
+            "base_language": "They smelled with their noses",
+            "target_language": "彼らは鼻で嗅ぎました",
+            "romanized": "karera wa hana de kagimashita"
+        },
+        {
+            "base_language": "I tasted with my tongue",
+            "target_language": "私は舌で味わいました",
+            "romanized": "watashi wa shita de ajiwaimashita"
+        },
+        {
+            "base_language": "We tasted with our tongues",
+            "target_language": "私たちは舌で味わいました",
+            "romanized": "watashitachi wa shita de ajiwaimashita"
+        },
+        {
+            "base_language": "They tasted with their tongues",
+            "target_language": "彼らは舌で味わいました",
+            "romanized": "karera wa shita de ajiwaimashita"
+        },
+        {
+            "base_language": "I touched with my hands",
+            "target_language": "私は手で触りました",
+            "romanized": "watashi wa te de sawarimashita"
+        },
+        {
+            "base_language": "We touched with our hands",
+            "target_language": "私たちは手で触りました",
+            "romanized": "watashitachi wa te de sawarimashita"
+        },
+        {
+            "base_language": "They touched with their hands",
+            "target_language": "彼らは手で触りました",
+            "romanized": "karera wa te de sawarimashita"
+        },
+        {
+            "base_language": "I breathed with my belly",
+            "target_language": "私はお腹で呼吸しました",
+            "romanized": "watashi wa onaka de kokyuu shimashita"
+        },
+        {
+            "base_language": "We breathed with our belly",
+            "target_language": "私たちはお腹で呼吸しました",
+            "romanized": "watashitachi wa onaka de kokyuu shimashita"
+        },
+        {
+            "base_language": "They breathed with their belly",
+            "target_language": "彼らはお腹で呼吸しました",
+            "romanized": "karera wa onaka de kokyuu shimashita"
+        },
+        {
+            "base_language": "I swallowed with my throat",
+            "target_language": "私は喉で飲み込みました",
+            "romanized": "watashi wa nodo de nomikomimashita"
+        },
+        {
+            "base_language": "We swallowed with our throats",
+            "target_language": "私たちは喉で飲み込みました",
+            "romanized": "watashitachi wa nodo de nomikomimashita"
+        },
+        {
+            "base_language": "They swallowed with their throats",
+            "target_language": "彼らは喉で飲み込みました",
+            "romanized": "karera wa nodo de nomikomimashita"
+        },
+        {
+            "base_language": "I chewed with my mouth",
+            "target_language": "私は口で噛みました",
+            "romanized": "watashi wa kuchi de kamimashita"
+        },
+        {
+            "base_language": "We chewed with our mouths",
+            "target_language": "私たちは口で噛みました",
+            "romanized": "watashitachi wa kuchi de kamimashita"
+        },
+        {
+            "base_language": "They chewed with their mouths",
+            "target_language": "彼らは口で噛みました",
+            "romanized": "karera wa kuchi de kamimashita"
+        },
+        {
+            "base_language": "I digested with my stomach",
+            "target_language": "私は胃で消化しました",
+            "romanized": "watashi wa i de shouka shimashita"
+        },
+        {
+            "base_language": "We digested with our stomachs",
+            "target_language": "私たちは胃で消化しました",
+            "romanized": "watashitachi wa i de shouka shimashita"
+        },
+        {
+            "base_language": "They digested with their stomachs",
+            "target_language": "彼らは胃で消化しました",
+            "romanized": "karera wa i de shouka shimashita"
+        },
+        {
+            "base_language": "I pumped blood with my heart",
+            "target_language": "私は心臓で血を送りました",
+            "romanized": "watashi wa shinzou de chi wo okurimashita"
+        },
+        {
+            "base_language": "We pumped blood with our hearts",
+            "target_language": "私たちは心臓で血を送りました",
+            "romanized": "watashitachi wa shinzou de chi wo okurimashita"
+        },
+        {
+            "base_language": "They pumped blood with their hearts",
+            "target_language": "彼らは心臓で血を送りました",
+            "romanized": "karera wa shinzou de chi wo okurimashita"
+        },
+        {
+            "base_language": "I bent my legs",
+            "target_language": "私は足を曲げました",
+            "romanized": "watashi wa ashi wo magemashita"
+        },
+        {
+            "base_language": "We bent our legs",
+            "target_language": "私たちは足を曲げました",
+            "romanized": "watashitachi wa ashi wo magemashita"
+        },
+        {
+            "base_language": "They bent their legs",
+            "target_language": "彼らは足を曲げました",
+            "romanized": "karera wa ashi wo magemashita"
+        },
+        {
+            "base_language": "I stretched my back",
+            "target_language": "私は背中を伸ばしました",
+            "romanized": "watashi wa senaka wo nobashimashita"
+        },
+        {
+            "base_language": "We stretched our backs",
+            "target_language": "私たちは背中を伸ばしました",
+            "romanized": "watashitachi wa senaka wo nobashimashita"
+        },
+        {
+            "base_language": "They stretched their backs",
+            "target_language": "彼らは背中を伸ばしました",
+            "romanized": "karera wa senaka wo nobashimashita"
+        },
+        {
+            "base_language": "I flexed my arms",
+            "target_language": "私は腕を曲げました",
+            "romanized": "watashi wa ude wo magemashita"
+        },
+        {
+            "base_language": "We flexed our arms",
+            "target_language": "私たちは腕を曲げました",
+            "romanized": "watashitachi wa ude wo magemashita"
+        },
+        {
+            "base_language": "They flexed their arms",
+            "target_language": "彼らは腕を曲げました",
+            "romanized": "karera wa ude wo magemashita"
+        },
+        {
+            "base_language": "I blinked my eyes",
+            "target_language": "私は目を瞬きました",
+            "romanized": "watashi wa me wo mabatakimashita"
+        },
+        {
+            "base_language": "We blinked our eyes",
+            "target_language": "私たちは目を瞬きました",
+            "romanized": "watashitachi wa me wo mabatakimashita"
+        },
+        {
+            "base_language": "They blinked their eyes",
+            "target_language": "彼らは目を瞬きました",
+            "romanized": "karera wa me wo mabatakimashita"
+        },
+        {
+            "base_language": "I sweated gatorade",
+            "target_language": "私はゲータレードの汗をかきました",
+            "romanized": "watashi wa geetoreedo no ase wo kakimashita"
+        },
+        {
+            "base_language": "We sweated gatorade",
+            "target_language": "私たちはゲータレードの汗をかきました",
+            "romanized": "watashitachi wa geetoreedo no ase wo kakimashita"
+        },
+        {
+            "base_language": "They sweated gatorade",
+            "target_language": "彼らはゲータレードの汗をかきました",
+            "romanized": "karera wa geetoreedo no ase wo kakimashita"
+        },
+        {
+            "base_language": "I bled blood",
+            "target_language": "私は血を流しました",
+            "romanized": "watashi wa chi wo nagashimashita"
+        },
+        {
+            "base_language": "We bled blood",
+            "target_language": "私たちは血を流しました",
+            "romanized": "watashitachi wa chi wo nagashimashita"
+        },
+        {
+            "base_language": "They bled blood",
+            "target_language": "彼らは血を流しました",
+            "romanized": "karera wa chi wo nagashimashita"
+        },
+        {
+            "base_language": "I healed my injury",
+            "target_language": "私は怪我を治しました",
+            "romanized": "watashi wa kega wo naoshimashita"
+        },
+        {
+            "base_language": "We healed our injuries",
+            "target_language": "私たちは怪我を治しました",
+            "romanized": "watashitachi wa kega wo naoshimashita"
+        },
+        {
+            "base_language": "They healed their injuries",
+            "target_language": "彼らは怪我を治しました",
+            "romanized": "karera wa kega wo naoshimashita"
+        },
+        {
+            "base_language": "I felt with my hands",
+            "target_language": "私は手で感じました",
+            "romanized": "watashi wa te de kanjimashita"
+        },
+        {
+            "base_language": "We felt with our hands",
+            "target_language": "私たちは手で感じました",
+            "romanized": "watashitachi wa te de kanjimashita"
+        },
+        {
+            "base_language": "They felt with their hands",
+            "target_language": "彼らは手で感じました",
+            "romanized": "karera wa te de kanjimashita"
+        },
+        {
+            "base_language": "I thought with my brain",
+            "target_language": "私は脳で考えました",
+            "romanized": "watashi wa nou de kangaemashita"
+        },
+        {
+            "base_language": "We thought with our brains",
+            "target_language": "私たちは脳で考えました",
+            "romanized": "watashitachi wa nou de kangaemashita"
+        },
+        {
+            "base_language": "They thought with their brains",
+            "target_language": "彼らは脳で考えました",
+            "romanized": "karera wa nou de kangaemashita"
+        },
+        {
+            "base_language": "I moved my body",
+            "target_language": "私は体を動かしました",
+            "romanized": "watashi wa karada wo ugokashimashita"
+        },
+        {
+            "base_language": "We moved our bodies",
+            "target_language": "私たちは体を動かしました",
+            "romanized": "watashitachi wa karada wo ugokashimashita"
+        },
+        {
+            "base_language": "They moved their bodies",
+            "target_language": "彼らは体を動かしました",
+            "romanized": "karera wa karada wo ugokashimashita"
+        }
+    ]
+}

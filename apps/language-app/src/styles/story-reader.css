@@ -1,0 +1,57 @@
+.story-container {
+    padding-top: 10px;
+    flex: 1;
+    justify-content: center;
+    align-content: space-around;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    height: 100vh;
+    font-size: large;
+}
+
+.story-page {
+    width: 96vw;
+    padding: 18px 2vw 0 2vw;
+    max-width: 1000px;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+.player-container-top {
+    background-color: lightgray;
+    max-width: 130px;
+}
+
+.fixed-player-container {
+    width: 80%;
+    max-width: 800px;
+    position: fixed;
+    bottom: 25px;
+    padding: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.player-container-top {
+    min-width: 90px;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    border-radius: 10px;
+    margin: 0 15px 5px 0;
+    padding: 3px;
+    font-size: .6em;
+}
+
+.speed-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 10px;
+}

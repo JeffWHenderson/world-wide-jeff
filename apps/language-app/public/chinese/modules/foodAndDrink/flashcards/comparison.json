@@ -1,0 +1,132 @@
+{
+    "name": "Comparison",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "the bottle is bigger than the glass",
+            "target_language": "瓶子比玻璃杯大",
+            "romanized": "píngzi bǐ bōlibēi dà"
+        },
+        {
+            "base_language": "the meal is more expensive than the snack",
+            "target_language": "正餐比小吃贵",
+            "romanized": "zhèngcān bǐ xiǎochī guì"
+        },
+        {
+            "base_language": "this recipe is better than that menu",
+            "target_language": "这个食谱比那个菜单好",
+            "romanized": "zhège shípǔ bǐ nàge càidān hǎo"
+        },
+        {
+            "base_language": "the coffee is worse than the tea",
+            "target_language": "咖啡比茶差",
+            "romanized": "kāfēi bǐ chá chà"
+        },
+        {
+            "base_language": "the oven is bigger than the stove",
+            "target_language": "烤箱比炉子大",
+            "romanized": "kǎoxiāng bǐ lúzi dà"
+        },
+        {
+            "base_language": "the fish is more expensive than the chicken",
+            "target_language": "鱼比鸡肉贵",
+            "romanized": "yú bǐ jīròu guì"
+        },
+        {
+            "base_language": "the flavor is better than the taste",
+            "target_language": "风味比味道好",
+            "romanized": "fēngwèi bǐ wèidào hǎo"
+        },
+        {
+            "base_language": "the knife is worse than the fork",
+            "target_language": "刀比叉子差",
+            "romanized": "dāo bǐ chāzi chà"
+        },
+        {
+            "base_language": "the plate is bigger than the bowl",
+            "target_language": "盘子比碗大",
+            "romanized": "pánzi bǐ wǎn dà"
+        },
+        {
+            "base_language": "the wine is more expensive than the beer",
+            "target_language": "葡萄酒比啤酒贵",
+            "romanized": "pútáojiǔ bǐ píjiǔ guì"
+        },
+        {
+            "base_language": "the butter is better than the oil",
+            "target_language": "黄油比油好",
+            "romanized": "huángyóu bǐ yóu hǎo"
+        },
+        {
+            "base_language": "the waiter is worse than the recipe",
+            "target_language": "服务员比食谱差",
+            "romanized": "fúwùyuán bǐ shípǔ chà"
+        },
+        {
+            "base_language": "the restaurant is bigger than the kitchen",
+            "target_language": "餐厅比厨房大",
+            "romanized": "cāntīng bǐ chúfáng dà"
+        },
+        {
+            "base_language": "the beef is more expensive than the pork",
+            "target_language": "牛肉比猪肉贵",
+            "romanized": "niúròu bǐ zhūròu guì"
+        },
+        {
+            "base_language": "the ingredient is better than the spice",
+            "target_language": "食材比香料好",
+            "romanized": "shícái bǐ xiāngliào hǎo"
+        },
+        {
+            "base_language": "the spoon is worse than the knife",
+            "target_language": "勺子比刀差",
+            "romanized": "sháozi bǐ dāo chà"
+        },
+        {
+            "base_language": "the bowl is bigger than the cup",
+            "target_language": "碗比杯子大",
+            "romanized": "wǎn bǐ bēizi dà"
+        },
+        {
+            "base_language": "the pizza is more expensive than the sandwich",
+            "target_language": "披萨比三明治贵",
+            "romanized": "pīsà bǐ sānmíngzhì guì"
+        },
+        {
+            "base_language": "the juice is better than the milk",
+            "target_language": "果汁比牛奶好",
+            "romanized": "guǒzhī bǐ niúnǎi hǎo"
+        },
+        {
+            "base_language": "the meat is worse than the vegetable",
+            "target_language": "肉比蔬菜差",
+            "romanized": "ròu bǐ shūcài chà"
+        },
+        {
+            "base_language": "the table is bigger than the plate",
+            "target_language": "桌子比盘子大",
+            "romanized": "zhuōzi bǐ pánzi dà"
+        },
+        {
+            "base_language": "the chocolate is more expensive than the sugar",
+            "target_language": "巧克力比糖贵",
+            "romanized": "qiǎokèlì bǐ táng guì"
+        },
+        {
+            "base_language": "the bread is better than the rice",
+            "target_language": "面包比米饭好",
+            "romanized": "miànbāo bǐ mǐfàn hǎo"
+        },
+        {
+            "base_language": "the potato is worse than the onion",
+            "target_language": "土豆比洋葱差",
+            "romanized": "tǔdòu bǐ yángcōng chà"
+        },
+        {
+            "base_language": "the pasta is bigger than the rice",
+            "target_language": "意大利面比米饭多",
+            "romanized": "yìdàlì miàn bǐ mǐfàn duō"
+        }
+    ]
+}

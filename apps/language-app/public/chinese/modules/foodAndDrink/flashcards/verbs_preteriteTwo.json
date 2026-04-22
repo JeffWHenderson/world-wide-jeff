@@ -1,0 +1,427 @@
+{
+    "name": "verbs for food I/we/they",
+    "type": "flashcards",
+    "lesson_id": "verbs_past_preterite.md",
+    "sentences": [
+        {
+            "base_language": "I ate the cheese.",
+            "target_language": "我吃了奶酪。",
+            "romanized": "wǒ chī le nǎilào."
+        },
+        {
+            "base_language": "We ate the cheese.",
+            "target_language": "我们吃了奶酪。",
+            "romanized": "wǒmen chī le nǎilào."
+        },
+        {
+            "base_language": "They ate the cheese.",
+            "target_language": "他们吃了奶酪。",
+            "romanized": "tāmen chī le nǎilào."
+        },
+        {
+            "base_language": "I drank the milk.",
+            "target_language": "我喝了牛奶。",
+            "romanized": "wǒ hē le niúnǎi."
+        },
+        {
+            "base_language": "We drank the milk.",
+            "target_language": "我们喝了牛奶。",
+            "romanized": "wǒmen hē le niúnǎi."
+        },
+        {
+            "base_language": "They drank the milk.",
+            "target_language": "他们喝了牛奶。",
+            "romanized": "tāmen hē le niúnǎi."
+        },
+        {
+            "base_language": "I cooked the fish.",
+            "target_language": "我做了鱼。",
+            "romanized": "wǒ zuò le yú."
+        },
+        {
+            "base_language": "We cooked the fish.",
+            "target_language": "我们做了鱼。",
+            "romanized": "wǒmen zuò le yú."
+        },
+        {
+            "base_language": "They cooked the fish.",
+            "target_language": "他们做了鱼。",
+            "romanized": "tāmen zuò le yú."
+        },
+        {
+            "base_language": "I baked the cake.",
+            "target_language": "我烤了蛋糕。",
+            "romanized": "wǒ kǎo le dàngāo."
+        },
+        {
+            "base_language": "We baked the cake.",
+            "target_language": "我们烤了蛋糕。",
+            "romanized": "wǒmen kǎo le dàngāo."
+        },
+        {
+            "base_language": "They baked the cake.",
+            "target_language": "他们烤了蛋糕。",
+            "romanized": "tāmen kǎo le dàngāo."
+        },
+        {
+            "base_language": "I boiled the water.",
+            "target_language": "我烧了水。",
+            "romanized": "wǒ shāo le shuǐ."
+        },
+        {
+            "base_language": "We boiled the water.",
+            "target_language": "我们烧了水。",
+            "romanized": "wǒmen shāo le shuǐ."
+        },
+        {
+            "base_language": "They boiled the water.",
+            "target_language": "他们烧了水。",
+            "romanized": "tāmen shāo le shuǐ."
+        },
+        {
+            "base_language": "I fried the potato.",
+            "target_language": "我炸了土豆。",
+            "romanized": "wǒ zhá le tǔdòu."
+        },
+        {
+            "base_language": "We fried the potato.",
+            "target_language": "我们炸了土豆。",
+            "romanized": "wǒmen zhá le tǔdòu."
+        },
+        {
+            "base_language": "They fried the potato.",
+            "target_language": "他们炸了土豆。",
+            "romanized": "tāmen zhá le tǔdòu."
+        },
+        {
+            "base_language": "I roasted the beef.",
+            "target_language": "我烤了牛肉。",
+            "romanized": "wǒ kǎo le niúròu."
+        },
+        {
+            "base_language": "We roasted the beef.",
+            "target_language": "我们烤了牛肉。",
+            "romanized": "wǒmen kǎo le niúròu."
+        },
+        {
+            "base_language": "They roasted the beef.",
+            "target_language": "他们烤了牛肉。",
+            "romanized": "tāmen kǎo le niúròu."
+        },
+        {
+            "base_language": "I grilled the pork.",
+            "target_language": "我烤了猪肉。",
+            "romanized": "wǒ kǎo le zhūròu."
+        },
+        {
+            "base_language": "We grilled the pork.",
+            "target_language": "我们烤了猪肉。",
+            "romanized": "wǒmen kǎo le zhūròu."
+        },
+        {
+            "base_language": "They grilled the pork.",
+            "target_language": "他们烤了猪肉。",
+            "romanized": "tāmen kǎo le zhūròu."
+        },
+        {
+            "base_language": "I chopped the fruit.",
+            "target_language": "我切了水果。",
+            "romanized": "wǒ qiē le shuǐguǒ."
+        },
+        {
+            "base_language": "We chopped the fruit.",
+            "target_language": "我们切了水果。",
+            "romanized": "wǒmen qiē le shuǐguǒ."
+        },
+        {
+            "base_language": "They chopped the fruit.",
+            "target_language": "他们切了水果。",
+            "romanized": "tāmen qiē le shuǐguǒ."
+        },
+        {
+            "base_language": "I sliced the orange.",
+            "target_language": "我切了橙子。",
+            "romanized": "wǒ qiē le chéngzi."
+        },
+        {
+            "base_language": "We sliced the orange.",
+            "target_language": "我们切了橙子。",
+            "romanized": "wǒmen qiē le chéngzi."
+        },
+        {
+            "base_language": "They sliced the orange.",
+            "target_language": "他们切了橙子。",
+            "romanized": "tāmen qiē le chéngzi."
+        },
+        {
+            "base_language": "I mixed the ingredients.",
+            "target_language": "我混合了食材。",
+            "romanized": "wǒ hùnhé le shícái."
+        },
+        {
+            "base_language": "We mixed the ingredients.",
+            "target_language": "我们混合了食材。",
+            "romanized": "wǒmen hùnhé le shícái."
+        },
+        {
+            "base_language": "They mixed the ingredients.",
+            "target_language": "他们混合了食材。",
+            "romanized": "tāmen hùnhé le shícái."
+        },
+        {
+            "base_language": "I stirred the pasta.",
+            "target_language": "我搅拌了意大利面。",
+            "romanized": "wǒ jiǎobàn le yìdàlì miàn."
+        },
+        {
+            "base_language": "We stirred the pasta.",
+            "target_language": "我们搅拌了意大利面。",
+            "romanized": "wǒmen jiǎobàn le yìdàlì miàn."
+        },
+        {
+            "base_language": "They stirred the pasta.",
+            "target_language": "他们搅拌了意大利面。",
+            "romanized": "tāmen jiǎobàn le yìdàlì miàn."
+        },
+        {
+            "base_language": "I whisked the eggs.",
+            "target_language": "我打了鸡蛋。",
+            "romanized": "wǒ dǎ le jīdàn."
+        },
+        {
+            "base_language": "We whisked the eggs.",
+            "target_language": "我们打了鸡蛋。",
+            "romanized": "wǒmen dǎ le jīdàn."
+        },
+        {
+            "base_language": "They whisked the eggs.",
+            "target_language": "他们打了鸡蛋。",
+            "romanized": "tāmen dǎ le jīdàn."
+        },
+        {
+            "base_language": "I poured the beer.",
+            "target_language": "我倒了啤酒。",
+            "romanized": "wǒ dào le píjiǔ."
+        },
+        {
+            "base_language": "We poured the beer.",
+            "target_language": "我们倒了啤酒。",
+            "romanized": "wǒmen dào le píjiǔ."
+        },
+        {
+            "base_language": "They poured the beer.",
+            "target_language": "他们倒了啤酒。",
+            "romanized": "tāmen dào le píjiǔ."
+        },
+        {
+            "base_language": "I served the meal.",
+            "target_language": "我上了菜。",
+            "romanized": "wǒ shàng le cài."
+        },
+        {
+            "base_language": "We served the meal.",
+            "target_language": "我们上了菜。",
+            "romanized": "wǒmen shàng le cài."
+        },
+        {
+            "base_language": "They served the meal.",
+            "target_language": "他们上了菜。",
+            "romanized": "tāmen shàng le cài."
+        },
+        {
+            "base_language": "I tasted the sandwich.",
+            "target_language": "我尝了三明治。",
+            "romanized": "wǒ cháng le sānmíngzhì."
+        },
+        {
+            "base_language": "We tasted the sandwich.",
+            "target_language": "我们尝了三明治。",
+            "romanized": "wǒmen cháng le sānmíngzhì."
+        },
+        {
+            "base_language": "They tasted the sandwich.",
+            "target_language": "他们尝了三明治。",
+            "romanized": "tāmen cháng le sānmíngzhì."
+        },
+        {
+            "base_language": "I fed the dog.",
+            "target_language": "我喂了狗。",
+            "romanized": "wǒ wèi le gǒu."
+        },
+        {
+            "base_language": "We fed the dog.",
+            "target_language": "我们喂了狗。",
+            "romanized": "wǒmen wèi le gǒu."
+        },
+        {
+            "base_language": "They fed the dog.",
+            "target_language": "他们喂了狗。",
+            "romanized": "tāmen wèi le gǒu."
+        },
+        {
+            "base_language": "I dined at home.",
+            "target_language": "我在家吃了饭。",
+            "romanized": "wǒ zài jiā chī le fàn."
+        },
+        {
+            "base_language": "We dined at home.",
+            "target_language": "我们在家吃了饭。",
+            "romanized": "wǒmen zài jiā chī le fàn."
+        },
+        {
+            "base_language": "They dined at home.",
+            "target_language": "他们在家吃了饭。",
+            "romanized": "tāmen zài jiā chī le fàn."
+        },
+        {
+            "base_language": "I chewed the banana.",
+            "target_language": "我嚼了香蕉。",
+            "romanized": "wǒ jiáo le xiāngjiāo."
+        },
+        {
+            "base_language": "We chewed the banana.",
+            "target_language": "我们嚼了香蕉。",
+            "romanized": "wǒmen jiáo le xiāngjiāo."
+        },
+        {
+            "base_language": "They chewed the banana.",
+            "target_language": "他们嚼了香蕉。",
+            "romanized": "tāmen jiáo le xiāngjiāo."
+        },
+        {
+            "base_language": "I swallowed the coffee.",
+            "target_language": "我咽了咖啡。",
+            "romanized": "wǒ yàn le kāfēi."
+        },
+        {
+            "base_language": "We swallowed the coffee.",
+            "target_language": "我们咽了咖啡。",
+            "romanized": "wǒmen yàn le kāfēi."
+        },
+        {
+            "base_language": "They swallowed the coffee.",
+            "target_language": "他们咽了咖啡。",
+            "romanized": "tāmen yàn le kāfēi."
+        },
+        {
+            "base_language": "I savored the chocolate.",
+            "target_language": "我品尝了巧克力。",
+            "romanized": "wǒ pǐncháng le qiǎokèlì."
+        },
+        {
+            "base_language": "We savored the chocolate.",
+            "target_language": "我们品尝了巧克力。",
+            "romanized": "wǒmen pǐncháng le qiǎokèlì."
+        },
+        {
+            "base_language": "They savored the chocolate.",
+            "target_language": "他们品尝了巧克力。",
+            "romanized": "tāmen pǐncháng le qiǎokèlì."
+        },
+        {
+            "base_language": "I seasoned the steak.",
+            "target_language": "我给牛排调了味。",
+            "romanized": "wǒ gěi niúpái tiáo le wèi."
+        },
+        {
+            "base_language": "We seasoned the steak.",
+            "target_language": "我们给牛排调了味。",
+            "romanized": "wǒmen gěi niúpái tiáo le wèi."
+        },
+        {
+            "base_language": "They seasoned the steak.",
+            "target_language": "他们给牛排调了味。",
+            "romanized": "tāmen gěi niúpái tiáo le wèi."
+        },
+        {
+            "base_language": "I steamed the vegetables.",
+            "target_language": "我蒸了蔬菜。",
+            "romanized": "wǒ zhēng le shūcài."
+        },
+        {
+            "base_language": "We steamed the vegetables.",
+            "target_language": "我们蒸了蔬菜。",
+            "romanized": "wǒmen zhēng le shūcài."
+        },
+        {
+            "base_language": "They steamed the vegetables.",
+            "target_language": "他们蒸了蔬菜。",
+            "romanized": "tāmen zhēng le shūcài."
+        },
+        {
+            "base_language": "I blended the juice.",
+            "target_language": "我榨了果汁。",
+            "romanized": "wǒ zhà le guǒzhī."
+        },
+        {
+            "base_language": "We blended the juice.",
+            "target_language": "我们榨了果汁。",
+            "romanized": "wǒmen zhà le guǒzhī."
+        },
+        {
+            "base_language": "They blended the juice.",
+            "target_language": "他们榨了果汁。",
+            "romanized": "tāmen zhà le guǒzhī."
+        },
+        {
+            "base_language": "I paid the waiter.",
+            "target_language": "我付了钱给服务员。",
+            "romanized": "wǒ fù le qián gěi fúwùyuán."
+        },
+        {
+            "base_language": "We paid the waiter.",
+            "target_language": "我们付了钱给服务员。",
+            "romanized": "wǒmen fù le qián gěi fúwùyuán."
+        },
+        {
+            "base_language": "They paid the waiter.",
+            "target_language": "他们付了钱给服务员。",
+            "romanized": "tāmen fù le qián gěi fúwùyuán."
+        },
+        {
+            "base_language": "I ordered the snack.",
+            "target_language": "我点了零食。",
+            "romanized": "wǒ diǎn le língshí."
+        },
+        {
+            "base_language": "We ordered the snack.",
+            "target_language": "我们点了零食。",
+            "romanized": "wǒmen diǎn le língshí."
+        },
+        {
+            "base_language": "They ordered the snack.",
+            "target_language": "他们点了零食。",
+            "romanized": "tāmen diǎn le língshí."
+        },
+        {
+            "base_language": "I wanted butter.",
+            "target_language": "我想要黄油。",
+            "romanized": "wǒ xiǎng yào huángyóu."
+        },
+        {
+            "base_language": "You wanted butter.",
+            "target_language": "你想要黄油。",
+            "romanized": "nǐ xiǎng yào huángyóu."
+        },
+        {
+            "base_language": "They wanted butter.",
+            "target_language": "他们想要黄油。",
+            "romanized": "tāmen xiǎng yào huángyóu."
+        },
+        {
+            "base_language": "I had a knife.",
+            "target_language": "我有一把刀。",
+            "romanized": "wǒ yǒu yī bǎ dāo."
+        },
+        {
+            "base_language": "You had a knife.",
+            "target_language": "你有一把刀。",
+            "romanized": "nǐ yǒu yī bǎ dāo."
+        },
+        {
+            "base_language": "They had a knife.",
+            "target_language": "他们有一把刀。",
+            "romanized": "tāmen yǒu yī bǎ dāo."
+        }
+    ]
+}

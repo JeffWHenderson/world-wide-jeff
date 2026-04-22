@@ -1,0 +1,46 @@
+{
+    "dots": [
+        {
+            "top": "50%",
+            "left": "40%",
+            "sentences": [
+                { "base_language": "this is a girl with a blue shirt", "target_language": "esta es una chica con una camiseta azul" }
+            ]
+        },
+        {
+            "top": "35%",
+            "left": "58%",
+            "sentences": [
+                { "base_language": "She is stiring batter", "target_language": "Ella está revolviendo la masa" }
+            ]
+        },
+        {
+            "top": "39%",
+            "left": "28%",
+            "sentences": [
+                { "base_language": "This is a frying pan", "target_language": "Esta es una sartén" }
+            ]
+        },
+        {
+            "top": "38%",
+            "left": "74%",
+            "sentences": [
+                { "base_language": "A guy is putting cookies in the oven", "target_language": "Un chico está poniendo galletas en el horno." }
+            ]
+        },
+        {
+            "top": "41%",
+            "left": "87%",
+            "sentences": [
+                { "base_language": "The waiter is serving pasta", "target_language": "El camarero está sirviendo pasta." }
+            ]
+        },
+        {
+            "top": "69%",
+            "left": "12%",
+            "sentences": [
+                { "base_language": "There is bread is on the table.", "target_language": "Hay pan en la mesa." }
+            ]
+        }
+    ]
+}

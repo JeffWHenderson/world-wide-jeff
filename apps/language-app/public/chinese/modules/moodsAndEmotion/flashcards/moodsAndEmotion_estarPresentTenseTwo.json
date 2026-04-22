@@ -1,0 +1,367 @@
+{
+    "name": "Emotions present tense 2",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "I am filled with desire.",
+            "target_language": "我充满渴望。",
+            "romanized": "wǒ chōngmǎn kěwàng."
+        },
+        {
+            "base_language": "We are filled with desire.",
+            "target_language": "我们充满渴望。",
+            "romanized": "wǒmen chōngmǎn kěwàng."
+        },
+        {
+            "base_language": "They are filled with desire.",
+            "target_language": "他们充满渴望。",
+            "romanized": "tāmen chōngmǎn kěwàng."
+        },
+        {
+            "base_language": "I am full of hate.",
+            "target_language": "我充满仇恨。",
+            "romanized": "wǒ chōngmǎn chóuhèn."
+        },
+        {
+            "base_language": "We are full of hate.",
+            "target_language": "我们充满仇恨。",
+            "romanized": "wǒmen chōngmǎn chóuhèn."
+        },
+        {
+            "base_language": "They are full of hate.",
+            "target_language": "他们充满仇恨。",
+            "romanized": "tāmen chōngmǎn chóuhèn."
+        },
+        {
+            "base_language": "I am enraged.",
+            "target_language": "我很愤怒。",
+            "romanized": "wǒ hěn fènnù."
+        },
+        {
+            "base_language": "We are enraged.",
+            "target_language": "我们很愤怒。",
+            "romanized": "wǒmen hěn fènnù."
+        },
+        {
+            "base_language": "They are enraged.",
+            "target_language": "他们很愤怒。",
+            "romanized": "tāmen hěn fènnù."
+        },
+        {
+            "base_language": "I am furious.",
+            "target_language": "我非常生气。",
+            "romanized": "wǒ fēicháng shēngqì."
+        },
+        {
+            "base_language": "We are furious.",
+            "target_language": "我们非常生气。",
+            "romanized": "wǒmen fēicháng shēngqì."
+        },
+        {
+            "base_language": "They are furious.",
+            "target_language": "他们非常生气。",
+            "romanized": "tāmen fēicháng shēngqì."
+        },
+        {
+            "base_language": "I am sorrowful.",
+            "target_language": "我很悲伤。",
+            "romanized": "wǒ hěn bēishāng."
+        },
+        {
+            "base_language": "We are sorrowful.",
+            "target_language": "我们很悲伤。",
+            "romanized": "wǒmen hěn bēishāng."
+        },
+        {
+            "base_language": "They are sorrowful.",
+            "target_language": "他们很悲伤。",
+            "romanized": "tāmen hěn bēishāng."
+        },
+        {
+            "base_language": "I am grieving.",
+            "target_language": "我在悲痛中。",
+            "romanized": "wǒ zài bēitòng zhōng."
+        },
+        {
+            "base_language": "We are grieving.",
+            "target_language": "我们在悲痛中。",
+            "romanized": "wǒmen zài bēitòng zhōng."
+        },
+        {
+            "base_language": "They are grieving.",
+            "target_language": "他们在悲痛中。",
+            "romanized": "tāmen zài bēitòng zhōng."
+        },
+        {
+            "base_language": "I am lonely.",
+            "target_language": "我很孤独。",
+            "romanized": "wǒ hěn gūdú."
+        },
+        {
+            "base_language": "We are lonely.",
+            "target_language": "我们很孤独。",
+            "romanized": "wǒmen hěn gūdú."
+        },
+        {
+            "base_language": "They are lonely.",
+            "target_language": "他们很孤独。",
+            "romanized": "tāmen hěn gūdú."
+        },
+        {
+            "base_language": "I am confident.",
+            "target_language": "我很自信。",
+            "romanized": "wǒ hěn zìxìn."
+        },
+        {
+            "base_language": "We are confident.",
+            "target_language": "我们很自信。",
+            "romanized": "wǒmen hěn zìxìn."
+        },
+        {
+            "base_language": "They are confident.",
+            "target_language": "他们很自信。",
+            "romanized": "tāmen hěn zìxìn."
+        },
+        {
+            "base_language": "I am courageous.",
+            "target_language": "我很勇敢。",
+            "romanized": "wǒ hěn yǒnggǎn."
+        },
+        {
+            "base_language": "We are courageous.",
+            "target_language": "我们很勇敢。",
+            "romanized": "wǒmen hěn yǒnggǎn."
+        },
+        {
+            "base_language": "They are courageous.",
+            "target_language": "他们很勇敢。",
+            "romanized": "tāmen hěn yǒnggǎn."
+        },
+        {
+            "base_language": "I am fearful.",
+            "target_language": "我很恐惧。",
+            "romanized": "wǒ hěn kǒngjù."
+        },
+        {
+            "base_language": "We are fearful.",
+            "target_language": "我们很恐惧。",
+            "romanized": "wǒmen hěn kǒngjù."
+        },
+        {
+            "base_language": "They are fearful.",
+            "target_language": "他们很恐惧。",
+            "romanized": "tāmen hěn kǒngjù."
+        },
+        {
+            "base_language": "I am comfortable.",
+            "target_language": "我很舒服。",
+            "romanized": "wǒ hěn shūfu."
+        },
+        {
+            "base_language": "We are comfortable.",
+            "target_language": "我们很舒服。",
+            "romanized": "wǒmen hěn shūfu."
+        },
+        {
+            "base_language": "They are comfortable.",
+            "target_language": "他们很舒服。",
+            "romanized": "tāmen hěn shūfu."
+        },
+        {
+            "base_language": "I am terrified.",
+            "target_language": "我很恐惧。",
+            "romanized": "wǒ hěn kǒngjù."
+        },
+        {
+            "base_language": "They are terrified.",
+            "target_language": "他们很恐惧。",
+            "romanized": "tāmen hěn kǒngjù."
+        },
+        {
+            "base_language": "We are terrified.",
+            "target_language": "我们很恐惧。",
+            "romanized": "wǒmen hěn kǒngjù."
+        },
+        {
+            "base_language": "I am horrified.",
+            "target_language": "我很惊恐。",
+            "romanized": "wǒ hěn jīngkǒng."
+        },
+        {
+            "base_language": "We are horrified.",
+            "target_language": "我们很惊恐。",
+            "romanized": "wǒmen hěn jīngkǒng."
+        },
+        {
+            "base_language": "They are horrified.",
+            "target_language": "他们很惊恐。",
+            "romanized": "tāmen hěn jīngkǒng."
+        },
+        {
+            "base_language": "I am pleased.",
+            "target_language": "我很满意。",
+            "romanized": "wǒ hěn mǎnyì."
+        },
+        {
+            "base_language": "We are pleased.",
+            "target_language": "我们很满意。",
+            "romanized": "wǒmen hěn mǎnyì."
+        },
+        {
+            "base_language": "They are pleased.",
+            "target_language": "他们很满意。",
+            "romanized": "tāmen hěn mǎnyì."
+        },
+        {
+            "base_language": "I am in pain.",
+            "target_language": "我很痛苦。",
+            "romanized": "wǒ hěn tòngkǔ."
+        },
+        {
+            "base_language": "We are in pain.",
+            "target_language": "我们很痛苦。",
+            "romanized": "wǒmen hěn tòngkǔ."
+        },
+        {
+            "base_language": "They are in pain.",
+            "target_language": "他们很痛苦。",
+            "romanized": "tāmen hěn tòngkǔ."
+        },
+        {
+            "base_language": "I am heavy-hearted.",
+            "target_language": "我心情沉重。",
+            "romanized": "wǒ xīnqíng chénzhòng."
+        },
+        {
+            "base_language": "We are heavy-hearted.",
+            "target_language": "我们心情沉重。",
+            "romanized": "wǒmen xīnqíng chénzhòng."
+        },
+        {
+            "base_language": "They are heavy-hearted.",
+            "target_language": "他们心情沉重。",
+            "romanized": "tāmen xīnqíng chénzhòng."
+        },
+        {
+            "base_language": "I am in good spirits.",
+            "target_language": "我心情很好。",
+            "romanized": "wǒ xīnqíng hěn hǎo."
+        },
+        {
+            "base_language": "We are in good spirits.",
+            "target_language": "我们心情很好。",
+            "romanized": "wǒmen xīnqíng hěn hǎo."
+        },
+        {
+            "base_language": "They are in good spirits.",
+            "target_language": "他们心情很好。",
+            "romanized": "tāmen xīnqíng hěn hǎo."
+        },
+        {
+            "base_language": "I am empathetic.",
+            "target_language": "我很有同理心。",
+            "romanized": "wǒ hěn yǒu tónglǐ xīn."
+        },
+        {
+            "base_language": "We are empathetic.",
+            "target_language": "我们很有同理心。",
+            "romanized": "wǒmen hěn yǒu tónglǐ xīn."
+        },
+        {
+            "base_language": "They are empathetic.",
+            "target_language": "他们很有同理心。",
+            "romanized": "tāmen hěn yǒu tónglǐ xīn."
+        },
+        {
+            "base_language": "I am sympathetic.",
+            "target_language": "我很同情。",
+            "romanized": "wǒ hěn tóngqíng."
+        },
+        {
+            "base_language": "We are sympathetic.",
+            "target_language": "我们很同情。",
+            "romanized": "wǒmen hěn tóngqíng."
+        },
+        {
+            "base_language": "They are sympathetic.",
+            "target_language": "他们很同情。",
+            "romanized": "tāmen hěn tóngqíng."
+        },
+        {
+            "base_language": "I am apathetic.",
+            "target_language": "我很冷漠。",
+            "romanized": "wǒ hěn lěngmò."
+        },
+        {
+            "base_language": "We are apathetic.",
+            "target_language": "我们很冷漠。",
+            "romanized": "wǒmen hěn lěngmò."
+        },
+        {
+            "base_language": "They are apathetic.",
+            "target_language": "他们很冷漠。",
+            "romanized": "tāmen hěn lěngmò."
+        },
+        {
+            "base_language": "I am energetic.",
+            "target_language": "我很有活力。",
+            "romanized": "wǒ hěn yǒu huólì."
+        },
+        {
+            "base_language": "We are energetic.",
+            "target_language": "我们很有活力。",
+            "romanized": "wǒmen hěn yǒu huólì."
+        },
+        {
+            "base_language": "They are energetic.",
+            "target_language": "他们很有活力。",
+            "romanized": "tāmen hěn yǒu huólì."
+        },
+        {
+            "base_language": "I am fatigued.",
+            "target_language": "我很疲惫。",
+            "romanized": "wǒ hěn píbèi."
+        },
+        {
+            "base_language": "We are fatigued.",
+            "target_language": "我们很疲惫。",
+            "romanized": "wǒmen hěn píbèi."
+        },
+        {
+            "base_language": "They are fatigued.",
+            "target_language": "他们很疲惫。",
+            "romanized": "tāmen hěn píbèi."
+        },
+        {
+            "base_language": "I am tense.",
+            "target_language": "我很紧张。",
+            "romanized": "wǒ hěn jǐnzhāng."
+        },
+        {
+            "base_language": "We are tense.",
+            "target_language": "我们很紧张。",
+            "romanized": "wǒmen hěn jǐnzhāng."
+        },
+        {
+            "base_language": "They are tense.",
+            "target_language": "他们很紧张。",
+            "romanized": "tāmen hěn jǐnzhāng."
+        },
+        {
+            "base_language": "I am relieved.",
+            "target_language": "我松了一口气。",
+            "romanized": "wǒ sōng le yī kǒu qì."
+        },
+        {
+            "base_language": "We are relieved.",
+            "target_language": "我们松了一口气。",
+            "romanized": "wǒmen sōng le yī kǒu qì."
+        },
+        {
+            "base_language": "They are relieved.",
+            "target_language": "他们松了一口气。",
+            "romanized": "tāmen sōng le yī kǒu qì."
+        }
+    ]
+}

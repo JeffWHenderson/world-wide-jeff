@@ -1,0 +1,316 @@
+{
+    "name": "Future tense 2",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "I will be in the market",
+            "target_language": "私は市場にいるでしょう",
+            "romanized": "watashi wa ichiba ni iru deshou"
+        },
+        {
+            "base_language": "We will be in the market",
+            "target_language": "私たちは市場にいるでしょう",
+            "romanized": "watashitachi wa ichiba ni iru deshou"
+        },
+        {
+            "base_language": "They will be in the market",
+            "target_language": "彼らは市場にいるでしょう",
+            "romanized": "karera wa ichiba ni iru deshou"
+        },
+        {
+            "base_language": "I will live in the Suburb",
+            "target_language": "私は郊外に住むでしょう",
+            "romanized": "watashi wa kougai ni sumu deshou"
+        },
+        {
+            "base_language": "We will live in the Suburb",
+            "target_language": "私たちは郊外に住むでしょう",
+            "romanized": "watashitachi wa kougai ni sumu deshou"
+        },
+        {
+            "base_language": "They will live in the Suburb",
+            "target_language": "彼らは郊外に住むでしょう",
+            "romanized": "karera wa kougai ni sumu deshou"
+        },
+        {
+            "base_language": "I will stay in the library",
+            "target_language": "私は図書館にいるでしょう",
+            "romanized": "watashi wa toshokan ni iru deshou"
+        },
+        {
+            "base_language": "We will stay in the library",
+            "target_language": "私たちは図書館にいるでしょう",
+            "romanized": "watashitachi wa toshokan ni iru deshou"
+        },
+        {
+            "base_language": "They will stay in the library",
+            "target_language": "彼らは図書館にいるでしょう",
+            "romanized": "karera wa toshokan ni iru deshou"
+        },
+        {
+            "base_language": "I will meet her at the restaurant",
+            "target_language": "私はレストランで彼女に会うでしょう",
+            "romanized": "watashi wa resutoran de kanojo ni au deshou"
+        },
+        {
+            "base_language": "We will meet her at the restaurant",
+            "target_language": "私たちはレストランで彼女に会うでしょう",
+            "romanized": "watashitachi wa resutoran de kanojo ni au deshou"
+        },
+        {
+            "base_language": "They will meet at the restaurant",
+            "target_language": "彼らはレストランで会うでしょう",
+            "romanized": "karera wa resutoran de au deshou"
+        },
+        {
+            "base_language": "I will be lost in the airport",
+            "target_language": "私は空港で迷うでしょう",
+            "romanized": "watashi wa kuukou de mayou deshou"
+        },
+        {
+            "base_language": "We will be lost in the airport",
+            "target_language": "私たちは空港で迷うでしょう",
+            "romanized": "watashitachi wa kuukou de mayou deshou"
+        },
+        {
+            "base_language": "They will be lost in the airport",
+            "target_language": "彼らは空港で迷うでしょう",
+            "romanized": "karera wa kuukou de mayou deshou"
+        },
+        {
+            "base_language": "I will find a bus station",
+            "target_language": "私はバス停を見つけるでしょう",
+            "romanized": "watashi wa basutei wo mitsukeru deshou"
+        },
+        {
+            "base_language": "We will find a bus station",
+            "target_language": "私たちはバス停を見つけるでしょう",
+            "romanized": "watashitachi wa basutei wo mitsukeru deshou"
+        },
+        {
+            "base_language": "They will find a bus station",
+            "target_language": "彼らはバス停を見つけるでしょう",
+            "romanized": "karera wa basutei wo mitsukeru deshou"
+        },
+        {
+            "base_language": "I will look for a cafe",
+            "target_language": "私はカフェを探すでしょう",
+            "romanized": "watashi wa kafe wo sagasu deshou"
+        },
+        {
+            "base_language": "We will look for a cafe",
+            "target_language": "私たちはカフェを探すでしょう",
+            "romanized": "watashitachi wa kafe wo sagasu deshou"
+        },
+        {
+            "base_language": "They will look for a cafe",
+            "target_language": "彼らはカフェを探すでしょう",
+            "romanized": "karera wa kafe wo sagasu deshou"
+        },
+        {
+            "base_language": "I will need directions to the square",
+            "target_language": "私は広場への道案内が必要になるでしょう",
+            "romanized": "watashi wa hiroba e no michiannai ga hitsuyou ni naru deshou"
+        },
+        {
+            "base_language": "We will need directions to the square",
+            "target_language": "私たちは広場への道案内が必要になるでしょう",
+            "romanized": "watashitachi wa hiroba e no michiannai ga hitsuyou ni naru deshou"
+        },
+        {
+            "base_language": "They will need directions to the square",
+            "target_language": "彼らは広場への道案内が必要になるでしょう",
+            "romanized": "karera wa hiroba e no michiannai ga hitsuyou ni naru deshou"
+        },
+        {
+            "base_language": "I will give directions to the beach",
+            "target_language": "私はビーチへの道を教えるでしょう",
+            "romanized": "watashi wa biichi e no michi wo oshieru deshou"
+        },
+        {
+            "base_language": "We will give directions to the beach",
+            "target_language": "私たちはビーチへの道を教えるでしょう",
+            "romanized": "watashitachi wa biichi e no michi wo oshieru deshou"
+        },
+        {
+            "base_language": "They will give directions to the beach",
+            "target_language": "彼らはビーチへの道を教えるでしょう",
+            "romanized": "karera wa biichi e no michi wo oshieru deshou"
+        },
+        {
+            "base_language": "I will head right at the corner",
+            "target_language": "私は角で右に行くでしょう",
+            "romanized": "watashi wa kado de migi ni iku deshou"
+        },
+        {
+            "base_language": "We will head right at the corner",
+            "target_language": "私たちは角で右に行くでしょう",
+            "romanized": "watashitachi wa kado de migi ni iku deshou"
+        },
+        {
+            "base_language": "They will head right at the corner",
+            "target_language": "彼らは角で右に行くでしょう",
+            "romanized": "karera wa kado de migi ni iku deshou"
+        },
+        {
+            "base_language": "I will continue straight",
+            "target_language": "私はまっすぐ進むでしょう",
+            "romanized": "watashi wa massugu susumu deshou"
+        },
+        {
+            "base_language": "We will continue straight",
+            "target_language": "私たちはまっすぐ進むでしょう",
+            "romanized": "watashitachi wa massugu susumu deshou"
+        },
+        {
+            "base_language": "They will continue straight",
+            "target_language": "彼らはまっすぐ進むでしょう",
+            "romanized": "karera wa massugu susumu deshou"
+        },
+        {
+            "base_language": "I will stop on the mountain",
+            "target_language": "私は山で止まるでしょう",
+            "romanized": "watashi wa yama de tomaru deshou"
+        },
+        {
+            "base_language": "We will stop on the mountain",
+            "target_language": "私たちは山で止まるでしょう",
+            "romanized": "watashitachi wa yama de tomaru deshou"
+        },
+        {
+            "base_language": "They will stop on the mountain",
+            "target_language": "彼らは山で止まるでしょう",
+            "romanized": "karera wa yama de tomaru deshou"
+        },
+        {
+            "base_language": "I will park on the crosswalk",
+            "target_language": "私は横断歩道に駐車するでしょう",
+            "romanized": "watashi wa oudanhodou ni chuusha suru deshou"
+        },
+        {
+            "base_language": "We will park on the crosswalk",
+            "target_language": "私たちは横断歩道に駐車するでしょう",
+            "romanized": "watashitachi wa oudanhodou ni chuusha suru deshou"
+        },
+        {
+            "base_language": "They will park on the crosswalk",
+            "target_language": "彼らは横断歩道に駐車するでしょう",
+            "romanized": "karera wa oudanhodou ni chuusha suru deshou"
+        },
+        {
+            "base_language": "I will check in at the train station",
+            "target_language": "私は駅でチェックインするでしょう",
+            "romanized": "watashi wa eki de chekkuin suru deshou"
+        },
+        {
+            "base_language": "We will check in at the train station",
+            "target_language": "私たちは駅でチェックインするでしょう",
+            "romanized": "watashitachi wa eki de chekkuin suru deshou"
+        },
+        {
+            "base_language": "They will check in at the train station",
+            "target_language": "彼らは駅でチェックインするでしょう",
+            "romanized": "karera wa eki de chekkuin suru deshou"
+        },
+        {
+            "base_language": "I will check out of the hotel",
+            "target_language": "私はホテルをチェックアウトするでしょう",
+            "romanized": "watashi wa hoteru wo chekkuauto suru deshou"
+        },
+        {
+            "base_language": "We will check out of the hotel",
+            "target_language": "私たちはホテルをチェックアウトするでしょう",
+            "romanized": "watashitachi wa hoteru wo chekkuauto suru deshou"
+        },
+        {
+            "base_language": "They will check out of the hotel",
+            "target_language": "彼らはホテルをチェックアウトするでしょう",
+            "romanized": "karera wa hoteru wo chekkuauto suru deshou"
+        },
+        {
+            "base_language": "I will reserve a ticket",
+            "target_language": "私はチケットを予約するでしょう",
+            "romanized": "watashi wa chiketto wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "We will reserve a ticket",
+            "target_language": "私たちはチケットを予約するでしょう",
+            "romanized": "watashitachi wa chiketto wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "They will reserve a ticket",
+            "target_language": "彼らはチケットを予約するでしょう",
+            "romanized": "karera wa chiketto wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "I will book a flight",
+            "target_language": "私は飛行機を予約するでしょう",
+            "romanized": "watashi wa hikouki wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "We will book a flight",
+            "target_language": "私たちは飛行機を予約するでしょう",
+            "romanized": "watashitachi wa hikouki wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "They will book a flight",
+            "target_language": "彼らは飛行機を予約するでしょう",
+            "romanized": "karera wa hikouki wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "I will be at the cinema",
+            "target_language": "私は映画館にいるでしょう",
+            "romanized": "watashi wa eigakan ni iru deshou"
+        },
+        {
+            "base_language": "We will be at the cinema",
+            "target_language": "私たちは映画館にいるでしょう",
+            "romanized": "watashitachi wa eigakan ni iru deshou"
+        },
+        {
+            "base_language": "They will be at the cinema",
+            "target_language": "彼らは映画館にいるでしょう",
+            "romanized": "karera wa eigakan ni iru deshou"
+        },
+        {
+            "base_language": "I will live in the Countryside",
+            "target_language": "私は田舎に住むでしょう",
+            "romanized": "watashi wa inaka ni sumu deshou"
+        },
+        {
+            "base_language": "We will live in the countryside",
+            "target_language": "私たちは田舎に住むでしょう",
+            "romanized": "watashitachi wa inaka ni sumu deshou"
+        },
+        {
+            "base_language": "They will live in the countryside",
+            "target_language": "彼らは田舎に住むでしょう",
+            "romanized": "karera wa inaka ni sumu deshou"
+        },
+        {
+            "base_language": "will go to the bus station",
+            "target_language": "バス停に行くでしょう",
+            "romanized": "basutei ni iku deshou"
+        },
+        {
+            "base_language": "will turn at the intersection",
+            "target_language": "交差点で曲がるでしょう",
+            "romanized": "kousaten de magaru deshou"
+        },
+        {
+            "base_language": "will continue straight at the Bridge",
+            "target_language": "橋でまっすぐ進むでしょう",
+            "romanized": "hashi de massugu susumu deshou"
+        },
+        {
+            "base_language": "will stop in the city center",
+            "target_language": "市街地で止まるでしょう",
+            "romanized": "shigaichi de tomaru deshou"
+        },
+        {
+            "base_language": "will turn right at the neighbourhood",
+            "target_language": "その地区で右に曲がるでしょう",
+            "romanized": "sono chiku de migi ni magaru deshou"
+        }
+    ]
+}

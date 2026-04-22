@@ -1,0 +1,25 @@
+{
+    "name": "Stuff I missed",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        { "base_language": "flavor", "target_language": "sabor" },
+        { "base_language": "taste", "target_language": "gusto" },
+        { "base_language": "recipe", "target_language": "receta" },
+        { "base_language": "kitchen", "target_language": "cocina" },
+        { "base_language": "oven", "target_language": "horno" },
+        { "base_language": "stove", "target_language": "estufa" },
+        { "base_language": "fork", "target_language": "tenedor" },
+        { "base_language": "spoon", "target_language": "cuchara" },
+        { "base_language": "plate", "target_language": "plato" },
+        { "base_language": "bowl", "target_language": "tazón" },
+        { "base_language": "cup", "target_language": "taza" },
+        { "base_language": "glass", "target_language": "vaso" },
+        { "base_language": "bottle", "target_language": "botella" },
+        { "base_language": "table", "target_language": "mesa" },
+        { "base_language": "hunger", "target_language": "hambre" },
+        { "base_language": "thirst", "target_language": "sed" },
+        { "base_language": "almost", "target_language": "casi" },
+        { "base_language": "too (as in 'too salty')", "target_language": "demasiado" }
+    ]
+}

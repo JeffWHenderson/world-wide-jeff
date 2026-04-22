@@ -1,0 +1,301 @@
+{
+    "name": "Future tense 1",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "I will be at home",
+            "target_language": "私は家にいるでしょう",
+            "romanized": "watashi wa ie ni iru deshou"
+        },
+        {
+            "base_language": "You will be at home",
+            "target_language": "あなたは家にいるでしょう",
+            "romanized": "anata wa ie ni iru deshou"
+        },
+        {
+            "base_language": "He will be home",
+            "target_language": "彼は家にいるでしょう",
+            "romanized": "kare wa ie ni iru deshou"
+        },
+        {
+            "base_language": "I will live in an apartment",
+            "target_language": "私はアパートに住むでしょう",
+            "romanized": "watashi wa apaato ni sumu deshou"
+        },
+        {
+            "base_language": "You will live in an apartment",
+            "target_language": "あなたはアパートに住むでしょう",
+            "romanized": "anata wa apaato ni sumu deshou"
+        },
+        {
+            "base_language": "She will live in an apartment",
+            "target_language": "彼女はアパートに住むでしょう",
+            "romanized": "kanojo wa apaato ni sumu deshou"
+        },
+        {
+            "base_language": "I will stay in school",
+            "target_language": "私は学校にいるでしょう",
+            "romanized": "watashi wa gakkou ni iru deshou"
+        },
+        {
+            "base_language": "You will stay in school",
+            "target_language": "あなたは学校にいるでしょう",
+            "romanized": "anata wa gakkou ni iru deshou"
+        },
+        {
+            "base_language": "He will stay in school",
+            "target_language": "彼は学校にいるでしょう",
+            "romanized": "kare wa gakkou ni iru deshou"
+        },
+        {
+            "base_language": "I will meet her at the office",
+            "target_language": "私はオフィスで彼女に会うでしょう",
+            "romanized": "watashi wa ofisu de kanojo ni au deshou"
+        },
+        {
+            "base_language": "You will meet her at the office",
+            "target_language": "あなたはオフィスで彼女に会うでしょう",
+            "romanized": "anata wa ofisu de kanojo ni au deshou"
+        },
+        {
+            "base_language": "She will meet her at the office",
+            "target_language": "彼女はオフィスで彼女に会うでしょう",
+            "romanized": "kanojo wa ofisu de kanojo ni au deshou"
+        },
+        {
+            "base_language": "I will be lost in the supermarket",
+            "target_language": "私はスーパーで迷うでしょう",
+            "romanized": "watashi wa suupaa de mayou deshou"
+        },
+        {
+            "base_language": "You will be lost in the supermarket",
+            "target_language": "あなたはスーパーで迷うでしょう",
+            "romanized": "anata wa suupaa de mayou deshou"
+        },
+        {
+            "base_language": "He will be lost in the supermarket",
+            "target_language": "彼はスーパーで迷うでしょう",
+            "romanized": "kare wa suupaa de mayou deshou"
+        },
+        {
+            "base_language": "I will find a bank",
+            "target_language": "私は銀行を見つけるでしょう",
+            "romanized": "watashi wa ginkou wo mitsukeru deshou"
+        },
+        {
+            "base_language": "You will find a bank",
+            "target_language": "あなたは銀行を見つけるでしょう",
+            "romanized": "anata wa ginkou wo mitsukeru deshou"
+        },
+        {
+            "base_language": "She will find a bank",
+            "target_language": "彼女は銀行を見つけるでしょう",
+            "romanized": "kanojo wa ginkou wo mitsukeru deshou"
+        },
+        {
+            "base_language": "I will look for a university",
+            "target_language": "私は大学を探すでしょう",
+            "romanized": "watashi wa daigaku wo sagasu deshou"
+        },
+        {
+            "base_language": "You will look for a university",
+            "target_language": "あなたは大学を探すでしょう",
+            "romanized": "anata wa daigaku wo sagasu deshou"
+        },
+        {
+            "base_language": "He will look for a university",
+            "target_language": "彼は大学を探すでしょう",
+            "romanized": "kare wa daigaku wo sagasu deshou"
+        },
+        {
+            "base_language": "I will need directions",
+            "target_language": "私は道案内が必要になるでしょう",
+            "romanized": "watashi wa michiannai ga hitsuyou ni naru deshou"
+        },
+        {
+            "base_language": "you will need directions",
+            "target_language": "あなたは道案内が必要になるでしょう",
+            "romanized": "anata wa michiannai ga hitsuyou ni naru deshou"
+        },
+        {
+            "base_language": "She will need directions",
+            "target_language": "彼女は道案内が必要になるでしょう",
+            "romanized": "kanojo wa michiannai ga hitsuyou ni naru deshou"
+        },
+        {
+            "base_language": "I will give directions",
+            "target_language": "私は道を教えるでしょう",
+            "romanized": "watashi wa michi wo oshieru deshou"
+        },
+        {
+            "base_language": "You will give directions",
+            "target_language": "あなたは道を教えるでしょう",
+            "romanized": "anata wa michi wo oshieru deshou"
+        },
+        {
+            "base_language": "He will give directions",
+            "target_language": "彼は道を教えるでしょう",
+            "romanized": "kare wa michi wo oshieru deshou"
+        },
+        {
+            "base_language": "I will head right",
+            "target_language": "私は右に行くでしょう",
+            "romanized": "watashi wa migi ni iku deshou"
+        },
+        {
+            "base_language": "You will head right",
+            "target_language": "あなたは右に行くでしょう",
+            "romanized": "anata wa migi ni iku deshou"
+        },
+        {
+            "base_language": "She will head right",
+            "target_language": "彼女は右に行くでしょう",
+            "romanized": "kanojo wa migi ni iku deshou"
+        },
+        {
+            "base_language": "I will continue straight",
+            "target_language": "私はまっすぐ進むでしょう",
+            "romanized": "watashi wa massugu susumu deshou"
+        },
+        {
+            "base_language": "You will continue straight",
+            "target_language": "あなたはまっすぐ進むでしょう",
+            "romanized": "anata wa massugu susumu deshou"
+        },
+        {
+            "base_language": "He will continue straight",
+            "target_language": "彼はまっすぐ進むでしょう",
+            "romanized": "kare wa massugu susumu deshou"
+        },
+        {
+            "base_language": "I will stop on the left",
+            "target_language": "私は左で止まるでしょう",
+            "romanized": "watashi wa hidari de tomaru deshou"
+        },
+        {
+            "base_language": "You will stop on the left",
+            "target_language": "あなたは左で止まるでしょう",
+            "romanized": "anata wa hidari de tomaru deshou"
+        },
+        {
+            "base_language": "She will stop on the left",
+            "target_language": "彼女は左で止まるでしょう",
+            "romanized": "kanojo wa hidari de tomaru deshou"
+        },
+        {
+            "base_language": "I will park on the street",
+            "target_language": "私は通りに駐車するでしょう",
+            "romanized": "watashi wa toori ni chuusha suru deshou"
+        },
+        {
+            "base_language": "You will park on the street",
+            "target_language": "あなたは通りに駐車するでしょう",
+            "romanized": "anata wa toori ni chuusha suru deshou"
+        },
+        {
+            "base_language": "He will park on the street",
+            "target_language": "彼は通りに駐車するでしょう",
+            "romanized": "kare wa toori ni chuusha suru deshou"
+        },
+        {
+            "base_language": "I will check into the hotel",
+            "target_language": "私はホテルにチェックインするでしょう",
+            "romanized": "watashi wa hoteru ni chekkuin suru deshou"
+        },
+        {
+            "base_language": "You will check into the hotel",
+            "target_language": "あなたはホテルにチェックインするでしょう",
+            "romanized": "anata wa hoteru ni chekkuin suru deshou"
+        },
+        {
+            "base_language": "She will check into the hotel",
+            "target_language": "彼女はホテルにチェックインするでしょう",
+            "romanized": "kanojo wa hoteru ni chekkuin suru deshou"
+        },
+        {
+            "base_language": "I will check out of the hospital",
+            "target_language": "私は病院を退院するでしょう",
+            "romanized": "watashi wa byouin wo taiin suru deshou"
+        },
+        {
+            "base_language": "You will check out of the hospital",
+            "target_language": "あなたは病院を退院するでしょう",
+            "romanized": "anata wa byouin wo taiin suru deshou"
+        },
+        {
+            "base_language": "He will check out of the hospital",
+            "target_language": "彼は病院を退院するでしょう",
+            "romanized": "kare wa byouin wo taiin suru deshou"
+        },
+        {
+            "base_language": "I will reserve a table",
+            "target_language": "私はテーブルを予約するでしょう",
+            "romanized": "watashi wa teeburu wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "You will reserve a table",
+            "target_language": "あなたはテーブルを予約するでしょう",
+            "romanized": "anata wa teeburu wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "She will reserve a table",
+            "target_language": "彼女はテーブルを予約するでしょう",
+            "romanized": "kanojo wa teeburu wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "I will book a flight",
+            "target_language": "私は飛行機を予約するでしょう",
+            "romanized": "watashi wa hikouki wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "You will book a flight",
+            "target_language": "あなたは飛行機を予約するでしょう",
+            "romanized": "anata wa hikouki wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "he will book a flight",
+            "target_language": "彼は飛行機を予約するでしょう",
+            "romanized": "kare wa hikouki wo yoyaku suru deshou"
+        },
+        {
+            "base_language": "I will be in the museum",
+            "target_language": "私は博物館にいるでしょう",
+            "romanized": "watashi wa hakubutsukan ni iru deshou"
+        },
+        {
+            "base_language": "you will be in the museum",
+            "target_language": "あなたは博物館にいるでしょう",
+            "romanized": "anata wa hakubutsukan ni iru deshou"
+        },
+        {
+            "base_language": "He will be in the museum",
+            "target_language": "彼は博物館にいるでしょう",
+            "romanized": "kare wa hakubutsukan ni iru deshou"
+        },
+        {
+            "base_language": "will go to the bus station",
+            "target_language": "バス停に行くでしょう",
+            "romanized": "basutei ni iku deshou"
+        },
+        {
+            "base_language": "will turn at the intersection",
+            "target_language": "交差点で曲がるでしょう",
+            "romanized": "kousaten de magaru deshou"
+        },
+        {
+            "base_language": "will continue straight at the Bridge",
+            "target_language": "橋でまっすぐ進むでしょう",
+            "romanized": "hashi de massugu susumu deshou"
+        },
+        {
+            "base_language": "will stop in the city center",
+            "target_language": "市街地で止まるでしょう",
+            "romanized": "shigaichi de tomaru deshou"
+        },
+        {
+            "base_language": "will turn right at the neighbourhood",
+            "target_language": "その地区で右に曲がるでしょう",
+            "romanized": "sono chiku de migi ni magaru deshou"
+        }
+    ]
+}

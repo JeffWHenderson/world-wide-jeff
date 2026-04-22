@@ -1,0 +1,412 @@
+{
+    "name": "Color and Small Number",
+    "type": "flashcards",
+    "lesson_id": null,
+    "sentences": [
+        {
+            "base_language": "1 blue cup",
+            "target_language": "青いコップ1つ",
+            "romanized": "aoi koppu hitotsu"
+        },
+        {
+            "base_language": "2 blue cups",
+            "target_language": "青いコップ2つ",
+            "romanized": "aoi koppu futatsu"
+        },
+        {
+            "base_language": "3 blue cups",
+            "target_language": "青いコップ3つ",
+            "romanized": "aoi koppu mittsu"
+        },
+        {
+            "base_language": "4 red bottles",
+            "target_language": "赤いボトル4つ",
+            "romanized": "akai botoru yottsu"
+        },
+        {
+            "base_language": "5 red bottles",
+            "target_language": "赤いボトル5つ",
+            "romanized": "akai botoru itsutsu"
+        },
+        {
+            "base_language": "6 red bottles",
+            "target_language": "赤いボトル6つ",
+            "romanized": "akai botoru muttsu"
+        },
+        {
+            "base_language": "7 white cakes",
+            "target_language": "白いケーキ7つ",
+            "romanized": "shiroi keeki nanatsu"
+        },
+        {
+            "base_language": "8 white cakes",
+            "target_language": "白いケーキ8つ",
+            "romanized": "shiroi keeki yattsu"
+        },
+        {
+            "base_language": "9 white cakes",
+            "target_language": "白いケーキ9つ",
+            "romanized": "shiroi keeki kokonotsu"
+        },
+        {
+            "base_language": "10 white cakes",
+            "target_language": "白いケーキ10個",
+            "romanized": "shiroi keeki jukko"
+        },
+        {
+            "base_language": "0 green apples",
+            "target_language": "緑のりんご0個",
+            "romanized": "midori no ringo zero ko"
+        },
+        {
+            "base_language": "1 green apple",
+            "target_language": "緑のりんご1つ",
+            "romanized": "midori no ringo hitotsu"
+        },
+        {
+            "base_language": "2 green apples",
+            "target_language": "緑のりんご2つ",
+            "romanized": "midori no ringo futatsu"
+        },
+        {
+            "base_language": "3 yellow bananas",
+            "target_language": "黄色いバナナ3本",
+            "romanized": "kiiroi banana sanbon"
+        },
+        {
+            "base_language": "4 yellow bananas",
+            "target_language": "黄色いバナナ4本",
+            "romanized": "kiiroi banana yonhon"
+        },
+        {
+            "base_language": "5 yellow bananas",
+            "target_language": "黄色いバナナ5本",
+            "romanized": "kiiroi banana gohon"
+        },
+        {
+            "base_language": "6 orange oranges",
+            "target_language": "オレンジ色のオレンジ6つ",
+            "romanized": "orenji iro no orenji muttsu"
+        },
+        {
+            "base_language": "7 orange oranges",
+            "target_language": "オレンジ色のオレンジ7つ",
+            "romanized": "orenji iro no orenji nanatsu"
+        },
+        {
+            "base_language": "8 orange oranges",
+            "target_language": "オレンジ色のオレンジ8つ",
+            "romanized": "orenji iro no orenji yattsu"
+        },
+        {
+            "base_language": "9 brown eggs",
+            "target_language": "茶色い卵9個",
+            "romanized": "chairoi tamago kyuuko"
+        },
+        {
+            "base_language": "10 brown eggs",
+            "target_language": "茶色い卵10個",
+            "romanized": "chairoi tamago jukko"
+        },
+        {
+            "base_language": "1 black coffee",
+            "target_language": "ブラックコーヒー1杯",
+            "romanized": "burakku koohii ippai"
+        },
+        {
+            "base_language": "2 black coffees",
+            "target_language": "ブラックコーヒー2杯",
+            "romanized": "burakku koohii nihai"
+        },
+        {
+            "base_language": "3 white plates",
+            "target_language": "白いお皿3枚",
+            "romanized": "shiroi osara sanmai"
+        },
+        {
+            "base_language": "4 white plates",
+            "target_language": "白いお皿4枚",
+            "romanized": "shiroi osara yonmai"
+        },
+        {
+            "base_language": "5 white plates",
+            "target_language": "白いお皿5枚",
+            "romanized": "shiroi osara gomai"
+        },
+        {
+            "base_language": "6 red tomatoes",
+            "target_language": "赤いトマト6つ",
+            "romanized": "akai tomato muttsu"
+        },
+        {
+            "base_language": "7 red tomatoes",
+            "target_language": "赤いトマト7つ",
+            "romanized": "akai tomato nanatsu"
+        },
+        {
+            "base_language": "8 red tomatoes",
+            "target_language": "赤いトマト8つ",
+            "romanized": "akai tomato yattsu"
+        },
+        {
+            "base_language": "9 brown potatoes",
+            "target_language": "茶色いじゃがいも9つ",
+            "romanized": "chairoi jagaimo kokonotsu"
+        },
+        {
+            "base_language": "10 brown potatoes",
+            "target_language": "茶色いじゃがいも10個",
+            "romanized": "chairoi jagaimo jukko"
+        },
+        {
+            "base_language": "1 yellow cheese",
+            "target_language": "黄色いチーズ1つ",
+            "romanized": "kiiroi chiizu hitotsu"
+        },
+        {
+            "base_language": "2 yellow cheeses",
+            "target_language": "黄色いチーズ2つ",
+            "romanized": "kiiroi chiizu futatsu"
+        },
+        {
+            "base_language": "3 green salads",
+            "target_language": "グリーンサラダ3つ",
+            "romanized": "guriin sarada mittsu"
+        },
+        {
+            "base_language": "4 green salads",
+            "target_language": "グリーンサラダ4つ",
+            "romanized": "guriin sarada yottsu"
+        },
+        {
+            "base_language": "5 green salads",
+            "target_language": "グリーンサラダ5つ",
+            "romanized": "guriin sarada itsutsu"
+        },
+        {
+            "base_language": "6 white spoons",
+            "target_language": "白いスプーン6本",
+            "romanized": "shiroi supuun roppon"
+        },
+        {
+            "base_language": "7 white spoons",
+            "target_language": "白いスプーン7本",
+            "romanized": "shiroi supuun nanahon"
+        },
+        {
+            "base_language": "8 white spoons",
+            "target_language": "白いスプーン8本",
+            "romanized": "shiroi supuun happon"
+        },
+        {
+            "base_language": "9 silver forks",
+            "target_language": "銀色のフォーク9本",
+            "romanized": "giniro no fooku kyuuhon"
+        },
+        {
+            "base_language": "10 silver forks",
+            "target_language": "銀色のフォーク10本",
+            "romanized": "giniro no fooku juppon"
+        },
+        {
+            "base_language": "1 red onion",
+            "target_language": "赤い玉ねぎ1つ",
+            "romanized": "akai tamanegi hitotsu"
+        },
+        {
+            "base_language": "2 red onions",
+            "target_language": "赤い玉ねぎ2つ",
+            "romanized": "akai tamanegi futatsu"
+        },
+        {
+            "base_language": "3 red onions",
+            "target_language": "赤い玉ねぎ3つ",
+            "romanized": "akai tamanegi mittsu"
+        },
+        {
+            "base_language": "4 white bowls",
+            "target_language": "白いお椀4つ",
+            "romanized": "shiroi owan yottsu"
+        },
+        {
+            "base_language": "5 white bowls",
+            "target_language": "白いお椀5つ",
+            "romanized": "shiroi owan itsutsu"
+        },
+        {
+            "base_language": "6 white bowls",
+            "target_language": "白いお椀6つ",
+            "romanized": "shiroi owan muttsu"
+        },
+        {
+            "base_language": "7 clear glasses",
+            "target_language": "透明なグラス7つ",
+            "romanized": "toumei na gurasu nanatsu"
+        },
+        {
+            "base_language": "8 clear glasses",
+            "target_language": "透明なグラス8つ",
+            "romanized": "toumei na gurasu yattsu"
+        },
+        {
+            "base_language": "9 clear glasses",
+            "target_language": "透明なグラス9つ",
+            "romanized": "toumei na gurasu kokonotsu"
+        },
+        {
+            "base_language": "10 clear glasses",
+            "target_language": "透明なグラス10個",
+            "romanized": "toumei na gurasu jukko"
+        },
+        {
+            "base_language": "1 brown table",
+            "target_language": "茶色いテーブル1つ",
+            "romanized": "chairoi teeburu hitotsu"
+        },
+        {
+            "base_language": "2 brown tables",
+            "target_language": "茶色いテーブル2つ",
+            "romanized": "chairoi teeburu futatsu"
+        },
+        {
+            "base_language": "3 brown tables",
+            "target_language": "茶色いテーブル3つ",
+            "romanized": "chairoi teeburu mittsu"
+        },
+        {
+            "base_language": "4 white stoves",
+            "target_language": "白いコンロ4つ",
+            "romanized": "shiroi konro yottsu"
+        },
+        {
+            "base_language": "5 white stoves",
+            "target_language": "白いコンロ5つ",
+            "romanized": "shiroi konro itsutsu"
+        },
+        {
+            "base_language": "6 white stoves",
+            "target_language": "白いコンロ6つ",
+            "romanized": "shiroi konro muttsu"
+        },
+        {
+            "base_language": "7 black ovens",
+            "target_language": "黒いオーブン7つ",
+            "romanized": "kuroi oobun nanatsu"
+        },
+        {
+            "base_language": "8 black ovens",
+            "target_language": "黒いオーブン8つ",
+            "romanized": "kuroi oobun yattsu"
+        },
+        {
+            "base_language": "9 black ovens",
+            "target_language": "黒いオーブン9つ",
+            "romanized": "kuroi oobun kokonotsu"
+        },
+        {
+            "base_language": "10 black ovens",
+            "target_language": "黒いオーブン10個",
+            "romanized": "kuroi oobun jukko"
+        },
+        {
+            "base_language": "1 white waiter",
+            "target_language": "白い服のウェイター1人",
+            "romanized": "shiroi fuku no weitaa hitori"
+        },
+        {
+            "base_language": "2 white waiters",
+            "target_language": "白い服のウェイター2人",
+            "romanized": "shiroi fuku no weitaa futari"
+        },
+        {
+            "base_language": "3 white waiters",
+            "target_language": "白い服のウェイター3人",
+            "romanized": "shiroi fuku no weitaa sannin"
+        },
+        {
+            "base_language": "4 white kitchens",
+            "target_language": "白いキッチン4つ",
+            "romanized": "shiroi kicchin yottsu"
+        },
+        {
+            "base_language": "5 white kitchens",
+            "target_language": "白いキッチン5つ",
+            "romanized": "shiroi kicchin itsutsu"
+        },
+        {
+            "base_language": "6 white kitchens",
+            "target_language": "白いキッチン6つ",
+            "romanized": "shiroi kicchin muttsu"
+        },
+        {
+            "base_language": "7 green menus",
+            "target_language": "緑のメニュー7つ",
+            "romanized": "midori no menyuu nanatsu"
+        },
+        {
+            "base_language": "8 green menus",
+            "target_language": "緑のメニュー8つ",
+            "romanized": "midori no menyuu yattsu"
+        },
+        {
+            "base_language": "9 green menus",
+            "target_language": "緑のメニュー9つ",
+            "romanized": "midori no menyuu kokonotsu"
+        },
+        {
+            "base_language": "10 green menus",
+            "target_language": "緑のメニュー10個",
+            "romanized": "midori no menyuu jukko"
+        },
+        {
+            "base_language": "1 white rice",
+            "target_language": "白いご飯1杯",
+            "romanized": "shiroi gohan ippai"
+        },
+        {
+            "base_language": "2 white rices",
+            "target_language": "白いご飯2杯",
+            "romanized": "shiroi gohan nihai"
+        },
+        {
+            "base_language": "3 white rices",
+            "target_language": "白いご飯3杯",
+            "romanized": "shiroi gohan sanbai"
+        },
+        {
+            "base_language": "4 yellow oils",
+            "target_language": "黄色い油4本",
+            "romanized": "kiiroi abura yonhon"
+        },
+        {
+            "base_language": "5 yellow oils",
+            "target_language": "黄色い油5本",
+            "romanized": "kiiroi abura gohon"
+        },
+        {
+            "base_language": "6 yellow oils",
+            "target_language": "黄色い油6本",
+            "romanized": "kiiroi abura roppon"
+        },
+        {
+            "base_language": "7 red wines",
+            "target_language": "赤ワイン7本",
+            "romanized": "aka wain nanahon"
+        },
+        {
+            "base_language": "8 red wines",
+            "target_language": "赤ワイン8本",
+            "romanized": "aka wain happon"
+        },
+        {
+            "base_language": "9 red wines",
+            "target_language": "赤ワイン9本",
+            "romanized": "aka wain kyuuhon"
+        },
+        {
+            "base_language": "10 red wines",
+            "target_language": "赤ワイン10本",
+            "romanized": "aka wain juppon"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "name": "Bad Bunny",
+    "type": "story",
+    "sentences": [
+        {
+            "base_language": "Hello, I am Benito.",
+            "target_language": "你好，我是Benito。",
+            "romanized": "nǐ hǎo, wǒ shì Benito."
+        },
+        {
+            "base_language": "I am a very famous music artist",
+            "target_language": "我是一个非常有名的音乐艺术家",
+            "romanized": "wǒ shì yī gè fēicháng yǒumíng de yīnyuè yìshùjiā"
+        },
+        {
+            "base_language": "I sang at the super bowl",
+            "target_language": "我在超级碗唱过歌",
+            "romanized": "wǒ zài chāojí wǎn chàng guò gē"
+        },
+        {
+            "base_language": "I am from puerto rico",
+            "target_language": "我来自波多黎各",
+            "romanized": "wǒ láizì bōduōlígè"
+        },
+        {
+            "base_language": "Do you want to learn one of my songs?",
+            "target_language": "你想学我的一首歌吗？",
+            "romanized": "nǐ xiǎng xué wǒ de yī shǒu gē ma?"
+        },
+        {
+            "base_language": "This is \"Titi me pregunto\"",
+            "target_language": "这是《Titi问我》",
+            "romanized": "zhè shì \"Titi wèn wǒ\""
+        },
+        {
+            "base_language": "Aunti asked me if I have so many girlfriends",
+            "target_language": "阿姨问我是不是有很多女朋友",
+            "romanized": "āyí wèn wǒ shì bú shì yǒu hěn duō nǚpéngyou"
+        },
+        {
+            "base_language": "Today I have one, tomorrow I'll have another, eh",
+            "target_language": "今天有一个，明天又有一个，嘿",
+            "romanized": "jīntiān yǒu yī gè, míngtiān yòu yǒu yī gè, hēi"
+        },
+        {
+            "base_language": "hey, but there's no wedding, there's no wedding, auntie",
+            "target_language": "嘿，但是不结婚，不结婚，阿姨",
+            "romanized": "hēi, dànshì bù jiéhūn, bù jiéhūn, āyí"
+        },
+        {
+            "base_language": "I'm going to take them all to the V.I.P., the V.I.P., hey",
+            "target_language": "我要把她们都带去VIP包间，VIP包间，嘿",
+            "romanized": "wǒ yào bǎ tāmen dōu dài qù VIP bāojiān, VIP bāojiān, hēi"
+        },
+        {
+            "base_language": "Say hi to auntie",
+            "target_language": "跟阿姨打个招呼",
+            "romanized": "gēn āyí dǎ gè zhāohu"
+        },
+        {
+            "base_language": "Let's take a selfie, \"say cheese,\" hey",
+            "target_language": "我们来自拍，\"茄子\"，嘿",
+            "romanized": "wǒmen lái zìpāi, \"qiézi\", hēi"
+        },
+        {
+            "base_language": "Let the ones I already slept with smile",
+            "target_language": "让那些跟我睡过的人笑一笑",
+            "romanized": "ràng nàxiē gēn wǒ shuì guò de rén xiào yī xiào"
+        },
+        {
+            "base_language": "In a V.I.P., a V.I.P., hey",
+            "target_language": "在VIP包间，VIP包间，嘿",
+            "romanized": "zài VIP bāojiān, VIP bāojiān, hēi"
+        },
+        {
+            "base_language": "Say hi to auntie",
+            "target_language": "跟阿姨打个招呼",
+            "romanized": "gēn āyí dǎ gè zhāohu"
+        },
+        {
+            "base_language": "Let's take a selfie, \"say cheese\"",
+            "target_language": "我们来自拍，\"茄子\"",
+            "romanized": "wǒmen lái zìpāi, \"qiézi\""
+        }
+    ]
+}

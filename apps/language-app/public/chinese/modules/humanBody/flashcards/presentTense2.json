@@ -1,0 +1,306 @@
+{
+    "name": "present tense 1",
+    "type": "flashcards",
+    "sentences": [
+        {
+            "base_language": "I see with my eyes",
+            "target_language": "我用眼睛看",
+            "romanized": "wǒ yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "We see with our eyes",
+            "target_language": "我们用眼睛看",
+            "romanized": "wǒmen yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "They see with their eyes",
+            "target_language": "他们用眼睛看",
+            "romanized": "tāmen yòng yǎnjīng kàn"
+        },
+        {
+            "base_language": "I hear with my ears",
+            "target_language": "我用耳朵听",
+            "romanized": "wǒ yòng ěrduo tīng"
+        },
+        {
+            "base_language": "We hear with our ears",
+            "target_language": "我们用耳朵听",
+            "romanized": "wǒmen yòng ěrduo tīng"
+        },
+        {
+            "base_language": "They hear with their ears",
+            "target_language": "他们用耳朵听",
+            "romanized": "tāmen yòng ěrduo tīng"
+        },
+        {
+            "base_language": "I smell with my nose",
+            "target_language": "我用鼻子闻",
+            "romanized": "wǒ yòng bízi wén"
+        },
+        {
+            "base_language": "We smell with our noses",
+            "target_language": "我们用鼻子闻",
+            "romanized": "wǒmen yòng bízi wén"
+        },
+        {
+            "base_language": "They smell with their noses",
+            "target_language": "他们用鼻子闻",
+            "romanized": "tāmen yòng bízi wén"
+        },
+        {
+            "base_language": "I taste with my tongue",
+            "target_language": "我用舌头尝",
+            "romanized": "wǒ yòng shétou cháng"
+        },
+        {
+            "base_language": "We taste with our tongues",
+            "target_language": "我们用舌头尝",
+            "romanized": "wǒmen yòng shétou cháng"
+        },
+        {
+            "base_language": "They tastes with their tongues",
+            "target_language": "他们用舌头尝",
+            "romanized": "tāmen yòng shétou cháng"
+        },
+        {
+            "base_language": "I touch with my hands",
+            "target_language": "我用手触摸",
+            "romanized": "wǒ yòng shǒu chùmō"
+        },
+        {
+            "base_language": "We touch with our hands",
+            "target_language": "我们用手触摸",
+            "romanized": "wǒmen yòng shǒu chùmō"
+        },
+        {
+            "base_language": "They touch with their hands",
+            "target_language": "他们用手触摸",
+            "romanized": "tāmen yòng shǒu chùmō"
+        },
+        {
+            "base_language": "I breathe with my belly",
+            "target_language": "我用腹部呼吸",
+            "romanized": "wǒ yòng fùbù hūxī"
+        },
+        {
+            "base_language": "We breathe with our belly",
+            "target_language": "我们用腹部呼吸",
+            "romanized": "wǒmen yòng fùbù hūxī"
+        },
+        {
+            "base_language": "They breathe with their belly",
+            "target_language": "他们用腹部呼吸",
+            "romanized": "tāmen yòng fùbù hūxī"
+        },
+        {
+            "base_language": "I swallow with my throat",
+            "target_language": "我用喉咙吞咽",
+            "romanized": "wǒ yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "We swallow with our throats",
+            "target_language": "我们用喉咙吞咽",
+            "romanized": "wǒmen yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "They swallow with their throats",
+            "target_language": "他们用喉咙吞咽",
+            "romanized": "tāmen yòng hóulóng tūnyàn"
+        },
+        {
+            "base_language": "I chew with my mouth",
+            "target_language": "我用嘴巴嚼",
+            "romanized": "wǒ yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "We chew with our mouths",
+            "target_language": "我们用嘴巴嚼",
+            "romanized": "wǒmen yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "They chew with their mouths",
+            "target_language": "他们用嘴巴嚼",
+            "romanized": "tāmen yòng zuǐba jiáo"
+        },
+        {
+            "base_language": "I digest with my stomach",
+            "target_language": "我用胃消化",
+            "romanized": "wǒ yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "We digest with our stomachs",
+            "target_language": "我们用胃消化",
+            "romanized": "wǒmen yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "They digests with their stomachs",
+            "target_language": "他们用胃消化",
+            "romanized": "tāmen yòng wèi xiāohuà"
+        },
+        {
+            "base_language": "I pump blood with my heart",
+            "target_language": "我用心脏泵血",
+            "romanized": "wǒ yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "We pump blood with our hearts",
+            "target_language": "我们用心脏泵血",
+            "romanized": "wǒmen yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "They pump blood with their hearts",
+            "target_language": "他们用心脏泵血",
+            "romanized": "tāmen yòng xīnzàng bèng xuè"
+        },
+        {
+            "base_language": "I bend my legs",
+            "target_language": "我弯曲我的腿",
+            "romanized": "wǒ wānqū wǒ de tuǐ"
+        },
+        {
+            "base_language": "We bend our legs",
+            "target_language": "我们弯曲我们的腿",
+            "romanized": "wǒmen wānqū wǒmen de tuǐ"
+        },
+        {
+            "base_language": "They bend their legs",
+            "target_language": "他们弯曲他们的腿",
+            "romanized": "tāmen wānqū tāmen de tuǐ"
+        },
+        {
+            "base_language": "I stretch my back",
+            "target_language": "我伸展我的背",
+            "romanized": "wǒ shēnzhǎn wǒ de bèi"
+        },
+        {
+            "base_language": "We stretch our backs",
+            "target_language": "我们伸展我们的背",
+            "romanized": "wǒmen shēnzhǎn wǒmen de bèi"
+        },
+        {
+            "base_language": "They stretch their backs",
+            "target_language": "他们伸展他们的背",
+            "romanized": "tāmen shēnzhǎn tāmen de bèi"
+        },
+        {
+            "base_language": "I flex my arms",
+            "target_language": "我屈曲我的手臂",
+            "romanized": "wǒ qūqū wǒ de shǒubì"
+        },
+        {
+            "base_language": "We flex our arms",
+            "target_language": "我们屈曲我们的手臂",
+            "romanized": "wǒmen qūqū wǒmen de shǒubì"
+        },
+        {
+            "base_language": "They flex their arms",
+            "target_language": "他们屈曲他们的手臂",
+            "romanized": "tāmen qūqū tāmen de shǒubì"
+        },
+        {
+            "base_language": "I blink my eyes",
+            "target_language": "我眨眼",
+            "romanized": "wǒ zhǎ yǎn"
+        },
+        {
+            "base_language": "We blink our eyes",
+            "target_language": "我们眨眼",
+            "romanized": "wǒmen zhǎ yǎn"
+        },
+        {
+            "base_language": "They blink their eyes",
+            "target_language": "他们眨眼",
+            "romanized": "tāmen zhǎ yǎn"
+        },
+        {
+            "base_language": "I sweat gatorade",
+            "target_language": "我出佳得乐汗",
+            "romanized": "wǒ chū jiādélè hàn"
+        },
+        {
+            "base_language": "We sweat gatorade",
+            "target_language": "我们出佳得乐汗",
+            "romanized": "wǒmen chū jiādélè hàn"
+        },
+        {
+            "base_language": "They sweat gatorade",
+            "target_language": "他们出佳得乐汗",
+            "romanized": "tāmen chū jiādélè hàn"
+        },
+        {
+            "base_language": "I bleed blood",
+            "target_language": "我流血",
+            "romanized": "wǒ liú xuè"
+        },
+        {
+            "base_language": "We bleed blood",
+            "target_language": "我们流血",
+            "romanized": "wǒmen liú xuè"
+        },
+        {
+            "base_language": "They bleed blood",
+            "target_language": "他们流血",
+            "romanized": "tāmen liú xuè"
+        },
+        {
+            "base_language": "I heal my injury",
+            "target_language": "我治愈我的伤",
+            "romanized": "wǒ zhìyù wǒ de shāng"
+        },
+        {
+            "base_language": "We heal our injuries",
+            "target_language": "我们治愈我们的伤",
+            "romanized": "wǒmen zhìyù wǒmen de shāng"
+        },
+        {
+            "base_language": "They heal their injuries",
+            "target_language": "他们治愈他们的伤",
+            "romanized": "tāmen zhìyù tāmen de shāng"
+        },
+        {
+            "base_language": "I feel with my hands",
+            "target_language": "我用手感觉",
+            "romanized": "wǒ yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "We feel with our hands",
+            "target_language": "我们用手感觉",
+            "romanized": "wǒmen yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "They feel with their hands",
+            "target_language": "他们用手感觉",
+            "romanized": "tāmen yòng shǒu gǎnjué"
+        },
+        {
+            "base_language": "I think with my brain",
+            "target_language": "我用大脑思考",
+            "romanized": "wǒ yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "We think with our brains",
+            "target_language": "我们用大脑思考",
+            "romanized": "wǒmen yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "They think with their brains",
+            "target_language": "他们用大脑思考",
+            "romanized": "tāmen yòng dànǎo sīkǎo"
+        },
+        {
+            "base_language": "I move my body",
+            "target_language": "我移动我的身体",
+            "romanized": "wǒ yídòng wǒ de shēntǐ"
+        },
+        {
+            "base_language": "We move our bodies",
+            "target_language": "我们移动我们的身体",
+            "romanized": "wǒmen yídòng wǒmen de shēntǐ"
+        },
+        {
+            "base_language": "They move their bodies",
+            "target_language": "他们移动他们的身体",
+            "romanized": "tāmen yídòng tāmen de shēntǐ"
+        }
+    ]
+}

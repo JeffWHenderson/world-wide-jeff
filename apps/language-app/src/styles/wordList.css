@@ -1,0 +1,5 @@
+.word-list-container {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    padding-left: 10px;
+}

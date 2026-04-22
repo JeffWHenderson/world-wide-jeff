@@ -1,0 +1,427 @@
+{
+    "name": "I/We/They were past tense",
+    "type": "flashcards",
+    "lesson_id": "verbs_imperfect.md",
+    "sentences": [
+        {
+            "base_language": "I was eating the cheese.",
+            "target_language": "私はチーズを食べていました。",
+            "romanized": "watashi wa chiizu o tabete imashita."
+        },
+        {
+            "base_language": "We were eating the cheese.",
+            "target_language": "私たちはチーズを食べていました。",
+            "romanized": "watashitachi wa chiizu o tabete imashita."
+        },
+        {
+            "base_language": "They were eating the cheese.",
+            "target_language": "彼らはチーズを食べていました。",
+            "romanized": "karera wa chiizu o tabete imashita."
+        },
+        {
+            "base_language": "I was drinking the milk.",
+            "target_language": "私は牛乳を飲んでいました。",
+            "romanized": "watashi wa gyuunyuu o nonde imashita."
+        },
+        {
+            "base_language": "We were drinking the milk.",
+            "target_language": "私たちは牛乳を飲んでいました。",
+            "romanized": "watashitachi wa gyuunyuu o nonde imashita."
+        },
+        {
+            "base_language": "They were drinking the milk.",
+            "target_language": "彼らは牛乳を飲んでいました。",
+            "romanized": "karera wa gyuunyuu o nonde imashita."
+        },
+        {
+            "base_language": "I was cooking the fish.",
+            "target_language": "私は魚を料理していました。",
+            "romanized": "watashi wa sakana o ryouri shite imashita."
+        },
+        {
+            "base_language": "We were cooking the fish.",
+            "target_language": "私たちは魚を料理していました。",
+            "romanized": "watashitachi wa sakana o ryouri shite imashita."
+        },
+        {
+            "base_language": "They were cooking the fish.",
+            "target_language": "彼らは魚を料理していました。",
+            "romanized": "karera wa sakana o ryouri shite imashita."
+        },
+        {
+            "base_language": "I was baking the cake.",
+            "target_language": "私はケーキを焼いていました。",
+            "romanized": "watashi wa keeki o yaite imashita."
+        },
+        {
+            "base_language": "We were baking the cake.",
+            "target_language": "私たちはケーキを焼いていました。",
+            "romanized": "watashitachi wa keeki o yaite imashita."
+        },
+        {
+            "base_language": "They were baking the cake.",
+            "target_language": "彼らはケーキを焼いていました。",
+            "romanized": "karera wa keeki o yaite imashita."
+        },
+        {
+            "base_language": "I was boiling the water.",
+            "target_language": "私はお湯を沸かしていました。",
+            "romanized": "watashi wa oyu o wakashite imashita."
+        },
+        {
+            "base_language": "We were boiling the water.",
+            "target_language": "私たちはお湯を沸かしていました。",
+            "romanized": "watashitachi wa oyu o wakashite imashita."
+        },
+        {
+            "base_language": "They were boiling the water.",
+            "target_language": "彼らはお湯を沸かしていました。",
+            "romanized": "karera wa oyu o wakashite imashita."
+        },
+        {
+            "base_language": "I was frying the potato.",
+            "target_language": "私はじゃがいもを揚げていました。",
+            "romanized": "watashi wa jagaimo o agete imashita."
+        },
+        {
+            "base_language": "We were frying the potato.",
+            "target_language": "私たちはじゃがいもを揚げていました。",
+            "romanized": "watashitachi wa jagaimo o agete imashita."
+        },
+        {
+            "base_language": "They were frying the potato.",
+            "target_language": "彼らはじゃがいもを揚げていました。",
+            "romanized": "karera wa jagaimo o agete imashita."
+        },
+        {
+            "base_language": "I was roasting the beef.",
+            "target_language": "私は牛肉を焼いていました。",
+            "romanized": "watashi wa gyuuniku o yaite imashita."
+        },
+        {
+            "base_language": "We were roasting the beef.",
+            "target_language": "私たちは牛肉を焼いていました。",
+            "romanized": "watashitachi wa gyuuniku o yaite imashita."
+        },
+        {
+            "base_language": "They were roasting the beef.",
+            "target_language": "彼らは牛肉を焼いていました。",
+            "romanized": "karera wa gyuuniku o yaite imashita."
+        },
+        {
+            "base_language": "I was grilling the pork.",
+            "target_language": "私は豚肉を焼いていました。",
+            "romanized": "watashi wa butaniku o yaite imashita."
+        },
+        {
+            "base_language": "We were grilling the pork.",
+            "target_language": "私たちは豚肉を焼いていました。",
+            "romanized": "watashitachi wa butaniku o yaite imashita."
+        },
+        {
+            "base_language": "They were grilling the pork.",
+            "target_language": "彼らは豚肉を焼いていました。",
+            "romanized": "karera wa butaniku o yaite imashita."
+        },
+        {
+            "base_language": "I was chopping the fruit.",
+            "target_language": "私は果物を切っていました。",
+            "romanized": "watashi wa kudamono o kitte imashita."
+        },
+        {
+            "base_language": "We were chopping the fruit.",
+            "target_language": "私たちは果物を切っていました。",
+            "romanized": "watashitachi wa kudamono o kitte imashita."
+        },
+        {
+            "base_language": "They were chopping the fruit.",
+            "target_language": "彼らは果物を切っていました。",
+            "romanized": "karera wa kudamono o kitte imashita."
+        },
+        {
+            "base_language": "I was slicing the orange.",
+            "target_language": "私はオレンジを切っていました。",
+            "romanized": "watashi wa orenji o kitte imashita."
+        },
+        {
+            "base_language": "We were slicing the orange.",
+            "target_language": "私たちはオレンジを切っていました。",
+            "romanized": "watashitachi wa orenji o kitte imashita."
+        },
+        {
+            "base_language": "They were slicing the orange.",
+            "target_language": "彼らはオレンジを切っていました。",
+            "romanized": "karera wa orenji o kitte imashita."
+        },
+        {
+            "base_language": "I was mixing the ingredients.",
+            "target_language": "私は材料を混ぜていました。",
+            "romanized": "watashi wa zairyou o mazete imashita."
+        },
+        {
+            "base_language": "We were mixing the ingredients.",
+            "target_language": "私たちは材料を混ぜていました。",
+            "romanized": "watashitachi wa zairyou o mazete imashita."
+        },
+        {
+            "base_language": "They were mixing the ingredients.",
+            "target_language": "彼らは材料を混ぜていました。",
+            "romanized": "karera wa zairyou o mazete imashita."
+        },
+        {
+            "base_language": "I was stirring the pasta.",
+            "target_language": "私はパスタをかき混ぜていました。",
+            "romanized": "watashi wa pasuta o kakimazete imashita."
+        },
+        {
+            "base_language": "We were stirring the pasta.",
+            "target_language": "私たちはパスタをかき混ぜていました。",
+            "romanized": "watashitachi wa pasuta o kakimazete imashita."
+        },
+        {
+            "base_language": "They were stirring the pasta.",
+            "target_language": "彼らはパスタをかき混ぜていました。",
+            "romanized": "karera wa pasuta o kakimazete imashita."
+        },
+        {
+            "base_language": "I was whisking the eggs.",
+            "target_language": "私は卵を泡立てていました。",
+            "romanized": "watashi wa tamago o awadatete imashita."
+        },
+        {
+            "base_language": "We were whisking the eggs.",
+            "target_language": "私たちは卵を泡立てていました。",
+            "romanized": "watashitachi wa tamago o awadatete imashita."
+        },
+        {
+            "base_language": "They were whisking the eggs.",
+            "target_language": "彼らは卵を泡立てていました。",
+            "romanized": "karera wa tamago o awadatete imashita."
+        },
+        {
+            "base_language": "I was pouring the beer.",
+            "target_language": "私はビールを注いでいました。",
+            "romanized": "watashi wa biiru o tsuide imashita."
+        },
+        {
+            "base_language": "We were pouring the beer.",
+            "target_language": "私たちはビールを注いでいました。",
+            "romanized": "watashitachi wa biiru o tsuide imashita."
+        },
+        {
+            "base_language": "They were pouring the beer.",
+            "target_language": "彼らはビールを注いでいました。",
+            "romanized": "karera wa biiru o tsuide imashita."
+        },
+        {
+            "base_language": "I was serving the meal.",
+            "target_language": "私は食事を出していました。",
+            "romanized": "watashi wa shokuji o dashite imashita."
+        },
+        {
+            "base_language": "We were serving the meal.",
+            "target_language": "私たちは食事を出していました。",
+            "romanized": "watashitachi wa shokuji o dashite imashita."
+        },
+        {
+            "base_language": "They were serving the meal.",
+            "target_language": "彼らは食事を出していました。",
+            "romanized": "karera wa shokuji o dashite imashita."
+        },
+        {
+            "base_language": "I was tasting the sandwich.",
+            "target_language": "私はサンドイッチを味見していました。",
+            "romanized": "watashi wa sandoicchi o ajimi shite imashita."
+        },
+        {
+            "base_language": "We were tasting the sandwich.",
+            "target_language": "私たちはサンドイッチを味見していました。",
+            "romanized": "watashitachi wa sandoicchi o ajimi shite imashita."
+        },
+        {
+            "base_language": "They were tasting the sandwich.",
+            "target_language": "彼らはサンドイッチを味見していました。",
+            "romanized": "karera wa sandoicchi o ajimi shite imashita."
+        },
+        {
+            "base_language": "I was feeding the dog.",
+            "target_language": "私は犬に餌をあげていました。",
+            "romanized": "watashi wa inu ni esa o agete imashita."
+        },
+        {
+            "base_language": "We were feeding the dog.",
+            "target_language": "私たちは犬に餌をあげていました。",
+            "romanized": "watashitachi wa inu ni esa o agete imashita."
+        },
+        {
+            "base_language": "They were feeding the dog.",
+            "target_language": "彼らは犬に餌をあげていました。",
+            "romanized": "karera wa inu ni esa o agete imashita."
+        },
+        {
+            "base_language": "I was dining at home.",
+            "target_language": "私は家で食事をしていました。",
+            "romanized": "watashi wa ie de shokuji o shite imashita."
+        },
+        {
+            "base_language": "We were dining at home.",
+            "target_language": "私たちは家で食事をしていました。",
+            "romanized": "watashitachi wa ie de shokuji o shite imashita."
+        },
+        {
+            "base_language": "They were dining at home.",
+            "target_language": "彼らは家で食事をしていました。",
+            "romanized": "karera wa ie de shokuji o shite imashita."
+        },
+        {
+            "base_language": "I was chewing the banana.",
+            "target_language": "私はバナナを噛んでいました。",
+            "romanized": "watashi wa banana o kande imashita."
+        },
+        {
+            "base_language": "We were chewing the banana.",
+            "target_language": "私たちはバナナを噛んでいました。",
+            "romanized": "watashitachi wa banana o kande imashita."
+        },
+        {
+            "base_language": "They were chewing the banana.",
+            "target_language": "彼らはバナナを噛んでいました。",
+            "romanized": "karera wa banana o kande imashita."
+        },
+        {
+            "base_language": "I was swallowing the coffee.",
+            "target_language": "私はコーヒーを飲み込んでいました。",
+            "romanized": "watashi wa koohii o nomikonde imashita."
+        },
+        {
+            "base_language": "We were swallowing the coffee.",
+            "target_language": "私たちはコーヒーを飲み込んでいました。",
+            "romanized": "watashitachi wa koohii o nomikonde imashita."
+        },
+        {
+            "base_language": "They were swallowing the coffee.",
+            "target_language": "彼らはコーヒーを飲み込んでいました。",
+            "romanized": "karera wa koohii o nomikonde imashita."
+        },
+        {
+            "base_language": "I was savoring the chocolate.",
+            "target_language": "私はチョコレートを味わっていました。",
+            "romanized": "watashi wa chokoreeto o ajiwatte imashita."
+        },
+        {
+            "base_language": "We were savoring the chocolate.",
+            "target_language": "私たちはチョコレートを味わっていました。",
+            "romanized": "watashitachi wa chokoreeto o ajiwatte imashita."
+        },
+        {
+            "base_language": "They were savoring the chocolate.",
+            "target_language": "彼らはチョコレートを味わっていました。",
+            "romanized": "karera wa chokoreeto o ajiwatte imashita."
+        },
+        {
+            "base_language": "I was seasoning the steak.",
+            "target_language": "私はステーキに味付けをしていました。",
+            "romanized": "watashi wa suteeki ni ajitsuke o shite imashita."
+        },
+        {
+            "base_language": "We were seasoning the steak.",
+            "target_language": "私たちはステーキに味付けをしていました。",
+            "romanized": "watashitachi wa suteeki ni ajitsuke o shite imashita."
+        },
+        {
+            "base_language": "They were seasoning the steak.",
+            "target_language": "彼らはステーキに味付けをしていました。",
+            "romanized": "karera wa suteeki ni ajitsuke o shite imashita."
+        },
+        {
+            "base_language": "I was steaming the vegetables.",
+            "target_language": "私は野菜を蒸していました。",
+            "romanized": "watashi wa yasai o mushite imashita."
+        },
+        {
+            "base_language": "We were steaming the vegetables.",
+            "target_language": "私たちは野菜を蒸していました。",
+            "romanized": "watashitachi wa yasai o mushite imashita."
+        },
+        {
+            "base_language": "They were steaming the vegetables.",
+            "target_language": "彼らは野菜を蒸していました。",
+            "romanized": "karera wa yasai o mushite imashita."
+        },
+        {
+            "base_language": "I was blending the juice.",
+            "target_language": "私はジュースを作っていました。",
+            "romanized": "watashi wa juusu o tsukutte imashita."
+        },
+        {
+            "base_language": "We were blending the juice.",
+            "target_language": "私たちはジュースを作っていました。",
+            "romanized": "watashitachi wa juusu o tsukutte imashita."
+        },
+        {
+            "base_language": "They were blending the juice.",
+            "target_language": "彼らはジュースを作っていました。",
+            "romanized": "karera wa juusu o tsukutte imashita."
+        },
+        {
+            "base_language": "I was paying the waiter.",
+            "target_language": "私はウェイターに払っていました。",
+            "romanized": "watashi wa weitaa ni haratte imashita."
+        },
+        {
+            "base_language": "We were paying the waiter.",
+            "target_language": "私たちはウェイターに払っていました。",
+            "romanized": "watashitachi wa weitaa ni haratte imashita."
+        },
+        {
+            "base_language": "They were paying the waiter.",
+            "target_language": "彼らはウェイターに払っていました。",
+            "romanized": "karera wa weitaa ni haratte imashita."
+        },
+        {
+            "base_language": "I was ordering the snack.",
+            "target_language": "私はおやつを注文していました。",
+            "romanized": "watashi wa oyatsu o chuumon shite imashita."
+        },
+        {
+            "base_language": "We were ordering the snack.",
+            "target_language": "私たちはおやつを注文していました。",
+            "romanized": "watashitachi wa oyatsu o chuumon shite imashita."
+        },
+        {
+            "base_language": "They were ordering the snack.",
+            "target_language": "彼らはおやつを注文していました。",
+            "romanized": "karera wa oyatsu o chuumon shite imashita."
+        },
+        {
+            "base_language": "I wanted butter.",
+            "target_language": "私はバターが欲しかったです。",
+            "romanized": "watashi wa bataa ga hoshikatta desu."
+        },
+        {
+            "base_language": "You wanted butter.",
+            "target_language": "あなたはバターが欲しかったです。",
+            "romanized": "anata wa bataa ga hoshikatta desu."
+        },
+        {
+            "base_language": "They wanted butter.",
+            "target_language": "彼らはバターが欲しかったです。",
+            "romanized": "karera wa bataa ga hoshikatta desu."
+        },
+        {
+            "base_language": "I had a knife.",
+            "target_language": "私はナイフを持っていました。",
+            "romanized": "watashi wa naifu o motte imashita."
+        },
+        {
+            "base_language": "You had a knife.",
+            "target_language": "あなたはナイフを持っていました。",
+            "romanized": "anata wa naifu o motte imashita."
+        },
+        {
+            "base_language": "They had a knife.",
+            "target_language": "彼らはナイフを持っていました。",
+            "romanized": "karera wa naifu o motte imashita."
+        }
+    ]
+}
