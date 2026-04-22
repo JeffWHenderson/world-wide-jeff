@@ -39,7 +39,17 @@ const useLanguage = (selectedLanguage: string) => {
         }
     }, [selectedLanguage]);
 
-    return { selectedVoice, setSelectedVoice };
+    const speak = (text: string, onEnd?: () => void) => {
+        if (!selectedVoice) return;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.voice = selectedVoice;
+        utterance.rate = 1;
+        if (onEnd) utterance.onend = onEnd;
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(utterance);
+    };
+
+    return { selectedVoice, speak };
 };
 
 export default useLanguage;

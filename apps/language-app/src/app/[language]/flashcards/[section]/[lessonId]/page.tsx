@@ -11,8 +11,8 @@ const FlashCardsV2 = () => {
     const [lesson, setLesson] = useState<any>(null)
     const [cardNumber, setCardNumber] = useState(0)
     const [autoplay, setAutoPlay] = useState(false)
-    const { selectedVoice: voice } = useLanguage(language as string)
-    const { selectedVoice: englishVoice } = useLanguage("english")
+    const { speak: speakForeign } = useLanguage(language as string)
+    const { speak: speakEnglish } = useLanguage("english")
     const [readFront, setReadFront] = useState(false)
     const [readBack, setReadBack] = useState(false)
     const [hideTop, setHideTop] = useState(false)
@@ -73,15 +73,8 @@ const FlashCardsV2 = () => {
 
     const readFrontPlease = () => {
         if (readFront && lesson) {
-            const speechUtterance = new SpeechSynthesisUtterance()
-            window.speechSynthesis.cancel()
-            speechUtterance.voice = !reverseCards ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
-            speechUtterance.rate = 1
-            speechUtterance.onend = () => {
-                setTimeout(() => readBackPlease(), delay)
-            }
-            speechUtterance.text = top.replace(/\(.*?\)/g, "");
-            window.speechSynthesis.speak(speechUtterance);
+            const speakFront = reverseCards ? speakForeign : speakEnglish
+            speakFront(top.replace(/\(.*?\)/g, ""), () => setTimeout(readBackPlease, delay))
         } else {
             readBackPlease()
         }
@@ -89,21 +82,12 @@ const FlashCardsV2 = () => {
 
     const readBackPlease = () => {
         if (readBack && lesson) {
-            const speechUtterance = new SpeechSynthesisUtterance()
-            window.speechSynthesis.cancel()
-            speechUtterance.voice = reverseCards ? englishVoice as SpeechSynthesisVoice : voice as SpeechSynthesisVoice
-            speechUtterance.rate = 1
-            speechUtterance.onend = () => {
-                if (autoplay) {
-                    setTimeout(nextCard, delay)
-                }
-            }
-            speechUtterance.text = bottom.replace(/\(.*?\)/g, "");
-            window.speechSynthesis.speak(speechUtterance);
+            const speakBack = reverseCards ? speakEnglish : speakForeign
+            speakBack(bottom.replace(/\(.*?\)/g, ""), () => {
+                if (autoplay) setTimeout(nextCard, delay)
+            })
         } else {
-            if (readFront && autoplay) {
-                setTimeout(() => nextCard(), delay)
-            }
+            if (readFront && autoplay) setTimeout(nextCard, delay)
         }
     }
 
