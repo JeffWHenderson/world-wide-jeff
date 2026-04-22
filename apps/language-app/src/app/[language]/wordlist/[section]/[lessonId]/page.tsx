@@ -1,53 +1,35 @@
-'use client'
-
-import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
-import { addToDeck } from "@/hooks/useDecklist";
-import { buildPrintableFlashcards } from "@/hooks/print";
+import { readFile, readdir } from "fs/promises";
+import path from "path";
 import { WordListItem } from "@/types/WordListTypes";
-import '@/styles/wordList.css';
+import WordListClient from "./WordListClient";
 
-const WordList = () => {
-    const { language, lessonId, section } = useParams<{ language: string; lessonId: string; section: string }>();
-    const [wordList, setWordList] = useState<WordListItem[]>([])
+type Props = {
+    params: Promise<{ language: string; section: string; lessonId: string }>;
+}
 
-    useEffect(() => {
-        fetch(`/${language}/modules/${section}/${lessonId}.json`)
-            .then(res => res.json())
-            .then(data => { setWordList(data) })
-            .catch(err => console.error(err))
-    }, [])
+export const generateStaticParams = async () => {
+    const contentDir = path.join(process.cwd(), "content");
+    const languages = await readdir(contentDir);
 
-    return <>
-        <div className="word-list-container">
-            <h1>WORDLIST FOR THIS SECTIOIN</h1>
-            <h2>click <strong>[+]</strong> to add words you are unfamiliar with to you custom decklist</h2>
-            <div style={{ display: 'flex' }}>
-                <button onClick={() => buildPrintableFlashcards(wordList)}>Print Flashcards</button>
-                <div style={{ marginLeft: '10px' }}>this is printable so you can reference without a stupid computer</div>
-            </div>
-            <br />
-            <table>
-                <thead>
-                    <tr>
-                        <th>English</th>
-                        <th>{language}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {wordList.map((listItem: WordListItem, i: number) => (
-                        <tr key={i}>
-                            <td style={{ border: '1px solid black' }}>
-                                <button style={{ marginRight: '10px' }} onClick={() => addToDeck(listItem, `${section}-custom-deck`)}>+</button>
-                                {listItem.base_language}
-                            </td>
-                            <td style={{ textAlign: 'center', border: '1px solid black', padding: '3px' }}>{listItem.target_language}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    </>
+    const params = await Promise.all(
+        languages.map(async (language) => {
+            const modulesDir = path.join(contentDir, language, "modules");
+            const sections = await readdir(modulesDir).catch(() => []);
+            return sections.map((section) => ({ language, section, lessonId: "__wordList__" }));
+        })
+    );
+
+    return params.flat();
+};
+
+const WordList = async ({ params }: Props) => {
+    const { language, section, lessonId } = await params;
+    const filePath = path.join(process.cwd(), "content", language, "modules", section, `${lessonId}.json`);
+    const wordList: WordListItem[] = await readFile(filePath, "utf-8")
+        .then(JSON.parse)
+        .catch(() => []);
+
+    return <WordListClient wordList={wordList} language={language} section={section} />;
 }
 
 export default WordList;
