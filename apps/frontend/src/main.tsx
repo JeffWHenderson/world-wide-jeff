@@ -19,6 +19,8 @@ import { ThemeProvider } from './apps/common/ThemeContext';
 import LanguageAppHome from './apps/LanguageApp/LanguageHome';
 import PicturePopUp from './apps/LanguageApp/pages/pictureLesson/PicturePopUp';
 import EventPage from './apps/worldWideJeff/Events/EventPage';
+import SRSHome from './apps/LanguageApp/pages/srsFlashcards/SRSHome';
+import SRSReview from './apps/LanguageApp/pages/srsFlashcards/SRSReview';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
 // import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
@@ -56,6 +58,8 @@ createRoot(document.getElementById('root')!).render(
             <Route path=":language/my-decks" element={<MyDecks />} />
             <Route path=":language/my-decks/:section/:lessonId" element={<FlashCardsV2 />} />
             <Route path=":language/picture-review/:section" element={<PicturePopUp />} />
+            <Route path=":language/srs" element={<SRSHome />} />
+            <Route path=":language/srs/:deckId" element={<SRSReview />} />
           </Route>
           <Route path="*" element={<NoPage />} />
         </Routes>

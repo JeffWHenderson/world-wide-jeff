@@ -1,0 +1,27 @@
+{
+  "id": "food_and_drink",
+  "name": "Food & Drink",
+  "language": "chinese",
+  "cards": [
+    { "id": "zh_fd_01", "front": "I eat the apple.", "back": "我吃苹果。", "romanized": "Wǒ chī píngguǒ." },
+    { "id": "zh_fd_02", "front": "She drinks coffee every morning.", "back": "她每天早上喝咖啡。", "romanized": "Tā měitiān zǎoshang hē kāfēi." },
+    { "id": "zh_fd_03", "front": "We are cooking dinner.", "back": "我们在做晚饭。", "romanized": "Wǒmen zài zuò wǎnfàn." },
+    { "id": "zh_fd_04", "front": "The bread is fresh from the oven.", "back": "面包是刚从烤箱里拿出来的。", "romanized": "Miànbāo shì gāng cóng kǎoxiāng lǐ ná chūlái de." },
+    { "id": "zh_fd_05", "front": "Do you want more water?", "back": "你还要水吗？", "romanized": "Nǐ hái yào shuǐ ma?" },
+    { "id": "zh_fd_06", "front": "I like spicy food.", "back": "我喜欢辣的食物。", "romanized": "Wǒ xǐhuān là de shíwù." },
+    { "id": "zh_fd_07", "front": "The soup is too hot.", "back": "这汤太热了。", "romanized": "Zhè tāng tài rè le." },
+    { "id": "zh_fd_08", "front": "They are eating at a restaurant.", "back": "他们在餐厅吃饭。", "romanized": "Tāmen zài cāntīng chīfàn." },
+    { "id": "zh_fd_09", "front": "Can I have the bill, please?", "back": "请给我账单。", "romanized": "Qǐng gěi wǒ zhàngdān." },
+    { "id": "zh_fd_10", "front": "I am allergic to nuts.", "back": "我对坚果过敏。", "romanized": "Wǒ duì jiānguǒ guòmǐn." },
+    { "id": "zh_fd_11", "front": "The chicken smells delicious.", "back": "鸡肉闻起来很香。", "romanized": "Jīròu wén qǐlái hěn xiāng." },
+    { "id": "zh_fd_12", "front": "She ordered a salad and a glass of wine.", "back": "她点了一份沙拉和一杯葡萄酒。", "romanized": "Tā diǎnle yī fèn shālā hé yī bēi pútáojiǔ." },
+    { "id": "zh_fd_13", "front": "I don't eat meat.", "back": "我不吃肉。", "romanized": "Wǒ bù chī ròu." },
+    { "id": "zh_fd_14", "front": "The market has fresh vegetables.", "back": "市场有新鲜的蔬菜。", "romanized": "Shìchǎng yǒu xīnxiān de shūcài." },
+    { "id": "zh_fd_15", "front": "Would you like some dessert?", "back": "你想要甜点吗？", "romanized": "Nǐ xiǎng yào tiándiǎn ma?" },
+    { "id": "zh_fd_16", "front": "I need to buy milk and eggs.", "back": "我需要买牛奶和鸡蛋。", "romanized": "Wǒ xūyào mǎi niúnǎi hé jīdàn." },
+    { "id": "zh_fd_17", "front": "This dish is very tasty.", "back": "这道菜很好吃。", "romanized": "Zhè dào cài hěn hào chī." },
+    { "id": "zh_fd_18", "front": "He prefers tea to coffee.", "back": "他更喜欢茶而不是咖啡。", "romanized": "Tā gèng xǐhuān chá ér bù shì kāfēi." },
+    { "id": "zh_fd_19", "front": "The fruit salad is sweet and refreshing.", "back": "水果沙拉甜美清爽。", "romanized": "Shuǐguǒ shālā tiánměi qīngshuǎng." },
+    { "id": "zh_fd_20", "front": "Let's have lunch together.", "back": "我们一起去吃午饭吧。", "romanized": "Wǒmen yīqǐ qù chī wǔfàn ba." }
+  ]
+}

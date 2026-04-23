@@ -16,6 +16,12 @@ const LanguageAppHome = () => {
                 <button style={{ color: 'white' }} onClick={() => goToLanguagePage('spanish')} key={'spanish'}>
                     {"Go to spanish course ->"}
                 </button>
+                <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('spanish/srs')} key={'srs-spanish'}>
+                    {"Spanish SRS Flashcards ->"}
+                </button>
+                <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('chinese/srs')} key={'srs-chinese'}>
+                    {"Chinese SRS Flashcards ->"}
+                </button>
                 {/* TODO: only going to show spanish for a while cause I have a lot more work to do with the others
                 
                 { 

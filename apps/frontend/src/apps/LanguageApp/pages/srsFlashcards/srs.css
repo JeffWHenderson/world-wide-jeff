@@ -1,0 +1,350 @@
+/* ── Layout ── */
+.srs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85vh;
+    padding: 16px;
+    background-color: var(--background-color, #f5f5f5);
+    color: var(--font-color, #111);
+    box-sizing: border-box;
+}
+
+/* ── Review header ── */
+.srs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.srs-back-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--font-color, #333);
+    padding: 4px 8px;
+}
+
+.srs-deck-name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.srs-tts-toggle {
+    background: none;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.srs-tts-toggle.active {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+/* ── Progress bar ── */
+.srs-progress-bar-wrap {
+    width: 100%;
+    max-width: 500px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.srs-progress-bar-fill {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* ── Count row ── */
+.srs-count-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+}
+
+.srs-count {
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.srs-count.new { background: #cce5ff; color: #004085; }
+.srs-count.learn { background: #fff3cd; color: #856404; }
+.srs-count.review { background: #d4edda; color: #155724; }
+
+/* ── Card ── */
+.srs-card-wrap {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 20px;
+}
+
+.srs-card {
+    width: 100%;
+    height: 260px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.45s ease;
+}
+
+.srs-card.flipped {
+    transform: rotateY(180deg);
+    cursor: default;
+}
+
+.srs-card-front,
+.srs-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.srs-card-front {
+    background-color: var(--card-color, #fff);
+}
+
+.srs-card-back {
+    background-color: var(--card-color, #fff);
+    transform: rotateY(180deg);
+}
+
+.srs-card-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.srs-card-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.srs-card-text.front-dim {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.srs-divider {
+    width: 60%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.srs-romanized {
+    font-size: 0.85rem;
+    color: #e07b3a;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.srs-tap-hint {
+    position: absolute;
+    bottom: 14px;
+    font-size: 0.75rem;
+    color: #bbb;
+}
+
+/* ── Rating buttons ── */
+.srs-rating-row {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 480px;
+    justify-content: center;
+}
+
+.srs-rating {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 4px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+
+.srs-rating:hover { opacity: 0.85; }
+
+.srs-rating.again { background-color: #e74c3c; color: white; }
+.srs-rating.hard  { background-color: #e67e22; color: white; }
+.srs-rating.good  { background-color: #27ae60; color: white; }
+.srs-rating.easy  { background-color: #2980b9; color: white; }
+
+.rating-label { font-size: 0.95rem; }
+.rating-interval { font-size: 0.7rem; opacity: 0.85; margin-top: 2px; }
+
+/* ── Show Answer button ── */
+.srs-flip-hint {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 480px;
+}
+
+.srs-show-answer {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--font-color, #111);
+    transition: background 0.15s;
+}
+
+.srs-show-answer:hover {
+    background-color: rgba(0,0,0,0.06);
+}
+
+/* ── Done screen ── */
+.srs-done {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.srs-done h2 { font-size: 1.8rem; margin-bottom: 8px; }
+.srs-done p { color: #666; margin-bottom: 6px; }
+.srs-done-actions { margin-top: 24px; }
+
+/* ── SRS Home ── */
+.srs-home-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.srs-home-header h2 {
+    margin-bottom: 4px;
+}
+
+.srs-lang-label {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: #888;
+    margin: 0;
+}
+
+.srs-deck-list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.srs-deck-card {
+    background-color: var(--card-color, #fff);
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.srs-deck-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.srs-deck-counts {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.srs-deck-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+/* ── Shared buttons ── */
+.srs-btn-primary {
+    padding: 9px 18px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.srs-btn-primary:disabled {
+    background-color: #aaa;
+    cursor: default;
+}
+
+.srs-btn-reset {
+    padding: 5px 12px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.78rem;
+    color: #888;
+}
+
+.srs-btn-reset:hover {
+    background-color: #fee;
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
+
+/* ── How it works ── */
+.srs-how-it-works {
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--card-color, #fff);
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.srs-how-it-works h3 { margin-top: 0; }
+.srs-how-it-works ul { padding-left: 20px; }
+.srs-how-it-works li { margin-bottom: 6px; line-height: 1.5; }
+.srs-how-it-works p { font-size: 0.88rem; color: #666; margin-bottom: 0; }
