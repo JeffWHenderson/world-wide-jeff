@@ -3,85 +3,119 @@
   "name": "Food & Drink",
   "language": "spanish",
   "cards": [
-    { "id": "es_fd_01", "levels": [
-      { "front": "to eat", "back": "comer" },
-      { "front": "I eat the apple.", "back": "Yo como la manzana." }
-    ]},
-    { "id": "es_fd_02", "levels": [
-      { "front": "to drink", "back": "beber" },
-      { "front": "She drinks coffee every morning.", "back": "Ella bebe café cada mañana." }
-    ]},
-    { "id": "es_fd_03", "levels": [
-      { "front": "to cook", "back": "cocinar" },
-      { "front": "We are cooking dinner.", "back": "Estamos cocinando la cena." }
-    ]},
-    { "id": "es_fd_04", "levels": [
-      { "front": "bread", "back": "el pan" },
-      { "front": "The bread is fresh from the oven.", "back": "El pan está fresco del horno." }
-    ]},
-    { "id": "es_fd_05", "levels": [
-      { "front": "water", "back": "el agua" },
-      { "front": "Do you want more water?", "back": "¿Quieres más agua?" }
-    ]},
-    { "id": "es_fd_06", "levels": [
-      { "front": "spicy", "back": "picante" },
-      { "front": "I like spicy food.", "back": "Me gusta la comida picante." }
-    ]},
-    { "id": "es_fd_07", "levels": [
-      { "front": "soup", "back": "la sopa" },
-      { "front": "The soup is too hot.", "back": "La sopa está demasiado caliente." }
-    ]},
-    { "id": "es_fd_08", "levels": [
-      { "front": "restaurant", "back": "el restaurante" },
-      { "front": "They are eating at a restaurant.", "back": "Ellos están comiendo en un restaurante." }
-    ]},
-    { "id": "es_fd_09", "levels": [
-      { "front": "the bill", "back": "la cuenta" },
-      { "front": "Can I have the bill, please?", "back": "¿Me puede traer la cuenta, por favor?" }
-    ]},
-    { "id": "es_fd_10", "levels": [
-      { "front": "allergic", "back": "alérgico" },
-      { "front": "I am allergic to nuts.", "back": "Soy alérgico a las nueces." }
-    ]},
-    { "id": "es_fd_11", "levels": [
-      { "front": "chicken", "back": "el pollo" },
-      { "front": "The chicken smells delicious.", "back": "El pollo huele delicioso." }
-    ]},
-    { "id": "es_fd_12", "levels": [
-      { "front": "to order (food)", "back": "pedir" },
-      { "front": "She ordered a salad and a glass of wine.", "back": "Ella pidió una ensalada y una copa de vino." }
-    ]},
-    { "id": "es_fd_13", "levels": [
-      { "front": "meat", "back": "la carne" },
-      { "front": "I don't eat meat.", "back": "No como carne." }
-    ]},
-    { "id": "es_fd_14", "levels": [
-      { "front": "vegetables", "back": "las verduras" },
-      { "front": "The market has fresh vegetables.", "back": "El mercado tiene verduras frescas." }
-    ]},
-    { "id": "es_fd_15", "levels": [
-      { "front": "dessert", "back": "el postre" },
-      { "front": "Would you like some dessert?", "back": "¿Le gustaría un postre?" }
-    ]},
-    { "id": "es_fd_16", "levels": [
-      { "front": "milk", "back": "la leche" },
-      { "front": "I need to buy milk and eggs.", "back": "Necesito comprar leche y huevos." }
-    ]},
-    { "id": "es_fd_17", "levels": [
-      { "front": "tasty / delicious", "back": "sabroso" },
-      { "front": "This dish is very tasty.", "back": "Este plato está muy sabroso." }
-    ]},
-    { "id": "es_fd_18", "levels": [
-      { "front": "tea", "back": "el té" },
-      { "front": "He prefers tea to coffee.", "back": "Él prefiere el té al café." }
-    ]},
-    { "id": "es_fd_19", "levels": [
-      { "front": "fruit", "back": "la fruta" },
-      { "front": "The fruit salad is sweet and refreshing.", "back": "La ensalada de frutas es dulce y refrescante." }
-    ]},
-    { "id": "es_fd_20", "levels": [
-      { "front": "lunch", "back": "el almuerzo" },
-      { "front": "Let's have lunch together.", "back": "Vamos a almorzar juntos." }
-    ]}
+    { "id": "es_fd_001", "levels": [{ "front": "water", "back": "el agua" }] },
+    { "id": "es_fd_002", "levels": [{ "front": "bread", "back": "pan" }] },
+    { "id": "es_fd_003", "levels": [{ "front": "rice", "back": "arroz" }] },
+    { "id": "es_fd_004", "levels": [{ "front": "milk", "back": "leche" }] },
+    { "id": "es_fd_005", "levels": [{ "front": "egg", "back": "huevo" }] },
+    { "id": "es_fd_006", "levels": [{ "front": "cheese", "back": "queso" }] },
+    { "id": "es_fd_007", "levels": [{ "front": "chicken", "back": "pollo" }] },
+    { "id": "es_fd_008", "levels": [{ "front": "meat", "back": "carne" }] },
+    { "id": "es_fd_009", "levels": [{ "front": "fish", "back": "pescado" }] },
+    { "id": "es_fd_010", "levels": [{ "front": "beef", "back": "carne de res" }] },
+    { "id": "es_fd_011", "levels": [{ "front": "pork", "back": "cerdo" }] },
+    { "id": "es_fd_012", "levels": [{ "front": "fruit", "back": "fruta" }] },
+    { "id": "es_fd_013", "levels": [{ "front": "apple", "back": "manzana" }] },
+    { "id": "es_fd_014", "levels": [{ "front": "banana", "back": "plátano" }] },
+    { "id": "es_fd_015", "levels": [{ "front": "orange", "back": "naranja" }] },
+    { "id": "es_fd_016", "levels": [{ "front": "vegetable", "back": "verdura" }] },
+    { "id": "es_fd_017", "levels": [{ "front": "potato", "back": "papa" }] },
+    { "id": "es_fd_018", "levels": [{ "front": "tomato", "back": "tomate" }] },
+    { "id": "es_fd_019", "levels": [{ "front": "onion", "back": "cebolla" }] },
+    { "id": "es_fd_020", "levels": [{ "front": "salad", "back": "ensalada" }] },
+    { "id": "es_fd_021", "levels": [{ "front": "soup", "back": "sopa" }] },
+    { "id": "es_fd_022", "levels": [{ "front": "pasta", "back": "pasta" }] },
+    { "id": "es_fd_023", "levels": [{ "front": "pizza", "back": "pizza" }] },
+    { "id": "es_fd_024", "levels": [{ "front": "sandwich", "back": "sándwich" }] },
+    { "id": "es_fd_025", "levels": [{ "front": "cake", "back": "pastel" }] },
+    { "id": "es_fd_026", "levels": [{ "front": "cookie", "back": "galleta" }] },
+    { "id": "es_fd_027", "levels": [{ "front": "chocolate", "back": "chocolate" }] },
+    { "id": "es_fd_028", "levels": [{ "front": "sugar", "back": "azúcar" }] },
+    { "id": "es_fd_029", "levels": [{ "front": "salt", "back": "sal" }] },
+    { "id": "es_fd_030", "levels": [{ "front": "pepper", "back": "pimienta" }] },
+    { "id": "es_fd_031", "levels": [{ "front": "butter", "back": "mantequilla" }] },
+    { "id": "es_fd_032", "levels": [{ "front": "oil", "back": "aceite" }] },
+    { "id": "es_fd_033", "levels": [{ "front": "coffee", "back": "café" }] },
+    { "id": "es_fd_034", "levels": [{ "front": "tea", "back": "té" }] },
+    { "id": "es_fd_035", "levels": [{ "front": "wine", "back": "vino" }] },
+    { "id": "es_fd_036", "levels": [{ "front": "beer", "back": "cerveza" }] },
+    { "id": "es_fd_037", "levels": [{ "front": "juice", "back": "jugo" }] },
+    { "id": "es_fd_038", "levels": [{ "front": "breakfast", "back": "desayuno" }] },
+    { "id": "es_fd_039", "levels": [{ "front": "lunch", "back": "almuerzo" }] },
+    { "id": "es_fd_040", "levels": [{ "front": "dinner", "back": "cena" }] },
+    { "id": "es_fd_041", "levels": [{ "front": "snack", "back": "merienda" }] },
+    { "id": "es_fd_042", "levels": [{ "front": "meal", "back": "comida" }] },
+    { "id": "es_fd_043", "levels": [{ "front": "recipe", "back": "receta" }] },
+    { "id": "es_fd_044", "levels": [{ "front": "flavor", "back": "sabor" }] },
+    { "id": "es_fd_045", "levels": [{ "front": "taste", "back": "gusto" }] },
+    { "id": "es_fd_046", "levels": [{ "front": "ingredient", "back": "ingrediente" }] },
+    { "id": "es_fd_047", "levels": [{ "front": "menu", "back": "menú" }] },
+    { "id": "es_fd_048", "levels": [{ "front": "restaurant", "back": "restaurante" }] },
+    { "id": "es_fd_049", "levels": [{ "front": "kitchen", "back": "cocina" }] },
+    { "id": "es_fd_050", "levels": [{ "front": "oven", "back": "horno" }] },
+    { "id": "es_fd_051", "levels": [{ "front": "stove", "back": "estufa" }] },
+    { "id": "es_fd_052", "levels": [{ "front": "knife", "back": "cuchillo" }] },
+    { "id": "es_fd_053", "levels": [{ "front": "fork", "back": "tenedor" }] },
+    { "id": "es_fd_054", "levels": [{ "front": "spoon", "back": "cuchara" }] },
+    { "id": "es_fd_055", "levels": [{ "front": "plate", "back": "plato" }] },
+    { "id": "es_fd_056", "levels": [{ "front": "bowl", "back": "tazón" }] },
+    { "id": "es_fd_057", "levels": [{ "front": "cup", "back": "taza" }] },
+    { "id": "es_fd_058", "levels": [{ "front": "glass", "back": "vaso" }] },
+    { "id": "es_fd_059", "levels": [{ "front": "bottle", "back": "botella" }] },
+    { "id": "es_fd_060", "levels": [{ "front": "table", "back": "mesa" }] },
+    { "id": "es_fd_061", "levels": [{ "front": "waiter", "back": "camarero" }] },
+    { "id": "es_fd_062", "levels": [{ "front": "hungry", "back": "hambre" }] },
+    { "id": "es_fd_063", "levels": [{ "front": "thirsty", "back": "sed" }] },
+    { "id": "es_fd_064", "levels": [{ "front": "eat", "back": "comer" }] },
+    { "id": "es_fd_065", "levels": [{ "front": "drink", "back": "beber" }] },
+    { "id": "es_fd_066", "levels": [{ "front": "cook", "back": "cocinar" }] },
+    { "id": "es_fd_067", "levels": [{ "front": "bake", "back": "hornear" }] },
+    { "id": "es_fd_068", "levels": [{ "front": "boil", "back": "hervir" }] },
+    { "id": "es_fd_069", "levels": [{ "front": "fry", "back": "freír" }] },
+    { "id": "es_fd_070", "levels": [{ "front": "roast", "back": "asar" }] },
+    { "id": "es_fd_071", "levels": [{ "front": "grill", "back": "asador/parrilla" }] },
+    { "id": "es_fd_072", "levels": [{ "front": "chop", "back": "picar" }] },
+    { "id": "es_fd_073", "levels": [{ "front": "slice", "back": "rebanar" }] },
+    { "id": "es_fd_074", "levels": [{ "front": "mix", "back": "mezclar" }] },
+    { "id": "es_fd_075", "levels": [{ "front": "stir", "back": "revolver" }] },
+    { "id": "es_fd_076", "levels": [{ "front": "whisk", "back": "batir" }] },
+    { "id": "es_fd_077", "levels": [{ "front": "pour", "back": "verter" }] },
+    { "id": "es_fd_078", "levels": [{ "front": "serve", "back": "servir" }] },
+    { "id": "es_fd_079", "levels": [{ "front": "taste (to try)", "back": "probar" }] },
+    { "id": "es_fd_080", "levels": [{ "front": "feed", "back": "alimentar" }] },
+    { "id": "es_fd_081", "levels": [{ "front": "dine", "back": "cenar" }] },
+    { "id": "es_fd_082", "levels": [{ "front": "chew", "back": "masticar" }] },
+    { "id": "es_fd_083", "levels": [{ "front": "swallow", "back": "tragar" }] },
+    { "id": "es_fd_084", "levels": [{ "front": "season", "back": "sazonar" }] },
+    { "id": "es_fd_085", "levels": [{ "front": "steam", "back": "cocinar al vapor" }] },
+    { "id": "es_fd_086", "levels": [{ "front": "fresh", "back": "fresco" }] },
+    { "id": "es_fd_087", "levels": [{ "front": "ripe", "back": "maduro" }] },
+    { "id": "es_fd_088", "levels": [{ "front": "raw", "back": "crudo" }] },
+    { "id": "es_fd_089", "levels": [{ "front": "cooked", "back": "cocido" }] },
+    { "id": "es_fd_090", "levels": [{ "front": "hot", "back": "caliente" }] },
+    { "id": "es_fd_091", "levels": [{ "front": "cold", "back": "frío" }] },
+    { "id": "es_fd_092", "levels": [{ "front": "sweet", "back": "dulce" }] },
+    { "id": "es_fd_093", "levels": [{ "front": "sour", "back": "agrio" }] },
+    { "id": "es_fd_094", "levels": [{ "front": "salty", "back": "salado" }] },
+    { "id": "es_fd_095", "levels": [{ "front": "bitter", "back": "amargo" }] },
+    { "id": "es_fd_096", "levels": [{ "front": "spicy", "back": "picante" }] },
+    { "id": "es_fd_097", "levels": [{ "front": "crunchy", "back": "crujiente" }] },
+    { "id": "es_fd_098", "levels": [{ "front": "creamy", "back": "cremoso" }] },
+    { "id": "es_fd_099", "levels": [{ "front": "tender", "back": "tierno" }] },
+    { "id": "es_fd_100", "levels": [{ "front": "juicy", "back": "jugoso" }] },
+    { "id": "es_fd_101", "levels": [{ "front": "delicious", "back": "delicioso" }] },
+    { "id": "es_fd_102", "levels": [{ "front": "tasty", "back": "sabroso" }] },
+    { "id": "es_fd_103", "levels": [{ "front": "bland", "back": "soso" }] },
+    { "id": "es_fd_104", "levels": [{ "front": "healthy", "back": "saludable" }] },
+    { "id": "es_fd_105", "levels": [{ "front": "unhealthy", "back": "insalubre" }] },
+    { "id": "es_fd_106", "levels": [{ "front": "vegetarian", "back": "vegetariano" }] },
+    { "id": "es_fd_107", "levels": [{ "front": "vegan", "back": "vegano" }] },
+    { "id": "es_fd_108", "levels": [{ "front": "frozen", "back": "congelado" }] },
+    { "id": "es_fd_109", "levels": [{ "front": "organic", "back": "orgánico" }] },
+    { "id": "es_fd_110", "levels": [{ "front": "homemade", "back": "casero" }] },
+    { "id": "es_fd_111", "levels": [{ "front": "well (as in well-cooked)", "back": "bien (como en 'bien cocido')" }] },
+    { "id": "es_fd_112", "levels": [{ "front": "daily", "back": "diario" }] },
+    { "id": "es_fd_113", "levels": [{ "front": "almost", "back": "casi" }] },
+    { "id": "es_fd_114", "levels": [{ "front": "too (too much)", "back": "demasiado" }] }
   ]
 }

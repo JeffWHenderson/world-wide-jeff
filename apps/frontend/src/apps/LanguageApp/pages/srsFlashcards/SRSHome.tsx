@@ -10,7 +10,14 @@ interface DeckMeta {
     cards: { id: string; levels: unknown[] }[];
 }
 
-const AVAILABLE_DECKS = ["food_and_drink"];
+const AVAILABLE_DECKS = [
+    "everyday_phrases",
+    "common_places",
+    "food_and_drink",
+    "human_body",
+    "jobs_and_hobbies",
+    "moods_and_emotion",
+];
 
 const SRSHome = () => {
     const { language } = useParams<{ language: string }>();

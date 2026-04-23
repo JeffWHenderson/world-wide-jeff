@@ -289,6 +289,7 @@ const SRSReview = () => {
                     </div>
                     <div className="srs-card-back">
                         <div className="srs-card-meta-row">
+                        
                             <span className="srs-level-badge">{levelName}</span>
                             <span className="srs-card-label">{cardSrpLabel(currentCard.cardState)}</span>
                         </div>
