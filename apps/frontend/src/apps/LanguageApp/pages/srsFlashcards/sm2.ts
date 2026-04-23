@@ -3,12 +3,16 @@
 
 export type Rating = 1 | 2 | 3 | 4;
 
+// Number of successful reviews before a card promotes to the next level
+export const LEVEL_UP_REPS = 3;
+
 export interface CardState {
     interval: number;       // days until next review (0 = new/learning)
-    repetitions: number;    // number of successful review rounds
+    repetitions: number;    // number of successful review rounds at current level
     easeFactor: number;     // multiplier, starts at 2.5
     dueDate: string;        // ISO date string (YYYY-MM-DD)
     lapses: number;         // times failed after graduating
+    level: number;          // current card level (0 = word, 1 = phrase, ...)
 }
 
 export const DEFAULT_CARD_STATE: CardState = {
@@ -17,6 +21,7 @@ export const DEFAULT_CARD_STATE: CardState = {
     easeFactor: 2.5,
     dueDate: todayISO(),
     lapses: 0,
+    level: 0,
 };
 
 export function todayISO(): string {
@@ -37,35 +42,33 @@ export function isNew(state: CardState): boolean {
     return state.repetitions === 0 && state.interval === 0;
 }
 
+/** Returns the new card state. Does NOT handle level promotion — caller checks shouldLevelUp(). */
 export function applyRating(state: CardState, rating: Rating): CardState {
-    let { interval, repetitions, easeFactor, lapses } = state;
+    let { interval, repetitions, easeFactor, lapses, level } = state;
 
     const MIN_EASE = 1.3;
 
     if (rating === 1) {
-        // Again: reset to relearning
+        // Again: reset to relearning, keep level
         lapses += 1;
         interval = 1;
         repetitions = 0;
         easeFactor = Math.max(MIN_EASE, easeFactor - 0.2);
     } else if (repetitions === 0) {
-        // First successful review of a new/lapsed card
-        if (rating === 4) {
-            interval = 4;
-        } else {
-            interval = 1;
-        }
+        // First successful review
+        interval = rating === 4 ? 4 : 1;
         repetitions = 1;
         if (rating === 2) easeFactor = Math.max(MIN_EASE, easeFactor - 0.15);
         if (rating === 4) easeFactor = Math.min(easeFactor + 0.15, 4.0);
     } else if (repetitions === 1) {
-        interval = rating === 4 ? Math.round(interval * easeFactor * 1.3) : Math.round(interval * easeFactor);
+        interval = rating === 4
+            ? Math.round(interval * easeFactor * 1.3)
+            : Math.round(interval * easeFactor);
         interval = Math.max(interval, 1);
         repetitions = 2;
         if (rating === 2) easeFactor = Math.max(MIN_EASE, easeFactor - 0.15);
         if (rating === 4) easeFactor = Math.min(easeFactor + 0.15, 4.0);
     } else {
-        // Subsequent reviews
         if (rating === 2) {
             interval = Math.round(interval * 1.2);
             easeFactor = Math.max(MIN_EASE, easeFactor - 0.15);
@@ -85,5 +88,18 @@ export function applyRating(state: CardState, rating: Rating): CardState {
         easeFactor,
         dueDate: rating === 1 ? todayISO() : addDays(interval),
         lapses,
+        level,
+    };
+}
+
+/** Returns a fresh state for the next level, preserving easeFactor as a reward. */
+export function levelUpState(state: CardState): CardState {
+    return {
+        interval: 0,
+        repetitions: 0,
+        easeFactor: state.easeFactor,
+        dueDate: todayISO(),
+        lapses: 0,
+        level: state.level + 1,
     };
 }

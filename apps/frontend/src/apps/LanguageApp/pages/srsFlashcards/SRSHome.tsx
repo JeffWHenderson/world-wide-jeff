@@ -7,7 +7,7 @@ interface DeckMeta {
     id: string;
     name: string;
     language: string;
-    cards: { id: string }[];
+    cards: { id: string; levels: unknown[] }[];
 }
 
 const AVAILABLE_DECKS = ["food_and_drink"];

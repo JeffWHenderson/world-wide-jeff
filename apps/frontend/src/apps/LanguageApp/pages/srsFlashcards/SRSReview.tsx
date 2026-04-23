@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { applyRating, CardState, isDue, isNew, Rating } from "./sm2";
+import { applyRating, CardState, isDue, isNew, levelUpState, LEVEL_UP_REPS, Rating } from "./sm2";
 import {
     loadDeckState,
     saveDeckState,
@@ -9,13 +9,16 @@ import {
     SRSDeckState,
 } from "./useSRSStorage";
 import "./srs.css";
-import useLanguage from "../../hooks/useLanguage";
 
-interface Card {
-    id: string;
+interface CardLevel {
     front: string;
     back: string;
     romanized?: string;
+}
+
+interface Card {
+    id: string;
+    levels: CardLevel[];
 }
 
 interface DeckData {
@@ -35,9 +38,19 @@ function buildSession(cards: Card[], deckState: SRSDeckState): SessionCard[] {
             session.push({ ...card, cardState: state });
         }
     }
-    // New cards first, then due, then again cards are appended dynamically
     return session;
 }
+
+function currentLevel(card: SessionCard): CardLevel {
+    const idx = Math.min(card.cardState.level, card.levels.length - 1);
+    return card.levels[idx];
+}
+
+function hasNextLevel(card: SessionCard): boolean {
+    return card.cardState.level < card.levels.length - 1;
+}
+
+const LEVEL_NAMES = ["Vocabulary", "Phrase"];
 
 const SRSReview = () => {
     const { language, deckId } = useParams<{ language: string; deckId: string }>();
@@ -46,18 +59,16 @@ const SRSReview = () => {
     const [deck, setDeck] = useState<DeckData | null>(null);
     const [deckState, setDeckState] = useState<SRSDeckState>({});
     const [session, setSession] = useState<SessionCard[]>([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [ttsEnabled, setTtsEnabled] = useState(false);
     const [done, setDone] = useState(false);
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
-    const [voice] = useLanguage(language as string)
-    const [englishVoice] = useLanguage("english")
+    const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
 
     const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
 
-    // Load voices — browser fires voiceschanged once they're available
     useEffect(() => {
         const load = () => { voicesRef.current = window.speechSynthesis.getVoices(); };
         load();
@@ -85,19 +96,12 @@ const SRSReview = () => {
         if (!ttsEnabled) return;
         window.speechSynthesis.cancel();
         const utt = new SpeechSynthesisUtterance(text.replace(/\(.*?\)/g, ""));
-        console.log('hello world')
-        // console.log(getVoice('english'))
-        // console.log(voice)
-        // console.log(englishVoice)
         utt.voice = getVoice(isTarget ? (language ?? "english") : "english") ?? null;
         utt.rate = 0.9;
-        utt.volume = 1
-        console.log(utt.voice)
-        console.log(utt)
+        utt.volume = 1;
         window.speechSynthesis.speak(utt);
     };
 
-    // Load deck data and SRS state
     useEffect(() => {
         if (!language || !deckId) return;
         fetch(`/srs/${language}/${deckId}.json`)
@@ -117,53 +121,71 @@ const SRSReview = () => {
 
     const flip = () => {
         setIsFlipped(true);
-        if (currentCard) speak(currentCard.back, true);
+        if (currentCard) speak(currentLevel(currentCard).back, true);
+    };
+
+    const advanceSession = (
+        nextSession: SessionCard[],
+        updatedDeckState: SRSDeckState
+    ) => {
+        setSession(nextSession);
+        setDeckState(updatedDeckState);
+        if (language && deckId) saveDeckState(language, deckId, updatedDeckState);
+        setIsFlipped(false);
+        if (nextSession.length === 0) setDone(true);
     };
 
     const rate = (rating: Rating) => {
         if (!deck || !currentCard || !language || !deckId) return;
 
         const newState = applyRating(currentCard.cardState, rating);
-        const updatedDeckState = updateCardState(deckState, currentCard.id, newState);
-        setDeckState(updatedDeckState);
-        saveDeckState(language, deckId, updatedDeckState);
-
         setReviewed((r) => r + 1);
 
+        const willLevelUp =
+            rating >= 3 &&
+            newState.repetitions >= LEVEL_UP_REPS &&
+            hasNextLevel(currentCard);
+
         if (rating === 1) {
-            // Push to end of session for re-review today
-            const againCard: SessionCard = { ...currentCard, cardState: newState, isAgain: true };
-            const nextSession = [...session];
-            nextSession.splice(currentIndex, 1);
-            // Insert again card ~4 positions ahead (or at end)
-            const insertAt = Math.min(currentIndex + 4, nextSession.length);
-            nextSession.splice(insertAt, 0, againCard);
-            setSession(nextSession);
+            // Again: re-insert ~4 ahead
+            const updatedCard: SessionCard = { ...currentCard, cardState: newState, isAgain: true };
+            const next = [...session];
+            next.splice(currentIndex, 1);
+            const insertAt = Math.min(currentIndex + 4, next.length);
+            next.splice(insertAt, 0, updatedCard);
             setTotalCards((t) => t + 1);
-            // currentIndex stays the same — next card slides in
-            if (nextSession.length === 0) {
-                setDone(true);
-            } else {
-                setIsFlipped(false);
+            const updated = updateCardState(deckState, currentCard.id, newState);
+            advanceSession(next, updated);
+        } else if (willLevelUp) {
+            // Level up: show banner, then continue with next-level state
+            const leveledState = levelUpState(newState);
+            const updated = updateCardState(deckState, currentCard.id, leveledState);
+            saveDeckState(language, deckId, updated);
+            setDeckState(updated);
+            // Show level-up banner; clicking it dismisses and moves on
+            setLevelUpCard({ ...currentCard, cardState: leveledState });
+            // Remove from session now
+            const next = [...session];
+            next.splice(currentIndex, 1);
+            setSession(next);
+            if (next.length === 0) {
+                // Will be caught when banner is dismissed
             }
         } else {
-            const nextSession = [...session];
-            nextSession.splice(currentIndex, 1);
-            setSession(nextSession);
-            if (nextSession.length === 0 || currentIndex >= nextSession.length) {
-                if (nextSession.length === 0) {
-                    setDone(true);
-                } else {
-                    setCurrentIndex(0);
-                    setIsFlipped(false);
-                }
-            } else {
-                setIsFlipped(false);
-            }
+            const next = [...session];
+            next.splice(currentIndex, 1);
+            const updated = updateCardState(deckState, currentCard.id, newState);
+            advanceSession(next, updated);
         }
     };
 
-    const cardLabel = (state: CardState): string => {
+    const dismissLevelUp = () => {
+        setLevelUpCard(null);
+        setIsFlipped(false);
+        if (session.length === 0) setDone(true);
+    };
+
+    const cardSrpLabel = (state: CardState): string => {
         if (isNew(state)) return "New";
         if (state.interval < 21) return "Learning";
         return `Review (${state.interval}d)`;
@@ -173,6 +195,38 @@ const SRSReview = () => {
 
     if (!deck) {
         return <div className="srs-container"><p>Loading...</p></div>;
+    }
+
+    // Level-up banner
+    if (levelUpCard) {
+        const nextLevelName = LEVEL_NAMES[levelUpCard.cardState.level] ?? "Next Level";
+        const prevLevel = levelUpCard.levels[levelUpCard.cardState.level - 1];
+        const nextLevelContent = currentLevel(levelUpCard);
+        return (
+            <div className="srs-container">
+                <div className="srs-levelup-banner">
+                    <div className="srs-levelup-icon">⬆</div>
+                    <h2 className="srs-levelup-title">Level Up!</h2>
+                    <p className="srs-levelup-sub">
+                        You've mastered the <strong>{LEVEL_NAMES[levelUpCard.cardState.level - 1] ?? "word"}</strong> level.
+                    </p>
+                    <div className="srs-levelup-transition">
+                        <div className="srs-levelup-old">
+                            <span className="srs-levelup-badge old">{LEVEL_NAMES[levelUpCard.cardState.level - 1]}</span>
+                            <div>{prevLevel?.front}</div>
+                            <div className="srs-levelup-arrow-text">{prevLevel?.back}</div>
+                        </div>
+                        <div className="srs-levelup-arrow">→</div>
+                        <div className="srs-levelup-new">
+                            <span className="srs-levelup-badge new">{nextLevelName}</span>
+                            <div>{nextLevelContent.front}</div>
+                            <div className="srs-levelup-arrow-text">{nextLevelContent.back}</div>
+                        </div>
+                    </div>
+                    <button className="srs-btn-primary" onClick={dismissLevelUp}>Continue</button>
+                </div>
+            </div>
+        );
     }
 
     if (done || remaining === 0) {
@@ -191,6 +245,9 @@ const SRSReview = () => {
             </div>
         );
     }
+
+    const level = currentLevel(currentCard);
+    const levelName = LEVEL_NAMES[currentCard.cardState.level] ?? `Level ${currentCard.cardState.level + 1}`;
 
     return (
         <div className="srs-container">
@@ -223,19 +280,30 @@ const SRSReview = () => {
             <div className="srs-card-wrap">
                 <div className={`srs-card ${isFlipped ? "flipped" : ""}`} onClick={!isFlipped ? flip : undefined}>
                     <div className="srs-card-front">
-                        <div className="srs-card-label">{cardLabel(currentCard.cardState)}</div>
-                        <div className="srs-card-text">{currentCard.front}</div>
-                        {!isFlipped && (
-                            <div className="srs-tap-hint">tap to reveal</div>
-                        )}
+                        <div className="srs-card-meta-row">
+                            <span className="srs-level-badge">{levelName}</span>
+                            <span className="srs-card-label">{cardSrpLabel(currentCard.cardState)}</span>
+                        </div>
+                        <div className="srs-card-text">{level.front}</div>
+                        {!isFlipped && <div className="srs-tap-hint">tap to reveal</div>}
                     </div>
                     <div className="srs-card-back">
-                        <div className="srs-card-label">{cardLabel(currentCard.cardState)}</div>
-                        <div className="srs-card-text front-dim">{currentCard.front}</div>
+                        <div className="srs-card-meta-row">
+                            <span className="srs-level-badge">{levelName}</span>
+                            <span className="srs-card-label">{cardSrpLabel(currentCard.cardState)}</span>
+                        </div>
+                        <div className="srs-card-text front-dim">{level.front}</div>
                         <hr className="srs-divider" />
-                        <div className="srs-card-text">{currentCard.back}</div>
-                        {currentCard.romanized && (
-                            <div className="srs-romanized">{currentCard.romanized}</div>
+                        <div className="srs-card-text">{level.back}</div>
+                        {level.romanized && (
+                            <div className="srs-romanized">{level.romanized}</div>
+                        )}
+                        {hasNextLevel(currentCard) && (
+                            <div className="srs-levelup-hint">
+                                {LEVEL_UP_REPS - currentCard.cardState.repetitions > 0
+                                    ? `${LEVEL_UP_REPS - currentCard.cardState.repetitions} good review${LEVEL_UP_REPS - currentCard.cardState.repetitions !== 1 ? "s" : ""} to unlock phrase`
+                                    : "Phrase unlocks on Good or Easy!"}
+                            </div>
                         )}
                     </div>
                 </div>

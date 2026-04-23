@@ -177,6 +177,114 @@
     color: #bbb;
 }
 
+/* ── Card meta row (level badge + SRS label) ── */
+.srs-card-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.srs-level-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background-color: #2980b9;
+    color: white;
+}
+
+.srs-levelup-hint {
+    position: absolute;
+    bottom: 14px;
+    font-size: 0.72rem;
+    color: #f39c12;
+    font-style: italic;
+}
+
+/* ── Level-up banner ── */
+.srs-levelup-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    max-width: 480px;
+    width: 100%;
+    background-color: var(--card-color, #fff);
+    border-radius: 20px;
+    padding: 32px 24px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+.srs-levelup-icon {
+    font-size: 3rem;
+    margin-bottom: 8px;
+    color: #f39c12;
+}
+
+.srs-levelup-title {
+    margin: 0 0 6px;
+    font-size: 1.8rem;
+    color: #27ae60;
+}
+
+.srs-levelup-sub {
+    color: #666;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+.srs-levelup-transition {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.srs-levelup-old,
+.srs-levelup-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 1rem;
+}
+
+.srs-levelup-arrow-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.srs-levelup-arrow {
+    font-size: 1.6rem;
+    color: #aaa;
+}
+
+.srs-levelup-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.srs-levelup-badge.old {
+    background-color: #bdc3c7;
+    color: #555;
+}
+
+.srs-levelup-badge.new {
+    background-color: #27ae60;
+    color: white;
+}
+
 /* ── Rating buttons ── */
 .srs-rating-row {
     display: flex;

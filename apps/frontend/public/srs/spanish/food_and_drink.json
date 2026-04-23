@@ -3,25 +3,85 @@
   "name": "Food & Drink",
   "language": "spanish",
   "cards": [
-    { "id": "es_fd_01", "front": "I eat the apple.", "back": "Yo como la manzana." },
-    { "id": "es_fd_02", "front": "She drinks coffee every morning.", "back": "Ella bebe café cada mañana." },
-    { "id": "es_fd_03", "front": "We are cooking dinner.", "back": "Estamos cocinando la cena." },
-    { "id": "es_fd_04", "front": "The bread is fresh from the oven.", "back": "El pan está fresco del horno." },
-    { "id": "es_fd_05", "front": "Do you want more water?", "back": "¿Quieres más agua?" },
-    { "id": "es_fd_06", "front": "I like spicy food.", "back": "Me gusta la comida picante." },
-    { "id": "es_fd_07", "front": "The soup is too hot.", "back": "La sopa está demasiado caliente." },
-    { "id": "es_fd_08", "front": "They are eating at a restaurant.", "back": "Ellos están comiendo en un restaurante." },
-    { "id": "es_fd_09", "front": "Can I have the bill, please?", "back": "¿Me puede traer la cuenta, por favor?" },
-    { "id": "es_fd_10", "front": "I am allergic to nuts.", "back": "Soy alérgico a las nueces." },
-    { "id": "es_fd_11", "front": "The chicken smells delicious.", "back": "El pollo huele delicioso." },
-    { "id": "es_fd_12", "front": "She ordered a salad and a glass of wine.", "back": "Ella pidió una ensalada y una copa de vino." },
-    { "id": "es_fd_13", "front": "I don't eat meat.", "back": "No como carne." },
-    { "id": "es_fd_14", "front": "The market has fresh vegetables.", "back": "El mercado tiene verduras frescas." },
-    { "id": "es_fd_15", "front": "Would you like some dessert?", "back": "¿Le gustaría un postre?" },
-    { "id": "es_fd_16", "front": "I need to buy milk and eggs.", "back": "Necesito comprar leche y huevos." },
-    { "id": "es_fd_17", "front": "This dish is very tasty.", "back": "Este plato está muy sabroso." },
-    { "id": "es_fd_18", "front": "He prefers tea to coffee.", "back": "Él prefiere el té al café." },
-    { "id": "es_fd_19", "front": "The fruit salad is sweet and refreshing.", "back": "La ensalada de frutas es dulce y refrescante." },
-    { "id": "es_fd_20", "front": "Let's have lunch together.", "back": "Vamos a almorzar juntos." }
+    { "id": "es_fd_01", "levels": [
+      { "front": "to eat", "back": "comer" },
+      { "front": "I eat the apple.", "back": "Yo como la manzana." }
+    ]},
+    { "id": "es_fd_02", "levels": [
+      { "front": "to drink", "back": "beber" },
+      { "front": "She drinks coffee every morning.", "back": "Ella bebe café cada mañana." }
+    ]},
+    { "id": "es_fd_03", "levels": [
+      { "front": "to cook", "back": "cocinar" },
+      { "front": "We are cooking dinner.", "back": "Estamos cocinando la cena." }
+    ]},
+    { "id": "es_fd_04", "levels": [
+      { "front": "bread", "back": "el pan" },
+      { "front": "The bread is fresh from the oven.", "back": "El pan está fresco del horno." }
+    ]},
+    { "id": "es_fd_05", "levels": [
+      { "front": "water", "back": "el agua" },
+      { "front": "Do you want more water?", "back": "¿Quieres más agua?" }
+    ]},
+    { "id": "es_fd_06", "levels": [
+      { "front": "spicy", "back": "picante" },
+      { "front": "I like spicy food.", "back": "Me gusta la comida picante." }
+    ]},
+    { "id": "es_fd_07", "levels": [
+      { "front": "soup", "back": "la sopa" },
+      { "front": "The soup is too hot.", "back": "La sopa está demasiado caliente." }
+    ]},
+    { "id": "es_fd_08", "levels": [
+      { "front": "restaurant", "back": "el restaurante" },
+      { "front": "They are eating at a restaurant.", "back": "Ellos están comiendo en un restaurante." }
+    ]},
+    { "id": "es_fd_09", "levels": [
+      { "front": "the bill", "back": "la cuenta" },
+      { "front": "Can I have the bill, please?", "back": "¿Me puede traer la cuenta, por favor?" }
+    ]},
+    { "id": "es_fd_10", "levels": [
+      { "front": "allergic", "back": "alérgico" },
+      { "front": "I am allergic to nuts.", "back": "Soy alérgico a las nueces." }
+    ]},
+    { "id": "es_fd_11", "levels": [
+      { "front": "chicken", "back": "el pollo" },
+      { "front": "The chicken smells delicious.", "back": "El pollo huele delicioso." }
+    ]},
+    { "id": "es_fd_12", "levels": [
+      { "front": "to order (food)", "back": "pedir" },
+      { "front": "She ordered a salad and a glass of wine.", "back": "Ella pidió una ensalada y una copa de vino." }
+    ]},
+    { "id": "es_fd_13", "levels": [
+      { "front": "meat", "back": "la carne" },
+      { "front": "I don't eat meat.", "back": "No como carne." }
+    ]},
+    { "id": "es_fd_14", "levels": [
+      { "front": "vegetables", "back": "las verduras" },
+      { "front": "The market has fresh vegetables.", "back": "El mercado tiene verduras frescas." }
+    ]},
+    { "id": "es_fd_15", "levels": [
+      { "front": "dessert", "back": "el postre" },
+      { "front": "Would you like some dessert?", "back": "¿Le gustaría un postre?" }
+    ]},
+    { "id": "es_fd_16", "levels": [
+      { "front": "milk", "back": "la leche" },
+      { "front": "I need to buy milk and eggs.", "back": "Necesito comprar leche y huevos." }
+    ]},
+    { "id": "es_fd_17", "levels": [
+      { "front": "tasty / delicious", "back": "sabroso" },
+      { "front": "This dish is very tasty.", "back": "Este plato está muy sabroso." }
+    ]},
+    { "id": "es_fd_18", "levels": [
+      { "front": "tea", "back": "el té" },
+      { "front": "He prefers tea to coffee.", "back": "Él prefiere el té al café." }
+    ]},
+    { "id": "es_fd_19", "levels": [
+      { "front": "fruit", "back": "la fruta" },
+      { "front": "The fruit salad is sweet and refreshing.", "back": "La ensalada de frutas es dulce y refrescante." }
+    ]},
+    { "id": "es_fd_20", "levels": [
+      { "front": "lunch", "back": "el almuerzo" },
+      { "front": "Let's have lunch together.", "back": "Vamos a almorzar juntos." }
+    ]}
   ]
 }
