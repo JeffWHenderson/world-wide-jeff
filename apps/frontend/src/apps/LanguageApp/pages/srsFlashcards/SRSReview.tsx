@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { applyRating, CardState, isDue, isNew, levelUpState, LEVEL_UP_REPS, Rating } from "./sm2";
+import { useLanguageApp } from "../../LanguageAppContext";
 import {
     loadDeckState,
     saveDeckState,
@@ -61,7 +62,7 @@ const SRSReview = () => {
     const [session, setSession] = useState<SessionCard[]>([]);
     const [currentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const [ttsEnabled, setTtsEnabled] = useState(false);
+    const { ttsEnabled, setTtsEnabled } = useLanguageApp();
     const [done, setDone] = useState(false);
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
