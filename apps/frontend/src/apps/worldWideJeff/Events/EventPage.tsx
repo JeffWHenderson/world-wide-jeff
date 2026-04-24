@@ -1,44 +1,62 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { hardCodedEvents } from "./EventTypes"
+import { hardCodedEvents } from "./EventTypes";
 import ZombieWalk from "./ZombieWalk";
+import "./events.css";
 
 const EventPage = () => {
     const { eventId } = useParams();
-    const navigator = useNavigate()
+    const navigate = useNavigate();
 
-    const event = hardCodedEvents.find((event: any) => {
-        return event.id === eventId
-    })
+    const event = hardCodedEvents.find((e) => e.id === eventId);
 
     if (event?.id === "zombie_walk_2026") {
-        // TODO: this is just a hack so I can have a custom page here
-        return <ZombieWalk></ZombieWalk>
+        return <ZombieWalk />;
     }
 
-    return (<>
-        {
-            event ?
-                <div>
-                    <h1>{event.name}</h1>
-                    <p>{event.startDate.toString()}</p>
-                    <p>{event.details}</p>
-                    <p>{event.status}</p>
-                    {event?.links?.length && event?.links?.length > 0 &&
-                        <>
-                            <h3>Links</h3>
-                            <a href={event.links[0].link}> {event.links[0].linkDescription}</a>
+    if (!event) {
+        return (
+            <div className="event-detail-page">
+                <button className="event-detail-back" onClick={() => navigate("/events")}>
+                    ← Back to Events
+                </button>
+                <p>Event not found.</p>
+            </div>
+        );
+    }
 
-                        </>
-                    }
-                    <br /><br /><br />
-                    <button onClick={() => navigator('/events')}>GO BACK!!!</button>
+    const dateStr =
+        event.startDate === "tbd"
+            ? "Date TBD"
+            : event.startDate.toLocaleDateString("default", {
+                  weekday: "long",
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+              });
+
+    return (
+        <div className="event-detail-page">
+            <button className="event-detail-back" onClick={() => navigate("/events")}>
+                ← Back to Events
+            </button>
+
+            <h1 className="event-detail-title">{event.name}</h1>
+            <p className="event-detail-meta">{dateStr}</p>
+
+            {event.details && <p className="event-detail-body">{event.details}</p>}
+
+            {event.links && event.links.length > 0 && (
+                <div className="event-detail-links">
+                    <h3>Links</h3>
+                    {event.links.map((l) => (
+                        <a key={l.link} href={l.link} target="_blank" rel="noreferrer">
+                            {l.linkDescription}
+                        </a>
+                    ))}
                 </div>
-                :
-                <div>
-                    no event found
-                </div>
-        }
-    </>)
-}
+            )}
+        </div>
+    );
+};
 
 export default EventPage;

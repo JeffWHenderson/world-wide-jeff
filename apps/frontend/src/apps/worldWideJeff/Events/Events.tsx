@@ -1,76 +1,85 @@
-import { useNavigate } from "react-router-dom"
-import { EventDetails, hardCodedEvents } from "./EventTypes"
+import { useNavigate } from "react-router-dom";
+import { EventDetails, hardCodedEvents } from "./EventTypes";
+import "./events.css";
 
-const Events = () => {
-    const navigator = useNavigate()
-
-
-    const displayDate = (date: "tbd" | Date) => {
-        if (date === 'tbd') {
-            return <span style={{ color: 'black', backgroundColor: "yellow", padding: "4px", borderRadius: "10px" }}>{date}</span>
-        }
-
-        // TODO: Better Date Formatting
-        return <span style={{ color: 'black', backgroundColor: "white", padding: "4px", borderRadius: "10px" }}>{date.toString().split(" 202")[0]}</span>
+const formatDate = (date: "tbd" | Date) => {
+    if (date === "tbd") {
+        return { month: "TBD", day: null };
     }
+    return {
+        month: date.toLocaleString("default", { month: "short" }),
+        day: date.getDate(),
+    };
+};
 
-    const handleOpenEventPage = (item: EventDetails) => {
-        navigator(`/events/${item.id}`);
-    }
+const isCompleted = (startDate: "tbd" | Date) =>
+    typeof startDate === "object" && startDate.getTime() < Date.now();
 
-    const isCompleted = (startDate: string | Date) => {
-        if (typeof startDate == "object") {
-            return startDate.getTime() < Date.now();
-        }
-        return false;
-    }
+const EventCard = ({ item, onClick }: { item: EventDetails; onClick: () => void }) => {
+    const { month, day } = formatDate(item.startDate);
+    const completed = isCompleted(item.startDate);
 
     return (
-        <>
-            {/* EVENT CARD START */}
-            <h2>Coming Up</h2>
-            {
-                hardCodedEvents.map(item => (
-                    // TODO: this is just a hack while I don't have internet to figure out the best way to handle dates
-                    !isCompleted(item.startDate) &&
-                    <div
-                        style={{
-                            backgroundColor: "var(--card-color)",
-                            border: "1px solid grey", margin: "2px",
-                            borderRadius: "10px",
-                            padding: "0px 4px 0px 8px",
-                            color: "var(--text-color)"
-                        }}
-                        className="comment"
-                        key={item.id} onClick={() => handleOpenEventPage(item)}
-                    >
-                        <div>
-                            <h4> {displayDate(item.startDate)} {item.name}</h4 >
-                        </div>
+        <div
+            className={`event-card${completed ? " completed" : ""}`}
+            onClick={onClick}
+        >
+            <div className={`event-date-badge${item.startDate === "tbd" ? " tbd" : ""}`}>
+                {day !== null ? (
+                    <>
+                        <span>{month}</span>
+                        <span className="event-date-day">{day}</span>
+                    </>
+                ) : (
+                    <span>TBD</span>
+                )}
+            </div>
+            <div className="event-card-content">
+                <p className="event-card-name">{item.name}</p>
+                {item.details && <p className="event-card-details">{item.details}</p>}
+                {item.status === "cancelled" && (
+                    <span className="event-card-status">Cancelled</span>
+                )}
+            </div>
+        </div>
+    );
+};
 
-                        <p className="comment">{item.details}</p>
-                    </div>
-                ))
-            }
-            {/* EVENT CARD END */}
+const Events = () => {
+    const navigate = useNavigate();
 
-            <h2>Completed Events</h2>
-            {
-                hardCodedEvents.map(item => (
-                    // TODO: this is just a hack while I don't have internet to figure out the best way to handle dates
-                    isCompleted(item.startDate) &&
-                    <div style={{ backgroundColor: "grey", border: "1px solid grey", margin: "2px", borderRadius: "10px", padding: "0px 4px 0px 8px" }} key={item.id} onClick={() => handleOpenEventPage(item)}>
-                        <div>
-                            <h4> {displayDate(item.startDate)} {item.name}</h4 >
-                        </div>
+    const upcoming = hardCodedEvents.filter((e) => !isCompleted(e.startDate));
+    const completed = hardCodedEvents.filter((e) => isCompleted(e.startDate));
 
-                        <p>{item.details}</p>
-                    </div>
-                ))
-            }
+    return (
+        <div className="events-page">
+            <h1 className="events-page-title">Events</h1>
 
-        </>
-    )
-}
+            <div className="events-section">
+                <p className="events-section-heading">Coming Up</p>
+                {upcoming.map((item) => (
+                    <EventCard
+                        key={item.id + item.name}
+                        item={item}
+                        onClick={() => navigate(`/events/${item.id}`)}
+                    />
+                ))}
+            </div>
+
+            {completed.length > 0 && (
+                <div className="events-section">
+                    <p className="events-section-heading">Completed</p>
+                    {completed.map((item) => (
+                        <EventCard
+                            key={item.id + item.name}
+                            item={item}
+                            onClick={() => navigate(`/events/${item.id}`)}
+                        />
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
 
 export default Events;
