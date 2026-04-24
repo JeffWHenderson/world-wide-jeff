@@ -1,0 +1,92 @@
+{
+  "id": "at_the_restaurant",
+  "name": "At the Restaurant",
+  "sentences": [
+    {
+      "base_language": "I'm hungry. Let's go to the restaurant.",
+      "target_language": "Tengo hambre. Vamos al restaurante.",
+      "tokens": [
+        { "text": "Tengo ", "cardId": null, "translation": "I have" },
+        { "text": "hambre", "cardId": "es_fd_062", "translation": "hunger" },
+        { "text": ". Vamos al " },
+        { "text": "restaurante", "cardId": "es_fd_048", "translation": "restaurant" },
+        { "text": "." }
+      ]
+    },
+    {
+      "base_language": "The waiter takes us to a table.",
+      "target_language": "El camarero nos lleva a una mesa.",
+      "tokens": [
+        { "text": "El " },
+        { "text": "camarero", "cardId": "es_fd_061", "translation": "waiter" },
+        { "text": " nos lleva a una " },
+        { "text": "mesa", "cardId": "es_fd_060", "translation": "table" },
+        { "text": "." }
+      ]
+    },
+    {
+      "base_language": "He gives us the menu.",
+      "target_language": "Nos da el menú.",
+      "tokens": [
+        { "text": "Nos da el " },
+        { "text": "menú", "cardId": "es_fd_047", "translation": "menu" },
+        { "text": "." }
+      ]
+    },
+    {
+      "base_language": "I want chicken with rice, please.",
+      "target_language": "Quiero pollo con arroz, por favor.",
+      "tokens": [
+        { "text": "Quiero " },
+        { "text": "pollo", "cardId": "es_fd_007", "translation": "chicken" },
+        { "text": " con " },
+        { "text": "arroz", "cardId": "es_fd_003", "translation": "rice" },
+        { "text": ", por favor." }
+      ]
+    },
+    {
+      "base_language": "Also a salad and some bread.",
+      "target_language": "También una ensalada y pan.",
+      "tokens": [
+        { "text": "También una " },
+        { "text": "ensalada", "cardId": "es_fd_020", "translation": "salad" },
+        { "text": " y " },
+        { "text": "pan", "cardId": "es_fd_002", "translation": "bread" },
+        { "text": "." }
+      ]
+    },
+    {
+      "base_language": "And water to drink.",
+      "target_language": "Y agua para beber.",
+      "tokens": [
+        { "text": "Y " },
+        { "text": "agua", "cardId": "es_fd_001", "translation": "water" },
+        { "text": " para " },
+        { "text": "beber", "cardId": "es_fd_065", "translation": "to drink" },
+        { "text": "." }
+      ]
+    },
+    {
+      "base_language": "The food arrives on a big plate. Delicious!",
+      "target_language": "La comida llega en un plato grande. ¡Delicioso!",
+      "tokens": [
+        { "text": "La comida llega en un " },
+        { "text": "plato", "cardId": "es_fd_055", "translation": "plate" },
+        { "text": " grande. ¡" },
+        { "text": "Delicioso", "cardId": "es_fd_101", "translation": "delicious" },
+        { "text": "!" }
+      ]
+    },
+    {
+      "base_language": "After eating, we have coffee.",
+      "target_language": "Después de comer, tomamos café.",
+      "tokens": [
+        { "text": "Después de " },
+        { "text": "comer", "cardId": "es_fd_064", "translation": "to eat" },
+        { "text": ", tomamos " },
+        { "text": "café", "cardId": "es_fd_033", "translation": "coffee" },
+        { "text": "." }
+      ]
+    }
+  ]
+}

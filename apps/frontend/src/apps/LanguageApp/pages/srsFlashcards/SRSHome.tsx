@@ -7,6 +7,7 @@ interface DeckMeta {
     id: string;
     name: string;
     language: string;
+    stories?: string[];
     cards: { id: string; levels: unknown[] }[];
 }
 
@@ -79,6 +80,14 @@ const SRSHome = () => {
                                 >
                                     {totalDue > 0 ? `Study (${totalDue})` : "Nothing due"}
                                 </button>
+                                {deck.stories && deck.stories.length > 0 && (
+                                    <button
+                                        className="srs-btn-stories"
+                                        onClick={() => navigate(`/language-app/${language}/srs/${deck.id}/story/${deck.stories![0]}`)}
+                                    >
+                                        Stories ({deck.stories.length})
+                                    </button>
+                                )}
                                 <button
                                     className="srs-btn-reset"
                                     onClick={() => handleReset(deck.id)}

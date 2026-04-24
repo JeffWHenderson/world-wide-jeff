@@ -18,6 +18,7 @@ import PicturePopUp from './apps/LanguageApp/pages/pictureLesson/PicturePopUp';
 import EventPage from './apps/Events/EventPage';
 import SRSHome from './apps/LanguageApp/pages/srsFlashcards/SRSHome';
 import SRSReview from './apps/LanguageApp/pages/srsFlashcards/SRSReview';
+import SRSStoryReader from './apps/LanguageApp/pages/srsFlashcards/SRSStoryReader';
 import NoPage from './apps/common/Core/NoPage';
 import Home from './apps/common/Core/Home';
 import Layout from './apps/common/Core/Layout';
@@ -60,6 +61,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path=":language/picture-review/:section" element={<PicturePopUp />} />
             <Route path=":language/srs" element={<SRSHome />} />
             <Route path=":language/srs/:deckId" element={<SRSReview />} />
+            <Route path=":language/srs/:deckId/story/:storyId" element={<SRSStoryReader />} />
           </Route>
           <Route path="*" element={<NoPage />} />
         </Routes>
