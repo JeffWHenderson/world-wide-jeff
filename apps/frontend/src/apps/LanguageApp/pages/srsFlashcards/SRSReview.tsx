@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { applyRating, CardState, isDue, isNew, levelUpState, LEVEL_UP_REPS, Rating } from "./sm2";
 import { useLanguageApp } from "../../LanguageAppContext";
@@ -9,6 +9,7 @@ import {
     updateCardState,
     SRSDeckState,
 } from "./useSRSStorage";
+import SRSSettings from "./SRSSettings";
 import "./srs.css";
 
 interface CardLevel {
@@ -42,7 +43,7 @@ function buildSession(cards: Card[], deckState: SRSDeckState): SessionCard[] {
     return session;
 }
 
-function currentLevel(card: SessionCard): CardLevel {
+function currentLevel(card: Card & { cardState: CardState }): CardLevel {
     const idx = Math.min(card.cardState.level, card.levels.length - 1);
     return card.levels[idx];
 }
@@ -53,6 +54,11 @@ function hasNextLevel(card: SessionCard): boolean {
 
 const LEVEL_NAMES = ["Vocabulary", "Phrase"];
 
+// Autoplay helper: wraps a SessionCard-shaped object with a default CardState
+function toAutoplayCard(card: Card): SessionCard {
+    return { ...card, cardState: { repetitions: 0, interval: 0, easeFactor: 2.5, level: 0 } };
+}
+
 const SRSReview = () => {
     const { language, deckId } = useParams<{ language: string; deckId: string }>();
     const navigate = useNavigate();
@@ -62,11 +68,16 @@ const SRSReview = () => {
     const [session, setSession] = useState<SessionCard[]>([]);
     const [currentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const { ttsEnabled, setTtsEnabled } = useLanguageApp();
+    const { ttsEnabled, autoplay, volume } = useLanguageApp();
     const [done, setDone] = useState(false);
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
     const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
+
+    // Autoplay state
+    const [autoplayIndex, setAutoplayIndex] = useState(0);
+    const autoplayRef = useRef(false);
+    const autoplayIndexRef = useRef(0);
 
     const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
 
@@ -93,14 +104,19 @@ const SRSReview = () => {
         }
     };
 
-    const speak = (text: string, isTarget: boolean) => {
-        if (!ttsEnabled) return;
-        window.speechSynthesis.cancel();
+    // Returns the utterance so callers can attach onend
+    const buildUtt = useCallback((text: string, isTarget: boolean): SpeechSynthesisUtterance => {
         const utt = new SpeechSynthesisUtterance(text.replace(/\(.*?\)/g, ""));
         utt.voice = getVoice(isTarget ? (language ?? "english") : "english") ?? null;
         utt.rate = 0.9;
-        utt.volume = 1;
-        window.speechSynthesis.speak(utt);
+        utt.volume = volume;
+        return utt;
+    }, [language, volume, voicesRef]);
+
+    const speak = (text: string, isTarget: boolean) => {
+        if (!ttsEnabled) return;
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(buildUtt(text, isTarget));
     };
 
     useEffect(() => {
@@ -117,6 +133,83 @@ const SRSReview = () => {
             })
             .catch((e) => console.error(e));
     }, [language, deckId]);
+
+    // ── Autoplay loop ──────────────────────────────────────────────────────────
+    useEffect(() => {
+        autoplayRef.current = autoplay;
+    }, [autoplay]);
+
+    useEffect(() => {
+        autoplayIndexRef.current = autoplayIndex;
+    }, [autoplayIndex]);
+
+    useEffect(() => {
+        if (!autoplay || !deck) return;
+
+        window.speechSynthesis.cancel();
+
+        const allCards = deck.cards;
+        const idx = autoplayIndex % allCards.length;
+        const card = allCards[idx];
+        const level = card.levels[0]; // always show level 0 in autoplay
+
+        // Phase 1: speak front (English)
+        setIsFlipped(false);
+
+        const frontUtt = buildUtt(level.front, false);
+        const FALLBACK_MS = 4000;
+
+        let frontTimer: ReturnType<typeof setTimeout>;
+        let backTimer: ReturnType<typeof setTimeout>;
+        let advanceTimer: ReturnType<typeof setTimeout>;
+
+        const speakBack = () => {
+            if (!autoplayRef.current) return;
+            setIsFlipped(true);
+            const backUtt = buildUtt(level.back, true);
+
+            const advance = () => {
+                if (!autoplayRef.current) return;
+                // brief pause then next card
+                advanceTimer = setTimeout(() => {
+                    if (!autoplayRef.current) return;
+                    setAutoplayIndex((i) => i + 1);
+                    setIsFlipped(false);
+                }, 1200);
+            };
+
+            backUtt.onend = advance;
+            window.speechSynthesis.speak(backUtt);
+            backTimer = setTimeout(advance, FALLBACK_MS + level.back.length * 80);
+        };
+
+        frontUtt.onend = () => {
+            clearTimeout(frontTimer);
+            if (!autoplayRef.current) return;
+            // pause between front and back
+            frontTimer = setTimeout(speakBack, 600);
+        };
+
+        window.speechSynthesis.speak(frontUtt);
+        frontTimer = setTimeout(speakBack, FALLBACK_MS + level.front.length * 80);
+
+        return () => {
+            clearTimeout(frontTimer);
+            clearTimeout(backTimer);
+            clearTimeout(advanceTimer);
+            window.speechSynthesis.cancel();
+        };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [autoplay, autoplayIndex, deck]);
+
+    // Stop speech when autoplay turns off
+    useEffect(() => {
+        if (!autoplay) {
+            window.speechSynthesis.cancel();
+            setIsFlipped(false);
+        }
+    }, [autoplay]);
+    // ──────────────────────────────────────────────────────────────────────────
 
     const currentCard = session[currentIndex];
 
@@ -148,7 +241,6 @@ const SRSReview = () => {
             hasNextLevel(currentCard);
 
         if (rating === 1) {
-            // Again: re-insert ~4 ahead
             const updatedCard: SessionCard = { ...currentCard, cardState: newState, isAgain: true };
             const next = [...session];
             next.splice(currentIndex, 1);
@@ -158,20 +250,14 @@ const SRSReview = () => {
             const updated = updateCardState(deckState, currentCard.id, newState);
             advanceSession(next, updated);
         } else if (willLevelUp) {
-            // Level up: show banner, then continue with next-level state
             const leveledState = levelUpState(newState);
             const updated = updateCardState(deckState, currentCard.id, leveledState);
             saveDeckState(language, deckId, updated);
             setDeckState(updated);
-            // Show level-up banner; clicking it dismisses and moves on
             setLevelUpCard({ ...currentCard, cardState: leveledState });
-            // Remove from session now
             const next = [...session];
             next.splice(currentIndex, 1);
             setSession(next);
-            if (next.length === 0) {
-                // Will be caught when banner is dismissed
-            }
         } else {
             const next = [...session];
             next.splice(currentIndex, 1);
@@ -197,6 +283,53 @@ const SRSReview = () => {
     if (!deck) {
         return <div className="srs-container"><p>Loading...</p></div>;
     }
+
+    // ── Autoplay view ──────────────────────────────────────────────────────────
+    if (autoplay) {
+        const idx = autoplayIndex % deck.cards.length;
+        const card = deck.cards[idx];
+        const apCard = toAutoplayCard(card);
+        const level = card.levels[0];
+        return (
+            <div className="srs-container">
+                <div className="srs-header">
+                    <button className="srs-back-link" onClick={() => navigate(`/language-app/${language}/srs`)}>
+                        ← Decks
+                    </button>
+                    <span className="srs-deck-name">{deck.name}</span>
+                    <SRSSettings />
+                </div>
+
+                <div className="srs-card-wrap">
+                    <div className={`srs-card ${isFlipped ? "flipped" : ""}`}>
+                        <div className="srs-card-front">
+                            <div className="srs-card-meta-row">
+                                <span className="srs-level-badge">Autoplay</span>
+                            </div>
+                            <div className="srs-card-text">{level.front}</div>
+                        </div>
+                        <div className="srs-card-back">
+                            <div className="srs-card-meta-row">
+                                <span className="srs-level-badge">Autoplay</span>
+                            </div>
+                            <div className="srs-card-text front-dim">{level.front}</div>
+                            <hr className="srs-divider" />
+                            <div className="srs-card-text">{level.back}</div>
+                            {level.romanized && (
+                                <div className="srs-romanized">{level.romanized}</div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="srs-autoplay-indicator">
+                    <div className="srs-autoplay-dot" />
+                    <span>Listening… {(idx + 1)} / {deck.cards.length}</span>
+                </div>
+            </div>
+        );
+    }
+    // ──────────────────────────────────────────────────────────────────────────
 
     // Level-up banner
     if (levelUpCard) {
@@ -257,13 +390,7 @@ const SRSReview = () => {
                     ← Decks
                 </button>
                 <span className="srs-deck-name">{deck.name}</span>
-                <button
-                    className={`srs-tts-toggle ${ttsEnabled ? "active" : ""}`}
-                    onClick={() => setTtsEnabled((v) => !v)}
-                    title="Toggle text-to-speech"
-                >
-                    {ttsEnabled ? "🔊" : "🔇"}
-                </button>
+                <SRSSettings />
             </div>
 
             <div className="srs-progress-bar-wrap">
@@ -290,7 +417,6 @@ const SRSReview = () => {
                     </div>
                     <div className="srs-card-back">
                         <div className="srs-card-meta-row">
-                        
                             <span className="srs-level-badge">{levelName}</span>
                             <span className="srs-card-label">{cardSrpLabel(currentCard.cardState)}</span>
                         </div>
@@ -319,7 +445,7 @@ const SRSReview = () => {
                     </button>
                     <button className="srs-rating hard" onClick={() => rate(2)}>
                         <span className="rating-label">Hard</span>
-                        <span className="rating-interval">~{Math.round((currentCard.cardState.interval || 1) * 1.2)}d</span>
+                        <span className="rating-interval">1d</span>
                     </button>
                     <button className="srs-rating good" onClick={() => rate(3)}>
                         <span className="rating-label">Good</span>
