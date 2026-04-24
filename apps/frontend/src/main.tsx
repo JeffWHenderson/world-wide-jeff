@@ -1,12 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./apps/worldWideJeff/Core/Layout";
-import Home from "./apps/worldWideJeff/Core/Home";
-import NoPage from "./apps/worldWideJeff/Core/NoPage";
-import Pickleball from "./apps/worldWideJeff/Pickleball/Pickleball";
-import Contact from "./apps/worldWideJeff/Contact/Contact";
-import Events from "./apps/worldWideJeff/Events/Events";
+import Pickleball from './apps/Pickleball/Pickleball';
+import Contact from "./apps/common/Contact/Contact";
+import Events from "./apps/Events/Events";
 import LanguageLearningApp from "./apps/LanguageApp/pages/LanguageApp";
 import './index.css'
 import FlashCardsV2 from './apps/LanguageApp/pages/flashcards/FlashCardsV2';
@@ -18,9 +15,12 @@ import MyDecks from './apps/LanguageApp/hooks/MyDecks';
 import { ThemeProvider } from './apps/common/ThemeContext';
 import LanguageAppHome from './apps/LanguageApp/LanguageHome';
 import PicturePopUp from './apps/LanguageApp/pages/pictureLesson/PicturePopUp';
-import EventPage from './apps/worldWideJeff/Events/EventPage';
+import EventPage from './apps/Events/EventPage';
 import SRSHome from './apps/LanguageApp/pages/srsFlashcards/SRSHome';
 import SRSReview from './apps/LanguageApp/pages/srsFlashcards/SRSReview';
+import NoPage from './apps/common/Core/NoPage';
+import Home from './apps/common/Core/Home';
+import Layout from './apps/common/Core/Layout';
 
 // TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
 // import WallerverseHome from "./screens/Wallerverse/WallerverseHome"

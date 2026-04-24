@@ -53,6 +53,7 @@ const Events = () => {
 
     return (
         <div className="events-page">
+            <button className="back-btn" onClick={() => navigate("/")}>← Home</button>
             <h1 className="events-page-title">Events</h1>
 
             <div className="events-section">

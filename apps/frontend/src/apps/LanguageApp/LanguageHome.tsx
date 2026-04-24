@@ -10,7 +10,8 @@ const LanguageAppHome = () => {
     }
 
     return <>
-        <div style={{ color: '--text-color' }}>
+        <div style={{ color: '--text-color', maxWidth: 720, margin: '0 auto', padding: '40px 24px 80px' }}>
+        <button className="back-btn" onClick={() => navigator("/")}>← Home</button>
             <h1>Welcome To My Language App</h1>
             <div style={{ display: 'flex', justifySelf: 'center', justifyContent: 'space-between', width: '90vw' }}>
                 <button style={{ color: 'white' }} onClick={() => goToLanguagePage('spanish')} key={'spanish'}>
