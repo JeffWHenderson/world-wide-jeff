@@ -54,10 +54,6 @@ function hasNextLevel(card: SessionCard): boolean {
 
 const LEVEL_NAMES = ["Vocabulary", "Phrase"];
 
-// Autoplay helper: wraps a SessionCard-shaped object with a default CardState
-function toAutoplayCard(card: Card): SessionCard {
-    return { ...card, cardState: { repetitions: 0, interval: 0, easeFactor: 2.5, level: 0 } };
-}
 
 const SRSReview = () => {
     const { language, deckId } = useParams<{ language: string; deckId: string }>();
@@ -288,7 +284,6 @@ const SRSReview = () => {
     if (autoplay) {
         const idx = autoplayIndex % deck.cards.length;
         const card = deck.cards[idx];
-        const apCard = toAutoplayCard(card);
         const level = card.levels[0];
         return (
             <div className="srs-container">
