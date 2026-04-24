@@ -1,6 +1,6 @@
 import { useState } from "react";
-import UnderConstruction from "../Core/UnderConstruction";
 import { userInfoMock } from "./wallerverseTypes";
+import UnderConstruction from "../common/Core/UnderConstruction";
 
 const styleDefaults = {
     backgroundColor: undefined,
