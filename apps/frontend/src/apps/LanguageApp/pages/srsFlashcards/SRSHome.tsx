@@ -12,11 +12,11 @@ interface DeckMeta {
 
 const AVAILABLE_DECKS = [
     "everyday_phrases",
-    "common_places",
     "food_and_drink",
-    "human_body",
+    "common_places",
     "jobs_and_hobbies",
     "moods_and_emotion",
+    "human_body",
 ];
 
 const SRSHome = () => {
