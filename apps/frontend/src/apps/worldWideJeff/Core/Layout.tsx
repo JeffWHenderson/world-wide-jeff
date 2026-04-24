@@ -5,27 +5,31 @@ const Layout = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <div style={{ width: '100%', height: '100vh' }}>
-            <div style={{ display: "flex", backgroundColor: "black", height: '10vh', width: '100vw', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{ fontSize: "1.7em", color: 'white' }}>World Wide Jeff</div>
+        <div style={{ width: '100%', minHeight: '100vh' }}>
+            <div style={{
+                display: "flex",
+                backgroundColor: "black",
+                height: '56px',
+                width: '100%',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                padding: '0 24px',
+                boxSizing: 'border-box',
+                position: 'sticky',
+                top: 0,
+                zIndex: 100,
+            }}>
+                <Link to="/" style={{ fontSize: "1.2em", color: 'white', fontWeight: 700, letterSpacing: '-0.01em', textDecoration: 'none' }}>
+                    World Wide Jeff
+                </Link>
                 <button onClick={toggleTheme}>
                     {theme === 'light' ? 'Dark' : 'Light'} Mode
                 </button>
             </div>
 
-            <div style={{ display: "flex", backgroundColor: "black", height: '5vh', width: '100vw', alignContent: "center", alignItems: 'center', justifyContent: 'space-between' }}>
-                <nav>
-                    <Link style={{ padding: "0 5px 0 0" }} to="/">Home</Link>
-                    <Link style={{ padding: "0 5px 0 0" }} to="/pickleball">Pickleball</Link>
-                    {/* <Link style={{ padding: "0 5px 0 0" }} to="/wallerverse">Wallerverse</Link> */}
-                    <Link style={{ padding: "0 5px 0 0" }} to="/language-app">Language-App</Link>
-                    <Link to="/contact">Contact</Link>
-                </nav>
-            </div>
-
             <Outlet />
         </div>
-    )
+    );
 };
 
 export default Layout;
