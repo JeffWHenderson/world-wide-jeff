@@ -66,12 +66,20 @@ const SRSHome = () => {
                     return (
                         <div key={deck.id} className="srs-deck-card">
                             <div className="srs-deck-top">
-                                <div className="srs-deck-title">{deck.name}</div>
-                                <div className="srs-deck-counts">
-                                    <span className="srs-count new">{summary.newCount} new</span>
-                                    <span className="srs-count learn">{summary.learnCount} learning</span>
-                                    <span className="srs-count review">{summary.dueCount} due</span>
+                                <div className="srs-deck-top-left">
+                                    <div className="srs-deck-title">{deck.name}</div>
+                                    <div className="srs-deck-counts">
+                                        <span className="srs-count new">{summary.newCount} new</span>
+                                        <span className="srs-count learn">{summary.learnCount} learning</span>
+                                        <span className="srs-count review">{summary.dueCount} due</span>
+                                    </div>
                                 </div>
+                                <button
+                                    className="srs-btn-reset"
+                                    onClick={() => handleReset(deck.id)}
+                                >
+                                    Reset
+                                </button>
                             </div>
                             <div className="srs-deck-bottom">
                                 <button
@@ -97,12 +105,6 @@ const SRSHome = () => {
                                         Stories
                                     </button>
                                 )}
-                                <button
-                                    className="srs-btn-reset srs-btn-reset-right"
-                                    onClick={() => handleReset(deck.id)}
-                                >
-                                    Reset
-                                </button>
                             </div>
                         </div>
                     );
