@@ -17,6 +17,7 @@ interface CardLevel {
     back: string;
     romanized?: string;
     grammarNote?: string;
+    literal?: string;
 }
 
 interface Card {
@@ -65,12 +66,13 @@ const SRSReview = () => {
     const [session, setSession] = useState<SessionCard[]>([]);
     const [currentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const { ttsEnabled, autoplay, volume } = useLanguageApp();
+    const { ttsEnabled, autoplay, volume, showLiteral } = useLanguageApp();
     const [done, setDone] = useState(false);
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
     const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
     const [noteOpen, setNoteOpen] = useState(false);
+    const [literalOpen, setLiteralOpen] = useState(false);
 
     // Autoplay state
     const [autoplayIndex, setAutoplayIndex] = useState(0);
@@ -218,6 +220,7 @@ const SRSReview = () => {
     const flip = () => {
         setIsFlipped(true);
         setNoteOpen(false);
+        setLiteralOpen(showLiteral);
         if (currentCard) speak(currentLevel(currentCard).back, true);
     };
 
@@ -230,6 +233,7 @@ const SRSReview = () => {
         if (language && deckId) saveDeckState(language, deckId, updatedDeckState);
         setIsFlipped(false);
         setNoteOpen(false);
+        setLiteralOpen(false);
         if (nextSession.length === 0) setDone(true);
     };
 
@@ -428,6 +432,19 @@ const SRSReview = () => {
                         <div className="srs-card-text">{level.back}</div>
                         {level.romanized && (
                             <div className="srs-romanized">{level.romanized}</div>
+                        )}
+                        {level.literal && (
+                            <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
+                                <button
+                                    className="srs-grammar-note-toggle"
+                                    onClick={() => setLiteralOpen(o => !o)}
+                                >
+                                    Literal {literalOpen ? "▴" : "▾"}
+                                </button>
+                                {literalOpen && (
+                                    <div className="srs-literal">{level.literal}</div>
+                                )}
+                            </div>
                         )}
                         {hasNextLevel(currentCard) && (
                             <div className="srs-levelup-hint">

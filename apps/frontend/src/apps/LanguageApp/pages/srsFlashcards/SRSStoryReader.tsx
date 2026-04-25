@@ -9,6 +9,7 @@ interface StorySentence {
     target_language: string;
     romanized?: string;
     grammarNote?: string;
+    literal?: string;
 }
 
 interface StoryData {
@@ -26,8 +27,9 @@ const SRSStoryReader = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [speakingRate, setSpeakingRate] = useState(0.9);
     const [openNoteIndex, setOpenNoteIndex] = useState<number | null>(null);
+    const [literalOverrides, setLiteralOverrides] = useState<Set<number>>(new Set());
 
-    const { volume } = useLanguageApp();
+    const { volume, showLiteral } = useLanguageApp();
     const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
     const playingRef = useRef(false);
     const sentenceRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -145,6 +147,25 @@ const SRSStoryReader = () => {
                             <div className="srs-romanized">{sentence.romanized}</div>
                         )}
                         <div className="srs-story-base">{sentence.base_language}</div>
+                        {sentence.literal && (() => {
+                            const isOverridden = literalOverrides.has(sIdx);
+                            const show = showLiteral !== isOverridden; // XOR
+                            return (
+                                <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
+                                    <button
+                                        className="srs-grammar-note-toggle"
+                                        onClick={() => setLiteralOverrides(prev => {
+                                            const next = new Set(prev);
+                                            if (next.has(sIdx)) next.delete(sIdx); else next.add(sIdx);
+                                            return next;
+                                        })}
+                                    >
+                                        Literal {show ? "▴" : "▾"}
+                                    </button>
+                                    {show && <div className="srs-literal">{sentence.literal}</div>}
+                                </div>
+                            );
+                        })()}
                         {sentence.grammarNote && (
                             <div
                                 className="srs-grammar-note-wrap"

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLanguageApp } from "../../LanguageAppContext";
 
 const SRSSettings = () => {
-    const { ttsEnabled, setTtsEnabled, autoplay, setAutoplay, volume, setVolume } = useLanguageApp();
+    const { ttsEnabled, setTtsEnabled, autoplay, setAutoplay, volume, setVolume, showLiteral, setShowLiteral } = useLanguageApp();
     const [open, setOpen] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
@@ -54,6 +54,21 @@ const SRSSettings = () => {
                                 type="checkbox"
                                 checked={autoplay}
                                 onChange={(e) => setAutoplay(e.target.checked)}
+                            />
+                            <span className="srs-toggle-track" />
+                        </label>
+                    </div>
+
+                    <div className="srs-settings-row">
+                        <div className="srs-settings-label-group">
+                            <span className="srs-settings-label">Literal translations</span>
+                            <span className="srs-settings-sub">Show word-for-word translation</span>
+                        </div>
+                        <label className="srs-toggle">
+                            <input
+                                type="checkbox"
+                                checked={showLiteral}
+                                onChange={(e) => setShowLiteral(e.target.checked)}
                             />
                             <span className="srs-toggle-track" />
                         </label>
