@@ -112,16 +112,19 @@ const SRSPictureList = () => {
                 <p className="srs-empty">No picture lessons found.</p>
             )}
 
-            <div className="srs-story-grid">
+            <div className="srs-picture-grid">
                 {filtered.map((picture) => (
                     <button
                         key={`${picture.deckId}-${picture.id}`}
-                        className="srs-story-card"
+                        className="srs-picture-card"
                         onClick={() => navigate(`/language-app/${language}/picture-review/${picture.id}`)}
                     >
-                        <div className="srs-story-card-title">{picture.name}</div>
-                        <div className="srs-story-card-meta">
-                            <span className="srs-story-card-deck">{picture.deckName}</span>
+                        <div className="srs-picture-thumb">
+                            <img src={`/${picture.id}.jpg`} alt={picture.name} />
+                        </div>
+                        <div className="srs-picture-card-info">
+                            <div className="srs-story-card-title">{picture.name}</div>
+                            <div className="srs-story-card-deck">{picture.deckName}</div>
                         </div>
                     </button>
                 ))}

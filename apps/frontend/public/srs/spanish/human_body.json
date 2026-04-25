@@ -3,6 +3,7 @@
   "name": "Human Body",
   "language": "spanish",
   "stories": ["at_the_doctor", "after_exercise", "getting_ready"],
+  "pictureLessons": ["humanBody"],
   "cards": [
     { "id": "es_hb_001", "levels": [{ "front": "head", "back": "la cabeza", "grammarNote": "Doler (to hurt/ache) works like gustar — the body part is the grammatical subject. 'Me duele la cabeza' = my head hurts (literally: the head pains me). For plural body parts: 'Me duelen los pies' = my feet hurt. The indirect object pronoun (me/te/le) indicates who is hurting." }, { "front": "My head hurts.", "back": "Me duele la cabeza." }] },
     { "id": "es_hb_002", "levels": [{ "front": "hair", "back": "el pelo / el cabello" }, { "front": "She has long hair.", "back": "Ella tiene el pelo largo." }] },

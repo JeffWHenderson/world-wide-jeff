@@ -3,7 +3,6 @@
   "name": "Everyday Phrases",
   "language": "spanish",
   "stories": ["morning_routine", "meeting_a_friend", "making_plans"],
-  "pictureLessons": ["everydayPhrases02"],
   "cards": [
     { "id": "es_ep_001", "levels": [{ "front": "I", "back": "yo" }, { "front": "I am a student.", "back": "Yo soy estudiante." }] },
     { "id": "es_ep_002", "levels": [{ "front": "You (singular)", "back": "tú" }, { "front": "You speak Spanish well.", "back": "Tú hablas bien el español." }] },
