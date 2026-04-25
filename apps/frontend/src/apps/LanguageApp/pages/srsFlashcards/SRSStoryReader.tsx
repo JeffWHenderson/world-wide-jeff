@@ -30,6 +30,7 @@ const SRSStoryReader = () => {
     const { volume } = useLanguageApp();
     const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
     const playingRef = useRef(false);
+    const sentenceRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     useEffect(() => {
         const load = () => { voicesRef.current = window.speechSynthesis.getVoices(); };
@@ -78,6 +79,7 @@ const SRSStoryReader = () => {
         utt.rate = speakingRate;
         utt.volume = volume;
         setPlayingIndex(idx);
+        sentenceRefs.current[idx]?.scrollIntoView({ behavior: "smooth", block: "center" });
         utt.onend = () => {
             if (continueAfter && playingRef.current) {
                 setTimeout(() => speakSentence(idx + 1, true), 700);
@@ -134,6 +136,7 @@ const SRSStoryReader = () => {
                 {story.sentences.map((sentence, sIdx) => (
                     <div
                         key={sIdx}
+                        ref={el => { sentenceRefs.current[sIdx] = el; }}
                         className={`srs-story-sentence ${playingIndex === sIdx ? "playing" : ""}`}
                         onClick={() => handleSentenceClick(sIdx)}
                     >
