@@ -1,21 +1,14 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { loadDeckState, getCardState } from "./useSRSStorage";
-import { isNew, CardState } from "./sm2";
 import { useLanguageApp } from "../../LanguageAppContext";
 import SRSSettings from "./SRSSettings";
 import "./srs.css";
 
-interface StoryToken {
-    text: string;
-    cardId?: string | null;
-    translation?: string;
-}
-
 interface StorySentence {
     base_language: string;
     target_language: string;
-    tokens: StoryToken[];
+    romanized?: string;
+    grammarNote?: string;
 }
 
 interface StoryData {
@@ -24,38 +17,15 @@ interface StoryData {
     sentences: StorySentence[];
 }
 
-type TokenStatus = "new" | "learning" | "mature";
-
-function getTokenStatus(cardId: string | null | undefined, deckState: Record<string, CardState>): TokenStatus | null {
-    if (!cardId) return null;
-    const state = getCardState(deckState, cardId);
-    if (isNew(state)) return "new";
-    if (state.interval < 21) return "learning";
-    return "mature";
-}
-
-const STATUS_LABEL: Record<TokenStatus, string> = {
-    new: "New",
-    learning: "Learning",
-    mature: "Mature",
-};
-
-interface ActiveWord {
-    text: string;
-    translation: string;
-    status: TokenStatus | null;
-}
-
 const SRSStoryReader = () => {
     const { language, deckId, storyId } = useParams<{ language: string; deckId: string; storyId: string }>();
     const navigate = useNavigate();
 
     const [story, setStory] = useState<StoryData | null>(null);
-    const [deckState, setDeckState] = useState<Record<string, CardState>>({});
-    const [activeWord, setActiveWord] = useState<ActiveWord | null>(null);
     const [playingIndex, setPlayingIndex] = useState(-1);
     const [isPlaying, setIsPlaying] = useState(false);
     const [speakingRate, setSpeakingRate] = useState(0.9);
+    const [openNoteIndex, setOpenNoteIndex] = useState<number | null>(null);
 
     const { volume } = useLanguageApp();
     const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
@@ -74,7 +44,6 @@ const SRSStoryReader = () => {
             .then(r => r.json())
             .then(data => setStory(data))
             .catch(console.error);
-        setDeckState(loadDeckState(language, deckId));
     }, [language, deckId, storyId]);
 
     const getVoice = (): SpeechSynthesisVoice | null => {
@@ -142,13 +111,6 @@ const SRSStoryReader = () => {
         speakSentence(idx);
     };
 
-    const handleTokenClick = (e: React.MouseEvent, token: StoryToken) => {
-        e.stopPropagation();
-        if (!token.translation) return;
-        const status = getTokenStatus(token.cardId, deckState);
-        setActiveWord({ text: token.text, translation: token.translation, status });
-    };
-
     const handleBack = () => {
         window.speechSynthesis.cancel();
         navigate(-1);
@@ -157,7 +119,7 @@ const SRSStoryReader = () => {
     if (!story) return <div className="srs-container"><p>Loading...</p></div>;
 
     return (
-        <div className="srs-story-page" onClick={() => setActiveWord(null)}>
+        <div className="srs-story-page">
             {/* Header */}
             <div className="srs-header" style={{ maxWidth: 640, margin: "0 auto", width: "100%" }}>
                 <button className="srs-back-link" onClick={handleBack}>← Back</button>
@@ -165,58 +127,38 @@ const SRSStoryReader = () => {
                 <SRSSettings />
             </div>
 
-            {/* Legend */}
-            <div className="srs-story-legend">
-                <span className="srs-story-legend-dot new" /> <span className="srs-story-legend-label">New</span>
-                <span className="srs-story-legend-dot learning" /> <span className="srs-story-legend-label">Learning</span>
-                <span className="srs-story-legend-dot mature" /> <span className="srs-story-legend-label">Mature</span>
-                <span className="srs-story-legend-label muted">· tap a word for translation</span>
-            </div>
-
             {/* Story body */}
-            <div className="srs-story-body" onClick={e => e.stopPropagation()}>
+            <div className="srs-story-body">
                 {story.sentences.map((sentence, sIdx) => (
                     <div
                         key={sIdx}
                         className={`srs-story-sentence ${playingIndex === sIdx ? "playing" : ""}`}
                         onClick={() => handleSentenceClick(sIdx)}
                     >
-                        <div className="srs-story-target">
-                            {sentence.tokens.map((token, tIdx) => {
-                                const status = getTokenStatus(token.cardId, deckState);
-                                if (!token.cardId && !token.translation) {
-                                    return <span key={tIdx}>{token.text}</span>;
-                                }
-                                return (
-                                    <span
-                                        key={tIdx}
-                                        className={`srs-story-token ${status ?? ""}`}
-                                        onClick={e => handleTokenClick(e, token)}
-                                    >
-                                        {token.text}
-                                    </span>
-                                );
-                            })}
-                        </div>
+                        <div className="srs-story-target">{sentence.target_language}</div>
+                        {sentence.romanized && (
+                            <div className="srs-romanized">{sentence.romanized}</div>
+                        )}
                         <div className="srs-story-base">{sentence.base_language}</div>
+                        {sentence.grammarNote && (
+                            <div
+                                className="srs-grammar-note-wrap"
+                                onClick={e => e.stopPropagation()}
+                            >
+                                <button
+                                    className="srs-grammar-note-toggle"
+                                    onClick={() => setOpenNoteIndex(openNoteIndex === sIdx ? null : sIdx)}
+                                >
+                                    Grammar note {openNoteIndex === sIdx ? "▴" : "▾"}
+                                </button>
+                                {openNoteIndex === sIdx && (
+                                    <div className="srs-grammar-note-body">{sentence.grammarNote}</div>
+                                )}
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>
-
-            {/* Word popup — bottom sheet */}
-            {activeWord && (
-                <div className="srs-word-sheet" onClick={e => e.stopPropagation()}>
-                    <div className="srs-word-sheet-inner">
-                        <span className="srs-word-sheet-target">{activeWord.text}</span>
-                        <span className="srs-word-sheet-translation">{activeWord.translation}</span>
-                        {activeWord.status && (
-                            <span className={`srs-word-sheet-badge ${activeWord.status}`}>
-                                {STATUS_LABEL[activeWord.status]}
-                            </span>
-                        )}
-                    </div>
-                </div>
-            )}
 
             {/* Player bar */}
             <div className="srs-story-player">

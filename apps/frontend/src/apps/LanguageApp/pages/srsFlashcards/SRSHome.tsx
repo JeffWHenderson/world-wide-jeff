@@ -8,7 +8,7 @@ interface DeckMeta {
     name: string;
     language: string;
     stories?: string[];
-    pictureLesson?: string;
+    pictureLessons?: string[];
     cards: { id: string; levels: unknown[] }[];
 }
 
@@ -84,17 +84,17 @@ const SRSHome = () => {
                                 {deck.stories && deck.stories.length > 0 && (
                                     <button
                                         className="srs-btn-stories"
-                                        onClick={() => navigate(`/language-app/${language}/srs/${deck.id}/story/${deck.stories![0]}`)}
+                                        onClick={() => navigate(`/language-app/${language}/stories?deck=${deck.id}`)}
                                     >
                                         Stories ({deck.stories.length})
                                     </button>
                                 )}
-                                {deck.pictureLesson && (
+                                {deck.pictureLessons && deck.pictureLessons.length > 0 && (
                                     <button
                                         className="srs-btn-stories"
-                                        onClick={() => navigate(`/language-app/${language}/picture-review/${deck.pictureLesson}`)}
+                                        onClick={() => navigate(`/language-app/${language}/pictures?deck=${deck.id}`)}
                                     >
-                                        Picture
+                                        Pictures ({deck.pictureLessons.length})
                                     </button>
                                 )}
                                 <button

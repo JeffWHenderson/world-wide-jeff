@@ -2,6 +2,7 @@
   "id": "common_places",
   "name": "Common Places",
   "language": "spanish",
+  "stories": ["getting_around", "at_the_hotel", "a_day_out"],
   "cards": [
     { "id": "es_cp_001", "levels": [{ "front": "Home", "back": "La casa / El hogar" }, { "front": "I'm going home.", "back": "Voy a casa." }] },
     { "id": "es_cp_002", "levels": [{ "front": "Apartment", "back": "El apartamento" }, { "front": "I live in an apartment.", "back": "Vivo en un apartamento." }] },

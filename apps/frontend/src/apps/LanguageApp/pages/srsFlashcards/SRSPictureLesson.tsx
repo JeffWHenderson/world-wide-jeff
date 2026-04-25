@@ -68,7 +68,7 @@ const SRSPictureLesson = () => {
             <div className="picture-frame">
                 <img
                     className="picture-frame-img"
-                    src={`/${section}.png`}
+                    src={`/${section}.jpg`}
                     alt={section}
                 />
                 {current && (

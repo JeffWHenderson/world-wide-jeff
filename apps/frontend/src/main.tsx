@@ -19,6 +19,8 @@ import EventPage from './apps/Events/EventPage';
 import SRSHome from './apps/LanguageApp/pages/srsFlashcards/SRSHome';
 import SRSReview from './apps/LanguageApp/pages/srsFlashcards/SRSReview';
 import SRSStoryReader from './apps/LanguageApp/pages/srsFlashcards/SRSStoryReader';
+import SRSStoryList from './apps/LanguageApp/pages/srsFlashcards/SRSStoryList';
+import SRSPictureList from './apps/LanguageApp/pages/srsFlashcards/SRSPictureList';
 import NoPage from './apps/common/Core/NoPage';
 import Home from './apps/common/Core/Home';
 import Layout from './apps/common/Core/Layout';
@@ -60,6 +62,8 @@ createRoot(document.getElementById('root')!).render(
             <Route path=":language/my-decks/:section/:lessonId" element={<FlashCardsV2 />} />
             <Route path=":language/picture-review/:section" element={<SRSPictureLesson />} />
             <Route path=":language/srs" element={<SRSHome />} />
+            <Route path=":language/stories" element={<SRSStoryList />} />
+            <Route path=":language/pictures" element={<SRSPictureList />} />
             <Route path=":language/srs/:deckId" element={<SRSReview />} />
             <Route path=":language/srs/:deckId/story/:storyId" element={<SRSStoryReader />} />
           </Route>
