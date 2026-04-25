@@ -16,6 +16,7 @@ interface CardLevel {
     front: string;
     back: string;
     romanized?: string;
+    grammarNote?: string;
 }
 
 interface Card {
@@ -69,6 +70,7 @@ const SRSReview = () => {
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
     const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
+    const [noteOpen, setNoteOpen] = useState(false);
 
     // Autoplay state
     const [autoplayIndex, setAutoplayIndex] = useState(0);
@@ -97,6 +99,10 @@ const SRSReview = () => {
         if (lang === "chinese") {
             return voices.find(v => ["ting-ting", "tingting"].includes(v.name.toLowerCase()))
                 ?? voices.find(v => v.lang.startsWith("zh-"));
+        }
+        if (lang === "japanese") {
+            return voices.find(v => v.name.toLowerCase() === "kyoko")
+                ?? voices.find(v => v.lang.startsWith("ja-"));
         }
     };
 
@@ -211,6 +217,7 @@ const SRSReview = () => {
 
     const flip = () => {
         setIsFlipped(true);
+        setNoteOpen(false);
         if (currentCard) speak(currentLevel(currentCard).back, true);
     };
 
@@ -222,6 +229,7 @@ const SRSReview = () => {
         setDeckState(updatedDeckState);
         if (language && deckId) saveDeckState(language, deckId, updatedDeckState);
         setIsFlipped(false);
+        setNoteOpen(false);
         if (nextSession.length === 0) setDone(true);
     };
 
@@ -426,6 +434,19 @@ const SRSReview = () => {
                                 {LEVEL_UP_REPS - currentCard.cardState.repetitions > 0
                                     ? `${LEVEL_UP_REPS - currentCard.cardState.repetitions} good review${LEVEL_UP_REPS - currentCard.cardState.repetitions !== 1 ? "s" : ""} to unlock phrase`
                                     : "Phrase unlocks on Good or Easy!"}
+                            </div>
+                        )}
+                        {level.grammarNote && (
+                            <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
+                                <button
+                                    className="srs-grammar-note-toggle"
+                                    onClick={() => setNoteOpen(o => !o)}
+                                >
+                                    Grammar note {noteOpen ? "▴" : "▾"}
+                                </button>
+                                {noteOpen && (
+                                    <div className="srs-grammar-note-body">{level.grammarNote}</div>
+                                )}
                             </div>
                         )}
                     </div>

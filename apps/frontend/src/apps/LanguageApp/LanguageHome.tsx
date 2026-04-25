@@ -5,23 +5,19 @@ import "./main-styles.css";
 const LanguageAppHome = () => {
     const navigator = useNavigate()
 
-    function goToLanguagePage(selectedLanguage: string) {
-        navigator(`${selectedLanguage}`)
-    }
-
     return <>
         <div style={{ color: '--text-color', maxWidth: 720, margin: '0 auto', padding: '40px 24px 80px' }}>
         <button className="back-btn" onClick={() => navigator("/")}>← Home</button>
             <h1>Welcome To My Language App</h1>
             <div style={{ display: 'flex', justifySelf: 'center', justifyContent: 'space-between', width: '90vw' }}>
-                <button style={{ color: 'white' }} onClick={() => goToLanguagePage('spanish')} key={'spanish'}>
-                    {"Go to spanish course ->"}
-                </button>
                 <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('spanish/srs')} key={'srs-spanish'}>
                     {"Spanish SRS Flashcards ->"}
                 </button>
                 <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('chinese/srs')} key={'srs-chinese'}>
                     {"Chinese SRS Flashcards ->"}
+                </button>
+                <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('japanese/srs')} key={'srs-japanese'}>
+                    {"Japanese SRS Flashcards ->"}
                 </button>
                 {/* TODO: only going to show spanish for a while cause I have a lot more work to do with the others
                 

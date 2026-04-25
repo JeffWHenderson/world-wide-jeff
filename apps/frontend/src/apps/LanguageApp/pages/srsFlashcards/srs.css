@@ -212,6 +212,44 @@
     font-style: italic;
 }
 
+/* ── Grammar note ── */
+.srs-grammar-note-wrap {
+    margin-top: 14px;
+    width: 100%;
+    text-align: left;
+}
+
+.srs-grammar-note-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #888;
+    padding: 0;
+    letter-spacing: 0.02em;
+}
+
+.srs-grammar-note-toggle:hover {
+    color: var(--text-color, #333);
+}
+
+.srs-grammar-note-body {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-color, #333);
+    background: rgba(0, 0, 0, 0.04);
+    border-left: 3px solid #2980b9;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .srs-grammar-note-body {
+        background: rgba(255, 255, 255, 0.06);
+    }
+}
+
 /* ── Level-up banner ── */
 .srs-levelup-banner {
     display: flex;

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import useLanguage from "../../hooks/useLanguage";
 import { useLanguageApp } from "../../LanguageAppContext";
-import "./picturePopUp.css";
+import "./picture-lesson.css";
 
 interface Sentence {
     base_language: string;
@@ -19,7 +19,7 @@ interface LessonData {
     dots: Dot[];
 }
 
-const PicturePopUp = () => {
+const SRSPictureLesson = () => {
     const { language, section } = useParams();
     const navigate = useNavigate();
     const [voice] = useLanguage(language as string);
@@ -64,7 +64,7 @@ const PicturePopUp = () => {
                 <span className="picture-lesson-counter">{activeIndex + 1} / {total}</span>
             </div>
 
-            {/* Image frame — 3:4 portrait */}
+            {/* Image frame — 3:4 portrait, source images should be 900×1200px */}
             <div className="picture-frame">
                 <img
                     className="picture-frame-img"
@@ -125,4 +125,4 @@ const PicturePopUp = () => {
     );
 };
 
-export default PicturePopUp;
+export default SRSPictureLesson;

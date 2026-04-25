@@ -8,6 +8,7 @@ interface DeckMeta {
     name: string;
     language: string;
     stories?: string[];
+    pictureLesson?: string;
     cards: { id: string; levels: unknown[] }[];
 }
 
@@ -86,6 +87,14 @@ const SRSHome = () => {
                                         onClick={() => navigate(`/language-app/${language}/srs/${deck.id}/story/${deck.stories![0]}`)}
                                     >
                                         Stories ({deck.stories.length})
+                                    </button>
+                                )}
+                                {deck.pictureLesson && (
+                                    <button
+                                        className="srs-btn-stories"
+                                        onClick={() => navigate(`/language-app/${language}/picture-review/${deck.pictureLesson}`)}
+                                    >
+                                        Picture
                                     </button>
                                 )}
                                 <button

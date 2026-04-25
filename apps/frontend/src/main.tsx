@@ -14,7 +14,7 @@ import ViewLesson from './apps/LanguageApp/pages/viewLesson/ViewLesson';
 import MyDecks from './apps/LanguageApp/hooks/MyDecks';
 import { ThemeProvider } from './apps/common/ThemeContext';
 import LanguageAppHome from './apps/LanguageApp/LanguageHome';
-import PicturePopUp from './apps/LanguageApp/pages/pictureLesson/PicturePopUp';
+import SRSPictureLesson from './apps/LanguageApp/pages/srsFlashcards/SRSPictureLesson';
 import EventPage from './apps/Events/EventPage';
 import SRSHome from './apps/LanguageApp/pages/srsFlashcards/SRSHome';
 import SRSReview from './apps/LanguageApp/pages/srsFlashcards/SRSReview';
@@ -58,7 +58,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path=":language/view-lesson/:lessonId" element={<ViewLesson />} />
             <Route path=":language/my-decks" element={<MyDecks />} />
             <Route path=":language/my-decks/:section/:lessonId" element={<FlashCardsV2 />} />
-            <Route path=":language/picture-review/:section" element={<PicturePopUp />} />
+            <Route path=":language/picture-review/:section" element={<SRSPictureLesson />} />
             <Route path=":language/srs" element={<SRSHome />} />
             <Route path=":language/srs/:deckId" element={<SRSReview />} />
             <Route path=":language/srs/:deckId/story/:storyId" element={<SRSStoryReader />} />

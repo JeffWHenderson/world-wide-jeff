@@ -84,6 +84,16 @@ const SRSStoryReader = () => {
                 ?? voices.find(v => v.lang.startsWith("es-"))
                 ?? null;
         }
+        if (language === "japanese") {
+            return voices.find(v => v.name.toLowerCase() === "kyoko")
+                ?? voices.find(v => v.lang.startsWith("ja-"))
+                ?? null;
+        }
+        if (language === "chinese") {
+            return voices.find(v => ["ting-ting", "tingting"].includes(v.name.toLowerCase()))
+                ?? voices.find(v => v.lang.startsWith("zh-"))
+                ?? null;
+        }
         return voices.find(v => v.lang.startsWith("en-")) ?? null;
     };
 

@@ -3,6 +3,7 @@
   "name": "Food & Drink",
   "language": "spanish",
   "stories": ["at_the_restaurant"],
+  "pictureLesson": "foodAndDrink",
   "cards": [
     { "id": "es_fd_001", "levels": [{ "front": "water", "back": "el agua" }] },
     { "id": "es_fd_002", "levels": [{ "front": "bread", "back": "pan" }] },
