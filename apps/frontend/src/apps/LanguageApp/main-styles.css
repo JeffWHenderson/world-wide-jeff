@@ -1,3 +1,67 @@
+/* ── Language App Home ── */
+.lang-home {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color, #111);
+}
+
+.lang-home-title {
+    font-size: 1.8rem;
+    margin: 24px 0 8px;
+}
+
+.lang-home-subtitle {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin: 0 0 28px;
+    line-height: 1.5;
+}
+
+.lang-home-courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 36px;
+}
+
+.lang-course-btn {
+    flex: 1 1 160px;
+    max-width: 220px;
+    padding: 14px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.15s;
+}
+
+.lang-course-btn:hover {
+    background-color: #2471a3;
+}
+
+.lang-home-content h2 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+.lang-home-content ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.lang-home-content a {
+    color: #2980b9;
+}
+
+/* ── Legacy styles ── */
 .course-header {
     width: 100vw;
     color: var(--section-header-color);

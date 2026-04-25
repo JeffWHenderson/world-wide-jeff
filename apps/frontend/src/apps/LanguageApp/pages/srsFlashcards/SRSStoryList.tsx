@@ -86,8 +86,8 @@ const SRSStoryList = () => {
 
     return (
         <div className="srs-container">
+            <button className="srs-page-back" onClick={() => navigate(-1)}>← Back</button>
             <div className="srs-home-header">
-                <button className="srs-back-link" onClick={() => navigate(-1)}>← Back</button>
                 <h2>Stories</h2>
             </div>
 

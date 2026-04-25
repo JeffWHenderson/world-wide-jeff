@@ -65,7 +65,7 @@ const SRSHome = () => {
 
                     return (
                         <div key={deck.id} className="srs-deck-card">
-                            <div className="srs-deck-info">
+                            <div className="srs-deck-top">
                                 <div className="srs-deck-title">{deck.name}</div>
                                 <div className="srs-deck-counts">
                                     <span className="srs-count new">{summary.newCount} new</span>
@@ -73,7 +73,7 @@ const SRSHome = () => {
                                     <span className="srs-count review">{summary.dueCount} due</span>
                                 </div>
                             </div>
-                            <div className="srs-deck-actions">
+                            <div className="srs-deck-bottom">
                                 <button
                                     className="srs-btn-primary"
                                     disabled={totalDue === 0}
@@ -81,24 +81,24 @@ const SRSHome = () => {
                                 >
                                     {totalDue > 0 ? `Study (${totalDue})` : "Nothing due"}
                                 </button>
-                                {deck.stories && deck.stories.length > 0 && (
-                                    <button
-                                        className="srs-btn-stories"
-                                        onClick={() => navigate(`/language-app/${language}/stories?deck=${deck.id}`)}
-                                    >
-                                        Stories ({deck.stories.length})
-                                    </button>
-                                )}
                                 {deck.pictureLessons && deck.pictureLessons.length > 0 && (
                                     <button
                                         className="srs-btn-stories"
                                         onClick={() => navigate(`/language-app/${language}/pictures?deck=${deck.id}`)}
                                     >
-                                        Pictures ({deck.pictureLessons.length})
+                                        Pictures
+                                    </button>
+                                )}
+                                {deck.stories && deck.stories.length > 0 && (
+                                    <button
+                                        className="srs-btn-stories"
+                                        onClick={() => navigate(`/language-app/${language}/stories?deck=${deck.id}`)}
+                                    >
+                                        Stories
                                     </button>
                                 )}
                                 <button
-                                    className="srs-btn-reset"
+                                    className="srs-btn-reset srs-btn-reset-right"
                                     onClick={() => handleReset(deck.id)}
                                 >
                                     Reset

@@ -1,65 +1,63 @@
 import { Link, useNavigate } from "react-router-dom";
-// import { AvailableLanguages } from "./common/LanguageTypes";
 import "./main-styles.css";
 
 const LanguageAppHome = () => {
-    const navigator = useNavigate()
+    const navigate = useNavigate()
 
-    return <>
-        <div style={{ color: '--text-color', maxWidth: 720, margin: '0 auto', padding: '40px 24px 80px' }}>
-        <button className="back-btn" onClick={() => navigator("/")}>← Home</button>
-            <h1>Welcome To My Language App</h1>
-            <div style={{ display: 'flex', justifySelf: 'center', justifyContent: 'space-between', width: '90vw' }}>
-                <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('spanish/srs')} key={'srs-spanish'}>
-                    {"Spanish SRS Flashcards ->"}
+    return (
+        <div className="lang-home">
+            <button className="srs-page-back" style={{ margin: '16px 0 0 0' }} onClick={() => navigate("/")}>← Home</button>
+
+            <h1 className="lang-home-title">Welcome to World Wide Jeff</h1>
+            <p className="lang-home-subtitle">A free, open-source language learning app built around spaced repetition, stories, and picture lessons.</p>
+
+            <div className="lang-home-courses">
+                <button className="lang-course-btn" onClick={() => navigate('spanish/srs')}>
+                    Spanish Course →
                 </button>
-                <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('chinese/srs')} key={'srs-chinese'}>
-                    {"Chinese SRS Flashcards ->"}
+                <button className="lang-course-btn" onClick={() => navigate('chinese/srs')}>
+                    Chinese Course →
                 </button>
-                <button style={{ color: 'white', backgroundColor: '#2980b9' }} onClick={() => navigator('japanese/srs')} key={'srs-japanese'}>
-                    {"Japanese SRS Flashcards ->"}
+                <button className="lang-course-btn" onClick={() => navigate('japanese/srs')}>
+                    Japanese Course →
                 </button>
-                {/* TODO: only going to show spanish for a while cause I have a lot more work to do with the others
-                
-                { 
-                    Object.values(AvailableLanguages).map(option => (
-                        <button style={{ color: 'white' }} onClick={() => goToLanguagePage(option)} key={option}>
-                            {option}
-                        </button>
-                    ))
-                } */}
             </div>
-            <p>Its cool you are here and I'm happy</p>
-            <h2>How do I start?</h2>
-            <ul>
-                <li><strong>Absolute beginner:</strong> Watch a video on pronunciation first. It will help a lot on hearing aspects of the language.  Then get started!</li>
-                <li><strong>Still not super familiar:</strong> Start slower, reading each card and going through at a pace that gives you time to listen, read, and reapeat. You'll naturally start picking up on patterns</li>
-                <li><strong>Add to your personal decks:</strong> Each level has an ugly yellow card of vocab that you can add to as you go.  Struggling with a few words still? Add the words and phrases to your personal decks.  Its all saved locally so it won't transfer between different devices but thats a decsion I made cause I don't want to make a database with your info</li>
-                <li><strong>Speeding up:</strong> Go through the decks by listening, as you are familiar turn off the helper queues in English and listen only in the langauge you are learning</li>
-                <li><strong>Consistency:</strong> 10 minutes a day! More time is fine, but consistency is king</li>
-                <li><strong>Immersion:</strong> You're tired of the flashcards? Read and listen to the stories. Going past your comfort zone is more important than memorizing cards</li>
-                <li><strong>Needing help?:</strong> I'm working on short lessons and grammar notes. But focus more on diving into the language. Your brain will pick up the patterns automatically in most cases, when something is not adding up the lessons are just there to help</li>
-                <li><strong>Move on:</strong> This course is made to give you a start to where you can understand generated voices, but once you have that listening to native speakers is invaluable. I personally like searching for "vlog in slow spanish" on youtube if movies and tv move to fast</li>
-                <li><strong>Move on again:</strong> Keep immersing.  A web app is a good start but challenge yourself outside of here</li>
-            </ul>
-            <h2>Core Concepts</h2>
-            <ul>
-                <li><strong>Comprehensible input:</strong> You should interact with the language at a place where you aren't completely comfortable but you are picking up most of it</li>
-                <li><strong>Thematic dictionaries:</strong> Each level will have a limitted vocab set but go through many grammar topics so you don't feel like you're only memorizing words. You can start speaking about a topic quickly and in more complex structures. Nothing sucks more than learning for a year and only being able to speak in the present tense if at all</li>
-                <li><strong>No user profiles No data stealing:</strong> There is no way for me to profit off your data, code is open source if you don't trust me</li>
-                <li><strong>Alway free and no adds:</strong> I'm not good at capitalism</li>
-                <li><strong>Community:</strong> Be nice, work together. Right now this thing is small but if I actually get a community of people together I'll make discord servers so you can practice with other learners</li>
-                <li><strong>Community 2:</strong> Start with a friend, you can focus on the same theme and try talking about that. I may not be able to build a big community but I believe you can</li>
-            </ul>
 
-            <h2>Contribute</h2>
-            <ul>
-                <li>This is open for anybody to contribute.  I can add features and everything but my dream is that users can help shape the courses and bring in more languages</li>
-                <li><strong>Code: <a href="https://github.com/JeffWHenderson/world-wide-jeff">GITHUB</a></strong></li>
-                <li><strong>Report bugs or Feature requests:</strong> email me: <Link to="/contact">Contact</Link></li>
-            </ul>
+            <div className="lang-home-content">
+                <h2>What's in the app?</h2>
+                <ul>
+                    <li><strong>Spaced Repetition (SRS) Flashcards</strong> — Vocabulary and phrases organized by topic. Cards you struggle with come back sooner; cards you know well are shown less often. Progress is saved in your browser.</li>
+                    <li><strong>Grammar Notes</strong> — Key grammar points are attached directly to cards and story sentences so you learn structure in context, not in isolation.</li>
+                    <li><strong>Stories</strong> — Short reading and listening exercises built around the same vocabulary as the flashcard decks. Each story has per-sentence grammar notes you can reveal on demand.</li>
+                    <li><strong>Picture Lessons</strong> — Interactive images with labeled vocabulary points. Click a dot to see the word or phrase and hear it spoken.</li>
+                </ul>
+
+                <h2>Core philosophy</h2>
+                <ul>
+                    <li><strong>Comprehensible input:</strong> Work at the edge of your comfort zone — not so easy it's boring, not so hard it's overwhelming.</li>
+                    <li><strong>Thematic vocabulary:</strong> Each deck covers a topic with limited vocab but varied grammar, so you can talk about something real quickly rather than drilling isolated words for months.</li>
+                    <li><strong>No accounts, no ads, no tracking:</strong> Progress is stored locally in your browser. Code is open source.</li>
+                </ul>
+
+                <h2>How do I start?</h2>
+                <ul>
+                    <li><strong>Absolute beginner:</strong> Watch a short video on pronunciation first — it helps a lot with listening. Then jump in.</li>
+                    <li><strong>Go at your own pace:</strong> Read each card, listen, and repeat. You'll naturally start picking up patterns.</li>
+                    <li><strong>Use the stories:</strong> Once a topic feels familiar, read the stories for that deck. Comprehensible input matters more than perfect memorization.</li>
+                    <li><strong>Picture lessons:</strong> Great for visual vocabulary — tap the dots to explore what's in the scene.</li>
+                    <li><strong>Consistency over intensity:</strong> 10 minutes a day beats two hours on the weekend. Keep the streak going.</li>
+                    <li><strong>Move on:</strong> This app gives you a solid foundation. Once you're comfortable, seek out native content — vlogs, podcasts, TV. That's where real fluency comes from.</li>
+                </ul>
+
+                <h2>Contribute</h2>
+                <ul>
+                    <li>This app is open to contributions — new languages, new decks, bug fixes, feature ideas.</li>
+                    <li><strong>Code: <a href="https://github.com/JeffWHenderson/world-wide-jeff">GitHub</a></strong></li>
+                    <li><strong>Bugs or feature requests:</strong> <Link to="/contact">Contact me</Link></li>
+                </ul>
+            </div>
         </div>
-    </>
+    );
 }
 
 export default LanguageAppHome;

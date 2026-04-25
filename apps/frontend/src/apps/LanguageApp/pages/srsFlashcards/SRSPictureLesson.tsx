@@ -56,8 +56,8 @@ const SRSPictureLesson = () => {
 
     return (
         <div className="picture-lesson-page">
+            <button className="srs-page-back" onClick={() => navigate(-1)}>← Back</button>
             <div className="picture-lesson-header">
-                <button className="srs-back-link" onClick={() => navigate(-1)}>← Back</button>
                 <span className="srs-deck-name" style={{ textTransform: "capitalize" }}>
                     {section?.replace(/([A-Z])/g, " $1").trim()}
                 </span>

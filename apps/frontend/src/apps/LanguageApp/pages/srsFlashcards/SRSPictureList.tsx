@@ -78,8 +78,8 @@ const SRSPictureList = () => {
 
     return (
         <div className="srs-container">
+            <button className="srs-page-back" onClick={() => navigate(-1)}>← Back</button>
             <div className="srs-home-header">
-                <button className="srs-back-link" onClick={() => navigate(-1)}>← Back</button>
                 <h2>Picture Lessons</h2>
             </div>
 

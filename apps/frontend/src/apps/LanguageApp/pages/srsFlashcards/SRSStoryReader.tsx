@@ -120,9 +120,11 @@ const SRSStoryReader = () => {
 
     return (
         <div className="srs-story-page">
+            {/* Back */}
+            <button className="srs-page-back" onClick={handleBack}>← Back</button>
+
             {/* Header */}
             <div className="srs-header" style={{ maxWidth: 640, margin: "0 auto", width: "100%" }}>
-                <button className="srs-back-link" onClick={handleBack}>← Back</button>
                 <span className="srs-deck-name">{story.name}</span>
                 <SRSSettings />
             </div>
