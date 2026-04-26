@@ -7,7 +7,7 @@
             "sentences": [
                 {
                     "base_language": "There are baguettes and loaves of bread on the shelf.",
-                    "target_language": "Hay baguettes y hogazas de pan en el estante."
+                    "target_language": "棚にバゲットと食パンが並んでいます。"
                 }
             ]
         },
@@ -17,7 +17,7 @@
             "sentences": [
                 {
                     "base_language": "There are apples and bananas in the basket.",
-                    "target_language": "Hay manzanas y plátanos en la cesta."
+                    "target_language": "かごにりんごとバナナが入っています。"
                 }
             ]
         },
@@ -27,7 +27,7 @@
             "sentences": [
                 {
                     "base_language": "The oranges are on the bottom shelf.",
-                    "target_language": "Las naranjas están en el estante de abajo."
+                    "target_language": "オレンジは一番下の棚にあります。"
                 }
             ]
         },
@@ -37,7 +37,7 @@
             "sentences": [
                 {
                     "base_language": "There are tomatoes and potatoes in the baskets.",
-                    "target_language": "Hay tomates y patatas en las cestas."
+                    "target_language": "かごにトマトとじゃがいもが入っています。"
                 }
             ]
         },
@@ -47,7 +47,7 @@
             "sentences": [
                 {
                     "base_language": "There is meat and fish at the deli counter.",
-                    "target_language": "Hay carne y pescado en el mostrador de la charcutería."
+                    "target_language": "デリカウンターに肉と魚があります。"
                 }
             ]
         },
@@ -57,7 +57,7 @@
             "sentences": [
                 {
                     "base_language": "The menu is written on a chalkboard.",
-                    "target_language": "El menú está escrito en una pizarra."
+                    "target_language": "メニューが黒板に書かれています。"
                 }
             ]
         },
@@ -67,7 +67,7 @@
             "sentences": [
                 {
                     "base_language": "Someone is stirring a pot on the stove.",
-                    "target_language": "Alguien está revolviendo una olla en el fogón."
+                    "target_language": "誰かがコンロの上の鍋をかき混ぜています。"
                 }
             ]
         },
@@ -77,7 +77,7 @@
             "sentences": [
                 {
                     "base_language": "There is a knife and a cutting board on the table.",
-                    "target_language": "Hay un cuchillo y una tabla de cortar en la mesa."
+                    "target_language": "テーブルの上にナイフとまな板があります。"
                 }
             ]
         },
@@ -87,7 +87,7 @@
             "sentences": [
                 {
                     "base_language": "There is a bowl of soup on the table.",
-                    "target_language": "Hay un tazón de sopa en la mesa."
+                    "target_language": "テーブルの上にスープが一杯あります。"
                 }
             ]
         },
@@ -97,7 +97,7 @@
             "sentences": [
                 {
                     "base_language": "There is a hot cup of coffee.",
-                    "target_language": "Hay una taza de café caliente."
+                    "target_language": "熱いコーヒーが一杯あります。"
                 }
             ]
         },
@@ -107,7 +107,7 @@
             "sentences": [
                 {
                     "base_language": "Someone is cutting a sandwich with a knife and fork.",
-                    "target_language": "Alguien está cortando un sándwich con cuchillo y tenedor."
+                    "target_language": "誰かがナイフとフォークでサンドイッチを切っています。"
                 }
             ]
         },
@@ -117,7 +117,7 @@
             "sentences": [
                 {
                     "base_language": "There is a glass of orange juice on the table.",
-                    "target_language": "Hay un vaso de jugo de naranja en la mesa."
+                    "target_language": "テーブルの上にオレンジジュースが一杯あります。"
                 }
             ]
         },
@@ -127,7 +127,7 @@
             "sentences": [
                 {
                     "base_language": "There is a bottle of olive oil next to the salt and pepper.",
-                    "target_language": "Hay una botella de aceite de oliva junto a la sal y la pimienta."
+                    "target_language": "塩とこしょうの隣にオリーブオイルのボトルがあります。"
                 }
             ]
         },
@@ -137,7 +137,7 @@
             "sentences": [
                 {
                     "base_language": "There is a plate with cheese, apple slices, and a cookie.",
-                    "target_language": "Hay un plato con queso, rodajas de manzana y una galleta."
+                    "target_language": "チーズとりんごのスライスとクッキーが乗ったお皿があります。"
                 }
             ]
         }

@@ -3,6 +3,7 @@
   "name": "Human Body",
   "language": "chinese",
   "stories": ["at_the_doctor", "after_exercise", "getting_ready"],
+  "pictureLessons": ["humanBody"],
   "cards": [
     { "id": "zh_hb_001", "levels": [{ "front": "head", "back": "头", "romanized": "tóu" }] },
     { "id": "zh_hb_002", "levels": [{ "front": "hair", "back": "头发", "romanized": "tóufa" }] },

@@ -3,6 +3,7 @@
   "name": "Human Body",
   "language": "japanese",
   "stories": ["after_exercise", "at_the_doctor", "getting_ready"],
+  "pictureLessons": ["humanBody"],
   "cards": [
     { "id": "ja_hb_001", "levels": [{ "front": "head", "back": "頭", "romanized": "atama" }, { "front": "My head hurts", "back": "頭が痛いです", "romanized": "atama ga itai desu" }] },
     { "id": "ja_hb_002", "levels": [{ "front": "hair", "back": "髪", "romanized": "kami" }, { "front": "She has long hair", "back": "彼女は髪が長いです", "romanized": "kanojo wa kami ga nagai desu" }] },

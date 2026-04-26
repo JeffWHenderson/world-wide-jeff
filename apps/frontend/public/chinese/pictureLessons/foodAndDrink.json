@@ -7,7 +7,7 @@
             "sentences": [
                 {
                     "base_language": "There are baguettes and loaves of bread on the shelf.",
-                    "target_language": "Hay baguettes y hogazas de pan en el estante."
+                    "target_language": "货架上有法棍面包和圆面包。"
                 }
             ]
         },
@@ -17,7 +17,7 @@
             "sentences": [
                 {
                     "base_language": "There are apples and bananas in the basket.",
-                    "target_language": "Hay manzanas y plátanos en la cesta."
+                    "target_language": "篮子里有苹果和香蕉。"
                 }
             ]
         },
@@ -27,7 +27,7 @@
             "sentences": [
                 {
                     "base_language": "The oranges are on the bottom shelf.",
-                    "target_language": "Las naranjas están en el estante de abajo."
+                    "target_language": "橙子在最下层的货架上。"
                 }
             ]
         },
@@ -37,7 +37,7 @@
             "sentences": [
                 {
                     "base_language": "There are tomatoes and potatoes in the baskets.",
-                    "target_language": "Hay tomates y patatas en las cestas."
+                    "target_language": "篮子里有西红柿和土豆。"
                 }
             ]
         },
@@ -47,7 +47,7 @@
             "sentences": [
                 {
                     "base_language": "There is meat and fish at the deli counter.",
-                    "target_language": "Hay carne y pescado en el mostrador de la charcutería."
+                    "target_language": "熟食柜台上有肉和鱼。"
                 }
             ]
         },
@@ -57,7 +57,7 @@
             "sentences": [
                 {
                     "base_language": "The menu is written on a chalkboard.",
-                    "target_language": "El menú está escrito en una pizarra."
+                    "target_language": "菜单写在黑板上。"
                 }
             ]
         },
@@ -67,7 +67,7 @@
             "sentences": [
                 {
                     "base_language": "Someone is stirring a pot on the stove.",
-                    "target_language": "Alguien está revolviendo una olla en el fogón."
+                    "target_language": "有人正在炉子上搅拌锅里的东西。"
                 }
             ]
         },
@@ -77,7 +77,7 @@
             "sentences": [
                 {
                     "base_language": "There is a knife and a cutting board on the table.",
-                    "target_language": "Hay un cuchillo y una tabla de cortar en la mesa."
+                    "target_language": "桌子上有一把刀和一块砧板。"
                 }
             ]
         },
@@ -87,7 +87,7 @@
             "sentences": [
                 {
                     "base_language": "There is a bowl of soup on the table.",
-                    "target_language": "Hay un tazón de sopa en la mesa."
+                    "target_language": "桌子上有一碗汤。"
                 }
             ]
         },
@@ -97,7 +97,7 @@
             "sentences": [
                 {
                     "base_language": "There is a hot cup of coffee.",
-                    "target_language": "Hay una taza de café caliente."
+                    "target_language": "这里有一杯热咖啡。"
                 }
             ]
         },
@@ -107,7 +107,7 @@
             "sentences": [
                 {
                     "base_language": "Someone is cutting a sandwich with a knife and fork.",
-                    "target_language": "Alguien está cortando un sándwich con cuchillo y tenedor."
+                    "target_language": "有人正在用刀叉切三明治。"
                 }
             ]
         },
@@ -117,7 +117,7 @@
             "sentences": [
                 {
                     "base_language": "There is a glass of orange juice on the table.",
-                    "target_language": "Hay un vaso de jugo de naranja en la mesa."
+                    "target_language": "桌子上有一杯橙汁。"
                 }
             ]
         },
@@ -127,7 +127,7 @@
             "sentences": [
                 {
                     "base_language": "There is a bottle of olive oil next to the salt and pepper.",
-                    "target_language": "Hay una botella de aceite de oliva junto a la sal y la pimienta."
+                    "target_language": "盐和胡椒旁边有一瓶橄榄油。"
                 }
             ]
         },
@@ -137,7 +137,7 @@
             "sentences": [
                 {
                     "base_language": "There is a plate with cheese, apple slices, and a cookie.",
-                    "target_language": "Hay un plato con queso, rodajas de manzana y una galleta."
+                    "target_language": "盘子里有奶酪、苹果片和一块饼干。"
                 }
             ]
         }

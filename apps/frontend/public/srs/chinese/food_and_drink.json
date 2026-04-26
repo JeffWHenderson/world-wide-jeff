@@ -3,6 +3,7 @@
   "name": "Food & Drink",
   "language": "chinese",
   "stories": ["at_the_restaurant", "cooking_at_home", "at_the_market", "a_nice_restaurant", "bean_ate_chocolate", "paella", "tacos_or_pizza"],
+  "pictureLessons": ["foodAndDrink"],
   "cards": [
     { "id": "zh_fd_001", "levels": [{ "front": "water", "back": "水", "romanized": "shuǐ" }, { "front": "I want water", "back": "我要水", "romanized": "wǒ yào shuǐ", "literal": "I want water" }] },
     { "id": "zh_fd_002", "levels": [{ "front": "bread", "back": "面包", "romanized": "miànbāo" }, { "front": "I want to eat bread", "back": "我想吃面包", "romanized": "wǒ xiǎng chī miànbāo", "literal": "I want-to eat bread" }] },
