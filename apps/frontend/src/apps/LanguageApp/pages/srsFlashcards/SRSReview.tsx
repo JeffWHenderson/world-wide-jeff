@@ -72,7 +72,6 @@ const SRSReview = () => {
     const [reviewed, setReviewed] = useState(0);
     const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
     const [noteOpen, setNoteOpen] = useState(false);
-    const [literalOpen, setLiteralOpen] = useState(false);
 
     // Autoplay state
     const [autoplayIndex, setAutoplayIndex] = useState(0);
@@ -220,7 +219,6 @@ const SRSReview = () => {
     const flip = () => {
         setIsFlipped(true);
         setNoteOpen(false);
-        setLiteralOpen(showLiteral);
         if (currentCard) speak(currentLevel(currentCard).back, true);
     };
 
@@ -233,7 +231,6 @@ const SRSReview = () => {
         if (language && deckId) saveDeckState(language, deckId, updatedDeckState);
         setIsFlipped(false);
         setNoteOpen(false);
-        setLiteralOpen(false);
         if (nextSession.length === 0) setDone(true);
     };
 
@@ -433,18 +430,8 @@ const SRSReview = () => {
                         {level.romanized && (
                             <div className="srs-romanized">{level.romanized}</div>
                         )}
-                        {level.literal && (
-                            <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
-                                <button
-                                    className="srs-grammar-note-toggle"
-                                    onClick={() => setLiteralOpen(o => !o)}
-                                >
-                                    Literal {literalOpen ? "▴" : "▾"}
-                                </button>
-                                {literalOpen && (
-                                    <div className="srs-literal">{level.literal}</div>
-                                )}
-                            </div>
+                        {showLiteral && level.literal && (
+                            <div className="srs-literal">{level.literal}</div>
                         )}
                         {hasNextLevel(currentCard) && (
                             <div className="srs-levelup-hint">

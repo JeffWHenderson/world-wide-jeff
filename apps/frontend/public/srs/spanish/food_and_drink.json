@@ -2,7 +2,7 @@
   "id": "food_and_drink",
   "name": "Food & Drink",
   "language": "spanish",
-  "stories": ["at_the_restaurant", "cooking_at_home", "at_the_market"],
+  "stories": ["at_the_restaurant", "cooking_at_home", "at_the_market", "a_nice_restaurant", "bean_ate_chocolate", "paella", "tacos_or_pizza"],
   "pictureLessons": ["foodAndDrink"],
   "cards": [
     { "id": "es_fd_001", "levels": [{ "front": "water", "back": "el agua", "grammarNote": "Agua is feminine but takes 'el' in the singular because it starts with a stressed 'a'. Adjectives still agree feminine: 'el agua fría' (cold water). Plural uses 'las': 'las aguas'." }, { "front": "The water is cold.", "back": "El agua está fría." }] },

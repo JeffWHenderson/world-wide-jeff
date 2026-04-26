@@ -2,6 +2,7 @@
   "id": "moods_and_emotion",
   "name": "Moods & Emotions",
   "language": "japanese",
+  "stories": ["sean", "a_bad_day", "friendship", "good_news"],
   "cards": [
     { "id": "ja_me_001", "levels": [{ "front": "happy", "back": "嬉しい", "romanized": "ureshii" }, { "front": "I'm very happy today", "back": "今日はとても嬉しいです", "romanized": "kyō wa totemo ureshii desu" }] },
     { "id": "ja_me_002", "levels": [{ "front": "sad", "back": "悲しい", "romanized": "kanashii" }, { "front": "Why are you sad?", "back": "なぜ悲しいのですか？", "romanized": "naze kanashii no desu ka?" }] },

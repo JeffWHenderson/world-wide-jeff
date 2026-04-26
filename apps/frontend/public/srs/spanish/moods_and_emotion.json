@@ -2,7 +2,7 @@
   "id": "moods_and_emotion",
   "name": "Moods & Emotion",
   "language": "spanish",
-  "stories": ["a_bad_day", "good_news", "friendship"],
+  "stories": ["a_bad_day", "good_news", "friendship", "sean"],
   "pictureLessons": ["moodsAndEmotion"],
   "cards": [
     { "id": "es_me_001", "levels": [{ "front": "happy", "back": "feliz", "grammarNote": "Adverb form: felizmente (happily). Spanish adverbs are made by adding -mente to the feminine adjective. Feliz has no gender change: feliz + mente → felizmente. E.g., 'Ella sonrió felizmente.' (She smiled happily.)" }, { "front": "I'm very happy today.", "back": "Estoy muy feliz hoy." }] },

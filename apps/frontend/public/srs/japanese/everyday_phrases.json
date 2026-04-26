@@ -2,6 +2,7 @@
   "id": "everyday_phrases",
   "name": "Everyday Phrases",
   "language": "japanese",
+  "stories": ["meet_jeff", "meet_seth", "bad_bunny", "making_plans", "meeting_a_friend", "morning_routine"],
   "cards": [
     { "id": "ja_ep_001", "levels": [{ "front": "I", "back": "私", "romanized": "watashi" }, { "front": "I am a student", "back": "私は学生です", "romanized": "watashi wa gakusei desu" }] },
     { "id": "ja_ep_002", "levels": [{ "front": "you", "back": "あなた", "romanized": "anata" }, { "front": "What is your name?", "back": "あなたの名前は何ですか？", "romanized": "anata no namae wa nan desu ka?" }] },

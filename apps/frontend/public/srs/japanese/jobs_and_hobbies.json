@@ -2,6 +2,7 @@
   "id": "jobs_and_hobbies",
   "name": "Jobs & Hobbies",
   "language": "japanese",
+  "stories": ["at_work", "job_interview", "weekend_hobbies", "audrey"],
   "cards": [
     { "id": "ja_jh_001", "levels": [{ "front": "job / work", "back": "仕事", "romanized": "shigoto" }, { "front": "What is your job?", "back": "お仕事は何ですか？", "romanized": "oshigoto wa nan desu ka?" }] },
     { "id": "ja_jh_002", "levels": [{ "front": "doctor", "back": "医者", "romanized": "isha" }, { "front": "I want to be a doctor", "back": "医者になりたいです", "romanized": "isha ni naritai desu" }] },

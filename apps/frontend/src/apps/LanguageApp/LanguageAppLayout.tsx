@@ -1,12 +1,20 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { useTheme } from "../common/ThemeContext"
 import { LanguageAppProvider } from "./LanguageAppContext";
 import "./main-styles.css"
+
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+    return null;
+};
 
 const LanguageAppLayout = () => {
     const { theme, toggleTheme } = useTheme();
     return (
         <LanguageAppProvider>
+            <ScrollToTop />
             <div style={{ width: '100%', minHeight: '100vh' }}>
                 <div style={{
                     display: "flex",

@@ -2,7 +2,7 @@
   "id": "jobs_and_hobbies",
   "name": "Jobs & Hobbies",
   "language": "spanish",
-  "stories": ["at_work", "weekend_hobbies", "job_interview"],
+  "stories": ["at_work", "weekend_hobbies", "job_interview", "audrey"],
   "pictureLessons": ["jobsAndHobbies"],
   "cards": [
     { "id": "es_jh_001", "levels": [{ "front": "Doctor", "back": "Médico", "grammarNote": "Use 'ser' for professions and omit the article: 'Soy médico' (I am a doctor), not 'Soy un médico'. This applies to all professions: 'Es enfermera', 'Es ingeniero'. The article is added only when the noun is modified: 'Soy un buen médico'." }, { "front": "He is a doctor.", "back": "Es médico." }] },
