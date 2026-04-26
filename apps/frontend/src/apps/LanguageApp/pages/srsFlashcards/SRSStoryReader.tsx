@@ -41,6 +41,13 @@ const SRSStoryReader = () => {
     }, []);
 
     useEffect(() => {
+        return () => {
+            window.speechSynthesis.cancel();
+            playingRef.current = false;
+        };
+    }, []);
+
+    useEffect(() => {
         if (!language || !deckId || !storyId) return;
         fetch(`/srs/${language}/${deckId}/stories/${storyId}.json`)
             .then(r => r.json())
