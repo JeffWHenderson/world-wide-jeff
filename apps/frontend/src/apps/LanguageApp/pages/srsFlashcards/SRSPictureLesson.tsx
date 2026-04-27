@@ -16,6 +16,7 @@ interface Dot {
 }
 
 interface LessonData {
+    image: string;
     dots: Dot[];
 }
 
@@ -28,7 +29,7 @@ const SRSPictureLesson = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
-        fetch(`/${language}/pictureLessons/${section}.json`)
+        fetch(`/srs/${language}/pictureLessons/${section}.json`)
             .then(res => res.json())
             .then(data => setLesson(data))
             .catch(err => console.error(err));
@@ -68,7 +69,7 @@ const SRSPictureLesson = () => {
             <div className="picture-frame">
                 <img
                     className="picture-frame-img"
-                    src={`/${section}.jpg`}
+                    src={lesson.image}
                     alt={section}
                 />
                 {current && (

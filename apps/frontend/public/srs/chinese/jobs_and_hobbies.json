@@ -3,7 +3,7 @@
   "name": "Jobs & Hobbies",
   "language": "chinese",
   "stories": ["at_work", "weekend_hobbies", "job_interview"],
-  "pictureLessons": ["jobsAndHobbies"],
+  "pictureLessons": ["jobsAndHobbies", "jobsAndHobbies2"],
   "cards": [
     { "id": "zh_jh_001", "levels": [{ "front": "Doctor", "back": "医生", "romanized": "yīshēng" }] },
     { "id": "zh_jh_002", "levels": [{ "front": "Nurse", "back": "护士", "romanized": "hùshi" }] },

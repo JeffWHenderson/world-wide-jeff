@@ -3,7 +3,7 @@
   "name": "Food & Drink",
   "language": "japanese",
   "stories": ["a_nice_restaurant", "bean_ate_chocolate", "paella", "tacos_or_pizza", "at_the_market", "at_the_restaurant", "cooking_at_home"],
-  "pictureLessons": ["foodAndDrink"],
+  "pictureLessons": ["foodAndDrink", "foodAndDrink2"],
   "cards": [
     { "id": "ja_fd_001", "levels": [{ "front": "water", "back": "水", "romanized": "mizu" }, { "front": "I drink water every day", "back": "毎日水を飲みます", "romanized": "mainichi mizu wo nomimasu" }] },
     { "id": "ja_fd_002", "levels": [{ "front": "bread", "back": "パン", "romanized": "pan" }, { "front": "I eat bread for breakfast", "back": "朝ごはんにパンを食べます", "romanized": "asagohan ni pan wo tabemasu" }] },

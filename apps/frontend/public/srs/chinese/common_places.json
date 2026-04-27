@@ -3,6 +3,7 @@
   "name": "Common Places",
   "language": "chinese",
   "stories": ["getting_around", "at_the_hotel", "a_day_out"],
+  "pictureLessons": ["commonPlaces"],
   "cards": [
     { "id": "zh_cp_001", "levels": [{ "front": "Home", "back": "家", "romanized": "jiā" }] },
     { "id": "zh_cp_002", "levels": [{ "front": "Apartment", "back": "公寓", "romanized": "gōngyù" }] },

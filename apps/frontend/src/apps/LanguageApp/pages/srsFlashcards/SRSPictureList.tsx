@@ -5,6 +5,7 @@ import "./srs.css";
 interface PictureMeta {
     id: string;
     name: string;
+    image: string;
     deckId: string;
     deckName: string;
 }
@@ -48,11 +49,12 @@ const SRSPictureList = () => {
 
             const pictureFetches = validDecks.flatMap((deck) =>
                 (deck.pictureLessons ?? []).map((lessonId) =>
-                    fetch(`/${language}/pictureLessons/${lessonId}.json`)
+                    fetch(`/srs/${language}/pictureLessons/${lessonId}.json`)
                         .then((r) => r.json())
                         .then((p) => ({
                             id: lessonId,
                             name: p.name ?? lessonId,
+                            image: p.image ?? `/${lessonId}.jpg`,
                             deckId: deck.id,
                             deckName: deck.name,
                         }))
@@ -120,7 +122,7 @@ const SRSPictureList = () => {
                         onClick={() => navigate(`/language-app/${language}/picture-review/${picture.id}`)}
                     >
                         <div className="srs-picture-thumb">
-                            <img src={`/${picture.id}.jpg`} alt={picture.name} />
+                            <img src={picture.image} alt={picture.name} />
                         </div>
                         <div className="srs-picture-card-info">
                             <div className="srs-story-card-title">{picture.name}</div>

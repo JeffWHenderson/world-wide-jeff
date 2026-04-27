@@ -3,6 +3,7 @@
   "name": "Common Places",
   "language": "japanese",
   "stories": ["a_day_out", "at_the_hotel", "getting_around"],
+  "pictureLessons": ["commonPlaces"],
   "cards": [
     { "id": "ja_cp_001", "levels": [{ "front": "house / home", "back": "家", "romanized": "ie / uchi" }, { "front": "I'm going home", "back": "家に帰ります", "romanized": "ie ni kaerimasu" }] },
     { "id": "ja_cp_002", "levels": [{ "front": "school", "back": "学校", "romanized": "gakkō" }, { "front": "I go to school by bike", "back": "自転車で学校に行きます", "romanized": "jitensha de gakkō ni ikimasu" }] },
