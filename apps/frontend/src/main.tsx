@@ -1,47 +1,36 @@
-import { StrictMode } from 'react'
+import { StrictMode, lazy, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Pickleball from './apps/Pickleball/Pickleball';
-import Contact from "./apps/common/Contact/Contact";
-import Events from "./apps/Events/Events";
-import LanguageLearningApp from "./apps/LanguageApp/pages/LanguageApp";
-import './index.css'
-import FlashCardsV2 from './apps/LanguageApp/pages/flashcards/FlashCardsV2';
-import WordList from './apps/LanguageApp/pages/wordlist/WordList';
-import StoryReader from './apps/LanguageApp/pages/storyReader/StoryReader';
-import LanguageAppLayout from './apps/LanguageApp/LanguageAppLayout';
-import ViewLesson from './apps/LanguageApp/pages/viewLesson/ViewLesson';
-import MyDecks from './apps/LanguageApp/hooks/MyDecks';
 import { ThemeProvider } from './apps/common/ThemeContext';
-import LanguageAppHome from './apps/LanguageApp/LanguageHome';
-import SRSPictureLesson from './apps/LanguageApp/pages/srsFlashcards/SRSPictureLesson';
-import EventPage from './apps/Events/EventPage';
-import SRSHome from './apps/LanguageApp/pages/srsFlashcards/SRSHome';
-import SRSReview from './apps/LanguageApp/pages/srsFlashcards/SRSReview';
-import SRSStoryReader from './apps/LanguageApp/pages/srsFlashcards/SRSStoryReader';
-import SRSStoryList from './apps/LanguageApp/pages/srsFlashcards/SRSStoryList';
-import SRSPictureList from './apps/LanguageApp/pages/srsFlashcards/SRSPictureList';
-import NoPage from './apps/common/Core/NoPage';
-import Home from './apps/common/Core/Home';
-import Layout from './apps/common/Core/Layout';
+import './index.css'
 
-// TO MAYBE DO: I could use all this lazy imports but its so small I'd probably just rather not
-// import WallerverseHome from "./screens/Wallerverse/WallerverseHome"
-// const FlashCardsV2 = lazy(() => import('./screens/LanguageApp/components/FlashCardsV2'));
-// const NoPage = lazy(() => import("./screens/Core/NoPage"));
-// const LanguageLearningApp = lazy(() => import("./screens/LanguageApp/LanguageApp"));
-// const StoryReader = lazy(() => import('./screens/LanguageApp/components/StoryReader'));
-// const WallerverseHome = lazy(() => import("./screens/Wallerverse/WallerverseHome"));
-// const Events = lazy(() => import("./screens/Events/Events"));
-// const Contact = lazy(() => import("./screens/Contact/Contact"));
-// const WordList = lazy(() => import('./screens/LanguageApp/components/WordList'));
-// const LanguageAppLayout = lazy(() => import('./screens/LanguageApp/LanguageAppLayout'));
-
+const Pickleball = lazy(() => import('./apps/Pickleball/Pickleball'));
+const Contact = lazy(() => import("./apps/common/Contact/Contact"));
+const Events = lazy(() => import("./apps/Events/Events"));
+const EventPage = lazy(() => import('./apps/Events/EventPage'));
+const LanguageLearningApp = lazy(() => import("./apps/LanguageApp/pages/LanguageApp"));
+const FlashCardsV2 = lazy(() => import('./apps/LanguageApp/pages/flashcards/FlashCardsV2'));
+const WordList = lazy(() => import('./apps/LanguageApp/pages/wordlist/WordList'));
+const StoryReader = lazy(() => import('./apps/LanguageApp/pages/storyReader/StoryReader'));
+const LanguageAppLayout = lazy(() => import('./apps/LanguageApp/LanguageAppLayout'));
+const ViewLesson = lazy(() => import('./apps/LanguageApp/pages/viewLesson/ViewLesson'));
+const MyDecks = lazy(() => import('./apps/LanguageApp/hooks/MyDecks'));
+const LanguageAppHome = lazy(() => import('./apps/LanguageApp/LanguageHome'));
+const SRSPictureLesson = lazy(() => import('./apps/LanguageApp/pages/srsFlashcards/SRSPictureLesson'));
+const SRSHome = lazy(() => import('./apps/LanguageApp/pages/srsFlashcards/SRSHome'));
+const SRSReview = lazy(() => import('./apps/LanguageApp/pages/srsFlashcards/SRSReview'));
+const SRSStoryReader = lazy(() => import('./apps/LanguageApp/pages/srsFlashcards/SRSStoryReader'));
+const SRSStoryList = lazy(() => import('./apps/LanguageApp/pages/srsFlashcards/SRSStoryList'));
+const SRSPictureList = lazy(() => import('./apps/LanguageApp/pages/srsFlashcards/SRSPictureList'));
+const NoPage = lazy(() => import('./apps/common/Core/NoPage'));
+const Home = lazy(() => import('./apps/common/Core/Home'));
+const Layout = lazy(() => import('./apps/common/Core/Layout'));
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <ThemeProvider>
+        <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -69,6 +58,7 @@ createRoot(document.getElementById('root')!).render(
           </Route>
           <Route path="*" element={<NoPage />} />
         </Routes>
+        </Suspense>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode >,
