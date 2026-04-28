@@ -23,7 +23,7 @@ interface LessonData {
 const SRSPictureLesson = () => {
     const { language, section } = useParams();
     const navigate = useNavigate();
-    const [voice] = useLanguage(language as string);
+    const { targetVoice } = useLanguage({ targetLanguage: language as string });
     const { volume } = useLanguageApp();
     const [lesson, setLesson] = useState<LessonData | null>(null);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -45,7 +45,7 @@ const SRSPictureLesson = () => {
         if (!current) return;
         window.speechSynthesis.cancel();
         const utt = new SpeechSynthesisUtterance(current.sentences[0].target_language);
-        utt.voice = voice as SpeechSynthesisVoice;
+        utt.voice = targetVoice ?? null;
         utt.rate = 0.9;
         utt.volume = volume;
         window.speechSynthesis.speak(utt);

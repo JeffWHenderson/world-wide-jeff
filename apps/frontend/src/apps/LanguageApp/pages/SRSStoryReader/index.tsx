@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useLanguageApp } from "../../LanguageAppContext";
+import useLanguage from "../../hooks/useLanguage";
 import SRSSettings from "../components/SRSSettings";
 import "../srs.css";
 
@@ -29,16 +30,9 @@ const SRSStoryReader = () => {
     const [openNoteIndex, setOpenNoteIndex] = useState<number | null>(null);
 
     const { volume, showLiteral } = useLanguageApp();
-    const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
+    const { targetVoice } = useLanguage({ targetLanguage: language ?? "english" });
     const playingRef = useRef(false);
     const sentenceRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-    useEffect(() => {
-        const load = () => { voicesRef.current = window.speechSynthesis.getVoices(); };
-        load();
-        window.speechSynthesis.onvoiceschanged = load;
-        return () => { window.speechSynthesis.onvoiceschanged = null; };
-    }, []);
 
     useEffect(() => {
         return () => {
@@ -55,36 +49,6 @@ const SRSStoryReader = () => {
             .catch(console.error);
     }, [language, deckId, storyId]);
 
-    const getVoice = (): SpeechSynthesisVoice | null => {
-        const voices = voicesRef.current;
-        if (language === "spanish") {
-            return voices.find(v => v.name.toLowerCase() === "paulina")
-                ?? voices.find(v => v.lang.startsWith("es-"))
-                ?? null;
-        }
-        if (language === "japanese") {
-            return voices.find(v => v.name.toLowerCase() === "kyoko")
-                ?? voices.find(v => v.lang.startsWith("ja-"))
-                ?? null;
-        }
-        if (language === "chinese") {
-            return voices.find(v => ["ting-ting", "tingting"].includes(v.name.toLowerCase()))
-                ?? voices.find(v => v.lang.startsWith("zh-"))
-                ?? null;
-        }
-        if (language === "french") {
-            return voices.find(v => v.name.toLowerCase() === "thomas")
-                ?? voices.find(v => v.lang.startsWith("fr-"))
-                ?? null;
-        }
-        if (language === "arabic") {
-            return voices.find(v => v.lang.toLowerCase() === "ar-sa")
-                ?? voices.find(v => v.lang.toLowerCase().startsWith("ar"))
-                ?? null;
-        }
-        return voices.find(v => v.lang.startsWith("en-")) ?? null;
-    };
-
     const speakSentence = (idx: number, continueAfter = false) => {
         if (!story || idx >= story.sentences.length) {
             setPlayingIndex(-1);
@@ -93,7 +57,7 @@ const SRSStoryReader = () => {
             return;
         }
         const utt = new SpeechSynthesisUtterance(story.sentences[idx].target_language);
-        utt.voice = getVoice();
+        utt.voice = targetVoice ?? null;
         utt.rate = speakingRate;
         utt.volume = volume;
         setPlayingIndex(idx);

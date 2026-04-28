@@ -9,6 +9,7 @@ import {
     updateCardState,
     SRSDeckState,
 } from "../useSRSStorage";
+import useLanguage from "../../hooks/useLanguage";
 import SRSSettings from "../components/SRSSettings";
 import "../srs.css";
 
@@ -78,51 +79,16 @@ const SRSReview = () => {
     const autoplayRef = useRef(false);
     const autoplayIndexRef = useRef(0);
 
-    const voicesRef = useRef<SpeechSynthesisVoice[]>([]);
-
-    useEffect(() => {
-        const load = () => { voicesRef.current = window.speechSynthesis.getVoices(); };
-        load();
-        window.speechSynthesis.onvoiceschanged = load;
-        return () => { window.speechSynthesis.onvoiceschanged = null; };
-    }, []);
-
-    const getVoice = (lang: string): SpeechSynthesisVoice | undefined => {
-        const voices = voicesRef.current;
-        if (lang === "english") {
-            return voices.find(v => v.name.toLowerCase() === "samantha")
-                ?? voices.find(v => v.lang.startsWith("en-"));
-        }
-        if (lang === "spanish") {
-            return voices.find(v => v.name.toLowerCase() === "paulina")
-                ?? voices.find(v => v.lang.startsWith("es-"));
-        }
-        if (lang === "chinese") {
-            return voices.find(v => ["ting-ting", "tingting"].includes(v.name.toLowerCase()))
-                ?? voices.find(v => v.lang.startsWith("zh-"));
-        }
-        if (lang === "japanese") {
-            return voices.find(v => v.name.toLowerCase() === "kyoko")
-                ?? voices.find(v => v.lang.startsWith("ja-"));
-        }
-        if (lang === "french") {
-            return voices.find(v => v.name.toLowerCase() === "thomas")
-                ?? voices.find(v => v.lang.startsWith("fr-"));
-        }
-        if (lang === "arabic") {
-            return voices.find(v => v.lang.toLowerCase() === "ar-sa")
-                ?? voices.find(v => v.lang.toLowerCase().startsWith("ar"));
-        }
-    };
+    const { targetVoice, baseVoice } = useLanguage({ targetLanguage: language ?? "english" });
 
     // Returns the utterance so callers can attach onend
     const buildUtt = useCallback((text: string, isTarget: boolean): SpeechSynthesisUtterance => {
         const utt = new SpeechSynthesisUtterance(text.replace(/\(.*?\)/g, ""));
-        utt.voice = getVoice(isTarget ? (language ?? "english") : "english") ?? null;
+        utt.voice = (isTarget ? targetVoice : baseVoice) ?? null;
         utt.rate = 0.9;
         utt.volume = volume;
         return utt;
-    }, [language, volume, voicesRef]);
+    }, [targetVoice, baseVoice, volume]);
 
     const speak = (text: string, isTarget: boolean) => {
         if (!ttsEnabled) return;

@@ -1,74 +1,49 @@
 import { useEffect, useState } from "react";
 
-const useLanguage = (selectedLanguage: string) => {
-    let voices: SpeechSynthesisVoice[] = speechSynthesis.getVoices();
-    let [selectedVoice] = useState<SpeechSynthesisVoice | undefined>(voices[0])
+function getVoiceForLanguage(voices: SpeechSynthesisVoice[], lang: string): SpeechSynthesisVoice | undefined {
+    switch (lang) {
+        case "english":
+            return voices.find(v => v.name.toLowerCase() === "samantha")
+                ?? voices.find(v => v.lang.startsWith("en-"));
+        case "spanish":
+            return voices.find(v => v.name.toLowerCase() === "paulina")
+                ?? voices.find(v => v.lang.startsWith("es-"));
+        case "french":
+            return voices.find(v => v.name.toLowerCase() === "amélie")
+                ?? voices.find(v => v.lang.startsWith("fr-"));
+        case "chinese":
+            return voices.find(v => ["ting-ting", "tingting"].includes(v.name.toLowerCase()))
+                ?? voices.find(v => v.lang.startsWith("zh-"));
+        case "japanese":
+            return voices.find(v => v.name.toLowerCase() === "kyoko")
+                ?? voices.find(v => v.lang.startsWith("ja-"));
+        case "arabic":
+            return voices.find(v => v.lang.toLowerCase() === "ar-sa")
+                ?? voices.find(v => v.lang.toLowerCase().startsWith("ar"));
+        default:
+            return voices.find(v => v.lang.startsWith("en-"));
+    }
+}
 
+const useLanguage = ({
+    targetLanguage,
+    baseLanguage = "english",
+}: {
+    targetLanguage: string;
+    baseLanguage?: string;
+}): { targetVoice: SpeechSynthesisVoice | undefined; baseVoice: SpeechSynthesisVoice | undefined } => {
+    const [voices, setVoices] = useState<SpeechSynthesisVoice[]>(() => speechSynthesis.getVoices());
 
-    // has to wait on the inital page load from the browser then set the default voice
     useEffect(() => {
-        const waitForBrowser = () => {
-            let initialVoices = speechSynthesis.getVoices()
+        const load = () => setVoices(window.speechSynthesis.getVoices());
+        window.speechSynthesis.onvoiceschanged = load;
+        return () => { window.speechSynthesis.onvoiceschanged = null; };
+    }, []);
 
-            // @ts-ignore
-            selectedVoice = initialVoices.find((voice) => {
-                return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
-            });
-        }
-
-        setTimeout(waitForBrowser, 1000)
-    }, [])
-
-    if (selectedLanguage == "spanish") {
-        selectedVoice = voices.find((voice) => {
-            return voice.name.toLowerCase() == "paulina"
-        });
-    }
-    if (selectedLanguage == "chinese") {
-        let found = voices.find((voice) => {
-            return voice.name.toLowerCase() == "ting-ting" || voice.name.toLowerCase() == "tingting"
-        });
-        if (!found) {
-            found = voices.find((voice) => {
-                return voice.lang.includes("zh-")
-            })
-        }
-        selectedVoice = found
-    }
-    if (selectedLanguage == "japanese") {
-        selectedVoice = voices.find((voice) => {
-            return voice.name.toLocaleLowerCase() == "kyoko"
-        });
-    }
-    if (selectedLanguage == "french") {
-        let found = voices.find((voice) => {
-            return voice.name.toLowerCase() == "thomas"
-        });
-        if (!found) {
-            found = voices.find((voice) => {
-                return voice.lang.startsWith("fr-")
-            })
-        }
-        selectedVoice = found
-    }
-    if (selectedLanguage == "arabic") {
-        let found = voices.find((voice) => {
-            return voice.lang.toLowerCase() == "ar-sa"
-        });
-        if (!found) {
-            found = voices.find((voice) => {
-                return voice.lang.toLowerCase().startsWith("ar")
-            });
-        }
-        selectedVoice = found
-    }
-    if (selectedLanguage == "english") {
-        selectedVoice = voices.find(i => i.name.toLowerCase() == "samantha")
-    }
-
-
-
-    return [selectedVoice as SpeechSynthesisVoice, selectedLanguage as string]
+    return {
+        targetVoice: getVoiceForLanguage(voices, targetLanguage),
+        baseVoice: getVoiceForLanguage(voices, baseLanguage),
+    };
 };
 
 export default useLanguage;
