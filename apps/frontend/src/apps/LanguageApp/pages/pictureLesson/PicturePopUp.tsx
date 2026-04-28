@@ -28,7 +28,7 @@ const PicturePopUp = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
-        fetch(`/${language}/pictureLessons/${section}.json`)
+        fetch(`/languages/${language}/pictureLessons/${section}.json`)
             .then(res => res.json())
             .then(data => setLesson(data))
             .catch(err => console.error(err));

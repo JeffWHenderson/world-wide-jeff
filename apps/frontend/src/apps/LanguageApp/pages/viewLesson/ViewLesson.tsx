@@ -6,7 +6,7 @@ const ViewLesson = () => {
   const [lessonHTML, setLessonHTML] = useState("")
 
   useEffect(() => {
-    fetch(`/${language}/lessons/${lessonId}.html`)
+    fetch(`/languages/${language}/lessons/${lessonId}.html`)
       .then(res => res.text())
       .then(data => { console.log(data); setLessonHTML(data) })
       .catch(err => err)

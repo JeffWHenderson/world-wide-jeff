@@ -40,7 +40,7 @@ const SRSPictureList = () => {
 
         Promise.all(
             AVAILABLE_DECKS.map((deckId) =>
-                fetch(`/${language}/${deckId}.json`)
+                fetch(`/languages/${language}/${deckId}.json`)
                     .then((r) => r.json())
                     .catch(() => null)
             )
@@ -49,7 +49,7 @@ const SRSPictureList = () => {
 
             const pictureFetches = validDecks.flatMap((deck) =>
                 (deck.pictureLessons ?? []).map((lessonId) =>
-                    fetch(`/${language}/pictureLessons/${lessonId}.json`)
+                    fetch(`/languages/${language}/pictureLessons/${lessonId}.json`)
                         .then((r) => r.json())
                         .then((p) => ({
                             id: lessonId,

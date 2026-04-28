@@ -15,7 +15,7 @@ const WordList = () => {
     const [wordList, setWordList] = useState<WordListItem[]>([])
 
     useEffect(() => {
-        fetch(`/${language}/modules/${section}/${lessonId}.json`)
+        fetch(`/languages/${language}/modules/${section}/${lessonId}.json`)
             .then(res => res.json())
             .then(data => { setWordList(data) })
             .catch(err => console.error(err))

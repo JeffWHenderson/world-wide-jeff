@@ -43,7 +43,7 @@ const SRSStoryList = () => {
 
         Promise.all(
             AVAILABLE_DECKS.map((deckId) =>
-                fetch(`/${language}/${deckId}.json`)
+                fetch(`/languages/${language}/${deckId}.json`)
                     .then((r) => r.json())
                     .catch(() => null)
             )
@@ -52,7 +52,7 @@ const SRSStoryList = () => {
 
             const storyFetches = validDecks.flatMap((deck) =>
                 (deck.stories ?? []).map((storyId) =>
-                    fetch(`/${language}/${deck.id}/stories/${storyId}.json`)
+                    fetch(`/languages/${language}/${deck.id}/stories/${storyId}.json`)
                         .then((r) => r.json())
                         .then((s) => ({
                             id: storyId,

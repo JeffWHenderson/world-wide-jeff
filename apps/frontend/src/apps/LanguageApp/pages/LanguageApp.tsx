@@ -8,7 +8,7 @@ const LanguageLearningApp = () => {
     const [course, setCourse] = useState<any | null>(null);
 
     useEffect(() => {
-        fetch(`/${language}/course.json`, { headers: { 'Cache-Control': 'max-age=60000' } }) // so I can update lessons and not break users
+        fetch(`/languages/${language}/course.json`, { headers: { 'Cache-Control': 'max-age=60000' } }) // so I can update lessons and not break users
             .then(response => response.json())
             .then(data => setCourse(data))
             .catch(error => console.error('Error fetching data:', error));

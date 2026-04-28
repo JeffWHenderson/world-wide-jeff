@@ -31,7 +31,7 @@ const FlashCardsV2 = () => {
             setBottom(myDeck.sentences[0].target_language)
             setLesson(myDeck)
         } else {
-            fetch(`/${language?.toLowerCase()}/modules/${section}/flashcards/${lessonId}.json`)
+            fetch(`/languages/${language?.toLowerCase()}/modules/${section}/flashcards/${lessonId}.json`)
                 .then(res => res.json())
                 .then(data => {
                     setTop(data.sentences[0].base_language) // set the top of the first card to be the first sentence's base language

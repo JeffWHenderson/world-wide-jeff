@@ -30,7 +30,7 @@ const SRSHome = () => {
         if (!language) return;
         Promise.all(
             AVAILABLE_DECKS.map((deckId) =>
-                fetch(`/${language}/${deckId}.json`)
+                fetch(`/languages/${language}/${deckId}.json`)
                     .then((r) => r.json())
                     .catch(() => null)
             )
