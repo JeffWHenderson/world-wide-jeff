@@ -30,7 +30,7 @@ const SRSHome = () => {
         if (!language) return;
         Promise.all(
             AVAILABLE_DECKS.map((deckId) =>
-                fetch(`/srs/${language}/${deckId}.json`)
+                fetch(`/${language}/${deckId}.json`)
                     .then((r) => r.json())
                     .catch(() => null)
             )
@@ -85,7 +85,7 @@ const SRSHome = () => {
                                 <button
                                     className="srs-btn-primary"
                                     disabled={totalDue === 0}
-                                    onClick={() => navigate(`/language-app/${language}/srs/${deck.id}`)}
+                                    onClick={() => navigate(`/language-app/${language}/${deck.id}`)}
                                 >
                                     {totalDue > 0 ? `Study (${totalDue})` : "Nothing due"}
                                 </button>

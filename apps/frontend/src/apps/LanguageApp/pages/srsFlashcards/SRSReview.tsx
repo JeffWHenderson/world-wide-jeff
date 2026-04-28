@@ -124,7 +124,7 @@ const SRSReview = () => {
 
     useEffect(() => {
         if (!language || !deckId) return;
-        fetch(`/srs/${language}/${deckId}.json`)
+        fetch(`/${language}/${deckId}.json`)
             .then((r) => r.json())
             .then((data: DeckData) => {
                 setDeck(data);

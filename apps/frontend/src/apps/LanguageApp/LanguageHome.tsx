@@ -12,13 +12,13 @@ const LanguageAppHome = () => {
             <p className="lang-home-subtitle">A free, open-source language learning app built around spaced repetition, stories, and picture lessons.</p>
 
             <div className="lang-home-courses">
-                <button className="lang-course-btn" onClick={() => navigate('spanish/srs')}>
+                <button className="lang-course-btn" onClick={() => navigate('spanish')}>
                     Spanish Course →
                 </button>
-                <button className="lang-course-btn" onClick={() => navigate('chinese/srs')}>
+                <button className="lang-course-btn" onClick={() => navigate('chinese')}>
                     Chinese Course →
                 </button>
-                <button className="lang-course-btn" onClick={() => navigate('japanese/srs')}>
+                <button className="lang-course-btn" onClick={() => navigate('japanese')}>
                     Japanese Course →
                 </button>
             </div>

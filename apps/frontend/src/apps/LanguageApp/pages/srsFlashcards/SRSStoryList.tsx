@@ -43,7 +43,7 @@ const SRSStoryList = () => {
 
         Promise.all(
             AVAILABLE_DECKS.map((deckId) =>
-                fetch(`/srs/${language}/${deckId}.json`)
+                fetch(`/${language}/${deckId}.json`)
                     .then((r) => r.json())
                     .catch(() => null)
             )
@@ -52,7 +52,7 @@ const SRSStoryList = () => {
 
             const storyFetches = validDecks.flatMap((deck) =>
                 (deck.stories ?? []).map((storyId) =>
-                    fetch(`/srs/${language}/${deck.id}/stories/${storyId}.json`)
+                    fetch(`/${language}/${deck.id}/stories/${storyId}.json`)
                         .then((r) => r.json())
                         .then((s) => ({
                             id: storyId,
@@ -146,7 +146,7 @@ const SRSStoryList = () => {
                     <button
                         key={`${story.deckId}-${story.id}`}
                         className="srs-story-card"
-                        onClick={() => navigate(`/language-app/${language}/srs/${story.deckId}/story/${story.id}`)}
+                        onClick={() => navigate(`/language-app/${language}/${story.deckId}/story/${story.id}`)}
                     >
                         <div className="srs-story-card-title">{story.name}</div>
                         <div className="srs-story-card-meta">

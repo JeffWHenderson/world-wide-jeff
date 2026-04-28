@@ -49,7 +49,7 @@ const SRSStoryReader = () => {
 
     useEffect(() => {
         if (!language || !deckId || !storyId) return;
-        fetch(`/srs/${language}/${deckId}/stories/${storyId}.json`)
+        fetch(`/${language}/${deckId}/stories/${storyId}.json`)
             .then(r => r.json())
             .then(data => setStory(data))
             .catch(console.error);
