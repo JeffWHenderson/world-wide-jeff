@@ -1,0 +1,33 @@
+{
+  "id": "moods_and_emotion",
+  "name": "Moods & Emotions",
+  "language": "french",
+  "stories": ["a_bad_day", "good_news"],
+  "cards": [
+    { "id": "fr_me_001", "levels": [{ "front": "Happy", "back": "heureux / heureuse" }, { "front": "I'm so happy to see you.", "back": "Je suis tellement heureux/heureuse de te voir." }] },
+    { "id": "fr_me_002", "levels": [{ "front": "Sad", "back": "triste" }, { "front": "She looks sad today.", "back": "Elle a l'air triste aujourd'hui." }] },
+    { "id": "fr_me_003", "levels": [{ "front": "Tired", "back": "fatigué / fatiguée" }, { "front": "I'm exhausted after work.", "back": "Je suis épuisé(e) après le travail." }] },
+    { "id": "fr_me_004", "levels": [{ "front": "Stressed", "back": "stressé / stressée" }, { "front": "I'm very stressed about the exam.", "back": "Je suis très stressé(e) pour l'examen." }] },
+    { "id": "fr_me_005", "levels": [{ "front": "Angry", "back": "en colère / fâché(e)" }, { "front": "Why are you angry?", "back": "Pourquoi tu es en colère ?" }] },
+    { "id": "fr_me_006", "levels": [{ "front": "Scared / afraid", "back": "avoir peur" }, { "front": "I'm not afraid.", "back": "Je n'ai pas peur." }] },
+    { "id": "fr_me_007", "levels": [{ "front": "Excited", "back": "excité / excitée / enthousiaste" }, { "front": "I'm so excited about the trip!", "back": "Je suis tellement enthousiaste pour le voyage !" }] },
+    { "id": "fr_me_008", "levels": [{ "front": "Bored", "back": "ennuyé(e) / s'ennuyer" }, { "front": "I'm bored. Let's do something.", "back": "Je m'ennuie. Faisons quelque chose." }] },
+    { "id": "fr_me_009", "levels": [{ "front": "Nervous", "back": "nerveux / nerveuse" }, { "front": "He's nervous before his presentation.", "back": "Il est nerveux avant sa présentation." }] },
+    { "id": "fr_me_010", "levels": [{ "front": "Surprised", "back": "surpris / surprise" }, { "front": "I was surprised by the news.", "back": "J'ai été surpris(e) par la nouvelle." }] },
+    { "id": "fr_me_011", "levels": [{ "front": "Proud", "back": "fier / fière" }, { "front": "I'm proud of you.", "back": "Je suis fier/fière de toi." }] },
+    { "id": "fr_me_012", "levels": [{ "front": "Embarrassed", "back": "gêné(e) / embarrassé(e)" }, { "front": "I was really embarrassed.", "back": "J'étais vraiment gêné(e)." }] },
+    { "id": "fr_me_013", "levels": [{ "front": "Relieved", "back": "soulagé / soulagée" }, { "front": "I'm relieved that everything is fine.", "back": "Je suis soulagé(e) que tout aille bien." }] },
+    { "id": "fr_me_014", "levels": [{ "front": "Lonely", "back": "seul(e) / solitaire" }, { "front": "I feel lonely.", "back": "Je me sens seul(e)." }] },
+    { "id": "fr_me_015", "levels": [{ "front": "In love", "back": "amoureux / amoureuse" }, { "front": "He's in love.", "back": "Il est amoureux." }] },
+    { "id": "fr_me_016", "levels": [{ "front": "Disappointed", "back": "déçu / déçue" }, { "front": "I'm disappointed in the result.", "back": "Je suis déçu(e) du résultat." }] },
+    { "id": "fr_me_017", "levels": [{ "front": "To feel", "back": "se sentir" }, { "front": "How do you feel today?", "back": "Comment tu te sens aujourd'hui ?" }] },
+    { "id": "fr_me_018", "levels": [{ "front": "To cry", "back": "pleurer" }, { "front": "Why are you crying?", "back": "Pourquoi tu pleures ?" }] },
+    { "id": "fr_me_019", "levels": [{ "front": "To laugh", "back": "rire" }, { "front": "It made me laugh.", "back": "Ça m'a fait rire." }] },
+    { "id": "fr_me_020", "levels": [{ "front": "To smile", "back": "sourire" }, { "front": "She always smiles.", "back": "Elle sourit toujours." }] },
+    { "id": "fr_me_021", "levels": [{ "front": "To worry", "back": "s'inquiéter" }, { "front": "Don't worry, it'll be fine.", "back": "Ne t'inquiète pas, ça va aller." }] },
+    { "id": "fr_me_022", "levels": [{ "front": "To miss (someone)", "back": "manquer à", "grammarNote": "French 'manquer' works in reverse: 'Tu me manques' = You are missing to me = I miss you. Subject and object are swapped compared to English." }, { "front": "I miss you.", "back": "Tu me manques." }] },
+    { "id": "fr_me_023", "levels": [{ "front": "To be in a good/bad mood", "back": "être de bonne/mauvaise humeur" }, { "front": "She's in a good mood today.", "back": "Elle est de bonne humeur aujourd'hui." }] },
+    { "id": "fr_me_024", "levels": [{ "front": "It's okay / I'm fine", "back": "Ça va" }, { "front": "How are you? — Fine, thanks.", "back": "Comment tu vas ? — Ça va, merci." }] },
+    { "id": "fr_me_025", "levels": [{ "front": "Fortunately / luckily", "back": "heureusement" }, { "front": "Luckily, nobody was hurt.", "back": "Heureusement, personne n'a été blessé." }] }
+  ]
+}

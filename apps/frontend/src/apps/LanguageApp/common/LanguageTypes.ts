@@ -24,6 +24,7 @@ export type Grammar = { // TODO: this is lazy
 export enum AvailableLanguages { // I HATE ENUMS but whatever, I guess they work
     arabic = "arabic",
     chinese = "chinese",
+    french = "french",
     japanese = "japanese",
     spanish = "spanish"
 }

@@ -72,6 +72,11 @@ const SRSStoryReader = () => {
                 ?? voices.find(v => v.lang.startsWith("zh-"))
                 ?? null;
         }
+        if (language === "french") {
+            return voices.find(v => v.name.toLowerCase() === "thomas")
+                ?? voices.find(v => v.lang.startsWith("fr-"))
+                ?? null;
+        }
         if (language === "arabic") {
             return voices.find(v => v.lang.toLowerCase() === "ar-sa")
                 ?? voices.find(v => v.lang.toLowerCase().startsWith("ar"))

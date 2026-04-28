@@ -105,6 +105,10 @@ const SRSReview = () => {
             return voices.find(v => v.name.toLowerCase() === "kyoko")
                 ?? voices.find(v => v.lang.startsWith("ja-"));
         }
+        if (lang === "french") {
+            return voices.find(v => v.name.toLowerCase() === "thomas")
+                ?? voices.find(v => v.lang.startsWith("fr-"));
+        }
         if (lang === "arabic") {
             return voices.find(v => v.lang.toLowerCase() === "ar-sa")
                 ?? voices.find(v => v.lang.toLowerCase().startsWith("ar"));

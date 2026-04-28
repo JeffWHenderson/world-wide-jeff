@@ -40,6 +40,17 @@ const useLanguage = (selectedLanguage: string) => {
             return voice.name.toLocaleLowerCase() == "kyoko"
         });
     }
+    if (selectedLanguage == "french") {
+        let found = voices.find((voice) => {
+            return voice.name.toLowerCase() == "thomas"
+        });
+        if (!found) {
+            found = voices.find((voice) => {
+                return voice.lang.startsWith("fr-")
+            })
+        }
+        selectedVoice = found
+    }
     if (selectedLanguage == "arabic") {
         let found = voices.find((voice) => {
             return voice.lang.toLowerCase() == "ar-sa"
