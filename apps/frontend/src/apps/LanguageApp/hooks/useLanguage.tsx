@@ -41,9 +41,15 @@ const useLanguage = (selectedLanguage: string) => {
         });
     }
     if (selectedLanguage == "arabic") {
-        selectedVoice = voices.find((voice) => {
+        let found = voices.find((voice) => {
             return voice.lang.toLowerCase() == "ar-sa"
         });
+        if (!found) {
+            found = voices.find((voice) => {
+                return voice.lang.toLowerCase().startsWith("ar")
+            });
+        }
+        selectedVoice = found
     }
     if (selectedLanguage == "english") {
         selectedVoice = voices.find(i => i.name.toLowerCase() == "samantha")

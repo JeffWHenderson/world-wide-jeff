@@ -105,6 +105,10 @@ const SRSReview = () => {
             return voices.find(v => v.name.toLowerCase() === "kyoko")
                 ?? voices.find(v => v.lang.startsWith("ja-"));
         }
+        if (lang === "arabic") {
+            return voices.find(v => v.lang.toLowerCase() === "ar-sa")
+                ?? voices.find(v => v.lang.toLowerCase().startsWith("ar"));
+        }
     };
 
     // Returns the utterance so callers can attach onend
@@ -297,7 +301,7 @@ const SRSReview = () => {
         return (
             <div className="srs-container">
                 <div className="srs-header">
-                    <button className="srs-back-link" onClick={() => navigate(`/language-app/${language}/srs`)}>
+                    <button className="srs-back-link" onClick={() => navigate(`/language-app/${language}`)}>
                         ← Decks
                     </button>
                     <span className="srs-deck-name">{deck.name}</span>
@@ -375,7 +379,7 @@ const SRSReview = () => {
                     <p>You reviewed {reviewed} card{reviewed !== 1 ? "s" : ""}.</p>
                     <p>Come back tomorrow to review cards that are due.</p>
                     <div className="srs-done-actions">
-                        <button className="srs-btn-primary" onClick={() => navigate(`/language-app/${language}/srs`)}>
+                        <button className="srs-btn-primary" onClick={() => navigate(`/language-app/${language}`)}>
                             Back to Decks
                         </button>
                     </div>
@@ -390,7 +394,7 @@ const SRSReview = () => {
     return (
         <div className="srs-container">
             <div className="srs-header">
-                <button className="srs-back-link" onClick={() => navigate(`/language-app/${language}/srs`)}>
+                <button className="srs-back-link" onClick={() => navigate(`/language-app/${language}`)}>
                     ← Decks
                 </button>
                 <span className="srs-deck-name">{deck.name}</span>

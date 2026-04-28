@@ -21,6 +21,9 @@ const LanguageAppHome = () => {
                 <button className="lang-course-btn" onClick={() => navigate('japanese')}>
                     Japanese Course →
                 </button>
+                <button className="lang-course-btn" onClick={() => navigate('arabic')}>
+                    Arabic Course →
+                </button>
             </div>
 
             <div className="lang-home-content">
