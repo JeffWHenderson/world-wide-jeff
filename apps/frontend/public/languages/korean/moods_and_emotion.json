@@ -1,0 +1,28 @@
+{
+  "id": "moods_and_emotion",
+  "name": "Moods & Emotions",
+  "language": "korean",
+  "stories": ["a_bad_day", "good_news"],
+  "cards": [
+    { "id": "ko_me_001", "levels": [{ "front": "Happy", "back": "행복하다 / 기쁘다", "romanized": "haengbokhada / gippeuda" }, { "front": "I'm so happy to see you.", "back": "만나서 너무 반가워요.", "romanized": "Mannaseo neomu ban-gawoyo." }] },
+    { "id": "ko_me_002", "levels": [{ "front": "Sad", "back": "슬프다", "romanized": "seulpeuda" }, { "front": "I'm a little sad.", "back": "조금 슬퍼요.", "romanized": "Jogeum seulpeoyo." }] },
+    { "id": "ko_me_003", "levels": [{ "front": "Tired", "back": "피곤하다", "romanized": "pigonhada" }, { "front": "I'm so tired.", "back": "너무 피곤해요.", "romanized": "Neomu pigonhaeyo." }] },
+    { "id": "ko_me_004", "levels": [{ "front": "Stressed", "back": "스트레스 받다", "romanized": "seuteuleseu batda" }, { "front": "I'm stressed about work.", "back": "일 때문에 스트레스 받아요.", "romanized": "Il ttaemune seuteuleseu badayo." }] },
+    { "id": "ko_me_005", "levels": [{ "front": "Angry", "back": "화나다", "romanized": "hwanada" }, { "front": "Why are you angry?", "back": "왜 화났어요?", "romanized": "Wae hwanasseoyo?" }] },
+    { "id": "ko_me_006", "levels": [{ "front": "Scared / afraid", "back": "무섭다", "romanized": "museopda" }, { "front": "I'm scared.", "back": "무서워요.", "romanized": "Museowoyo." }] },
+    { "id": "ko_me_007", "levels": [{ "front": "Excited", "back": "설레다 / 흥분되다", "romanized": "seolleda / heungbundoeda", "grammarNote": "설레다 (seolleda) describes that fluttery, anticipatory excitement — butterflies in your stomach before something good. It's used for first dates, trips, waiting for a performance. 흥분되다 is more general excitement or being worked up." }, { "front": "I'm so excited about the trip!", "back": "여행이 너무 설레요!", "romanized": "Yeohaengi neomu solleyo!" }] },
+    { "id": "ko_me_008", "levels": [{ "front": "Bored", "back": "심심하다", "romanized": "simsimhada" }, { "front": "I'm bored. Let's do something.", "back": "심심해요. 뭔가 해요.", "romanized": "Simsimhaeyo. Mwonga haeyo." }] },
+    { "id": "ko_me_009", "levels": [{ "front": "Nervous", "back": "긴장되다", "romanized": "ginjangoeda" }, { "front": "I'm nervous before the presentation.", "back": "발표 전에 긴장돼요.", "romanized": "Balpyo jeone ginjanggwaeyo." }] },
+    { "id": "ko_me_010", "levels": [{ "front": "Surprised", "back": "놀라다", "romanized": "nollada" }, { "front": "I was really surprised.", "back": "정말 놀랐어요.", "romanized": "Jeongmal nollasseoyo." }] },
+    { "id": "ko_me_011", "levels": [{ "front": "Proud", "back": "자랑스럽다", "romanized": "jarangseureopda" }, { "front": "I'm proud of you.", "back": "정말 자랑스러워요.", "romanized": "Jeongmal jarangseurowayo." }] },
+    { "id": "ko_me_012", "levels": [{ "front": "Embarrassed", "back": "창피하다 / 부끄럽다", "romanized": "changpihada / bukkeureupda" }, { "front": "That was embarrassing.", "back": "창피했어요.", "romanized": "Changpihaesseoyo." }] },
+    { "id": "ko_me_013", "levels": [{ "front": "Worried", "back": "걱정되다", "romanized": "geokjeongdoeda" }, { "front": "I'm worried about you.", "back": "걱정돼요.", "romanized": "Geokjeongdwaeyo." }] },
+    { "id": "ko_me_014", "levels": [{ "front": "Relieved", "back": "다행이다", "romanized": "dahaengida" }, { "front": "I'm so relieved.", "back": "정말 다행이에요.", "romanized": "Jeongmal dahaengieyo." }] },
+    { "id": "ko_me_015", "levels": [{ "front": "To feel", "back": "느끼다", "romanized": "neukkida" }, { "front": "How do you feel today?", "back": "오늘 기분이 어때요?", "romanized": "Oneul gibuni eottaeyo?" }] },
+    { "id": "ko_me_016", "levels": [{ "front": "To cry", "back": "울다", "romanized": "ulda" }, { "front": "Why are you crying?", "back": "왜 울어요?", "romanized": "Wae ureoyo?" }] },
+    { "id": "ko_me_017", "levels": [{ "front": "To laugh", "back": "웃다", "romanized": "utda" }, { "front": "That made me laugh.", "back": "너무 웃겼어요.", "romanized": "Neomu utgyeosseoyo." }] },
+    { "id": "ko_me_018", "levels": [{ "front": "To miss (someone)", "back": "보고 싶다", "romanized": "bogo sipda", "grammarNote": "Korean expresses 'missing someone' as 보고 싶다 (bogo sipda) — literally 'want to see'. 보고 싶어요 (I miss you). 보고 싶었어요 (I missed you). This is used very naturally and warmly in Korean." }, { "front": "I miss you.", "back": "보고 싶어요.", "romanized": "Bogo sipeoyo." }] },
+    { "id": "ko_me_019", "levels": [{ "front": "Mood / feeling", "back": "기분", "romanized": "gibun" }, { "front": "I'm in a good mood today.", "back": "오늘 기분이 좋아요.", "romanized": "Oneul gibuni joayo." }] },
+    { "id": "ko_me_020", "levels": [{ "front": "Are you okay?", "back": "괜찮아요?", "romanized": "Gwaenchanayo?" }, { "front": "I'm okay, don't worry.", "back": "괜찮아요, 걱정 마세요.", "romanized": "Gwaenchanayo, geokjeong maseyo." }] }
+  ]
+}

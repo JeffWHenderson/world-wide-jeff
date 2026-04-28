@@ -20,6 +20,9 @@ function getVoiceForLanguage(voices: SpeechSynthesisVoice[], lang: string): Spee
         case "arabic":
             return voices.find(v => v.lang.toLowerCase() === "ar-sa")
                 ?? voices.find(v => v.lang.toLowerCase().startsWith("ar"));
+        case "korean":
+            return voices.find(v => v.name.toLowerCase().startsWith("google"))
+                ?? voices.find(v => v.name.toLowerCase() === "yuna");
         default:
             return voices.find(v => v.lang.startsWith("en-"));
     }

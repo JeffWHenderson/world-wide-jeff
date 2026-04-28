@@ -1,0 +1,33 @@
+{
+  "id": "common_places",
+  "name": "Common Places",
+  "language": "korean",
+  "stories": ["a_day_in_the_city", "at_the_hotel"],
+  "cards": [
+    { "id": "ko_cp_001", "levels": [{ "front": "Station / subway", "back": "역 / 지하철", "romanized": "yeok / jihacheol" }, { "front": "Where is the nearest subway station?", "back": "가장 가까운 지하철역이 어디예요?", "romanized": "Gajang gakkaun jihacheol-yeogi eodiyeyo?" }] },
+    { "id": "ko_cp_002", "levels": [{ "front": "Bus stop", "back": "버스 정류장", "romanized": "beoseu jeongnyujang" }, { "front": "Is there a bus stop nearby?", "back": "근처에 버스 정류장이 있어요?", "romanized": "Geuncheoe beoseu jeongnyujangi isseoyo?" }] },
+    { "id": "ko_cp_003", "levels": [{ "front": "Taxi", "back": "택시", "romanized": "taeksi" }, { "front": "Please call a taxi for me.", "back": "택시 불러 주세요.", "romanized": "Taeksi bulleo juseyo." }] },
+    { "id": "ko_cp_004", "levels": [{ "front": "Airport", "back": "공항", "romanized": "gonghang" }, { "front": "How do I get to Incheon Airport?", "back": "인천공항에 어떻게 가요?", "romanized": "Incheon gonghange eotteoke gayo?" }] },
+    { "id": "ko_cp_005", "levels": [{ "front": "Hospital", "back": "병원", "romanized": "byeongwon" }, { "front": "I need to go to the hospital.", "back": "병원에 가야 해요.", "romanized": "Byeongwone gaya haeyo." }] },
+    { "id": "ko_cp_006", "levels": [{ "front": "Pharmacy", "back": "약국", "romanized": "yakguk" }, { "front": "Is there a pharmacy nearby?", "back": "근처에 약국이 있어요?", "romanized": "Geuncheoe yakgugi isseoyo?" }] },
+    { "id": "ko_cp_007", "levels": [{ "front": "Convenience store", "back": "편의점", "romanized": "pyeonuijeom", "grammarNote": "편의점 (convenience stores like CU, GS25, 7-Eleven, Emart24) are everywhere in Korea — open 24/7 and used for meals, drinks, printing, ATMs, parcel pickup, and more. They're central to daily Korean life." }, { "front": "There's a convenience store on every corner.", "back": "모퉁이마다 편의점이 있어요.", "romanized": "Motungimada pyeonuijeomi isseoyo." }] },
+    { "id": "ko_cp_008", "levels": [{ "front": "Bank / ATM", "back": "은행 / ATM", "romanized": "eunhaeng / ATM" }, { "front": "Where is the nearest ATM?", "back": "가장 가까운 ATM이 어디예요?", "romanized": "Gajang gakkaun ATM-i eodiyeyo?" }] },
+    { "id": "ko_cp_009", "levels": [{ "front": "Restaurant", "back": "식당 / 음식점", "romanized": "sikdang / eumsikjeom" }, { "front": "Do you know a good restaurant?", "back": "좋은 식당 알아요?", "romanized": "Joeun sikdang arayo?" }] },
+    { "id": "ko_cp_010", "levels": [{ "front": "Café", "back": "카페", "romanized": "kape" }, { "front": "Let's go to a café.", "back": "카페에 가요.", "romanized": "Kape-e gayo." }] },
+    { "id": "ko_cp_011", "levels": [{ "front": "Hotel", "back": "호텔", "romanized": "hotel" }, { "front": "I have a hotel reservation.", "back": "호텔 예약이 있어요.", "romanized": "Hotel yeyagi isseoyo." }] },
+    { "id": "ko_cp_012", "levels": [{ "front": "Room", "back": "방", "romanized": "bang" }, { "front": "I'd like a single room.", "back": "1인실 주세요.", "romanized": "Il insil juseyo." }] },
+    { "id": "ko_cp_013", "levels": [{ "front": "Museum", "back": "박물관", "romanized": "bakmulgwan" }, { "front": "What time does the museum open?", "back": "박물관이 몇 시에 열어요?", "romanized": "Bakmulgwani myeot sie yeoreoyo?" }] },
+    { "id": "ko_cp_014", "levels": [{ "front": "Park", "back": "공원", "romanized": "gongwon" }, { "front": "Let's go for a walk in the park.", "back": "공원에서 산책해요.", "romanized": "Gongwoneseo sanchaekhaeyo." }] },
+    { "id": "ko_cp_015", "levels": [{ "front": "Market", "back": "시장", "romanized": "sijang" }, { "front": "Gwangjang Market is famous for food.", "back": "광장시장은 음식으로 유명해요.", "romanized": "Gwangjang sijang-eun eumsik-euro yumyeonghaeyo." }] },
+    { "id": "ko_cp_016", "levels": [{ "front": "Department store", "back": "백화점", "romanized": "baekwajeom" }, { "front": "The department store is in Myeongdong.", "back": "백화점이 명동에 있어요.", "romanized": "Baekwajeomi Myeongdong-e isseoyo." }] },
+    { "id": "ko_cp_017", "levels": [{ "front": "Right", "back": "오른쪽", "romanized": "oreunjjok" }, { "front": "Turn right at the corner.", "back": "모퉁이에서 오른쪽으로 가세요.", "romanized": "Motungieseo oreunjjogeuro gaseyo." }] },
+    { "id": "ko_cp_018", "levels": [{ "front": "Left", "back": "왼쪽", "romanized": "oenjjok" }, { "front": "The exit is on the left.", "back": "출구가 왼쪽에 있어요.", "romanized": "Chulguga oenjjoge isseoyo." }] },
+    { "id": "ko_cp_019", "levels": [{ "front": "Straight ahead", "back": "직진 / 앞으로", "romanized": "jikjin / apeuro" }, { "front": "Go straight for two blocks.", "back": "두 블록 직진하세요.", "romanized": "Du beullok jikjinhaseyo." }] },
+    { "id": "ko_cp_020", "levels": [{ "front": "How much? (cost)", "back": "얼마예요?", "romanized": "Eolmayeyo?" }, { "front": "How much is this?", "back": "이거 얼마예요?", "romanized": "Igeo eolmayeyo?" }] },
+    { "id": "ko_cp_021", "levels": [{ "front": "Cheap", "back": "싸다", "romanized": "ssada" }, { "front": "This is very cheap.", "back": "이거 정말 싸요.", "romanized": "Igeo jeongmal ssayo." }] },
+    { "id": "ko_cp_022", "levels": [{ "front": "Expensive", "back": "비싸다", "romanized": "bissada" }, { "front": "That's too expensive.", "back": "너무 비싸요.", "romanized": "Neomu bissayo." }] },
+    { "id": "ko_cp_023", "levels": [{ "front": "Open", "back": "열다 / 영업 중", "romanized": "yeolda / yeongeop jung" }, { "front": "Is it open?", "back": "영업 중이에요?", "romanized": "Yeongeop jung-ieyo?" }] },
+    { "id": "ko_cp_024", "levels": [{ "front": "Closed", "back": "닫다 / 영업 종료", "romanized": "datda / yeongeop jongnyo" }, { "front": "It's closed today.", "back": "오늘은 닫았어요.", "romanized": "Oneureun dad-asseoyo." }] },
+    { "id": "ko_cp_025", "levels": [{ "front": "Excuse me (asking directions)", "back": "저기요", "romanized": "jeogiyo" }, { "front": "Excuse me, where is Gyeongbokgung?", "back": "저기요, 경복궁이 어디예요?", "romanized": "Jeogiyo, Gyeongbokgungi eodiyeyo?" }] }
+  ]
+}
