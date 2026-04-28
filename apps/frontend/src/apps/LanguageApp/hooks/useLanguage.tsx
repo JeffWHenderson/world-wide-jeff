@@ -9,7 +9,7 @@ function getVoiceForLanguage(voices: SpeechSynthesisVoice[], lang: string): Spee
             return voices.find(v => v.name.toLowerCase() === "paulina")
                 ?? voices.find(v => v.lang.startsWith("es-"));
         case "french":
-            return voices.find(v => v.name.toLowerCase() === "amélie")
+            return voices.find(v => v.name.toLowerCase() === "thomas")
                 ?? voices.find(v => v.lang.startsWith("fr-"));
         case "chinese":
             return voices.find(v => ["ting-ting", "tingting"].includes(v.name.toLowerCase()))
