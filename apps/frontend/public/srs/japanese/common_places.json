@@ -2,7 +2,7 @@
   "id": "common_places",
   "name": "Common Places",
   "language": "japanese",
-  "stories": ["a_day_out", "at_the_hotel", "getting_around"],
+  "stories": ["a_day_out", "at_the_hotel", "getting_around", "a_day_in_the_city"],
   "pictureLessons": ["commonPlaces"],
   "cards": [
     { "id": "ja_cp_001", "levels": [{ "front": "house / home", "back": "家", "romanized": "ie / uchi" }, { "front": "I'm going home", "back": "家に帰ります", "romanized": "ie ni kaerimasu" }] },
