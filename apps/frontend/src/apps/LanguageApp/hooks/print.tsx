@@ -1,7 +1,7 @@
 import { renderToString } from 'react-dom/server';
-import { WordListItem } from '../pages/wordlist/WordList';
 
-export const buildPrintableFlashcards = (wordList: WordListItem[]) => {
+// TODO: this is kind of dead for now... just leaving here cause I want to use it for my own printing in the future
+export const buildPrintableFlashcards = (wordList: any[]) => {
     const printableFlashCards = () => {
         return <html>
             <head>
@@ -10,7 +10,7 @@ export const buildPrintableFlashcards = (wordList: WordListItem[]) => {
             <body style={{ margin: '0' }}>
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start' }}>
                     {
-                        wordList.map((phrase: WordListItem) => (
+                        wordList.map((phrase: any) => (
                             <div style={{ display: 'flex', flexDirection: 'column', breakInside: 'avoid', pageBreakInside: 'avoid', width: '230px', height: '110px', border: '1px dotted grey' }}>
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', width: '100%', height: '50%', borderBottom: '1px solid grey' }}>
                                     {phrase.romanized ? <div>{phrase.romanized}</div> : null}
