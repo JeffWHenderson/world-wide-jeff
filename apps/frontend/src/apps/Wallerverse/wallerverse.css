@@ -1,0 +1,403 @@
+/* ── Login ────────────────────────────────────── */
+.wv-login-wrap {
+    max-width: 380px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+.wv-login-card {
+    background: var(--card-color);
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+.wv-login-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+    color: #646cff;
+}
+
+.wv-login-sub {
+    color: #888;
+    font-size: 0.85rem;
+    margin: 0 0 28px;
+}
+
+.wv-field {
+    margin-bottom: 16px;
+}
+
+.wv-field label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.wv-field input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: inherit;
+}
+
+.wv-field input:focus {
+    outline: none;
+    border-color: #646cff;
+}
+
+.wv-login-btn {
+    width: 100%;
+    background: #646cff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.wv-error {
+    color: #e53e3e;
+    font-size: 0.82rem;
+    margin: 8px 0 0;
+}
+
+/* ── Feed ─────────────────────────────────────── */
+.wv-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 0 80px;
+}
+
+.wv-header {
+    position: sticky;
+    top: 56px;
+    background: var(--background-color);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.wv-header-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.wv-composer {
+    background: var(--card-color);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.12);
+    padding: 16px 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.wv-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    color: white;
+}
+
+.wv-composer-inner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wv-composer-prefix {
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.wv-composer-input {
+    flex: 1;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: inherit;
+    min-width: 0;
+}
+
+.wv-composer-input:focus {
+    outline: none;
+    border-color: #646cff;
+}
+
+.wv-post-btn {
+    background: #646cff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 18px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.wv-post-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.wv-post {
+    display: flex;
+    gap: 12px;
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.wv-post:hover {
+    background: rgba(128, 128, 128, 0.05);
+}
+
+.wv-post-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.wv-post-name {
+    font-weight: 700;
+    font-size: 0.92rem;
+}
+
+.wv-post-text {
+    font-size: 0.92rem;
+    margin: 2px 0 4px;
+    line-height: 1.5;
+}
+
+.wv-post-muted {
+    opacity: 0.55;
+}
+
+.wv-post-time {
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+/* ── Profile ──────────────────────────────────── */
+.wv-profile-wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 24px 24px 80px;
+    min-height: calc(100vh - 56px);
+    box-sizing: border-box;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.wv-profile-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.wv-profile-header-band {
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.wv-profile-avatar {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+}
+
+.wv-profile-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0 0 2px;
+    line-height: 1.2;
+}
+
+.wv-profile-handle {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin: 0 0 8px;
+}
+
+.wv-profile-bio {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+.wv-section-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.wv-top8-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.wv-friend-tile {
+    border-radius: 10px;
+    padding: 10px 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    border: none;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+.wv-friend-tile:hover { opacity: 0.75; }
+
+.wv-friend-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.wv-friend-name {
+    font-size: 0.73rem;
+    font-weight: 600;
+    word-break: break-word;
+    line-height: 1.2;
+}
+
+.wv-profile-post {
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.wv-profile-post-time {
+    font-size: 0.73rem;
+    opacity: 0.5;
+    margin-top: 4px;
+}
+
+/* ── Edit panel ───────────────────────────────── */
+.wv-edit-panel {
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.wv-edit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.wv-edit-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wv-edit-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.wv-edit-input {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: 0.85rem;
+    background: rgba(0, 0, 0, 0.15);
+    color: inherit;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wv-edit-input:focus { outline: none; border-color: #646cff; }
+
+.wv-edit-color {
+    width: 44px;
+    height: 32px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 2px;
+    background: none;
+}
+
+.wv-friend-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 20px;
+    padding: 3px 10px 3px 8px;
+    font-size: 0.78rem;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.wv-friend-tag-remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1;
+    opacity: 0.6;
+}
+
+.wv-friend-tag-remove:hover { opacity: 1; }

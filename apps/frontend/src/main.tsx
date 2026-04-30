@@ -4,6 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from './apps/common/ThemeContext';
 import './index.css'
 
+const WallerverseLayout = lazy(() => import('./apps/Wallerverse/WallerverseLayout'));
+const WallerverseHome = lazy(() => import('./apps/Wallerverse/WallerverseHome'));
+const WallerverseProfile = lazy(() => import('./apps/Wallerverse/WallerverseProfile'));
+const WallerverseLogin = lazy(() => import('./apps/Wallerverse/WallerverseLogin'));
 const Pickleball = lazy(() => import('./apps/Pickleball/Pickleball'));
 const Contact = lazy(() => import("./apps/common/Contact/Contact"));
 const Events = lazy(() => import("./apps/Events/Events"));
@@ -30,7 +34,11 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="/pickleball" element={<Pickleball />} />
-              {/* <Route path="/wallerverse" element={<WallerverseHome />} /> */}
+              <Route path="/wallerverse" element={<WallerverseLayout />}>
+                <Route index element={<WallerverseHome />} />
+                <Route path="login" element={<WallerverseLogin />} />
+                <Route path="profile/:username" element={<WallerverseProfile />} />
+              </Route>
               <Route path="/contact" element={<Contact />} />
               <Route path="/events" element={<Events />} />
               <Route path="/events/:eventId" element={<EventPage />} />

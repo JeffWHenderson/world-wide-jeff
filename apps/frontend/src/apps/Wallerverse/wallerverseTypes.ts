@@ -1,7 +1,23 @@
-export type HomePageUserInfo = {
+export type Post = {
+    id: string;
+    username: string;
     displayName: string;
-}
+    completion: string;
+    timestamp: number;
+};
 
-export const userInfoMock: HomePageUserInfo = {
-    displayName: "Waller Goble"
-}
+export type CustomStyle = {
+    backgroundColor?: string;
+    textColor?: string;
+    accentColor?: string;
+    fontFamily?: string;
+    headerBg?: string;
+};
+
+export type UserProfile = {
+    username: string;
+    displayName: string;
+    bio: string;
+    topFriends: string[];
+    customStyle: CustomStyle;
+};

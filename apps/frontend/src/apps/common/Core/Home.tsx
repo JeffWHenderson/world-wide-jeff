@@ -26,6 +26,12 @@ const sections = [
         title: "Contact",
         desc: "Get in touch.",
     },
+    {
+        to: "/wallerverse",
+        icon: "💃",
+        title: "Wallerverse",
+        desc: "waller world wide",
+    },
 ];
 
 const Home = () => {
