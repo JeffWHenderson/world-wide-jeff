@@ -72,7 +72,6 @@
     { "id": "ja_fd_065", "levels": [{ "front": "drink", "back": "飲む", "romanized": "nomu" }, { "front": "What do you want to drink?", "back": "何を飲みたいですか？", "romanized": "nani wo nomitai desu ka?" }] },
     { "id": "ja_fd_066", "levels": [{ "front": "cook", "back": "料理する", "romanized": "ryōri suru" }, { "front": "I cook dinner every day", "back": "毎日夕ごはんを料理します", "romanized": "mainichi yūgohan wo ryōri shimasu" }] },
     { "id": "ja_fd_067", "levels": [{ "front": "bake / grill", "back": "焼く", "romanized": "yaku" }, { "front": "I baked a cake", "back": "ケーキを焼きました", "romanized": "kēki wo yakimashita" }] },
-    { "id": "ja_fd_068", "levels": [{ "front": "boil", "back": "茹でる", "romanized": "yuderu" }, { "front": "Boil the water first", "back": "まずお湯を沸かしてください", "romanized": "mazu oyu wo wakashite kudasai" }] },
     { "id": "ja_fd_069", "levels": [{ "front": "fry", "back": "炒める", "romanized": "itameru" }, { "front": "Fry the vegetables", "back": "野菜を炒めてください", "romanized": "yasai wo itamete kudasai" }] },
     { "id": "ja_fd_070", "levels": [{ "front": "roast", "back": "ローストする", "romanized": "rōsuto suru" }, { "front": "Roast the chicken in the oven", "back": "鶏肉をオーブンでローストします", "romanized": "toriniku wo ōbun de rōsuto shimasu" }] },
     { "id": "ja_fd_072", "levels": [{ "front": "chop", "back": "切る", "romanized": "kiru" }, { "front": "Please chop the vegetables finely", "back": "野菜を細かく切ってください", "romanized": "yasai wo komakaku kitte kudasai" }] },
