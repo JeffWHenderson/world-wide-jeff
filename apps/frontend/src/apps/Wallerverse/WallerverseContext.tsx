@@ -1,6 +1,8 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { Post, UserProfile } from "./wallerverseTypes";
 
+const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+
 type WallerverseContextType = {
     currentUser: string | null;
     login: (username: string, password: string) => boolean;
@@ -57,17 +59,6 @@ const DEFAULT_PROFILES: Record<string, UserProfile> = {
     sam: { username: "sam", displayName: "Sam", bio: "", topFriends: [], customStyle: {} },
 };
 
-const now = Date.now();
-const SEED_POSTS: Post[] = [
-    { id: "s1", username: "waller", displayName: "Waller Goble", completion: "ready for the weekend", timestamp: now - 1000 * 60 * 60 * 2 },
-    { id: "s2", username: "tom", displayName: "Tom", completion: "your first friend on Wallerverse", timestamp: now - 1000 * 60 * 60 * 5 },
-    { id: "s3", username: "jeff", displayName: "Jeff Henderson", completion: "building something new", timestamp: now - 1000 * 60 * 60 * 8 },
-    { id: "s4", username: "audry", displayName: "Audry", completion: "obsessed with iced coffee rn", timestamp: now - 1000 * 60 * 60 * 12 },
-    { id: "s5", username: "waller", displayName: "Waller Goble", completion: "not going to apologize for it", timestamp: now - 1000 * 60 * 60 * 24 },
-    { id: "s6", username: "jeff", displayName: "Jeff Henderson", completion: "learning pickleball and it's going poorly", timestamp: now - 1000 * 60 * 60 * 48 },
-    { id: "s7", username: "ricky", displayName: "Ricky", completion: "just vibing honestly", timestamp: now - 1000 * 60 * 60 * 72 },
-];
-
 function load<T>(key: string, fallback: T): T {
     try {
         const val = localStorage.getItem(key);
@@ -79,12 +70,17 @@ function load<T>(key: string, fallback: T): T {
 
 export const WallerverseProvider = ({ children }: { children: ReactNode }) => {
     const [currentUser, setCurrentUser] = useState<string | null>(() => load("wv_user", null));
-    const [posts, setPosts] = useState<Post[]>(() => load("wv_posts", SEED_POSTS));
+    const [posts, setPosts] = useState<Post[]>([]);
     const [profiles, setProfiles] = useState<Record<string, UserProfile>>(() => load("wv_profiles", DEFAULT_PROFILES));
 
     useEffect(() => { localStorage.setItem("wv_user", JSON.stringify(currentUser)); }, [currentUser]);
-    useEffect(() => { localStorage.setItem("wv_posts", JSON.stringify(posts)); }, [posts]);
     useEffect(() => { localStorage.setItem("wv_profiles", JSON.stringify(profiles)); }, [profiles]);
+
+    useEffect(() => {
+        fetch(`${API_URL}/api/posts`)
+            .then((res) => res.json())
+            .then((data) => setPosts(data));
+    }, []);
 
     const login = (username: string, password: string): boolean => {
         if (CREDENTIALS[username] === password) {
@@ -99,13 +95,19 @@ export const WallerverseProvider = ({ children }: { children: ReactNode }) => {
     const addPost = (completion: string) => {
         if (!currentUser) return;
         const profile = profiles[currentUser];
-        setPosts((prev) => [{
-            id: `p_${Date.now()}`,
-            username: currentUser,
-            displayName: profile?.displayName ?? currentUser,
-            completion: completion.trim(),
-            timestamp: Date.now(),
-        }, ...prev]);
+        fetch(`${API_URL}/api/posts`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                post: {
+                    username: currentUser,
+                    display_name: profile?.displayName ?? currentUser,
+                    completion: completion.trim(),
+                },
+            }),
+        })
+            .then((res) => res.json())
+            .then((newPost) => setPosts((prev) => [newPost, ...prev]));
     };
 
     const updateProfile = (profile: UserProfile) => {
