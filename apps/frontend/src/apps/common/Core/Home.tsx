@@ -21,16 +21,16 @@ const sections = [
         desc: "Learn Spanish and Chinese with flashcards and spaced repetition.",
     },
     {
-        to: "/contact",
-        icon: "✉️",
-        title: "Contact",
-        desc: "Get in touch.",
-    },
-    {
         to: "/wallerverse",
         icon: "💃",
         title: "Wallerverse",
         desc: "waller world wide",
+    },
+    {
+        to: "/contact",
+        icon: "✉️",
+        title: "Contact",
+        desc: "Get in touch.",
     },
 ];
 
