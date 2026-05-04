@@ -229,9 +229,30 @@
 .srs-levelup-hint {
     position: absolute;
     bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 0.72rem;
     color: #f39c12;
     font-style: italic;
+}
+
+.srs-upgrade-btn {
+    font-size: 0.72rem;
+    font-style: normal;
+    color: #f39c12;
+    background: none;
+    border: 1px solid #f39c12;
+    border-radius: 4px;
+    padding: 1px 7px;
+    cursor: pointer;
+    line-height: 1.4;
+    opacity: 0.85;
+}
+
+.srs-upgrade-btn:hover {
+    opacity: 1;
+    background: rgba(243, 156, 18, 0.1);
 }
 
 /* ── Grammar note ── */

@@ -245,6 +245,18 @@ const SRSReview = () => {
         }
     };
 
+    const upgradeNow = () => {
+        if (!deck || !currentCard || !language || !deckId) return;
+        const leveledState = levelUpState(currentCard.cardState);
+        const updated = updateCardState(deckState, currentCard.id, leveledState);
+        saveDeckState(language, deckId, updated);
+        setDeckState(updated);
+        setLevelUpCard({ ...currentCard, cardState: leveledState });
+        const next = [...session];
+        next.splice(currentIndex, 1);
+        setSession(next);
+    };
+
     const dismissLevelUp = () => {
         setLevelUpCard(null);
         setIsFlipped(false);
@@ -409,26 +421,31 @@ const SRSReview = () => {
                         )}
                         {hasNextLevel(currentCard) && (
                             <div className="srs-levelup-hint">
-                                {LEVEL_UP_REPS - currentCard.cardState.repetitions > 0
-                                    ? `${LEVEL_UP_REPS - currentCard.cardState.repetitions} good review${LEVEL_UP_REPS - currentCard.cardState.repetitions !== 1 ? "s" : ""} to unlock phrase`
-                                    : "Phrase unlocks on Good or Easy!"}
-                            </div>
-                        )}
-                        {level.grammarNote && (
-                            <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
-                                <button
-                                    className="srs-grammar-note-toggle"
-                                    onClick={() => setNoteOpen(o => !o)}
-                                >
-                                    Grammar note {noteOpen ? "▴" : "▾"}
+                                <span>
+                                    {LEVEL_UP_REPS - currentCard.cardState.repetitions > 0
+                                        ? `${LEVEL_UP_REPS - currentCard.cardState.repetitions} good review${LEVEL_UP_REPS - currentCard.cardState.repetitions !== 1 ? "s" : ""} to unlock phrase`
+                                        : "Phrase unlocks on Good or Easy!"}
+                                </span>
+                                <button className="srs-upgrade-btn" onClick={e => { e.stopPropagation(); upgradeNow(); }}>
+                                    Upgrade now
                                 </button>
-                                {noteOpen && (
-                                    <div className="srs-grammar-note-body">{level.grammarNote}</div>
-                                )}
                             </div>
                         )}
                     </div>
                 </div>
+            {isFlipped && level.grammarNote && (
+                <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
+                    <button
+                        className="srs-grammar-note-toggle"
+                        onClick={() => setNoteOpen(o => !o)}
+                    >
+                        Grammar note {noteOpen ? "▴" : "▾"}
+                    </button>
+                    {noteOpen && (
+                        <div className="srs-grammar-note-body">{level.grammarNote}</div>
+                    )}
+                </div>
+            )}
             </div>
 
             {isFlipped ? (
