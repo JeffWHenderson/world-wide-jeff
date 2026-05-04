@@ -15,7 +15,7 @@
     { "id": "es_ep_008", "levels": [{ "front": "You", "back": "tú", "grammarNote": "Spanish has two 'you': tú (informal, one person) and usted (formal). With friends and family use tú. With strangers, elders, or in formal settings use usted, which takes the same verb form as él/ella." }, { "front": "Do you speak Spanish?", "back": "¿Tú hablas español?" }] },
     { "id": "es_ep_009", "levels": [{ "front": "He", "back": "él" }, { "front": "He is my friend.", "back": "Él es mi amigo." }] },
     { "id": "es_ep_010", "levels": [{ "front": "She", "back": "ella" }, { "front": "She works here.", "back": "Ella trabaja aquí." }] },
-    { "id": "es_ep_011", "levels": [{ "front": "It", "back": "ello / lo", "grammarNote": "Spanish usually drops 'it' entirely — verb endings and context carry the meaning. 'Es bueno' (it is good), 'Está aquí' (it is here). ello/lo exist but are rarely used in speech." }] },
+    { "id": "es_ep_011", "levels": [{ "front": "It", "back": "ello / lo", "grammarNote": "Spanish usually drops 'it' entirely — verb endings and context carry the meaning. 'Es bueno' (it is good), 'Está aquí' (it is here). ello/lo exist but are rarely used in speech." }, { "front": "It's over there.", "back": "Está allá." }] },
     { "id": "es_ep_012", "levels": [{ "front": "We", "back": "nosotros" }, { "front": "We live here.", "back": "Nosotros vivimos aquí." }] },
     { "id": "es_ep_013", "levels": [{ "front": "They", "back": "ellos / ellas" }, { "front": "They eat together.", "back": "Ellos comen juntos." }] },
     { "id": "es_ep_014", "levels": [{ "front": "This", "back": "este / esta", "grammarNote": "este (masc.) / esta (fem.) for 'this'. Neutral form: esto for unknown or abstract things — '¿Qué es esto?' (What is this?)." }, { "front": "This book is good.", "back": "Este libro es bueno." }] },
@@ -75,8 +75,8 @@
     { "id": "es_ep_068", "levels": [{ "front": "A lot / much", "back": "mucho" }, { "front": "I have a lot of work.", "back": "Tengo mucho trabajo." }] },
     { "id": "es_ep_069", "levels": [{ "front": "A little", "back": "un poco" }, { "front": "A little water, please.", "back": "Un poco de agua, por favor." }] },
     { "id": "es_ep_070", "levels": [{ "front": "How do you say ___?", "back": "¿Cómo se dice ___?" }, { "front": "How do you say 'thank you' in Spanish?", "back": "¿Cómo se dice 'thank you' en español?" }] },
-    { "id": "es_ep_071", "levels": [{ "front": "Can you help me?", "back": "¿Puedes ayudarme?" }] },
-    { "id": "es_ep_072", "levels": [{ "front": "How much does it cost?", "back": "¿Cuánto cuesta?" }] },
+    { "id": "es_ep_071", "levels": [{ "front": "Can you help me?", "back": "¿Puedes ayudarme?" }, { "front": "Excuse me, can you help me find the station?", "back": "Perdón, ¿puedes ayudarme a encontrar la estación?" }] },
+    { "id": "es_ep_072", "levels": [{ "front": "How much does it cost?", "back": "¿Cuánto cuesta?" }, { "front": "How much does this shirt cost?", "back": "¿Cuánto cuesta esta camisa?" }] },
     { "id": "es_ep_073", "levels": [{ "front": "I'm sorry", "back": "lo siento", "grammarNote": "lo siento (I feel it) = I'm sorry. For minor bumps or getting attention, use perdón. lo siento / lo siento mucho is for genuine apologies." }, { "front": "I'm very sorry.", "back": "Lo siento mucho." }] },
     { "id": "es_ep_074", "levels": [{ "front": "No problem", "back": "no hay problema" }, { "front": "No problem, don't worry.", "back": "No hay problema, no te preocupes." }] }
   ]

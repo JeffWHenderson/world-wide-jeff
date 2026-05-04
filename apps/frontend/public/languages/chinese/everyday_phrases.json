@@ -75,8 +75,8 @@
     { "id": "zh_ep_068", "levels": [{ "front": "A lot / much", "back": "很多 / 多", "romanized": "hěn duō / duō" }, { "front": "I have a lot of work.", "back": "我有很多工作。", "romanized": "Wǒ yǒu hěn duō gōngzuò." }] },
     { "id": "zh_ep_069", "levels": [{ "front": "A little", "back": "一点 / 一些", "romanized": "yīdiǎn / yīxiē" }, { "front": "A little water, please.", "back": "请给我一点水。", "romanized": "Qǐng gěi wǒ yīdiǎn shuǐ." }] },
     { "id": "zh_ep_070", "levels": [{ "front": "How do you say ___?", "back": "___怎么说？", "romanized": "~ zěnme shuō?" }, { "front": "How do you say 'thank you' in Chinese?", "back": "'thank you'用中文怎么说？", "romanized": "'thank you' yòng zhōngwén zěnme shuō?" }] },
-    { "id": "zh_ep_071", "levels": [{ "front": "Can you help me?", "back": "你能帮我吗？", "romanized": "Nǐ néng bāng wǒ ma?" }] },
-    { "id": "zh_ep_072", "levels": [{ "front": "How much does it cost?", "back": "多少钱？", "romanized": "Duōshǎo qián?" }] },
+    { "id": "zh_ep_071", "levels": [{ "front": "Can you help me?", "back": "你能帮我吗？", "romanized": "Nǐ néng bāng wǒ ma?" }, { "front": "Can you help me carry this?", "back": "你能帮我拿这个吗？", "romanized": "Nǐ néng bāng wǒ ná zhège ma?" }] },
+    { "id": "zh_ep_072", "levels": [{ "front": "How much does it cost?", "back": "多少钱？", "romanized": "Duōshǎo qián?" }, { "front": "How much does this jacket cost?", "back": "这件夹克多少钱？", "romanized": "Zhè jiàn jiākè duōshǎo qián?" }] },
     { "id": "zh_ep_073", "levels": [{ "front": "I'm sorry", "back": "对不起 / 不好意思", "romanized": "duìbuqǐ / bù hǎo yìsi", "grammarNote": "对不起 (duìbuqǐ) = I'm sorry (genuine apology — lit. 'I can't face you'). 不好意思 (bù hǎo yìsi) = excuse me / I'm embarrassed — lighter, more social. 抱歉 (bàoqiàn) = formal apology." }, { "front": "I'm very sorry.", "back": "非常对不起。", "romanized": "Fēicháng duìbuqǐ." }] },
     { "id": "zh_ep_074", "levels": [{ "front": "No problem", "back": "没问题", "romanized": "méi wèntí" }, { "front": "No problem, don't worry.", "back": "没问题，别担心。", "romanized": "Méi wèntí, bié dānxīn." }] }
   ]
