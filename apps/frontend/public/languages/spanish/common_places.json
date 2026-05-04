@@ -14,7 +14,8 @@
             },
             {
                 "front": "I'm going home.",
-                "back": "Voy a casa."
+                "back": "Voy a casa.",
+                "literal": "[I] go to house."
             }
         ]
     },
@@ -27,7 +28,8 @@
             },
             {
                 "front": "I live in an apartment.",
-                "back": "Vivo en un apartamento."
+                "back": "Vivo en un apartamento.",
+                "literal": "[I] live in an apartment."
             }
         ]
     },
@@ -40,7 +42,8 @@
             },
             {
                 "front": "The children go to school.",
-                "back": "Los niños van a la escuela."
+                "back": "Los niños van a la escuela.",
+                "literal": "The children go to-the school."
             }
         ]
     },
@@ -53,7 +56,8 @@
             },
             {
                 "front": "She studies at the university.",
-                "back": "Ella estudia en la universidad."
+                "back": "Ella estudia en la universidad.",
+                "literal": "She studies in the university."
             }
         ]
     },
@@ -66,7 +70,8 @@
             },
             {
                 "front": "He works in an office.",
-                "back": "Él trabaja en una oficina."
+                "back": "Él trabaja en una oficina.",
+                "literal": "He works in an office."
             }
         ]
     },
@@ -80,7 +85,8 @@
             },
             {
                 "front": "I'm going to the hospital.",
-                "back": "Voy al hospital."
+                "back": "Voy al hospital.",
+                "literal": "[I] go to-the hospital."
             }
         ]
     },
@@ -93,7 +99,8 @@
             },
             {
                 "front": "I need to go to the supermarket.",
-                "back": "Necesito ir al supermercado."
+                "back": "Necesito ir al supermercado.",
+                "literal": "[I] need to-go to-the supermarket."
             }
         ]
     },
@@ -106,7 +113,8 @@
             },
             {
                 "front": "I'm coming from the bank.",
-                "back": "Vengo del banco."
+                "back": "Vengo del banco.",
+                "literal": "[I] come from-the bank."
             }
         ]
     },
@@ -119,7 +127,8 @@
             },
             {
                 "front": "I study in the library.",
-                "back": "Estudio en la biblioteca."
+                "back": "Estudio en la biblioteca.",
+                "literal": "[I] study in the library."
             }
         ]
     },
@@ -132,7 +141,8 @@
             },
             {
                 "front": "The restaurant is full.",
-                "back": "El restaurante está lleno."
+                "back": "El restaurante está lleno.",
+                "literal": "The restaurant is full."
             }
         ]
     },
@@ -145,7 +155,8 @@
             },
             {
                 "front": "Let's meet at the cafe.",
-                "back": "Nos encontramos en el café."
+                "back": "Nos encontramos en el café.",
+                "literal": "[We] ourselves meet in the café."
             }
         ]
     },
@@ -158,7 +169,8 @@
             },
             {
                 "front": "The hotel is downtown.",
-                "back": "El hotel está en el centro."
+                "back": "El hotel está en el centro.",
+                "literal": "The hotel is in the centre."
             }
         ]
     },
@@ -171,7 +183,8 @@
             },
             {
                 "front": "The airport is far from here.",
-                "back": "El aeropuerto está lejos de aquí."
+                "back": "El aeropuerto está lejos de aquí.",
+                "literal": "The airport is far from here."
             }
         ]
     },
@@ -184,7 +197,8 @@
             },
             {
                 "front": "The station is near the hotel.",
-                "back": "La estación está cerca del hotel."
+                "back": "La estación está cerca del hotel.",
+                "literal": "The station is near of-the hotel."
             }
         ]
     },
@@ -197,7 +211,8 @@
             },
             {
                 "front": "Wait at the bus stop.",
-                "back": "Espera en la parada de autobús."
+                "back": "Espera en la parada de autobús.",
+                "literal": "Wait [command] in the stop of bus."
             }
         ]
     },
@@ -210,7 +225,8 @@
             },
             {
                 "front": "The children play in the park.",
-                "back": "Los niños juegan en el parque."
+                "back": "Los niños juegan en el parque.",
+                "literal": "The children play in the park."
             }
         ]
     },
@@ -223,7 +239,8 @@
             },
             {
                 "front": "There's a fountain in the square.",
-                "back": "Hay una fuente en la plaza."
+                "back": "Hay una fuente en la plaza.",
+                "literal": "There-is a fountain in the square."
             }
         ]
     },
@@ -236,7 +253,8 @@
             },
             {
                 "front": "The restaurant is on this street.",
-                "back": "El restaurante está en esta calle."
+                "back": "El restaurante está en esta calle.",
+                "literal": "The restaurant is on this street."
             }
         ]
     },
@@ -249,7 +267,8 @@
             },
             {
                 "front": "Cross at the crosswalk.",
-                "back": "Cruza en el paso de peatones."
+                "back": "Cruza en el paso de peatones.",
+                "literal": "Cross [command] at the crossing of pedestrians."
             }
         ]
     },
@@ -262,7 +281,8 @@
             },
             {
                 "front": "Turn left at the intersection.",
-                "back": "Gira a la izquierda en el cruce."
+                "back": "Gira a la izquierda en el cruce.",
+                "literal": "Turn [command] to the left-side at the intersection."
             }
         ]
     },
@@ -275,7 +295,8 @@
             },
             {
                 "front": "We crossed the bridge.",
-                "back": "Cruzamos el puente."
+                "back": "Cruzamos el puente.",
+                "literal": "[We] crossed the bridge."
             }
         ]
     },
@@ -288,7 +309,8 @@
             },
             {
                 "front": "Turn right at the corner.",
-                "back": "Dobla a la derecha en la esquina."
+                "back": "Dobla a la derecha en la esquina.",
+                "literal": "Turn [command] to the right-side at the corner."
             }
         ]
     },
@@ -301,7 +323,8 @@
             },
             {
                 "front": "The museum is downtown.",
-                "back": "El museo está en el centro."
+                "back": "El museo está en el centro.",
+                "literal": "The museum is in the centre."
             }
         ]
     },
@@ -314,7 +337,8 @@
             },
             {
                 "front": "I live in a quiet neighbourhood.",
-                "back": "Vivo en un barrio tranquilo."
+                "back": "Vivo en un barrio tranquilo.",
+                "literal": "[I] live in a neighbourhood quiet."
             }
         ]
     },
@@ -327,7 +351,8 @@
             },
             {
                 "front": "The beach is beautiful.",
-                "back": "La playa es hermosa."
+                "back": "La playa es hermosa.",
+                "literal": "The beach is beautiful."
             }
         ]
     },
@@ -340,7 +365,8 @@
             },
             {
                 "front": "The mountain is very high.",
-                "back": "La montaña es muy alta."
+                "back": "La montaña es muy alta.",
+                "literal": "The mountain is very tall."
             }
         ]
     },
@@ -353,7 +379,8 @@
             },
             {
                 "front": "I want to visit the museum.",
-                "back": "Quiero visitar el museo."
+                "back": "Quiero visitar el museo.",
+                "literal": "[I] want to-visit the museum."
             }
         ]
     },
@@ -366,7 +393,8 @@
             },
             {
                 "front": "We're going to the cinema tonight.",
-                "back": "Vamos al cine esta noche."
+                "back": "Vamos al cine esta noche.",
+                "literal": "[We] go to-the cinema this night."
             }
         ]
     },
@@ -379,7 +407,8 @@
             },
             {
                 "front": "Do you have a map?",
-                "back": "¿Tienes un mapa?"
+                "back": "¿Tienes un mapa?",
+                "literal": "[You] have a map?"
             }
         ]
     },
@@ -392,7 +421,8 @@
             },
             {
                 "front": "Which direction is the station?",
-                "back": "¿En qué dirección está la estación?"
+                "back": "¿En qué dirección está la estación?",
+                "literal": "In what direction is the station?"
             }
         ]
     },
@@ -405,7 +435,8 @@
             },
             {
                 "front": "What's the distance to the hotel?",
-                "back": "¿Cuál es la distancia al hotel?"
+                "back": "¿Cuál es la distancia al hotel?",
+                "literal": "Which is the distance to-the hotel?"
             }
         ]
     },
@@ -418,7 +449,8 @@
             },
             {
                 "front": "I'm going to the supermarket.",
-                "back": "Voy al supermercado."
+                "back": "Voy al supermercado.",
+                "literal": "[I] go to-the supermarket."
             }
         ]
     },
@@ -431,7 +463,8 @@
             },
             {
                 "front": "Come to my house.",
-                "back": "Ven a mi casa."
+                "back": "Ven a mi casa.",
+                "literal": "Come [command] to my house."
             }
         ]
     },
@@ -444,7 +477,8 @@
             },
             {
                 "front": "I love to travel.",
-                "back": "Me encanta viajar."
+                "back": "Me encanta viajar.",
+                "literal": "[It] to-me enchants to-travel."
             }
         ]
     },
@@ -457,7 +491,8 @@
             },
             {
                 "front": "I walk to work every day.",
-                "back": "Camino al trabajo todos los días."
+                "back": "Camino al trabajo todos los días.",
+                "literal": "[I] walk to-the work all the days."
             }
         ]
     },
@@ -470,7 +505,8 @@
             },
             {
                 "front": "She drives to the office.",
-                "back": "Ella maneja a la oficina."
+                "back": "Ella maneja a la oficina.",
+                "literal": "She drives to the office."
             }
         ]
     },
@@ -483,7 +519,8 @@
             },
             {
                 "front": "Turn left at the corner.",
-                "back": "Gira a la izquierda en la esquina."
+                "back": "Gira a la izquierda en la esquina.",
+                "literal": "Turn [command] to the left-side at the corner."
             }
         ]
     },
@@ -496,7 +533,8 @@
             },
             {
                 "front": "Cross the street carefully.",
-                "back": "Cruza la calle con cuidado."
+                "back": "Cruza la calle con cuidado.",
+                "literal": "Cross [command] the street with care."
             }
         ]
     },
@@ -509,7 +547,8 @@
             },
             {
                 "front": "Follow this street.",
-                "back": "Sigue esta calle."
+                "back": "Sigue esta calle.",
+                "literal": "Follow [command] this street."
             }
         ]
     },
@@ -522,7 +561,8 @@
             },
             {
                 "front": "How do I reach the station?",
-                "back": "¿Cómo llego a la estación?"
+                "back": "¿Cómo llego a la estación?",
+                "literal": "How [do I] arrive at the station?"
             }
         ]
     },
@@ -535,7 +575,8 @@
             },
             {
                 "front": "Enter through the main door.",
-                "back": "Entra por la puerta principal."
+                "back": "Entra por la puerta principal.",
+                "literal": "Enter [command] through the door main."
             }
         ]
     },
@@ -548,7 +589,8 @@
             },
             {
                 "front": "I leave work at five.",
-                "back": "Salgo del trabajo a las cinco."
+                "back": "Salgo del trabajo a las cinco.",
+                "literal": "[I] leave from-the work at the five."
             }
         ]
     },
@@ -561,7 +603,8 @@
             },
             {
                 "front": "The train departs at nine.",
-                "back": "El tren parte a las nueve."
+                "back": "El tren parte a las nueve.",
+                "literal": "The train departs at the nine."
             }
         ]
     },
@@ -574,7 +617,8 @@
             },
             {
                 "front": "We arrive tomorrow.",
-                "back": "Llegamos mañana."
+                "back": "Llegamos mañana.",
+                "literal": "[We] arrive tomorrow."
             }
         ]
     },
@@ -587,7 +631,8 @@
             },
             {
                 "front": "I want to visit the museum.",
-                "back": "Quiero visitar el museo."
+                "back": "Quiero visitar el museo.",
+                "literal": "[I] want to-visit the museum."
             }
         ]
     },
@@ -600,7 +645,8 @@
             },
             {
                 "front": "The keys are in the bag.",
-                "back": "Las llaves están en la bolsa."
+                "back": "Las llaves están en la bolsa.",
+                "literal": "The keys are in the bag."
             }
         ]
     },
@@ -613,7 +659,8 @@
             },
             {
                 "front": "The book is on the table.",
-                "back": "El libro está sobre la mesa."
+                "back": "El libro está sobre la mesa.",
+                "literal": "The book is on the table."
             }
         ]
     },
@@ -626,7 +673,8 @@
             },
             {
                 "front": "I'm at the office.",
-                "back": "Estoy en la oficina."
+                "back": "Estoy en la oficina.",
+                "literal": "[I] am in the office."
             }
         ]
     },
@@ -639,7 +687,8 @@
             },
             {
                 "front": "The cat is under the table.",
-                "back": "El gato está debajo de la mesa."
+                "back": "El gato está debajo de la mesa.",
+                "literal": "The cat is under-of the table."
             }
         ]
     },
@@ -652,7 +701,8 @@
             },
             {
                 "front": "The bank is next to the cafe.",
-                "back": "El banco está al lado del café."
+                "back": "El banco está al lado del café.",
+                "literal": "The bank is to-the side of-the café."
             }
         ]
     },
@@ -665,7 +715,8 @@
             },
             {
                 "front": "The park is between the school and the library.",
-                "back": "El parque está entre la escuela y la biblioteca."
+                "back": "El parque está entre la escuela y la biblioteca.",
+                "literal": "The park is between the school and the library."
             }
         ]
     },
@@ -678,7 +729,8 @@
             },
             {
                 "front": "The taxi is in front of the hotel.",
-                "back": "El taxi está en frente del hotel."
+                "back": "El taxi está en frente del hotel.",
+                "literal": "The taxi is in front of-the hotel."
             }
         ]
     },
@@ -691,7 +743,8 @@
             },
             {
                 "front": "The garden is behind the house.",
-                "back": "El jardín está detrás de la casa."
+                "back": "El jardín está detrás de la casa.",
+                "literal": "The garden is behind-of the house."
             }
         ]
     },
@@ -704,7 +757,8 @@
             },
             {
                 "front": "Is there a restaurant near here?",
-                "back": "¿Hay un restaurante cerca de aquí?"
+                "back": "¿Hay un restaurante cerca de aquí?",
+                "literal": "There-is a restaurant near of here?"
             }
         ]
     },
@@ -717,7 +771,8 @@
             },
             {
                 "front": "Is the airport far?",
-                "back": "¿Está lejos el aeropuerto?"
+                "back": "¿Está lejos el aeropuerto?",
+                "literal": "Is far the airport?"
             }
         ]
     },
@@ -730,7 +785,8 @@
             },
             {
                 "front": "Come here, please.",
-                "back": "Ven aquí, por favor."
+                "back": "Ven aquí, por favor.",
+                "literal": "Come [command] here, please."
             }
         ]
     },
@@ -743,7 +799,8 @@
             },
             {
                 "front": "The taxi is over there.",
-                "back": "El taxi está allí."
+                "back": "El taxi está allí.",
+                "literal": "The taxi is there."
             }
         ]
     },
@@ -756,7 +813,8 @@
             },
             {
                 "front": "There are tourists everywhere.",
-                "back": "Hay turistas en todas partes."
+                "back": "Hay turistas en todas partes.",
+                "literal": "There-is tourists in all parts."
             }
         ]
     },
@@ -769,7 +827,8 @@
             },
             {
                 "front": "Let's go somewhere quiet.",
-                "back": "Vamos a algún lugar tranquilo."
+                "back": "Vamos a algún lugar tranquilo.",
+                "literal": "[We] go to some place quiet."
             }
         ]
     },
@@ -782,7 +841,8 @@
             },
             {
                 "front": "There is nowhere to sit.",
-                "back": "No hay ningún lugar para sentarse."
+                "back": "No hay ningún lugar para sentarse.",
+                "literal": "[There-is] not any place to sit-oneself."
             }
         ]
     },
@@ -795,7 +855,8 @@
             },
             {
                 "front": "Turn left.",
-                "back": "Gira a la izquierda."
+                "back": "Gira a la izquierda.",
+                "literal": "Turn [command] to the left-side."
             }
         ]
     },
@@ -808,7 +869,8 @@
             },
             {
                 "front": "Turn right.",
-                "back": "Gira a la derecha."
+                "back": "Gira a la derecha.",
+                "literal": "Turn [command] to the right-side."
             }
         ]
     },
@@ -821,7 +883,8 @@
             },
             {
                 "front": "Go straight ahead.",
-                "back": "Ve todo recto."
+                "back": "Ve todo recto.",
+                "literal": "Go [command] all straight."
             }
         ]
     },
@@ -834,7 +897,8 @@
             },
             {
                 "front": "The city is to the north.",
-                "back": "La ciudad está al norte."
+                "back": "La ciudad está al norte.",
+                "literal": "The city is to-the north."
             }
         ]
     },
@@ -847,7 +911,8 @@
             },
             {
                 "front": "The beach is to the south.",
-                "back": "La playa está al sur."
+                "back": "La playa está al sur.",
+                "literal": "The beach is to-the south."
             }
         ]
     },
@@ -860,7 +925,8 @@
             },
             {
                 "front": "The sun rises in the east.",
-                "back": "El sol sale por el este."
+                "back": "El sol sale por el este.",
+                "literal": "The sun comes-out through the east."
             }
         ]
     },
@@ -873,7 +939,8 @@
             },
             {
                 "front": "The sun sets in the west.",
-                "back": "El sol se pone en el oeste."
+                "back": "El sol se pone en el oeste.",
+                "literal": "The sun itself sets in the west."
             }
         ]
     },
@@ -886,7 +953,8 @@
             },
             {
                 "front": "I live near the city centre.",
-                "back": "Vivo cerca del centro."
+                "back": "Vivo cerca del centro.",
+                "literal": "[I] live near of-the centre."
             }
         ]
     },
@@ -899,7 +967,8 @@
             },
             {
                 "front": "We're staying at a hotel.",
-                "back": "Nos hospedamos en un hotel."
+                "back": "Nos hospedamos en un hotel.",
+                "literal": "[We] ourselves lodge in a hotel."
             }
         ]
     },
@@ -912,7 +981,8 @@
             },
             {
                 "front": "I'll wait for you here.",
-                "back": "Te espero aquí."
+                "back": "Te espero aquí.",
+                "literal": "[I] you wait-for here."
             }
         ]
     },
@@ -925,7 +995,8 @@
             },
             {
                 "front": "Let's meet at the park.",
-                "back": "Quedamos en el parque."
+                "back": "Quedamos en el parque.",
+                "literal": "[We] meet at the park."
             }
         ]
     },
@@ -939,7 +1010,8 @@
             },
             {
                 "front": "Don't get lost!",
-                "back": "¡No te pierdas!"
+                "back": "¡No te pierdas!",
+                "literal": "[You] not yourself lose [command]!"
             }
         ]
     },
@@ -952,7 +1024,8 @@
             },
             {
                 "front": "I can't find the hotel.",
-                "back": "No encuentro el hotel."
+                "back": "No encuentro el hotel.",
+                "literal": "[I] not find the hotel."
             }
         ]
     },
@@ -965,7 +1038,8 @@
             },
             {
                 "front": "I'm looking for the pharmacy.",
-                "back": "Busco la farmacia."
+                "back": "Busco la farmacia.",
+                "literal": "[I] search-for the pharmacy."
             }
         ]
     },
@@ -978,7 +1052,8 @@
             },
             {
                 "front": "Head towards the station.",
-                "back": "Dirígete hacia la estación."
+                "back": "Dirígete hacia la estación.",
+                "literal": "Direct-yourself [command] towards the station."
             }
         ]
     },
@@ -991,7 +1066,8 @@
             },
             {
                 "front": "Continue straight ahead.",
-                "back": "Continúa todo recto."
+                "back": "Continúa todo recto.",
+                "literal": "Continue [command] all straight."
             }
         ]
     },
@@ -1004,7 +1080,8 @@
             },
             {
                 "front": "Stop at the corner.",
-                "back": "Para en la esquina."
+                "back": "Para en la esquina.",
+                "literal": "Stop [command] at the corner."
             }
         ]
     },
@@ -1017,7 +1094,8 @@
             },
             {
                 "front": "Where can I park?",
-                "back": "¿Dónde puedo aparcar?"
+                "back": "¿Dónde puedo aparcar?",
+                "literal": "Where [can] [I] park?"
             }
         ]
     },
@@ -1030,7 +1108,8 @@
             },
             {
                 "front": "I booked a room.",
-                "back": "Reservé una habitación."
+                "back": "Reservé una habitación.",
+                "literal": "[I] reserved a room."
             }
         ]
     },
@@ -1043,7 +1122,8 @@
             },
             {
                 "front": "We checked in at three.",
-                "back": "Nos registramos a las tres."
+                "back": "Nos registramos a las tres.",
+                "literal": "[We] ourselves checked-in at the three."
             }
         ]
     },
@@ -1056,7 +1136,8 @@
             },
             {
                 "front": "Check out is at eleven.",
-                "back": "El check-out es a las once."
+                "back": "El check-out es a las once.",
+                "literal": "The check-out is at the eleven."
             }
         ]
     },
@@ -1069,7 +1150,8 @@
             },
             {
                 "front": "Is there a pharmacy nearby?",
-                "back": "¿Hay una farmacia cerca?"
+                "back": "¿Hay una farmacia cerca?",
+                "literal": "There-is a pharmacy nearby?"
             }
         ]
     },
@@ -1082,7 +1164,8 @@
             },
             {
                 "front": "The market is very crowded.",
-                "back": "El mercado está muy concurrido."
+                "back": "El mercado está muy concurrido.",
+                "literal": "The market is very crowded."
             }
         ]
     },
@@ -1095,7 +1178,8 @@
             },
             {
                 "front": "I prefer a quiet neighbourhood.",
-                "back": "Prefiero un barrio tranquilo."
+                "back": "Prefiero un barrio tranquilo.",
+                "literal": "[I] prefer a neighbourhood quiet."
             }
         ]
     },
@@ -1108,7 +1192,8 @@
             },
             {
                 "front": "I'm lost.",
-                "back": "Estoy perdido."
+                "back": "Estoy perdido.",
+                "literal": "[I] am lost."
             }
         ]
     }
