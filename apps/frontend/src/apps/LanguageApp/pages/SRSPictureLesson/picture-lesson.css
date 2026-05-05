@@ -37,7 +37,7 @@
     position: relative;
     width: 100%;
     max-width: 480px;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 5 / 6;    
     overflow: hidden;
     border-radius: 16px 16px 0 0;
     background-color: #000;
@@ -54,8 +54,8 @@
 /* ── Active dot ── */
 .picture-dot-active {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     background-color: #2980b9;
     border: 3px solid white;
@@ -67,10 +67,10 @@
 
 @keyframes dot-pulse {
     0%, 100% {
-        box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.5);
+        box-shadow: 0 0 0 2px rgba(41, 128, 185, 0);
     }
     50% {
-        box-shadow: 0 0 0 8px rgba(41, 128, 185, 0);
+        box-shadow: 0 0 0 8px rgba(41, 128, 185, .7);
     }
 }
 
