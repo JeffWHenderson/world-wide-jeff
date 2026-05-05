@@ -58,12 +58,6 @@ const SRSPictureLesson = () => {
     return (
         <div className="picture-lesson-page">
             <button className="srs-page-back" onClick={() => navigate(-1)}>← Back</button>
-            <div className="picture-lesson-header">
-                <span className="srs-deck-name" style={{ textTransform: "capitalize" }}>
-                    {section?.replace(/([A-Z])/g, " $1").trim()}
-                </span>
-                <span className="picture-lesson-counter">{activeIndex + 1} / {total}</span>
-            </div>
 
             {/* Image frame — 3:4 portrait, source images should be 900×1200px */}
             <div className="picture-frame">
@@ -89,6 +83,17 @@ const SRSPictureLesson = () => {
                     {current?.sentences[0].base_language}
                 </div>
 
+                <div className="picture-progress">
+                    {lesson.dots.map((_, i) => (
+                        <button
+                            key={i}
+                            className={`picture-progress-dot ${i === activeIndex ? "active" : ""}`}
+                            onClick={() => setActiveIndex(i)}
+                            aria-label={`Go to ${i + 1}`}
+                        />
+                    ))}
+                </div>
+
                 <div className="picture-nav">
                     <button
                         className="picture-nav-btn"
@@ -98,16 +103,9 @@ const SRSPictureLesson = () => {
                         ← Prev
                     </button>
 
-                    <div className="picture-progress">
-                        {lesson.dots.map((_, i) => (
-                            <button
-                                key={i}
-                                className={`picture-progress-dot ${i === activeIndex ? "active" : ""}`}
-                                onClick={() => setActiveIndex(i)}
-                                aria-label={`Go to ${i + 1}`}
-                            />
-                        ))}
-                    </div>
+                    <button className="picture-play-btn" onClick={speak}>
+                        ▶
+                    </button>
 
                     <button
                         className="picture-nav-btn"
@@ -118,10 +116,6 @@ const SRSPictureLesson = () => {
                     </button>
                 </div>
             </div>
-
-            <button className="picture-play-btn" onClick={speak}>
-                ▶ Play
-            </button>
         </div>
     );
 };
