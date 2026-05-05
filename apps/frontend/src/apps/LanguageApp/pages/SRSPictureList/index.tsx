@@ -125,7 +125,6 @@ const SRSPictureList = () => {
                             <img src={picture.image} alt={picture.name} />
                         </div>
                         <div className="srs-picture-card-info">
-                            <div className="srs-story-card-title">{picture.name}</div>
                             <div className="srs-story-card-deck">{picture.deckName}</div>
                         </div>
                     </button>
