@@ -182,7 +182,7 @@ const SRSReview = () => {
             clearTimeout(advanceTimer);
             window.speechSynthesis.cancel();
         };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [autoplay, autoplayIndex, deck]);
 
     // Stop speech when autoplay turns off
@@ -229,7 +229,7 @@ const SRSReview = () => {
             const updatedCard: SessionCard = { ...currentCard, cardState: newState, isAgain: true };
             const next = [...session];
             next.splice(currentIndex, 1);
-            const insertAt = Math.min(currentIndex + 4, next.length);
+            const insertAt = Math.min(currentIndex + 5, next.length);
             next.splice(insertAt, 0, updatedCard);
             setTotalCards((t) => t + 1);
             const updated = updateCardState(deckState, currentCard.id, newState);
@@ -267,12 +267,6 @@ const SRSReview = () => {
         setLevelUpCard(null);
         setIsFlipped(false);
         if (session.length === 0) setDone(true);
-    };
-
-    const cardSrpLabel = (state: CardState): string => {
-        if (isNew(state)) return "New";
-        if (state.interval < 21) return "Learning";
-        return `Review (${state.interval}d)`;
     };
 
     const remaining = session.length;
@@ -377,7 +371,6 @@ const SRSReview = () => {
     }
 
     const level = currentLevel(currentCard);
-    const levelName = LEVEL_NAMES[currentCard.cardState.level] ?? `Level ${currentCard.cardState.level + 1}`;
 
     return (
         <div className="srs-container">
@@ -404,18 +397,10 @@ const SRSReview = () => {
             <div className="srs-card-wrap">
                 <div className={`srs-card ${isFlipped ? "flipped" : ""}`} onClick={!isFlipped ? flip : undefined}>
                     <div className="srs-card-front">
-                        <div className="srs-card-meta-row">
-                            <span className="srs-level-badge">{levelName}</span>
-                            <span className="srs-card-label">{cardSrpLabel(currentCard.cardState)}</span>
-                        </div>
                         <div className="srs-card-text">{level.front}</div>
                         {!isFlipped && <div className="srs-tap-hint">tap to reveal</div>}
                     </div>
                     <div className="srs-card-back">
-                        <div className="srs-card-meta-row">
-                            <span className="srs-level-badge">{levelName}</span>
-                            <span className="srs-card-label">{cardSrpLabel(currentCard.cardState)}</span>
-                        </div>
                         <div className="srs-card-text front-dim">{level.front}</div>
                         <hr className="srs-divider" />
                         <div className="srs-card-text">{level.back}</div>
@@ -439,26 +424,26 @@ const SRSReview = () => {
                         )}
                     </div>
                 </div>
-            {isFlipped && level.grammarNote && (
-                <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
-                    <button
-                        className="srs-grammar-note-toggle"
-                        onClick={() => setNoteOpen(o => !o)}
-                    >
-                        Grammar note {noteOpen ? "▴" : "▾"}
-                    </button>
-                    {noteOpen && (
-                        <div className="srs-grammar-note-body">{level.grammarNote}</div>
-                    )}
-                </div>
-            )}
+                {isFlipped && level.grammarNote && (
+                    <div className="srs-grammar-note-wrap" onClick={e => e.stopPropagation()}>
+                        <button
+                            className="srs-grammar-note-toggle"
+                            onClick={() => setNoteOpen(o => !o)}
+                        >
+                            Grammar note {noteOpen ? "▴" : "▾"}
+                        </button>
+                        {noteOpen && (
+                            <div className="srs-grammar-note-body">{level.grammarNote}</div>
+                        )}
+                    </div>
+                )}
             </div>
 
             {isFlipped ? (
                 <div className="srs-rating-row">
                     <button className="srs-rating again" onClick={() => rate(1)}>
                         <span className="rating-label">Again</span>
-                        <span className="rating-interval">&lt;1d</span>
+                        <span className="rating-interval">1 min</span>
                     </button>
                     <button className="srs-rating hard" onClick={() => rate(2)}>
                         <span className="rating-label">Hard</span>
