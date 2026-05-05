@@ -42,44 +42,42 @@ export function isNew(state: CardState): boolean {
     return state.repetitions === 0 && state.interval === 0;
 }
 
+const MAX_EASE = 4.0;
+
+// Clamps easeFactor within allowed bounds after a delta adjustment
+function adjustEase(ef: number, delta: number): number {
+    const minEase = Math.max(ef + delta, 1.3)
+    return Math.min(minEase, MAX_EASE);
+}
+
 /** Returns the new card state. Does NOT handle level promotion — caller checks shouldLevelUp(). */
 export function applyRating(state: CardState, rating: Rating): CardState {
     let { interval, repetitions, easeFactor, lapses, level } = state;
 
-    const MIN_EASE = 1.3;
-
     if (rating === 1) {
-        // Again: reset to relearning, keep level
+        // Again: card failed — reset to relearning, penalize ease
+        // TODO; am I doing anything with lapses?
         lapses += 1;
         interval = 1;
         repetitions = 0;
-        easeFactor = Math.max(MIN_EASE, easeFactor - 0.2);
-    } else if (repetitions === 0) {
-        // First successful review
-        interval = rating === 4 ? 4 : 1;
-        repetitions = 1;
-        if (rating === 2) easeFactor = Math.max(MIN_EASE, easeFactor - 0.15);
-        if (rating === 4) easeFactor = Math.min(easeFactor + 0.15, 4.0);
-    } else if (repetitions === 1) {
-        interval = rating === 4
-            ? Math.round(interval * easeFactor * 1.3)
-            : Math.round(interval * easeFactor);
-        interval = Math.max(interval, 1);
-        repetitions = 2;
-        if (rating === 2) easeFactor = Math.max(MIN_EASE, easeFactor - 0.15);
-        if (rating === 4) easeFactor = Math.min(easeFactor + 0.15, 4.0);
-    } else {
-        if (rating === 2) {
-            interval = Math.round(interval * 1.2);
-            easeFactor = Math.max(MIN_EASE, easeFactor - 0.15);
-        } else if (rating === 3) {
-            interval = Math.round(interval * easeFactor);
-        } else if (rating === 4) {
-            interval = Math.round(interval * easeFactor * 1.3);
-            easeFactor = Math.min(easeFactor + 0.15, 4.0);
+        easeFactor = adjustEase(easeFactor, -0.2);
+    }
+
+    // TODO: Clean this up.. I think its readable but a lof of conditionals I could adjust
+    if (rating !== 1) { 
+        if (repetitions === 0) {  // First successful review: assign a short bootstrap interval, not yet SM-2 scaling
+            interval = rating === 4 ? 2 : 1; // I just want the first success to push to 2 days.. 4 is agressive for what I'm doing
+            repetitions = 1;
+            if (rating === 2) easeFactor = adjustEase(easeFactor, -0.1);
+            if (rating === 4) easeFactor = adjustEase(easeFactor, +0.1);
+        } else {
+            // Graduated card: scale interval by ease, with Hard using a fixed 1.2x and Easy adding a 1.3x bonus
+            const multiplier = rating === 2 ? 1.2 : rating === 4 ? easeFactor * 1.3 : easeFactor;
+            interval = Math.max(Math.round(interval * multiplier), 1);
+            repetitions += 1;
+            if (rating === 2) easeFactor = adjustEase(easeFactor, -0.15);
+            if (rating === 4) easeFactor = adjustEase(easeFactor, +0.15);
         }
-        interval = Math.max(interval, 1);
-        repetitions += 1;
     }
 
     return {
