@@ -2,7 +2,7 @@
   "id": "moods_and_emotion",
   "name": "Moods & Emotion",
   "language": "chinese",
-  "stories": ["a_bad_day", "good_news", "friendship", "sean"],
+  "stories": ["a_bad_day", "good_news", "friendship", "sean", "yan_jiang_qian_xi"],
   "pictureLessons": ["moodsAndEmotion", "moodsAndEmotion2"],
   "cards": [
     {"id": "zh_me_001", "levels": [{"front": "happy", "back": "快乐的", "romanized": "kuàilè de", "grammarNote": "Adverb form: 快乐地 (kuàilè de - happily). In Chinese, add 地 (de) after an adjective to form an adverb. E.g., '她快乐地笑着。' (She was smiling happily.)"}, {"front": "I am very happy today.", "back": "我今天很快乐。", "romanized": "wǒ jīntiān hěn kuàilè.", "literal": "I today very happy."}]},
