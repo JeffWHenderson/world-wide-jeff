@@ -35,12 +35,18 @@ interface DeckData {
 
 type SessionCard = Card & { cardState: CardState; isAgain?: boolean };
 
-function buildSession(cards: Card[], deckState: SRSDeckState): SessionCard[] {
+function buildSession(cards: Card[], deckState: SRSDeckState, shuffle: boolean): SessionCard[] {
     const session: SessionCard[] = [];
     for (const card of cards) {
         const state = getCardState(deckState, card.id);
         if (isNew(state) || isDue(state)) {
             session.push({ ...card, cardState: state });
+        }
+    }
+    if (shuffle) {
+        for (let i = session.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [session[i], session[j]] = [session[j], session[i]];
         }
     }
     return session;
@@ -67,7 +73,7 @@ const SRSReview = () => {
     const [session, setSession] = useState<SessionCard[]>([]);
     const [currentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const { ttsEnabled, autoplay, volume, showLiteral } = useLanguageApp();
+    const { ttsEnabled, autoplay, volume, showLiteral, shuffleCards } = useLanguageApp();
     const [done, setDone] = useState(false);
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
@@ -104,7 +110,7 @@ const SRSReview = () => {
                 setDeck(data);
                 const state = loadDeckState(language, deckId);
                 setDeckState(state);
-                const s = buildSession(data.cards, state);
+                const s = buildSession(data.cards, state, shuffleCards);
                 setSession(s);
                 setTotalCards(s.length);
             })
