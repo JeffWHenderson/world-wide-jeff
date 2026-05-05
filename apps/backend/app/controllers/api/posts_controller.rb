@@ -1,12 +1,18 @@
 module Api
   class PostsController < ApplicationController
+    before_action :authenticate_user!, only: [:create]
+
     def index
       posts = Post.order(created_at: :desc)
       render json: posts.map { |p| serialize(p) }
     end
 
     def create
-      post = Post.new(post_params)
+      post = Post.new(
+        username: @current_user.username,
+        display_name: @current_user.display_name,
+        completion: params.require(:post)[:completion]
+      )
       if post.save
         render json: serialize(post), status: :created
       else
@@ -15,10 +21,6 @@ module Api
     end
 
     private
-
-    def post_params
-      params.require(:post).permit(:username, :display_name, :completion)
-    end
 
     def serialize(post)
       {

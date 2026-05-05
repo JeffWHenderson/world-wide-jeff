@@ -5,12 +5,12 @@ const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
 
 type WallerverseContextType = {
     currentUser: string | null;
-    login: (username: string, password: string) => boolean;
-    logout: () => void;
+    login: (username: string, password: string) => Promise<boolean>;
+    logout: () => Promise<void>;
     posts: Post[];
     addPost: (completion: string) => void;
     profiles: Record<string, UserProfile>;
-    updateProfile: (profile: UserProfile) => void;
+    updateProfile: (profile: UserProfile) => Promise<void>;
 };
 
 const WallerverseContext = createContext<WallerverseContextType | null>(null);
@@ -21,97 +21,109 @@ export const useWallerverse = () => {
     return ctx;
 };
 
-const CREDENTIALS: Record<string, string> = { jeff: "secretPassword" };
-
-const DEFAULT_PROFILES: Record<string, UserProfile> = {
-    jeff: {
-        username: "jeff",
-        displayName: "Jeff Henderson",
-        bio: "Building things on the internet.",
-        topFriends: ["waller", "tom", "audry", "maya", "ricky", "dana", "chris", "sam"],
-        customStyle: {},
-    },
-    waller: {
-        username: "waller",
-        displayName: "Waller Goble",
-        bio: "Professional chaos agent.",
-        topFriends: ["jeff", "tom", "audry"],
-        customStyle: { backgroundColor: "#1a0033", textColor: "#e8d5ff", accentColor: "#9b59b6", headerBg: "#2d0052" },
-    },
-    tom: {
-        username: "tom",
-        displayName: "Tom",
-        bio: "Everyone's first friend.",
-        topFriends: [],
-        customStyle: { backgroundColor: "#003366", textColor: "#cce5ff", accentColor: "#4488cc", headerBg: "#00204a" },
-    },
-    audry: {
-        username: "audry",
-        displayName: "Audry",
-        bio: "Living my best life ✨",
-        topFriends: ["jeff", "waller"],
-        customStyle: { backgroundColor: "#ffe0ec", textColor: "#4a0020", accentColor: "#cc0044", headerBg: "#ffb3cc" },
-    },
-    maya: { username: "maya", displayName: "Maya", bio: "", topFriends: [], customStyle: {} },
-    ricky: { username: "ricky", displayName: "Ricky", bio: "Just vibing.", topFriends: [], customStyle: {} },
-    dana: { username: "dana", displayName: "Dana", bio: "", topFriends: [], customStyle: {} },
-    chris: { username: "chris", displayName: "Chris", bio: "", topFriends: [], customStyle: {} },
-    sam: { username: "sam", displayName: "Sam", bio: "", topFriends: [], customStyle: {} },
-};
-
-function load<T>(key: string, fallback: T): T {
-    try {
-        const val = localStorage.getItem(key);
-        return val ? (JSON.parse(val) as T) : fallback;
-    } catch {
-        return fallback;
-    }
+function authHeader(token: string | null): Record<string, string> {
+    return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
 export const WallerverseProvider = ({ children }: { children: ReactNode }) => {
-    const [currentUser, setCurrentUser] = useState<string | null>(() => load("wv_user", null));
+    const [token, setToken] = useState<string | null>(() => localStorage.getItem("wv_token"));
+    const [currentUser, setCurrentUser] = useState<string | null>(() => localStorage.getItem("wv_user"));
     const [posts, setPosts] = useState<Post[]>([]);
-    const [profiles, setProfiles] = useState<Record<string, UserProfile>>(() => load("wv_profiles", DEFAULT_PROFILES));
+    const [profiles, setProfiles] = useState<Record<string, UserProfile>>({});
 
-    useEffect(() => { localStorage.setItem("wv_user", JSON.stringify(currentUser)); }, [currentUser]);
-    useEffect(() => { localStorage.setItem("wv_profiles", JSON.stringify(profiles)); }, [profiles]);
+    // Verify token on mount; clear stale session if invalid
+    useEffect(() => {
+        if (!token) return;
+        fetch(`${API_URL}/api/me`, { headers: authHeader(token) })
+            .then((res) => {
+                if (!res.ok) {
+                    localStorage.removeItem("wv_token");
+                    localStorage.removeItem("wv_user");
+                    setToken(null);
+                    setCurrentUser(null);
+                }
+            })
+            .catch(() => {});
+    }, []);
 
+    // Load all profiles
+    useEffect(() => {
+        fetch(`${API_URL}/api/profiles`)
+            .then((res) => res.json())
+            .then((data: UserProfile[]) => {
+                const record: Record<string, UserProfile> = {};
+                for (const p of data) record[p.username] = p;
+                setProfiles(record);
+            })
+            .catch(() => {});
+    }, []);
+
+    // Load posts
     useEffect(() => {
         fetch(`${API_URL}/api/posts`)
             .then((res) => res.json())
-            .then((data) => setPosts(data));
+            .then((data) => setPosts(data))
+            .catch(() => {});
     }, []);
 
-    const login = (username: string, password: string): boolean => {
-        if (CREDENTIALS[username] === password) {
-            setCurrentUser(username);
-            return true;
-        }
-        return false;
-    };
-
-    const logout = () => setCurrentUser(null);
-
-    const addPost = (completion: string) => {
-        if (!currentUser) return;
-        const profile = profiles[currentUser];
-        fetch(`${API_URL}/api/posts`, {
+    const login = async (username: string, password: string): Promise<boolean> => {
+        const res = await fetch(`${API_URL}/api/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                post: {
-                    username: currentUser,
-                    display_name: profile?.displayName ?? currentUser,
-                    completion: completion.trim(),
-                },
-            }),
+            body: JSON.stringify({ username, password }),
+        });
+        if (!res.ok) return false;
+        const { token: newToken, profile } = await res.json();
+        localStorage.setItem("wv_token", newToken);
+        localStorage.setItem("wv_user", username);
+        setToken(newToken);
+        setCurrentUser(username);
+        setProfiles((prev) => ({ ...prev, [username]: profile }));
+        return true;
+    };
+
+    const logout = async () => {
+        if (token) {
+            await fetch(`${API_URL}/api/logout`, {
+                method: "DELETE",
+                headers: authHeader(token),
+            }).catch(() => {});
+        }
+        localStorage.removeItem("wv_token");
+        localStorage.removeItem("wv_user");
+        setToken(null);
+        setCurrentUser(null);
+    };
+
+    const addPost = (completion: string) => {
+        if (!currentUser || !token) return;
+        fetch(`${API_URL}/api/posts`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", ...authHeader(token) },
+            body: JSON.stringify({ post: { completion: completion.trim() } }),
         })
             .then((res) => res.json())
             .then((newPost) => setPosts((prev) => [newPost, ...prev]));
     };
 
-    const updateProfile = (profile: UserProfile) => {
-        setProfiles((prev) => ({ ...prev, [profile.username]: profile }));
+    const updateProfile = async (profile: UserProfile) => {
+        if (!token) return;
+        const res = await fetch(`${API_URL}/api/profiles/${profile.username}`, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json", ...authHeader(token) },
+            body: JSON.stringify({
+                profile: {
+                    display_name: profile.displayName,
+                    bio: profile.bio,
+                    top_friends: profile.topFriends,
+                    custom_style: profile.customStyle,
+                },
+            }),
+        });
+        if (res.ok) {
+            const updated: UserProfile = await res.json();
+            setProfiles((prev) => ({ ...prev, [updated.username]: updated }));
+        }
     };
 
     return (
