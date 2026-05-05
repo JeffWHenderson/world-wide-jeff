@@ -8,6 +8,9 @@ import {
     getCardState,
     updateCardState,
     SRSDeckState,
+    loadUnlockedCount,
+    saveUnlockedCount,
+    UNLOCK_BATCH,
 } from "../useSRSStorage";
 import useLanguage from "../../hooks/useLanguage";
 import SRSSettings from "../components/SRSSettings";
@@ -73,6 +76,7 @@ const SRSReview = () => {
     const [reviewed, setReviewed] = useState(0);
     const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
     const [noteOpen, setNoteOpen] = useState(false);
+    const [unlockedCount, setUnlockedCount] = useState(0);
 
     // Autoplay state
     const [autoplayIndex, setAutoplayIndex] = useState(0);
@@ -102,9 +106,11 @@ const SRSReview = () => {
             .then((r) => r.json())
             .then((data: DeckData) => {
                 setDeck(data);
+                const unlocked = loadUnlockedCount(language, deckId, data.cards.length);
+                setUnlockedCount(unlocked);
                 const state = loadDeckState(language, deckId);
                 setDeckState(state);
-                const s = buildSession(data.cards, state);
+                const s = buildSession(data.cards.slice(0, unlocked), state);
                 setSession(s);
                 setTotalCards(s.length);
             })
@@ -257,6 +263,13 @@ const SRSReview = () => {
         setSession(next);
     };
 
+    const handleUnlockMore = () => {
+        if (!deck || !language || !deckId) return;
+        const next = Math.min(unlockedCount + UNLOCK_BATCH, deck.cards.length);
+        saveUnlockedCount(language, deckId, next);
+        setUnlockedCount(next);
+    };
+
     const dismissLevelUp = () => {
         setLevelUpCard(null);
         setIsFlipped(false);
@@ -354,16 +367,27 @@ const SRSReview = () => {
     }
 
     if (done || remaining === 0) {
+        const canUnlockMore = deck && unlockedCount < deck.cards.length;
         return (
             <div className="srs-container">
                 <div className="srs-done">
                     <h2>Session complete!</h2>
                     <p>You reviewed {reviewed} card{reviewed !== 1 ? "s" : ""}.</p>
                     <p>Come back tomorrow to review cards that are due.</p>
+                    {canUnlockMore && (
+                        <p className="srs-done-unlock-hint">
+                            {unlockedCount} / {deck!.cards.length} cards active in this deck.
+                        </p>
+                    )}
                     <div className="srs-done-actions">
                         <button className="srs-btn-primary" onClick={() => navigate(`/language-app/${language}`)}>
                             Back to Decks
                         </button>
+                        {canUnlockMore && (
+                            <button className="srs-btn-unlock" onClick={handleUnlockMore}>
+                                +10 cards
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>

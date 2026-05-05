@@ -523,6 +523,12 @@
     flex-wrap: wrap;
 }
 
+.srs-deck-progress {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    opacity: 0.45;
+}
+
 
 /* ── Shared buttons ── */
 .srs-btn-primary {
@@ -834,6 +840,22 @@
 
 .srs-btn-stories:hover {
     background-color: rgba(41, 128, 185, 0.08);
+}
+
+.srs-btn-unlock {
+    padding: 7px 14px;
+    background: none;
+    border: 1px solid #27ae60;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #27ae60;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.srs-btn-unlock:hover {
+    background-color: rgba(39, 174, 96, 0.1);
 }
 
 /* ── Story list page ── */

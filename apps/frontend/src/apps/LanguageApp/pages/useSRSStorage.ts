@@ -1,11 +1,29 @@
 import { CardState, DEFAULT_CARD_STATE, isDue, isNew } from "./sm2";
 
+export const INITIAL_UNLOCK = 20;
+export const UNLOCK_BATCH = 10;
+
 export interface SRSDeckState {
     [cardId: string]: CardState;
 }
 
 function storageKey(language: string, deckId: string): string {
     return `srs_state_${language}_${deckId}`;
+}
+
+function unlockedKey(language: string, deckId: string): string {
+    return `srs_unlocked_${language}_${deckId}`;
+}
+
+export function loadUnlockedCount(language: string, deckId: string, totalCards: number): number {
+    const raw = localStorage.getItem(unlockedKey(language, deckId));
+    if (!raw) return Math.min(INITIAL_UNLOCK, totalCards);
+    const parsed = parseInt(raw, 10);
+    return isNaN(parsed) ? Math.min(INITIAL_UNLOCK, totalCards) : Math.min(parsed, totalCards);
+}
+
+export function saveUnlockedCount(language: string, deckId: string, count: number): void {
+    localStorage.setItem(unlockedKey(language, deckId), String(count));
 }
 
 export function loadDeckState(language: string, deckId: string): SRSDeckState {
@@ -64,4 +82,5 @@ export function getDeckSummary(
 
 export function resetDeck(language: string, deckId: string): void {
     localStorage.removeItem(storageKey(language, deckId));
+    localStorage.removeItem(unlockedKey(language, deckId));
 }

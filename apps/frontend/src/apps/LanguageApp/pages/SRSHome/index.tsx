@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { loadDeckState, getDeckSummary, resetDeck } from "../useSRSStorage";
+import { loadDeckState, getDeckSummary, resetDeck, loadUnlockedCount, saveUnlockedCount, UNLOCK_BATCH } from "../useSRSStorage";
 import "../srs.css";
 
 interface DeckMeta {
@@ -25,6 +25,7 @@ const SRSHome = () => {
     const { language } = useParams<{ language: string }>();
     const navigate = useNavigate();
     const [deckMetas, setDeckMetas] = useState<DeckMeta[]>([]);
+    const [unlockedCounts, setUnlockedCounts] = useState<Record<string, number>>({});
 
     useEffect(() => {
         if (!language) return;
@@ -35,17 +36,32 @@ const SRSHome = () => {
                     .catch(() => null)
             )
         ).then((results) => {
-            setDeckMetas(results.filter(Boolean) as DeckMeta[]);
+            const decks = results.filter(Boolean) as DeckMeta[];
+            setDeckMetas(decks);
+            const counts: Record<string, number> = {};
+            for (const deck of decks) {
+                counts[deck.id] = loadUnlockedCount(language, deck.id, deck.cards.length);
+            }
+            setUnlockedCounts(counts);
         });
     }, [language]);
 
-    const handleReset = (deckId: string) => {
+    const handleReset = (deckId: string, totalCards: number) => {
         if (!language) return;
         if (confirm("Reset all progress for this deck? This cannot be undone.")) {
             resetDeck(language, deckId);
-            // Re-trigger summary refresh
+            const fresh = loadUnlockedCount(language, deckId, totalCards);
+            setUnlockedCounts((prev) => ({ ...prev, [deckId]: fresh }));
             setDeckMetas((prev) => [...prev]);
         }
+    };
+
+    const handleUnlock = (deckId: string, totalCards: number) => {
+        if (!language) return;
+        const current = unlockedCounts[deckId] ?? 0;
+        const next = Math.min(current + UNLOCK_BATCH, totalCards);
+        saveUnlockedCount(language, deckId, next);
+        setUnlockedCounts((prev) => ({ ...prev, [deckId]: next }));
     };
 
     return (
@@ -58,10 +74,12 @@ const SRSHome = () => {
             <div className="srs-deck-list">
                 {deckMetas.length === 0 && <p>Loading decks...</p>}
                 {deckMetas.map((deck) => {
+                    const unlocked = unlockedCounts[deck.id] ?? deck.cards.length;
                     const state = loadDeckState(language!, deck.id);
-                    const cardIds = deck.cards.map((c) => c.id);
-                    const summary = getDeckSummary(cardIds, state);
+                    const activeCardIds = deck.cards.slice(0, unlocked).map((c) => c.id);
+                    const summary = getDeckSummary(activeCardIds, state);
                     const totalDue = summary.newCount + summary.dueCount + summary.learnCount;
+                    const canUnlockMore = unlocked < deck.cards.length;
 
                     return (
                         <div key={deck.id} className="srs-deck-card">
@@ -73,10 +91,13 @@ const SRSHome = () => {
                                         <span className="srs-count learn">{summary.learnCount} learning</span>
                                         <span className="srs-count review">{summary.dueCount} due</span>
                                     </div>
+                                    <div className="srs-deck-progress">
+                                        {unlocked} / {deck.cards.length} cards active
+                                    </div>
                                 </div>
                                 <button
                                     className="srs-btn-reset"
-                                    onClick={() => handleReset(deck.id)}
+                                    onClick={() => handleReset(deck.id, deck.cards.length)}
                                 >
                                     Reset
                                 </button>
@@ -89,6 +110,14 @@ const SRSHome = () => {
                                 >
                                     {totalDue > 0 ? `Study (${totalDue})` : "Nothing due"}
                                 </button>
+                                {canUnlockMore && (
+                                    <button
+                                        className="srs-btn-unlock"
+                                        onClick={() => handleUnlock(deck.id, deck.cards.length)}
+                                    >
+                                        +10 cards
+                                    </button>
+                                )}
                                 {deck.pictureLessons && deck.pictureLessons.length > 0 && (
                                     <button
                                         className="srs-btn-stories"
