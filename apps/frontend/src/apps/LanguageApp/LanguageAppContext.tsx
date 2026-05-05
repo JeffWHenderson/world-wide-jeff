@@ -23,7 +23,7 @@ const LanguageAppContext = createContext<LanguageAppContextValue>({
 });
 
 export const LanguageAppProvider = ({ children }: { children: React.ReactNode }) => {
-    const [ttsEnabled, setTtsEnabled] = useState(false);
+    const [ttsEnabled, setTtsEnabled] = useState(true);
     const [autoplay, setAutoplay] = useState(false);
     const [volume, setVolume] = useState(1);
     const [showLiteral, setShowLiteralState] = useState(() => {
