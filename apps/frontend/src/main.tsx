@@ -21,6 +21,7 @@ const SRSReview = lazy(() => import('./apps/LanguageApp/pages/SRSReview'));
 const SRSStoryReader = lazy(() => import('./apps/LanguageApp/pages/SRSStoryReader'));
 const SRSStoryList = lazy(() => import('./apps/LanguageApp/pages/SRSStoryList'));
 const SRSPictureList = lazy(() => import('./apps/LanguageApp/pages/SRSPictureList'));
+const SRSBrowse = lazy(() => import('./apps/LanguageApp/pages/SRSBrowse'));
 const NoPage = lazy(() => import('./apps/common/Core/NoPage'));
 const Home = lazy(() => import('./apps/common/Core/Home'));
 const Layout = lazy(() => import('./apps/common/Core/Layout'));
@@ -51,6 +52,7 @@ createRoot(document.getElementById('root')!).render(
               <Route path=":language/pictures" element={<SRSPictureList />} />
               <Route path=":language/" element={<SRSHome />} />
               <Route path=":language/:deckId" element={<SRSReview />} />
+              <Route path=":language/:deckId/browse" element={<SRSBrowse />} />
               <Route path=":language/:deckId/story/:storyId" element={<SRSStoryReader />} />
             </Route>
             <Route path="*" element={<NoPage />} />

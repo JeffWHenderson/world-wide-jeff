@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { loadDeckState, getDeckSummary, resetDeck } from "../useSRSStorage";
+import { loadDeckState, getDeckSummary } from "../useSRSStorage";
 import "../srs.css";
 
 interface DeckMeta {
@@ -39,15 +39,6 @@ const SRSHome = () => {
         });
     }, [language]);
 
-    const handleReset = (deckId: string) => {
-        if (!language) return;
-        if (confirm("Reset all progress for this deck? This cannot be undone.")) {
-            resetDeck(language, deckId);
-            // Re-trigger summary refresh
-            setDeckMetas((prev) => [...prev]);
-        }
-    };
-
     return (
         <div className="srs-container">
             <div className="srs-home-header">
@@ -76,9 +67,9 @@ const SRSHome = () => {
                                 </div>
                                 <button
                                     className="srs-btn-reset"
-                                    onClick={() => handleReset(deck.id)}
+                                    onClick={() => navigate(`/language-app/${language}/${deck.id}/browse?filter=all`)}
                                 >
-                                    Reset
+                                    Browse Deck
                                 </button>
                             </div>
                             <div className="srs-deck-bottom">
