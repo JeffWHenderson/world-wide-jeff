@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLanguageApp } from "../../LanguageAppContext";
 
 const SRSSettings = () => {
-    const { ttsEnabled, setTtsEnabled, fastMode, setFastMode, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards } = useLanguageApp();
+    const { readFront, setReadFront, readBack, setReadBack, fastMode, setFastMode, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards } = useLanguageApp();
     const [open, setOpen] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
@@ -31,14 +31,29 @@ const SRSSettings = () => {
                 <div className="srs-settings-dropdown">
                     <div className="srs-settings-row">
                         <div className="srs-settings-label-group">
-                            <span className="srs-settings-label">Text to Speech</span>
-                            <span className="srs-settings-sub">Read cards aloud</span>
+                            <span className="srs-settings-label">Read front</span>
+                            <span className="srs-settings-sub">Speak the English prompt</span>
                         </div>
                         <label className="srs-toggle">
                             <input
                                 type="checkbox"
-                                checked={ttsEnabled}
-                                onChange={(e) => setTtsEnabled(e.target.checked)}
+                                checked={readFront}
+                                onChange={(e) => setReadFront(e.target.checked)}
+                            />
+                            <span className="srs-toggle-track" />
+                        </label>
+                    </div>
+
+                    <div className="srs-settings-row">
+                        <div className="srs-settings-label-group">
+                            <span className="srs-settings-label">Read back</span>
+                            <span className="srs-settings-sub">Speak the target language answer</span>
+                        </div>
+                        <label className="srs-toggle">
+                            <input
+                                type="checkbox"
+                                checked={readBack}
+                                onChange={(e) => setReadBack(e.target.checked)}
                             />
                             <span className="srs-toggle-track" />
                         </label>

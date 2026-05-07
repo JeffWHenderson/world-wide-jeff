@@ -88,7 +88,7 @@ const SRSReview = () => {
     const [session, setSession] = useState<SessionCard[]>([]);
     const [currentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const { ttsEnabled, fastMode, volume, showLiteral, shuffleCards } = useLanguageApp();
+    const { readFront, readBack, fastMode, volume, showLiteral, shuffleCards } = useLanguageApp();
     const [done, setDone] = useState(false);
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
@@ -110,7 +110,7 @@ const SRSReview = () => {
     }, [targetVoice, baseVoice, volume]);
 
     const speak = (text: string, isTarget: boolean) => {
-        if (!ttsEnabled) return;
+        if (isTarget ? !readBack : !readFront) return;
         window.speechSynthesis.cancel();
         window.speechSynthesis.speak(buildUtt(text, isTarget));
     };
@@ -130,11 +130,33 @@ const SRSReview = () => {
             .catch((e) => console.error(e));
     }, [language, deckId]);
 
-    // ── Fast mode: speak target when card changes ──────────────────────────────
+    // ── Normal mode: speak front when a new card appears ──────────────────────
+    const currentCardId = session[0]?.id;
+    useEffect(() => {
+        if (fastMode || !currentCardId) return;
+        const card = session[0];
+        if (card) speak(currentLevel(card).front, false);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [currentCardId]);
+    // ──────────────────────────────────────────────────────────────────────────
+
+    // ── Fast mode: speak front then back when card changes ────────────────────
     useEffect(() => {
         if (!fastMode || !deck) return;
+        window.speechSynthesis.cancel();
         const card = deck.cards[fastModeIndex % deck.cards.length];
-        speak(card.levels[0].back, true);
+        const level = card.levels[0];
+        if (readFront) {
+            const frontUtt = buildUtt(level.front, false);
+            frontUtt.onend = () => {
+                if (readBack) setTimeout(() => window.speechSynthesis.speak(buildUtt(level.back, true)), 500);
+            };
+            window.speechSynthesis.speak(frontUtt);
+        } else if (readBack) {
+            window.speechSynthesis.speak(buildUtt(level.back, true));
+        }
+        return () => window.speechSynthesis.cancel();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [fastMode, fastModeIndex, deck]);
 
     useEffect(() => {

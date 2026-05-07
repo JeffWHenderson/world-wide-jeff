@@ -1,8 +1,10 @@
 import { createContext, useContext, useState } from "react";
 
 interface LanguageAppContextValue {
-    ttsEnabled: boolean;
-    setTtsEnabled: (enabled: boolean) => void;
+    readFront: boolean;
+    setReadFront: (enabled: boolean) => void;
+    readBack: boolean;
+    setReadBack: (enabled: boolean) => void;
     fastMode: boolean;
     setFastMode: (enabled: boolean) => void;
     volume: number;
@@ -14,8 +16,10 @@ interface LanguageAppContextValue {
 }
 
 const LanguageAppContext = createContext<LanguageAppContextValue>({
-    ttsEnabled: false,
-    setTtsEnabled: () => {},
+    readFront: false,
+    setReadFront: () => {},
+    readBack: true,
+    setReadBack: () => {},
     fastMode: false,
     setFastMode: () => {},
     volume: 1,
@@ -27,7 +31,10 @@ const LanguageAppContext = createContext<LanguageAppContextValue>({
 });
 
 export const LanguageAppProvider = ({ children }: { children: React.ReactNode }) => {
-    const [ttsEnabled, setTtsEnabled] = useState(true);
+    const [readFront, setReadFrontState] = useState(() => localStorage.getItem("srs_readFront") === "true");
+    const setReadFront = (v: boolean) => { localStorage.setItem("srs_readFront", String(v)); setReadFrontState(v); };
+    const [readBack, setReadBackState] = useState(() => localStorage.getItem("srs_readBack") !== "false");
+    const setReadBack = (v: boolean) => { localStorage.setItem("srs_readBack", String(v)); setReadBackState(v); };
     const [fastMode, setFastMode] = useState(false);
     const [volume, setVolume] = useState(1);
     const [showLiteral, setShowLiteralState] = useState(() => {
@@ -49,7 +56,7 @@ export const LanguageAppProvider = ({ children }: { children: React.ReactNode })
     };
 
     return (
-        <LanguageAppContext.Provider value={{ ttsEnabled, setTtsEnabled, fastMode, setFastMode, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards }}>
+        <LanguageAppContext.Provider value={{ readFront, setReadFront, readBack, setReadBack, fastMode, setFastMode, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards }}>
             {children}
         </LanguageAppContext.Provider>
     );
