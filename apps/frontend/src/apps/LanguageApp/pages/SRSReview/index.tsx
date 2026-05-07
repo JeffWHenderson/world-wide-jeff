@@ -46,25 +46,24 @@ function shuffled<T>(arr: T[]): T[] {
 
 function buildSession(cards: Card[], deckState: SRSDeckState, shuffle: boolean): SessionCard[] {
     const now = Date.now();
-    const overdue: SessionCard[] = [];
-    const dueToday: SessionCard[] = [];
-    const newWords: SessionCard[] = [];
-    const newPhrases: SessionCard[] = [];
+    const due: SessionCard[] = [];      // graduated (interval > 1), most overdue first
+    const learn: SessionCard[] = [];    // short interval (≤ 1 day)
+    const newWords: SessionCard[] = []; // never seen, level 0
+    const newPhrases: SessionCard[] = []; // never seen, level 1+
 
     for (const card of cards) {
         const state = getCardState(deckState, card.id);
         if (isNew(state)) {
-            // level 0 = vocabulary word, level 1+ = phrase
             (state.level === 0 ? newWords : newPhrases).push({ ...card, cardState: state });
         } else if (isDue(state)) {
-            (state.nextReview < now ? overdue : dueToday).push({ ...card, cardState: state });
+            (state.interval > 1 ? due : learn).push({ ...card, cardState: state });
         }
     }
 
-    // overdue sorted most-overdue first, then due-today, then new words, then phrases
-    const sortedOverdue = overdue.sort((a, b) => a.cardState.nextReview - b.cardState.nextReview);
+    // Anki order: due (most overdue first) → learn → new words → new phrases
+    due.sort((a, b) => a.cardState.nextReview - b.cardState.nextReview);
 
-    const groups = [sortedOverdue, dueToday, newWords, newPhrases];
+    const groups = [due, learn, newWords, newPhrases];
     return groups.flatMap(g => shuffle ? shuffled(g) : g);
 }
 
