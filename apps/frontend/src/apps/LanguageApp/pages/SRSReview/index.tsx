@@ -406,8 +406,8 @@ const SRSReview = () => {
             </div>
             <div className="srs-count-row">
                 <span className="srs-count new">{session.filter((c) => isNew(c.cardState)).length} new</span>
-                <span className="srs-count learn">{session.filter((c) => !isNew(c.cardState) && c.isAgain).length} learning</span>
-                <span className="srs-count review">{remaining} remaining</span>
+                <span className="srs-count learn">{session.filter((c) => !isNew(c.cardState) && c.cardState.interval <= 1).length} learn</span>
+                <span className="srs-count review">{session.filter((c) => !isNew(c.cardState) && c.cardState.interval > 1).length} due</span>
             </div>
 
             <div className="srs-card-wrap">

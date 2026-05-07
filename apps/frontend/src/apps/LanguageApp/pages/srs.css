@@ -103,7 +103,7 @@
 }
 
 .srs-count.new   { background: #cce5ff; color: #004085; }
-.srs-count.learn { background: #fff3cd; color: #856404; }
+.srs-count.learn { background: #f8d7da; color: #721c24; }
 .srs-count.review { background: #d4edda; color: #155724; }
 
 button.srs-count {
@@ -114,7 +114,7 @@ button.srs-count {
 button.srs-count:hover { opacity: 0.75; }
 
 [data-theme="dark"] .srs-count.new   { background: #1a3a5c; color: #90c8f8; }
-[data-theme="dark"] .srs-count.learn { background: #3d3000; color: #ffd966; }
+[data-theme="dark"] .srs-count.learn { background: #3d0a0a; color: #f8a4a8; }
 [data-theme="dark"] .srs-count.review { background: #0d3320; color: #6fcf97; }
 
 /* ── Card ── */
