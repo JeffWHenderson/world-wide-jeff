@@ -35,21 +35,37 @@ interface DeckData {
 
 type SessionCard = Card & { cardState: CardState; isAgain?: boolean };
 
+function shuffled<T>(arr: T[]): T[] {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
 function buildSession(cards: Card[], deckState: SRSDeckState, shuffle: boolean): SessionCard[] {
-    const session: SessionCard[] = [];
+    const now = Date.now();
+    const overdue: SessionCard[] = [];
+    const dueToday: SessionCard[] = [];
+    const newWords: SessionCard[] = [];
+    const newPhrases: SessionCard[] = [];
+
     for (const card of cards) {
         const state = getCardState(deckState, card.id);
-        if (isNew(state) || isDue(state)) {
-            session.push({ ...card, cardState: state });
+        if (isNew(state)) {
+            // level 0 = vocabulary word, level 1+ = phrase
+            (state.level === 0 ? newWords : newPhrases).push({ ...card, cardState: state });
+        } else if (isDue(state)) {
+            (state.nextReview < now ? overdue : dueToday).push({ ...card, cardState: state });
         }
     }
-    if (shuffle) {
-        for (let i = session.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [session[i], session[j]] = [session[j], session[i]];
-        }
-    }
-    return session;
+
+    // overdue sorted most-overdue first, then due-today, then new words, then phrases
+    const sortedOverdue = overdue.sort((a, b) => a.cardState.nextReview - b.cardState.nextReview);
+
+    const groups = [sortedOverdue, dueToday, newWords, newPhrases];
+    return groups.flatMap(g => shuffle ? shuffled(g) : g);
 }
 
 function currentLevel(card: Card & { cardState: CardState }): CardLevel {
