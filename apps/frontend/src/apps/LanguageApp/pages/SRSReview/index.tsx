@@ -414,17 +414,20 @@ const SRSReview = () => {
                 <div className={`srs-card ${isFlipped ? "flipped" : ""}`} onClick={!isFlipped ? flip : undefined}>
                     <div className="srs-card-front">
                         <div className="srs-card-text">{level.front}</div>
+                        {showLiteral && level.literal && (
+                            <div className="srs-literal">{level.literal}</div>
+                        )}
                         {!isFlipped && <div className="srs-tap-hint">tap to reveal</div>}
                     </div>
                     <div className="srs-card-back">
                         <div className="srs-card-text front-dim">{level.front}</div>
+                        {showLiteral && level.literal && (
+                            <div className="srs-literal front-dim">{level.literal}</div>
+                        )}
                         <hr className="srs-divider" />
                         <div className="srs-card-text">{level.back}</div>
                         {level.romanized && (
                             <div className="srs-romanized">{level.romanized}</div>
-                        )}
-                        {showLiteral && level.literal && (
-                            <div className="srs-literal">{level.literal}</div>
                         )}
                         {hasNextLevel(currentCard) && (
                             <div className="srs-levelup-hint">

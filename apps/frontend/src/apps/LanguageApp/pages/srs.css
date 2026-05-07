@@ -307,6 +307,17 @@ button.srs-count:hover { opacity: 0.75; }
     border-radius: 0 6px 6px 0;
 }
 
+.srs-card-front .srs-literal {
+    position: absolute;
+    bottom: 36px;
+    left: 20px;
+    right: 20px;
+    margin-top: 0;
+    border-left: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
 @media (prefers-color-scheme: dark) {
     .srs-grammar-note-body {
         background: rgba(255, 255, 255, 0.06);
