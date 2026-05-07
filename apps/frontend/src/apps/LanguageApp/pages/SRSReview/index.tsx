@@ -88,17 +88,15 @@ const SRSReview = () => {
     const [session, setSession] = useState<SessionCard[]>([]);
     const [currentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const { ttsEnabled, autoplay, volume, showLiteral, shuffleCards } = useLanguageApp();
+    const { ttsEnabled, fastMode, volume, showLiteral, shuffleCards } = useLanguageApp();
     const [done, setDone] = useState(false);
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
     const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
     const [noteOpen, setNoteOpen] = useState(false);
 
-    // Autoplay state
-    const [autoplayIndex, setAutoplayIndex] = useState(0);
-    const autoplayRef = useRef(false);
-    const autoplayIndexRef = useRef(0);
+    // Fast mode state
+    const [fastModeIndex, setFastModeIndex] = useState(0);
 
     const { targetVoice, baseVoice } = useLanguage({ targetLanguage: language ?? "english" });
 
@@ -132,81 +130,16 @@ const SRSReview = () => {
             .catch((e) => console.error(e));
     }, [language, deckId]);
 
-    // ── Autoplay loop ──────────────────────────────────────────────────────────
+    // ── Fast mode: speak target when card changes ──────────────────────────────
     useEffect(() => {
-        autoplayRef.current = autoplay;
-    }, [autoplay]);
-
-    useEffect(() => {
-        autoplayIndexRef.current = autoplayIndex;
-    }, [autoplayIndex]);
+        if (!fastMode || !deck) return;
+        const card = deck.cards[fastModeIndex % deck.cards.length];
+        speak(card.levels[0].back, true);
+    }, [fastMode, fastModeIndex, deck]);
 
     useEffect(() => {
-        if (!autoplay || !deck) return;
-
-        window.speechSynthesis.cancel();
-
-        const allCards = deck.cards;
-        const idx = autoplayIndex % allCards.length;
-        const card = allCards[idx];
-        const level = card.levels[0]; // always show level 0 in autoplay
-
-        // Phase 1: speak front (English)
-        setIsFlipped(false);
-
-        const frontUtt = buildUtt(level.front, false);
-        const FALLBACK_MS = 4000;
-
-        let frontTimer: ReturnType<typeof setTimeout>;
-        let backTimer: ReturnType<typeof setTimeout>;
-        let advanceTimer: ReturnType<typeof setTimeout>;
-
-        const speakBack = () => {
-            if (!autoplayRef.current) return;
-            setIsFlipped(true);
-            const backUtt = buildUtt(level.back, true);
-
-            const advance = () => {
-                if (!autoplayRef.current) return;
-                // brief pause then next card
-                advanceTimer = setTimeout(() => {
-                    if (!autoplayRef.current) return;
-                    setAutoplayIndex((i) => i + 1);
-                    setIsFlipped(false);
-                }, 1200);
-            };
-
-            backUtt.onend = advance;
-            window.speechSynthesis.speak(backUtt);
-            backTimer = setTimeout(advance, FALLBACK_MS + level.back.length * 80);
-        };
-
-        frontUtt.onend = () => {
-            clearTimeout(frontTimer);
-            if (!autoplayRef.current) return;
-            // pause between front and back
-            frontTimer = setTimeout(speakBack, 600);
-        };
-
-        window.speechSynthesis.speak(frontUtt);
-        frontTimer = setTimeout(speakBack, FALLBACK_MS + level.front.length * 80);
-
-        return () => {
-            clearTimeout(frontTimer);
-            clearTimeout(backTimer);
-            clearTimeout(advanceTimer);
-            window.speechSynthesis.cancel();
-        };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [autoplay, autoplayIndex, deck]);
-
-    // Stop speech when autoplay turns off
-    useEffect(() => {
-        if (!autoplay) {
-            window.speechSynthesis.cancel();
-            setIsFlipped(false);
-        }
-    }, [autoplay]);
+        if (!fastMode) window.speechSynthesis.cancel();
+    }, [fastMode]);
     // ──────────────────────────────────────────────────────────────────────────
 
     const currentCard = session[currentIndex];
@@ -290,9 +223,10 @@ const SRSReview = () => {
         return <div className="srs-container"><p>Loading...</p></div>;
     }
 
-    // ── Autoplay view ──────────────────────────────────────────────────────────
-    if (autoplay) {
-        const idx = autoplayIndex % deck.cards.length;
+    // ── Fast mode view ─────────────────────────────────────────────────────────
+    if (fastMode) {
+        const total = deck.cards.length;
+        const idx = fastModeIndex % total;
         const card = deck.cards[idx];
         const level = card.levels[0];
         return (
@@ -306,30 +240,35 @@ const SRSReview = () => {
                 </div>
 
                 <div className="srs-card-wrap">
-                    <div className={`srs-card ${isFlipped ? "flipped" : ""}`}>
-                        <div className="srs-card-front">
-                            <div className="srs-card-meta-row">
-                                <span className="srs-level-badge">Autoplay</span>
-                            </div>
-                            <div className="srs-card-text">{level.front}</div>
-                        </div>
-                        <div className="srs-card-back">
-                            <div className="srs-card-meta-row">
-                                <span className="srs-level-badge">Autoplay</span>
-                            </div>
-                            <div className="srs-card-text front-dim">{level.front}</div>
-                            <hr className="srs-divider" />
-                            <div className="srs-card-text">{level.back}</div>
-                            {level.romanized && (
-                                <div className="srs-romanized">{level.romanized}</div>
-                            )}
-                        </div>
+                    <div className="srs-card srs-card-fast">
+                        <div className="srs-card-text">{level.front}</div>
+                        {showLiteral && level.literal && (
+                            <div className="srs-literal">{level.literal}</div>
+                        )}
+                        <hr className="srs-divider" />
+                        <div className="srs-card-text">{level.back}</div>
+                        {level.romanized && (
+                            <div className="srs-romanized">{level.romanized}</div>
+                        )}
                     </div>
                 </div>
 
-                <div className="srs-autoplay-indicator">
-                    <div className="srs-autoplay-dot" />
-                    <span>Listening… {(idx + 1)} / {deck.cards.length}</span>
+                <div className="srs-fast-nav">
+                    <button
+                        className="srs-fast-nav-btn"
+                        onClick={() => setFastModeIndex(i => Math.max(0, i - 1))}
+                        disabled={idx === 0}
+                    >
+                        ← Prev
+                    </button>
+                    <span className="srs-fast-counter">{idx + 1} / {total}</span>
+                    <button
+                        className="srs-fast-nav-btn"
+                        onClick={() => setFastModeIndex(i => Math.min(total - 1, i + 1))}
+                        disabled={idx === total - 1}
+                    >
+                        Next →
+                    </button>
                 </div>
             </div>
         );

@@ -3,8 +3,8 @@ import { createContext, useContext, useState } from "react";
 interface LanguageAppContextValue {
     ttsEnabled: boolean;
     setTtsEnabled: (enabled: boolean) => void;
-    autoplay: boolean;
-    setAutoplay: (enabled: boolean) => void;
+    fastMode: boolean;
+    setFastMode: (enabled: boolean) => void;
     volume: number;
     setVolume: (volume: number) => void;
     showLiteral: boolean;
@@ -16,8 +16,8 @@ interface LanguageAppContextValue {
 const LanguageAppContext = createContext<LanguageAppContextValue>({
     ttsEnabled: false,
     setTtsEnabled: () => {},
-    autoplay: false,
-    setAutoplay: () => {},
+    fastMode: false,
+    setFastMode: () => {},
     volume: 1,
     setVolume: () => {},
     showLiteral: false,
@@ -28,7 +28,7 @@ const LanguageAppContext = createContext<LanguageAppContextValue>({
 
 export const LanguageAppProvider = ({ children }: { children: React.ReactNode }) => {
     const [ttsEnabled, setTtsEnabled] = useState(true);
-    const [autoplay, setAutoplay] = useState(false);
+    const [fastMode, setFastMode] = useState(false);
     const [volume, setVolume] = useState(1);
     const [showLiteral, setShowLiteralState] = useState(() => {
         return localStorage.getItem("srs_showLiteral") === "true";
@@ -49,7 +49,7 @@ export const LanguageAppProvider = ({ children }: { children: React.ReactNode })
     };
 
     return (
-        <LanguageAppContext.Provider value={{ ttsEnabled, setTtsEnabled, autoplay, setAutoplay, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards }}>
+        <LanguageAppContext.Provider value={{ ttsEnabled, setTtsEnabled, fastMode, setFastMode, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards }}>
             {children}
         </LanguageAppContext.Provider>
     );

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLanguageApp } from "../../LanguageAppContext";
 
 const SRSSettings = () => {
-    const { ttsEnabled, setTtsEnabled, autoplay, setAutoplay, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards } = useLanguageApp();
+    const { ttsEnabled, setTtsEnabled, fastMode, setFastMode, volume, setVolume, showLiteral, setShowLiteral, shuffleCards, setShuffleCards } = useLanguageApp();
     const [open, setOpen] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
@@ -46,14 +46,14 @@ const SRSSettings = () => {
 
                     <div className="srs-settings-row">
                         <div className="srs-settings-label-group">
-                            <span className="srs-settings-label">Autoplay</span>
-                            <span className="srs-settings-sub">Passive listen — all cards, no ratings</span>
+                            <span className="srs-settings-label">Fast Mode</span>
+                            <span className="srs-settings-sub">See both sides at once, no ratings</span>
                         </div>
                         <label className="srs-toggle">
                             <input
                                 type="checkbox"
-                                checked={autoplay}
-                                onChange={(e) => setAutoplay(e.target.checked)}
+                                checked={fastMode}
+                                onChange={(e) => setFastMode(e.target.checked)}
                             />
                             <span className="srs-toggle-track" />
                         </label>
