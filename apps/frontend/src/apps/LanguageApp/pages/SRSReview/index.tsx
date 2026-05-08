@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { applyRating, CardState, isDue, isNew, levelUpState, LEVEL_UP_REPS, Rating } from "../sm2";
 import { useLanguageApp } from "../../LanguageAppContext";
@@ -45,7 +45,6 @@ function shuffled<T>(arr: T[]): T[] {
 }
 
 function buildSession(cards: Card[], deckState: SRSDeckState, shuffle: boolean): SessionCard[] {
-    const now = Date.now();
     const due: SessionCard[] = [];      // graduated (interval > 1), most overdue first
     const learn: SessionCard[] = [];    // short interval (≤ 1 day)
     const newWords: SessionCard[] = []; // never seen, level 0
@@ -61,7 +60,7 @@ function buildSession(cards: Card[], deckState: SRSDeckState, shuffle: boolean):
     }
 
     // Anki order: due (most overdue first) → learn → new words → new phrases
-    due.sort((a, b) => a.cardState.nextReview - b.cardState.nextReview);
+    due.sort((a, b) => a.cardState.dueDate.localeCompare(b.cardState.dueDate));
 
     const groups = [due, learn, newWords, newPhrases];
     return groups.flatMap(g => shuffle ? shuffled(g) : g);
@@ -93,7 +92,7 @@ const SRSReview = () => {
     const [totalCards, setTotalCards] = useState(0);
     const [reviewed, setReviewed] = useState(0);
     const [levelUpCard, setLevelUpCard] = useState<SessionCard | null>(null);
-    const [noteOpen, setNoteOpen] = useState(false);
+    const [noteOpen, setNoteOpen] = useState(true);
 
     // Fast mode state
     const [fastModeIndex, setFastModeIndex] = useState(0);
