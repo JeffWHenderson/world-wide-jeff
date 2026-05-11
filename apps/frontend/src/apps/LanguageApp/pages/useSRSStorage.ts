@@ -40,16 +40,24 @@ export interface DeckSummary {
     learnCount: number;
 }
 
+// Returns true if the card is hidden, checking localStorage first then JSON default.
+export function isCardHidden(card: { id: string; hidden?: boolean }, deckState: SRSDeckState): boolean {
+    const stored = deckState[card.id];
+    if (stored !== undefined) return !!stored.hidden;
+    return !!card.hidden;
+}
+
 export function getDeckSummary(
-    cardIds: string[],
+    cards: { id: string; hidden?: boolean }[],
     deckState: SRSDeckState
 ): DeckSummary {
     let newCount = 0;
     let dueCount = 0;
     let learnCount = 0;
 
-    for (const id of cardIds) {
-        const state = getCardState(deckState, id);
+    for (const card of cards) {
+        if (isCardHidden(card, deckState)) continue;
+        const state = getCardState(deckState, card.id);
         if (isNew(state)) {
             newCount++;
         } else if (state.repetitions > 0 && state.interval < 21 && isDue(state)) {

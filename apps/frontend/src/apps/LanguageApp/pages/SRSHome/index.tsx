@@ -9,7 +9,7 @@ interface DeckMeta {
     language: string;
     stories?: string[];
     pictureLessons?: string[];
-    cards: { id: string; levels: unknown[] }[];
+    cards: { id: string; hidden?: boolean; levels: unknown[] }[];
 }
 
 const AVAILABLE_DECKS = [
@@ -50,8 +50,7 @@ const SRSHome = () => {
                 {deckMetas.length === 0 && <p>Loading decks...</p>}
                 {deckMetas.map((deck) => {
                     const state = loadDeckState(language!, deck.id);
-                    const cardIds = deck.cards.map((c) => c.id);
-                    const summary = getDeckSummary(cardIds, state);
+                    const summary = getDeckSummary(deck.cards, state);
                     const totalDue = summary.newCount + summary.dueCount + summary.learnCount;
 
                     return (

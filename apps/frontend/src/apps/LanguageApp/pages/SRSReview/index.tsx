@@ -7,6 +7,7 @@ import {
     saveDeckState,
     getCardState,
     updateCardState,
+    isCardHidden,
     SRSDeckState,
 } from "../useSRSStorage";
 import useLanguage from "../../hooks/useLanguage";
@@ -23,6 +24,7 @@ interface CardLevel {
 
 interface Card {
     id: string;
+    hidden?: boolean;
     levels: CardLevel[];
 }
 
@@ -51,6 +53,7 @@ function buildSession(cards: Card[], deckState: SRSDeckState, shuffle: boolean):
     const newPhrases: SessionCard[] = []; // never seen, level 1+
 
     for (const card of cards) {
+        if (isCardHidden(card, deckState)) continue;
         const state = getCardState(deckState, card.id);
         if (isNew(state)) {
             (state.level === 0 ? newWords : newPhrases).push({ ...card, cardState: state });
@@ -143,7 +146,9 @@ const SRSReview = () => {
     useEffect(() => {
         if (!fastMode || !deck) return;
         window.speechSynthesis.cancel();
-        const card = deck.cards[fastModeIndex % deck.cards.length];
+        const visibleCards = deck.cards.filter(c => !isCardHidden(c, deckState));
+        if (visibleCards.length === 0) return;
+        const card = visibleCards[fastModeIndex % visibleCards.length];
         const level = currentLevel({ ...card, cardState: getCardState(deckState, card.id) });
         if (readFront) {
             const frontUtt = buildUtt(level.front, false);
@@ -246,9 +251,24 @@ const SRSReview = () => {
 
     // ── Fast mode view ─────────────────────────────────────────────────────────
     if (fastMode) {
-        const total = deck.cards.length;
+        const visibleCards = deck.cards.filter(c => !isCardHidden(c, deckState));
+        const total = visibleCards.length;
+        if (total === 0) {
+            return (
+                <div className="srs-container">
+                    <div className="srs-header">
+                        <button className="srs-back-link" onClick={() => navigate(`/language-app/${language}`)}>
+                            ← Decks
+                        </button>
+                        <span className="srs-deck-name">{deck.name}</span>
+                        <SRSSettings />
+                    </div>
+                    <p className="srs-empty">No visible cards. Unhide cards in Browse to study them.</p>
+                </div>
+            );
+        }
         const idx = fastModeIndex % total;
-        const card = deck.cards[idx];
+        const card = visibleCards[idx];
         const level = currentLevel({ ...card, cardState: getCardState(deckState, card.id) });
         return (
             <div className="srs-container">

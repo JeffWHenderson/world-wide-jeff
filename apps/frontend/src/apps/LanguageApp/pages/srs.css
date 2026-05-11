@@ -1206,3 +1206,40 @@ button.srs-count:hover { opacity: 0.75; }
 .srs-fam-3 { background-color: #f1c40f; color: #333; }
 .srs-fam-4 { background-color: #27ae60; }
 .srs-fam-5 { background-color: #2980b9; }
+
+.srs-browse-row-hidden {
+    opacity: 0.45;
+}
+
+.srs-browse-hide-btn {
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    background: none;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--text-color, #555);
+    white-space: nowrap;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.srs-browse-hide-btn:hover {
+    border-color: #e74c3c;
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.06);
+}
+
+.srs-browse-row-hidden .srs-browse-hide-btn:hover {
+    border-color: #27ae60;
+    color: #27ae60;
+    background: rgba(39, 174, 96, 0.06);
+}
+
+.srs-browse-hint {
+    font-size: 0.78rem;
+    color: var(--text-color, #111);
+    opacity: 0.45;
+    width: 100%;
+    max-width: 500px;
+    margin: -8px 0 12px;
+}

@@ -13,6 +13,7 @@ export interface CardState {
     dueDate: string;        // ISO date string (YYYY-MM-DD)
     lapses: number;         // times failed after graduating
     level: number;          // current card level (0 = word, 1 = phrase, ...)
+    hidden?: boolean;       // excluded from study and fast mode until manually unhidden
 }
 
 export const DEFAULT_CARD_STATE: CardState = {
@@ -22,6 +23,7 @@ export const DEFAULT_CARD_STATE: CardState = {
     dueDate: todayISO(),
     lapses: 0,
     level: 0,
+    hidden: false,
 };
 
 export function todayISO(): string {
