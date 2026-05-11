@@ -144,7 +144,7 @@ const SRSReview = () => {
         if (!fastMode || !deck) return;
         window.speechSynthesis.cancel();
         const card = deck.cards[fastModeIndex % deck.cards.length];
-        const level = card.levels[0];
+        const level = currentLevel({ ...card, cardState: getCardState(deckState, card.id) });
         if (readFront) {
             const frontUtt = buildUtt(level.front, false);
             frontUtt.onend = () => {
@@ -249,7 +249,7 @@ const SRSReview = () => {
         const total = deck.cards.length;
         const idx = fastModeIndex % total;
         const card = deck.cards[idx];
-        const level = card.levels[0];
+        const level = currentLevel({ ...card, cardState: getCardState(deckState, card.id) });
         return (
             <div className="srs-container">
                 <div className="srs-header">
