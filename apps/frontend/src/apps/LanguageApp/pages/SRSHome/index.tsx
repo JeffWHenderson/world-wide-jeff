@@ -14,6 +14,7 @@ interface DeckMeta {
 
 const AVAILABLE_DECKS = [
     "everyday_phrases",
+    "continued_practice",
     "food_and_drink",
     "common_places",
     "jobs_and_hobbies",
