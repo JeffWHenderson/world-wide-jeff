@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
-import { CardState, isDue, isNew } from "../sm2";
+import { CardState, isDue, isNew } from "../fsrs";
 import { loadDeckState, getCardState, resetDeck, saveDeckState, updateCardState, isCardHidden, SRSDeckState } from "../useSRSStorage";
 import "../srs.css";
 
@@ -26,9 +26,9 @@ type FilterType = "all" | "new" | "learning" | "due" | "hidden";
 
 function familiarity(state: CardState): 1 | 2 | 3 | 4 | 5 {
     if (isNew(state)) return 1;
-    if (state.interval <= 1) return 2;
-    if (state.interval <= 7) return 3;
-    if (state.interval <= 30) return 4;
+    if (state.stability <= 1) return 2;
+    if (state.stability <= 7) return 3;
+    if (state.stability <= 30) return 4;
     return 5;
 }
 
@@ -97,7 +97,7 @@ const SRSBrowse = () => {
         const state = getCardState(deckState, card.id);
         switch (filter) {
             case "new": return isNew(state);
-            case "learning": return !isNew(state) && state.interval < 21 && isDue(state);
+            case "learning": return state.state === "learning" && isDue(state);
             case "due": return isDue(state);
             default: return true;
         }
@@ -111,7 +111,7 @@ const SRSBrowse = () => {
             const state = getCardState(deckState, card.id);
             if (f === "all") return true;
             if (f === "new") return isNew(state);
-            if (f === "learning") return !isNew(state) && state.interval < 21 && isDue(state);
+            if (f === "learning") return state.state === "learning" && isDue(state);
             if (f === "due") return isDue(state);
             return true;
         }).length;
@@ -171,7 +171,7 @@ const SRSBrowse = () => {
                                             {fam}
                                         </span>
                                         {!isNew(state) && (
-                                            <span className="srs-browse-interval">{state.interval}d</span>
+                                            <span className="srs-browse-interval">{Math.round(state.stability)}d</span>
                                         )}
                                     </>
                                 )}

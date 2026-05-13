@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { applyRating, CardState, isDue, isNew, levelUpState, LEVEL_UP_REPS, Rating } from "../sm2";
+import { applyRating, CardState, isDue, isNew, levelUpState, previewIntervals, LEVEL_UP_REPS, Rating } from "../fsrs";
 import { useLanguageApp } from "../../LanguageAppContext";
 import {
     loadDeckState,
@@ -58,7 +58,7 @@ function buildSession(cards: Card[], deckState: SRSDeckState, shuffle: boolean):
         if (isNew(state)) {
             (state.level === 0 ? newWords : newPhrases).push({ ...card, cardState: state });
         } else if (isDue(state)) {
-            (state.interval > 1 ? due : learn).push({ ...card, cardState: state });
+            (state.state === "review" ? due : learn).push({ ...card, cardState: state });
         }
     }
 
@@ -196,7 +196,7 @@ const SRSReview = () => {
 
         const willLevelUp =
             rating >= 3 &&
-            newState.repetitions >= LEVEL_UP_REPS &&
+            newState.reps >= LEVEL_UP_REPS &&
             hasNextLevel(currentCard);
 
         if (rating === 1) {
@@ -385,8 +385,8 @@ const SRSReview = () => {
             </div>
             <div className="srs-count-row">
                 <span className="srs-count new">{session.filter((c) => isNew(c.cardState)).length} new</span>
-                <span className="srs-count learn">{session.filter((c) => !isNew(c.cardState) && c.cardState.interval <= 1).length} learn</span>
-                <span className="srs-count review">{session.filter((c) => !isNew(c.cardState) && c.cardState.interval > 1).length} due</span>
+                <span className="srs-count learn">{session.filter((c) => c.cardState.state === "learning").length} learn</span>
+                <span className="srs-count review">{session.filter((c) => c.cardState.state === "review").length} due</span>
             </div>
 
             <div className="srs-card-wrap">
@@ -411,8 +411,8 @@ const SRSReview = () => {
                         {hasNextLevel(currentCard) && (
                             <div className="srs-levelup-hint">
                                 <span>
-                                    {LEVEL_UP_REPS - currentCard.cardState.repetitions > 0
-                                        ? `${LEVEL_UP_REPS - currentCard.cardState.repetitions} good review${LEVEL_UP_REPS - currentCard.cardState.repetitions !== 1 ? "s" : ""} to unlock phrase`
+                                    {LEVEL_UP_REPS - currentCard.cardState.reps > 0
+                                        ? `${LEVEL_UP_REPS - currentCard.cardState.reps} good review${LEVEL_UP_REPS - currentCard.cardState.reps !== 1 ? "s" : ""} to unlock phrase`
                                         : "Phrase unlocks on Good or Easy!"}
                                 </span>
                                 <button className="srs-upgrade-btn" onClick={e => { e.stopPropagation(); upgradeNow(); }}>
@@ -439,26 +439,29 @@ const SRSReview = () => {
 
             {isFlipped ? (
                 <div className="srs-rating-row">
-                    <button className="srs-rating again" onClick={() => rate(1)}>
-                        <span className="rating-label">Again</span>
-                        <span className="rating-interval">1 min</span>
-                    </button>
-                    <button className="srs-rating hard" onClick={() => rate(2)}>
-                        <span className="rating-label">Hard</span>
-                        <span className="rating-interval">1d</span>
-                    </button>
-                    <button className="srs-rating good" onClick={() => rate(3)}>
-                        <span className="rating-label">Good</span>
-                        <span className="rating-interval">
-                            {currentCard.cardState.repetitions === 0 ? "1d" : `~${Math.round((currentCard.cardState.interval || 1) * currentCard.cardState.easeFactor)}d`}
-                        </span>
-                    </button>
-                    <button className="srs-rating easy" onClick={() => rate(4)}>
-                        <span className="rating-label">Easy</span>
-                        <span className="rating-interval">
-                            {currentCard.cardState.repetitions === 0 ? "4d" : `~${Math.round((currentCard.cardState.interval || 1) * currentCard.cardState.easeFactor * 1.3)}d`}
-                        </span>
-                    </button>
+                    {(() => {
+                        const preview = previewIntervals(currentCard.cardState);
+                        return (
+                            <>
+                                <button className="srs-rating again" onClick={() => rate(1)}>
+                                    <span className="rating-label">Again</span>
+                                    <span className="rating-interval">{preview[1]}</span>
+                                </button>
+                                <button className="srs-rating hard" onClick={() => rate(2)}>
+                                    <span className="rating-label">Hard</span>
+                                    <span className="rating-interval">{preview[2]}</span>
+                                </button>
+                                <button className="srs-rating good" onClick={() => rate(3)}>
+                                    <span className="rating-label">Good</span>
+                                    <span className="rating-interval">{preview[3]}</span>
+                                </button>
+                                <button className="srs-rating easy" onClick={() => rate(4)}>
+                                    <span className="rating-label">Easy</span>
+                                    <span className="rating-interval">{preview[4]}</span>
+                                </button>
+                            </>
+                        );
+                    })()}
                 </div>
             ) : (
                 <div className="srs-flip-hint">
