@@ -123,7 +123,7 @@ function updateDifficulty(d: number, rating: Rating): number {
 /** Returns the new card state after a rating. Does NOT handle level promotion. */
 export function applyRating(state: CardState, rating: Rating): CardState {
     const today = todayISO();
-    const { lapses, level } = state;
+    const { lapses } = state;
 
     if (state.state === "new" || state.state === "learning") {
         const s = initialStability(rating);
